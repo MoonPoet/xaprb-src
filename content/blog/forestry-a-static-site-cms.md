@@ -1,11 +1,28 @@
 ---
 title: Forestry, a Static Site CMS
-date: '2016-11-04T20:33:23.931-04:00'
+date: '2016-11-04T20:33:23-04:00'
 author: Baron Schwartz
 categories:
-- Databases
-description: ''
-image: ''
+- Writing
+- Web
+description: Forestry integrates with GitHub and Hugo to create a WYSIWYG CMS for
+  static websites.
+image: media/2016/11/forest.jpg
 draft: true
 
 ---
+Forestry is a content management system that runs in your browser. On the backend, it integrates with a static site generator such as Hugo, letting you edit your static website in your browser just like any other content management system.  I am writing this blog post  with it on my iPad, using voice dictation.
+
+<!--more-->
+
+![forest](/media/2016/11/forest.jpg)
+
+Setup was very easy, and although I had a slight hiccup importing my existing site, which is very large, their support team was responsive and got that taken care of quickly. 
+
+Editing appears to be very straightforward so far, and I do not see any problems  that seem to be showstoppers.  I am seeing some unwanted newlines in the markdown editor, but that doesn't bother me.
+
+It is worth mentioning that the location where the source code for my site is hosted it has not changed. All I did was authorize Forestry to access and change that source code. 
+
+I will not exercise the full set of capabilities of this product. I host my site using an amazing static site hosting service called Netlify.  They take care of watching for changes in the repository, fetching the changes, building the site from that source, and publishing that on their content delivery network.  If I were not using this service, I think Forestry could cover some of those needs.
+
+[Pic credit](https://www.pexels.com/photo/nature-forest-trees-fog-4827/)
