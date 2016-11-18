@@ -1,4 +1,4 @@
-baseurl: 'http://www.xaprb.com/'
+baseurl: 'https://www.xaprb.com/'
 blackfriday:
   plainIdAnchors: true
 publishdir: public
