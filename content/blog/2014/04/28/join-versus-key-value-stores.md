@@ -2,7 +2,7 @@
 title: "JOIN Versus Key-Value Stores"
 description: "Don't overlook the cost of moving data across the network"
 date: "2014-04-28"
-url: /blog/2014/04/28/join-versus-key-value-stores/"
+url: /blog/2014/04/28/join-versus-key-value-stores/
 categories:
   - Databases
 ---
