@@ -9,7 +9,7 @@ image: media/2016/11/alan-rimm-kaufman-harry-weller.png
 draft: true
 
 ---
-Harry Weller died suddenly this week. Harry was one of the best venture capital investors in history. He led NEA’s investment in my company, VividCortex. Harry was an advocate and mentor to me, but he was more: he was a second chance.
+Harry Weller died suddenly this week. Harry was one of the best venture capital investors in history. He led NEA’s investment in my company, VividCortex. Harry was an advocate and mentor to me, but he was more: in both life and death, he reminded me of Alan Rimm-Kaufman, a boss and mentor who died a handful of years ago.
 
 ![Alan Rimm-Kaufman and Harry Weller](/media/2016/11/alan-rimm-kaufman-harry-weller.png)
 
@@ -17,7 +17,7 @@ Harry Weller died suddenly this week. Harry was one of the best venture capital 
 
 ### Alan Rimm-Kaufman
 
-Harry isn’t the first person to believe in me, create an opportunity for something amazing, and then die. Before Harry, there was Alan Rimm-Kaufman, who shaped my career tremendously.
+Harry isn’t the first person to believe in me and create an amazing opportunity before dying unexpectedly. Before Harry, there was Alan Rimm-Kaufman, who shaped my career tremendously.
 
 I joined Alan in 2006 at the Rimm-Kaufman Group, a bootstrapped startup he founded in Charlottesville, Virginia. Alan had an infectious love of life and was unstoppably energetic. He’d enter a room with his face lit up, bubbling with an idea he couldn’t resist sharing. He was unable to stand still. He hopped around like a soccer goalie.
 
