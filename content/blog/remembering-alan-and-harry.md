@@ -6,7 +6,7 @@ categories:
 - Leadership
 description: 'Note to self: Why are you still talking? Start now! Do it!'
 image: media/2016/11/alan-rimm-kaufman-harry-weller.png
-draft: true
+draft: false
 
 ---
 Harry Weller died suddenly this week. Harry was one of the best venture capital investors in history. He led NEA’s investment in my company, VividCortex. Harry was an advocate and mentor to me, but he was more: in both life and death, he reminded me of Alan Rimm-Kaufman, a boss and mentor who died a handful of years ago.
