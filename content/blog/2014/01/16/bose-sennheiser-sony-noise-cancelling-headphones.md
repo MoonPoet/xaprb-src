@@ -1,13 +1,16 @@
 ---
-title: "A review of Bose, Sony, and Sennheiser noise-cancelling headphones"
-date: "2014-01-16"
-description: "Why I keep coming back to Sennheiser headphones no matter how many pairs of Bose I own"
-image: /media/2014/01/sennheiser-pxc-450.png
-url: /blog/2014/01/16/bose-sennheiser-sony-noise-cancelling-headphones/
+title: A review of Bose, Sony, and Sennheiser noise-cancelling headphones
+date: '2014-01-16T00:00:00+00:00'
+description: Why I keep coming back to Sennheiser headphones no matter how many pairs
+  of Bose I own
+image: media/2014/01/sennheiser-pxc-450.png
+url: "/blog/2014/01/16/bose-sennheiser-sony-noise-cancelling-headphones/"
 categories:
-  - Music
-  - Hardware
-  - Reviews
+- Music
+- Hardware
+- Reviews
+draft: false
+
 ---
 I've used active noise-cancelling headphones for over ten years now, and have owned several pairs of Bose, one of Sony, and most recently a pair of Sennheiser headphones.
 
@@ -25,10 +28,10 @@ I'm sure you're familiar with [Bose QuietComfort](http://www.amazon.com/Bose-Qui
 
 * They're not very good quality. I've worn out two pairs and opted to sell the third pair that Bose sent me as a replacement. Various problems occurred, including torn speakers that buzzed and grated. I just got tired of sending them back to Bose for servicing.
 * They're more expensive than I think they're worth, especially given the cheap components used.
-* They don't sound bad -- but to my ears they still have the classic Bose fairy-dust processing, which sounds rich and pleasant at first but then fatigues me.
+* They don't sound bad---but to my ears they still have the classic Bose fairy-dust processing, which sounds rich and pleasant at first but then fatigues me.
 * They produce a sensation of suction on the eardrums that becomes uncomfortable over long periods of time.
 * They can't be used in non-cancelling mode. In other words, if the battery is dead, they're unusable.
-* On a purely personal note, I think Bose crosses the line into greed and jealousy. I know this in part because I used to work at Crutchfield, and saw quite a bit of interactions with Bose. As an individual -- well, try selling a pair of these on eBay, and you'll see what I mean. I had to jump through all kinds of hoops after my first listing was cancelled for using a stock photo that eBay themselves suggested and provided in the listing wizard. [Here](http://cgi3.ebay.com/ws/eBayISAPI.dll?ViewUserPage&userid=Bosetracker) is the information the take-down notice directed me to.
+* On a purely personal note, I think Bose crosses the line into greed and jealousy. I know this in part because I used to work at Crutchfield, and saw quite a bit of interactions with Bose. As an individual---well, try selling a pair of these on eBay, and you'll see what I mean. I had to jump through all kinds of hoops after my first listing was cancelled for using a stock photo that eBay themselves suggested and provided in the listing wizard. [Here](http://cgi3.ebay.com/ws/eBayISAPI.dll?ViewUserPage&userid=Bosetracker) is the information the take-down notice directed me to.
 
 On the plus side, the fit is very comfortable physically, they cancel noise very well, and they're smaller than some other noise-cancelling headphones. Also on the plus side, every time I've sent a pair in for servicing, Bose has just charged me $100 and sent me a new pair.
 
