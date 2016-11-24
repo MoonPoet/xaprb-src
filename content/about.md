@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About and Contact Info"
 date: "2005-01-01"
 menu: "main"
 ---
@@ -12,9 +12,15 @@ A few words about me. I am Baron Schwartz, cofounder of [VividCortex](https://vi
 
 In addition to my writing, I've created quite a bit of open-source software. I speak frequently at industry events, conferences focused on databases, open-source and DevOps, and inside major corporations such as Google. Please contact me if you would like me to address your organization.
 
-You can contact me like this: `SELECT REVERSE( 'moc.brpax@norab');` Please do not ask me about advertising or guest posting on this blog, and please don't send me solicitations for service provider offerings, outsourcing, etc. I will mark your email as spam.
+You can contact me like this: `SELECT REVERSE( 'moc.brpax@norab');`. My work
+email is `SELECT REVERSE('moc.xetrocdiviv@norab');`.
 
-I also invite you to connect with me on [Twitter](http://twitter.com/xaprb) and [LinkedIn](http://www.linkedin.com/in/xaprb).
+I also invite you to connect with me on:
+
+* [Twitter](http://twitter.com/xaprb)
+* [LinkedIn](http://www.linkedin.com/in/xaprb)
+* [Keybase](https://keybase.io/xaprb)
+* [Signal](https://whispersystems.org/)
 
 Some of the links on my blog are "affiliate links." This means if you
 click on the link and purchase the item, I will receive an affiliate

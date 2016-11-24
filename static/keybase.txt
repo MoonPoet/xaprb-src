@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/xaprb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.xaprb.com
+  * I am xaprb (https://keybase.io/xaprb) on keybase.
+  * I have a public key with fingerprint E877 C582 9D0E 5E8A 3AE1  BC4E D14D 8893 201A BAA0
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b72c8b3826aa997b9062cf8f29e749d6266397d86e245309a0be47be0a1b16140a",
+            "fingerprint": "e877c5829d0e5e8a3ae1bc4ed14d8893201abaa0",
+            "host": "keybase.io",
+            "key_id": "d14d8893201abaa0",
+            "kid": "0101b72c8b3826aa997b9062cf8f29e749d6266397d86e245309a0be47be0a1b16140a",
+            "uid": "5a4853431c9b909e3da31965d4643b00",
+            "username": "xaprb"
+        },
+        "service": {
+            "hostname": "www.xaprb.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1480012542,
+    "expire_in": 157680000,
+    "prev": "02bdd1bf13b637fb5b70067e5373519eca711fcf1dffd484e0479ecdf5bed757",
+    "seqno": 36,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIoAnicrVJbSBRRGF7LirabFAZaVAxRUbadM7czs2ERBEUPkZIWaG3nzDmjg+vO
+OjPrWqZUQkEUFEkSImVUdiUSLCHC7IrkWnQhulAREQliG1FUD9mZxd567Olw/u/y
+f//Pf2fK2EAwawI5cO/isZa5WQ96jyYCm5H4u14gNt0uhOuFKpZ5WJQy14tUWVQI
+CwACSJBoaETSRBVjXUdEB6pomJop6gzJOlVFVZV0RDWVibIiAR0DwmREGMCQQBXK
+AAsFgmnFKpgTd6yYx22ZhpChaKJOAVOYhiXMIDFkRqFMNU2XRAAxwRhwYaXt+goe
+jmCXhSyb1/gnkon3D/5/zp3I2ClY1hRJlqChcxudSRRLUFcVKquyRIDfN+EyJ4ar
+GWfX4bhDhIYCgZdqLYP5W/XHGIWTyWQoQwkZdjVXxh3bsw07yqFKz4u7YV/qbY9n
+uIxERl0ixIpRvkWuqGWOa9kxIQw50/As3xbKGgBQVGSxQGB1ccthEctnKEjlAAB+
+H1brr0YklEJiQomoEjKJQhAAKmKKhCQF6szACELTMCE1TSprMgMy4lVqKoRRpCDB
+n6smZgthSeU5cQX3dK2KGPYSDhMabt0szw5kBQPjx43xzysQnJjz9+iWnpkwsnXg
+l1fX7nZPE4+k+y6HSs99Lzm0ryhlrzBPnbbS5/cMrR60d3y8lbdv1bw1YFOHciXZ
+0pqdl3vybPfqYM7wUGNRsuhHV2dg6qxQ/5nU5fSbPa/bGxZObt06ven2ps+trQNa
+3/qCyuP1J3ZfLA1efz8nsGvkUPHP/Nllrzf+arp28MDjXFDd1jmQfiL3DM2IPx/z
+9H7Hy96dNzasTc184VzdPS5VXPWw63bZo+7sSyP7v174XjOpJbf505anUxZEv7Xp
+Kz70X5vU8ezL9Hy8pXj58OLJPTMK3dTXNcsKx7P6ruKFg4d/N47tctv31rx6ezda
+vuiS/vzdkmZt/pFliWnbmkuerFzX9AfMXUJS
+=W7ph
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xaprb
+
+==================================================================
+
