@@ -62,10 +62,12 @@ I was devastated at Alan’s death. It was the first time anyone I cared about h
 
 ### Alan and Harry’s Legacy
 
+When Harry died, a flood of thoughts and feelings came back: all of the things I'd processed after Alan's death. I was reminded of what came from that, my own growth, how the experience of knowing Alan changed me. There are so many parallels in the brief time I had with Harry.
+
 Alan and Harry were intensely focused on all of life, and accomplished extraordinary things. They live on through family, work, religious community, and many other ways including me. I am part of their legacy, and I try to honor them by doing what they did: greet each day with joy, optimism, and energy. Put the pedal to the metal and don’t even _think_ about the brakes.
 
 I was looking forward to seeing Harry soon, and telling him what’s taking shape right now. But I don’t need to, because I already know what he’d do. He’d cheer me, because it’s risky and gutsy and crazy and _of course_ it will work! He’d tell me damn the torpedoes and full speed ahead, he’d tell me to _run, run, run!_ and do it before anyone else does. I know Alan would say exactly the same thing.
 
-Words can never express my gratitude to Alan and Harry. Words are puny. You know what’s sufficient? Actions, and actions alone.
+Words can never express my gratitude to Alan and Harry. Words are feeble. You know what’s sufficient? Actions, and actions alone.
 
 _PS: To the countless others who've also believed, supported, helped, and encouraged me: thank you, it means more than I can say, but watch me, and I'll put my gratitude into action; and someday I hope I can do as you've done, too._
