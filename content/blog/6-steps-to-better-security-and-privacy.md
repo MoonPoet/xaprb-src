@@ -5,7 +5,7 @@ author: Baron Schwartz
 categories:
 - Life Hacking
 - Security
-description: ''
+description: 'VPN, Keybase, Signal, and more: take these 6 steps to improve your digital security.'
 image: media/2016/11/blue-abstract-glass-balls.jpg
 draft: false
 
