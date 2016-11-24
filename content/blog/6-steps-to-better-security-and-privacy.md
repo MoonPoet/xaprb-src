@@ -7,7 +7,7 @@ categories:
 - Security
 description: ''
 image: media/2016/11/blue-abstract-glass-balls.jpg
-draft: true
+draft: false
 
 ---
 I wrote [previously](/blog/2013/12/18/secure-your-accounts-and-devices/) about securing your digital life. Technology and digital threats are advancing so fast that we're almost inevitably all going to be attacked in some way. Here are a few more steps I've taken recently.
@@ -23,7 +23,7 @@ To repeat some of the recommendations from my previous post, you should absolute
 * long, strong, randomly generated, unique, never-reused passwords
 * full-device/full-disk encryption on hard drives, laptops, tablets, phones etc
 
-Although I don't think it is realistic to think we can avert a catastrophic attack forever on a personal or global scale (think "digital 9/11"), I think mass attacks against easily identifiable vulnerable populations are much more common and damaging, so here are some additional steps to avoid being the "tallest poppy."
+Although I don't think it is realistic to think we can avert a catastrophic attack forever on a personal or global scale (think "digital 9-11"), I think mass attacks against easily identifiable vulnerable populations are much more common and damaging, so here are some additional steps to avoid being the "tallest poppy."
 
 ### 1. Use a VPN (It's Easy)
 
@@ -31,13 +31,13 @@ When you access the internet or use an app, you're opening a series of data conn
 
 A VPN is a *big* step up in security and privacy. For example:
 
-* A VPN can prevent people snooping on what you're doing if you're connected to an insecure WiFi point.
+* A VPN can prevent people snooping on what you're doing if you're connected to an insecure WiFi point at the airport or coffee shop.
 * A VPN can prevent your internet service provider from logging and inspecting your browsing or other usage---some internet service providers even modify what you browse, injecting ads, tracking, and other stuff into websites!
 * If someone hacks into your home router or cable modem, they won't be able to intercept VPN-tunneled traffic before it leaves the house.
 
 These are really legitimate things to worry about: millions of cheap, old, unsecured, underscrutinized devices such as routers and modems are sitting exposed to the internet, and tons of them have known security holes.
 
-VPNs sound obscure and hard to set up, but they're really not. You can get a subscription to a VPN service easily and cheaply. I use [Private Internet Access](https://www.privateinternetaccess.com/) and there are many others. Just search and read ratings from a few objective review sites.
+VPNs sound obscure and hard to set up, but they're not. You can get a subscription to a VPN service easily and cheaply. I use [Private Internet Access](https://www.privateinternetaccess.com/) and there are many others. Just search and read ratings from a few objective review sites.
 
 A VPN service is also flexible. You can use a standard VPN client to connect; you don't have to use the one they probably provide for you. I use Tunnelblick to connect to Private Internet Access, for example, because Tunnelblick is open source so I trust it more, and I already use it for other VPNs I connect to.
 
@@ -58,7 +58,9 @@ I'm not sure I have the right answer for this yet. Please comment if you have a 
 
 ### 3. Use Signal or WhatsApp
 
-We really, really, really need to normalize encryption as a global society. Unencrypted communications needs to become weird, and encrypted needs to become easy and expected. Right now it's the reverse, and people who use encryption for some types of communication are outliers. We need herd immunity.
+Encryption provides a host of benefits. We really, really, really need to normalize encryption as a global society. Plaintext communication needs to become weird, and encrypted needs to become easy and expected.
+
+Right now it's the reverse, and people who use encryption for some types of communication are outliers. We need herd immunity.
 
 WhatsApp and several other messenger apps can use end-to-end encryption for text messages and the like. Sometimes by default, sometimes as a configuration option. Signal is a popular option; I like that it's open-source so it's verifiable.
 
@@ -68,12 +70,15 @@ One way of normalizing encryption, and making yourself easily and publicly reach
 
 1. It creates trustworthy identification: I am who you think I am, so you can trust that you're communicating with me, not someone impersonating me.
 2. It provides a trustworthy way to encrypt that communication: if you encrypt something meant for me, only I can decrypt it.
+3. It ensures that you receive exactly what I communicate to you, without modification.
 
-The more people who join Keybase, the closer we are to critical mass and adoption thresholds; the closer we are to practical herd immunity.
+Keybase is very popular among engineers and techies, but we need more. The more people who join Keybase, the closer we are to critical mass and adoption thresholds; the closer we are to practical herd immunity.
 
 ### 5. Use HTTPS On Your Blog
 
 If you have a personal blog or website, please use HTTPS (SSL) for it. There are several ways to do this. I use [Netlify](https://www.netlify.com/) to host this blog, so SSL is provided for me. You can also use [Let's Encrypt](https://letsencrypt.org/). Setting up SSL on a personal site used to be hard. It's now so easy that nobody should use plain-HTTP anymore.
+
+Why? Again, encryption needs to become normalized and expected everywhere. Even if you're just reading a blog or something, having an HTTPS connection will prevent someone from snooping or modifying the information that is exchanged between your device and the blog server.
 
 ### 6. Don’t Use Fingerprint Unlock
 
