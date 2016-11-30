@@ -5,8 +5,9 @@ author: Baron Schwartz
 categories:
 - Life Hacking
 - Security
-description: 'VPN, Keybase, Signal, and more: take these 6 steps to improve your digital security.'
-image: media/2016/11/blue-abstract-glass-balls.jpg
+description: 'VPN, Keybase, Signal, and more: take these 6 steps to improve your digital
+  security.'
+image: ''
 draft: false
 
 ---
@@ -78,7 +79,9 @@ Keybase is very popular among engineers and techies, but we need more. The more 
 
 If you have a personal blog or website, please use HTTPS (SSL) for it. There are several ways to do this. I use [Netlify](https://www.netlify.com/) to host this blog, so SSL is provided for me. You can also use [Let's Encrypt](https://letsencrypt.org/). Setting up SSL on a personal site used to be hard. It's now so easy that nobody should use plain-HTTP anymore.
 
-Why? Again, encryption needs to become normalized and expected everywhere. Even if you're just reading a blog or something, having an HTTPS connection will prevent someone from snooping or modifying the information that is exchanged between your device and the blog server.
+Why? Again, encryption needs to become normalized and expected everywhere. Your website's users deserve it. Even if they're just reading a blog, having an HTTPS connection will prevent someone from snooping or modifying the information that is exchanged between their device and the blog server.
+
+Google has a nice article about [why every site should use HTTPS](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https).
 
 ### 6. Don’t Use Fingerprint Unlock
 
