@@ -1,10 +1,11 @@
 ---
 title: Email snooping is a small fraction of the story
-date: "2013-07-17"
-url: /blog/2013/07/17/email-snooping-is-a-small-fraction-of-the-story/
+date: '2013-07-17T00:00:00+00:00'
+url: "/blog/2013/07/17/email-snooping-is-a-small-fraction-of-the-story/"
 categories:
-  - Commentary
-  - Open Source
+- Security
+draft: false
+
 ---
 I wrote previously about why privacy and security [require open-source, inspectable hardware and software](/blog/2013/07/05/without-free-software-and-hardware-privacy-is-impossible/ "Without free software and hardware, privacy is impossible") to run on, and [software that makes encryption the default](/blog/2013/07/06/privacy-is-impossible-unless-its-the-default/ "Privacy is impossible unless it’s the default") so everyone uses it. My example application was email, and I concluded that it's currently impractical to think that we can block government snooping on a large scale even in the domain of email. 
 
