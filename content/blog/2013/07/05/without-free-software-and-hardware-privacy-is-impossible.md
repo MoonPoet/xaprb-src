@@ -1,9 +1,11 @@
 ---
 title: Without free software and hardware, privacy is impossible
-date: "2013-07-05"
-url: /blog/2013/07/05/without-free-software-and-hardware-privacy-is-impossible/
+date: '2013-07-05T00:00:00+00:00'
+url: "/blog/2013/07/05/without-free-software-and-hardware-privacy-is-impossible/"
 categories:
-  - Commentary
+- Security
+draft: false
+
 ---
 The recent revelations about the NSA's wide-ranging surveillance of Americans and non-Americans alike has spurred a lot of outcry. Of course, some people are crying for legal solutions, but there's absolutely no chance of any present or future elected official changing or stopping it (it's already completely illegal and always has been, so more laws can do nothing but poke loopholes in existing laws forbidding surveillance).
 
