@@ -1,9 +1,11 @@
 ---
-title: "Privacy is impossible unless it's the default"
-date: "2013-07-06"
-url: /blog/2013/07/06/privacy-is-impossible-unless-its-the-default/
+title: Privacy is impossible unless it's the default
+date: '2013-07-06T00:00:00+00:00'
+url: "/blog/2013/07/06/privacy-is-impossible-unless-its-the-default/"
 categories:
-  - Commentary
+- Security
+draft: false
+
 ---
 This is a follow-up to my last post, in which I asserted that [without free software and hardware, privacy is impossible](/blog/2013/07/05/without-free-software-and-hardware-privacy-is-impossible/ "without free software and hardware, privacy is impossible"). Suppose we have trustworthy, free hardware and software. What else is needed to thwart efforts to monitor our everyday behavior on a massive scale?
 
