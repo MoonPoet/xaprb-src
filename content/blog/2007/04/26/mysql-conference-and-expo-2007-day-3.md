@@ -80,7 +80,7 @@ What fun! I haven't been this excited since my days at University, scribbling no
 
 ### Dinner
 
-I went with Martin Friebe for supper at a Thai restaurant. On the way there we got talking about table checksum algorithms to detect when a slave is or isn't in sync with its master. Martin had some great ideas, which I will implement into [MySQL Table Checksum](http://code.google.com/p/maatkit) to provide another way for you to guarantee two tables have the same data. This particular method will have lower impact on the servers (no locking) and guarantee a consistent read at exactly the same point in the binlog. It will be very useful in certain circumstances. Thank you Martin for the company and the great conversation!
+I went with Martin Friebe for supper at a Thai restaurant. On the way there we got talking about table checksum algorithms to detect when a replica is or isn't in sync with its master. Martin had some great ideas, which I will implement into [MySQL Table Checksum](http://code.google.com/p/maatkit) to provide another way for you to guarantee two tables have the same data. This particular method will have lower impact on the servers (no locking) and guarantee a consistent read at exactly the same point in the binlog. It will be very useful in certain circumstances. Thank you Martin for the company and the great conversation!
 
 ### Quiz Show
 

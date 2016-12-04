@@ -16,7 +16,7 @@ Odd-numbered releases, such as 1.3.0, contain the code that will eventually beco
 
 The development branch of innotop is geared towards the eventual goal of monitoring a large number of servers at once. While there is much work to be done, the new features are a significant step towards the goal, in my opinion. With innotop 1.3.0 you can monitor multiple servers, organize them into groups, and switch between groups easily. If you don't have that many servers to monitor, and don't need to group them together, just press `@` to define and choose among server connections. If you're interested in grouping servers together, take a look at what the `#` and `TAB` keys do.
 
-Monitoring lots of servers at once makes life much easier if you manage a lot of machines that are involved in replication. To that end, I've also added a new mode to monitor master and slave status. You can see master and slave status in the same view; by default the data is grouped into slave SQL status, slave I/O status, and master status. This gives you a quick glance at whether the slaves are running, how far they lag the master, and so forth. Press `M` to enter this mode.
+Monitoring lots of servers at once makes life much easier if you manage a lot of machines that are involved in replication. To that end, I've also added a new mode to monitor master and replica status. You can see master and replica status in the same view; by default the data is grouped into replica SQL status, replica I/O status, and master status. This gives you a quick glance at whether the replicas are running, how far they lag the master, and so forth. Press `M` to enter this mode.
 
 As always, you can press `?` at any time for context-sensitive help on these and other features.
 

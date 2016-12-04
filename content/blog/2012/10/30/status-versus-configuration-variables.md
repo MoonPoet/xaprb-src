@@ -10,7 +10,7 @@ MySQL's SHOW STATUS and SHOW VARIABLES commands (or queries against the correspo
 Here's a short list of some status counters that I think are really better off as configuration variables:
 
 *   Innodb\_page\_size
-*   Slave\_heartbeat\_period
+*   Replica\_heartbeat\_period
 *   Ssl_cipher
 *   Ssl\_cipher\_list
 *   Ssl\_ctx\_verify_depth
@@ -21,7 +21,7 @@ Here's a short list of some status counters that I think are really better off a
 *   Ssl\_verify\_mode
 *   Ssl_version
 
-Most of those are legacy, but Slave\_heartbeat\_period is a recent addition.
+Most of those are legacy, but Replica\_heartbeat\_period is a recent addition.
 
 Can you think of others? What are your favorite oddities of SHOW STATUS and SHOW VARIABLES?
 

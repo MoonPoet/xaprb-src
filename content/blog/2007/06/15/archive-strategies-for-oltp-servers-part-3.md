@@ -29,7 +29,7 @@ Your archive might also be non-transactional. If you're using MySQL, you should 
 
 #### Use replication to unload the OLTP server
 
-One of the most effective ways to archive an OLTP server without impacting it too much is to do the hard work of finding and inserting on a slave server, then performing the delete on the master and letting it flow through replication. Here's an example from a past employer: we replicated the order table to a "transfer" database on the data warehouse server. A job on the data warehouse server looked for orders that had completed and shipped, and thus could be archived. It copied these in a transaction to the long-term storage, then deleted on the OLTP server. This delete flowed through replication back to the data warehouse, and removed the rows from the transfer database.
+One of the most effective ways to archive an OLTP server without impacting it too much is to do the hard work of finding and inserting on a replica server, then performing the delete on the master and letting it flow through replication. Here's an example from a past employer: we replicated the order table to a "transfer" database on the data warehouse server. A job on the data warehouse server looked for orders that had completed and shipped, and thus could be archived. It copied these in a transaction to the long-term storage, then deleted on the OLTP server. This delete flowed through replication back to the data warehouse, and removed the rows from the transfer database.
 
 ### The archive server
 

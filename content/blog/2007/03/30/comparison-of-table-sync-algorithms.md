@@ -423,6 +423,6 @@ There is one caveat. I have benchmarked the "find differences" aspect of the too
 
 ### Conclusions
 
-These results are encouraging. They tell me that I've designed a good algorithm for fixing slaves that drift, and they reinforced my belief that the two algorithms are highly effective for different scenarios.
+These results are encouraging. They tell me that I've designed a good algorithm for fixing replicas that drift, and they reinforced my belief that the two algorithms are highly effective for different scenarios.
 
 

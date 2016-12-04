@@ -39,7 +39,7 @@ Changelog for mk-table-sync:
 2007-12-27: version 1.0.2
 
    * Syncing via replication did not use REPLACE on the master.
-   * --transaction disabled waiting for a slave to catch up.
+   * --transaction disabled waiting for a replica to catch up.
    * Allow one DSN without --replicate, as long as --synctomaster is given.
    * Added the Nibble sync algorithm.
    * MASTER_POS_WAIT() failed when the server was not a master (bug #1855480).

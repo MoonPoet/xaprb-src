@@ -22,7 +22,7 @@ I just uploaded the 1.0.0 release of my [MySQL templates for Cacti](http://code.
 	* Fixed when binary log is not enabled.
 	* Fixed some caching issues.
 	* Fixed make-template.pl issues when downloaded from SVN.
-	* Replication graph shows only slave_lag instead of Seconds_behind_master
+	* Replication graph shows only replica_lag instead of Seconds_behind_master
 	* Generate a version for Cacti 0.8.6i.
 	* Support generating custom versions with make-template.pl.</pre>
 

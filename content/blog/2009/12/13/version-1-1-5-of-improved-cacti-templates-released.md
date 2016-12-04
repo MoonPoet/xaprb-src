@@ -22,7 +22,7 @@ The full changelog follows:
 
 <pre>2009-12-13: version 1.1.5
 
-  * Support for getting slave lag via mk-heartbeat was broken (issue 87).
+  * Support for getting replica lag via mk-heartbeat was broken (issue 87).
   * The memcached stats command hung because it lacked "quit" (issue 65).
   * The COUNTER data type caused spikes; switched to DERIVE instead (issue41).
   * LOCK WAIT in an InnoDB transaction could cause an error (issue 91).

@@ -14,7 +14,7 @@ To get started, I just read through Giuseppe's Sandbox article on O'Reilly Datab
 
 After that, all I had to do was change to the sandbox directory and say `./express_install.pl <version>` for each version, and it set everything up for me. Boy, was that easy! Before I did this, I had spent a couple hours reading through the manual's instructions on how to get many servers on one machine -- this was much faster and easier.
 
-The next step for me was setting up some of the servers as slaves of others. I needed to modify the config files to set the server-id, and to make them listen to TCP connections, but that was trivial.
+The next step for me was setting up some of the servers as replicas of others. I needed to modify the config files to set the server-id, and to make them listen to TCP connections, but that was trivial.
 
 Then I pointed innotop at all of them and started finding bugs in innotop (and a few in MySQL's documentation too). Who knew [SHOW OPEN TABLES behaved so differently in 3.23.58](http://bugs.mysql.com/bug.php?id=27706)? It was high time I did this; I actually feel a little silly for putting it off so long.
 

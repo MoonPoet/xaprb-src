@@ -7,7 +7,7 @@ categories:
   - Open Source
 ---
 
-I've just released changes to two of the tools in MySQL Toolkit. MySQL Table Checksum got some convenient functionality to help you recursively check slaves for bad replicated checksum chunks. MySQL Archiver got statistics-gathering functionality to help you optimize your archiving and purging jobs, plus a few important bug fixes.
+I've just released changes to two of the tools in MySQL Toolkit. MySQL Table Checksum got some convenient functionality to help you recursively check replicas for bad replicated checksum chunks. MySQL Archiver got statistics-gathering functionality to help you optimize your archiving and purging jobs, plus a few important bug fixes.
 
 Changes in MySQL Archiver:
 
@@ -19,7 +19,7 @@ Changes in MySQL Archiver:
 
 Changes in MySQL Table Checksum:
 
-*   Added &#8211;replcheck option to check &#8211;replicate results on slaves.
+*   Added &#8211;replcheck option to check &#8211;replicate results on replicas.
 *   Added &#8211;recursecheck option to do &#8211;replcheck recursively.
 
 

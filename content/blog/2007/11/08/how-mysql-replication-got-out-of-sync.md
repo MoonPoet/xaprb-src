@@ -5,7 +5,7 @@ url: /blog/2007/11/08/how-mysql-replication-got-out-of-sync/
 categories:
   - Databases
 ---
-I created [MySQL Table Checksum](http://code.google.com/p/maatkit/) because I was certain replication slaves were slowly drifting out of sync with their masters, and there was no way to prove it. Once I could prove it, I was able to show that replication gets out of sync for lots of people, lots of times. (If you really want to hear war stories, you should probably talk to one of the MySQL support staff or consulting team members; I'm sure they see this a lot more than I do).
+I created [MySQL Table Checksum](http://code.google.com/p/maatkit/) because I was certain replication replicas were slowly drifting out of sync with their masters, and there was no way to prove it. Once I could prove it, I was able to show that replication gets out of sync for lots of people, lots of times. (If you really want to hear war stories, you should probably talk to one of the MySQL support staff or consulting team members; I'm sure they see this a lot more than I do).
 
 I finally figured out what was causing one of my most persistent and annoying out-of-sync scenarios. It turns out to be nothing earth-shaking; it's just an easy-to-overlook limitation of statement-based replication. You could call it a bug, but as far as I can see, there's no way to fix it with statement-based replication. (I'd love to be proven wrong). Read on for the details.
 
@@ -43,7 +43,7 @@ Now the application can find out what work it claimed with a simple `SELECT` wit
 
 ### The problem
 
-The problem seemed to be that some binary log events were not getting replayed on the slave. This table accumulated extra rows on the slaves, as though the DELETE statements weren't getting to the slaves. To test this, I compared the logs and determined that it's not a logging issue; the binary log events are getting to the slave and replaying just fine. I can see them in the slave's relay log and in the slave's binary log (I have `log_slave_updates` enabled).
+The problem seemed to be that some binary log events were not getting replayed on the replica. This table accumulated extra rows on the replicas, as though the DELETE statements weren't getting to the replicas. To test this, I compared the logs and determined that it's not a logging issue; the binary log events are getting to the replica and replaying just fine. I can see them in the replica's relay log and in the replica's binary log (I have `log_slave_updates` enabled).
 
 So if that's not the problem, what is?
 
@@ -51,9 +51,9 @@ So if that's not the problem, what is?
 
 I already showed you the bug. If you didn't see it, well, neither did I -- for a year.
 
-If you still don't see it, here's a hint: the slaves get out of sync in totally different ways. In other words, the slaves don't even match each other after a little while.
+If you still don't see it, here's a hint: the replicas get out of sync in totally different ways. In other words, the replicas don't even match each other after a little while.
 
-The problem is that `ORDER BY... LIMIT` is non-deterministic. If several rows are tied for priority, the slaves might (and do!) order them differently than the master did. Then the the `UPDATE` statement claims different rows on the slaves. Some rows that have been claimed on the master are still marked as 0 on the slave. Then they don't get deleted by the DELETE statement. I was able to confirm this by running a script that does a checksum on this table every few minutes, then as soon as it finds differences dumps the whole table on both the master and the slave. I was able to find some rows that the application hadn't deleted yet. Sure enough, some of them weren't claimed on the slave.
+The problem is that `ORDER BY... LIMIT` is non-deterministic. If several rows are tied for priority, the replicas might (and do!) order them differently than the master did. Then the the `UPDATE` statement claims different rows on the replicas. Some rows that have been claimed on the master are still marked as 0 on the replica. Then they don't get deleted by the DELETE statement. I was able to confirm this by running a script that does a checksum on this table every few minutes, then as soon as it finds differences dumps the whole table on both the master and the replica. I was able to find some rows that the application hadn't deleted yet. Sure enough, some of them weren't claimed on the replica.
 
 ### The fix
 

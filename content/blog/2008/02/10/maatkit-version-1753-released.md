@@ -7,7 +7,7 @@ categories:
   - Open Source
 ---
 
-This release contains minor bug fixes and new features. Besides the little bug fixes, there's a fun new feature in mk-heartbeat: it can auto-discover slaves recursively, and show the replication delay on all of them, to wit:
+This release contains minor bug fixes and new features. Besides the little bug fixes, there's a fun new feature in mk-heartbeat: it can auto-discover replicas recursively, and show the replication delay on all of them, to wit:
 
 <pre>baron@keywest ~ $ mk-heartbeat --check --host master -D rkdb --recurse 10
 master 0
@@ -23,7 +23,7 @@ Nothing else in this release is very exciting. I just wanted to get the bug fixe
 
 2008-02-10: version 1.0.7
 
-   * Added --recurse option to check slaves to any depth.
+   * Added --recurse option to check replicas to any depth.
    * Made mk-heartbeat explicitly close DB connection when done.
 
 Changelog for mk-parallel-dump:

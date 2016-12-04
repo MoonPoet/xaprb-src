@@ -78,8 +78,8 @@ Changelog for mk-slave-delay:
 2008-06-02: version 1.0.7
 
    * Updated the documentation to use POD.
-   * The slave could wait forever if the I/O thread was stopped.
-   * The slave could wait forever on the master's last event (bug #1959496).
+   * The replica could wait forever if the I/O thread was stopped.
+   * The replica could wait forever on the master's last event (bug #1959496).
 
 Changelog for mk-slave-find:
 
@@ -92,7 +92,7 @@ Changelog for mk-slave-move:
 2008-06-02: version 0.9.1
 
    * Command-line parsing was removing an expected DSN (bug #1960142).
-   * The slave was not stopped before CHANGE MASTER TO (bug #1960142).
+   * The replica was not stopped before CHANGE MASTER TO (bug #1960142).
    * DSNs without a port caused a crash (bug #1960142).
    * Converted to use POD for command-line options.
 

@@ -31,7 +31,7 @@ So having done that, how does SecoBackup stack up against my list of ten things 
 5.  What other effects are there on MySQL? I've seen systems that do a RESET MASTER, which immediately breaks replication. Are there any FLUSH commands at all, like FLUSH LOGS? **Answer: None of the above.**
 6.  How does the system guarantee that you can perform point-in-time recovery? **Answer: It does not. It doesn't capture the binary log positions.**
 7.  How does the system guarantee consistency with the binary log, InnoDB logs, and replication? **Answer: It does not. It doesn't capture the binary log positions.**
-8.  Can you use the system to set up new MySQL replication slaves? How? **Answer: No. It does not capture the master log positions.**
+8.  Can you use the system to set up new MySQL replication replicas? How? **Answer: No. It does not capture the master log positions.**
 9.  Does the system verify that the backup is restorable, e.g. does it run InnoDB recovery before declaring success? **Answer: It does not verify backups.**
 10. Does anyone stand behind it with support, and guarantee working, recoverable backups? How strong is the legal guarantee of this and how much insurance do they have? **Answer: I'll skip this question.**
 

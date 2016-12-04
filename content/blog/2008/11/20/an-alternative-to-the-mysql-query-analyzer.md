@@ -61,8 +61,8 @@ Let's see a feature comparison. I've chosen features that were promoted in the t
 | Measures per-query full scans                                                            | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Measures per-query full joins                                                            | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Measures per-query sort merge passes                                                     | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
-| Measures queries executed by slave SQL thread<sup>[<a href="#footnote2">2</a>]</sup>     | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
-| Measures slave SQL thread utilization                                                    | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
+| Measures queries executed by replica SQL thread<sup>[<a href="#footnote2">2</a>]</sup>     | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
+| Measures replica SQL thread utilization                                                    | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Provides per-database stats                                                              | <input type="checkbox" checked="1" /> | <input type="checkbox" checked="1" /> |
 | Provides per-table stats<sup>[<a href="#footnote3">3</a>]</sup>                          | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Provides per-index stats                                                                 | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
@@ -80,7 +80,7 @@ Stay tuned. More is coming.
 </p>
 
 <p id="footnote2">
-  [2] The slave SQL thread's utilization is the amount of time it stays busy. This is different from measuring the queries the slave SQL thread executes. The Percona patches can do both; MySQL Query Analyzer does neither, since replication doesn't go through a proxy. Both are extremely useful in <a href="http://www.mysqlperformanceblog.com/2008/10/08/three-ways-to-know-when-a-mysql-slave-is-about-to-start-lagging/">predicting and measuring a replication slave's workload</a>.
+  [2] The replica SQL thread's utilization is the amount of time it stays busy. This is different from measuring the queries the replica SQL thread executes. The Percona patches can do both; MySQL Query Analyzer does neither, since replication doesn't go through a proxy. Both are extremely useful in <a href="http://www.mysqlperformanceblog.com/2008/10/08/three-ways-to-know-when-a-mysql-slave-is-about-to-start-lagging/">predicting and measuring a replication replica's workload</a>.
 </p>
 
 <p id="footnote3">

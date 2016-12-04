@@ -7,7 +7,7 @@ categories:
   - Open Source
 ---
 
-Maatkit contains essential command-line utilities for MySQL, such as a table checksum tool and query profiler. It provides missing features such as checking slaves for data consistency, with emphasis on quality and scriptability.
+Maatkit contains essential command-line utilities for MySQL, such as a table checksum tool and query profiler. It provides missing features such as checking replicas for data consistency, with emphasis on quality and scriptability.
 
 This release contains bug fixes and new features.
 

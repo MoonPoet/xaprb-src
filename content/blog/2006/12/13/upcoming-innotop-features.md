@@ -12,7 +12,7 @@ It's been a while since I released an update to the innotop InnoDB and MySQL mon
 2.  Connect to and monitor multiple servers simultaneously.
 3.  More powerful filtering to show only the data you care about. Built-in filters are applied by default, but you can define your own of course.
 4.  Highlighting based on user-defined criteria. Maybe you want a transaction to appear red if it has been active for more than a minute, or you want queries running on different servers to have different colors.
-5.  Easily monitor replication across many machines; watch master and slave status.
+5.  Easily monitor replication across many machines; watch master and replica status.
 6.  Readline support for easier configuration (tab-completion, etc).
 
 Those are just the major features. Many of you have requested features by e-mail, and I'm either building those now, or they're in the TODO list.

@@ -33,7 +33,7 @@ This release of the innotop MySQL and InnoDB monitor is a major upgrade in terms
 
 *   Column stabilizing for Q mode
 *   New color rules for T, Q, W modes
-*   Apply slave I/O filter to Q mode
+*   Apply replica I/O filter to Q mode
 *   Improve detection of server version and other meta-data
 *   Make connection timeout a config variable
 *   Improve cross-version-compatible SQL syntax
@@ -56,7 +56,7 @@ This release of the innotop MySQL and InnoDB monitor is a major upgrade in terms
 *   Add an expression to show how long until a transaction is finished
 *   Add skip_innodb as a global config variable
 *   Add '%' after percentages to help disambiguate (user-configurable)
-*   Add column to M mode to help see how fast slave is catching up to master
+*   Add column to M mode to help see how fast replica is catching up to master
 ### Bug fixes
 
 *   T and W modes had wrong value for wait_status column
@@ -69,7 +69,7 @@ This release of the innotop MySQL and InnoDB monitor is a major upgrade in terms
 *   &#8211;inc command-line option could not be negated
 *   InnoDB status parsing was not always parsing all needed information
 *   S mode (formerly G mode) could crash trying to divide non-numeric data
-*   M table didn't show Slave\_open\_temp_tables variable; incorrect lettercase
+*   M table didn't show Replica\_open\_temp_tables variable; incorrect lettercase
 *   DBD drivers with broken AutoCommit would crash innotop
 *   Some key bindings had incorrect labels
 *   Some config-file loading routines could load data for things that didn't exist

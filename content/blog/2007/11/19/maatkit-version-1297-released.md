@@ -20,7 +20,7 @@ Maatkit (formerly MySQL Toolkit) version 1297 contains a significant update to M
 * Removed --chunkcol, --chunksize-exact, --index options. 
 * --chunksize can be specified as a data size now. 
 * Improved chunking algorithm handles more cases and uses fewer chunks. 
-* Do not print --replcheck results for servers that are not slaves. 
+* Do not print --replcheck results for servers that are not replicas. 
 * Create only one DB connection for each host, not one per host/tbl/chunk. 
 * Code assumed backtick quoting, broke on SQL_MODE=ANSI (bug #1813030). 
 * There were many potential bugs with database and table name quoting. 

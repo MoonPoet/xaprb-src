@@ -24,13 +24,13 @@ Both algorithms are good for certain cases and poor for others.
 
 ### Methods to resolve the differences
 
-I implemented a variety of options to resolve the differences between the tables, including one that relies on replication, which is ideally suited for re-syncing slaves that have drifted without having to re-initialize them completely. There are also many options to control locking, waiting for the slave to catch up to the master, and so on. This part of the tool is not terribly difficult or complex, but it's something no one has quite done before to my knowledge.
+I implemented a variety of options to resolve the differences between the tables, including one that relies on replication, which is ideally suited for re-syncing replicas that have drifted without having to re-initialize them completely. There are also many options to control locking, waiting for the replica to catch up to the master, and so on. This part of the tool is not terribly difficult or complex, but it's something no one has quite done before to my knowledge.
 
 Work on this remains, however.
 
 ### The tool's present and future
 
-The documentation is incomplete as of yet, and there are some things I still want to implement, but I wanted to get it out (release early, release often). I have used the tool in lots of tests, and have not found anything incorrect yet, but that doesn't mean there are no bugs. I have also used it -- cautiously -- in production. I re-synced a table that had drifted out of sync on a slave.
+The documentation is incomplete as of yet, and there are some things I still want to implement, but I wanted to get it out (release early, release often). I have used the tool in lots of tests, and have not found anything incorrect yet, but that doesn't mean there are no bugs. I have also used it -- cautiously -- in production. I re-synced a table that had drifted out of sync on a replica.
 
 If you want to try it, I encourage you to run it in `--print` mode to begin with, and examine carefully the queries it emits. Its output is valid SQL, so you can actually execute the output to sync the destination table.
 

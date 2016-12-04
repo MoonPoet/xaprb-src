@@ -18,7 +18,7 @@ Still, I think the quality has increased a lot in the last 6 months or so, since
 
 ### mk-heartbeat
 
-Jeremy Cole and Six Apart originally contributed this tool. Since then I've added a lot more features, allowed a lot more control over how it works, and it even works on PostgreSQL now. As an example, I added features that make it easy to run every hour from a crontab. It daemonizes, runs in the background, and then quits automatically when the new instance starts. I use it in production to give me a reliable metric for how up-to-date a slave is. When I need to know absolutely "has this slave received this update," Seconds\_behind\_master won't do, for many reasons. Load balancing and lots of other things hinge on up-to-date slaves.
+Jeremy Cole and Six Apart originally contributed this tool. Since then I've added a lot more features, allowed a lot more control over how it works, and it even works on PostgreSQL now. As an example, I added features that make it easy to run every hour from a crontab. It daemonizes, runs in the background, and then quits automatically when the new instance starts. I use it in production to give me a reliable metric for how up-to-date a replica is. When I need to know absolutely "has this replica received this update," Seconds\_behind\_master won't do, for many reasons. Load balancing and lots of other things hinge on up-to-date replicas.
 
 ### mk-parallel-dump
 
@@ -26,7 +26,7 @@ I think this tool is probably the fastest, smartest way to do backups in tab-del
 
 ### mk-slave-restart
 
-I've been having a lot of trouble with relay log corruption, so unfortunately this tool has become necessary to use regularly in production. As a result I made it quite a bit smarter. It can detect relay log corruption, and instead of the usual skip-one-and-continue, it issues a CHANGE MASTER TO, so the slave will discard and re-fetch its relay logs. I've also made it capable of monitoring many slaves at once. (It discovers slaves via either SHOW SLAVE HOSTS or SHOW PROCESSLIST, so if you point it at a master, it can watch all the master's slaves with a single command).
+I've been having a lot of trouble with relay log corruption, so unfortunately this tool has become necessary to use regularly in production. As a result I made it quite a bit smarter. It can detect relay log corruption, and instead of the usual skip-one-and-continue, it issues a CHANGE MASTER TO, so the replica will discard and re-fetch its relay logs. I've also made it capable of monitoring many replicas at once. (It discovers replicas via either SHOW SLAVE HOSTS or SHOW PROCESSLIST, so if you point it at a master, it can watch all the master's replicas with a single command).
 
 ### mk-table-checksum
 
@@ -54,7 +54,7 @@ Two things: I'm focusing on quality, and I'm focusing on syncing running servers
 
 Once I have good-quality, well-tested code, I'll be able to speed it up. I know this because I'm currently doing some things I know are slower than they could be.
 
-But much more importantly, I've changed the whole angle of the tool. I want to be able to synchronize a busy master and slave, without locking tables, automatically ensuring that the data stays consistent and there are no race conditions. I do this with a lot of special tricks, such as syncing tables in small bits, using `SELECT FOR UPDATE` to lock only the rows I'm syncing, and so on. And I'm actively working to make the tool Do The Right Thing without needing 99 command-line arguments. (I think the latest release does this very well).
+But much more importantly, I've changed the whole angle of the tool. I want to be able to synchronize a busy master and replica, without locking tables, automatically ensuring that the data stays consistent and there are no race conditions. I do this with a lot of special tricks, such as syncing tables in small bits, using `SELECT FOR UPDATE` to lock only the rows I'm syncing, and so on. And I'm actively working to make the tool Do The Right Thing without needing 99 command-line arguments. (I think the latest release does this very well).
 
 Instead of "make the sync use as little network traffic as possible," I've changed the criteria of good-ness to "do it right, do it once, and don't get in the way."
 

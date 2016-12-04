@@ -35,7 +35,7 @@ Changelog for mysql-table-checksum:
 2007-09-01: version 1.1.14
 
    * Added documentation about the storage engine for the checksum table.
-   * The --replcheck option now checks the server and its slaves.
+   * The --replcheck option now checks the server and its replicas.
 
 Changelog for mysql-visual-explain:
 

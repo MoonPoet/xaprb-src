@@ -11,9 +11,9 @@ This release of MySQL Toolkit adds a new tool, fixes some minor bugs, and adds n
 
 ### New tool: MySQL Heartbeat
 
-This tool was contributed by [Proven Scaling](http://provenscaling.com/)'s [Jeremy Cole](http://jcole.us/) and [Six Apart](http://www.sixapart.com/). It measures replication delay on a slave, which can be daisy-chained to any depth. It does not rely on SHOW SLAVE STATUS, and in fact it doesn't even need the slave processes to be running. You could use it to measure replication delay on your own hand-rolled replication, if you wanted.
+This tool was contributed by [Proven Scaling](http://provenscaling.com/)'s [Jeremy Cole](http://jcole.us/) and [Six Apart](http://www.sixapart.com/). It measures replication delay on a replica, which can be daisy-chained to any depth. It does not rely on SHOW SLAVE STATUS, and in fact it doesn't even need the replica processes to be running. You could use it to measure replication delay on your own hand-rolled replication, if you wanted.
 
-The most common way to use it is to run one process to update a heartbeat on the master, and another to monitor the lag on a slave (you can run as many as you wish to monitor multiple slaves). By default it prints moving averages of delay over one, five and fifteen-minute time windows:
+The most common way to use it is to run one process to update a heartbeat on the master, and another to monitor the lag on a replica (you can run as many as you wish to monitor multiple replicas). By default it prints moving averages of delay over one, five and fifteen-minute time windows:
 
 <pre>0s [  0.00s,  0.00s,  0.00s ]
    0s [  0.00s,  0.00s,  0.00s ]
@@ -27,7 +27,7 @@ The most common way to use it is to run one process to update a heartbeat on the
 
 (of course, I couldn't resist making that configurable, so you can specify your own time windows).
 
-You can also run it as a daemon. Running the update process as a daemon is intuitive. Running the monitoring process isn't quite as obvious, because a daemon should re-open STDOUT to /dev/null. What you can do is give it the &#8211;file argument and it'll keep a file current with the most recent line of output, which you can check anytime you want to see how your slave has been doing over the last X time windows.
+You can also run it as a daemon. Running the update process as a daemon is intuitive. Running the monitoring process isn't quite as obvious, because a daemon should re-open STDOUT to /dev/null. What you can do is give it the &#8211;file argument and it'll keep a file current with the most recent line of output, which you can check anytime you want to see how your replica has been doing over the last X time windows.
 
 ### Changelog
 

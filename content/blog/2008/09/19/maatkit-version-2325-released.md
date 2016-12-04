@@ -9,7 +9,7 @@ categories:
   - Programming
 ---
 
-There's a new release with a lot of goodies -- speed, efficiency, user-friendliness, and new features. In particular some of [Percona's](http://www.percona.com/) clients have sponsored features for things they need such as the ability to more frequently verify that slaves are in sync with their masters. If you need features, please ask Percona about it.
+There's a new release with a lot of goodies -- speed, efficiency, user-friendliness, and new features. In particular some of [Percona's](http://www.percona.com/) clients have sponsored features for things they need such as the ability to more frequently verify that replicas are in sync with their masters. If you need features, please ask Percona about it.
 
 [Daniel Nichter](http://hackmysql.com/) has written most of the code for this release. Having a dedicated developer is really moving the project forward. Thanks Daniel!
 

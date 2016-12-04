@@ -63,7 +63,7 @@ Changelog for mysql-slave-delay:
 2007-08-23: version 1.0.0
 
    * MySQL socket connection option didn't work.
-   * Added a check that the server is a slave.
+   * Added a check that the server is a replica.
 
 Changelog for mysql-slave-restart:
 

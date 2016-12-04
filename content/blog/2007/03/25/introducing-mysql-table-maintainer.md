@@ -16,7 +16,7 @@ This tool is designed to help you run maintenance commands on your MySQL tables.
 *   Check tables before optimizing them, and skip if they have problems
 *   Do tables based on storage engine, size, age, time since last checking/optimizing etc... am I missing anything?
 *   Compact repeated output, and add table status information to help you understand what's happening
-*   Prevent or allow the statements to go into the binlog so they get executed on slave servers
+*   Prevent or allow the statements to go into the binlog so they get executed on replica servers
 *   Do (or don't do) views as well
 
 Here's sample output:

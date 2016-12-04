@@ -22,7 +22,7 @@ I've lost track, actually, but here are some of the things I've gotten done.
 
 *   Readline support.
 *   Monitor multiple servers simultaneously.
-*   Monitor master/slave status and control slaves.
+*   Monitor master/replica status and control replicas.
 *   Columns can have user-defined expressions as their data sources.
 *   Better configuration tools.
 *   InnoDB status information is merged into `SHOW VARIABLES` and `SHOW STATUS` information, so you can access it all together.

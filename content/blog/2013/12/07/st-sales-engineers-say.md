@@ -13,7 +13,7 @@ The seminar was a sales pitch in disguise, of course. The speakers were singing 
 
 Here are some of the things the sales "engineers" said during this seminar, in response to audience questions: 
 
-*   Q. How does auto-increment work in replication? A: On slaves, you have to ALTER TABLE to remove auto-increment because only one table in a cluster can be auto-increment. When you switch replication to a different master you have to ALTER TABLE on all servers in the whole cluster to add/remove auto-increment. (This lie was told early in the day. Each successive person who took a turn presenting built upon it instead of correcting it. I'm not sure whether this was admirable teamwork or cowardly face-saving.) 
+*   Q. How does auto-increment work in replication? A: On replicas, you have to ALTER TABLE to remove auto-increment because only one table in a cluster can be auto-increment. When you switch replication to a different master you have to ALTER TABLE on all servers in the whole cluster to add/remove auto-increment. (This lie was told early in the day. Each successive person who took a turn presenting built upon it instead of correcting it. I'm not sure whether this was admirable teamwork or cowardly face-saving.) 
 *   Q. Does InnoDB's log grow forever? A: Yes. You have to back up, delete, and restore your database if you want to shrink it. 
 *   Q. What size sort buffer should I have? A: 128MB is the suggested starting point. You want this sucker to be BIG. </ul> 
 

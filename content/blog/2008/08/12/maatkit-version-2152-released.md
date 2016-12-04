@@ -79,7 +79,7 @@ Changelog for mk-parallel-dump:
    * CHANGE MASTER TO in 00_master_data.sql used the I/O thread position.
    * Added features to permit resuming of dumps.
    * --age without --sets did the opposite of what it should (isssue 7)
-   * --stopslave died after complaining the slave was not running.
+   * --stopslave died after complaining the replica was not running.
 
 Changelog for mk-parallel-restore:
 
@@ -148,7 +148,7 @@ Changelog for mk-table-sync:
    * --synctomaster did not abort when unable to discover the master.
    * An error waiting for the master to catch up caused other tables to fail.
    * Added --bufferinmysql to help make GroupBy algorithm more efficient.
-   * Added safety checks to prevent changing data on a slave server.
+   * Added safety checks to prevent changing data on a replica server.
    * Added --skipslavecheck to prevent safety checks on destination server.
    * Made the GroupBy algorithm the default replacement for Stream.
    * Added the GroupBy algorithm, which can sync tables without unique keys.

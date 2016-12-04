@@ -65,15 +65,15 @@ Version 1.0.2
 
 ### mysql-slave-restart
 
-Version 0.9.2. This is an initial release of a new tool. I found myself in a situation where I needed to do some complex error-skipping on a slave (its [relay logs got into an infinite loop](http://bugs.mysql.com/bug.php?id=28421)). I have written throwaway scripts to skip, restart, check, skip several times in the past, but this situation called for something more complex. Again I realized I was three-quarters of the way to a more flexible, powerful tool many people might find useful, so I went ahead and put the extra effort into it.
+Version 0.9.2. This is an initial release of a new tool. I found myself in a situation where I needed to do some complex error-skipping on a replica (its [relay logs got into an infinite loop](http://bugs.mysql.com/bug.php?id=28421)). I have written throwaway scripts to skip, restart, check, skip several times in the past, but this situation called for something more complex. Again I realized I was three-quarters of the way to a more flexible, powerful tool many people might find useful, so I went ahead and put the extra effort into it.
 
-It ended up helping me avoid re-snapshotting a slave with a ton of data, so it was worth it.
+It ended up helping me avoid re-snapshotting a replica with a ton of data, so it was worth it.
 
 ### mysql-table-checksum and mysql-checksum-filter
 
 This version fixes some badly optimized chunking queries. As I have mentioned in the past, the chunking behavior is preliminary and subject to change. This is still true, but this release is much smarter than the previous release! I have also fleshed out some methods of doing chunking on real-valued columns (float, decimal, and even character). I don't know when I'll get a chance to code, test, and release that.
 
-Even though much remains to be done, MySQL Table Checksum is still a great way to check that your slaves have the same data as the master. (In fact, it's the only way I know of -- and [MySQL employees themselves recommend MySQL Table Checksum](http://mysqlmusings.blogspot.com/2007/06/replication-poll-and-our-plans-for.html)).
+Even though much remains to be done, MySQL Table Checksum is still a great way to check that your replicas have the same data as the master. (In fact, it's the only way I know of -- and [MySQL employees themselves recommend MySQL Table Checksum](http://mysqlmusings.blogspot.com/2007/06/replication-poll-and-our-plans-for.html)).
 
 Version 1.1.8
 

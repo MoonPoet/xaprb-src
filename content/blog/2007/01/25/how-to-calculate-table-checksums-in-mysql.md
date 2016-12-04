@@ -5,7 +5,7 @@ url: /blog/2007/01/25/how-to-calculate-table-checksums-in-mysql/
 categories:
   - Databases
 ---
-MySQL has <del datetime="2007-05-04T20:28:30+00:00">no built-in functionality to calculate a table's checksum in any storage engine but MyISAM</del> (*this is not true; I read the manual wrong, but it doesn't eliminate the usefulness of the technique in this article*). Table checksums can confirm that two tables are identical -- useful to verify a slave server is in sync with its master (see my article on [reliable MySQL replication](/blog/2007/01/20/how-to-make-mysql-replication-reliable/) for more). Fortunately, it's easy to calculate a checksum on non-MyISAM tables with user variables. This technique works on any storage engine with any version of MySQL, doesn't require the `BLACKHOLE` storage engine, and avoids locks caused by `INSERT... SELECT` on InnoDB tables.
+MySQL has <del datetime="2007-05-04T20:28:30+00:00">no built-in functionality to calculate a table's checksum in any storage engine but MyISAM</del> (*this is not true; I read the manual wrong, but it doesn't eliminate the usefulness of the technique in this article*). Table checksums can confirm that two tables are identical -- useful to verify a replica server is in sync with its master (see my article on [reliable MySQL replication](/blog/2007/01/20/how-to-make-mysql-replication-reliable/) for more). Fortunately, it's easy to calculate a checksum on non-MyISAM tables with user variables. This technique works on any storage engine with any version of MySQL, doesn't require the `BLACKHOLE` storage engine, and avoids locks caused by `INSERT... SELECT` on InnoDB tables.
 
 **Update** I've coded this method into a Perl script for you to use. See [MySQL Table Checksum](/blog/2007/02/26/introducing-mysql-table-checksum/) for more details.
 
@@ -101,7 +101,7 @@ This technique is CPU-bound on our servers. I used the [BENCHMARK()](http://dev.
 
 I'm also a little worried about using `CONCAT_WS()` to stringify each row for the hash function. This function skips `NULL` values, so it's easy to come up with an edge case where two rows with different columns hash to the same thing. Although this is a very unlikely problem, I'd still rather not have it. If you know of a way to fix this, please let me know.
 
-Finally, just a comment on doing this on running servers: if you're comparing a master and slave, you can use `LOCK TABLES` on the master, find the checksum there, and then find the checksum on the slave before releasing the lock on the master. If your slave isn't far behind the master, it ought to have plenty of time to catch up while the checksum is running on the master, at which point that table should be identical to the master (because you have the table locked on the master, no changes to the table will be replicating to the slave). This makes it practical to verify a slave is in sync without stopping the whole server.
+Finally, just a comment on doing this on running servers: if you're comparing a master and replica, you can use `LOCK TABLES` on the master, find the checksum there, and then find the checksum on the replica before releasing the lock on the master. If your replica isn't far behind the master, it ought to have plenty of time to catch up while the checksum is running on the master, at which point that table should be identical to the master (because you have the table locked on the master, no changes to the table will be replicating to the replica). This makes it practical to verify a replica is in sync without stopping the whole server.
 
 ### Perl snippet to generate a SQL statement
 
@@ -127,6 +127,6 @@ In this article I showed you how to calculate a checksum for an entire table's c
 
 I also touched a bit on the finer points of `NULL` values and `ORDER BY` for consistent results. And I gave you some ready-to-use Perl code to generate the SQL you need to execute against a given table.
 
-This is the fastest, easiest, most efficient way I know to compare the contents of two or more tables, which is necessary to verify that a replicated master and slave server are still in sync.
+This is the fastest, easiest, most efficient way I know to compare the contents of two or more tables, which is necessary to verify that a replicated master and replica server are still in sync.
 
 

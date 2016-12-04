@@ -6,7 +6,7 @@ categories:
   - Databases
   - Open Source
 ---
-I have recently added some features to [Maatkit's mk-table-checksum](http://www.maatkit.org/) tool that can make it easy to checksum the relevant parts of your data more frequently (i.e. [continually, but not continuously](http://www.drgrammar.org/faqs/#59)). This in turn makes it possible for you to find out *much* sooner if a slave becomes different from its master, and then you can take action before the differences affect more of your data.
+I have recently added some features to [Maatkit's mk-table-checksum](http://www.maatkit.org/) tool that can make it easy to checksum the relevant parts of your data more frequently (i.e. [continually, but not continuously](http://www.drgrammar.org/faqs/#59)). This in turn makes it possible for you to find out *much* sooner if a replica becomes different from its master, and then you can take action before the differences affect more of your data.
 
 <!--more-->
 
@@ -20,11 +20,11 @@ Let's take a look at the new features.
 
 ### Checksumming only part of the data
 
-Suppose you want a rough idea of whether your data is really different on a slave. Maybe you're a consultant who needs to check a really big data set to see if there's cause for concern. (Hmm, this sounds familiar, almost as though... nevermind.) One way to do that is to checksum a random sample of the rows. Let's checksum 5% of the data:
+Suppose you want a rough idea of whether your data is really different on a replica. Maybe you're a consultant who needs to check a really big data set to see if there's cause for concern. (Hmm, this sounds familiar, almost as though... nevermind.) One way to do that is to checksum a random sample of the rows. Let's checksum 5% of the data:
 
 <pre>mk-table-checksum --replicate test.checksum --chunksize 1000 --probability 5 localhost</pre>
 
-When this completes, you can check the results on the slave.
+When this completes, you can check the results on the replica.
 
 While this is handy, it's not what you need if you're trying to set up a routine job to check all your data on an ongoing basis. You want complete coverage over some period of time. That's what `--modulo` and `--offset` are for. Let's do 1/7th of the data every day, to achieve full coverage over the course of a week:
 
@@ -82,7 +82,7 @@ You can also add the `--modulo` and `--offset` into the table.
 
 ### Conclusion
 
-So that's a quick overview of the new features, which open up a range of new possibilities for frequent checksumming of data. Note that frequent isn't the same as continuous (which is also not the same thing as continual, so don't say the title of this post is false advertising). Continuous verification that a slave is in sync with the master requires some support in the server. However, you could easily checksum the newest rows in certain tables as often as you want, like every minute. In fact it's probably a good idea to do checksums *more* often, and in smaller nibbles, with the new features I've explained here. You can ease the workload that way -- spread it over time.
+So that's a quick overview of the new features, which open up a range of new possibilities for frequent checksumming of data. Note that frequent isn't the same as continuous (which is also not the same thing as continual, so don't say the title of this post is false advertising). Continuous verification that a replica is in sync with the master requires some support in the server. However, you could easily checksum the newest rows in certain tables as often as you want, like every minute. In fact it's probably a good idea to do checksums *more* often, and in smaller nibbles, with the new features I've explained here. You can ease the workload that way -- spread it over time.
 
 The features are still evolving, and the newest code in the Subversion trunk is what you should probably look at if you're interested in using them. (Some of them aren't completed in the last release.) If you have suggestions or find bugs, please use the [Maatkit Google Code project](http://code.google.com/p/maatkit/) to communicate them to the dev team.
 

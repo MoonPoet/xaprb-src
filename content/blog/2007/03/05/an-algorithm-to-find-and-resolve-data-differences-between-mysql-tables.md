@@ -7,7 +7,7 @@ categories:
 ---
 
 I've been designing an algorithm to resolve data differences between MySQL
-tables, specifically so I can 'patch' a replication slave that has gotten
+tables, specifically so I can 'patch' a replication replica that has gotten
 slightly out of sync without completely re-initializing it. I intend to create
 a tool that can identify which rows are different and bring them into sync. I
 would like your thoughts on this.
@@ -15,14 +15,14 @@ would like your thoughts on this.
 ### Background and requirements
 
 I see this as the next step in my recent series of posts on MySQL tools and
-techniques to keep replication running reliably and smoothly. Sometimes slaves
+techniques to keep replication running reliably and smoothly. Sometimes replicas
 "drift" a little bit, even when there don't seem to be any issues with
 replication (this is one reason I submitted a bug report to add [checksums on
 binlog events](http://bugs.mysql.com/bug.php?id=25737)).
-Once a table differs on the slave, it gets more and more different from the
+Once a table differs on the replica, it gets more and more different from the
 master, possibly causing other tables to differ too.
 
-I need a tool that, given a table known to differ on master and slave(s), will
+I need a tool that, given a table known to differ on master and replica(s), will
 _efficiently_ compare the tables and resolve the differences. Finding tables
 that differ is easy with [MySQL Table
 Checksum](http://sourceforge.net/projects/mysqltoolkit),
@@ -30,7 +30,7 @@ but I am not sure the best way to find which rows differ.
 
 Here are my requirements. The algorithm needs to be:
 
-  * Designed for statement-based replication, which means no temp tables, no expensive queries that will propagate to the slave, and so forth.
+  * Designed for statement-based replication, which means no temp tables, no expensive queries that will propagate to the replica, and so forth.
   * Efficient in terms of network load and server load, both when finding and when resolving differences. No huge tables or un-indexed data, no high-impact `INSERT.. SELECT` locking, etc.
   * Efficient on the client-side where the tool is executed.
   * Must work well on "very large" tables.
@@ -92,7 +92,7 @@ summary tables. The first summary table contains as many rows as the table to
 analyze. If I were to calculate and store these rows for a table with lots of
 relatively narrow rows, I might be better off just copying the whole table
 from one server to the other. Also, creating these tables is not replication-
-friendly; the queries that run on the master will run on the slave too. This
+friendly; the queries that run on the master will run on the replica too. This
 might not be a problem for everyone, but it would not be acceptable for my
 purposes.
 
@@ -109,7 +109,7 @@ checksum modulo branching factor, but that's another column, _plus_ an index
 The checksum/modulo approach has another weakness. It defeats any
 optimizations I might be able to make based on knowledge of where in the table
 the rows differ. If the differences are grouped at the end of the table, for
-example in an append-only table that just missed a few inserts on the slave,
+example in an append-only table that just missed a few inserts on the replica,
 the algorithm will distribute the "pointers" to these corrupt rows randomly
 through the summary tables, even though the rows really live near each other.
 Likewise, if my table contains client data and only one client is bad, the
@@ -190,23 +190,23 @@ index tree and can be off by an order of magnitude or more.
 ### How to resolve the differences
 
 Again assuming that this reconciliation is taking place between a master and
-slave server, it's important to fix the rows without causing more trouble
+replica server, it's important to fix the rows without causing more trouble
 while the fixing happens. For example, I don't want to do something that'll
-propagate to another slave that's okay, and thereby mess it up, too.
+propagate to another replica that's okay, and thereby mess it up, too.
 
-Fixing the rows on the master, and letting the fixes propagate to the slave
+Fixing the rows on the master, and letting the fixes propagate to the replica
 via the normal means, might actually be a good idea. If a row doesn't exist or
-is different on the slave, `REPLACE` or `INSERT .. ON DUPLICATE KEY UPDATE`
-should fix the row on the slave without altering it on the master. If the row
-exists on the slave but not the master, `DELETE` on the master should delete
-it on the slave.
+is different on the replica, `REPLACE` or `INSERT .. ON DUPLICATE KEY UPDATE`
+should fix the row on the replica without altering it on the master. If the row
+exists on the replica but not the master, `DELETE` on the master should delete
+it on the replica.
 
 Peripheral benefits of this approach are that I don't need to set up an
-account with write privileges on the slave. Also, if more than one slave has
+account with write privileges on the replica. Also, if more than one replica has
 troubles with the same rows, this should fix them all at the same time.
 
 Issues I need to research are whether the different number of rows affected on
-the slave will cause trouble, and if this can be solved with a temporary
+the replica will cause trouble, and if this can be solved with a temporary
 [slave-skip-errors](http://dev.mysql.com/doc/refman/5.0/en
 /replication-options.html) setting. The manual may document this, but I can't
 find it.
@@ -237,7 +237,7 @@ notify me and not try to fix it.
 ### Summary
 
 In this article I proposed some ideas for a top-down, in-client, replication-
-centric way to compare a table known to differ on a master and slave, find the
+centric way to compare a table known to differ on a master and replica, find the
 rows that differ, and resolve them. I'm thinking about building a tool to
 implement this algorithm, and would like your feedback on efficient ways to do
 this.

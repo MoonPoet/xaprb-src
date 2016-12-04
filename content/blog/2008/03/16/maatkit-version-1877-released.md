@@ -7,9 +7,9 @@ categories:
   - Open Source
 ---
 
-Maatkit contains essential command-line utilities for MySQL, such as a table checksum tool and query profiler. It provides missing features such as checking slaves for data consistency, with emphasis on quality and scriptability.
+Maatkit contains essential command-line utilities for MySQL, such as a table checksum tool and query profiler. It provides missing features such as checking replicas for data consistency, with emphasis on quality and scriptability.
 
-This release contains major bug fixes and new features. Some of the changes are not backwards-compatible. It also contains new tools to help you discover replication slaves and move them around the replication hierarchy.
+This release contains major bug fixes and new features. Some of the changes are not backwards-compatible. It also contains new tools to help you discover replication replicas and move them around the replication hierarchy.
 
 <pre>Changelog for mk-archiver:
 
@@ -121,7 +121,7 @@ Changelog for mk-table-checksum:
    * Added 'A' part to DSNs (bug #1877548).
    * Added --unique option to mk-checksum-filter.
    * The exit status from mk-checksum-filter was always 0.
-   * mk-table-checksum now prefers to discover slaves via SHOW PROCESSLIST.
+   * mk-table-checksum now prefers to discover replicas via SHOW PROCESSLIST.
 
 Changelog for mk-table-sync:
 
@@ -131,7 +131,7 @@ Changelog for mk-table-sync:
    * Added --setvars option (bug #1904689, bug #1911371).
    * Deprecated the --utf8 option in favor of the A part in DSNs.
    * Mixed-case identifiers caused case-sensitivity issues (bug #1910276).
-   * Prefer SHOW PROCESSLIST when looking for slaves of a server.
+   * Prefer SHOW PROCESSLIST when looking for replicas of a server.
 
 Changelog for mk-visual-explain:
 

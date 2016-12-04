@@ -59,7 +59,7 @@ For the curious, here's the current outline for these two chapters:
       Load Balancers
     Load Balancing Algorithms
       Adding and Removing Servers in the Pool
-    Load Balancing with a Master and Multiple Slaves
+    Load Balancing with a Master and Multiple Replicas
   High Availability
     Planning for High Availability
     Adding Redundancy
@@ -67,7 +67,7 @@ For the curious, here's the current outline for these two chapters:
       Replicated-Disk Architectures
       Synchronous MySQL Replication
     Failover and Failback
-      Promoting a Slave or Switching Roles
+      Promoting a Replica or Switching Roles
       Virtual IP Addresses or IP Takeover
       MySQL Master-Master Replication Manager
       Middleman Solutions

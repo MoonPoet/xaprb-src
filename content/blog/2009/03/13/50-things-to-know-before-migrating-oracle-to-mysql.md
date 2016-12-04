@@ -55,7 +55,7 @@ Note: *this is not meant to be MySQL-bashing.* Some of these limitations are goi
 42. There are no materialized views.
 43. The statistics vary between storage engines and regardless of the storage engine, are limited to simple cardinality and rows-in-a-range. In other words, statistics on data distribution are limited. There is not much control over updating of statistics.
 44. There is no built-in promotion or failover mechanism.
-45. Replication is asynchronous and has many limitations and edge cases. For example, it is single-threaded, so a powerful slave can find it hard to replicate fast enough to keep up with a less powerful master.
+45. Replication is asynchronous and has many limitations and edge cases. For example, it is single-threaded, so a powerful replica can find it hard to replicate fast enough to keep up with a less powerful master.
 46. Cluster is not what you think it is. Maybe I already said that, but it bears repeating.
 47. The data dictionary (INFORMATION_SCHEMA) is limited and very slow (it can easily crash a busy server).
 48. There is no online ALTER TABLE.

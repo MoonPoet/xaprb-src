@@ -40,7 +40,7 @@ I'm presenting a session on [how to use Maatkit](http://www.mysqlconf.com/mysql2
     *   Map/Reduce and Queues for MySQL Using Gearman. Gearman is something I have my eyes on -- either that or Spread. For a secret project.
     *   MySQL Support Internals. They run a world-class operation and they're my competition.
     *   Dormando's Proxy for MySQL. Just because.
-    *   Advanced Master-Slave Replication with Tungsten Failover. I keep meaning to evaluate this, but haven't had time.
+    *   Advanced Master-Replica Replication with Tungsten Failover. I keep meaning to evaluate this, but haven't had time.
     *   Memory Management in MySQL and Drizzle. A specialized topic, and Stewart knows a lot of stuff.
     *   memcached Functions for MySQL: Seemless Caching in MySQL. There's a lot of neat stuff here.
     *   MySQL Row Change Event Extraction and Publish. From Google. What else are they up to?

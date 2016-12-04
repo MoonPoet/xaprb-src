@@ -9,11 +9,11 @@ I've written before about [how to make MySQL replication reliable](/blog/2007/01
 
 ### The problem
 
-Temporary tables are anathema to reliable MySQL slave servers. If you have a temporary table and the slave crashes in between accesses to the temporary table, when you restart replication the temporary table no longer exists, and you are in trouble.
+Temporary tables are anathema to reliable MySQL replica servers. If you have a temporary table and the replica crashes in between accesses to the temporary table, when you restart replication the temporary table no longer exists, and you are in trouble.
 
 This is only a problem with statement-based replication, which is how MySQL replication works until version 5.1, which is currently in beta.
 
-If you want to be able to stop and start slave servers at will (for backups, failover, etc) or recover smoothly from crashes, in my opinion you must completely eliminate temporary tables on the master. Note that I'm talking about true temporary tables created with `CREATE TEMPORARY TABLE`, not temporary tables created internally by MySQL for sorting or processing subqueries.
+If you want to be able to stop and start replica servers at will (for backups, failover, etc) or recover smoothly from crashes, in my opinion you must completely eliminate temporary tables on the master. Note that I'm talking about true temporary tables created with `CREATE TEMPORARY TABLE`, not temporary tables created internally by MySQL for sorting or processing subqueries.
 
 ### Properties of temporary tables
 

@@ -6,7 +6,7 @@ categories:
   - Databases
 ---
 
-MySQL Table Checksum 1.1.5 adds a some useful features and fixes a couple of bugs. Now you can checksum tables in chunks, and there is an option to pause between chunks as well. This has already helped me recover a very large table that got out of sync on the slaves, and many of you have also requested this feature.
+MySQL Table Checksum 1.1.5 adds a some useful features and fixes a couple of bugs. Now you can checksum tables in chunks, and there is an option to pause between chunks as well. This has already helped me recover a very large table that got out of sync on the replicas, and many of you have also requested this feature.
 
 You can read the full release notes and documentation for the details, but here's an overview:
 
