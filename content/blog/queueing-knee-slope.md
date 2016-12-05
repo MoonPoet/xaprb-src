@@ -14,8 +14,6 @@ response time curve](/blog/queueing-knee-tangent/). In that post I examined one
 definition of the knee; here is my analysis of the others, including the idea
 that there is no such thing as the knee.
 
-<!--more-->
-
 There are potentially several ways to think about the "knee" in the queueing
 curve. In the previous post I dug into Cary Millsap's definition: the knee is
 the point where a line tangent to the queueing curve passes through the origin:
@@ -23,6 +21,8 @@ the point where a line tangent to the queueing curve passes through the origin:
 ![knee](/media/2016/11/knee-1.png)
 
 Here are a few others to consider:
+
+<!--more-->
 
 1. The knee is where the curve has a slope of 1, that is, it's growing as fast
 	upwards as it is rightwards.
