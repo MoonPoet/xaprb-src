@@ -11,7 +11,7 @@ image: media/2016/10/square-root-staffing-law.png
 draft: false
 
 ---
-The square root staffing law is a rule of thumb derived from queueing theory, useful for getting an estimate of the capacity you might need to serve an increased amount of traffic.
+The square root staffing law is a rule of thumb derived from M/M/m queueing theory, useful for getting an estimate of the capacity you might need to serve an increased amount of traffic.
 
 ![Square Root Staffing Law](/media/2016/10/square-root-staffing-law.png)
 

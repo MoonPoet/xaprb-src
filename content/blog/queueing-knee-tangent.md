@@ -9,7 +9,7 @@ image: "media/2016/11/knee-1.png"
 title: "The Queueing Knee, Part 1"
 ---
 
-The "knee" in the [queueing theory response time
+The "knee" in the [M/M/m queueing theory response time
 curve](/blog/response-time-stretch-factor/) is a topic of some debate in the
 performance community. Some say "the knee is at 75% utilization; everyone knows
 that." Others say "it depends." Others say "there is no knee."

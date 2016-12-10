@@ -4,7 +4,7 @@ categories:
 - Math
 - Scalability
 date: 2016-10-30T10:00:39-04:00
-description: "Is there a simple stretch-factor equation that describes queueing delay for m>2?"
+description: "Is there a simple stretch-factor equation that describes M/M/m queueing delay for m>2?"
 image: "media/2016/10/error-in-heuristic.png"
 title: The Response Time Stretch Factor
 ---
@@ -12,7 +12,7 @@ title: The Response Time Stretch Factor
 Computer systems, and for that matter all types of systems that receive requests
 and process them, have a response time that includes some time waiting in queue
 if the server is busy when a request arrives. The wait time increases sharply as
-the server gets busier. For simple systems there is a simple equation that
+the server gets busier. For simple M/M/m systems there is a simple equation that
 describes this exactly, but for more complicated systems this equation is only
 approximate. This has rattled around in my brain for a long time, and rather
 than keeping my notes private I'm sharing them here (although since I'm still
