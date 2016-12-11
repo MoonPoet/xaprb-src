@@ -169,7 +169,8 @@ Which is exactly \\(\\frac{1}{1-\\rho^2}\\), the heuristic form.
 
 At \\(m=3\\) and above, the heuristic is only approximate. What does the Erlang
 form reduce to for the first of those cases? Does it result in the missing term
-that will extend to 4 and beyond too? I haven't done that yet. *TODO*.
+that will extend to 4 and beyond too? (_Note: I wrote about this in a [followup
+post](/blog/erlang-stretch-factor-three-four/)_).
 
 ### Approximations to Erlang, Based on the Heuristic
 
