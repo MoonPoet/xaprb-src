@@ -3,11 +3,10 @@ author: Baron Schwartz
 categories:
 - Math
 - Scalability
-date: 2016-12-10T20:47:46-05:00
+date: 2016-12-11T15:57:16-05:00
 description: "In which I explore the divergence between the Erlang C formula and Gunther's heuristic approximation."
 image: "media/2016/12/erlang-vs-heuristic-m-3.png"
 title: "The Erlang Response Time Stretch Factor For 3 And 4 Servers"
-draft: true
 ---
 
 In a [previous post](/blog/response-time-stretch-factor/) I explored a few
