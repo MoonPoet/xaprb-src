@@ -63,16 +63,17 @@ above the centerline of each spectrum:
 - **Knowledge**: I am highly theoretical, driven to research, understand, and
   discover truth. I am skeptical of intuition and rarely rely on gut feeling
   alone.
-- **Utility**: I do things with an outcome in mind, rather than for
-  the greater good, the cause, or the sake of doing. Money is rarely my
-  motivator; I care more about impact and results.  I reward group
-  wins as well as individual contributions.
-- **Surroundings**: I value function over form, great design, and simplicity. I
-  see the trees before the forest, but depending on the situation I might
-  emphasize one or the other. I love music, art, and poetry, but I don't always
-  take the time to create beauty in my surroundings. I am comfortable in chaos,
-  but I work to improve it. I value quality craftsmanship, but I'm happy with a
-  good bargain.
+- **Utility**: I do things with an outcome in mind, rather than for the greater
+  good, the cause, or the sake of doing. Money is rarely my motivator; I care
+  more about impact and results.  I reward group wins as well as individual
+  contributions.
+- **Surroundings**: I'm a detail-oriented big-picture thinker. I value function
+  over form, great design, and simplicity. I see the trees before the forest,
+  and I might emphasize one or the other situationally. I love music, art, and
+  poetry, but I don't always take the time to create beauty in my surroundings.
+  I am comfortable in chaos, but I work to improve it. I value quality
+  craftsmanship, but I'm happy with a good bargain. I don't emphasize my
+  appearance, and tend to dress simply.
 - **Others**: I recognize and value people's individuality, but I generally help
   people for a specific purpose, rather than for the satisfaction of being
   supportive. I believe everyone should contribute to the best of their ability.
@@ -84,10 +85,11 @@ above the centerline of each spectrum:
   self-esteem.
 - **Methodologies**: I interpret traditions flexibly and I don't feel bound by
   the way things have always been done. I do not need external guidance or
-  organizational structure to give me direction or standards; I set my own. I'll
-  check if a process exists before I invent a new one. I have an ever-changing
-  system for living and I think outside the box to find the best way to approach
-  each individual situation. I live by the motto "strong opinions loosely held."
+  organizational structure to give me direction or standards; I set my own. I
+  seek input from others, but I form opinions independently. I'll check
+  if a process exists before I invent a new one. I have an ever-changing system
+  for living and I think outside the box to find the best way to approach each
+  individual situation. I live by the motto "strong opinions loosely held."
 
 Of these dimensions, the only one where I'm outside the norm is Intentional. You
 are unlikely to find me too extreme in my views, unless you are extremely
@@ -127,7 +129,8 @@ might experience about me:
   circle. I value actions more highly than words or body language, so I'm often
   undemonstrative and you might feel that I am situationally empathetic at best.
   In truth, I care deeply for people. I'm fiercely loyal and supportive, and
-  I'll stand up and fight for you.
+  I'll stand up and fight for people after I reach a certain level of trust with
+  them.
 - **Audacious but cautious.** Given time, I prefer to be data-driven, but I
   sometimes make quick judgments without explaining all of the reasoning. This
   might seem rash, but it's the opposite: I'm optimizing for learning and trying
@@ -146,16 +149,16 @@ might experience about me:
   convictions. Because I'm motivated by purpose and not ego, I'm like a jazz
   musician: I listen and play the notes that are lacking, then create space for
   other people to participate.  You might misinterpret my agreeable manner as
-  submissiveness or lack of opinion, *especially if you fall in the Conductor or
-  Persuader quadrants of the DISC wheel*.  But I'm the CEO, there's only one,
-  and the company is not a democracy or a committee.
+  submissiveness or lack of opinion, **especially if you are a high DI (you fall
+  in the Conductor or Persuader quadrants of the DISC wheel)**.  But I'm the
+  CEO, there's only one, and the company is not a democracy or a committee.
 - **Demanding but methodical.** Because I move fast and challenge people, you
   might wonder if I give people enough chances. I might not tell you the private
-  details about decisions involving others, but my actions aren't arbitrary, and
-  I practice no-surprises leadership. If I'm unsatisfied with your work, I'll
-  tell you directly, but because I don't look for external validation, I don't
-  naturally think to give it to others. I'd like to improve at that, so please
-  prompt me if you feel comfortable doing so.
+  details, but my decisions about others aren't arbitrary, and I practice
+  no-surprises leadership. If I'm unsatisfied with your work, I'll tell you
+  directly, but because I don't look for external validation, I don't naturally
+  think to give it to others. I'd like to improve at that, so please prompt me
+  if you feel comfortable doing so.
 - **Open-minded but independent.** I learn the most from people who disagree
   with me.  I suspend my beliefs, ask questions to draw out their views, take
   what I like and leave the rest, and even play devil's advocate against myself.
