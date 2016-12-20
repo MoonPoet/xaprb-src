@@ -77,7 +77,7 @@ above the centerline of each spectrum:
 - **Others**: I recognize and value people's individuality, but I generally help
   people for a specific purpose, rather than for the satisfaction of being
   supportive. I believe everyone should contribute to the best of their ability.
-  Because of my significant Selfless and Harmonious motivations, I don't think
+  Because of my substantial Selfless and Harmonious motivations, I don't think
   it's a win if anyone is left out, and I'll champion those who need protection.
 - **Power**: In most situations I am comfortable taking charge, especially when
   I see that it's needed. I don't need public recognition, and I direct for the
@@ -127,10 +127,10 @@ might experience about me:
 
 - **Supportive but unemotional.** I'm basically introverted with a small inner
   circle. I value actions more highly than words or body language, so I'm often
-  undemonstrative and you might feel that I am situationally empathetic at best.
-  In truth, I care deeply for people. I'm fiercely loyal and supportive, and
-  I'll stand up and fight for people after I reach a certain level of trust with
-  them.
+  undemonstrative and you might feel that I am situationally empathetic at best,
+  even if you're part of that inner circle.  In truth, I care deeply for people.
+  I'm fiercely loyal and supportive, and I'll stand up and fight for people
+  after I reach a certain level of trust with them.
 - **Audacious but cautious.** Given time, I prefer to be data-driven, but I
   sometimes make quick judgments without explaining all of the reasoning. This
   might seem rash, but it's the opposite: I'm optimizing for learning and trying
