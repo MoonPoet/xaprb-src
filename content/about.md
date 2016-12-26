@@ -38,16 +38,16 @@ In plain English, my strongest behaviors are:
 - I'm creative, visionary, futuristic, and forward-looking.
 - I'm objective, logical, analytical, technical, and data-driven.
 - I'm reserved and introverted. I'm not a hugger except with family and close
-  friends. I don't project emotion and can seem cold, uncaring, or aloof.
+  friends. I don't project emotion and can appear aloof.
 - I'm understated and guarded, and prefer to observe rather than
   being the center of attention.
-- I have a zany sense of humor and I love to laugh at myself.
+- I have a nerdy sense of humor.
 
 People usually experience me as supportive, attentive, active, engaged,
-decisive, and motivating. You might find my passion and drive to be infectious.
-When I'm under stress, you might feel that I'm abrasive and controlling. At my
-worst, I can be a pushy perfectionist, and you might feel that I demand too much
-too fast.
+decisive, and motivating. You might find my passion and drive compelling.  When
+I'm under stress, you might feel that I'm abrasive and controlling. At my worst,
+I can be a pushy perfectionist, and you might feel that I demand too much too
+fast.
 
 ### My Driving Forces
 
@@ -61,14 +61,15 @@ Here's an interpretation of that chart in my own words, keyed off the name shown
 above the centerline of each spectrum:
 
 - **Knowledge**: I am highly theoretical, driven to research, understand, and
-  discover truth. I am skeptical of intuition and rarely rely on gut feeling
-  alone.
+  discover truth. I'm insatiably curious. I am skeptical of intuition and rarely
+  rely on gut feeling alone. If I visit your house, I'll look at the titles on
+  your bookshelf before I look at the family photos on your wall.
 - **Utility**: I do things with an outcome in mind, rather than for the greater
   good, the cause, or the sake of doing. Money is rarely my motivator; I care
-  more about impact and results.  I reward group wins as well as individual
+  more about impact and results.  I look for group wins as well as individual
   contributions.
-- **Surroundings**: I'm a detail-oriented big-picture thinker. I value function
-  over form, great design, and simplicity. I see the trees before the forest,
+- **Surroundings**: I'm a detail-oriented big-picture thinker. I value great
+  design, simplicity, and function over form. I see the trees before the forest,
   and I might emphasize one or the other situationally. I love music, art, and
   poetry, but I don't always take the time to create beauty in my surroundings.
   I am comfortable in chaos, but I work to improve it. I value quality
@@ -97,17 +98,19 @@ Altruistic, in which case we might get impatient with each other!
 
 ### Advice For Communicating With Me
 
-Here are some of the most important things to keep in mind when approaching me.
+Here are some things to keep in mind when approaching me.
 
 - Be clear, brief, and concise.
-- Begin with your conclusions or recommendations. Be prepared to support and
-  explain your reasoning and data, but let me ask for the details if I want
-  them.
+- Begin with your conclusions or recommendations (don't begin with facts and
+  build to conclusions). Be prepared to support and explain your reasoning and
+  data, but let me ask for the details if I want them.
 - Don't leave things open-ended, ramble, or make non-specific requests. Have a
   clear "ask," and clear next steps and action items to achieve a specific
   outcome.
 - Don't forget things or rely on me to set the agenda. Always follow up and
   follow through.
+- Don't try to pressure or dominate me. Don't expect people's opinions of me to
+  influence me.
 - Don't exaggerate, speculate, or make statements you can't prove.
 - Avoid melodrama, appealing to my self-interests, or anything that could feel
   manipulative, such as quid-pro-quo, flattery, name-dropping, or buzzwords.
@@ -129,12 +132,13 @@ might experience about me:
   circle. I value actions more highly than words or body language, so I'm often
   undemonstrative and you might feel that I am situationally empathetic at best,
   even if you're part of that inner circle.  In truth, I care deeply for people.
-  I'm fiercely loyal and supportive, and I'll stand up and fight for people
-  after I reach a certain level of trust with them.
+  I'm fiercely loyal and supportive, and I'll fight hard for people after I
+  reach a certain level of trust with them.
 - **Audacious but cautious.** Given time, I prefer to be data-driven, but I
   sometimes make quick judgments without explaining all of the reasoning. This
-  might seem rash, but it's the opposite: I'm optimizing for learning and trying
-  to eliminate dead ends quickly. My boldness isn't reckless.
+  can seem rash, but I'm usually pursuing a specific goal, such as optimizing
+  for learning or trying to eliminate dead ends quickly. My boldness isn't
+  reckless.
 - **Intelligent but not eloquent.** When I'm trying to collect more data and
   express myself at the same time, I stumble over my words. This can make me
   seem hesitant or uncertain, especially when I'm speaking without preparation
@@ -149,9 +153,9 @@ might experience about me:
   convictions. Because I'm motivated by purpose and not ego, I'm like a jazz
   musician: I listen and play the notes that are lacking, then create space for
   other people to participate.  You might misinterpret my agreeable manner as
-  submissiveness or lack of opinion, **especially if you are a high DI (you fall
-  in the Conductor or Persuader quadrants of the DISC wheel)**.  But I'm the
-  CEO, there's only one, and the company is not a democracy or a committee.
+  submissiveness or lack of opinion, especially if you are a high DI (you fall
+  in the Conductor or Persuader quadrants of the DISC wheel). If you presume
+  you have the upper hand, you may appear disrespectful to me.
 - **Demanding but methodical.** Because I move fast and challenge people, you
   might wonder if I give people enough chances. I might not tell you the private
   details, but my decisions about others aren't arbitrary, and I practice
@@ -159,15 +163,24 @@ might experience about me:
   directly, but because I don't look for external validation, I don't naturally
   think to give it to others. I'd like to improve at that, so please prompt me
   if you feel comfortable doing so.
-- **Open-minded but independent.** I learn the most from people who disagree
-  with me.  I suspend my beliefs, ask questions to draw out their views, take
-  what I like and leave the rest, and even play devil's advocate against myself.
-  This can disturb some people, because it looks like I am rudderless and lack
-  self-confidence.  It's true that I move the rudder freely, because it is not
-  the rudder that guides me; it is the North Star. And it is self-acceptance,
-  not self-confidence, that enables me to let go of doubt and act.
+- **Detailed but minimalist.** Because I am data-driven and perfectionist, I
+  strive for simplicity so I can keep my mind clear and undistracted. I like
+  systems to be explained and governed by elegant, predictable models and rules.
+  I will challenge complicated spreadsheets, algorithms, or agreements and ask
+  if they can be simpler and clearer.
+- **Open-minded but independent.** I don't really value other people's opinions
+  or judgments of me, but I value the information they can give me, so I'm
+  happy---even eager---to get outside perspectives and observations. I
+  learn the most from people who disagree with me.  I suspend my beliefs, ask
+  questions to draw out their views, take what I like and leave the rest, and
+  even play devil's advocate against myself.  This can disturb some people,
+  because it looks like I am rudderless and lack self-confidence.  It's true
+  that I move the rudder freely, because it is not the rudder that guides me; it
+  is my personal North Star. And it is self-acceptance, not self-confidence,
+  that enables me to release doubts and act swiftly.
 
 Please feel free to give me feedback that will help me learn more about myself!
+It's OK to be very direct about this; you won't hurt my feelings. (See above.)
 
 <p style="clear:both">
   &nbsp;
