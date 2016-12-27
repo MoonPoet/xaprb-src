@@ -9,7 +9,7 @@ draft: false
 ---
 ![Baron Schwartz](/media/2010/01/baron-square.jpg)
 
-I am the founder of [VividCortex](https://www.vividcortex.com/) and the lead author of [High Performance MySQL](http://www.highperfmysql.com/). I studied Computer Science at the University of Virginia, then worked at several technology companies. I used to be a programmer and created a lot of open-source software. My online nickname Xaprb is my first name typed in QWERTY on a Dvorak keyboard layout.
+I am the founder of [VividCortex](https://www.vividcortex.com/) and the lead author of [High Performance MySQL](http://www.highperfmysql.com/). I studied Computer Science at the University of Virginia, then worked at several technology companies. I spent the first decade of my career as a programmer, and created a lot of open-source software. My online nickname Xaprb is my first name Baron typed in QWERTY on a Dvorak keyboard layout.
 
 You can contact me using my first name at VividCortex. You can also find me on
 [Twitter](http://twitter.com/xaprb), [LinkedIn](http://www.linkedin.com/in/xaprb),
