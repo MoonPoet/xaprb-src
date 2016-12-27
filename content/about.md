@@ -1,10 +1,13 @@
 ---
-title: "About Baron Schwartz"
-date: "2005-01-01"
-menu: "main"
----
+title: About Baron Schwartz
+date: '2005-01-01T00:00:00+00:00'
+type: page
+menu:
+  main: {}
+draft: false
 
-<img src="/media/2010/01/baron-square.jpg" alt="Baron Schwartz, a.k.a. Xaprb" title="Baron Schwartz, a.k.a. Xaprb" width="310" height="310" class="size-full wp-image-2715" />
+---
+![Baron Schwartz](/media/2010/01/baron-square.jpg)
 
 I am the founder of [VividCortex](https://www.vividcortex.com/) and the lead author of [High Performance MySQL](http://www.highperfmysql.com/). I studied Computer Science at the University of Virginia, then worked at several technology companies. I used to be a programmer and created a lot of open-source software. My online nickname Xaprb is my first name typed in QWERTY on a Dvorak keyboard layout.
 
@@ -108,7 +111,7 @@ Here are some things to keep in mind when approaching me.
   clear "ask," and clear next steps and action items to achieve a specific
   outcome.
 - Don't forget things or rely on me to set the agenda. Always follow up and
-  follow through.
+  follow through. Send spell-checked materials in advance.
 - Don't try to pressure or dominate me. Don't expect people's opinions of me to
   influence me.
 - Don't exaggerate, speculate, or make statements you can't prove.
@@ -120,13 +123,11 @@ Here are some things to keep in mind when approaching me.
 
 ### How To Understand My Unique Perspectives
 
-Most people don't fall in the top center of the DISC wheel where I am, so you
-probably don't interact with people similar to me very often.  As such, I might
-behave in surprising or seemingly contradictory ways.  There's always a logic
-behind it, and I'm not arbitrary or haphazard.
+In my experience with hundreds of personality assessments, few people (perhaps 1 in 20) fall in the top center of the DISC wheel where I am, so you
+might not interact with people similar to me very often.  As such, I might
+behave in surprising or seemingly contradictory ways, or send mixed signals.
 
-Here's how to interpret and work with some of the atypical things you
-might experience about me:
+There's usually a logic behind it, and I'm rarely arbitrary or haphazard. Here's how to interpret and work with some of my characteristics you might experience as odd or unexpected:
 
 - **Supportive but unemotional.** I'm basically introverted with a small inner
   circle. I value actions more highly than words or body language, so I'm often
