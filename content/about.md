@@ -15,9 +15,8 @@ You can contact me using my first name at VividCortex. You can also find me on
 [Twitter](http://twitter.com/xaprb), [LinkedIn](http://www.linkedin.com/in/xaprb),
 [Keybase](https://keybase.io/xaprb), and [Signal](https://whispersystems.org/).
 
-I'm private about my personal life, but I try to be an open book about who I am
-and what I believe. I wrote this page to help you learn what's beneath the
-surface.
+I'm private about my personal life, but I try to be an open book about who I am.
+I wrote this page to help you learn what makes me tick.
 
 ### My Personality and Behaviors
 
