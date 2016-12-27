@@ -75,7 +75,7 @@ above the centerline of each spectrum:
   design, simplicity, and function over form. I see the trees before the forest,
   and I might emphasize one or the other situationally. I love music, art, and
   poetry, but I don't always take the time to create beauty in my surroundings.
-  I am comfortable in chaos, but I work to improve it. I value quality
+  I function well in chaos, but I will try to create order. I value quality
   craftsmanship, but I'm happy with a good bargain. I don't emphasize my
   appearance, and tend to dress simply.
 - **Others**: I recognize and value people's individuality, but I generally help
@@ -95,9 +95,10 @@ above the centerline of each spectrum:
   for living and I think outside the box to find the best way to approach each
   individual situation. I live by the motto "strong opinions loosely held."
 
-Of these dimensions, the only one where I'm outside the norm is Intentional. You
-are unlikely to find me too extreme in my views, unless you are extremely
-Altruistic, in which case we might get impatient with each other!
+The only dimension where I'm outside the norm is Intentional. Thus, you are
+unlikely to find me too extreme in my views, but if you are extremely
+Altruistic, you might feel I'm not caring enough. I do care, but as a CEO I have
+to balance my caring with a business focus.
 
 ### Advice For Communicating With Me
 
@@ -129,41 +130,47 @@ behave in surprising or seemingly contradictory ways, or send mixed signals.
 
 There's usually a logic behind it, and I'm rarely arbitrary or haphazard. Here's how to interpret and work with some of my characteristics you might experience as odd or unexpected:
 
-- **Supportive but unemotional.** I'm basically introverted with a small inner
-  circle. I value actions more highly than words or body language, so I'm often
-  undemonstrative and you might feel that I am situationally empathetic at best,
-  even if you're part of that inner circle.  In truth, I care deeply for people.
-  I'm fiercely loyal and supportive, and I'll fight hard for people after I
-  reach a certain level of trust with them.
+- **Supportive but unemotional.** I'm basically introverted.  I value actions
+  more highly than words or body language, so I'm often undemonstrative and you
+  might feel that I am situationally empathetic at best, even if you're part of
+  my inner circle of close associates. In truth, I care deeply for people.  I'm
+  fiercely loyal and supportive, and I'll fight hard for people after I reach a
+  certain level of trust with them.
 - **Audacious but cautious.** Given time, I prefer to be data-driven, but I
   sometimes make quick judgments without explaining all of the reasoning. This
   can seem rash, but I'm usually pursuing a specific goal, such as optimizing
   for learning or trying to eliminate dead ends quickly. My boldness isn't
-  reckless.
+  reckless. I like the phrase "a fast B grade is better than a slow A." I want
+  everyone who works with me to be biased to action, avoiding analysis
+  paralysis.
 - **Intelligent but not eloquent.** When I'm trying to collect more data and
-  express myself at the same time, I stumble over my words. This can make me
-  seem hesitant or uncertain, especially when I'm speaking without preparation
-  or trying to understand someone's point of view. I appreciate you helping me
-  with prompts, echoing back in your own words what you think I'm trying to say,
-  or simply being patient with me. 
-- **Visionary but disjointed.** I sometimes describe the future without laying
-  out a specific path to achieve it. I may not be aware when you don't see my
-  vision clearly, or aren't clear on the steps to reach it.  It's a good idea to
-  make sure I know if this is the case.
+  express myself at the same time, I sometimes stumble over my words. This can
+  make me seem hesitant or uncertain, especially when I'm speaking without
+  preparation or trying to understand someone's point of view. I appreciate you
+  helping me with prompts, echoing back in your own words what you think I'm
+  trying to say, or simply being patient with me. 
+- **Visionary but visionary.** I sometimes describe the future without laying
+  out a specific path to achieve it. I may jump around mentally and verbally,
+  leaving thoughts unfinished in my excitement. I may not be aware when you
+  don't see my vision clearly, or aren't clear on the steps to reach it.  It's a
+  good idea to make sure I know if this is the case. Ask me to connect the dots
+  for you.
 - **Easy-going but determined.** My quiet demeanor conceals deeply held
   convictions. Because I'm motivated by purpose and not ego, I'm like a jazz
   musician: I listen and play the notes that are lacking, then create space for
   other people to participate.  You might misinterpret my agreeable manner as
   submissiveness or lack of opinion, especially if you are a high DI (you fall
-  in the Conductor or Persuader quadrants of the DISC wheel). If you presume
-  you have the upper hand, you may appear disrespectful to me.
+  in the Conductor or Persuader quadrants of the DISC wheel). If you assume you
+  have the upper hand, or that I don't mean what I say unless I'm raising my
+  voice, you may appear disrespectful to me. 
 - **Demanding but methodical.** Because I move fast and challenge people, you
   might wonder if I give people enough chances. I might not tell you the private
   details, but my decisions about others aren't arbitrary, and I practice
   no-surprises leadership. If I'm unsatisfied with your work, I'll tell you
-  directly, but because I don't look for external validation, I don't naturally
-  think to give it to others. I'd like to improve at that, so please prompt me
-  if you feel comfortable doing so.
+  directly, and I'm very open about it. But because I don't look for external
+  validation, I don't naturally think to give overtly positive feedback to
+  others. I'd like to improve at that, so please prompt me if you feel
+  comfortable doing so.
 - **Detailed but minimalist.** Because I am data-driven and perfectionist, I
   strive for simplicity so I can keep my mind clear and undistracted. I like
   systems to be explained and governed by elegant, predictable models and rules.
@@ -171,14 +178,14 @@ There's usually a logic behind it, and I'm rarely arbitrary or haphazard. Here's
   if they can be simpler and clearer.
 - **Open-minded but independent.** I don't really value other people's opinions
   or judgments of me, but I value the information they can give me, so I'm
-  happy---even eager---to get outside perspectives and observations. I
-  learn the most from people who disagree with me.  I suspend my beliefs, ask
-  questions to draw out their views, take what I like and leave the rest, and
-  even play devil's advocate against myself.  This can disturb some people,
-  because it looks like I am rudderless and lack self-confidence.  It's true
-  that I move the rudder freely, because it is not the rudder that guides me; it
-  is my personal North Star. And it is self-acceptance, not self-confidence,
-  that enables me to release doubts and act swiftly.
+  happy---even eager---to get outside perspectives and observations. I learn the
+  most from people who disagree with me.  I suspend my beliefs, ask questions to
+  draw out their views, take what I like and leave the rest, and even play
+  devil's advocate against myself.  This can disturb some people, because it
+  looks like I am rudderless and lack self-confidence.  It's true that I move
+  the rudder freely, because it is not the rudder that guides me; it is my
+  personal North Star. And it is self-acceptance, not self-confidence, that
+  enables me to release doubts and act swiftly.
 
 Please feel free to give me feedback that will help me learn more about myself!
 It's OK to be very direct about this; you won't hurt my feelings. (See above.)
