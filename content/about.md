@@ -154,14 +154,15 @@ There's usually a logic behind it, and I'm rarely arbitrary or haphazard. Here's
   don't see my vision clearly, or aren't clear on the steps to reach it.  It's a
   good idea to make sure I know if this is the case. Ask me to connect the dots
   for you.
-- **Easy-going but determined.** My quiet demeanor conceals deeply held
-  convictions. Because I'm motivated by purpose and not ego, I'm like a jazz
-  musician: I listen and play the notes that are lacking, then create space for
-  other people to participate.  You might misinterpret my agreeable manner as
-  submissiveness or lack of opinion, especially if you are a high DI (you fall
-  in the Conductor or Persuader quadrants of the DISC wheel). If you assume you
-  have the upper hand, or that I don't mean what I say unless I'm raising my
-  voice, you may appear disrespectful to me. 
+- **Easy-going but determined.** According to the personality assessment, my
+  "quiet demeanor conceals deeply held convictions," and I find that very
+  accurate. In practice, it means that you might misinterpret my agreeable
+  manner as submissiveness or lack of opinion, especially if you are a high DI
+  (you fall in the Conductor or Persuader quadrants of the DISC wheel). When I
+  feel that people don't take me seriously unless I'm raising my voice, or that
+  they feel they have the upper hand by force of personality alone, I feel
+  disrespected, and that can lead to clashes. It's something to be aware of, for
+  me and you both.
 - **Demanding but methodical.** Because I move fast and challenge people, you
   might wonder if I give people enough chances. I might not tell you the private
   details, but my decisions about others aren't arbitrary, and I practice
