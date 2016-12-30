@@ -34,7 +34,7 @@ In plain English, my strongest behaviors are:
 - I take responsibilities seriously and expect others to do the same.
 - I'm independent, assertive, demanding, and comfortable with risk.
 - I'm ambitious, determined, persistent, and competitive; I love winning and dislike losing.
-- My communication style is direct, to-the-point, and can be blunt.
+- My communication style is direct, to-the-point, and can be blunt; I'm not very diplomatic.
 - I'm skeptical, perfectionist, and detail-oriented. I find typos.
 - I value clear and concise communication. I dislike fluff and ambiguity.
 - I'm creative, visionary, futuristic, and forward-looking.
@@ -74,9 +74,9 @@ above the centerline of each spectrum:
   design, simplicity, and function over form. I see the trees before the forest,
   and I might emphasize one or the other situationally. I love music, art, and
   poetry, but I don't always take the time to create beauty in my surroundings.
-  I function well in chaos, but I will try to create order. I value quality
-  craftsmanship, but I'm happy with a good bargain. I don't emphasize my
-  appearance, and tend to dress simply.
+  I function well in chaos, and I think conflict is productive, but I will try
+  to create order. I value quality craftsmanship, but I'm happy with a good
+  bargain. I don't emphasize my appearance, and tend to dress simply.
 - **Others**: I recognize and value people's individuality, but I generally help
   people for a specific purpose, rather than for the satisfaction of being
   supportive. I believe everyone should contribute to the best of their ability.
@@ -89,9 +89,9 @@ above the centerline of each spectrum:
 - **Methodologies**: I interpret traditions flexibly and I don't feel bound by
   the way things have always been done. I do not need external guidance or
   organizational structure to give me direction or standards; I set my own. I
-  seek input from others, but I form opinions independently. I'll check
-  if a process exists before I invent a new one. I have an ever-changing system
-  for living and I think outside the box to find the best way to approach each
+  seek input from others, but I form opinions independently. I'll check if a
+  process exists before I invent a new one. I have an ever-changing system for
+  living and I think outside the box to find the best way to approach each
   individual situation. I live by the motto "strong opinions loosely held."
 
 The only dimension where I'm outside the norm is Intentional. Thus, you are
@@ -139,9 +139,12 @@ There's usually a logic behind it, and I'm rarely arbitrary or haphazard. Here's
   sometimes make quick judgments without explaining all of the reasoning. This
   can seem rash, but I'm usually pursuing a specific goal, such as optimizing
   for learning or trying to eliminate dead ends quickly. My boldness isn't
-  reckless. I like the phrase "a fast B grade is better than a slow A." I want
-  everyone who works with me to be biased to action, avoiding analysis
-  paralysis.
+  reckless.  I want everyone who works with me to be biased to action, avoiding
+  analysis paralysis.  I like the phrase "a fast B grade is better than a slow
+  A," or perhaps better yet "done is better than perfect, so if it's worth
+  doing, it's worth doing badly." A lot of my worldview is included in that
+  counterintuitive phrase, which I like to think has a lot of value beneath the
+  surface.
 - **Intelligent but not eloquent.** When I'm trying to collect more data and
   express myself at the same time, I sometimes stumble over my words. This can
   make me seem hesitant or uncertain, especially when I'm speaking without
