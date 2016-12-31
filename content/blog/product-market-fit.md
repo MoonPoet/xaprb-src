@@ -7,7 +7,7 @@ categories:
 description: Most conversations about product/market fit are actually about service/user
   fit.
 image: media/2016/12/whiskey-stones.jpg
-draft: true
+draft: false
 
 ---
 I hear people talk about "product/market fit" a lot. I'm not going to argue that it's not important. I just don't think it means what a lot of people think.
