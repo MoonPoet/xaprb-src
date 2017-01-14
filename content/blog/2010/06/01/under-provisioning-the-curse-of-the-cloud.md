@@ -1,12 +1,20 @@
 ---
-title: "Under-provisioning: the curse of the cloud"
+title: "Under-Provisioning: The Curse Of The Cloud"
 date: "2010-06-01"
 url: /blog/2010/06/01/under-provisioning-the-curse-of-the-cloud/
+description: When you are accustomed to getting more than you pay for, you might assume that you deserve it.
+image: media/2010/06/chinchilla.png
 categories:
-  - Commentary
+  - Best Of
   - Databases
 ---
-A common problem I see people running into when using a cloud computing service is the trap of under-provisioning. There's a chain effect that leads to this result: 1) people don't understand how virtualization works, and therefore 2) they don't realize how much of a computing resource they're really buying, so 3) they assume they are entitled to more than they really are, and 4) they under-provision. A few other causes and effects come into play here, too. For example, the choice to use the cloud is sometimes founded on economic assumptions that frequently turn out to be wrong. The cloud service looks more economically attractive than it really is, due to under-provisioning.
+A common problem I see people running into when using a cloud computing service is the trap of under-provisioning. 
+
+![Chinchilla](/media/2010/06/chinchilla.png)
+
+<!--more-->
+
+There's a chain effect that leads to under-provisioning: 1) people don't understand how virtualization works, and therefore 2) they don't realize how much of a computing resource they're really buying, so 3) they assume they are entitled to more than they really are, and 4) they under-provision. A few other causes and effects come into play here, too. For example, the choice to use the cloud is sometimes founded on economic assumptions that frequently turn out to be wrong. The cloud service looks more economically attractive than it really is, due to under-provisioning.
 
 Let's get back to this idea that people under-provision. How do I know that's happening? I'll use anecdotal evidence to illustrate. Here's a real quote from a recent engagement about database (MySQL) performance problems:
 
@@ -24,4 +32,4 @@ I have a theory that if you really knew the true capacity you were buying, you'd
 
 I also think that the lack of transparency encourages people to use cloud computing services for the wrong reasons altogether. I could write about this, but I think [Theo Schlossnagle said it pretty well already](http://lethargy.org/~jesus/writes/thoughts-on-the-cloud).
 
-
+[Image Credit](http://www.biodiversitylibrary.org/page/40296569)
