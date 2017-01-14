@@ -6,6 +6,7 @@ description: "Immutable databases seem elegant but create difficult tradeoffs, s
 image: "media/2013/12/uluru.jpg"
 categories:
   - Databases
+  - Best Of
 tags:
   - PostgreSQL
 ---

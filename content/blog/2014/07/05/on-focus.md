@@ -5,6 +5,8 @@ date: "2014-07-05"
 url: /blog/2014/07/05/on-focus/
 categories:
   - Life Hacking
+  - Leadership
+  - Best Of
 image: /media/2014/05/rainbokeh.jpg
 ---
 

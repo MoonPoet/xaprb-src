@@ -76,7 +76,7 @@ above the centerline of each spectrum:
   poetry, but I don't always take the time to create beauty in my surroundings.
   I function well in chaos, and I think conflict is productive, but I will try
   to create order. I value quality craftsmanship, but I'm happy with a good
-  bargain. I don't emphasize my appearance, and tend to dress simply.
+  bargain. I embrace Wabi-sabi. I don't emphasize my appearance, and tend to dress simply.
 - **Others**: I recognize and value people's individuality, but I generally help
   people for a specific purpose, rather than for the satisfaction of being
   supportive. I believe everyone should contribute to the best of their ability.

@@ -5,6 +5,7 @@ date: "2014-07-21"
 url: /blog/2014/07/21/root-cause-fallacy/
 categories:
   - Operations
+  - Best Of
 image: /media/2014/07/turtles.jpg
 ---
 

@@ -6,6 +6,7 @@ url: /blog/2014/11/29/code-freezes-dont-prevent-outages/
 categories:
   - Programming
   - Operations
+  - Best Of
 image: /media/2014/11/freeze.png
 ---
 

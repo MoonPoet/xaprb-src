@@ -7,6 +7,8 @@ description: "Read this before you ask me to buy your database."
 image: /media/2015/05/bristlecone.jpg
 tags:
   - PostgreSQL
+  - Best Of
+  - Databases
 ---
 
 Many database vendors would like me to take a look at their products and

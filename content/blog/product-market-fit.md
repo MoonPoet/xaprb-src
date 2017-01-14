@@ -4,6 +4,7 @@ date: '2016-12-31T10:26:11-05:00'
 author: Baron Schwartz
 categories:
 - Leadership
+- Best Of
 description: What I used to call product/market fit was really service/user fit.
 image: media/2016/12/whiskey-stones.jpg
 draft: false

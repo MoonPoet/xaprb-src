@@ -7,6 +7,7 @@ description: "Many people neglect basic online security because they don't know 
 image: "media/2013/12/lock.jpg"
 categories:
   - Security
+  - Best Of
 ---
 This is a public service announcement. Many people I know are not taking important steps necessary to secure their online accounts and devices (computers, cellphones) against malicious people and software. It's a matter of time before something seriously harmful happens to them. 
 

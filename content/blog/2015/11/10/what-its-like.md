@@ -1,8 +1,8 @@
 ---
 author: Baron Schwartz
 categories:
-- Conferences
-- Commentary
+- Leadership
+- Best Of
 date: 2015-11-10T19:04:18-05:00
 description: "I gave talk at Ignite Velocity/OSCON to share my experiences, especially in hopes that other founder/CEOs might hear something that could help."
 image: "media/2015/11/ignite.jpg"

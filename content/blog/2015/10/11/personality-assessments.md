@@ -2,6 +2,7 @@
 author: Baron Schwartz
 categories:
 - Life Hacking
+- Best Of
 date: 2015-10-11T11:26:16-04:00
 description: "What kinds of personality assessments exist, and when are they useful?"
 title: Personality Assessments
