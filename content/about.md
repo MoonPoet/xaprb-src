@@ -43,7 +43,8 @@ In plain English, my strongest behaviors are:
   friends. I don't project emotion and can appear aloof.
 - I'm understated and guarded, and prefer to observe rather than
   being the center of attention.
-- I have a nerdy sense of humor.
+- You won't think I am much fun till you know me well, but I have a slapstick
+  sense of humor.
 
 People usually experience me as supportive, attentive, active, engaged,
 decisive, and motivating. You might find my passion and drive compelling.  When
