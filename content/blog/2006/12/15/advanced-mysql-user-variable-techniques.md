@@ -349,9 +349,3 @@ In this article I showed you how two properties of MySQL's user variables (assig
 Finally, I showed you one place you might want to use such a technique to get the first N rows from each group. In certain cases, I think this is the most efficient algorithm possible, requiring just one pass through the table.
 
 I don't know about you, but this opens up a lot of interesting possibilities. I have one particular use in mind that I'll write about next -- another way to linearize a query that's normally extremely expensive.
-
-What do you think? Leave a comment and let me know!
-
-*Note: I'm taking a break from computers. This is pre-recorded.* I'll moderate your comments shortly.
-
-
