@@ -28,23 +28,23 @@ I'm a Conducting Implementor.
 
 In plain English, my strongest behaviors are:
 
-- I'm focused, steady, calm, patient, and agreeable.
-- I'm task-focused, results-focused, fast-moving, and urgent.
-- I value my time highly and manage it carefully.
-- I take responsibilities seriously and expect others to do the same.
+- I'm direct, to-the-point, and can be blunt; I'm not very diplomatic.
 - I'm independent, assertive, demanding, and comfortable with risk.
 - I'm ambitious, determined, persistent, and competitive; I love winning and dislike losing.
-- My communication style is direct, to-the-point, and can be blunt; I'm not very diplomatic.
+- I'm reserved and introverted. I'm not a hugger except with family and close
+  friends. I don't project emotion and can appear aloof.
+- I'm objective, logical, analytical, technical, and data-driven.
+- I'm understated and guarded, and prefer to observe rather than
+  being the center of attention.
+- I'm task-focused, results-focused, fast-moving, and urgent.
 - I'm skeptical, perfectionist, and detail-oriented. I find typos.
 - I value clear and concise communication. I dislike fluff and ambiguity.
 - I'm creative, visionary, futuristic, and forward-looking.
-- I'm objective, logical, analytical, technical, and data-driven.
-- I'm reserved and introverted. I'm not a hugger except with family and close
-  friends. I don't project emotion and can appear aloof.
-- I'm understated and guarded, and prefer to observe rather than
-  being the center of attention.
+- I value my time highly and manage it carefully.
+- I take responsibilities seriously and expect others to do the same.
 - You won't think I am much fun till you know me well, but I have a slapstick
   sense of humor.
+- I'm focused, steady, calm, patient, and agreeable.
 
 People usually experience me as supportive, attentive, active, engaged,
 decisive, and motivating. You might find my passion and drive compelling.  When
