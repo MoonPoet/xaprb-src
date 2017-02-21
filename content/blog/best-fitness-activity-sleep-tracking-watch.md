@@ -5,10 +5,9 @@ categories:
 - Life Hacking
 - Reviews
 date: 2017-02-20T19:34:44-05:00
-description: ""
+description: "After researching many smartwatches and activity trackers, I bought a Withings Steel HR. Here's why."
 image: "media/2017/02/runner.jpg"
 title: The Best Activity Tracking Watch
-draft: True
 ---
 
 After thinking about smart watches, activity trackers, and similar devices for a
