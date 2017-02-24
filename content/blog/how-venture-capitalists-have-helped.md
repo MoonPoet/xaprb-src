@@ -3,36 +3,32 @@ author: Baron Schwartz
 categories:
 - Leadership
 date: 2017-02-19T15:20:02-05:00
-description: "Investors always say they can help their portfolios. Here's what I've experienced."
+description: "Investors say they can help their portfolio companies. I didn't understand how at first, but now I do."
 image: "media/2017/02/shuttle-carrier-aircraft.png"
 title: How Venture Capitalists Have Helped Me
 ---
 
-Venture capital is a competitive industry like any other, with investors trying
-to differentiate themselves and explain the value they bring to their portfolio
-companies. When I was a new founder, I found it difficult to understand how
-investors could help concretely. This is what I've found so far.
+Venture capital is a competitive industry. Investors compete to win the best
+companies, so they pitch founders on the value they bring to their portfolio
+companies. When I was a new founder, their pitches didn't resonate with me. I
+found it difficult to understand how they could help. A few years later, I get
+it; they really can add value. This is what I've found so far.
 
 ![Shuttle Carrier Aircraft](/media/2017/02/shuttle-carrier-aircraft.png)
 
 <!--more-->
 
 When I first began speaking to potential venture capital investors, I felt as
-though their pitches to me were all fairly similar. In time I began to
-understand a bit more, but initially all I could hear was "you'll get access to
-our network."
-
-This fell on relatively deaf ears. At that point in my career, it was actually
-an anti-value for me. My experience of "networking" was associated with cliques
-and special privileges shared between people based on belonging to a club. It
-sounded like a fraternity's pitch to a would-be pledge, to be honest.
+though their pitches to me were all variations on "you'll get access to our
+network." This fell on mostly deaf ears. At that point in my career, it was
+actually an anti-value for me. My experience of "networking" was associated with
+cliques and special privileges shared between people based on belonging to a
+club. It sounded like a fraternity's pitch to a would-be pledge, to be honest.
 
 At this point I've had a few years' experience working with some fairly active
 and involved investors, and on reflection, I see more of the value than I did at
-the beginning.
-
-If I were to explain to myself in 2012 what investors could do to help me,
-here's what I might try to emphasize.
+the beginning.  If I were to explain this to past-me, here's what I might try to
+emphasize.
 
 ### Recruiting
 
@@ -115,7 +111,7 @@ compliments followed by encouragement to stay in touch. Others will take time to
 be very specific about why they've decided not to invest. Their feedback is
 clear guidance as to what they think the business should focus on achieving. It
 has to be taken with a grain of salt, but collating this feedback often results
-in very clear advice that's less conflicting than some other sources I've gone
+in advice that's less conflicting than some other sources I've gone
 to for help. It also points out where I'm just doing a bad job communicating our
 strengths; I've gotten feedback that we should do X when, in fact, we already do
 X and I just wasn't saying it very well.
@@ -146,11 +142,11 @@ results at times. This is true both on the business and the technical sides.
 If you'd asked me in 2013, I think I would have said that investors were perhaps
 exaggerating how much they could help us. I'd have said "all they do is say
 they'll make introductions, and introductions are just going to use up precious
-time I need to conserve." It's true that this was all I was able to hear at that
-time, and it's probably true that some investors don't offer much more than
-this. I've also gotten offers of help that I haven't found helpful; I take what
-I like and leave the rest, so that's fine. I'm biased by the investors I've
-chosen, but I've received help I didn't expect, didn't know I needed, and has
-made a big difference to the business.
+time I need to conserve." That's not what I've found.  I've received help I
+didn't expect, didn't know I needed, and has made a big difference to the
+business.
+
+*PS: If I've omitted anything you've done for me, it's forgetfulness, not passive
+aggressiveness.*
 
 [Pic Credit](https://commons.wikimedia.org/wiki/File:Shuttle_Carrier_Aircraft_diagram.svg)
