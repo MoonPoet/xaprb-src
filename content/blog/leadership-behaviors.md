@@ -40,8 +40,8 @@ For more detail, please read [Marten's original article](http://schoolofherring.
 
 *   Be authentic.
 *   Come from the right place.
-*   Don’t get personal.
-*   Don’t clown people in front of their peers.
+*   Don't get personal.
+*   Don't clown people in front of their peers.
 *   Feedback is not one size fits all.
 *   Be direct, but not mean.
 
@@ -51,18 +51,32 @@ For details, please read Ben's book _The Hard Thing About Hard Things_ or [this 
 
 Andy Grove was the CEO of Intel and the author of _High Output Management_. In his view, the only tools a manager can use to influence is training and motivation.
 
-### Anonymous 1
+### David Eherlich
 
-I haven't gotten permission from this CEO yet so he will remain anonymous for now. In his view, as a CEO if you're doing anything other than one of the following four activities, you're abdicating and neglecting your real duties:
+David is the CEO of Aktana.  In David's view, as a CEO if you're doing anything
+other than one of the following four activities, you're likely getting in the
+way more than adding value:
 
-1.  Espouse the vision. Never miss a chance to repeat the vision and draw a direct line between whatever's happening in the moment and how it aligns with the vision.
-2.  Right people, right jobs. As CEO, you must find the absolute best executives.
-3.  Provide resources. You've got the right people in the right jobs. It's your job to ensure they're armed for success. They have to have the resources to do their jobs.
-4.  Build the company culture.
+1. Espouse and reinforce the vision. Never miss a chance to repeat the vision
+	and draw a direct line between whatever's happening in the moment and how it
+	aligns with the vision.
+2. Right people, right jobs. As CEO, you must build the absolute best team.
+3. Ensure adequate resources. You've now got the right people in the right jobs
+	knowing what to accomplish (the vision). It's your job to ensure they're
+	armed for success. They have to have the resources to do their jobs.
+4. Build the company culture.  Cultures should be authentic and should reinforce
+	the behaviors required for success (see _Built to Last: Successful Habits of
+	Visionary Companies_ by Jim Collins and Jerry Porras).  Only the CEO, through
+	her/his actions can reinforce an authentic, powerful culture.
 
-If you're doing anything other than these things, then by definition you haven't done these things well. For example, if you're making a decision about a department or team's work, you haven't hired the right executives. If you're jumping in and helping with their work, then either you don't have the right people in the right jobs or they don't have the resources they need.
+If you're doing anything other than these things, then by definition you haven't
+done these things well. For example, if you're making a decision about a
+department or team's work, then you haven't hired the right executives or given
+them an adequate understanding of the vision. If you're jumping in and helping
+with their work, then either you don't have the right people in the right jobs
+or they don't have the resources they need.
 
-### Anonymous 2
+### Anonymous
 
 I haven't gotten permission from this CEO yet so he will remain anonymous for now. Being a leader, according to this CEO, consists of:
 
@@ -81,7 +95,7 @@ Brad is my CEO coach. In his words:
 
 *   First, know thyself. Knowing and being transparent about your own strengths and weaknesses enables you to understand others.
 *   If you are doing, you are not leading. Do not be the hub of the wheel.
-*   Define your direct reports’ roles and hire the people that are the best suited to those roles.
+*   Define your direct reports' roles and hire the people that are the best suited to those roles.
 *   Explain to your direct reports what you want done and how their work contributes to the success of the team and the organization.
 *   Give them the tools, training, coaching and resources to do their job and then let them succeed or fail. Do not coddle them.
 *   Give them timely, constant, caring and honest feedback about their performance.
