@@ -1,17 +1,20 @@
 ---
 title: The Ultimate Notebook
-date: "2013-07-10"
-url: /blog/2013/07/10/ultimate-notebook-and-journal-face-off/
-menu: main
+date: '2013-07-10T00:00:00Z'
+url: "/blog/2013/07/10/ultimate-notebook-and-journal-face-off/"
 categories:
-  - Commentary
-  - Reviews
-  - Writing
----
+- Commentary
+- Reviews
+- Writing
+menu:
+  main: {}
 
+---
 If you're like me, you spend so much time typing on a computer that a good notebook or journal is one of life's finer pleasures. I've kept a diary of my personal life for close to 30 years now, and I have a shelf full of journals. I've found a great many that I enjoy writing in, and choosing a different one each time is part of the fun.
 
 But thus far, my quest for a notepad has been unsatisfying. Many notepads have loved me, but I'm sorry to say their love has been unrequited. I've tried all the usual things: Moleskine, loose-leaf paper, binders, what have you. But I never found something that is practical, functional, a joy to write on, and a pleasure to look at and hold. I just can't settle into a long-term relationship with my notebook, because I haven't met The Right One yet.
+
+**NOTE: Stop The Presses! I found it. This notebook is everything: [Apica Premium C.D Notebook](https://www.amazon.com/Apica-Premium-C-D-Notebook-Sheets/dp/B006ZTHFB2/?tag=xaprb-20)**
 
 ![Notebook](/media/2013/07/notebook.jpg)
 
