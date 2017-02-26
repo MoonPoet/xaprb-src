@@ -2,6 +2,7 @@
 author: Baron Schwartz
 categories:
 - Life Hacking
+- Craft
 date: 2016-06-10T12:21:54-04:00
 description: "Cursive writing is more than just writing."
 image: "media/2016/06/cursive.jpg"
