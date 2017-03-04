@@ -10,11 +10,12 @@ image: 'media/2017/03/bird-in-hand.jpg'
 
 ---
 
-A lot of people tell me I'm awesome, but sometimes I'm actually a jerk!
-Thankfully, I've found that gentleness is a skill I can learn if I care enough
-to try, and I've gotten better at it over time. I've also found that when I'm
-nice and I focus on the positive, I get better results. Here are some things
-I've learned about how to be a kinder person in my writing.
+It makes me a bit uncomfortable when people say I'm a good person, because
+sometimes I'm actually a jerk! Thankfully, I've found that gentleness is a
+skill I can learn if I care enough to try, and I've gotten better at it over
+time. I've also found that when I'm nice and I focus on the positive, I get
+better results. Here are some things I've learned about how to be a kinder
+person in my writing.
 
 ![Bird in Hand](/media/2017/03/bird-in-hand.jpg)
 
