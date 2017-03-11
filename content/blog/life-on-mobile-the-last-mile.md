@@ -2,6 +2,7 @@
 author: Baron Schwartz
 categories:
 - Life Hacking
+- Gear
 date: 2016-10-28T18:27:12-04:00
 description: "What keeps me using a laptop, if mobile devices are so great?"
 image: "media/2016/10/jet-engine.jpg"

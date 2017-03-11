@@ -2,6 +2,7 @@
 author: Baron Schwartz
 categories:
 - Life Hacking
+- Gear
 date: 2016-10-20T21:46:24-04:00
 description: "What it's like to switch from Android to iPhone"
 image: "media/2016/10/robot.jpg"
