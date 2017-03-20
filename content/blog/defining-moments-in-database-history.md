@@ -36,3 +36,19 @@ A while ago I [predicted](/blog/2013/01/10/bold-predictions-on-which-nosql-datab
 Which other NoSQL databases have had impact on par with those two? Perhaps Cassandra, and arguably Neo4J, but both of those are less mainstream. MongoDB and Redis are ubiquitous.
 
 Why? It's instructive to look at the problems they solve. Redis starts with a simple conceptual foundation: label a piece of data, then you can use the label to fetch and manipulate the data. The data can be richly structured in ways that are familiar to programmers, and the operations you can perform on these structures are a Swiss Army knife of building blocks for applications. The types of things that otherwise force you to write boilerplate code or build frameworks.
+
+MongoDB also starts with a simple concept, essentially that databases should store nested, structured "documents" that can map directly to the structs or objects you use in your programming language. And on top of this, MongoDB adds another power tool: the programming language you use to query the database is the ubiquitous JavaScript, arguably the most popular and flexible programming language today. There's much more, too, such as built-in scalability so you don't have to build "sharding" into your app (anyone who's done that knows that you're actually building a new custom database in your app code).
+
+Many of the NoSQL databases that sprang up like weeds in 2009 didn't solve these types of problems in these kinds of ways. Perhaps this is what makes these two databases endure. I don't know, but I am sure it's what makes them a joy to use. And for better or for worse, from where I sit they seem to be the most viable answer to the proposition "a more modern database is a practical and useful thing to create."
+
+### Time Series Databases
+
+Another area where a category has emerged is time series databases. These databases store facts with timestamps, and treat the time as a native and essential part of the data model. They allow you to do time-based analysis. Not only that, they really view temporal queries as central. Many of them even make time a mandatory dimension of any query.
+
+I wrote extensively about time series databases previously. For example, I argued that [the world is time series](/blog/2014/03/02/time-series-databases-influxdb/) and I shared my [requirements for a time series database](/blog/2014/06/08/time-series-database-requirements/) a bit later. (That latter article is not something I agree with fully today).
+
+InfluxDB remains on a very steep growth trajectory as it seeks to define what it means for a database to be natively time oriented, and answer the question of whether that is _enough_ for a database or if there'll be a "last mile problem" that will make people want some of the stuff they can get from other types of databases too. Defining the boundaries of a database's functionality is hard. But InfluxDB seems to be doing an admirable job of it.
+
+An alternative is ElasticSearch, which offers time series functionality in some ways, but not as the sole and central concept. It's really a distributed search engine that knows about time. This quite naturally and properly raises the question: if you're going to use a non-time-series database that knows about time, why use a search engine? Why not a relational database that has time series functionality?
+
+There are many, many others. Time will tell what survives and what set of problems is worth solving and doesn't leave something unsatisfied. I'd bet on InfluxDB at this point, personally. But one thing is certain, in my mind at least: time series is important enough that first-class time series databases are necessary and worthwhile. It's not enough to foist this use case onto another "yeah we do that too" database.
