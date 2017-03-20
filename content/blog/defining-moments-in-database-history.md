@@ -52,3 +52,21 @@ InfluxDB remains on a very steep growth trajectory as it seeks to define what it
 An alternative is ElasticSearch, which offers time series functionality in some ways, but not as the sole and central concept. It's really a distributed search engine that knows about time. This quite naturally and properly raises the question: if you're going to use a non-time-series database that knows about time, why use a search engine? Why not a relational database that has time series functionality?
 
 There are many, many others. Time will tell what survives and what set of problems is worth solving and doesn't leave something unsatisfied. I'd bet on InfluxDB at this point, personally. But one thing is certain, in my mind at least: time series is important enough that first-class time series databases are necessary and worthwhile. It's not enough to foist this use case onto another "yeah we do that too" database.
+
+### Stream-Oriented Databases
+
+The final category of data technologies I think is going to end up defining a standalone category is stream-oriented, pub-sub, queueing, or messaging---choose your terminology. These databases are essentially logs or buses (and some of them have names that indicate this). Instead of permanently storing the data and letting you retrieve and mutate it, the concept is (mas o menos) insertion, immutable storage in order, and later reading it out again (potentially multiple times, potentially deleting on retrieval).
+
+Why would you want this? It's not obvious at first glance, but this "river of data, from which everything in the enterprise can drink" architecture is at once enormously powerful and enormously virtuous. It enables you to do things you otherwise would have to go through all kinds of gyrations to accomplish, while simultaneously simplifying things greatly.
+
+The typical enterprise data architecture ends up as a nightmare spaghetti tangle after not very long. Data flows through the architecture in weird ways that become difficult to understand and manage. And performance, reliability, and guarantees about processing order and so on are prime motivators for a lot of complexity that you can solve with a queue or streaming database.
+
+There are a lot of concepts related to these databases and their interplay with other types of database; too many to list here. I'll just say that it's a fundamental mindset shift, similar to the type of epiphany you get the first time you really understand purely functional programming. For example, you suddenly want to abolish replication forevermore, and you never want anything to poll or batch process again, ever.
+
+Lots of technologies such as Spark are emerging around these areas. But in my view, Apache Kafka is the undisputed game-changer. It's truly a watershed technology. Rather than try to explain why, I'll just point you to the commercial company behind Kafka, [Confluent](https://www.confluent.io/). Read their materials. I know many of the people working there; they are genuine, smart, and it's not marketing fluff. You can drink from their well. Deeply.
+
+### Conclusions
+
+If anyone thought that NoSQL was just a flare-up and it's died down now, they were wrong. NoSQL did flare up, and we did get a lot of non-database folks trying to write databases before learning what they were. But the pains and many of the solutions are real. A key determinant of what'll survive and what'll be lost to history is going to be [product-market fit](/blog/product-market-fit/). In my opinion, three important areas where markets aren't being satisfied by relational technologies are programmer sensibilities, time series, and streaming data. Time will tell if I'm right.
+
+[Pic Credit](https://pixabay.com/en/crossroads-confusion-dilemma-1580168/)
