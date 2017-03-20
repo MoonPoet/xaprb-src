@@ -4,14 +4,15 @@ date: '2017-03-19T20:59:17+00:00'
 author: Baron Schwartz
 categories:
 - Databases
-description: ''
-image: ''
-draft: true
+description: 'NoSQL was just the beginning.'
+image: 'media/2017/03/crossroads-1580168_1280.jpg'
 
 ---
-I've been privileged to be intimately involved with one defining set of technology shifts in the mid-2000s, which ultimately created both a new industry-defining set of technologies and the impetus for the emergence of a contender. I'm referring to the rise of the LAMP stack. I've been reflecting recently on what perhaps were key factors in that phenomenon and what's happened since then, indeed, what's happening now.
+I've been privileged to be intimately involved with one defining set of technology shifts in the mid-2000s, which ultimately created both a new industry-defining set of technologies and the impetus for contenders to emerge. I'm referring to the rise of the LAMP stack. I've been reflecting recently on what perhaps were key factors in that phenomenon and what's happened since then, indeed, what's happening now.
 
-![Crossroads](/crossroads-1580168_1280.jpg)
+![Crossroads](/media/2017/03/crossroads-1580168_1280.jpg)
+
+<!--more-->
 
 First, what was it about the LAMP stack, anyway? All of the ingredients in that stack were interesting and signaled tectonic shifts (or were the result of them), but I'm particularly interested in what MySQL can teach us about emerging databases today.
 
@@ -19,7 +20,7 @@ MySQL is the database that came to power much of the Internet as we know it toda
 
 I've thought of many necessary conditions for MySQL to flourish in 2000-2010\. The big question is which combination of those conditions were sufficient. I am not certain of the answer, but I'm certain the answer is plural.
 
-And yet, partially because of its enormous popularity, MySQL helped spur the rise of NoSQL in 2008-2009\. These databases sought to define a new moment in database history: one in which legacy relational technology was finally replaced by an utterly new generation. If you were around at the time, you might remember how vehemently people decried relational, joins, SQL, ACID, etc. It was not sufficient to lambaste a technology or implementation: you needed to have some highly-fermented bile against the concepts and foundations themselves or you weren't really a NoSQL believer.
+And yet, partially because of its enormous popularity, MySQL helped spur the rise of NoSQL in 2008-2009\. These databases sought to define a new moment in database history: one in which legacy relational technology was finally replaced by an utterly new generation. If you were around at the time, you might remember how vehemently people decried relational, joins, SQL, ACID, etc. It was not sufficient to lambaste a technology or implementation: you needed to have some highly-fermented bile against the concepts and foundations themselves or you weren't really a NoSQL believer. The disruptor was being disrupted.
 
 Where do we find ourselves today? Relational implementations rapidly improved (enter NewSQL), and NoSQL was backronymed to mean "not only SQL" instead of being a rejection of SQL. Many NoSQL databases today sport SQL-like languages. The obvious question has to be addressed: was it just a flare-up? Is there any need for next-generation data storage and processing? Or is good old relational going to improve and obviate every next-gen data technology anyway?
 
@@ -43,7 +44,7 @@ Why? It's instructive to look at the problems they solve. Redis starts with a si
 
 MongoDB also starts with a simple concept, essentially that databases should store nested, structured "documents" that can map directly to the structs or objects you use in your programming language. And on top of this, MongoDB adds another power tool: the programming language you use to query the database is the ubiquitous JavaScript, arguably the most popular and flexible programming language today. There's much more, too, such as built-in scalability so you don't have to build "sharding" into your app (anyone who's done that knows that you're actually building a new custom database in your app code).
 
-Many of the NoSQL databases that sprang up like weeds in 2009 didn't solve these types of problems in these kinds of ways. For example, Cassandra solved the scalability problem, but gave the programmer only limited expressive power. Ultimately, a highly scalable but not very "powerful" database can be less attractive than one that acts as a force multiplier for programmer productivity. High scalability is a tech ops force multiplier, and devs outnumber ops tenfold.
+Many of the NoSQL databases that sprang up like weeds in 2009 didn't solve these types of problems in these kinds of ways. For example, Cassandra solved the scalability problem, but gave the programmer only limited expressive power. Ultimately, a highly scalable but not very "powerful" database can be less attractive than one that acts as a force multiplier for programmer productivity. To a first approximation, high scalability is a tech ops force multiplier, and devs outnumber ops tenfold.
 
 Perhaps this is what makes Redis and MongoDB endure. I don't know, but I am sure it's part of what makes them a joy to use. And for better or for worse, from where I sit they seem to be the most viable answer to the proposition "a more modern database is a practical and useful thing to create."
 
@@ -53,7 +54,7 @@ Another distinct emerging category is time series databases. These databases sto
 
 I wrote extensively about time series databases previously. For example, I argued that [the world is time series](/blog/2014/03/02/time-series-databases-influxdb/) and I shared my [requirements for a time series database](/blog/2014/06/08/time-series-database-requirements/) a bit later. (That latter article is not something I agree with fully today).
 
-InfluxDB remains on a very steep growth trajectory as it seeks to define what it means for a database to be natively time oriented, and answer the question of whether that is _enough_ for a database, or if there'll be a "last mile problem" that will make people want some of the stuff they can get from other types of databases too. Defining the boundaries of a database's functionality is hard. But InfluxDB seems to be doing an admirable job of it.
+InfluxDB is on a very steep growth trajectory as it seeks to define what it means for a database to be natively time oriented, and answer the question of whether that is _enough_ for a database, or if there'll be a "last mile problem" that will make people want some of the stuff they can get from other types of databases too. Defining the boundaries of a database's functionality is hard. But InfluxDB seems to be doing an admirable job of it.
 
 An alternative is ElasticSearch, which offers time series functionality in some ways, but not as the sole and central concept. It's really a distributed search engine that knows about time. This quite naturally and properly raises the question: if you're going to use a non-time-series database that knows about time, why use a search engine? Why not a relational database that has time series functionality?
 
@@ -65,7 +66,7 @@ The final category of data technologies I think is going to end up defining a st
 
 Why would you want this? It's not obvious at first glance, but this "river of data, from which everything in the enterprise can drink" architecture is at once enormously powerful and enormously virtuous. It enables things that otherwise would require all kinds of gyrations and effort, while simultaneously simplifying things greatly.
 
-The typical enterprise data architecture ends up as a nightmare spaghetti tangle after not very long. Data flows through the architecture in weird ways that become difficult to understand and manage. And problems like performance, reliability, and guarantees about hard things such as processing order, are prime motivators for a lot of complexity that you can solve or avoid with a queue or streaming database.
+The typical enterprise data architecture quickly becomes a nightmare spaghetti tangle. Data flows through the architecture in weird ways that are difficult to understand and manage. And problems like performance, reliability, and guarantees about hard things such as processing order, are prime motivators for a lot of complexity that you can solve or avoid with a queue or streaming database.
 
 There are a lot of concepts related to these databases and their interplay with other types of database; too many to list here. I'll just say that it's a fundamental mindset shift, similar to the type of epiphany you get the first time you really understand purely functional programming. For example, you suddenly want to abolish replication forevermore, and you never want anything to poll or batch process again, ever.
 
@@ -73,6 +74,6 @@ Lots of technologies such as Spark are emerging around these areas. But in my vi
 
 ### Conclusions
 
-If anyone thought that NoSQL was just a flare-up and it's died down now, they were wrong. NoSQL did flare up, and we did get a lot of non-database folks trying to write databases before learning what they were. But the pains and many of the solutions are real. A key determinant of what'll survive and what'll be lost to history is going to be [product-market fit](/blog/product-market-fit/). In my opinion, three important areas where markets aren't being satisfied by relational technologies are relational and SQL backwardness, time series, and streaming data. Time will tell if I'm right.
+If anyone thought that NoSQL was just a flare-up and it's died down now, they were wrong. NoSQL did flare up, and we did see a lot of bad technology emerge for a time. But the pains and many of the solutions are real. A key determinant of what'll survive and what'll be lost to history is going to be [product-market fit](/blog/product-market-fit/). In my opinion, three important areas where markets aren't being satisfied by relational technologies are relational and SQL backwardness, time series, and streaming data. Time will tell if I'm right.
 
 [Pic Credit](https://pixabay.com/en/crossroads-confusion-dilemma-1580168/)
