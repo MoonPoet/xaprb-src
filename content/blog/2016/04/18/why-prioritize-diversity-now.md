@@ -139,6 +139,26 @@ There are many challenges to building a diverse team, especially at the board le
 
 I'd like to say thanks to all the exhausted feminists in my life. Anything I've done well in this post is pretty much the result of their hard work, and the rest is my fault.
 
+### Update, March 2017
+
+I've chosen my 4th board member, a white man. I did this because I ultimately
+came to realize that someone who hasn't been a tech startup CEO and successfully
+navigated the challenges both today and those in the years to come can't help me
+with the struggles of that role.  I learned this truth through the struggle
+itself.
+
+And the population of under-represented minorities who can help me with this
+vital role is, sad but true, very limited and in unbelievably high demand (i.e.
+already on too many boards at other companies).  There may not be a pipeline
+problem for under-represented minorities in tech in general, but there most
+conclusively is for qualified board members. The attainments that would qualify
+people through experience for such vital positions are largely withheld from
+minorities. 
+
+I learned that what I set out to do was so improbable as to be nearly
+impossible. Learning is the point. We'll redouble efforts to make VividCortex a
+welcoming and inclusive place for everyone. It'll be hard but worthwhile.
+
 Photo credit: [circuit
 board](https://www.flickr.com/photos/aureobcn/8573429757/) (yeah, bad pun I
 know).
