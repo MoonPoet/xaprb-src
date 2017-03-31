@@ -8,23 +8,29 @@ description: 'NoSQL was just the beginning.'
 image: 'media/2017/03/crossroads-1580168_1280.jpg'
 
 ---
-I've been privileged to be intimately involved with one defining set of technology shifts in the mid-2000s, which ultimately created both a new industry-defining set of technologies and the impetus for contenders to emerge. I'm referring to the rise of the LAMP stack. I've been reflecting recently on what perhaps were key factors in that phenomenon and what's happened since then, indeed, what's happening now.
+
+The rise of the LAMP stack in the early- to mid-2000s created a shift in
+the technology landscape, as well as the impetus for contenders to emerge. I've
+been reflecting on key factors in that phenomenon and what's happened since
+then---and what it can teach us about what's happening now.
 
 ![Crossroads](/media/2017/03/crossroads-1580168_1280.jpg)
 
 <!--more-->
 
-First, what was it about the LAMP stack, anyway? All of the ingredients in that stack were interesting and signaled tectonic shifts (or were the result of them), but I'm particularly interested in what MySQL can teach us about emerging databases today.
+What was it about the LAMP stack, anyway? All of the ingredients in that stack were interesting and signaled tectonic shifts (or were the result of them), but I think MySQL in particular was the bellwether for today's database trends.
 
 MySQL is the database that came to power much of the Internet as we know it today. MySQL was remarkable for many reasons, although it's easy to forget them in hindsight. It wasn't the first or perhaps even the best open source database, but it was [just enough better](/blog/just-enough-better) that it became the best for the situation at hand. And ultimately it became a commercial success that even in hindsight seems improbable.
 
 I've thought of many necessary conditions for MySQL to flourish in 2000-2010\. The big question is which combination of those conditions were sufficient. I am not certain of the answer, but I'm certain the answer is plural.
 
-And yet, partially because of its enormous popularity, MySQL helped spur the rise of NoSQL in 2008-2009\. These databases sought to define a new moment in database history: one in which legacy relational technology was finally replaced by an utterly new generation. If you were around at the time, you might remember how vehemently people decried relational, joins, SQL, ACID, etc. It was not sufficient to lambaste a technology or implementation: you needed to have some highly-fermented bile against the concepts and foundations themselves or you weren't really a NoSQL believer. The disruptor was being disrupted.
+And yet, partially because of its enormous popularity, MySQL helped spur the rise of NoSQL in 2008-2009\. These databases sought to define a new moment in database history: one in which legacy relational technology would finally be replaced by an utterly new generation. The disruptor was being disrupted.
 
-Where do we find ourselves today? Relational implementations rapidly improved (enter NewSQL), and NoSQL was backronymed to mean "not only SQL" instead of being a rejection of SQL. Many NoSQL databases today sport SQL-like languages. The obvious question has to be addressed: was it just a flare-up? Is there any need for next-generation data storage and processing? Or is good old relational going to improve and obviate every next-gen data technology anyway?
+Where do we find ourselves today? Relational implementations rapidly improved (enter NewSQL), and NoSQL was backronymed to mean "not only SQL" instead of being a rejection of SQL. Many NoSQL databases today sport SQL-like languages.
 
-I believe strongly that the answer is no. I see a few current trends and I'm sure that at least some of them will eventually become something enduring in some form. I think we are seeing historic shifts in database technology emerge right now.
+Was NoSQL just a flare-up? Is there a real need for next-generation data storage and processing? Or is good old relational going to improve and obviate every next-gen data technology anyway?
+
+I believe relational will endure, and continue to evolve to address new use cases, but is already past its heyday of complete dominance. I see a few current trends, and I'm sure that at least some of them will become equally enduring. I think we are seeing historic shifts in database technology emerge right now.
 
 ### Next-Generation General-Purpose Databases
 
@@ -42,7 +48,7 @@ Which other NoSQL databases have had impact on par with those two? Perhaps Cassa
 
 Why? It's instructive to look at the problems they solve. Redis starts with a simple conceptual foundation: label a piece of data, then you can use the label to fetch and manipulate the data. The data can be richly structured in ways that are familiar to programmers, and the operations you can perform on these structures are a Swiss Army knife of building blocks for applications. The types of things that otherwise force you to write boilerplate code or build frameworks. Redis focuses on doing these things well, and doesn't try to solve a lot of other problems.
 
-MongoDB also starts with a simple concept, essentially that databases should store nested, structured "documents" that can map directly to the structs or objects you use in your programming language. And on top of this, MongoDB adds another power tool: the programming language you use to query the database is the ubiquitous JavaScript, arguably the most popular and flexible programming language today. There's much more, too, such as built-in scalability so you don't have to build "sharding" into your app (anyone who's done that knows that you're actually building a new custom database in your app code).
+MongoDB also starts with a simple concept, essentially that databases should store nested, structured "documents" that can map directly to the structs or objects you use in your programming language. And on top of this, MongoDB adds another power tool: the programming language you use to query the database is the ubiquitous JavaScript, arguably the most popular and flexible programming language today. There's much more, too, such as built-in scalability so you don't have to build "sharding" into your app. (Anyone who's done that knows that you're actually building a new custom database in your app code.)
 
 Many of the NoSQL databases that sprang up like weeds in 2009 didn't solve these types of problems in these kinds of ways. For example, Cassandra solved the scalability problem, but gave the programmer only limited expressive power. Ultimately, a highly scalable but not very "powerful" database can be less attractive than one that acts as a force multiplier for programmer productivity. To a first approximation, high scalability is a tech ops force multiplier, and devs outnumber ops tenfold.
 
@@ -62,9 +68,9 @@ There are many, many others. Time will tell what survives and what set of proble
 
 ### Stream-Oriented Databases
 
-The final category of data technologies I think is going to end up defining a standalone category is stream-oriented, pub-sub, queueing, or messaging---choose your terminology; they're different but related. These databases are essentially logs or buses (and some of them have names that indicate this). Instead of permanently storing the data and letting you retrieve and mutate it, the concept is insertion, immutable storage in order, and later reading it out again (potentially multiple times, potentially deleting on retrieval).
+The other enduring standalone category I see today is stream-oriented, pub-sub, queueing, or messaging---choose your terminology; they're different but related. These databases are essentially logs or buses (and some of them have names that indicate this). Instead of permanently storing the data and letting you retrieve and mutate it, the concept is insertion, immutable storage in order, and later reading it out again (potentially multiple times, potentially deleting on retrieval).
 
-Why would you want this? It's not obvious at first glance, but this "river of data, from which everything in the enterprise can drink" architecture is at once enormously powerful and enormously virtuous. It enables things that otherwise would require all kinds of gyrations and effort, while simultaneously simplifying things greatly.
+Why would you want this? It's not obvious at first glance, but this "river of data, from which everything in the enterprise can drink" architecture is at once enormously powerful and enormously virtuous. It enables data processing patterns that otherwise require contortions and great effort, but makes them clean and easy.
 
 The typical enterprise data architecture quickly becomes a nightmare spaghetti tangle. Data flows through the architecture in weird ways that are difficult to understand and manage. And problems like performance, reliability, and guarantees about hard things such as processing order, are prime motivators for a lot of complexity that you can solve or avoid with a queue or streaming database.
 
