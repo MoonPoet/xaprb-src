@@ -93,8 +93,8 @@ companies were acquired or went out of business, and several new options became 
 
 ### The Withings Steel HR
 
-My watch of choice was the Withings Steel HR. I'm a traditional, simplistic
-watch guy. My analog watch of choice is a Timex Weekender. I wanted a
+My favorite watch was the Withings Steel HR. I'm a traditional, simplistic
+watch guy; my analog watch is a Timex Weekender. I wanted a
 minimalistic analog watch with long battery life and the following features if possible:
 
 * Sleep, heart rate, and step tracking
@@ -153,15 +153,24 @@ how well things work:
 - The iPhone app is probably not as good as Garmin's or FitBit's, but it's
   pretty good.
 - Text notifications don't seem to work. (I have an iPhone). I don't know about
-  calendar notifications, because I don't use the iPhone calendar app.
+  calendar notifications, because I don't use the iPhone calendar app. Update:
+  Withings support told me that a non-obvious iPhone notification setting is
+  necessary to make text notifications work. It's worked very well for me since
+  then.
 - Call notifications work well, and the caller ID displays quickly and is
   surprisingly usable for such a small area.
-- The alarm doesn't seem to work. I don't think I'm sleeping through it. I
-  turned it off after a while because it seemed inconsistent, as though it only
-  worked if the phone and watch were connected by Bluetooth at the exact instant
-  the alarm was supposed to ring. I could be wrong about this.
+- At first I thought that the alarm didn't work, but now I have no trouble with
+  it.
 
-All in all, I'm happy with it. If I were to use something else instead,
+All in all, I'm happy with it. And I have to say, I've changed my mind about
+getting notifications. My phone/text stays out of sight more now, and isn't
+something I always have in front of me. And I have notification sounds turned to
+very low volume now, so calls and texts are unobtrusive. I don't miss calls or
+texts as much anymore because of loud ambient noise or whatever. In general, I
+notice calls and texts more reliably now, and people around me don't, and I fuss
+with my phone less. It's an unexpected win for me.
+
+If I were to use something else instead,
 might be the Fitbit Charge line of products. What are your thoughts and
 experiences using any of these devices?
 
