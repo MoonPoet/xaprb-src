@@ -100,6 +100,18 @@ unlikely to find me too extreme in my views, but if you are extremely
 Altruistic, you might feel I'm not caring enough. I do care, but as a CEO I have
 to balance my caring with a business focus.
 
+### Gallup StrengthsFinder
+
+People frequently mention the StrengthsFinder report to me, implying that many
+people are familiar with it and it could be helpful to include here. My top five
+themes are:
+
+1. Achiever
+2. Restorative
+3. Learner
+4. Responsibility
+5. Adaptability
+
 ### Advice For Communicating With Me
 
 Here are some things to keep in mind when approaching me.
