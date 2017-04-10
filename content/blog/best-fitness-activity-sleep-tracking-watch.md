@@ -16,6 +16,10 @@ while, I bought a Withings Steel HR. My goal was to find a traditional stylish-l
 watch with long battery life, heart rate tracking, sleep tracking, and activity
 tracking. Here's my experience thus far.
 
+TL;DR: Using the Withings Steel HR has changed the way I use my smartphone. I
+love how much less distracted I am. I am happy with the health tracking
+features, and I like the traditional watch styling and long battery life.
+
 ![Runner](/media/2017/02/runner.jpg)
 
 <!--more-->
