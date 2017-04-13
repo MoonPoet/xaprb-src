@@ -11,6 +11,10 @@ draft: false
 
 I am the founder of [VividCortex](https://www.vividcortex.com/) and the lead author of [High Performance MySQL](http://www.highperfmysql.com/). I studied Computer Science at the University of Virginia, then worked at several technology companies. I spent the first decade of my career as a programmer, and created a lot of open-source software. My online nickname Xaprb is my first name Baron typed in QWERTY on a Dvorak keyboard layout.
 
+This blog is my personal writing and I do not use copywriting services or guest
+posts, nor do I do any type of joint marketing. I use affiliate links to offset
+the costs of hosting and other services.
+
 You can contact me using my first name at VividCortex. You can also find me on
 [Twitter](http://twitter.com/xaprb), [LinkedIn](http://www.linkedin.com/in/xaprb),
 [Keybase](https://keybase.io/xaprb), and [Signal](https://whispersystems.org/).
