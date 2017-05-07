@@ -137,6 +137,12 @@ Here are some things to keep in mind when approaching me.
 - Don't touch me or get too close to me.
 - Stick to business instead of talking about my weekend plans or my family,
   unless we're close friends or I signal that I'm in a mood to engage socially.
+- It's OK to be critical, but I appreciate if you can suggest solutions too.
+  Also, I don't mind if you criticize me, but it really bothers me if you
+  criticize people I care about.
+- I'm a little allergic to people who try to guess at things beyond face value,
+  such as thinking they have insight into other people's motives in complicated
+  circumstances.
 
 Specific advice that's relevant to particular circumstances:
 
