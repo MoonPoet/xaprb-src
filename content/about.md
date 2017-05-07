@@ -138,6 +138,21 @@ Here are some things to keep in mind when approaching me.
 - Stick to business instead of talking about my weekend plans or my family,
   unless we're close friends or I signal that I'm in a mood to engage socially.
 
+Specific advice that's relevant to particular circumstances:
+
+- I've lost some high-frequency hearing, especially in my left ear. In noisy
+  environments like restaurants, it's really hard for me to hear what people are
+  saying. If you tilt your face up towards me a bit, it helps a lot.
+- Use email, text, or phone. Don't use LinkedIn messaging, Twitter DMs, Facebook
+  messages, Slack, or any other isolated systems. I may never notice your
+  message; I simply don't check 99 places for messages. For secure messaging you
+  can use Signal or GPG-secured email.
+- I only have notifications enabled for phone calls and text messages. I'll get
+  to everything else (as long as it's email, that is) in due course.
+- If you repeatedly call me and don't leave voicemail I'll block your number.
+- If you spam non-individual emails at my company you'll get permanently blocked
+  at the domain level.
+
 ### How To Understand My Unique Perspectives
 
 In my experience with hundreds of personality assessments, few people (perhaps 1 in 20) fall in the top center of the DISC wheel where I am, so you
