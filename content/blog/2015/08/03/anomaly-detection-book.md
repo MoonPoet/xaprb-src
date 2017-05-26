@@ -10,18 +10,12 @@ image: /media/2015/08/outlier.jpg
 author: "Baron Schwartz"
 ---
 
-**UPDATE:** the book is now available from
-[https://ruxit.com/anomaly-detection/](https://ruxit.com/anomaly-detection/).
+Together with [Preetam Jinka](http://preet.am/), I wrote a book for O'Reilly
+called [Anomaly Detection for
+Monitoring](http://www.oreilly.com/webops-perf/free/anomaly-detection-monitoring.csp).
 
-Together with [Preetam Jinka](http://preet.am/), I'm writing a book for O'Reilly
-called *Anomaly Detection for Monitoring* (working title).
-
-I'd like your help with this. Would you please comment,
-[tweet](https://twitter.com/xaprb), or [email](mailto:baron@xaprb.com) me
-examples of anomaly detection used for monitoring; and monitoring problems that
-frustrate you, which you think anomaly detection might help solve?
-
-Thanks in advance.
+The book contains great examples of anomaly detection used for monitoring. It's
+practical and simple, and contains no hype.
 
 ![Outlier](/media/2015/08/outlier.jpg)
 
