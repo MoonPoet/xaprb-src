@@ -39,7 +39,7 @@ A VPN is a *big* step up in security and privacy. For example:
 
 These are really legitimate things to worry about: millions of cheap, old, unsecured, underscrutinized devices such as routers and modems are sitting exposed to the internet, and tons of them have known security holes.
 
-VPNs sound obscure and hard to set up, but they're not. You can get a subscription to a VPN service easily and cheaply. I use [Private Internet Access](https://www.privateinternetaccess.com/) and there are many others. Just search and read ratings from a few objective review sites.
+VPNs sound obscure and hard to set up, but they're not. You can get a subscription to a VPN service easily and cheaply. I use [Cloak](https://www.getcloak.com/), [Private Internet Access](https://www.privateinternetaccess.com/) and there are many others. Just search and read ratings from a few objective review sites.
 
 A VPN service is also flexible. You can use a standard VPN client to connect; you don't have to use the one they probably provide for you. I use Tunnelblick to connect to Private Internet Access, for example, because Tunnelblick is open source so I trust it more, and I already use it for other VPNs I connect to.
 
@@ -93,6 +93,22 @@ The problem is that you can't change your fingerprint. You should never use some
 The US government's attempted power-grab during the 2016 San Bernadino Shooter case, where they tried to use the fear surrounding the case to expand their powers of search and seizure, should give every thoughtful person serious pause.
 
 Use a passcode, and configure your device to reset itself after 10 failed attempts.
+
+### 7. Bonus: Set Up Automatic Backups
+
+I've added this bonus item a bit later. There were some [ransomware
+attacks](https://en.wikipedia.org/wiki/Ransomware) recently where a worm
+infected computers, encrypted their data, and then forced people to pay to
+decrypt their own files again. If they'd used a backup service, they'd have been
+able to get their files without paying the ransom.
+
+I use [Backblaze](https://www.backblaze.com/) and I'm happy with it.
+
+The other thing we should all do is enable automatic updates for our devices.
+This is the single most important security measure. A fix for the security flaw
+that made the ransomware attack possible was released months before the
+ransomware happened; those who were infected were users that didn't update their
+software, and remained vulnerable.
 
 ### Conclusions
 
