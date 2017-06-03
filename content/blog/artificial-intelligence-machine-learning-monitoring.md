@@ -2,12 +2,12 @@
 author: Baron Schwartz
 categories:
 - Monitoring
-date: 2017-05-26T10:42:13-04:00
-description: "There are three major use cases for ML and AI in system monitoring."
-image: "media/2017/05/artificial-intelligence.jpg"
+date: '2017-05-26T10:42:13-04:00'
+description: There are three major use cases for ML and AI in system monitoring.
+image: media/2017/05/artificial-intelligence.jpg
 title: Monitoring with Artificial Intelligence and Machine Learning
----
 
+---
 Artificial intelligence and machine learning (AI and ML) are so over-hyped today
 that I usually don't talk about them.  But there are real and valid uses for
 these technologies in monitoring and performance management. Some companies have
@@ -77,5 +77,9 @@ Generating realistic load to test applications might be commercially useful.
 Even generating [realistic performance
 data](https://www.xaprb.com/blog/2014/01/24/methods-generate-realistic-time-series-data/)
 is hard and might be useful.
+
+### 4. Prescriptive
+
+Bonus: prescriptive. (I added this later, after a discussion with someone.) Prescriptive machine learning would produce instructions: _what to do to a system_.
 
 [Photo Credit](https://pixabay.com/en/brain-cactus-skull-1841528/)
