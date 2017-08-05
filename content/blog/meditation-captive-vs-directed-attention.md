@@ -7,7 +7,6 @@ categories:
 description: Meditation practice continues to change my understanding of what meditation
   is.
 image: media/2017/08/mule-deer.jpg
-draft: true
 
 ---
 I wrote previously about [meditation](/blog/2016/03/19/meditation/), and in a subsequent post I wrote about the meditative qualities I found in [writing cursive](/blog/cursive/). As my meditation practice continues, I find myself seeing these experiences differently than I did before.
