@@ -80,10 +80,11 @@ who was willing to recommend a Jawbone.
 | ![Ticwatch](/media/2017/02/ticwear.jpg)  | [Ticwear](https://www.amazon.com/Ticwatch-Smartwatch-Charcoal-Android-Devices/dp/B01HHUPLRM/?tag=xaprb-20)           | Smart Watch        | Short   | Yes        |       | Activities, Notifications, GPS  |
 | ![Garmin 235](/media/2017/02/garmin-235.jpg)    | [Garmin 235](https://www.amazon.com/Garmin-Forerunner-235-Black-Gray/dp/B0160BC1FO/?tag=xaprb-20)        | Watch-Like Tracker | Medium  | Yes        | Yes   | Activities, Notifications, GPS  |
 | ![Garmin VivoMove](/media/2017/02/garmin-vivomove.jpg)    | [Garmin VivoMove](https://www.amazon.com/Garmin-vívomove-Premium-Stainless-Leather/dp/B01DOJDSSY/?tag=xaprb-20)   | Augmented Watch    | Long    |            | Yes   |                                 |
-| ![Withings Steel](/media/2017/02/withings-steel-hr.jpg)    | [Withings Steel HR](http://www.withings.com/us/en/products/steel-hr) | Augmented Watch    | Long    | Yes        | Yes   | Activities, Notifications       |
+| ![Withings Steel](/media/2017/02/withings-steel-hr.jpg)    | [Withings Steel HR](https://www.amazon.com/Withings-Activite-Steel-Black-36mm/dp/B01LX9L8NP/?tag=xaprb-20) | Augmented Watch    | Long    | Yes        | Yes   | Activities, Notifications       |
 | ![Misfit Phase](/media/2017/02/misfit-phase.jpg)    | [Misfit Phase](https://www.amazon.com/Misfit-Phase-Hybrid-Wearables-Smartwatch/dp/B01N3NQSPF/?tag=xaprb-20)      | Augmented Watch    | Long    |            | Yes   | Activities                      |
 | ![Fitbit Charge](/media/2017/02/fitbit-charge-2.jpg)    | [Fitbit Charge 2](https://www.amazon.com/Fitbit-Charge-Heart-Fitness-Wristband/dp/B01K9S24EM/?tag=xaprb-20)   | Fitness Tracker    | Medium  | Yes        | Yes   | Activities, Notifications       |
 | ![Garmin VivoSmart](/media/2017/02/garmin-vivosmart.jpg)    | [Garmin VivoSmart](https://www.amazon.com/Garmin-vívosmart-Activity-Tracker-Regular/dp/B0177V0H7K/?tag=xaprb-20)  | Fitness Tracker    | Medium  | Yes        | Yes   | Activities, Notifications, GPS  |
+| ![Samsung Gear S3](/media/2017/02/samsung-gear-s3-frontier.jpg)    | [Samsung Gear S3](https://www.amazon.com/Samsung-SM-R760NDAAXAR-Gear-S3-Frontier/dp/B01M7MDK5S/?tag=xaprb-20)  | Augmented Watch | Medium  | Yes        | Yes   | Activities, Notifications, GPS, Payments  |
 
 Each of these makes and models typically has options or related products that
 have more or less functionality. For example, Withings offers an Activite Pop
@@ -94,6 +95,10 @@ it's not analog. And so on.
 It's also worth noting that the space is fast-moving. While I was biding my
 time, trying to decide what I wanted, at least three watch and wearable
 companies were acquired or went out of business, and several new options became available.
+Here are some of them:
+
+* [Nevo Smart Watch](https://www.amazon.com/Nevo-Smartwatch-Retail-Packaging-Silver/dp/B011JLR9RA/?tag=xaprb-20) is a minimalistic analog watch with months of battery life and smartwatch features such as notifications and activity tracking.
+* [Runtastic Moment](https://www.amazon.com/RUNTASTIC-MOMENT-CLASSIC-ACTIVITY-TRACKING/dp/B016PXEML8/?tag=xaprb-20) is a classic-looking analog watch with smartwatch features and long battery life.
 
 ### The Withings Steel HR
 
@@ -126,6 +131,8 @@ review your health statistics.
 It's mostly an analog watch in appearance, although it has a notification area
 where caller ID and the like appear, and a goal tracker to show how much of your
 daily step tracking goal you've achieved.
+
+![Withings Steel HR](/media/2017/02/withings-steel-hr-1.jpg)
 
 I got the black 36mm model. I like the styling.
 I have found it functional, and I appreciate the long battery life. The band is
@@ -174,8 +181,27 @@ texts as much anymore because of loud ambient noise or whatever. In general, I
 notice calls and texts more reliably now, and people around me don't, and I fuss
 with my phone less. It's an unexpected win for me.
 
-If I were to use something else instead,
-might be the Fitbit Charge line of products. What are your thoughts and
-experiences using any of these devices?
+### Other Options
+
+If I were to use something else instead, it might be one of the following:
+
+* Vivosmart 3
+    * 5 day battery
+    * HR and fitness monitoring
+    * Notifications are said to be hard to read
+    * Sleep tracking
+* Garmin ForeRunner 235
+    * 7 day battery
+    * GPS, etc
+    * Heart Rate, Sleep
+    * Good notifications
+    * App is said to be disappointing
+* FitBit Alta HR
+    * 7 day battery
+    * Fitness and HR tracking
+    * Notifications are said to be hard to read
+    * Versus the Charge 2: it’s smaller and lacks stopwatch and manually tracking workouts
+
+What are your thoughts and experiences using any of these devices?
 
 [Picture Credit](https://www.flickr.com/photos/mkrigsman/8409907884)
