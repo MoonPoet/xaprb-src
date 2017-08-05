@@ -34,24 +34,27 @@ In turning to meditation to allow my cup to empty (more through evaporation than
 
 I read a lot of Hardy Boys books when I was young. I remember a scene where Joe Hardy learned to withstand torture by focusing on the pain, leaving no room for fear of the pain.
 
-I had a somewhat painful relationship with my father. I tried the Joe Hardy technique, and found I was able to bear much greater pain than I had thought I was capable of. It brought me a perverse satisfaction and sense of control.
-
-Eventually, like Dr. Jekyll, I became unable to remain present in the moment when I wanted to. It became frightening. Farm work is extremely dangerous and I had some close calls. Living on autopilot is not a good way to stay safe. Meditation helps me practice existing.
+I had a somewhat painful childhood. I tried my version of the Joe Hardy technique---detaching and taking my mind far away---and it worked. But eventually, like Dr. Jekyll, I became unable to remain present in the moment when I wanted to. Farm work is extremely dangerous and I had some close calls. Living on autopilot is not a good way to stay safe. Meditation helps me practice existing.
 
 ### In a Trance
 
-Other people have reacted in various ways to my meditation practice. Despite that I write about it publicly on this blog, I don't really make it a part of my interactions with others. But some of those who noticed that I was meditating offered their interpretations to me.
+Other people have reacted in various ways to my meditation practice. Despite that I write about it publicly on this blog, I don't really make it a part of my interactions with others. But some of those who noticed that I was meditating offered their opinions to me. One person told me that I was wrong to think that meditation would increase my intelligence. (I didn't think it would; this was his interpretation).
 
-A couple worth noting:
+Another person referred to meditation as a trance. To be fair, when I began meditating I did think of it as a trance-like state. In my previous blog post on cursive writing, I mentioned this in the context of losing awareness of the world. Since then, I have come to see it very differently. When I am practicing skillfully, I am anything but absorbed or oblivious to the world. I'm hyper-alert, relaxed, focused, aware, poised, attentive. I'm directing my attention, and observing what arises in the mind. It's an incredibly joyful experience, by the way.
 
-* One person told me that I was wrong to think that meditation would increase my intelligence. (I didn't think it would; this was his interpretation).
-* Another person referred to meditation as a trance.
-
-To be fair, when I began meditating I did think of it as a trance-like state. In my previous blog post on cursive writing, I mentioned that, in the context of losing awareness of the world. Since then, I have come to see it very differently. When I am practicing skillfully, I am anything but absorbed; I am anything but oblivious to the world. I'm hyper-alert, relaxed, focused, aware. I'm just poised and attentive. It's an incredibly joyful experience.
-
-In contrast, I think being absorbed in a task is very different. When I'm practicing mindfulness, I'm directing my attention, and observing myself. When I am in a state of "flow" my observer mind is gone, and my attention is *captive*, not directed; I have no awareness of myself, my thoughts, the passage of time, etc.
+In contrast, I now experience being absorbed in a task as very different. When I am in a state of "flow" my observer mind is gone, and my attention is *captive*, not directed; I have no awareness of myself, my thoughts, the passage of time, etc.
 
 Meditation, for me, is hyper-awareness and focus on the present moment. The familiar trance state of focus is the opposite of this.
 
+### Books That Help
+
+I've learned meditation by doing it, but I've also benefited from reading many books. If I were to start over from scratch, I think I would only read two:
+
+1. [https://www.amazon.com/Wherever-You-There-Are-Mindfulness/dp/1401307787/?tag=xaprb-20](Wherever You Go, There You Are: Mindfulness Meditation in Everyday Life,
+by Jon Kabat-Zinn).
+2. [https://www.amazon.com/Zen-Mind-Beginners-Informal-Meditation/dp/1590308492/?tag=xaprb-20](Zen Mind, Beginner's Mind: Informal Talks on Zen Meditation and Practice,
+by Shunryu Suzuki).
+
+I hope these thoughts are helpful to you.
 
 [Pic Credit](https://www.flickr.com/photos/drriss/8478863068/)
