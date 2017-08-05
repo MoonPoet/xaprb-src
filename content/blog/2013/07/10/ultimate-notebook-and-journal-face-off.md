@@ -12,17 +12,20 @@ menu:
 ---
 If you're like me, you spend so much time typing on a computer that a good notebook or journal is one of life's finer pleasures. I've kept a diary of my personal life for close to 30 years now, and I have a shelf full of journals. I've found a great many that I enjoy writing in, and choosing a different one each time is part of the fun.
 
-But thus far, my quest for a notepad has been unsatisfying. Many notepads have loved me, but I'm sorry to say their love has been unrequited. I've tried all the usual things: Moleskine, loose-leaf paper, binders, what have you. But I never found something that is practical, functional, a joy to write on, and a pleasure to look at and hold. I just can't settle into a long-term relationship with my notebook, because I haven't met The Right One yet.
+TL;DR: The [Apica Premium C.D. Notebook](https://www.amazon.com/Apica-Premium-C-D-Notebook-Sheets/dp/B006ZTHFB2/?tag=xaprb-20) is everything. The [Quo Vadis Habana](http://www.amazon.com/gp/product/B0066NVC02/?tag=xaprb-20) is my previous pick, and I love them both.
 
-**NOTE: Stop The Presses! I found it. This notebook is everything: [Apica Premium C.D Notebook](https://www.amazon.com/Apica-Premium-C-D-Notebook-Sheets/dp/B006ZTHFB2/?tag=xaprb-20)**
+You might also like:
+
+* My [review of the ultimate pen for note-taking](/blog/2015/03/07/ultimate-pen-marker-face-off/)
+* My [rediscovery of the joy of cursive writing](/blog/cursive/)
 
 ![Notebook](/media/2013/07/notebook.jpg)
 
 <!--more-->
 
-So, naturally, I decided to stage a giant contest amongst all the premium notebooks I could find by reading online reviews, searching the Internet, and visiting my local retailers. Read on, but I warn you, I've spent hundreds of dollars amassing a collection, and I'm not going to waste all that on a short blog post. And yes, there will be a winner at the end.
+For a time, my quest for a notepad was unsatisfying. I tried all the usual things: Moleskine, loose-leaf paper, binders, what have you. But it took a while to find something practical, functional, a joy to write on, and a pleasure to look at and hold.
 
-You might also be interested in my [review of the ultimate pen for note-taking](/blog/2015/03/07/ultimate-pen-marker-face-off/).
+I staged a giant contest amongst all the premium notebooks I could find by reading online reviews, searching the Internet, and visiting my local retailers. I spent hundreds of dollars amassing a collection, and I reviewed them all below.
 
 ![Notepads](/media/2013/07/notepads.jpg)
 
@@ -136,7 +139,10 @@ All in all, a very nice notebook, and one of the top contenders for certain.
 > I can't say enough about how amazing the paper is. It's gorgeous, smooth,
 > doesn't bleed through. It feels wonderful and writes beautifully.
 
-160 pages, 6.375 x 9.625 x .625 inches. Rule width: .222 inches. Bought at [Amazon](http://www.amazon.com/gp/product/B0072WW8K4/?tag=xaprb-20) for
+>> Note: I changed my mind, I found something with even better paper: the
+>> [Apica Premium C.D. Notebook](https://www.amazon.com/Apica-Premium-C-D-Notebook-Sheets/dp/B006ZTHFB2/?tag=xaprb-20).
+
+160 pages, 6.375 x 9.625 x .625 inches. Rule width: .222 inches. Bought at [Amazon](http://www.amazon.com/gp/product/B0066NVC02/?tag=xaprb-20) for
 $20.99. I've also bought in [blank (unlined) in bulk from Writers Bloc](http://www.shopwritersbloc.com/habana-journal-large-blank-raspberry.html).
 
 ### PaperBlanks journal
@@ -346,13 +352,16 @@ Do you want a Moleskine? Then buy one. Do you want something like it but better 
 
 Do you want a big, bulky, analytical notebook? That's the Semikolon Il Creativo for you again. Organize thyself!
 
-But if you're like me and you really want a compact, flexible, practical notebook that slips easily into a messenger bag, opens flat, has nice paper, is slim and inexpensive -- then I'm leaning towards recommending the [Quo Vadis Habana](http://www.amazon.com/gp/product/B0072WW8K4/?tag=xaprb-20) or the Mead Cambridge Premium Notebook, depending on your taste. Note that I can't find the Cambridge online, but if you're near a Target it's probably easy to find. I might go back and buy a half dozen or so, just in case that turns out not to be true!
+But if you're like me and you really want a compact, flexible, practical notebook that slips easily into a messenger bag, opens flat, has nice paper, is slim and inexpensive -- then I'm leaning towards recommending the [Quo Vadis Habana](http://www.amazon.com/gp/product/B0066NVC02/?tag=xaprb-20) or the Mead Cambridge Premium Notebook, depending on your taste. Note that I can't find the Cambridge online, but if you're near a Target it's probably easy to find. I might go back and buy a half dozen or so, just in case that turns out not to be true!
 
 > Update: alas, I can no longer find the Cambridge anywhere. So sad. I've been using the Quo Vadis exclusively for the last several books I've bought. I've switched from lined to blank and bought them in bulk from [Writers Bloc](http://www.shopwritersbloc.com/habana-journal-large-blank-raspberry.html).
 
 In general, the ultimate notebook for me is 80-100 sheets of paper or 160-200 pages (I've listed pages above, to make everything consistent), an A5 size, and has pretty minimal features -- no need for a ribbon or an elastic strap -- just nice-quality paper, a slim and flexible design, and the right ruling and margins. 
 
-You might also be interested in my [review of the ultimate pen for note-taking](/blog/2015/03/07/ultimate-pen-marker-face-off/).
+You might also like:
+
+* My [review of the ultimate pen for note-taking](/blog/2015/03/07/ultimate-pen-marker-face-off/)
+* My [rediscovery of the joy of cursive writing](/blog/cursive/)
 
 Here are my favorites in one photo. The rest is up to you. Happy writing, drawing, designing, sketching, scheduling, and organizing!
 

@@ -100,6 +100,17 @@ irrational desire to do something with it, such as:
 * Draw something in the style of Art Deco blended with steampunk
 * Keep a diary
 
+### Fountain Pens
+
+As I wrote in [another post](/blog/cursive/), I rediscovered the joy of writing
+in cursive, and began using a fountain pen for that. I have owned 4 fountain
+pens from Pilot at this point, and would buy another. My most recent is the
+beautiful [Pilot MR Retro
+Pop](https://www.amazon.com/gp/product/B015XIKEMC/?tag=xaprb-20) in purple with
+a medium nib.
+
+![Pilot Metropolitan Fountain Pen](/media/2015/03/pilot-fountain-pen.jpg)
+
 ### Results
 
 I still have a lot of the Le Pen pens hanging around, because I bought a few large boxes of them (one for the office, one for home, which my wife has been dipping into as well; there's another +1 for Le Pen). I think I'll be using these for a while. I usually have one in my pocket, sometimes two (!!), and several in my bag. They're not expensive and they write nicely. On the other hand I don't feel as special writing with them.

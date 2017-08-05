@@ -276,6 +276,13 @@ so remarkably since the ballpoint pen came on the scene, addressing many of the
 reasons ballpoint pens were superior at the time. Those advances have made my
 writing experience more pleasurable.
 
+Edit, August 2017: I've bought a few fountain pens at this point and continue to
+enjoy writing in cursive with them. I journal every single day on [my favorite
+writing paper](/blog/2013/07/10/ultimate-notebook-and-journal-face-off/) with a
+purple Pilot MR Retro Pop with a medium nib.
+
+![Pilot Metropolitan Fountain Pen](/media/2015/03/pilot-fountain-pen.jpg)
+
 <p style="text-align:center">* * *</p>
 
 What is it about cursive writing that's so special? Some people think the
