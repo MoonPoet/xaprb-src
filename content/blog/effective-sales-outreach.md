@@ -8,27 +8,46 @@ image: ''
 draft: true
 
 ---
+Sales people contact me a lot. This is common for anyone who's a founder or executive in a growing company, and I've done it too. I don't mind being contacted. I've made new friends and allies. I've even bought from some.
 
+But there are different kinds of sales outreach, and some of it just isn't effective. The key to effective sales outreach is to realize that there's either a need, timing, and budget or there isn't. The outreach itself cannot cause a sale to happen that the prospect wouldn't otherwise engage in.
 
-Sales people contact me a lot. This is common for anyone who's a founder or executive in a growing company, and I've done it too. I don't mind. Some of the people who've reached out to try to sell me things have turned into friends and allies. I've even bought from some.
+<!--more-->
 
-But there are different kinds of sales outreach, and some of it just isn't effective. I frequently respond to people who contact me and give them advice! I'm sharing this advice here in case it's helpful for you.
+If you've landed in the inbox of someone who has a need, the time is right, and they are able to complete a purchase, then congratulations. Don't mess anything up, and you could have a new customer.
 
-The key to effective sales outreach, in the circles I move in anyway, is to realize that there's either a need, timing, and budget or there isn't. The outreach itself cannot cause a sale to happen that the prospect wouldn't otherwise engage in.
+But the reverse is also true: if you're in the wrong place at the wrong time, then nothing will make them buy from you.
 
-So the point of the sales outreach is to hope that you're in the right place at the right time. It's that simple.
+And this is what so many sales reps seem to get wrong. They think that a sales outreach email can get results through cleverness, forcefulness, or persistence. I know why it happens. They've been taught, and there are best-selling books advocating, obnoxious sales techniques. (Before I figured it out, I used them myself).
 
-If you've landed in the inbox of someone who has a need, the time is right, and they are able to complete a purchase, then congratulations. Don't mess anything up, and you'll have a new customer.
+I'm talking about the fake breakup email, for example, after a sequence of 8 pushy emails I never responded to. "Hey Baron, I thought we were so good together. Do you not love me anymore? Sob. Well, this is goodbye. Here, have a funny gif."
 
-But the reverse is also true: if you're contacting someone who has no need, the timing is wrong, etc then nothing will make them buy from you.
-
-And this is what so many sales reps seem to get wrong. I know why it happens, by the way. They've been taught, and there are best-selling books advocating, obnoxious sales techniques. (Before I figured it out, I used them myself).
-
-I'm talking about the obnoxious fake breakup email, for example. "Hey Baron, I thought we were so good together. Do you not love me anymore? Sob. Well, this is goodbye. Here, have a funny gif."
-
-Another losing tactic is the long, rambling email that wastes the first few sentences on silly things like "Hi, my name is Baron Schwartz, and I'm reaching out to you today because I see you are a Founder and CEO on LinkedIn. Congratulations on your company's recent rapid growth in the marketplace!" Every word, except for "Hi," is a waste in that email. (The name is redundant: it should already be in the From: line of the email header).
+Another losing tactic is the long, rambling email that wastes the first few sentences on silly things like "Hi, my name is Baron Schwartz, and I'm reaching out to you today because I see you are a Founder and CEO on LinkedIn. Congratulations on your company's recent rapid growth in the marketplace!" Every word in that email, except for "Hi," is a waste. (The name is redundant: it should already be in the From: line of the email header).
 
 Here's an example of an email that I'm going to delete without even opening. I can tell with 100% certainty it's just someone wasting my time.
 
-The best sales outreach emails optimize for simplicity and directness. They waste no words in the subject or first sentence. They are possible to scan from the preview of a lock-screen on a phone and decide whether to delete or not. These are optimized for not messing up the lucky case where they've reached the right person at the right time.
+![](/congrats.png)
 
+The best sales outreach emails optimize for simplicity and directness. They make every word count, especially in the subject or first sentence. They are easy to scan from the preview of a lock-screen on a phone and decide whether to delete or not. They are optimized for not messing up a potential engagement, and they waste no effort on trying to win in a losing situation.
+
+Here's a pretty good email I got recently.
+
+> Subject: Work Together
+> Hi Baron,
+> I wanted to find out if you have any design needs at VividCortex (redesign, landing pages, UX, etc) ? We can increase sales, engagement, and conversions through our design and UX strategies. Interested?  Email me back, I’d love to chat. :)
+
+It's not perfect. The subject line could have been better (try "Design/UX Help") and the first sentence could have been even shorter "Do you need any design help..." but otherwise it's great. It's concise and to the point.
+
+One that never works on me is the fake CEO referral.
+
+> Subject: FW: Reach out to Baron
+> Hey Baron, my CEO asked me to reach out to you, blah blah
+> Thanks, John Smith
+> 
+> > From: Joe Englewood
+> > Subject: Reach out to Baron
+> > Hey John, I've been hearing a lot about Baron lately, and we were just talking with the group and thought we should be in touch. Would you please reach out to him and set something up?
+
+That's just a gimmick. Those kinds of things don't work. They're a turnoff.
+
+So, sales reps: optimize for the message preview on a phone's lock screen, do your research, add value to the reader, make a single specific "ask," and let it go if the stars aren't aligned.
