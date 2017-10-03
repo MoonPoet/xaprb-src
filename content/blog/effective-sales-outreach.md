@@ -12,7 +12,7 @@ Sales people contact me a lot. This is common for anyone who's a founder or exec
 
 But there are different kinds of sales outreach, and some of it just isn't effective. The key to effective sales outreach is to realize that there's either a need, timing, and budget or there isn't. The outreach itself cannot cause a sale to happen that the prospect wouldn't otherwise engage in.
 
-![Turbine](/turbine.jpg)
+![Turbine](/media/2017/10/turbine.jpg)
 
 <!--more-->
 
@@ -28,7 +28,7 @@ Another losing tactic is the long, rambling email that wastes the first few sent
 
 Here's an example of an email that I'm going to delete without even opening. I can tell with 100% certainty it's just someone wasting my time.
 
-![Congrats](/congrats.png)
+![Congrats](/media/2017/10/congrats.png)
 
 The best sales outreach emails optimize for simplicity and directness. They make every word count, especially in the subject or first sentence. They are easy to scan from the preview of a lock-screen on a phone and decide whether to delete or not. They are optimized for not messing up a potential engagement, and they waste no effort on trying to win in a losing situation.
 
