@@ -1,7 +1,7 @@
 ---
 upload_path: 'static/media/:year:/:month:'
-frontmatter_file_url_template: ''
-body_file_url_template: ''
+frontmatter_file_url_template: "/media/:year:/:month:/"
+body_file_url_template: "/media/:year:/:month:/"
 new_page_extension: md
 auto_deploy: false
 admin_path: "/admin"
