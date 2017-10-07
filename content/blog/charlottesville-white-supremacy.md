@@ -67,12 +67,14 @@ Richard Wilson Preston, a KKK member, called someone a racial epithet and fired 
 
 ![Preston](/media/2017/09/preston.jpg)
 
+Preston is visible in many videos of the event, repeatedly grasping and brandishing his firearm during the course of the day and threatening people with it.
+
 There were many more brawls and clashes. Here's one scene near Emancipation Park, where Robert E. Lee's statue is located. The man who shouts "follow me!" is convicted domestic terrorist [Michael Tubbs](https://www.splcenter.org/fighting-hate/intelligence-report/2015/c-4-and-confederacy). You saw him in videos and photos I embedded above, too.
 
 <blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">More brawls and chemicals. Alt right guy orders #UniteTheRight into battle against #antifa in #Charlottesville<a href="https://t.co/jzcVcDZZxi">pic.twitter.com/jzcVcDZZxi</a></p>&mdash; Alex Rubinstein (@RealAlexRubi) <a href="https://twitter.com/RealAlexRubi/status/896405542305923074">August 12, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Similar incidences of violence continued to happen, and some of the people seemed to have come for no reason other than to find people to attack.
+Similar incidences of violence continued to happen, and some of the people seemed to have come specifically to find people to attack. Dennis Mothersbaugh was one of them.
 
 {{< youtube RWt-dukiIpE >}}
 
