@@ -94,10 +94,13 @@ I encourage you to watch video of what happened. In addition to the videos I've 
 
 <iframe title="New York Times Video - Embed Player" width="480" height="321" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" id="nyt_video_player" src="https://static01.nyt.com/video/players/offsite/index.html?videoId=100000005363670"></iframe>
 
-
 The NYT summaries are only a couple of minutes long, so I suggest you also watch the following in-depth report from VICE news correspondent Elle Reeve. You'll not only see footage of the events, but she interviewed the white supremacists. You'll hear them advocate for their own beliefs, and justify and defend why they came to Charlottesville.
 
 {{< youtube P54sP0Nlngg >}}
+
+And this compilation of video from News2Share provides a good overview as well:
+
+{{< youtube Thhd-VM6mW4 >}}
 
 <br>You can also browse [Getty's photos of the event](http://www.gettyimages.com/search/events/775021132).
 
