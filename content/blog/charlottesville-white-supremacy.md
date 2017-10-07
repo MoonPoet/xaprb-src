@@ -1,6 +1,6 @@
 ---
 title: "When White Supremacy Came To Charlottesville"
-date: 2017-10-06T00:00:00-04:00
+date: 2017-10-06T18:00:00-04:00
 categories:
   - Commentary
 author: Baron Schwartz
@@ -18,21 +18,21 @@ Before you continue, please be aware that this post links to and contains graphi
 
 <!--more-->
 
-As a quick background, Charlottesville endured a series of protests and rallies during 2017. Most involved memorials to Confederate leaders that the city voted to remove from its parks (although they have not yet been removed). Jason Kessler, a local "alt-right" activist, initiated the August event. Styled as a "Unite The Right" rally, it had national participation and coordination from many [hate groups](https://www.splcenter.org/hate-map) including white nationalist and fascist groups, neo-Nazis, the KKK, and neo-Confederates.
+Charlottesville endured a series of protests and rallies during 2017. Most involved memorials to Confederate leaders that the city voted to remove from its parks (although they have not yet been removed). Jason Kessler, a local "alt-right" activist, initiated the August event. Styled as a "Unite The Right" rally, it attracted support and participation from many [hate groups](https://www.splcenter.org/hate-map) nationwide, including white nationalist and fascist groups, neo-Nazis, the KKK, and neo-Confederates.
 
-A lot happened in the months leading up to the rally on the afternoon of Saturday, August 12. There were signs of planned violence, and everything escalated in the few days prior to the 12th. The city council tried to move the event out of the downtown area to a safer venue, away from densely populated areas and businesses. But civil rights groups defended the organizers, and a judge forced the city to leave the event at Emancipation Park.
+A lot happened in the months leading up to the afternoon of August 12. There were signs of planned violence, and everything escalated in the few days prior to the 12th. The city council tried to move the event out of the downtown area to a safer venue, away from densely populated areas and businesses. But civil rights groups defended the organizers, and a judge forced the city to leave the event at Emancipation Park.
 
 The hate groups who came to Charlottesville arrived early and became violent immediately. On Friday night, hundreds of people gathered at a UVA sports field without a permit, lit torches, and marched to the historic heart of the University. They chanted Nazi and anti-Semitic slogans as they marched: "[blood and soil!](https://en.wikipedia.org/wiki/Blood_and_Soil)" "Jews will not replace us!" They were exultant, hateful, and without fear of reprisal.
 
 ![Torchlit Neo-Nazi March](/media/2017/09/torchlit-nazi-march.jpg)
 
-They surrounded a statue of Thomas Jefferson that stands in front of the iconic Rotunda, where they chanted, threw torches, and gave Nazi salutes. At least one person was struck by a torch; some had fuel thrown on them; some were maced and pepper sprayed; some were thrown to the ground and several were injured; and one person suffered a stroke caused by trauma to the neck. Police came to the scene after the marchers left, and dispersed the few people that remained---mostly students. A UVA student group [live-streamed](https://www.facebook.com/UVAstudentsUNITED/videos/vb.350483125126731/837163406458698/?type=3&theater) the scene at the statue.
+They surrounded a group of students who ringed the statue of Thomas Jefferson that stands in front of the iconic Rotunda, where they chanted, threw torches, and gave Nazi salutes. They struck at least one person with a torch; threw fuel on some; maced and pepper sprayed others. They threw some people to the ground and injured several, and one person suffered a stroke caused by trauma to the neck. Police came to the scene after the marchers left, and dispersed the few people that remained---mostly students. A UVA student group [live-streamed](https://www.facebook.com/UVAstudentsUNITED/videos/vb.350483125126731/837163406458698/?type=3&theater) the scene at the statue.
 
 On Saturday morning, violence began well before the scheduled 2:00pm rally. There were marches and violent clashes over several city blocks and parks separated by a few miles of city streets, from McIntire Park to UVA to the central downtown area.
 
 ![Charlottesville Map](/media/2017/09/charlottesville-map.png)
 
-The rally participants were heavily armed with sticks, pistols, chemical weapons, assault rifles, bricks, and automatic weapons. Many carried shields, wore helmets and full body armor, and some were difficult to distinguish from riot police. Some counter-protestors ("antifa") were also armed. The situation was far from an exercise of First Amendment free speech rights.
+The rally participants were heavily armed with sticks, pistols, chemical weapons, assault rifles, bricks, and automatic weapons. Many carried shields, wore helmets and full body armor, and some were difficult to distinguish from riot police. Some "antifa" counter-protestors were also armed. The situation was far from an exercise of First Amendment free speech rights.
 
 ![White Supremacists In Riot Gear](/media/2017/09/riot-gear.jpg)
 
@@ -48,7 +48,7 @@ Counter-protestors stood in their way, arms linked. Witnesses reported that the 
 
 Witnesses from all groups, including the fascists, reported that the police and city response was passive.
 
-At 11:28 am on Saturday morning, the governor [declared](https://governor.virginia.gov/newsroom/newsarticle?articleId=20924) a state of emergency. The police used loudspeakers to announce an unlawful assembly and threatened arrests if the marchers didn't disperse. But with police standing passively and no physical separation between protestors and counter-protestors, the marchers seemed to act with impunity after they were forced out of the park itself. And there were many hundreds of people in the area, many of them far from where their vehicles were parked.
+At 11:28 am on Saturday morning, the governor [declared](https://governor.virginia.gov/newsroom/newsarticle?articleId=20924) a state of emergency. The police used loudspeakers to announce an unlawful assembly and threatened arrests if the marchers didn't disperse. But with police standing inactive and no physical separation between protestors and counter-protestors, the marchers seemed to act with impunity after they were forced out of the park itself. And there were many hundreds of people in the area, many of them far from where their vehicles were parked.
 
 It's not clear what the authorities thought could happen next, but it's clear that the marchers didn't all try to simply leave. Many of them formed crowds and walked from place to place, chanting and trying to provoke fights. The violence escalated. There were multiple incidents of pepper-spraying, punching, bottle-throwing, shooting, urine tossing, and so on. 
 
@@ -59,7 +59,7 @@ A group of white supremacists singled out Deandre Harris, a local schoolteacher,
 <blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">Fight broke out. Nazis beat black kid w/sticks at end. I kick one in back 2 help &amp; he runs after me. Kid is safe but bloody <a href="https://twitter.com/hashtag/Charlottesville?src=hash&amp;ref_src=twsrc%5Etfw">#Charlottesville</a> <a href="https://t.co/kr11a8zQ0K">pic.twitter.com/kr11a8zQ0K</a></p>&mdash; ChuckModi (@ChuckModi1) <a href="https://twitter.com/ChuckModi1/status/896409728959606789?ref_src=twsrc%5Etfw">August 12, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The attackers, some of whom [brandished firearms](http://www.gregpalast.com/charlottesville-gun-face-got-photo/) while others seemed to stand guard (see the man in the far left of the photo below), fled after a group of people rushed to Harris's aid. Harris and others huddled in the stairwell and waited for medical help that never came.
+The attackers, some of whom [brandished firearms](http://www.gregpalast.com/charlottesville-gun-face-got-photo/) while others seemed to stand guard (see the man in the far left of the photo below), fled after a group of people rushed to Harris's aid. Harris and others huddled in the stairwell and waited for medical help that never came. (Another perspective is visible at 0:26 in [this video](https://twitter.com/CNNnewsroom/status/896411946609549312).)
 
 ![Deandre Harris](/media/2017/09/deandre-harris.jpg)
 
@@ -67,7 +67,7 @@ Richard Wilson Preston, a KKK member, called someone a racial epithet and fired 
 
 ![Preston](/media/2017/09/preston.jpg)
 
-There were many more brawls and clashes. Here's one scene near Emancipation Park, where Robert E. Lee's statue is located. The man who shouts "follow me!" is convicted domestic terrorist [Michael Tubbs](https://www.splcenter.org/fighting-hate/intelligence-report/2015/c-4-and-confederacy).
+There were many more brawls and clashes. Here's one scene near Emancipation Park, where Robert E. Lee's statue is located. The man who shouts "follow me!" is convicted domestic terrorist [Michael Tubbs](https://www.splcenter.org/fighting-hate/intelligence-report/2015/c-4-and-confederacy). You saw him in videos and photos I embedded above, too.
 
 <blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">More brawls and chemicals. Alt right guy orders #UniteTheRight into battle against #antifa in #Charlottesville<a href="https://t.co/jzcVcDZZxi">pic.twitter.com/jzcVcDZZxi</a></p>&mdash; Alex Rubinstein (@RealAlexRubi) <a href="https://twitter.com/RealAlexRubi/status/896405542305923074">August 12, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -99,6 +99,8 @@ The NYT summaries are only a couple of minutes long, so I suggest you also watch
 
 {{< youtube P54sP0Nlngg >}}
 
+<br>You can also browse [Getty's photos of the event](http://www.gettyimages.com/search/events/775021132).
+
 I have many more thoughts about what happened in Charlottesville on August 11 and 12 and the days that followed. I will stop at this for now, but I will leave you with this closing thought:
 
-The real plan was not exercise of free speech. It was a planned race riot, a show of force, designed to intimidate those who object to white supremacy and racism.
+This rally was not about free speech. It was a planned race riot, a show of force designed to intimidate those who object to white supremacy and racism.
