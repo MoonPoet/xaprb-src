@@ -19,29 +19,29 @@ practice.
 <!--more-->
 
 I've never liked "going to the gym," although I've forced myself to do so in
-order to stay healthy. But a few years ago I found something that I prefer
-greatly.  It began with Crossfit in 2011. Crossfit was *fun* for me. I enjoyed
-not only the challenge of pushing myself, but also the others around me, the
-minimalism of the equipment, and of course the results. I started Crossfit after
-my kids were born and I was in terrible shape: weak, fat, sleep-deprived, very
-low cardiovascular capacity. After a couple of years of Crossfit, I was much
-fitter overall, and way stronger, than I'd ever been.
+order to stay healthy. But a few years ago I found something that I prefer.  It
+began with Crossfit in 2011. Crossfit was *fun* for me. I enjoyed not only the
+challenge of pushing myself, but also the friendly competition with others
+around me, the minimalism of the equipment, and of course the results. I started
+Crossfit after my kids were born and I was in terrible shape: weak, fat,
+sleep-deprived, low cardiovascular capacity. After a couple of years of
+Crossfit, I was much fitter overall, and way stronger, than I'd ever been.
 
 But after a few years of Crossfit, I wasn't gaining any ground. I couldn't go to
 the gym every day, and the exercises were a little too intense; I had a lot of
 other demands on my life and couldn't recover properly, so I felt like all I was
 doing was beating the hell out of my body and staying sore. And driving to the
-box, working out, and showering and getting back to my life was just taking too
+box, working out, showering, and getting back to my life was just taking too
 much time.
 
 I was also increasingly unwilling to subject myself to the [potential of
 injury](/blog/2014/01/20/crossfit-safety/) that I've seen there. I had to take
-some time off to rehabilitate some minor stress injuries I sustained myself.
+some time off to rehabilitate some minor stress injuries.
 Afterwards, instead of returning to Crossfit, I did Crossfit-style workouts at a
 traditional gym. The years at Crossfit had taught me well that I can do an
 intense workout anywhere, anytime, with limited or no equipment.
 
-But I hated it, because I hate gyms.  Aside from people looking at me like I was
+But I hated it, because I hate gyms.  Not only did people look at me like I was
 a nuisance all the time (boy, had I forgotten the cultural difference between
 Crossfit and an ordinary gym!), it just wasn't much fun. And it was expensive. I
 ended up going to the gym just to force myself to commit to a workout: show up
@@ -54,10 +54,11 @@ routine to make it failsafe, day in and day out. It worked. Here's the essence:
 
 - **Intense**. Crossfit-style movements, biased more towards high-complexity
   METCON (metabolic conditioning) movements, which are essentially
-  high-intensity calisthenics such as pushups, burpees, jumping rope and passing
-  the rope twice under with each jump ("double-unders"), and thrusters. The
-  multi-purpose nature of these movements requires little equipment and works
-  many muscle groups at once, which makes them exhausting very quickly.
+  high-intensity calisthenics such as pushups, burpees, double-unders (jumping
+  rope and passing the rope twice under with each jump), and
+  [thrusters](https://www.youtube.com/watch?v=aea5BGj9a8Y). The compound nature
+  of these movements requires little equipment and works many muscle groups at
+  once, which makes them exhausting very quickly.
 - **Short**. I usually do my workouts in 4-10 minutes total. I often do timed
   AMRAP (as many rounds as possible in a fixed time), a few rounds of 2-5
   complex movements in moderate repetition counts for time, or Tabata workouts
@@ -79,15 +80,23 @@ routine to make it failsafe, day in and day out. It worked. Here's the essence:
   times a week when I'm at home and have weights handy. For example, 6 rounds of
   6 heavy squats.
 
-So I'm basically doing what I regard as the best of Crossfit: simple, safe, fun,
+So I'm doing what I regard as the best of Crossfit: simple, safe, fun,
 ever-changing exercises that challenge me and are ceremony-, danger-, and
-complexity-free. And I've most definitely saved thousands of dollars.
+complexity-free. And I've saved thousands of dollars.
 
 I time it all, and write down each day's workout in a summary form in a
 [notebook](/blog/2013/07/10/ultimate-notebook-and-journal-face-off/). I'll write
 what I did, my "score" as appropriate (reps, time, etc), how long it took, what
 weights or other parameters were involved, and how I felt---should I go heavier
 next time, for example?
+
+Here's one page from my notebook:
+
+- 2017-09-22: 6x6 heavy squats
+- 2017-09-23 4:00 Tabata of wallballs, burpee pullups
+- 2017-09-24: 6x6 heavy touch-and-go clean & jerks
+- 2017-09-25: 9:00 Tabata of double-unders, situps, and kettlebell swings
+- 2017-09-26: "Diane" in 4:20 (21-15-9 heavy deadlifts and modified handstand pushups)
 
 The result? I'm spending 5-15 minutes per day working out in my slapped-together
 home gym. I'm having fun. And I'm stronger and fitter than I ever was even when
@@ -96,7 +105,7 @@ squatting 6 rounds of 6 reps at 35% heavier than my one-rep max squat when I was
 at Crossfit. 
 
 I'll write about my "gym" next time---it's charitable to call it a gym and I've
-hardly spent anything on it. A few months' subscription fees at a gym or box
-would be more than my gym has cost me.
+spent little on it. A few months' subscription fees at a gym or box would be
+more than my gym has cost me.
 
 [Image via Pixabay](https://pixabay.com/p-1634765/)
