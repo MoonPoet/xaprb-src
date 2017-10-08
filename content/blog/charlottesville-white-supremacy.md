@@ -5,12 +5,12 @@ categories:
   - Commentary
 author: Baron Schwartz
 description: "A synopsis of events at Charlottesville's white supremacist gathering in August 2017"
-image: "media/2017/09/armentrout.jpg"
+image: "media/2017/10/fascists.jpg"
 ---
 
 On August 11 and 12, 2017, hundreds of white supremacists traveled to my hometown of Charlottesville, Virginia, ostensibly to protest the planned removal of Confederate memorials. They assaulted, injured, and killed people.
 
-Many people don't know even the outlines of what happened, and have asked me to describe it to them. I've had trouble finding a concise, comprehensive story online. Most news stories are either summarized or focus on only a single incident during the rally, giving no sense of what happened overall. This post is a collection of some of the major events.
+Many people don't know even the outlines of what happened, and have asked me to describe it to them. I've had trouble finding a concise, comprehensive story online. Most news stories are either summarized or focus on only a single incident during the rally, giving no sense of what happened overall. This post is a compilation of some of the major events.
 
 Before you continue, please be aware that this post links to and contains graphic, disturbing images and video.
 
@@ -18,7 +18,7 @@ Before you continue, please be aware that this post links to and contains graphi
 
 <!--more-->
 
-Charlottesville endured a series of protests and rallies during 2017. Most involved memorials to Confederate leaders that the city voted to remove from its parks (although they have not yet been removed). Jason Kessler, a local "alt-right" activist, initiated the August event. Styled as a "Unite The Right" rally, it attracted support and participation from many [hate groups](https://www.splcenter.org/hate-map) nationwide, including white nationalist and fascist groups, neo-Nazis, the KKK, and neo-Confederates.
+Charlottesville endured a series of protests and rallies during 2017, notably one led by Richard Spencer on [May 11](https://www.washingtonpost.com/local/virginia-politics/alt-rights-richard-spencer-leads-torch-bearing-protesters-defending-lee-statue/2017/05/14/766aaa56-38ac-11e7-9e48-c4f199710b69_story.html) and a KKK rally on [July 8](https://www.washingtonpost.com/local/ku-klux-klan-rally-set-to-begin-amid-tension-in-charlottesville/2017/07/08/c000a8ec-63fd-11e7-a4f7-af34fc1d9d39_story.html). Most involved memorials to Confederate leaders that the city voted to remove from its parks (although they have not yet been removed). Jason Kessler, a local "alt-right" activist, initiated planning for the August 12 event. Styled as a "Unite The Right" rally, it attracted support and participation from many [hate groups](https://www.splcenter.org/hate-map) nationwide, including white nationalist and fascist groups, neo-Nazis, the KKK, and neo-Confederates.
 
 A lot happened in the months leading up to the afternoon of August 12. There were signs of planned violence, and everything escalated in the few days prior to the 12th. The city council tried to move the event out of the downtown area to a safer venue, away from densely populated areas and businesses. But civil rights groups defended the organizers, and a judge forced the city to leave the event at Emancipation Park.
 
@@ -89,6 +89,12 @@ There was much more. Among other incidents, a state police helicopter crashed ne
 The next weekend there was a counter-rally, organized person-to-person in private. Thousands of people gathered peacefully at the same field where the neo-Nazis assembled. They lit candles and walked the same path to the center of UVA, where they sang songs of peace and justice.
 
 ![Candlelit Rally](/media/2017/09/candlelit-rally.jpg)
+
+When the fascists left Charlottesville, they were angry that the police and city hadn't protected them so they could hold their rally as planned, and they blamed the disruption on counter-protestors ("antifa"). They vowed that they'd return, and they have. On the evening of Saturday, October 7, Richard Spencer and 40-50 other white supremacists [arrived unannounced](http://www.dailyprogress.com/news/local/white-nationalists-rally-again-at-lee-statue-bellamy-calls-for/article_cb586412-abbc-11e7-b6e9-2ba90c99f89e.html) in a tour bus and repeated the tiki-torch chanting routine at the Lee statue, which has been shrouded in black cloth since shortly after Heather Heyer's death.
+
+![October 7th Neo-Nazi Rally](/media/2017/10/spencer-oct-7.jpg)
+
+The police were at the gathering, which they did not deem illegal because the park was open and there were not more than 50 people present. The ralliers chanted "we will be back," and then the police escorted the people away without incident. Meanwhile, about 30 students and faculty assembled at UVA in front of the president's residence to counter-protest, and police declared that an illegal assembly. It is also worth noting that NBC29, which [broke the story](http://www.nbc29.com/story/36545792/white-activists-gather-at-emancipation-park) that evening, called the downtown group "white activists" at first, and only later updated the headline to call them "white nationalists" (note the story's URL).
 
 I encourage you to watch video of what happened. In addition to the videos I've embedded above, you can get a good sense of the mayhem and panic of the weekend's events by watching some short montages assembled by The New York Times:
 
