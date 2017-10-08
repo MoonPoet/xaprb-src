@@ -1,11 +1,10 @@
 ---
-draft: true
 title: "My Workout Regimen"
 date: 2017-10-08T16:57:13-04:00
 categories:
   - Life Hacking
 author: Baron Schwartz
-description: "This is the workout routine that has finally worked for me."
+description: "This is the workout routine that works for me."
 image: "media/2017/10/dumbbells-1634765_1280.jpg"
 ---
 
