@@ -19,14 +19,14 @@ practice.
 
 I've never liked "going to the gym," although I've forced myself to do so in
 order to stay healthy. But a few years ago I found something that I prefer.  It
-began with Crossfit in 2011. Crossfit was *fun* for me. I enjoyed not only the
+began with CrossFit in 2011. CrossFit was *fun* for me. I enjoyed not only the
 challenge of pushing myself, but also the friendly competition with others
 around me, the minimalism of the equipment, and of course the results. I started
-Crossfit after my kids were born and I was in terrible shape: weak, fat,
+CrossFit after my kids were born and I was in terrible shape: weak, fat,
 sleep-deprived, low cardiovascular capacity. After a couple of years of
-Crossfit, I was much fitter overall, and way stronger, than I'd ever been.
+CrossFit, I was much fitter overall, and way stronger, than I'd ever been.
 
-But after a few years of Crossfit, I wasn't gaining any ground. I couldn't go to
+But after a few years of CrossFit, I wasn't gaining any ground. I couldn't go to
 the gym every day, and the exercises were a little too intense; I had a lot of
 other demands on my life and couldn't recover properly, so I felt like all I was
 doing was beating the hell out of my body and staying sore. And driving to the
@@ -36,22 +36,22 @@ much time.
 I was also increasingly unwilling to subject myself to the [potential of
 injury](/blog/2014/01/20/crossfit-safety/) that I've seen there. I had to take
 some time off to rehabilitate some minor stress injuries.
-Afterwards, instead of returning to Crossfit, I did Crossfit-style workouts at a
-traditional gym. The years at Crossfit had taught me well that I can do an
+Afterwards, instead of returning to CrossFit, I did CrossFit-style workouts at a
+traditional gym. The years at CrossFit had taught me well that I can do an
 intense workout anywhere, anytime, with limited or no equipment.
 
 But I hated it, because I hate gyms.  Not only did people look at me like I was
 a nuisance all the time (boy, had I forgotten the cultural difference between
-Crossfit and an ordinary gym!), it just wasn't much fun. And it was expensive. I
+CrossFit and an ordinary gym!), it just wasn't much fun. And it was expensive. I
 ended up going to the gym just to force myself to commit to a workout: show up
 and I'll do it, don't show up and I won't. It was that simple. And I hated
 showing up in a place like that, full of stupid machines and stupid rules.
 
 So I switched back to home, and bought a minimalistic amount of the most common
-and versatile equipment needed to do Crossfit-style movements. And I modified my
+and versatile equipment needed to do CrossFit-style movements. And I modified my
 routine to make it failsafe, day in and day out. It worked. Here's the essence:
 
-- **Intense**. Crossfit-style movements, biased more towards high-complexity
+- **Intense**. CrossFit-style movements, biased more towards high-complexity
   METCON (metabolic conditioning) movements, which are essentially
   high-intensity calisthenics such as pushups, burpees, double-unders (jumping
   rope and passing the rope twice under with each jump), and
@@ -69,7 +69,7 @@ routine to make it failsafe, day in and day out. It worked. Here's the essence:
 - **First Thing**. I wake up, drink a cup of coffee, journal, meditate, and hit
   it hard before breakfast. As a bonus, science shows that exercising before
   eating has a lot of benefits.
-- **Constantly Varied**. I come up wth something new every day and rarely do any
+- **Constantly Varied**. I come up with something new every day and rarely do any
   type of standardized workout. There are plenty of [named benchmark
   workouts](https://crossfit.com/cf/faq), and these are great in a pinch when
   I'm lacking imagination. But even when I use them, I'll usually modify them.
@@ -79,7 +79,7 @@ routine to make it failsafe, day in and day out. It worked. Here's the essence:
   times a week when I'm at home and have weights handy. For example, 6 rounds of
   6 heavy squats.
 
-So I'm doing what I regard as the best of Crossfit: simple, safe, fun,
+So I'm doing what I regard as the best of CrossFit: simple, safe, fun,
 ever-changing exercises that challenge me and are ceremony-, danger-, and
 complexity-free. And I've saved thousands of dollars.
 
@@ -93,15 +93,15 @@ Here's one page from my notebook:
 
 - 2017-09-22: 6x6 heavy squats
 - 2017-09-23 4:00 Tabata of wallballs, burpee pullups
-- 2017-09-24: 6x6 heavy touch-and-go clean & jerks
+- 2017-09-24: 6x6 touch-and-go clean & jerks
 - 2017-09-25: 9:00 Tabata of double-unders, situps, and kettlebell swings
 - 2017-09-26: "Diane" in 4:20 (21-15-9 heavy deadlifts and modified handstand pushups)
 
 The result? I'm spending 5-15 minutes per day working out in my slapped-together
 home gym. I'm having fun. And I'm stronger and fitter than I ever was even when
-I was doing Crossfit avidly.  To give an idea, my resting pulse is 40, and I'm
+I was doing CrossFit avidly.  To give an idea, my resting pulse is 40, and I'm
 squatting 6 rounds of 6 reps at 35% heavier than my one-rep max squat when I was
-at Crossfit. 
+at CrossFit. 
 
 I'll write about my "gym" next time---it's charitable to call it a gym and I've
 spent little on it. A few months' subscription fees at a gym or box would be
