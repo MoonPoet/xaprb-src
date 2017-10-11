@@ -1,32 +1,32 @@
 ---
-draft: true
 title: "My Home Gym"
-date: 2017-10-10T04:02:25-04:00
+date: 2017-10-10T04:18:25-04:00
 categories:
   - Life Hacking
 author: Baron Schwartz
-description: ""
-image: ""
+description: "Here's the equipment I bought/built for my pseudo-CrossFit home gym."
+image: "media/2017/10/jump-rope.jpg"
 ---
 
 After leaving CrossFit, I found a workout rhythm that works well for me, and
 gradually stocked my basement and patio with a few essentials so I can vary my
-workouts. I can do pretty much anything I used to do at a really nice CrossFit
+workouts. Now I can do pretty much anything I used to do at a really nice CrossFit
 gym. CrossFit is great because the equipment needed is fairly minimal anyway.
 People often ask "where are the machines?" and the insider's joke is "we don't
-use machines, we build them."
+use machines, we build them." Here's what's in my "garage gym."
 
-Here's what's in my "garage gym."
+<!--more-->
 
 Jargon note: Rx is CrossFit slang for "as prescribed," which a lot of athletes
 will not do---they will "scale" the workout to fit their level of ability. Rx
-workouts assume a high degree of overall fitness.
+workouts assume a high degree of overall fitness. Also, "box" is what you call a
+CrossFit gym.
 
 ### Pullup Bar
 
 Pullups (and toes-to-bar) are essential.
 I built a pullup bar at the edge of my patio by sinking two 4x6 posts three feet
-into the ground, drilling holes at the top, and threading a piece of plumbing
+into the ground, drilling holes at the top, and threading a piece of steel plumbing
 pipe into it. I added some heavy gate hinges as an ad-hoc squat rack, but since
 this is outside, I stopped using it and got an actual squat rack indoors (more
 on that later).
@@ -42,7 +42,7 @@ men, 14 for women. The gold standard is the
 but I bought a cheaper One Fit Wonder ball I can't find anymore. It's harder to
 grip; maybe that's a good thing.
 
-
+![Medicine Ball](/media/2017/10/medicine-ball.jpg)
 
 ### Slam Ball
 
@@ -51,6 +51,8 @@ fast as you can, is much more challenging than it sounds like. My slam ball is a
 [One Fit Wonder](https://www.fringesport.com/products/slam-balls) from Fringe
 Sport. It's an essential spice that I mix into other movements. The usual
 Rx weight is something like 30 pounds for men, 20 for women.
+
+![Slam Ball](/media/2017/10/slam-ball.jpg)
 
 ### Jump Rope
 
@@ -63,6 +65,8 @@ also modified some ropes to hold heavier cable, e.g. drilling out the holes and
 loading in cable I bought at the hardware store. My only recommendation is to
 get a rope you can adjust as you learn the right size for your height.
 
+![Jump Rope](/media/2017/10/jump-rope.jpg)
+
 ### Kettlebells
 
 Kettlebell swings are a staple for me. You can do a lot else with kettlebells
@@ -74,6 +78,8 @@ could get away with. You can often find used kettlebells on Craigslist. That's
 where I got some of mine. I bought others from
 [Amazon](https://www.amazon.com/gp/product/B003J9E6B8/?tag=xaprb-20) and [Fringe
 Sport](https://www.fringesport.com/collections/kettlebells/products/onefitwonder-premium-kettlebells).
+
+![Kettlebell](/media/2017/10/kettlebell.jpg)
 
 ### Dumbbells
 
@@ -90,6 +96,8 @@ are *awesome*. They're easy to adjust to a variety of very specific and finely
 graduated weights, they're excellent quality, and they're a lot cheaper than
 buying tons of fixed-weight dumbbells. They store more compactly too. This is
 one of my best investments in my gear.
+
+![Dumbbells](/media/2017/10/dumbbells.jpg)
 
 ### Squat Rack, Bar And Weights, And Bar Clamps
 
@@ -108,6 +116,8 @@ good barbell is such an upgrade. But mine does the job fine.  I care only that I
 can do clean-and-jerks without struggling with a bar that is fixed and won't
 spin. I also have round weight plates; 12-sided ones would not work for Olympic
 lifting.
+
+![Squat Rack](/media/2017/10/squat-rack.jpg)
 
 The clamps are one of the more important parts of my gear. I can't stand the
 standard spring clamps. They get torqued and stop working right, and then you're
@@ -138,7 +148,12 @@ prevents the jump rope from fraying, breaking, and becoming dangerous.
 A plyo box is good for box jumps, box squats, scaled pushups, and lots of other
 things. I bought a [3-in-1
 kit](https://www.amazon.com/gp/product/B00NIA4AB4/?tag=xaprb-20) from Amazon,
-and I've been very happy with it. It was easy to assemble.
+and I've been very happy with it. It was easy to assemble. (Note that the image
+is misleading: it shows 3 boxes in different sizes, whereas you buy one box with
+3 different lengths of sides, and you can choose what size that box is---small,
+medium, large; Rx for men is box jumps up to 30 inches for most workouts).
+
+![Plyo Box](/media/2017/10/plyo-box.jpg)
 
 ### Rowing Machine
 
@@ -151,6 +166,8 @@ I bought one from Craigslist. It was a much older one that needed parts and
 reconditioning, and I didn't give it the attention it needed, but it still
 worked fine. For various reasons it ended up getting sold and I haven't bought
 another. I miss it.
+
+![Rower](/media/2017/10/rower.jpg)
 
 ### Foam Roller And Ball
 
@@ -195,7 +212,7 @@ All together, I think I've spent roughly...
 - $85 resistance band set
 
 In hindsight, I wouldn't buy all of these again. I'd buy/build them in the following
-order of priority:
+order of priority, one at a time, gradually:
 
 1. jump rope
 2. pullup bar
