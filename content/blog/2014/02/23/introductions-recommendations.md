@@ -47,10 +47,11 @@ Here's the type of thing I'm referring to:
 > 
 > I have copied Alex on this email so you both can connect.
 
-This is what you should never do. Just don't. You need double opt-in before
-introducing someone to me like this, with an ask for help. The reality is I
-cannot afford the time and effort helping someone like this will take. I'm going
-to have to say no, and I'm going to have to ask this person not to do this kind
+This is what you should never do. Just don't offer my services to a stranger
+without asking. You need double opt-in before introducing someone to me like this.
+
+I cannot afford the time and effort helping someone like this will take. I'm going
+to have to say no, and then ask this person not to do this kind
 of thing anymore. Cleaning up this kind of mess is the *last* thing I want to be
 doing at times when I'm focusing my attention on critical priorities for my
 company or family.
