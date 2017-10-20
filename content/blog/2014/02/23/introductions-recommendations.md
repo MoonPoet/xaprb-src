@@ -3,6 +3,7 @@ title: "Respectful Introductions and Recommendations"
 description: "Introducing people carries risk for all parties involved."
 date: "2014-02-23"
 url: /blog/2014/02/23/respectful-introductions-recommendations/
+image: "media/2014/02/elephant.jpg"
 categories:
   - Commentary
 ---
@@ -15,6 +16,44 @@ requests, and I'd like to share my current thoughts about that with you, because
 a lot of trouble can come of a seemingly innocent request or offer.
 
 ![Elephant](/media/2014/02/elephant.jpg)
+
+<!--more-->
+
+### Never Make Blind Introductions
+
+You should never make a "blind" introduction to someone who's not expecting it.
+This is so important! Check first with all parties, anonymously, before
+revealing them to each other.
+
+Why does this matter so much? When someone introduces me unexpectedly, it
+violates my personal space and control over my time and schedule. Someone
+unexpectedly has my contact details and implicit permission from a third party
+to use them, which I didn't grant. And, there's often an "ask" that comes with
+it, which is an implied obligation that I need to either comply with or reject,
+at some risk to relationships.
+
+Here's the type of thing I'm referring to:
+
+> Baron,
+> 
+> I am on the Board of a local energy efficiency company called XYZ.
+> 
+> As part of their project design, they will be creating and managing a fairly
+> large and rapidly scaling database of customer data.
+> 
+> I thought the CEO, Alex Bazhinov, would benefit from meeting you and discussing
+> his project and the database platform and possibly pick your brain around
+> database selection and attracting software talent to the Charlottesville are.
+> 
+> I have copied Alex on this email so you both can connect.
+
+This is what you should never do. Just don't. You need double opt-in before
+introducing someone to me like this, with an ask for help. The reality is I
+cannot afford the time and effort helping someone like this will take. I'm going
+to have to say no, and I'm going to have to ask this person not to do this kind
+of thing anymore. Cleaning up this kind of mess is the *last* thing I want to be
+doing at times when I'm focusing my attention on critical priorities for my
+company or family.
 
 ### The Stakes Are High
 
