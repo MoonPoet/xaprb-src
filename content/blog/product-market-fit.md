@@ -10,14 +10,14 @@ image: media/2016/12/whiskey-stones.jpg
 draft: false
 
 ---
-The way I think about product/market fit has changed a lot over the years. I
-view it differently than I used to.
+I've built the right thing to do the right thing in the right way. Obviously product/market fit, right?
+No.  I now think about product/market fit very differently than I used to.
 
 ![Whiskey Stones](/media/2016/12/whiskey-stones.jpg)
 
 <!--more-->
 
-I used to think of product/market fit along the lines of: users are enthusiastic, word of mouth is positive, people are delighted, the app is a joy to use, it makes hard things easy, it nails the use case---the app solves a problem or meets a need in such a way that it makes users happy. I've built the right thing to do the right thing in the right way. Obviously product/market fit, right?
+I used to think of product/market fit along the lines of: users are enthusiastic, word of mouth is positive, people are delighted, the app is a joy to use, it makes hard things easy, it nails the use case---the app solves a problem or meets a need in such a way that it makes users happy. 
 
 Nope. That's service/user fit, not product/market fit. It's not a bad thing, but it's _totally_ different. It took me a while to see that.
 
@@ -73,5 +73,11 @@ Revisiting Moore's definition, it's also helpful to remember that your market is
 Product/market fit is very different from what I thought when I founded VividCortex. I was really thinking about service/user fit without knowing it. Product/market fit isn't when your users are getting value from your app. It's when you sell the value you create, and your market---a set of customers with common needs and who have herd buying behavior---purchases and acquires it effectively.
 
 All three words (product, market, fit) require clear understanding to succeed.
+
+*PS: A whiskey distiller, who sells whiskey chilling stones in the showroom,
+told me that Scottish whisky drinkers used to dig rocks out of frozen streams in
+the winter to chill their drinks, which is the origin of whisky stones. And the
+term "on the rocks." So apparently I'm wrong about the stones! He told me he is
+careful not to smash his lips with them, though. Caveat emptor.*
 
 [Pic Credit](https://www.flickr.com/photos/srslyguys/5817645686)
