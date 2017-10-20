@@ -41,7 +41,7 @@ Here's the type of thing I'm referring to:
 > As part of their project design, they will be creating and managing a fairly
 > large and rapidly scaling database of customer data.
 > 
-> I thought the CEO, Alex Bazhinov, would benefit from meeting you and discussing
+> I thought the CEO, would benefit from meeting you and discussing
 > his project and the database platform and possibly pick your brain around
 > database selection and attracting software talent to the Charlottesville are.
 > 
