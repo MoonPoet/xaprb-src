@@ -9,8 +9,8 @@ description: "Four books that have helped me to know myself more deeply."
 image: "media/2017/10/zen.jpg"
 ---
 
-Mindfulness meditation has changed me as much as perhaps any other influence in
-my life. Here are four books that I think are treasures of wisdom.
+Mindfulness meditation has changed me perhaps more than any other influence in
+my life. Here are four books whose wisdom I treasure.
 
 ![Zen Rocks](/media/2017/10/zen.jpg)
 
@@ -37,7 +37,7 @@ about the *how*.
 Henry David Thoreau, is the American classic on what it means to be alive.
 Although not really a book about mindfulness, it is nonetheless woven through
 with Henry David's delightful experiences with mindfulness as he simply "enjoyed
-the bloom of the present moment." I linked to Amazon, but I urge you to go to a
+the bloom of the present moment." I linked to Amazon, but if you can, go to a
 good used or antique bookstore and see if they have an old edition of it. By
 doing so, you might be able to find a printing that you can appreciate for the
 craft, which can give an extra dimension to the experience of reading it.
@@ -55,20 +55,20 @@ over the world with me for years.
 
 ### Bonus: Get Some Headspace
 
-[Get Some Headspace](https://www.amazon.com/Get-Some-Headspace-Difference-Puddicombe/dp/B00DO8Q33I/?tag=xaprb-20), by
-Andy Puddicombe, is the book that actually started my practice of mindfulness
-meditation. The [Headspace](https://www.headspace.com/) mobile app also helped
-tremendously. I no longer use it, but it was very useful in teaching me to
-meditate and establishing my practice.
+[Get Some
+Headspace](https://www.amazon.com/Get-Some-Headspace-Difference-Puddicombe/dp/B00DO8Q33I/?tag=xaprb-20),
+by Andy Puddicombe, is the book that actually started my practice of mindfulness
+meditation as it is today. The [Headspace](https://www.headspace.com/) website
+and mobile app also helped me establish my practice.
 
 There are thousands of other books on meditation and mindfulness, many of them
-obviously written by people who are studying mediation but not practicing it. I
+written by people who are perhaps studying mediation but not practicing it. I
 have read dozens of them. Many are good, but in my view, the above are the best.
 
-If you only want to buy one, I'd start with Jon Kabat-Zinn's. If you simply want
+If I were to buy only one, I'd start with Jon Kabat-Zinn's. If I simply wanted
 to establish a mindfulness meditation practice, I'd start with the Headspace app
 or website, and then read Suzuki or Kabat-Zinn after a little while.
 
-Above all: practice.
+Above all: the advice I'd give myself is to simply practice.
 
 [Pic Credit](https://pixabay.com/en/zen-garden-meditation-monk-stones-2040340/)
