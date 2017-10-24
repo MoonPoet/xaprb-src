@@ -19,4 +19,17 @@ Paginate: 20
 Taxonomies:
    category: "categories"
    tag: "tags"
+Related:
+   threshold: 50
+   includeNewer: true
+   toLower: true
+   indices:
+      - name: tags
+        weight: 100
+      - name: categories
+        weight: 50
+      - name: description
+        weight: 50
+      - name: title
+        weight: 100
 ---
