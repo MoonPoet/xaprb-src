@@ -1,10 +1,10 @@
 ---
 draft: true
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
+date: "{{ .Date }}"
 categories:
   - Databases
-author: Baron Schwartz
+author: "Baron Schwartz"
 description: ""
 image: ""
 ---
