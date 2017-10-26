@@ -51,8 +51,8 @@ Is there really *huge risk* in meeting women without a witness to keep you safe?
 1. If you're a woman: have you been abused? Odds are 1:4 that you have been.
 
 I haven't been falsely accused. I don't know of a single man who's been falsely accused. I am not even aware of any
-second-degree connections whom I know have been. <span style="font-size: 1rem;">I know dozens of women who've been abused, </span>*and so do you*<span style="font-size: 1rem;"> even if you're unable
-to name any. It's <i>rampant.</i></span>
+second-degree connections whom I know have been. I know dozens of women who've been abused, *and so do you* even if you're unable
+to name any. It's rampant.
 
 In reality, the chance that a man accused of sexual assault is being slandered is infinitesimal. But when a woman says a man abused her, the odds are a zillion times higher that she's telling the truth.  When women say they've been abused, the rational thing to
 do is believe them.
@@ -69,16 +69,14 @@ Here, listen to Jon:
 remember a lunch with a female colleague. Our eyes met over our sandwiches….AND
 THEN WE ATE OUR LUNCHES LIKE NORMAL PEOPLE!!</p>— Jon Cowie (@jonlives) <a href="https://twitter.com/jonlives/status/847469563860148224?ref_src=twsrc%5Etfw">March
 30, 2017</a></blockquote>
-<script type="null"></script>
 
 Or Claire:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I meet
-1-on-1 w/men literally every day of my <a href="https://twitter.com/hashtag/proflife?src=hash&amp;ref_src=twsrc%5Etfw">#proflife</a>
+1-on-1 w/men literally every day of my #proflife
 and they just don't assault/harass me. IT'S REALLY EASY.  <a href="https://t.co/Bh1eBSHTX7">https://t.co/Bh1eBSHTX7</a></p>— Claire Le
 Goues (@clegoues) <a href="https://twitter.com/clegoues/status/918105138224599041?ref_src=twsrc%5Etfw">October
 11, 2017</a></blockquote>
-<script type="null"></script>
 
 I said it's sexist to act as if it's not safe to be alone with a woman. Why did I say that?
 
@@ -105,18 +103,18 @@ women, which requires objectifying and seeing women as lesser, as beings whose
 existence is justified in relationship to a man. And a man in that frame of mind tells himself that he has tender, loyal feelings towards a woman. This is
 terrifying to women, because hell hath no irrationality like a man whose protective (possessive) feelings are scorned.
 
-That's not all. This attitude of inability to be safe near women blames
-women for men's immaturity, lack of self-awareness, and lack of self-control. It
+That's not all. This attitude of inability to be safe near women **blames
+women for men's immaturity, lack of self-awareness, and lack of self-control**. It
 reinforces a narrative that a man is an enlightened being who can be corrupted
 by a baser person. It says that a woman wields power that a man is
 incapable of resisting, and the only safe course of action is never to put
 oneself in that position. This is explicitly victim-blaming and denial of
 responsibility and agency. *Don't do
-this. It's the original Eve-blaming sin.*<span style="font-size: 1rem;">&nbsp;It cloaks itself in honor, virtue, righteousness, but it's patronizing and condescending to the extreme. And you can't
-condescend without assuming a sexist attitude of being loftier</span><span style="font-size: 1rem;">, a false moral high ground</span><span style="font-size: 1rem;">.</span>
+this. It's the original Eve-blaming sin.* It cloaks itself in honor, virtue, righteousness, but it's patronizing and condescending to the extreme. And you can't
+condescend without assuming a sexist attitude of being loftier, a false moral high ground.
 
-Finally, this fear and "self-protection strategy" reinforces the structural norm that
-men believe men. What we need to end sexism, more than any other single thing,
+Finally, this fear and "self-protection strategy" **reinforces the structural norm that
+men believe men**. What we need to end sexism, more than any other single thing,
 is for **men to call out other men on sexism**. We need men to stop protecting each
 other.  We live in a society where sexism is part of the structure of how power
 works.
