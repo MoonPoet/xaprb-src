@@ -4,6 +4,9 @@ date: '2016-11-21T19:39:38-05:00'
 author: Baron Schwartz
 categories:
 - Leadership
+tags:
+- Mentorship
+- Writing
 description: There's no time to waste; the biggest lie we tell ourselves is that we
   have lots of time.
 image: media/2016/11/alan-rimm-kaufman-harry-weller.png

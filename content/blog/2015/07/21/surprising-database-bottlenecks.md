@@ -3,6 +3,9 @@ title: Your Real Database Bottleneck
 date: '2015-07-21T14:46:49-07:00'
 categories:
 - Databases
+tags:
+- USL
+- DevOps
 description: Your database bottleneck isn't CPU, I/O, query performance or scalability
   after all.
 image: "/media/2015/07/bottleneck.jpg"

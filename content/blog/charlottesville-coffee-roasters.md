@@ -2,6 +2,9 @@
 author: Baron Schwartz
 categories:
 - Craft
+tags:
+- Coffee
+- Charlottesville
 date: 2017-02-26T10:17:09-05:00
 description: "Here's a sampling of Charlottesville's vibrant coffee scene."
 image: "media/2017/02/coffee.jpg"

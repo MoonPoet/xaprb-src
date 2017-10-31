@@ -5,6 +5,12 @@ author: Baron Schwartz
 categories:
 - Music
 - Reviews
+tags:
+- MP3
+- Ogg
+- AAC
+- Compression
+- Mobile
 description: Compression formats such as MP3, AAC, and Ogg Vorbis have a lot of nuances.
   What's the best set of tradeoffs?
 image: media/2016/02/cymatics.jpg

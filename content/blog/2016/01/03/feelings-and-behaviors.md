@@ -4,6 +4,9 @@ categories:
 - Commentary
 - Life Hacking
 - Best Of
+tags:
+- Mindfulness
+- Empathy
 date: 2016-01-03T15:56:52-05:00
 description: "Where I direct my attention greatly affects my interactions with the world."
 image: "media/2016/01/feelings-and-behaviors.png"

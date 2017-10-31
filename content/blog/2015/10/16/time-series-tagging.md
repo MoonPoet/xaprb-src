@@ -2,6 +2,8 @@
 author: Baron Schwartz
 categories:
 - Databases
+tags:
+- Time Series
 date: 2015-10-16T20:04:28-04:00
 description: "Why would you want tagging functionality in a time series database?"
 title: The Case For Tagging In Time Series Data

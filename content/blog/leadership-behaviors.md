@@ -4,6 +4,10 @@ date: '2017-01-28T11:15:03-05:00'
 author: Baron Schwartz
 categories:
 - Leadership
+tags:
+- Management
+- Entrepreneurship
+- Culture
 description: Every leader has a unique style you can use to help reflect what's right
   for you.
 image: media/2016/12/dartboard.jpg

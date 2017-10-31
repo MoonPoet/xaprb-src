@@ -5,6 +5,12 @@ author: Baron Schwartz
 categories:
 - Writing
 - Web
+tags:
+- CMS
+- Blogging
+- WordPress
+- Static Site Generators
+- Hugo
 description: Forestry integrates with GitHub and Hugo to create a WYSIWYG CMS for
   static websites.
 image: media/2016/11/forest.jpg

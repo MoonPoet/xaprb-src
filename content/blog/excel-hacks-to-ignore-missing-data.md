@@ -6,6 +6,9 @@ categories:
 - Desktop
 - Math
 - Programming
+tags:
+- Excel
+- Spreadsheets
 description: Here are two alternatives to straightforward spreadsheet syntax when
   annoying errors seem to make things more difficult than needed.
 image: media/2016/11/min-error.png

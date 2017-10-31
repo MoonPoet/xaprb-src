@@ -2,6 +2,8 @@
 author: Baron Schwartz
 categories:
 - Databases
+tags:
+- USL
 date: 2015-11-12T21:00:39-05:00
 description: "A formal mathematical analysis of MySQL's scalability yields obvious results."
 image: "media/2015/11/chicken.jpg"

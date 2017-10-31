@@ -4,6 +4,8 @@ categories:
 - Math
 - Databases
 - Scalability
+tags:
+- USL
 date: 2015-12-06T19:38:48-05:00
 description: "This post shows several ways to estimate data points from an image of a chart. As an example, I analyze CitusDB's scalability from a YouTube screen capture."
 image: "media/2015/12/espresso.jpg"

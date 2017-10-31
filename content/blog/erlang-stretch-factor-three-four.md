@@ -3,6 +3,9 @@ author: Baron Schwartz
 categories:
 - Math
 - Scalability
+tags:
+- Queueing Theory
+- Approximations
 date: 2016-12-11T15:57:16-05:00
 description: "In which I explore the divergence between the Erlang C formula and Gunther's heuristic approximation."
 image: "media/2016/12/erlang-vs-heuristic-m-3.png"

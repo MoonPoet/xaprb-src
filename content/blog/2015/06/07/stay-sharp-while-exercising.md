@@ -3,6 +3,10 @@ title: Staying Sharp While Exercising
 author: Baron Schwartz
 categories:
 - Life Hacking
+tags:
+- Fitness
+- CrossFit
+- Health
 date: 2015-06-07
 description: "Intense exercise brings energy and clarity, but also tiredness the next day. How can you avoid this?"
 image: /media/2015/06/bokeh.jpg

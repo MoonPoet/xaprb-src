@@ -5,6 +5,11 @@ categories:
 - Life Hacking
 - Reviews
 - Gear
+tags:
+- Fitness
+- Health
+- Watches
+- Mobile
 date: 2017-02-21T15:31:44-05:00
 description: "After researching many smartwatches and activity trackers, I bought a Withings Steel HR. Here's why."
 image: "media/2017/02/runner.jpg"

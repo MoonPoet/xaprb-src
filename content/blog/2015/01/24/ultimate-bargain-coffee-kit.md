@@ -5,6 +5,9 @@ date: "2015-01-24"
 image: /media/2015/01/coffee.jpg
 categories:
   - Hardware
+  - Gear
+tags:
+- Coffee
 ---
 
 I've started drinking coffee over the last few years. Like most things I've

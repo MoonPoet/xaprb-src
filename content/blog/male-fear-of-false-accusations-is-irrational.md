@@ -3,6 +3,11 @@ title: Male Fear of False Accusations Is Irrational
 date: 2017-10-12 20:16:30 -0400
 categories:
 - Commentary
+tags:
+- Feminism
+- Justice
+- Equality
+- Culture
 author: Baron Schwartz
 description: Let's get the truth about how dangerous it is to be alone with a woman.
 image: media/2017/10/scared-man.jpg

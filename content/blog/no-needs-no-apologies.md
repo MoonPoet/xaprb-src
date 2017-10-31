@@ -3,6 +3,9 @@ title: "No Needs No Apologies"
 date: 2017-10-05T12:16:10-04:00
 categories:
   - Commentary
+tags:
+- Empathy
+- Charity
 author: Baron Schwartz
 description: "No is a complete sentence that does not require the word 'Sorry'."
 image: "media/2017/10/feet-316978_1280.jpg"

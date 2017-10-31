@@ -3,6 +3,8 @@ author: Baron Schwartz
 categories:
 - Math
 - Scalability
+tags:
+- Queueing Theory
 date: 2016-10-30T10:00:39-04:00
 description: "Is there a simple stretch-factor equation that describes M/M/m queueing delay for m>2?"
 image: "media/2016/10/error-in-heuristic.png"

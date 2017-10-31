@@ -2,6 +2,12 @@
 author: Baron Schwartz
 categories:
 - Leadership
+tags:
+- Diversity
+- Culture
+- Feminism
+- Recruiting
+- Entrepreneurship
 date: 2016-04-18T10:09:11-05:00
 description: "Diversity is difficult to add after homogeneity takes root."
 image: "media/2016/04/board.jpg"

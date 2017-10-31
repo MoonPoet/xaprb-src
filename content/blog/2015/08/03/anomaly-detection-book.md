@@ -3,6 +3,9 @@ categories:
 - Databases
 - Math
 - Monitoring
+tags:
+- Anomaly Detection
+- Writing
 date: 2015-08-03T20:21:39-04:00
 title: "New O'Reilly Book, Anomaly Detection For Monitoring"
 description: "Your help is appreciated."

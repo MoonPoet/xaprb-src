@@ -2,6 +2,8 @@
 author: Baron Schwartz
 categories:
 - Web
+tags:
+- Mobile
 date: 2015-12-16T08:28:38-05:00
 description: "The best iPhone/iPad GMail app is not GMail, Inbox, or Mail, it's Outlook."
 image: "media/2015/12/mailboxes.jpg"

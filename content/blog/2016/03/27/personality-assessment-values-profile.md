@@ -4,6 +4,9 @@ date: '2016-03-27T15:04:02-04:00'
 author: Baron Schwartz
 categories:
 - Leadership
+tags:
+- Culture
+- Personality
 description: The HVP measures self-view and world-view and is full of surprises.
 image: media/2016/03/justice.jpg
 draft: false

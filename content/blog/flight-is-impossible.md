@@ -2,6 +2,9 @@
 author: Baron Schwartz
 categories:
 - Leadership
+tags:
+- Entrepreneurship
+- Invention
 date: 2017-06-04T15:57:34-04:00
 description: "Reach high, for stars lie hidden in you. Dream deep, for every dream precedes the goal. (Rabindranath Tagore)"
 image: "media/2017/06/boston-evening-transcript.png"

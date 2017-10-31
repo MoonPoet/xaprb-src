@@ -4,6 +4,10 @@ date: 2017-10-22T15:44:51-04:00
 categories:
   - Life Hacking
   - Reviews
+tags:
+- Books
+- Mindfulness
+- Religion
 author: Baron Schwartz
 description: "Four books that have helped me to know myself more deeply."
 image: "media/2017/10/zen.jpg"
@@ -46,7 +50,7 @@ craft, which can give an extra dimension to the experience of reading it.
 
 [Tao-Te-Ching](https://www.amazon.com/Tao-Te-Ching-Perennial-Classics/dp/0061142662/?tag=xaprb-20), by
 Lao-Tzu and in a new translation by Stephen Mitchell, is a gift to humankind as significant
-as the New Testament Book of Matthew. Again, not strictly about mindfulness or
+as the Sermon on the Mount. Again, not strictly about mindfulness or
 how to practice, but the short chapters are as rich as any Zen koan. The
 translation is crucial: other translations I've read have done little for me,
 but if I had to choose one book to have on a desert island, this would certainly

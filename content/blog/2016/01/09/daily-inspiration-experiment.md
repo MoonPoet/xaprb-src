@@ -2,6 +2,10 @@
 author: Baron Schwartz
 categories:
 - Life Hacking
+tags:
+- Mindfulness
+- Religion
+- Social Media
 date: 2016-01-09T14:00:16-05:00
 description: "I made my daily devotional time public. Here's what I learned."
 image: "media/2016/01/snowflake.jpg"

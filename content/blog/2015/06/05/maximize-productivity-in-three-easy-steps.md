@@ -5,6 +5,8 @@ date: 2015-06-05
 image: /media/2015/06/sky.jpg
 categories:
   - Life Hacking
+tags:
+- Management
 ---
 
 If you're like a lot of knowledge workers, you might feel that you spend your

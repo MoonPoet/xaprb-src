@@ -2,6 +2,13 @@
 author: Baron Schwartz
 categories:
 - Life Hacking
+tags:
+- Food
+- Recipe
+- Gluten
+- Health
+- Fitness
+- Crossfit
 date: 2016-09-04T16:55:44-04:00
 description: "Here's a gluten-free pancake recipe that isn't disgusting."
 image: "media/2016/09/waffles.jpg"

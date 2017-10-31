@@ -5,6 +5,9 @@ author: Baron Schwartz
 categories:
 - Writing
 - Life Hacking
+tags:
+- Writing
+- Empathy
 description: "Some of my rash writing has taught me better, more effective ways to say things."
 image: 'media/2017/03/bird-in-hand.jpg'
 

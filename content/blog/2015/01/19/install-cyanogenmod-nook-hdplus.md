@@ -5,6 +5,8 @@ date: "2015-01-19"
 image: /media/2015/01/cyanogenmod.jpg
 categories:
   - Hardware
+tags:
+- Mobile
 ---
 
 I [wrote previously](/blog/2014/03/01/barnes-noble-nook-hd/) about how much I

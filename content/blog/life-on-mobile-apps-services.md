@@ -3,6 +3,8 @@ author: Baron Schwartz
 categories:
 - Life Hacking
 - Gear
+tags:
+- Mobile
 date: 2016-10-22T21:46:24-04:00
 description: "How I run most of my life and business from iPhone and iPad apps"
 image: "media/2016/10/torx.jpg"

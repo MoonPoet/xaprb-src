@@ -3,6 +3,12 @@ title: "When White Supremacy Came To Charlottesville"
 date: 2017-10-06T18:00:00-04:00
 categories:
   - Commentary
+tags:
+- Charlottesville
+- Racism
+- White Supremacy
+- Justice
+- Equality
 author: Baron Schwartz
 description: "A synopsis of events at Charlottesville's white supremacist gathering in August 2017"
 image: "media/2017/10/fascists.jpg"

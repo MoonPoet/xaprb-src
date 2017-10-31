@@ -2,6 +2,11 @@
 author: Baron Schwartz
 categories:
 - Monitoring
+tags:
+- AI
+- ML
+- Statistics
+- Anomaly Detection
 date: '2017-05-26T10:42:13-04:00'
 description: There are three major use cases for ML and AI in system monitoring.
 image: media/2017/05/artificial-intelligence.jpg

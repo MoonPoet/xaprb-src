@@ -2,6 +2,8 @@
 author: Baron Schwartz
 categories:
 - Web
+tags:
+- Social Media
 date: 2015-12-13T09:14:27-05:00
 description: "Keep your site light and fast for social sharing with these minimal meta properties."
 image: ""

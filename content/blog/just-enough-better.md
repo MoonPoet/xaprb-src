@@ -3,6 +3,10 @@ author: Baron Schwartz
 categories:
 - Leadership
 - Best Of
+tags:
+- Sales
+- MySQL
+- Writing
 date: 2016-06-04T20:36:20-04:00
 description: "What makes people want or need something?"
 image: "media/2016/06/mousetrap.jpg"
