@@ -137,4 +137,9 @@ those things.
 Just be a real person. You aren't going to get falsely accused of sexual assault. A woman isn't going to trap you into ruining your life. These things are like shark attacks: they
 theoretically happen, but they happen way more on TV, and they're not going to happen to you.
 
+Hot takes by other people:
+
+- Venture capitalists who won't meet with women are either trying to punish them, or bad at their jobs---[link](https://www.inc.com/jeff-bercovici/anonymous-vc-harassment.html)
+- Every part of the false accusation narrative is wrong in ways that help real rapists escape justice and make it harder to detect false accusers---[link](https://qz.com/980766/the-truth-about-false-rape-accusations/)
+
 [Pic Credit](https://upload.wikimedia.org/wikipedia/commons/6/60/A_barber_shaving_a_man_who_looks_extremely_fearful._Lithogra_Wellcome_V0019694.jpg)
