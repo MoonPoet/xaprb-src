@@ -64,6 +64,18 @@ I found and seriously considered the following options:
 * [Write][write] looked at first like what I needed: a Markdown editor that
   would work with files in Dropbox or any other cloud sync provider. But when I
   investigated it, it didn't seem to be very reliable or well-implemented.
+* [Dropbox Paper][paper] is kind of like a lightweight Google Docs that works on
+  Dropbox, but it doesn't work offline and the data isn't stored *inside* of
+  your Dropbox account. The data is separate, and the relationship with Dropbox
+  seems to be only a high level of integration with your account, not your data
+  per se.
+* [Simplenote][simplenote] is a very simple, free, and opensource app that
+  supports Markdown. It's cross-platform, and the data is stored in their SaaS
+  service. The product is provided by the makers of Wordpress. I found it to be
+  a little too barebones, although it's simple and lightweight. For example,
+  some of the client applications displayed Markdown in plaintext, although the
+  web app showed it formatted. All-in-all, I found it to be most similar to Bear
+  Notes, but Bear was slightly better.
 * [Bear Notes][bearnotes] is the option I eventually used for a while.
 
 ### Bear Notes
@@ -259,3 +271,5 @@ end tell
 [pixabay]: https://pixabay.com/en/background-blank-business-2846221/
 [notebooks]: /blog/2013/07/10/ultimate-notebook-and-journal-face-off/
 [mobile_apps]: /blog/life-on-mobile-apps-services/
+[paper]: https://www.dropbox.com/paper
+[simplenote]: https://simplenote.com/
