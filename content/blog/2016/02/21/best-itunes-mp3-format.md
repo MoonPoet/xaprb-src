@@ -8,25 +8,27 @@ categories:
 tags:
 - MP3
 - Ogg
+- Vorbis
 - AAC
 - Compression
+- iTunes
+- Spotify
 - Mobile
 description: Compression formats such as MP3, AAC, and Ogg Vorbis have a lot of nuances.
   What's the best set of tradeoffs?
 image: media/2016/02/cymatics.jpg
-draft: false
 
 ---
 I noticed recently that Google Play Music has a set of features I wasn't aware
 of before, and decided to give it a try. Through various kinds of [yak
 shaving](http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html),
-I ended up tackling a project I'd wanted to look into for a while: **which
-formats and settings are really the best for lossy music compression?**
+I ended up tackling a project I'd wanted to look into for a while: *which
+formats and settings are really the best for lossy music compression?*
 
 What I learned was both fun and surprising, and ultimately highly practical. If
 you're in a hurry, the summary is that high-quality variable-bitrate MP3
-produced with the LAME encoder is probably the best all-around choice if you
-want broad compatibility; if you want the best sound quality, though, AAC (Apple's native format) or Ogg Vorbis are much better than MP3.
+produced with the LAME encoder is the most compatible choice if you
+want broad compatibility, but has low sound quality; if you want the best sound quality, AAC (Apple's native format) or Ogg Vorbis are much better than MP3 but aren't as universally supported.
 
 But before I get to that, let's sharpen some yak razors, shall we?
 
