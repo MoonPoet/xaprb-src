@@ -100,17 +100,17 @@ in the dense layers of instruments and vocals:
 
 - WAV ripped directly from CD.<br>
     <audio controls>
-    <source src="/media/2018/01/sleepless-wav.wav" type="audio/mpeg">
+    <source src="/media/2018/01/sleepless-wav.wav" type="audio/x-wav">
 	 Your browser does not support the audio element.
 	 </audio>
 - 256kbps AAC encoded with iTunes.<br>
     <audio controls>
-    <source src="/media/2018/01/sleepless-aac.wav" type="audio/mpeg">
+    <source src="/media/2018/01/sleepless-aac.wav" type="audio/x-wav">
 	 Your browser does not support the audio element.
 	 </audio>
 - Spotify's 320kbps Ogg Vorbis high-quality streaming.<br>
     <audio controls>
-    <source src="/media/2018/01/sleepless-spotify.wav" type="audio/mpeg">
+    <source src="/media/2018/01/sleepless-spotify.wav" type="audio/x-wav">
 	 Your browser does not support the audio element.
 	 </audio>
 
@@ -124,12 +124,12 @@ original bit-for-bit copy ripped from the CD.
 
 - AAC's noise due to lossy encoding.<br>
     <audio controls>
-    <source src="/media/2018/01/sleepless-aac-noise.wav" type="audio/mpeg">
+    <source src="/media/2018/01/sleepless-aac-noise.wav" type="audio/x-wav">
 	 Your browser does not support the audio element.
 	 </audio>
 - Spotify's noise due to lossy encoding.<br>
     <audio controls>
-    <source src="/media/2018/01/sleepless-spotify-noise.wav" type="audio/mpeg">
+    <source src="/media/2018/01/sleepless-spotify-noise.wav" type="audio/x-wav">
 	 Your browser does not support the audio element.
 	 </audio>
 
