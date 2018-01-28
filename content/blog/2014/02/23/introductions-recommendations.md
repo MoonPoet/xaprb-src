@@ -1,12 +1,15 @@
 ---
 title: "Respectful Introductions and Recommendations"
-description: "Introducing people carries risk for all parties involved."
+description: "Introducing people can be risky and costly. Always do double-opt-in with prior verification; never do blind/surprise introductions."
 date: "2014-02-23"
 url: /blog/2014/02/23/respectful-introductions-recommendations/
 image: "media/2014/02/elephant.jpg"
 categories:
   - Commentary
 ---
+
+TL;DR: **Always do double-opt-in introductions. This means you contact each person separately and get their informed consent to the introduction. "Blind" introductions waste time and damage relationships.**
+
 In the last few years of my career, I've increasingly been involved in meeting
 people. This often involves requests or offers for recommendations,
 introductions, and so forth.
@@ -55,6 +58,8 @@ to have to say no, and then ask this person not to do this kind
 of thing anymore. Cleaning up this kind of mess is the *last* thing I want to be
 doing at times when I'm focusing my attention on critical priorities for my
 company or family.
+
+Or, alternatively, I'll just ignore the introduction and Alex is going to wonder why I never respond. That situation does nobody any good either.
 
 ### The Stakes Are High
 
