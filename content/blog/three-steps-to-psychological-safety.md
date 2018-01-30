@@ -6,7 +6,7 @@ categories:
 - Leadership
 description: Psychological safety is the foundation of teamwork. But how do you achieve
   it?
-image: ''
+image: media/2018/01/nature-3042751_1280.jpg
 draft: true
 
 ---
