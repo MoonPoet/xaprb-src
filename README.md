@@ -1,2 +1,2 @@
 # xaprb-src
-Source of xaprb.com blog
+Source of [xaprb](https://www.xaprb.com) blog
