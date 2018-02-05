@@ -8,7 +8,7 @@ tags:
 - Empathy
 - Writing
 date: 2017-10-03 00:00:00 -0400
-description: The best sales outreach is simple and direct.
+description: The best sales outreach is simple, direct, and polite.
 image: media/2017/10/turbine.jpg
 title: Effective Sales Outreach
 
