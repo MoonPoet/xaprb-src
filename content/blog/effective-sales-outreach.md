@@ -23,11 +23,13 @@ But there are different kinds of sales outreach, and some of it just isn't effec
 
 If you've landed in the inbox of someone who has a need, the time is right, and they are able to complete a purchase, then congratulations. Don't mess anything up, and you could have a new customer.
 
-But the reverse is also true: if you're in the wrong place at the wrong time, then nothing will make them buy from you.
+But the reverse is also true: if you're in the wrong place at the wrong time, then nothing will make them buy from you, and trying to force it is harmful.
 
 And this is what so many sales reps seem to get wrong. They think that a sales outreach email can get results through cleverness, forcefulness, or persistence. I know why it happens. They've been taught, and there are best-selling books advocating, obnoxious sales techniques. (Before I figured it out, I used them myself).
 
 I'm talking about the fake breakup email, for example, after a sequence of 8 pushy emails I never responded to. "Hey Baron, I thought we were so good together. Do you not love me anymore? Sob. Well, this is goodbye. Here, have a funny gif."
+
+Or the insulting response to a polite "no, thanks" or "not interested." Some sales reps will reply to that with belittling and condescenscion: "you're probably right; we're only a fit for companies who are interested in making a lot of money." Or "that's a real shame, we could have made a big difference for you." Refusal to take no for an answer is a no-win situation for a sales rep. The only appropriate reply is "I understand, sorry for the inconvenience. Please reach out if I can ever be helpful."
 
 Another losing tactic is the long, rambling email that wastes the first few sentences on silly things like "Hi, my name is Baron Schwartz, and I'm reaching out to you today because I see you are a Founder and CEO on LinkedIn. Congratulations on your company's recent rapid growth in the marketplace!" Every word in that email, except for "Hi," is a waste. (The name is redundant: it should already be in the From: line of the email header).
 
