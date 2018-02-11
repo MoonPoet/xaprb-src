@@ -14,18 +14,26 @@ A couple months ago we had an incident, in which a legacy recovery mechanism pro
 
 Shortly thereafter, we did need it again, and again experienced the same pains. During this post-incident review, someone asked why we hadn't improved the mechanism. The answer was "Baron decided not to." Clearly we were suffering because of that decision. Was the decision wrong?
 
-![](/media/2018/02/rain-2422642_1280.jpg)
+![Raindrop Puddle](/media/2018/02/rain-2422642_1280.jpg)
+
+<!--more-->
 
 This story should be familiar if you operate in any domain in which there's uncertainty about the future return on any investment (or risk due to lack of investment). And really, who doesn't---this story should be relevant to most of us!
 
-These decisions are rarely wrong or right at the time they're made. Like Schrödinger's cat, you won't know whether they live or die until subsequent events occur---events whose occurrence, and outcomes, are unknowable at the time. And yet, it's common to impose right/wrong judgments in hindsight. There's only one "good judgment" box in the hindsight decision matrix in most cases, assuming the decision hasn't yet been obsoleted at the point of hindsight judgment:
+These decisions are rarely wrong or right at the time they're made. Like Schrödinger's cat, you won't know whether they live or die until subsequent events occur---events whose occurrence, and outcomes, are unknowable at the time.
+
+And yet, it's common to impose right/wrong judgments in hindsight. Assuming the decision hasn't been obsoleted at the point of hindsight judgment, there's only one "good judgment" box in the decision matrix:
 
 ![Hindsight 1](/media/2018/02/hindsight-judgment-1.png)
 
 And if the system is decommissioned and the decision is obsolete, the best-case is a 50/50 split:
 
-![](/media/2018/02/hindsight-judgment-2.png)
+![Hindsight 2](/media/2018/02/hindsight-judgment-2.png)
 
-Rarely are there clear errors of judgment when the future is uncertain. The tendency to ask "why _didn't_ you..." is dangerous: it's a [counterfactual](https://www.amazon.com/Beyond-Blame-Learning-Failure-Success/dp/1491906413/?tag=xaprb-20), a question about decisions not taken in an imaginary, nonexistent path. This puts people on the defensive against the indefensible, leads to finger-pointing, and tempts leadership to "solve" the problem by punishing those to "blame." Worst of all, it is a serious obstacle to learning. And the goal of any post-incident review should be for the organization to learn so it can become more resilient.
+Rarely are there clear errors of judgment when the future is uncertain. Equating outcomes with soundness of judgment is a fallacy: good judgment doesn't necessarily produce good outcomes, and bad decisions aren't necessarily punished by subsequent events.
+
+Be vigilant against the tendency to ask "why _didn't_ you." It's dangerous: it's a [counterfactual](https://www.amazon.com/Beyond-Blame-Learning-Failure-Success/dp/1491906413/?tag=xaprb-20), a question about decisions not taken in an imaginary, nonexistent path. This puts people on the defensive against the indefensible, leads to finger-pointing, and tempts leadership to "solve" the problem by punishing those to "blame." Worst of all, it is a serious obstacle to learning. And the goal of any post-incident review should be for the organization to learn so it can become more resilient.
+
+Instead of counterfactuals, ask what the person knew, what pressures they were under, what they thought might happen, what types of risk-reward and cost-benefit estimates they were making. And rather than _judging_ those, seek instead to understand why those seemed to be wise at the time. Because no one got up that morning and said, "today I'm going to be lazy and foolish, not caring about the obvious negative consequences of my action or inaction." That's another past that didn't happen. Don't act as if it did.
 
 [Photo Credit](https://pixabay.com/en/rain-drip-circle-water-raindrop-2422642/)
