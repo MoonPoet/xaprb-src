@@ -6,7 +6,7 @@ categories:
 - Leadership
 description: Hindsight is less often 20/20 and more often a biased narrative about
   a past that never existed.
-image: ''
+image: media/2018/02/rain-2422642_1280.jpg
 draft: true
 
 ---
