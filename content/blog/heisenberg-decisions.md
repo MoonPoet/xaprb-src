@@ -16,6 +16,9 @@ Shortly thereafter, we did need it again, and again experienced the same pains. 
 
 This story should be familiar if you operate in any domain in which there's uncertainty about the future return on any investment (or risk due to lack of investment). And really, who doesn't---this story should be relevant to most of us!
 
-Here's the thing about decisions: they're rarely wrong or right at the time they're made. Like Schrödinger's cat, you won't know whether they live or die until subsequent events occur. Things that are unknowable at the time. And yet, it's common to impose right/wrong judgments in hindsight. There's only one "good judgment" box in the hindsight decision matrix in most cases, assuming the decision hasn't yet been obsoleted at the point of hindsight judgment:
+These decisions are rarely wrong or right at the time they're made. Like Schrödinger's cat, you won't know whether they live or die until subsequent events occur---events whose occurrence, and outcomes, are unknowable at the time. And yet, it's common to impose right/wrong judgments in hindsight. There's only one "good judgment" box in the hindsight decision matrix in most cases, assuming the decision hasn't yet been obsoleted at the point of hindsight judgment:
 
-![](/media/2018/02/hindsight-judgment-1.png)
+![Hindsight 1](/media/2018/02/hindsight-judgment-1.png)
+
+And if the system is decommissioned and the decision is obsolete, the best-case is a 50/50 split:
+
