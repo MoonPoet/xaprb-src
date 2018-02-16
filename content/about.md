@@ -1,10 +1,13 @@
 ---
 title: About Baron Schwartz
-date: '2005-01-01T00:00:00+00:00'
+date: 2005-01-01 00:00:00 +0000
 type: page
+author: Baron Schwartz
+categories: []
+description: ''
+image: ''
 menu:
   main: {}
-draft: false
 
 ---
 ![Baron Schwartz](/media/2010/01/baron-square.jpg)
@@ -14,8 +17,7 @@ I am the founder of [VividCortex](https://www.vividcortex.com/) and the lead aut
 High-resolution headshots for press, media, conference pages, etc are here: [1](/baron.jpg), [2](/baron-2.jpg).
 
 This blog is my personal writing and I do not use copywriting services or guest
-posts, nor do I do any type of joint marketing. I use affiliate links to offset
-the costs of hosting and other services.
+posts, nor do I do any type of joint marketing. I use affiliate links, usually to Amazon.
 
 You can contact me using my first name at VividCortex. You can also find me on
 [Twitter](http://twitter.com/xaprb), [LinkedIn](http://www.linkedin.com/in/xaprb),
@@ -45,6 +47,7 @@ In plain English, my strongest behaviors are:
 - I value clear and concise communication. I dislike fluff and ambiguity.
 - I'm creative, visionary, futuristic, and forward-looking.
 - I value my time highly and manage it carefully.
+- I don't suffer fools gladly.
 - I take responsibilities seriously and expect others to do the same.
 - I'm mostly reserved and introverted. I like hugs, but I don't initiate hugging
   except with family and close friends. I seldom project emotion and can appear aloof.
@@ -129,6 +132,7 @@ Here are some things to keep in mind when approaching me.
 - Don't leave things open-ended, ramble, or make non-specific requests. Have a
   clear "ask," and clear next steps and action items to achieve a specific
   outcome.
+- If I ask a specific question, give a specific answer. Don't reply until you're ready to be specific. Do not be vague in response to my specificity.
 - Don't forget things or rely on me to set the agenda. Always follow up and
   follow through. Send spell-checked materials in advance.
 - Don't try to pressure or dominate me. Don't expect people's opinions of me to
@@ -142,9 +146,20 @@ Here are some things to keep in mind when approaching me.
 - It's OK to be critical, but I appreciate if you can suggest solutions too.
   Also, I don't mind if you criticize me, but it really bothers me if you
   criticize people I care about.
+- If you ask me for help or involvement, make sure you have your act together. I have no patience for people who assume I'll do something out of the goodness of my heart when they haven't established their mission, vision, and values. I help those who are purposeful and intentional. I especially ignore those who say yes to every good idea. If you want my help, you need to demonstrate that you are saying no to things you're not trying to achieve.
 - I'm a little allergic to people who try to guess at things beyond face value,
   such as thinking they have insight into other people's motives in complicated
   circumstances.
+
+Here are some things that are guaranteed to irritate me.
+
+- Bothering my team en masse
+- Disrespecting my opt-out or unsubscribe requests
+- Ambushing my calendar by sending unsolicited calendar invitations
+- Blind introductions---[do not do this!](/blog/2014/02/23/respectful-introductions-recommendations/)!
+- [Not taking no for an answer](/blog/effective-sales-outreach/)
+- Assuming you know what's best for me, better than I know myself
+- Sending requests or materials out-of-the-blue, without proper context
 
 Specific advice that's relevant to particular circumstances:
 
