@@ -151,8 +151,9 @@ Here are some things to keep in mind when approaching me.
   such as thinking they have insight into other people's motives in complicated
   circumstances.
 
-Here are some things that are guaranteed to irritate me.
+Here are some things I choose not to tolerate.
 
+- Mansplaining my wife
 - Bothering my team en masse
 - Disrespecting my opt-out or unsubscribe requests
 - Ambushing my calendar by sending unsolicited calendar invitations
