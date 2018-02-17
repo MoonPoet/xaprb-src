@@ -1,30 +1,29 @@
 ---
 author: Baron Schwartz
 categories:
-- Hardware
-- Life Hacking
-- Reviews
 - Gear
+- Health
 tags:
 - Fitness
 - Health
 - Watches
 - Mobile
-date: 2017-02-21T15:31:44-05:00
-description: "After researching many smartwatches and activity trackers, I bought a Withings Steel HR. Here's why."
-image: "media/2017/02/runner.jpg"
-title: The Best Activity Tracking Watch
+date: 2017-02-21 15:31:44 -0500
+description: After researching many smartwatches and activity trackers, I bought a
+  Withings Steel HR. Here's why.
+image: media/2017/02/runner.jpg
+title: The Nokia-Withings Steel HR
 menu:
   main: {}
----
 
+---
 After thinking about smart watches, activity trackers, and similar devices for a
 while, I bought a Withings Steel HR. My goal was to find a traditional stylish-looking
 watch with long battery life, heart rate tracking, sleep tracking, and activity
-tracking. Here's my experience thus far.
+tracking. Here's my experience thus far (updated after a year; scroll down).
 
 TL;DR: Using the Withings Steel HR has changed the way I use my smartphone. I
-love how much less distracted I am. I am happy with the health tracking
+love how much less distracted I am. I'm pretty happy with the health tracking
 features, and I like the traditional watch styling and long battery life.
 
 ![Runner](/media/2017/02/runner.jpg)
@@ -32,7 +31,7 @@ features, and I like the traditional watch styling and long battery life.
 <!--more-->
 
 In the last few years I've kept an interested eye on the explosion of health- and
-fitness-tracking devices, considering whether it was time for me to take the
+fitness-tracking devices, considering whether it was time to take the
 plunge and get one. Broadly speaking, there are a few categories of devices on
 the market, each appealing to a different user for various reasons. Here's my
 summary:
@@ -41,8 +40,8 @@ summary:
   battery life but it's seamlessly integrated with your Apple lifestyle.
 - If you want the best fitness/activity tracking, look into FitBit and Garmin.
   The hardware, apps, and tracking features are unmatched.
-- If you want a stylish analog watch with long battery life and full-featured
-  activity tracking, check out Withings.
+- If you want a stylish hybrid smart watch with long battery life and full-featured
+  activity tracking, check out Nokia.
 - If you want a hybrid digital watch with pseudo-analog styling, take a look at
   the Garmin 235 or Ticwear.
 
@@ -98,14 +97,6 @@ have more or less functionality. For example, Withings offers an Activite Pop
 that is simpler than the Steel HR, and doesn't track heart rate. But its battery
 lasts 8 months instead of 25 days. Misfit has a more fully-featured watch, but
 it's not analog. And so on.
-
-It's also worth noting that the space is fast-moving. While I was biding my
-time, trying to decide what I wanted, at least three watch and wearable
-companies were acquired or went out of business, and several new options became available.
-Here are some of them:
-
-* [Nevo Smart Watch](https://www.amazon.com/Nevo-Smartwatch-Retail-Packaging-Silver/dp/B011JLR9RA/?tag=xaprb-20) is a minimalistic analog watch with months of battery life and smartwatch features such as notifications and activity tracking.
-* [Runtastic Moment](https://www.amazon.com/RUNTASTIC-MOMENT-CLASSIC-ACTIVITY-TRACKING/dp/B016PXEML8/?tag=xaprb-20) is a classic-looking analog watch with smartwatch features and long battery life.
 
 ### The Withings Steel HR
 
@@ -188,6 +179,23 @@ texts as much anymore because of loud ambient noise or whatever. In general, I
 notice calls and texts more reliably now, and people around me don't, and I fuss
 with my phone less. It's an unexpected win for me.
 
+### One Year Later
+
+Since I bought my Withings Steel HR a year ago, a few things have happened, and of course I've booked a year of experience with the device. Here's my experience in a nutshell:
+
+- Nokia has bought Withings and rebranded the watches, but otherwise hasn't seemed to invest in improving them much.
+- Sleep tracking isn't very accurate. At times it thinks I'm asleep when I'm just sitting quietly working in the midafternoon. On the other hand, when I pull a late night or wake up in the midnight, get out of bed, and work a while, it also thinks I'm asleep.
+- Heart rate tracking is frequently missing a lot of data. I'm pretty accustomed to seeing dashed lines over large portions of the day, within which there is apparently no data. Trying to adjust how I wear the watch hasn't helped.
+- Step tracking seems accurate. But I get step tracking from my iPhone too, and I'm not sure if I'd notice if the watch weren't tracking well, because the data seems to be merged together from watch and phone.
+- There were initially some problems with the watch itself. It would stop collecting and/or sending fitness data, and to get it working again I'd have to factory reset it. These bugs haven't recurred in a while.
+- The mobile app has been updated, but not for the better. It has a slick design but isn't very useful. For example, scrolling through the days on the home timeline and tapping on my heart data from a past day takes me to today. There's no way to look at data from the past in the app, as far as I can see, other than changing the timeframe to larger times. (You can change from day to ranges such as week and month. But you can't view a past month.)
+- I've had a few occasions of the watch seeming to crash, setting itself to the wrong time and deleting my alarms.
+- The button seems to be having trouble. I have to press it really hard now to stop my alarm from vibrating.
+- Battery life is great. I really don't like owning things that I need to charge all the time.
+- I bought a Withings Body+ smart scale and I really like it. I'm a little suspicious of some of the functionality such as estimates of body fat %, but as a scale, it's great.
+
+Above all, what I've learned from the experience is that I don't really want my watch to do fitness tracking as I first thought. Instead, the ability to interact with a watch instead of with my phone is much more valuable. I'd like slightly more power here: I'd like to see the text of my notification, instead of just that John sent me a text message. And I'd like notifications beyond just text, calendar, and calls. But at least on iOS, no other apps are supported.
+
 ### Other Options
 
 If I were to use something else instead, it might be one of the following:
@@ -208,6 +216,26 @@ If I were to use something else instead, it might be one of the following:
     * Fitness and HR tracking
     * Notifications are said to be hard to read
     * Versus the Charge 2: it’s smaller and lacks stopwatch and manually tracking workouts
+
+It's worth noting that the space is fast-moving. While I was biding my
+time, trying to decide what I wanted, at least three watch and wearable
+companies were acquired or went out of business, and several new options became available.
+Here are some of them:
+
+* [Nevo Smart Watch](https://www.amazon.com/Nevo-Smartwatch-Retail-Packaging-Silver/dp/B011JLR9RA/?tag=xaprb-20) is a minimalistic analog watch with months of battery life and smartwatch features such as notifications and activity tracking.
+* [Runtastic Moment](https://www.amazon.com/RUNTASTIC-MOMENT-CLASSIC-ACTIVITY-TRACKING/dp/B016PXEML8/?tag=xaprb-20) is a classic-looking analog watch with smartwatch features and long battery life.
+
+### Hybrid Watches Without Emphasis On Fitness
+
+As I mentioned above, after a year using the Withings/Nokia watch, I've changed my mind and decided that I'd like a watch that prioritizes smartphone interactions, rather than fitness tracking. Here are some I'm considering:
+
+- [Garmin Vivomove HR](https://buy.garmin.com/en-US/US/p/583562/pn/010-01850-14)
+- [Misfit](https://misfit.com) has a few smart watches I might like, such as the Phase
+- [Wareable](https://www.wareable.com/smartwatches) lists a number of watches that look interesting
+- [Skagen Jorn](http://www.skagen.com/us/en/wearables/hybrid-smartwatches/hybrid-smartwatch-jorn-black-leather-pdpskt1203p.html) looks nice for simply notifying me that my phone wants my attention, but doesn't tell me more. There's a number of other watches that have this same minimalist function too.
+- A FitBit, because maybe I need to give up on a smartwatch and buy a great fitness tracker with good notifications instead?
+- The Runtastic Moment or Nevo
+- One of the watches from Fossil, though I kind of doubt it's what I want; perhaps the Q Accomplice
 
 What are your thoughts and experiences using any of these devices?
 
