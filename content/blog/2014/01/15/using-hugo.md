@@ -4,9 +4,9 @@ date: "2014-01-15"
 description: "The Xaprb blog is now using Hugo, a fast static site generator written in Go."
 url: /blog/2014/01/15/using-hugo/
 categories:
-  - About
+  - Web
 ---
-I've switched this blog from Wordpress to [Hugo](http://hugo.spf13.com). If you see any broken links or
+I've switched this blog from Wordpress to [Hugo](https://gohugo.io). If you see any broken links or
 other problems, let me know. I'll re-enable comments and other features in the
 coming days.
 
@@ -44,5 +44,3 @@ in Octopress or Jekyll. But it's more than good enough for my needs, and I
 intend to contribute some improvements to it if I get time. I believe it has the
 potential to be a leading static site/blog generator going forward. It's already
 close to a complete replacement for something like Jekyll.
-
-
