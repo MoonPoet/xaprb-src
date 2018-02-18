@@ -7,7 +7,6 @@ params:
    Tagline: "Stay Curious!"
    Title: "Baron Schwartz's Blog"
    GoogleAnalytics: "UA-101883-1"
-   Swiftype: "Dq2t2TnFxXxWs_y9hi1k"
    domain: "xaprb.com"
    DateForm: "Mon, Jan 2, 2006"
    RecentLimit: 20
@@ -19,6 +18,12 @@ Paginate: 20
 Taxonomies:
    category: "categories"
    tag: "tags"
+outputs:
+   home:
+      - HTML
+      - JSON
+   page:
+      - HTML
 Related:
    threshold: 50
    includeNewer: true
