@@ -25,6 +25,15 @@ outputs:
       - RSS
    page:
       - HTML
+   section:
+      - HTML
+      - RSS
+   taxonomy:
+      - HTML
+      - RSS
+   taxonomyTerm:
+      - HTML
+      - RSS
 Related:
    threshold: 50
    includeNewer: true
