@@ -38,7 +38,7 @@ Here's a list of words I try to treat with caution.
 * Until
   * Confusing meaning to non-English speakers: before; up to a point in time
   * Confusing usage: "I won't begin this job until Monday."
-  * Non-English speakers often find it hard to grasp the nuance of the usage: what's the difference between "until Monday" and "before Monday?" Until can mean that something will be continuously true prior to the time mentioned, and can sometimes be negated to mean that something will begin at the time mentioned. Consider the difference between "I'll finish before Monday" and "I won't start until Monday." The latter is better as "I'll start no sooner than Monday." To see why this is less confusing, consider why a non-English speaker might say "I will finish until Monday." I've heard people say that type of thing many times.
+  * Non-English speakers often find it hard to grasp the nuance of the usage: what's the difference between "until Monday" and "before Monday?" Until can mean that something will be continuously true prior to the time mentioned, and can sometimes be negated to mean that something will begin at the time mentioned. Consider the difference between "I'll finish before Monday" and "I won't start until Monday." The latter is better as "I'll start no sooner than Monday." To see why this is less confusing, consider why a non-English speaker might say "I will finish until Monday," meaning they will complete it before Monday. I've heard people say that type of thing many times.
 * While
   * Meanings: during the interval of time; simultaneously with; although
   * Confusing usage: "While the sun sets, it will rise again."
