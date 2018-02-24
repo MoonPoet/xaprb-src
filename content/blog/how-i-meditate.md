@@ -11,6 +11,8 @@ draft: true
 ---
 I practice mindfulness meditation every day. This is how I practice.
 
+<!--more-->
+
 I begin early in the morning, first thing after I rise and move around a bit to wake up: bathroom, coffee, a few minutes of writing in my journal. It’s best if I meditate before I begin my day. I will be alert and not physically tired, and thus not likely to drift into sleep or reverie.
 
 Position is important. I find a comfortable place to sit, either on the floor, or on a chair, bench, or similar. When at home, I usually sit on my yoga mat on the floor[^zafu]. When traveling, usually on the chair in my hotel room. I often meditate while the plane taxis and takes flight too.
@@ -39,7 +41,7 @@ My attention wanders. When I notice that it has wandered, I return it to the bre
 
 When a dog sits near the table and hopes for a scrap of food to be dropped, its attention is completely taken by that watching. So I watch each breath.
 
-I count the breaths, ten at a time. In. One. In. Two. In. Three. Up to ten. Then, repeat: In. One. In, Two... In, Nine, In, Twenty. Again: In, One, In, Two... In, Nine, In, Thirty. If I count to eighty, I meditate twenty minutes total. On weekends when I do not need to follow a strict schedule, I might count hundreds of breaths. Or if I was distracted often during getting to know my body and being, I count to seventy or sixty to stay within twenty minutes.
+I count the breaths, ten at a time, on the out-breath. In. One. In. Two. In. Three. Up to ten. Then, repeat: In. One. In, Two... In, Nine, In, Twenty. Again: In, One, In, Two... In, Nine, In, Thirty. When I count to eighty, I meditate twenty minutes total. On weekends when I do not need to follow a strict schedule, I might count hundreds of breaths. Or if I was distracted often during getting to know my body and being, I count to seventy or sixty to stay within twenty minutes.
 
 When I have practiced long enough, I bring my attention back to the sounds, for the space of a breath. I notice the weight of my body and hands pressing down. I know again that my body exists. I allow my eyes to open, and remember my intention. I carry that intention into my day.
 
