@@ -1,13 +1,14 @@
 ---
-title: "Meditate With Me At Velocity"
-description: "You'll feel like hugging me afterwards, but that's OK."
-date: "2014-06-24"
-url: /blog/2014/06/24/meditate-at-velocity/
+title: Meditate With Me At Velocity
+description: You'll feel like hugging me afterwards, but that's OK.
+date: 2014-06-24 00:00:00 +0000
+url: "/blog/2014/06/24/meditate-at-velocity/"
 categories:
-  - Conferences
-image: /media/2014/06/stones.jpg
----
+- Meditation
+image: "/media/2014/06/stones.jpg"
+author: Baron Schwartz
 
+---
 Join me and other [Velocity](http://velocityconf.com/) attendees during the Wednesday afternoon 2:40pm break for a 10-15 minute guided meditation session appropriate for people of any faith or of none.
 
 Meditation has a host of scientifically proven immediate and long-term benefits. If you get an extra 10% of clarity and effectiveness for the rest of the afternoon, you'll end up learning more and making your conference experience more worthwhile.
