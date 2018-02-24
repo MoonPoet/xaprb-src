@@ -1,9 +1,9 @@
 ---
 title: 'Meditation: Captive vs Directed Attention'
-date: 2017-08-05 14:07:21 +00:00
+date: 2017-08-05 14:07:21 +0000
 author: Baron Schwartz
 categories:
-- Life Hacking
+- Meditation
 tags:
 - Mindfulness
 - Journaling
