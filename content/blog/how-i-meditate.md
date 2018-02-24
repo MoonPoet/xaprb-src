@@ -5,7 +5,7 @@ author: Baron Schwartz
 categories:
 - Meditation
 description: A very simple description of my daily meditation practice.
-image: ''
+image: static/media/2018/02/E57194F5-DC62-4519-B4D6-EF131497CCAC.jpeg
 draft: true
 
 ---
