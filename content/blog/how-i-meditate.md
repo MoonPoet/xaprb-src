@@ -5,12 +5,12 @@ author: Baron Schwartz
 categories:
 - Meditation
 description: A very simple description of my daily meditation practice.
-image: static/media/2018/02/E57194F5-DC62-4519-B4D6-EF131497CCAC.jpeg
+image: media/2018/02/E57194F5-DC62-4519-B4D6-EF131497CCAC.jpeg
 
 ---
 I practice mindfulness meditation every day. This is how I practice.
 
-![Water](/static/media/2018/02/E57194F5-DC62-4519-B4D6-EF131497CCAC.jpeg)
+![Water](/media/2018/02/E57194F5-DC62-4519-B4D6-EF131497CCAC.jpeg)
 
 <!--more-->
 
