@@ -1,17 +1,17 @@
 ---
 author: Baron Schwartz
 categories:
-- Life Hacking
 - Best Of
+- Meditation
 tags:
 - Mindfulness
 - Religion
-date: 2016-03-19T20:14:50-04:00
-description: "Meditation isn't what you think."
-image: "media/2016/03/ripples.jpg"
+date: 2016-03-19 20:14:50 -0400
+description: Meditation isn't what you think.
+image: media/2016/03/ripples.jpg
 title: Meditation
----
 
+---
 I've been telling more people about the benefits I've received from
 meditation. Meditation has greatly influenced the way I think, behave, and
 relate to others.
