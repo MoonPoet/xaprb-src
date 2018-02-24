@@ -13,7 +13,7 @@ I practice mindfulness meditation every day. This is how I practice.
 
 <!--more-->
 
-I begin early in the morning, first thing after I rise and move around a bit to wake up: bathroom, coffee, a few minutes of writing in my journal. It’s best if I meditate before I begin my day. I will be alert and not physically tired, and thus not likely to drift into sleep or reverie.
+I begin early in the morning, first thing after I rise and move around a bit to wake up: bathroom, coffee, a few minutes of writing in my journal. It’s best if I meditate before I begin my day. I will be alert and not physically tired, and thus not likely to drift into sleep or reverie. And meditating before my day makes my day more mindful.
 
 Position is important. I find a comfortable place to sit, either on the floor, or on a chair, bench, or similar. When at home, I usually sit on my yoga mat on the floor[^zafu]. When traveling, usually on the chair in my hotel room. I often meditate while the plane taxis and takes flight too.
 
