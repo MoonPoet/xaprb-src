@@ -31,7 +31,7 @@ I begin to allow my attention to come to my breath, but as I do, I become curiou
 
 Before I begin to turn my focus to each breath, I form an intention for the time I will spend, and form a concept of for whom I do this. As I do, I notice if any feeling arises, such as gratitude, or love. By this time I have spent several minutes. If my attention has been prone to wandering and I have had to bring my mind back to what I am doing, sometimes quite a few minutes indeed.
 
-Then I begin to notice breaths. As I breathe in, I know I am breathing in. When the breath ends, I know it ends. When I breathe out, I know I am breathing out.
+Then I begin to notice breaths. As I breathe in, I know I am breathing in. When the breath ends, I know it ends. When I breathe out, I know I am breathing out. I simply notice the physical sensation of breathing. It is physical knowing, not a cerebral thing. One day it may be the movement of my navel, another the flexing of ribs, another the sensation of air in my nostrils. Whatever is the most noticeable, I bring my attention to that and simply notice.
 
 This is the heart of mindfulness: “breathing in, I know I am breathing in.”
 
@@ -40,3 +40,5 @@ My attention wanders. When I notice that it has wandered, I return it to the bre
 When a dog sits near the table and hopes for a scrap of food to be dropped, its attention is completely taken by that watching. So I watch each breath.
 
 I count the breaths, ten at a time. In. One. In. Two. In. Three. Up to ten. Then, repeat: In. One. In, Two... In, Nine, In, Twenty. Again: In, One, In, Two... In, Nine, In, Thirty. If I count to eighty, I meditate twenty minutes total. On weekends when I do not need to follow a strict schedule, I might count hundreds of breaths. Or if I was distracted often during getting to know my body and being, I count to seventy or sixty to stay within twenty minutes.
+
+When I have practiced long enough, I bring my attention back to the sounds, for the space of a breath. I notice the weight of my body and hands pressing down. I know again that my body exists.
