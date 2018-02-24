@@ -1,18 +1,18 @@
 ---
-title: "My Four Favorite Meditation Books"
-date: 2017-10-22T15:44:51-04:00
+title: My Four Favorite Meditation Books
+date: 2017-10-22 15:44:51 -0400
 categories:
-  - Life Hacking
-  - Reviews
+- Meditation
+- Books
 tags:
 - Books
 - Mindfulness
 - Religion
 author: Baron Schwartz
-description: "Four books that have helped me to know myself more deeply."
-image: "media/2017/10/zen.jpg"
----
+description: Four books that have helped me to know myself more deeply.
+image: media/2017/10/zen.jpg
 
+---
 Mindfulness meditation has changed me perhaps more than any other influence in
 my life. Here are four books whose wisdom I treasure.
 
