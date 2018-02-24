@@ -13,7 +13,7 @@ I practice mindfulness meditation every day. This is how I practice.
 
 I begin early in the morning, first thing after I rise and move around a bit to wake up: bathroom, coffee, a few minutes of writing in my journal. It’s best if I meditate before I begin my day. I will be alert and not physically tired, and thus not likely to drift into sleep or reverie.
 
-Position is important. I find a comfortable place to sit, either on the floor, or on a chair, bench, or similar. When at home, I usually sit on my yoga mat on the floor. When traveling, usually on the chair in my hotel room. I often meditate while the plane taxis and takes flight too.
+Position is important. I find a comfortable place to sit, either on the floor, or on a chair, bench, or similar. When at home, I usually sit on my yoga mat on the floor[^zafu]. When traveling, usually on the chair in my hotel room. I often meditate while the plane taxis and takes flight too.
 
 Ideally I am alone and there are no distractions. I sit straight, with my spine neutral and my weight balanced from the top of my head through my pelvis, my head level and neutral. I place my hands in my lap naturally, either cupped together or on my legs depending on the situation. I am seeking a relaxed physical posture that I can maintain for some time, yet which is not lying down or reclining in a way that will tend to make me sleepy. Upright and without any support except the floor is best. If in a chair with a back, I sit away from the back.
 
@@ -48,3 +48,5 @@ Ideally, all day long, as I breathe I know I breathe. When I sit, I know I sit; 
 What is meditation not? It is not stopping thoughts, it is not being immensely at peace or enraptured, it is not a state of “flow,” it is not being in a trance, it is not mystical or religious, it is not hard or complicated. It is not for stress relief, it is not for health, it is not trying to be smarter. It is simply knowing the present moment through awareness of the breath. It is undiluted awareness, complete alertness, present-moment-now attention. It is access to the insight to know the truth. It is, literally, life.
 
 With the patience and self-love to choose to practice daily, I have become more alive. I am not yet today fully alive and present in each moment. But I know it is within my reach, and each day that I practice I become more and more able to actually exist in any given moment.
+
+[^zafu]: My body is not flexible enough to sit in lotus position, with a foot on top of each thigh. I sit in half-lotus most of the time: one leg on the floor, the other leg on top. "Cross-legged," with a knee resting on each ankle, is not as stable or comfortable for me. When my hips feel tight I sit on a [Zafu](https://www.amazon.com/dp/B00G9FMY7W?tag=xaprb-20): a small, stable cushion filled with buckwheat. I place it on my yoga mat folded in half.
