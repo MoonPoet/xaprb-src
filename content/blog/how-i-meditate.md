@@ -29,4 +29,14 @@ For a few more breaths I become aware of each part of my body, using a body scan
 
 I begin to allow my attention to come to my breath, but as I do, I become curious: what is the general overall feeling of my body right now? Heaviness, lightness? Stillness? Motion? Restlessness? Solidity? Tiredness? And what about emotion—is there any strong emotion? Anxiety? Peace? Impatience? Eagerness? Nothing?
 
-Before I begin to turn my focus to each breath, I form an intention for the time I will spend, and form a concept of for whom I do this. As I do, I notice if any feeling arises, such as gratitude, or love. By this time I have spent several minutes. If my attention has been prone to wandering, sometimes quite a few minutes indeed.
+Before I begin to turn my focus to each breath, I form an intention for the time I will spend, and form a concept of for whom I do this. As I do, I notice if any feeling arises, such as gratitude, or love. By this time I have spent several minutes. If my attention has been prone to wandering and I have had to bring my mind back to what I am doing, sometimes quite a few minutes indeed.
+
+Then I begin to notice breaths. As I breathe in, I know I am breathing in. When the breath ends, I know it ends. When I breathe out, I know I am breathing out.
+
+This is the heart of mindfulness: “breathing in, I know I am breathing in.”
+
+My attention wanders. When I notice that it has wandered, I return it to the breath. Knowing that my attention has wandered is the point of meditation. My mind still thinks, but now I know something about it. That is the point. Sometimes when I wander, I simply return to the present breath. Sometimes I _note_ what distracted me from the breath: “Thinking.” “Feeling.” Very gently, like a feather wafting the air. Sometimes I also take a moment to be curious and note the nature of the distraction: Pleasant, unpleasant? Future, past? Real, unreal? Any emotion? Through curiosity I know the truth about the distraction. Then return. Breathing in, I know I am breathing in. Breathing out, I know I am breathing out.
+
+When a dog sits near the table and hopes for a scrap of food to be dropped, its attention is completely taken by that watching. So I watch each breath.
+
+I count the breaths, ten at a time. In. One. In. Two. In. Three. Up to ten. Then, repeat: In. One. In, Two... In, Nine, In, Twenty. Again: In, One, In, Two... In, Nine, In, Thirty. If I count to eighty, I meditate twenty minutes total. On weekends when I do not need to follow a strict schedule, I might count hundreds of breaths. Or if I was distracted often during getting to know my body and being, I count to seventy or sixty to stay within twenty minutes.
