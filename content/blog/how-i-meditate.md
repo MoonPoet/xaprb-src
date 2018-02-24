@@ -25,4 +25,8 @@ For a few breaths I notice the contact between my body and the floor or chair. I
 
 For a few breaths I notice the sounds I can hear. Anything near to me, anything far away, anything loud, anything faint. The sound of my own breath, or my pulse if I can hear it. The components of the sounds I hear (the air conditioning has a high soft hissing sound, but there’s a low hum too.) Any ringing in my ears, tinnitus, any other sounds, whether external or internal. If I swallow, the sound of swallowing.
 
-For a few more breaths I become aware of each part of my body, using a body scan technique.
+For a few more breaths I become aware of each part of my body, using a body scan technique, as though a plane of attention is slowly scanning from the top of my head to the lowest part of my body. I feel the hair resting on my scalp, the air against my skin, the touch of my eyelids against each other, that small itch, the aching knuckle, the warmth of that spot on my ribs. I become aware of the thusness and suchness of each part of my body, just briefly, noticing and moving on. As I notice my thumb, I know it is a thumb, in the fullness of thumb-ness.
+
+I begin to allow my attention to come to my breath, but as I do, I become curious: what is the general overall feeling of my body right now? Heaviness, lightness? Stillness? Motion? Restlessness? Solidity? Tiredness? And what about emotion—is there any strong emotion? Anxiety? Peace? Impatience? Eagerness? Nothing?
+
+Before I begin to turn my focus to each breath, I form an intention for the time I will spend, and form a concept of for whom I do this. As I do, I notice if any feeling arises, such as gratitude, or love. By this time I have spent several minutes. If my attention has been prone to wandering, sometimes quite a few minutes indeed.
