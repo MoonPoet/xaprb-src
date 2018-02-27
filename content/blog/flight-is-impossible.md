@@ -5,15 +5,15 @@ categories:
 tags:
 - Entrepreneurship
 - Invention
-date: 2017-06-04T15:57:34-04:00
-description: "Reach high, for stars lie hidden in you. Dream deep, for every dream precedes the goal. (Rabindranath Tagore)"
-image: "media/2017/06/boston-evening-transcript.png"
+date: 2017-06-04 15:57:34 -0400
+description: Reach high, for stars lie hidden in you. Dream deep, for every dream
+  precedes the goal. (Rabindranath Tagore)
+image: media/2017/06/boston-evening-transcript.png
 title: Heavier-Than-Air Flight Is Impossible
----
 
-When I was a child, my parents put a page from a newspaper on our refrigerator
-door. I remember it as a yellowed, faded piece of paper that seemed like it had
-always been there. It was filled with little oval portraits of famous people
+---
+When I was a child, my parents posted a yellowed, faded page from a newspaper on our refrigerator
+door. It was filled with little oval portraits of famous people and scientists
 proclaiming that heavier-than-air flight was impossible. My memory is that there
 were perhaps 40 of them, each with a quote and a date within a few years of the
 Wright Brothers' flight at Kitty Hawk.
@@ -73,12 +73,12 @@ It is complete nonsense to believe flying machines will ever work.
 The aeroplane will never fly.
 <br>_--- Lord Haldane, 1907_
 
-Note that the quote from Haldane, a high-ranking British official, came after successful flight. Many people refused to believe it, though, citing "proof" such as the widespread skepticism about it, and the lack of reporting by newspapers.
+Note that the quote from Haldane, a high-ranking British official, came after successful flight. Many people refused to believe the Wright Brothers' flight occurred for long afterwards, citing as "proof" the widespread skepticism, and the lack of reporting by newspapers.
 
 Of course, today we know that heavier-than-air flight is
-possible, and many similar things are too, but this pattern will continue for as
+possible, and many similar things are too. But this pattern of disbelief in what has not yet been shown to be possible will continue for as
 long as people dare to dream of achieving things whose success is unclear.
-Just a few years later, the [Boston Evening Transcript](https://news.google.com/newspapers?nid=2249&dat=19091002&id=4pU-AAAAIBAJ&pg=770) reported that there simply weren't enough pilots.
+Just a few years after the first powered flight, the [Boston Evening Transcript](https://news.google.com/newspapers?nid=2249&dat=19091002&id=4pU-AAAAIBAJ&pg=770) reported that there simply weren't enough pilots.
 
 ![Boston Evening Transcript](/media/2017/06/boston-evening-transcript.png)
 
