@@ -109,6 +109,19 @@ unlikely to find me too extreme in my views, but if you are extremely
 Altruistic, you might feel I'm not caring enough. I do care, but as a CEO I have
 to balance my caring with a business focus.
 
+### Strengths and Weaknesses
+
+The following excerpts from my personality assessment report are generally true in most circumstances:
+
+* I'm not easily deterred by setbacks.
+* I'm calculated with time, talent, and resources. I look for the best way to put people to work.
+* I'm willing to make high-risk decisions but also willing to reconsider. I look for data to support my decisions, but will simply decide when I lack data.
+* When I feel strongly about something, I'm sometimes unrealistic, or listen situationally and subjectively.
+* When I feel others are moving too slowly, or being too tactical when I think strategic is best, I can be impatient.
+* I demand that people come to me with clear, at-a-glance information ready to understand without undue effort. I enforce this by assuming that they do, and criticizing when they don't. Therefore I sometimes leap to conclusions and take an extreme point of view.
+
+One funny example of the last point is the bank that sent me a signature request form for new business cards, with no further context. Without hesitation, I decided I would not sign because I'm not interested in bank-branded business cards: no way am I going to be a walking advertisement for the bank. The bank had made the mistake of not making it clear that they needed my authorization to issue new _credit_ cards, which I certainly wanted!
+
 ### Gallup StrengthsFinder
 
 People frequently mention the StrengthsFinder report to me, implying that many
@@ -131,7 +144,7 @@ Here are some things to keep in mind when approaching me.
   data, but let me ask for the details if I want them.
 - Don't leave things open-ended, ramble, or make non-specific requests. Have a
   clear "ask," and clear next steps and action items to achieve a specific
-  outcome.
+  outcome. A good example: when sending me something for review, tell me when you need my response.
 - If I ask a specific question, give a specific answer. Don't reply until you're ready to be specific. Do not be vague in response to my specificity.
 - Don't forget things or rely on me to set the agenda. Always follow up and
   follow through. Send spell-checked materials in advance.
@@ -146,10 +159,12 @@ Here are some things to keep in mind when approaching me.
 - It's OK to be critical, but I appreciate if you can suggest solutions too.
   Also, I don't mind if you criticize me, but it really bothers me if you
   criticize people I care about.
-- If you ask me for help or involvement, make sure you have your act together. I have no patience for people who assume I'll do something out of the goodness of my heart when they haven't established their mission, vision, and values. I help those who are purposeful and intentional. I especially ignore those who say yes to every good idea. If you want my help, you need to demonstrate that you are saying no to things you're not trying to achieve.
+- If you ask me for help or involvement with a cause, make sure you have your act together. I have little patience for people who aren't sure why their organization exists. I help organizations that are purposeful and intentional. I prefer those who say no to ideas that are outside of a defined mission, vision, and values. If you want my help, you need to demonstrate that you are saying no to things you're not trying to achieve.
 - I'm a little allergic to people who try to guess at things beyond face value,
   such as thinking they have insight into other people's motives in complicated
   circumstances.
+- I expect people to live by the "[disagree and commit](http://tomtunguz.com/disagree-and-commit/)" principle. Life is too short for anything else.
+- If I say something wrong, or offend, or confuse you... please challenge me directly. You won't offend me.
 
 Here are some things I choose not to tolerate.
 
