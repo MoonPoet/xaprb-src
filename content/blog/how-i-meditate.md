@@ -40,7 +40,7 @@ This is the heart of mindfulness: “breathing in, I know I am breathing in.” 
 
 My attention wanders. When I notice that it has wandered, I return it to the breath. Knowing that my attention has wandered is the point of meditation. My mind still thinks, but now I know something about it. That is the point. Sometimes when I wander, I simply return to the present breath. Sometimes I _note_ what distracted me from the breath: “Thinking.” “Feeling.” Very gently, like a feather wafting the air. Sometimes I also take a moment to be curious and note the nature of the distraction: Pleasant, unpleasant? Future, past? Real, unreal? Any emotion? Through curiosity I know the truth about the distraction. Then return. Breathing in, I know I am breathing in. Breathing out, I know I am breathing out. Thinking, I know I am thinking, and choose to return to breath awareness.
 
-When a dog sits near the table and hopes for a scrap of food to be dropped, its attention is completely taken by that watching. So I watch each breath.
+When a dog sits near the table and hopes for a scrap of food to be dropped, it gives its complete attention to that watching. So I watch each breath.
 
 I count the breaths, ten at a time, on the out-breath. In. One. In. Two. In. Three. Up to ten. Then, repeat: In. One. In, Two... In, Nine, In, Twenty. Again: In, One, In, Two... In, Nine, In, Thirty. When I count to eighty, I meditate twenty minutes total. On weekends when I do not need to follow a strict schedule, I might count hundreds of breaths. Or if I was distracted often during getting to know my body and being, I count to seventy or sixty to stay within twenty minutes.
 
@@ -50,8 +50,8 @@ Ideally, all day long, as I breathe I know I breathe. When I sit, I know I sit; 
 
 What is meditation not? It is not stopping thoughts, it is not being immensely at peace or enraptured, it is not a state of “flow,” it is not being in a trance, it is not mystical or religious, it is not hard or complicated. It is not for stress relief, it is not for health, it is not trying to be smarter. It is simply knowing the present moment through awareness of the breath. It is undiluted awareness, complete alertness, present-moment-now attention. It is access to the insight to know the truth. It is, literally, life.
 
-With the patience and self-love to choose to practice daily, I have become more alive. I am not yet today fully alive and present in each moment. But I know it is within my reach, and each day that I practice I become more and more able to actually exist in any given moment.
+With the patience and self-love to choose to practice daily, I have become more alive. I am not yet today fully alive and present in each moment. But I know it is within my reach, and each day that I practice I become more able to exist in every moment.
 
 [Photo Credit](https://pixabay.com/en/lake-water-wave-mirroring-texture-2063957/)
 
-[^zafu]: My body is not flexible enough to sit in lotus position, with a foot on top of each thigh. I sit in half-lotus most of the time: one leg on the floor, the other leg on top. "Cross-legged," with a knee resting on each ankle, is not as stable or comfortable for me. When my hips feel tight I sit on a [Zafu](https://www.amazon.com/dp/B00G9FMY7W?tag=xaprb-20): a small, stable cushion filled with buckwheat. I place it on my yoga mat folded in half.
+[^zafu]: I sit for stability and alertness, not out of the belief that any posture itself produces an effect. My body is not flexible enough to sit in lotus position, with a foot on top of each thigh. I sit in half-lotus most of the time: one leg on the floor, the other leg on top. "Cross-legged," with a knee resting on each ankle, is not as stable or comfortable for me. When my hips feel tight I sit on a [Zafu](https://www.amazon.com/dp/B00G9FMY7W?tag=xaprb-20): a small, stable cushion filled with buckwheat. I place it on my yoga mat folded in half.
