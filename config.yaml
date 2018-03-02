@@ -10,7 +10,6 @@ params:
    domain: "xaprb.com"
    DateForm: "Mon, Jan 2, 2006"
    RecentLimit: 20
-   DisqusUser: "xaprb"
    LanyonOptions: "layout-reverse sidebar-overlay"
    Twitter: "@xaprb"
 MetaDataFormat: "yaml"
