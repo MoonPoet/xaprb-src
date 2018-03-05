@@ -1,20 +1,29 @@
 ---
-draft:true
+draft: true
+title: The Skagen Jorn Connected and Misfit Phase Hybrid Smart Watches
+date: 2018-03-04 20:16:30 -0400
+categories:
+- Gear
+- Health
+author: Baron Schwartz
+description: "I put the Skagen Jorn Connected and Misfit Phase through the paces to see if either could replace my Nokia Steel HR."
+image: media/2018/03/skagen-jorn-misfit-phase.jpg
 ---
-I bought two of the more interesting-looking hybrid smart watches to compare their functionality to each other, and to the Nokia Steel HR I already own. In the end, the Skagen Jorn Connected is a better watch and extension of my phone, but is not enough of a health or fitness tracker to replace the Nokia Steel HR; and the Misfit Phase has useful functionality but a poor design and feel. Neither offers the notification features I'd find most useful.
+I bought two of the more interesting-looking hybrid smart watches to compare their functionality to each other, and to the [Nokia Steel HR](/blog/best-fitness-activity-sleep-tracking-watch/) I already own. In the end, the [Skagen Jorn Connected](http://www.skagen.com/us/en/wearables/hybrid-smartwatches/hybrid-smartwatch-jorn-black-leather-pdpskt1203p.html) ([Amazon](https://www.amazon.com/dp/B06VV5MGV1/?tag=xaprb-20)) is a better watch and extension of my phone, but is not enough of a health or fitness tracker to replace the Nokia Steel HR; and the [Misfit Phase](https://www.samsung.com/us/explore/gear-s3/) ([Amazon](https://www.amazon.com/dp/B01MXFSTYN/?tag=xaprb-20)) has useful functionality but a poor design and feel. Neither offers the notification features I'd find most useful.
 
-https://misfit.com/products/misfit-phase
-http://www.skagen.com/us/en/wearables/hybrid-smartwatches/hybrid-smartwatch-jorn-black-leather-pdpskt1203p.html
+![Watches](/media/2018/03/skagen-jorn-misfit-phase.jpg)
+
+<!--more-->
 
 While learning about these devices, I formulated my own categories of smart watch functionality, which might help identify what these devices are good at:
 
-* Watch: tells time and date, wake-up alarm, stopwatch, timer.
-* Activity tracker: measures and records various types of activities and exercises.
-* Biometrics: tracks vital statistics such as heart rate and sleep.
-* Coach: motivates the user to achieve goals such as  amount of  activity and sleep.
-* Phone control: enables remote control over phone functions such as music playback.
-* Phone notifications: enables phone notifications on the wrist without looking at the phone.
-* Fashion: communicates lifestyle choices and acts as a status symbol.
+* **Watch:** tells time and date, wake-up alarm, stopwatch, timer.
+* **Activity tracker:** measures and records various types of activities and exercises.
+* **Biometrics:** tracks vital statistics such as heart rate and sleep.
+* **Coach:** motivates the user to achieve goals such as  amount of  activity and sleep.
+* **Phone control:** enables remote control over phone functions such as music playback.
+* **Phone notifications:** enables phone notifications on the wrist without looking at the phone.
+* **Fashion:** communicates lifestyle choices and acts as a status symbol.
 
 These hybrid smart watches function as watches and fashion pieces, with limited amounts of activity tracking, biometrics, coaching, and phone control and notifications. Both lack any sophisticated displays, even a small and limited one like that of the Nokia Steel HR. Instead, they use the hands of the watch to signal, like a secret spy decoder ring.
 
@@ -24,7 +33,7 @@ The prices are in the same approximate range. I bought both at 50% off list pric
 
 Fashion is in the eye of the beholder, but if you’re looking to avoid something that screams "I’m going to the gym after the office," both watches are about as far from a FitBit as you can get.  Both are available in a variety of colors and band styles. There are a few more varieties for the Misfit, but personally my taste favors the Skagen.
 
-The Skagen is objectively superior as a watch. Its hands are easy to see and the watch face is well-designed for telling time. I chose a poor color combination on the Misfit due to limited supply, but even the best combinations of face and hand coloring aren’t as good as the Skagen’s designs. Both watches lack a second hand, something I often wish I had during exercises at intervals such as EMOTM (every minute on the minute). The Misfit has a vibrating wake-up alarm, a feature I really appreciate; the Skagen lacks it. Neither watch has an illuminated display, a feature I am used to. I often look at the time on my Nokia Steel HR in low-light or dark conditions, and my Timex Weekender has an Indiglo backlight I use similarly.
+The Skagen is objectively superior as a watch. Its hands are easy to see and the watch face is well-designed for telling time. I chose a poor color combination on the Misfit due to limited supply, but even the best combinations of face and hand coloring aren’t as good as the Skagen’s designs. Both watches lack a second hand, something I often wish I had during [exercises](/blog/my-workout-regimen/) at intervals such as EMOTM (every minute on the minute). The Misfit has a vibrating wake-up alarm, a feature I really appreciate; the Skagen lacks it. Neither watch has an illuminated display, a feature I am used to. I often look at the time on my Nokia Steel HR in low-light or dark conditions, and my Timex Weekender has an Indiglo backlight I use similarly.
 
 The Skagen has an exterior ring with a series of numbers used for functions such as displaying the date. These are a bit smallish, but they work okay nonetheless. There are three physical buttons, which are all customizable to perform various functions. The MisFit has two buttons, one of which shows progress towards activity goals and the other is customizable. I’ll discuss these again later.
 
@@ -50,13 +59,13 @@ Neither watch keeps the "semaphore" active very long, so if you don’t look at 
 
 But in comparison with my Nokia Steel HR, both are hard to use to determine who’s actually texting or calling. The Nokia’s small LED sub-display scrolls an icon and text for a fairly long time, making it easy to see what notification you’re getting even if you have to fumble to pull up your long sleeve and get the watch face into view. The Skagen and Misfit essentially encode a limited amount of that information into hand positioning, but in practice, usually all I’m able to determine is "I’m getting a call or text message, and I don’t know who it’s from."
 
-The Nokia Steel HR also supports calendar notifications, a feature I use heavily via Google Calendar. Neither the Skagen nor the Misfit supports these, which is a major gap for me. It’s one of the things that lets me keep my phone out of sight and out of reach.
+The Nokia Steel HR also supports calendar notifications, a feature I use heavily via Google Calendar. Neither the Skagen nor the Misfit supports these, which is a major gap for me. It’s one of the things that lets me keep my phone silenced, out of sight, and out of reach.
 
 ### Activity Tracking and Biometrics
 
 Both watches track steps, calories, distance, and sleep as well as activities. Both have apps that display these stats over time and try to motivate you to achieve your goals, though the Misfit is a little more goal-oriented than the Skagen, which lets you set goals but doesn’t make it prominent, seemingly content to be more watch-oriented and less gamified. (Misfit sent me push notifications congratulating me for things like achieving a personal best, which is a bit silly in my view.) Both watches integrate with Apple Health, but the Misfit has a few more features: it integrates with more services in a variety of ways. Neither watch tracks heart rate like the Nokia Steel HR or most dedicated fitness trackers, nor do they have GPS or more advanced features offered in products from Garmin and other leading manufacturers.
 
-Both watches’ iPhone apps center around activity and sleep tracking. The Misfit has a two-tabbed home interface that shows "points" of activity (I’m unclear what these are; it seems artificial and I’m not that interested), distance/calories/steps, and amount of sleep. The Skagen shows the same data, albeit slightly differently.
+Both watches’ iPhone apps center around activity and sleep tracking. The Misfit has a two-tabbed home interface that shows "points" of activity (I’m unclear what these are; it seems artificial and I’m not that interested), distance/calories/steps, and amount of sleep. The Skagen shows the same data.
 
 Activity tracking, goal-setting, and motivation are pretty unimportant to me. I don’t want my watch or an app to track my workouts. My workouts are not of the type that lend to standardized recording or tracking; at best the duration and intensity matter. The Nokia Steel HR tracks these factors, and I’ve found myself just ignoring and/or deleting what it detects or prompts me to record. That said, I don’t think I’m the best judge of these types of features, but I’d be surprised if these are more than a mere curiosity in the Skagen or Misfit watches and apps. If you want great activity and workout tracking, I think you buy a Garmin or FitBit.
 
