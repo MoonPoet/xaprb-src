@@ -100,6 +100,16 @@ Both watches rely on combination presses on buttons, such as long presses or sin
 * Misfit’s presentation clicker is a neat feature. To use it, you pair the watch via Bluetooth, which requires disconnecting from the smartphone. This is easy to do; I simply turned off Bluetooth on my phone and then my iPad found the watch and paired with it quickly. You can also pair with a laptop. I tested the clicker at distances up to 20 or so feet and it worked fine. With this feature, the Misfit can replace a dedicated Bluetooth clicker such as the [Logitech Spotlight Advanced Presentation Remote](https://www.amazon.com/dp/B01N9X3DBQ/?tag=xaprb-20), which costs more than I paid for the watch.
 * The Misfit integrates with services through IFTTT, allowing you to extend your watch’s functionality pretty significantly. I don’t know how valuable this is. I am not sure I want a button press on my watch to do something like that. I think I’d like to keep that type of thing restricted behind at least my phone’s unlock code.
 
+### Other Similar Watches
+
+I've found a few watches that are pretty similar to the Skagen Jorn Connected. I'm researching some of them to see what they're like. As I do so, I'll add them here.
+
+[Fossil Hybrid Smartwatch - Q Commuter Dark Brown Leather](https://www.amazon.com/dp/B075BPKBTM/?tag=xaprb-20)
+
+This is a nice-looking watch that seems to have similar functionality to those I reviewed in this blog post. From my research, I'd put it neck-and-neck with the Skagen in every score.
+
+![Fossil Q Commuter](/media/2018/03/fossil-q-commuter.jpg)
+
 ### In Conclusion
 
 Both of these watches are attractive and fairly creative ways to use a traditional watch’s aesthetic to extend a smartphone’s functionality and provide some health and fitness capabilities. Both offer pretty similar features, including some I like a lot, such as long battery life.
