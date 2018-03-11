@@ -110,6 +110,20 @@ This is a nice-looking watch that seems to have similar functionality to those I
 
 ![Fossil Q Commuter](/media/2018/03/fossil-q-commuter.jpg)
 
+[Kronaby Apex](https://www.amazon.com/Kronaby-A1000-1426-Unisex-quartz-watch/dp/B071Z29FJ6/?tag=xaprb-20)
+
+Kronaby specializes in hybrid smart watches. The models I examined seemed to be
+at the top of the class. They're also a bit more expensive.
+
+![Kronaby](/media/2018/03/kronaby.jpg)
+
+[Michael Kors Gage Hybrid Smart Watch](https://www.amazon.com/Michael-Kors-Access-Hybrid-Smartwatch/dp/B074W9WMQ4/?tag=xaprb-20)
+
+Another upscale watch with very similar functionality to those I tested from
+Skagen and Misfit.
+
+![Michael Kors Gage](/media/2018/03/michael-kors.jpg)
+
 ### In Conclusion
 
 Both of these watches are attractive and fairly creative ways to use a traditional watch’s aesthetic to extend a smartphone’s functionality and provide some health and fitness capabilities. Both offer pretty similar features, including some I like a lot, such as long battery life.
