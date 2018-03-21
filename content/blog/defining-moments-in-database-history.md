@@ -4,24 +4,7 @@ date: '2017-03-19T20:59:17+00:00'
 author: Baron Schwartz
 categories:
 - Databases
-tags:
-- NoSQL
-- RDBMS
-- Technology
-- MongoDB
-- MySQL
-- SQL
-- Redis
-- Riak
-- XML
-- JavaScript
-- Cassandra
-- Neo4J
-- Time Series
-- InfluxDB
-- ElasticSearch
-- Kafka
-- Entrepreneurship
+keywords: "NoSQL, RDBMS, Technology, MongoDB, MySQL, SQL, Redis, Riak, XML, JavaScript, Cassandra, Neo4J, Time, Series, InfluxDB, ElasticSearch, Kafka, Entrepreneurship"
 description: 'NoSQL was just the beginning.'
 image: 'media/2017/03/crossroads-1580168_1280.jpg'
 

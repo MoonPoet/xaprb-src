@@ -2,10 +2,6 @@
 author: Baron Schwartz
 categories:
 - Leadership
-tags:
-- Management
-- Leadership
-- Recruiting
 date: 2017-02-19T15:20:02-05:00
 description: "Investors say they can help their portfolio companies. I didn't understand how at first, but now I do."
 image: "media/2017/02/shuttle-carrier-aircraft.png"

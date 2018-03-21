@@ -3,11 +3,6 @@ author: Baron Schwartz
 categories:
 - Life Hacking
 - Best Of
-tags:
-- Management
-- Entrepreneurship
-- Sales
-- Culture
 date: 2016-05-30T17:24:14-04:00
 description: "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win. - Sun Tzu"
 image: "media/2016/05/compass.jpg"

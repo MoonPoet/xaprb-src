@@ -2,9 +2,6 @@
 title: The Square Root Staffing Law
 date: '2016-10-29T09:57:01-04:00'
 author: Baron Schwartz
-tags:
-- Queueing Theory
-- Capacity Planning
 categories:
 - Math
 - Performance

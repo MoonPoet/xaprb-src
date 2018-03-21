@@ -3,10 +3,6 @@ title: "What is Moving Average Convergence-Divergence (MACD)?"
 date: 2017-10-25T21:35:56-04:00
 categories:
   - Math
-tags:
-- Exponential Smoothing
-- Forecasting
-- Statistics
 author: Baron Schwartz
 description: "MACD is a terrible name for a simple concept. It's an efficient way to compare two moving averages and calculate trend in a metric."
 image: "media/2017/10/macd.png"

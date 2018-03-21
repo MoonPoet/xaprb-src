@@ -3,9 +3,6 @@ author: Baron Schwartz
 categories:
 - Desktop
 - Programming
-tags:
-- Excel
-- Spreadsheets
 date: 2017-02-25T14:43:17-05:00
 description: "Here are some practices I've found to help keep spreadsheets manageable over the years."
 image: "media/2017/02/ledger.jpg"

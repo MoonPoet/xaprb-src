@@ -2,11 +2,6 @@
 author: Baron Schwartz
 categories:
 - Leadership
-tags:
-- Management
-- Recruiting
-- Entrepreneurship
-- Culture
 date: 2017-04-03T20:38:52-07:00
 description: "By following one simple rule, literally anyone can avoid mistakes and make dramatically better hiring decisions."
 image: "media/2017/04/hexnut.jpg"

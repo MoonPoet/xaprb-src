@@ -3,13 +3,6 @@ author: Baron Schwartz
 categories:
 - Leadership
 - Best Of
-tags:
-- IP
-- Entrepreneurship
-- Sales
-- Management
-- Recruiting
-- Culture
 date: 2016-10-08T14:07:14-04:00
 description: "A company's most valuable IP goes far beyond code and trade secrets."
 image: "media/2016/10/blueprint.png"

@@ -4,10 +4,6 @@ date: 2017-10-10T04:18:25-04:00
 categories:
   - Life Hacking
   - Gear
-tags:
-- Crossfit
-- Health
-- Fitness
 author: Baron Schwartz
 description: "Here's the equipment I bought/built for my pseudo-CrossFit home gym."
 image: "media/2017/10/jump-rope.jpg"

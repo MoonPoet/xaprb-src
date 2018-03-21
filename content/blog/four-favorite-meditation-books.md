@@ -4,10 +4,6 @@ date: 2017-10-22 15:44:51 -0400
 categories:
 - Meditation
 - Books
-tags:
-- Books
-- Mindfulness
-- Religion
 author: Baron Schwartz
 description: Four books that have helped me to know myself more deeply.
 image: media/2017/10/zen.jpg

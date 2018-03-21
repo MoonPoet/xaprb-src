@@ -3,9 +3,6 @@ author: Baron Schwartz
 categories:
 - Databases
 - Humor
-tags:
-- MySQL
-- Video
 date: 2017-07-10T17:40:29-04:00
 description: "The removal of the query cache in MySQL 8.0 improves user experience and has been celebrated by many members of the MySQL community. With this good news, obviously, Hitler isn't happy."
 image: "media/2017/07/hitler-mysql-query-cache.png"

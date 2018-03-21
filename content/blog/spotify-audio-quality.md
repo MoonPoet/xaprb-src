@@ -5,16 +5,6 @@ author: Baron Schwartz
 categories:
 - Music
 - Reviews
-tags:
-- MP3
-- Ogg
-- Vorbis
-- AAC
-- Compression
-- iTunes
-- Spotify
-- Mobile
-- Chromecast
 description: I decided to figure out why Spotify sounds so terrible through a Chromecast Audio, and I was surprised at what I found.
 image: /media/2018/01/mobile-616012_1280.jpg
 

@@ -4,9 +4,6 @@ date: 2017-08-05 14:07:21 +0000
 author: Baron Schwartz
 categories:
 - Meditation
-tags:
-- Mindfulness
-- Journaling
 description: Meditation practice continues to change my understanding of what meditation
   is.
 image: media/2017/08/mule-deer.jpg

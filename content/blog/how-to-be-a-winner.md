@@ -3,9 +3,6 @@ author: Baron Schwartz
 categories:
 - Life Hacking
 - Humor
-tags:
-- Satire
-- Entrepreneurship
 date: 2016-10-13T21:46:24-04:00
 description: "This article is so full of win."
 image: "media/2016/10/winning.jpg"

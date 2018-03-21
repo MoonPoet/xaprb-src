@@ -3,8 +3,6 @@ author: Baron Schwartz
 categories:
 - Scalability
 - Math
-tags:
-- Queueing Theory
 date: 2016-12-04T20:53:00-05:00
 description: "Part 2: what other definitions of queueing knee are there?"
 image: "media/2016/12/knee-2.png"

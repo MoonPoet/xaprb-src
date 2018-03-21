@@ -7,7 +7,6 @@ categories:
   - Conferences
 tags:
   - PostgreSQL
-  - Community
 author: Baron Schwartz
 description: "Relegating sponsors to the role of supporting a conference is a tragic missed opportunity."
 image: "media/2017/10/compass.jpg"

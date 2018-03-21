@@ -6,13 +6,6 @@ categories:
 - Life Hacking
 - Security
 - Gear
-tags:
-- Encryption
-- Privacy
-- Passwords
-- Authentication
-- Backups
-- Mobile
 description: 'VPN, Keybase, Signal, and more: take these 6 steps to improve your digital
   security.'
 image: ''

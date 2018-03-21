@@ -3,8 +3,6 @@ author: Baron Schwartz
 categories:
 - Scalability
 - Math
-tags:
-- Queueing Theory
 date: 2016-11-30T22:02:08-05:00
 description: "The knee in the queueing response time curve illustrates important truths about queueing theory."
 image: "media/2016/11/knee-1.png"

@@ -2,8 +2,6 @@
 author: Baron Schwartz
 categories:
 - Conferences
-tags:
-- Writing
 date: 2017-05-28T14:06:26-04:00
 description: "The secret of being a bore is to tell everything. - Voltaire"
 image: "media/2017/05/crocodiles.jpg"

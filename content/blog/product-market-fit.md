@@ -5,9 +5,6 @@ author: Baron Schwartz
 categories:
 - Leadership
 - Best Of
-tags:
-- Entrepreneurship
-- Sales
 description: What I used to call product/market fit was really service/user fit.
 image: media/2016/12/whiskey-stones.jpg
 draft: false

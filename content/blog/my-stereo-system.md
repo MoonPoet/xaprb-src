@@ -5,8 +5,6 @@ author: Baron Schwartz
 categories:
 - Music
 - Gear
-tags:
-- Audiophile
 description: Here's my high-class audiophile stereo system on a budget, plus a Spotify
   playlist just for you!
 image: media/2016/11/stereo.jpg

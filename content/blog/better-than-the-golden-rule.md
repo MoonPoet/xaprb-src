@@ -4,10 +4,6 @@ date: '2016-12-08T19:28:07-05:00'
 author: Baron Schwartz
 categories:
 - Leadership
-tags:
-- Religion
-- Empathy
-- Management
 description: Treating others as we'd wish them to treat me doesn't go far enough.
 image: media/2016/12/aurora-1.jpg
 draft: false

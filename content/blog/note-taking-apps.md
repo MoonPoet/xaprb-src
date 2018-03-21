@@ -5,11 +5,6 @@ categories:
   - Desktop
   - Reviews
   - Gear
-tags:
-- Notes
-- Mobile Apps
-- iPhone
-- Evernote
 author: "Baron Schwartz"
 description: "I migrated from the Apple Notes app to Evernote. Here's the research I did and the results."
 image: "media/2017/12/background-2846221_1280.jpg"
