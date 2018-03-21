@@ -16,7 +16,7 @@ MetaDataFormat: "yaml"
 Paginate: 20
 Taxonomies:
    category: "categories"
-   tag: "tags"
+   feed: "feeds"
 outputs:
    home:
       - HTML
@@ -38,7 +38,7 @@ Related:
    includeNewer: true
    toLower: true
    indices:
-      - name: tags
+      - name: keywords
         weight: 100
       - name: categories
         weight: 50
