@@ -3,7 +3,7 @@
  
     {{ .Content }}
 
-	 <p>You can search the title, URL, description, categories, and summary of
+	 <p>You can search the title, URL, description, categories, keywords, and summary of
 	 the blog posts here. The search syntax allows restricting a term to match
 	 only a specific one of the fields just mentioned, e.g. <i>title:mongodb</i>.</p>
  
@@ -39,8 +39,8 @@
                 console.log("index:", pagesIndex);
                 lunrIndex = lunr(function() {
                     this.field("title", { boost: 10 });
-                    this.field("tags", { boost: 5 });
                     this.field("categories", { boost: 5 });
+                    this.field("keywords");
                     this.field("content");
                     this.ref("uri");
  
