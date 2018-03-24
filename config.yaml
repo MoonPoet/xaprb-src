@@ -16,7 +16,7 @@ MetaDataFormat: "yaml"
 Paginate: 20
 Taxonomies:
    category: "categories"
-   feed: "feeds"
+   tag: "tags"
 outputs:
    home:
       - HTML
