@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+body {
+  font-family: 'Arial';
+}
+
+
+
+.remark-slide-content.title {
+	vertical-align: middle;
+	text-align: center;
+}
+.remark-slide-content.title h1, h2 {
+	color: white;
+	font-size: 28pt;
+	margin: 40pt;
+}
+.remark-slide-content.title h2 {
+	font-size: 20pt;
+	font-weight: normal;
+}
+
+div.smokescreen {
+	width: 100%;
+	position: absolute;
+	left: 0%;
+	top: 33%;
+	background-color: rgba(0,0,0,.6);
+	vertical-align: middle;
+	text-align: center;
+}
+
+.remark-slide-content p, li {
+  font-size: 14pt;
+  line-height: 2;
+}
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata'; }

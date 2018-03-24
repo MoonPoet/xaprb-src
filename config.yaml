@@ -1,11 +1,12 @@
 baseurl: 'https://www.xaprb.com/'
+buildFuture: true
 blackfriday:
   plainIdAnchors: true
 publishdir: public
 params:
    author: "Baron Schwartz"
    Tagline: "Stay Curious!"
-   Title: "Baron Schwartz's Blog"
+   Title: "Baron Schwartz's Website"
    GoogleAnalytics: "UA-101883-1"
    domain: "xaprb.com"
    DateForm: "Mon, Jan 2, 2006"
