@@ -28,6 +28,22 @@
   <meta name="description" value="{{ .Description }}">
   {{ end }}
   <link rel="stylesheet" href="/static/css/{{ .Params.theme }}.css"></style>
+  <style type="text/css">
+@page {
+	size: {{ if .Params.ratio }} 1216px 684px; {{ else }} 912px 684px; {{ end }}
+  margin: 0;
+}
+
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+  </style>
   </head>
   <body>
     <textarea id="source">
