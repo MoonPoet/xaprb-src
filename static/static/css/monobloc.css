@@ -39,16 +39,19 @@ div.smokescreen {
 	text-align: center;
 }
 
+/* Columnar Layouts. Two- and three-column layouts use .col classnames and float
+ * next to each other. The image-right uses .col and .rc (for right-column) and
+ * they're not equal-width or height. For convenience, two-column layouts also
+ * allow you to name the right column with .rc classname, so you can switch
+ * between layouts without changing the markup, just the slide's class.
+ */
+
 /* Two-Column Layout */
-.two-column .left-column {
+.two-column .rc, .two-column .col {
 	width: 48%;
 	float: left;
 }
-.two-column .right-column {
-	width: 48%;
-	float: right;
-}
-.right-column img {
+.two-column .rc img, .two-column .col img, .three-column .col img, .three-column .rc img {
 	display: block;
 	min-width: 100%;
 	min-height: 100%;
@@ -61,10 +64,10 @@ div.smokescreen {
 }
 
 /* Two-Column Layout, Text Left, Image Right */
-.image-right .left-column {
+.image-right .col {
 	width: 65%;
 }
-.image-right .right-column {
+.image-right .rc {
 	position: absolute;
 	top: 0;
 	left: 62.5%;
@@ -73,25 +76,13 @@ div.smokescreen {
 	margin: 0;
 	padding: 0;
 }
-.image-right .right-column p { /* Remove empty line above image wrapped in <p> */
+.image-right .rc p { /* Remove empty line above image wrapped in <p> */
 	padding: 0;
 	margin: 0;
 }
-
 
 /* Three-Column Layout */
-.threecol .column, .threecol .left-column, .threecol .right-column {
+.three-column .col, .three-column .rc {
 	width: 32%;
 	float: left;
-}
-.column img {
-	display: block;
-	min-width: 100%;
-	min-height: 100%;
-	max-width: 100%;
-	max-height: 100%;
-	width: auto;
-	height: auto;
-	margin: 0;
-	padding: 0;
 }

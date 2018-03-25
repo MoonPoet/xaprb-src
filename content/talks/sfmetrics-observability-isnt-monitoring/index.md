@@ -25,7 +25,7 @@ layout: true
 
 # The Boring Stuff
 
-.left-column[
+.col[
 Founder of VividCortex, I wrote some stuff
 
 [@xaprb](https://twitter.com/xaprb) on twitter, you know what to do
@@ -39,7 +39,7 @@ baron@vividcortex.com
 Slides will be posted
 ]
 
-.right-column[
+.rc[
 ![headshot](headshot.jpg)
 ]
 
@@ -47,7 +47,7 @@ Slides will be posted
 
 # What is Observability?
 
-.left-column[
+.col[
 What’s the relationship between these things?
 
 - Observability
@@ -59,7 +59,7 @@ What’s the relationship between these things?
 Observability is an attribute of a system, not an activity or tool. (Monitoring is a verb!)
 ]
 
-.right-column[
+.rc[
 ![Microscope](microscope.jpg)
 ]
 
@@ -67,7 +67,7 @@ Observability is an attribute of a system, not an activity or tool. (Monitoring 
 
 # Pillars of Observability
 
-.left-column[
+.col[
 These should really be called pillars of _telemetry_.
 
 - Events
@@ -76,7 +76,7 @@ These should really be called pillars of _telemetry_.
 - Traces
 ]
 
-.right-column[
+.rc[
 ![Dolls](dolls.jpg)
 ]
 
@@ -99,13 +99,13 @@ class: image-right
 
 # Tradeoffs
 
-.left-column[
+.col[
 - Metrics are compact, aggregated, aggregatable, efficient, but can’t be disaggregated.
 - Logs/events are full fidelity but relatively expensive at full capture.
 - Samples are biased and ignore/miss lots of crucial things.
 ]
 
-.right-column[
+.rc[
 ![Scales](scales.jpg)
 ]
 
@@ -117,14 +117,14 @@ class: two-column
 
 # Metrics or Events?
 
-.left-column[
+.col[
 Many folks have love-hate relationships with metrics. Some prefer events.
 
 - Some people log lots of things that are just “this happened” signals that are better as metrics.
 - But some of the most valuable insights you can get from events require you to aggregate them into metrics first!
 ]
 
-.right-column[
+.rc[
 ![Solar Flare](solar-flare.jpg)
 ]
 
@@ -132,7 +132,7 @@ Many folks have love-hate relationships with metrics. Some prefer events.
 
 # There’s A Lot To Instrument
 
-.left-column[
+.col[
 There’s a lot to measure in a complex system. What’s important?
 
 - It’s more important to observe the work than the service itself.
@@ -141,7 +141,7 @@ There’s a lot to measure in a complex system. What’s important?
 Specific types of metrics have rich meaning encoded in their nonlinear relationships with other metrics.
 ]
 
-.right-column[
+.rc[
 ![Quadrant](quadrant.png)
 ]
 
@@ -149,7 +149,7 @@ Specific types of metrics have rich meaning encoded in their nonlinear relations
 
 # What Telemetry Should You Emit?
 
-.left-column[
+.col[
 **Popular Systems/Methods/Blueprints**
 
 USE Method
@@ -165,7 +165,7 @@ SRE Book’s Four Golden Signals
 - Latency, traffic, errors, and saturation
 ]
 
-.right-column[
+.rc[
 **Formal Laws of Performance**
 
 Queueing Theory
@@ -185,7 +185,7 @@ Universal Scalability Law
 
 # The Zen of Performance
 
-.left-column[
+.col[
 The unifying concept in service observability is two perspectives on requests.
 
 External (customer’s) view is singular:
@@ -199,7 +199,7 @@ Internal (operator’s) view is over a population (workload):
 - System resources/components and their throughput, utilization, and backlog.
 ]
 
-.right-column[
+.rc[
 ![Yin and Yang](yin-yang.png)
 ]
 
@@ -207,7 +207,7 @@ Internal (operator’s) view is over a population (workload):
 
 # The Seven Golden Signals
 
-.left-column[
+.col[
 External (Workload) Perspective: Quality Of Service
 
 - Concurrency
@@ -222,7 +222,7 @@ Internal (Resource) Perspective: Sufficiency of Resources
 - Errors
 ]
 
-.right-column[
+.rc[
 ![Escher](day-and-night.jpg)
 ]
 
@@ -293,7 +293,7 @@ layout: true
 
 # Instrumenting Code Can Be A Drag
 
-.left-column[
+.col[
 Code shouldn’t look like you pair-programmed with an APM vendor.
 
 Runtimes and instrumented kernels are awesome.
@@ -301,20 +301,20 @@ Runtimes and instrumented kernels are awesome.
 Maybe you should just buy Dynatrace?
 ]
 
-.right-column[
+.rc[
 ![Rubber Ducky](ducky.jpg)
 ]
 
 ---
 class: image-right
 
-.left-column[
+.col[
 # Instrumentation Isn't Answers
 
 You still need to turn the telemetry into actionable insights. Analytics is hard.
 ]
 
-.right-column[
+.rc[
 ![Matrix](matrix.jpg)
 ]
 
@@ -323,13 +323,13 @@ class: image-right
 
 # Metrics Can Be Powerful
 
-.left-column[
+.col[
 The ROI on metrics can be surprisingly high.
 
 Aggregation into specific, carefully chosen metrics can give powerful insights.
 ]
 
-.right-column[
+.rc[
 ![Graphs](grafana.jpg)
 ]
 
@@ -359,7 +359,7 @@ layout: true
 
 # Derived Insights From Diskstats
 
-.left-column[
+.col[
 Concurrency (avgqu-sz)
 
 - Weighted time / interval
@@ -374,7 +374,7 @@ Utilization (%util)
 
 ]
 
-.right-column[
+.rc[
 Latency (await) (including queue time)
 
 - Weighted time / completions
@@ -392,13 +392,13 @@ class: image-right
 
 # Imitation = Flattery
 
-.left-column[
+.col[
 If you want the most value for the least effort, a simplified clone of /proc/diskstats isn’t the worst thing to build.
 
 See https://www.xaprb.com/blog/2011/10/06/ fundamental-performance-and-scalability- instrumentation/
 ]
 
-.right-column[
+.rc[
 ![Storm Trooper](storm-trooper.jpg)
 ]
 
@@ -406,13 +406,13 @@ See https://www.xaprb.com/blog/2011/10/06/ fundamental-performance-and-scalabili
 
 # More Powerful Metrics Relationships
 
-.left-column[
+.col[
 Queueing theory explains what happens as utilization increases.
 
 The relationship between utilization and response time is decidedly nonlinear!
 ]
 
-.right-column[
+.rc[
 ![Hockey Stick](hockey-stick.png)
 ]
 
@@ -420,30 +420,30 @@ The relationship between utilization and response time is decidedly nonlinear!
 
 # Even More
 
-.left-column[
+.col[
 The Universal Scalability Law explains the relationship between concurrency, throughput, and expansion of service time.
 It’s easy to see when you’re approaching the point of diminishing returns! Just plot concurrency vs throughput.
 The USL explains why and what to fix.
 The USL, queueing theory, etc give you a deeper understanding of how your systems react to the workload you give them.
 ]
 
-.right-column[
+.rc[
 ![USL](usl.png)
 ]
 
 ---
 layout: false
-class: threecol
+class: three-column
 
 # If You Like To Nerd Out...
 
-.column[
+.col[
 [![Queueing Theory](qt-ebook.png)](https://www.vividcortex.com/resources/queueing-theory)
 ]
-.column[
+.col[
 [![USL](usl-ebook.png)](https://www.vividcortex.com/resources/universal-scalability-law/)
 ]
-.column[
+.col[
 [![Observability](observability-ebook.jpg)](https://www.vividcortex.com/resources/architecting-highly-monitorable-apps)
 ]
 
