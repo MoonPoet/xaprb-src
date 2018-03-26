@@ -9,7 +9,6 @@ site: "https://www.meetup.com/San-Francisco-Metrics-Meetup/events/248065916/"
 abstract: "What is observability? It's not monitoring, that's what it is. But seriously, let's talk about the seven golden signals, the relationship and difference between concepts like observability, monitoring, telemetry, and instrumentation, and how to build highly observable services."
 theme: "monobloc"
 thumbnail: observability-isnt-monitoring.jpg
-download: observability-isnt-monitoring.pdf
 ---
 class: title
 background-image: url(spotlight-802633_1280.jpg)
@@ -423,8 +422,11 @@ The relationship between utilization and response time is decidedly nonlinear!
 
 .col[
 The Universal Scalability Law explains the relationship between concurrency, throughput, and expansion of service time.
+
 It’s easy to see when you’re approaching the point of diminishing returns! Just plot concurrency vs throughput.
+
 The USL explains why and what to fix.
+
 The USL, queueing theory, etc give you a deeper understanding of how your systems react to the workload you give them.
 ]
 
