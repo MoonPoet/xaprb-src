@@ -357,12 +357,12 @@ Calculate per-node a) clients b) data size c) throughput.
 One 18-node database: 4000 QPS ~220 QPS/node, 5ms latency.
 
 ---
-class: bigger
+class: bigger, img-300h
 # 3. How Scalable Should It Be?
 
 This is an animation of how Citus’s distributed database works. For the record: Citus isn’t one of the terribly unscalable DB’s.
 
-![CitusDB](citus.svg)
+![CitusDB](animated-citus-738243d8.svg)
 
 ---
 class: img-450h, center
