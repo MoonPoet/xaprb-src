@@ -35,6 +35,11 @@ img {
 .bigger p, .bigger div, .bigger li {
 	font-size: 24pt;
 }
+.footnote p {
+	position: absolute;
+	bottom: 1em;
+	font-size: 8pt !important;
+}
 
 /* Title Slide Layout. Use .smokescreen[...] or .fog[...] to contain the h1/h2. */
 .remark-slide-content.title h1, .remark-slide-content.title h2 {

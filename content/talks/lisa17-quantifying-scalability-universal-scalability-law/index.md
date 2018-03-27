@@ -167,13 +167,12 @@ What happens to performance if some portion isn’t parallelizable?
 class: two-column,bigger
 # Amdahl’s Law
 
-.col[
-Amdahl’s Law describes the fraction \\(\\sigma\\) that can’t be done in parallel.
-
 \\[
 X(N) = \frac{\\lambda N}{1+\\sigma(N-1)}
 \\]
 
+.col[
+Amdahl’s Law describes the fraction \\(\\sigma\\) that can’t be done in parallel.
 Adding nodes provides some speedup, but there’s a ceiling.
 ]
 
@@ -205,13 +204,12 @@ class: two-column,center, img-450h
 class: two-column, bigger
 # Universal Scalability Law
 
-.col[
-Represent crosstalk (coherence) penalty by coefficient \\(\\kappa\\).
-
 \\[
 X(N) = \frac{\\lambda N}{1+\\sigma(N-1)+\\kappa N(N-1)}
 \\]
 
+.col[
+Represents crosstalk (coherence) penalty by coefficient \\(\\kappa\\).
 The system completes _less_ work as the load increases!
 ]
 
@@ -276,8 +274,7 @@ In most circumstances we care about, load is concurrency.
 
 Concurrency is the number of requests in progress.
 
-It’s surprisingly easy to measure:
-\\( N = \frac{\sum{latency}{interval}} \\)
+It’s surprisingly easy to measure: \\( N = \frac{\sum_{}^{}{R}}{T} \\)
 
 Many systems emit it as telemetry:
 
@@ -360,9 +357,15 @@ One 18-node database: 4000 QPS ~220 QPS/node, 5ms latency.
 class: bigger, img-300h
 # 3. How Scalable Should It Be?
 
-This is an animation of how Citus’s distributed database works. For the record: Citus isn’t one of the terribly unscalable DB’s.
+You should always measure databases; don’t simply use architectural
+diagrams to intuit whether they will scale.
 
 ![CitusDB](animated-citus-738243d8.svg)
+
+.footnote[
+This diagram is from [CitusDB](https://www.citusdata.com/), and is
+meant only to illustrate the point, not to imply anything about CitusDB.
+]
 
 ---
 class: img-450h, center
