@@ -16,7 +16,7 @@ background-image: url(ThinkstockPhotos-480085336.jpg)
 
 .smokescreen[
 # Scalability is Quantifiable
-## Universal Scalability Law<br>Baron Schwartz - November 2017
+## The Universal Scalability Law<br>Baron Schwartz &bullet; November 2017
 ]
 
 ---
@@ -94,7 +94,7 @@ class: center
 ---
 # The Failure Boundary Is Nonlinear
 
-This region is _highly_ nonlinear and unintuitive.<br>It's analogous to post-elastic material behavior.
+This region is _highly_ nonlinear and unintuitive. It's analogous to post-elastic material behavior.
 
 ![Failure Boundary](failure-boundary.png)
 
@@ -121,14 +121,19 @@ It analyzes what happens to customers when systems get busy.
 It's difficult to apply in “the real world” of capacity & ops.
 
 ---
-![Queueing Theory](hockey-stick.png)
+# The Hockey Stick Curve
+
+The "hockey stick" queueing curve is hard to use in practice. And the sharpness
+of the "knee" is very nonlinear and hard for humans to intuit.
+
+![Hockey Stick](hockey.svg)
 
 ---
 # Scaling A System: Ideal
 
 Suppose a clustered system can do X work per unit of time.<br>Ideally, if you double the cluster size, it can do 2X work.
 
-![Linear Scalability](linear1.jpg)
+![Linear Scalability](linear1.svg)
 
 ---
 layout: false
@@ -146,7 +151,7 @@ where \\(\\lambda\\) is the slope of the line.
 ]
 
 .col[
-![Linear Scalability](linear1.jpg)
+![Linear Scalability](linear1.svg)
 ]
 
 ---
@@ -157,7 +162,7 @@ Speedup comes from executing tasks in parallel, e.g. ~ scatter-gather.
 
 What happens to performance if some portion isn’t parallelizable?
 
-![Speedup](speedup.png)
+![Speedup](speedup.svg)
 
 ---
 class: two-column
@@ -174,7 +179,7 @@ Adding nodes provides some speedup, but there’s a ceiling.
 ]
 
 .col[
-![Amdahl's Law](linear2.jpg)
+![Amdahl's Law](linear2.svg)
 ]
 
 ---
@@ -183,18 +188,18 @@ class: center
 
 Suppose the parallel workers have dependencies on each other?
 
-![Coordination](coordination.png)
+![Coordination](coordination.svg)
 
 ---
 class: two-column,center
 # N Workers = N(N-1) Pairs
 
 .col[
-![K-7 Complete Graph](k7-complete.png)
+![Complete Graph](5-simplex_graph.svg)
 ]
 
 .col[
-![K-9 Complete Graph](k9-complete.png)
+![Complete Graph](9-simplex_graph.svg)
 ]
 
 ---
@@ -212,7 +217,7 @@ The system does _less_ work as the load increases!
 ]
 
 .col[
-![Universal Scalability Law](linear3.jpg)
+![Universal Scalability Law](linear3.svg)
 ]
 
 ---
@@ -238,6 +243,6 @@ A: It’s not, the amount of crosstalk-related work is a function of N
 class: center
 # How Do You Measure Parameters?
 
-You don’t---use regression to estimate them.
+You don’t: use regression to estimate them.
 
 ![Curve Fitting](fitting.png)
