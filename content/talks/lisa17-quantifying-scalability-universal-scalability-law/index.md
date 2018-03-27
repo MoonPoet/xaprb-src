@@ -89,12 +89,12 @@ What if you drift into it?
 
 ---
 layout: true
-class: center
+class: center, bigger
 
 ---
 # The Failure Boundary Is Nonlinear
 
-This region is _highly_ nonlinear and unintuitive. It's analogous to post-elastic material behavior.
+This region is _highly_ nonlinear and unintuitive. It’s analogous to post-elastic material behavior.
 
 ![Failure Boundary](failure-boundary.png)
 
@@ -118,13 +118,13 @@ There’s a branch of operations research called queueing theory.
 
 It analyzes what happens to customers when systems get busy.
 
-It's difficult to apply in “the real world” of capacity & ops.
+It’s difficult to apply in “the real world” of capacity & ops.
 
 ---
 # The Hockey Stick Curve
 
-The "hockey stick" queueing curve is hard to use in practice. And the sharpness
-of the "knee" is very nonlinear and hard for humans to intuit.
+The “hockey stick” queueing curve is hard to use in practice. And the sharpness
+of the “knee” is very nonlinear and hard for humans to intuit.
 
 ![Hockey Stick](hockey.svg)
 
@@ -136,7 +136,6 @@ Suppose a clustered system can do X work per unit of time.<br>Ideally, if you do
 ![Linear Scalability](linear1.svg)
 
 ---
-layout: false
 class: two-column
 # The Linear Scalability Equation
 
@@ -165,8 +164,8 @@ What happens to performance if some portion isn’t parallelizable?
 ![Speedup](speedup.svg)
 
 ---
-class: two-column
-# Amdahl's Law
+class: two-column,bigger
+# Amdahl’s Law
 
 .col[
 Amdahl’s Law describes the fraction \\(\\sigma\\) that can’t be done in parallel.
@@ -179,7 +178,7 @@ Adding nodes provides some speedup, but there’s a ceiling.
 ]
 
 .col[
-![Amdahl's Law](linear2.svg)
+![Amdahl’s Law](linear2.svg)
 ]
 
 ---
@@ -191,7 +190,7 @@ Suppose the parallel workers have dependencies on each other?
 ![Coordination](coordination.svg)
 
 ---
-class: two-column,center
+class: two-column,center, img-450h
 # N Workers = N(N-1) Pairs
 
 .col[
@@ -203,7 +202,7 @@ class: two-column,center
 ]
 
 ---
-class: two-column
+class: two-column, bigger
 # Universal Scalability Law
 
 .col[
@@ -213,7 +212,7 @@ Represent crosstalk (coherence) penalty by coefficient \\(\\kappa\\).
 X(N) = \frac{\\lambda N}{1+\\sigma(N-1)+\\kappa N(N-1)}
 \\]
 
-The system does _less_ work as the load increases!
+The system completes _less_ work as the load increases!
 ]
 
 .col[
@@ -221,7 +220,7 @@ The system does _less_ work as the load increases!
 ]
 
 ---
-class: center
+class: center, bigger, img-300h
 # Crosstalk Penalty Grows Fast
 
 Coherence (red) grows slowly, but crosstalk (blue) grows rapidly. At saturation, \\(\\kappa\\) is creating nonlinear behavior.
@@ -229,6 +228,8 @@ Coherence (red) grows slowly, but crosstalk (blue) grows rapidly. At saturation,
 ![USL Regions](regions.png)
 
 ---
+layout: false
+class: bigger
 # More About Crosstalk
 
 Q: Isn’t crosstalk just a design flaw?
@@ -243,6 +244,215 @@ A: It’s not, the amount of crosstalk-related work is a function of N
 class: center
 # How Do You Measure Parameters?
 
-You don’t: use regression to estimate them.
+You can’t measure serialization & crosstalk directly; use regression to estimate them.
 
 ![Curve Fitting](fitting.png)
+
+---
+class: center, middle, bigger
+# Experiment Interactively
+
+[desmos.com/calculator/3cycsgdl0b](https://www.desmos.com/calculator/3cycsgdl0b)
+
+---
+class: center, bigger
+# What is Scalability?
+
+The USL is a mathematical definition of scalability.
+
+It’s a function that turns workload into throughput.
+
+It’s formally derived and has real physical meaning.
+
+\\[
+X(N) = \frac{\\lambda N}{1+\\sigma(N-1)+\\kappa N(N-1)}
+\\]
+
+---
+class: bigger
+# But What Is Load?
+
+In most circumstances we care about, load is concurrency.
+
+Concurrency is the number of requests in progress.
+
+It’s surprisingly easy to measure:
+\\( N = \frac{\sum{latency}{interval}} \\)
+
+Many systems emit it as telemetry:
+
+- MySQL: `SHOW STATUS LIKE 'Threads_running'`
+- Apache: active worker count
+
+---
+class: title
+background-image: url(Matterhorn-mit-Morgennebel.jpg)
+.smokescreen[
+# Four Great Uses Of The USL
+]
+
+---
+class: two-column, center
+# 1. Forecast Workload Failure Boundary
+
+The USL can reveal the workload failure boundary approaching. Use regression to
+extract coefficients, then plot; or plot and eyeball to see if you’re
+approaching the boundary.
+
+.col[
+![Cisco Training Set](cisco-2.svg)
+]
+
+.col[
+![Cisco Full Set](cisco.svg)
+]
+
+---
+class: center, bigger
+# 1. Forecast Workload Failure Boundary
+
+Coda Hale wrote about the USL.
+https://codahale.com/usl4j-and-you/
+
+![Coda Hale Prediction](coda-hale.jpg)
+
+---
+class: bigger
+# 1. Forecast Workload Failure Boundary
+
+- By estimating the parameters, you can forecast what you can’t see.
+- This means you can “load test” under load you don’t yet experience.
+- The USL is a pessimistic model.
+--
+
+  - Your systems _should_ scale better than the USL predicts.
+  - But _you_ should be even more pessimistic than the USL.
+
+---
+class: bigger, center, img-300h
+# 2. Characterize Non-Scalability 
+Why doesn’t your system scale perfectly?<br>
+The USL reveals the amount of serialization & crosstalk.
+
+![USL Regions](regions.png)
+
+---
+# 2. Characterize Non-Scalability
+
+Paypal’s NodeJS vs Java benchmarks are a good example!
+https://www.vividcortex.com/blog/2013/12/09/analysis-of-paypals-node-vs-java-benchmarks/
+
+![Paypal vs. NodeJS](paypal-node.jpg)
+
+---
+class: bigger
+# 3. How Scalable Should It Be?
+
+The USL is a framework for making systems look really bad.
+
+Many 10+ node MPP databases barely do anything per-node.
+
+Calculate per-node a) clients b) data size c) throughput.
+
+One 18-node database: 4000 QPS ~220 QPS/node, 5ms latency.
+
+---
+class: bigger
+# 3. How Scalable Should It Be?
+
+This is an animation of how Citus’s distributed database works. For the record: Citus isn’t one of the terribly unscalable DB’s.
+
+![CitusDB](citus.svg)
+
+---
+class: img-450h, center
+# 4. See Your Teams As Systems
+
+![Richard Branson Tweet](rbranson-tweet.jpg)
+
+---
+class: center, bigger
+# 4. See Your Teams As Systems
+
+## “To go fast, go alone. To go far, go together.”
+
+Adrian Colyer wrote a good blog post about teams-as-systems and USL.
+https://blog.acolyer.org/2015/04/29/applying-the-universal-scalability-law-to-organisations/
+
+---
+class: center, bigger, img-300h
+# 4. See Your Teams As Systems
+
+The USL isn’t novel in that sense... “I gave my boss two copies of the Mythical
+Man-Month so they can read it twice as fast.”
+
+![Mythical Man-Month](mmm.jpg)
+
+---
+class: bigger
+# What Else Can The USL Illuminate?
+
+Open-plan offices: My work takes more work when others are nearby.
+
+Map-Reduce: That’s a whole lotta overhead, but it sure is scalable.
+
+Mutexes: Theoretically just serialize, but those damn OS schedulers.
+
+---
+class: center, bigger
+# What’s NOT Scalability?
+
+I commonly see throughput-vs-latency charts. This seems legit till you get systems under high load.
+
+![Not A Function](not-a-function.svg)
+
+---
+class: center, bigger, img-300h
+# Scalability Isn’t Throughput-vs-Latency
+
+The throughput-vs-latency equation has **two** solutions.
+
+![Nose Function](nose-equation-desmos.png)
+
+---
+class: center, bigger, img-300h
+# Concurrency-vs-Latency is OK
+
+It’s a simple quadratic per Little’s Law, and is quite useful.
+
+![Concurrency vs. Latency](cisco-3.svg)
+
+---
+class: center, two-column, bigger
+
+.col[
+# Some Resources
+
+I wrote a
+[book](https://www.vividcortex.com/resources/universal-scalability-law/).
+
+I created an [Excel
+Sheet](https://www.vividcortex.com/resources/usl-modeling-workbook).
+]
+
+.col[
+[![USL Ebook Cover](usl-ebook-cover.png)](https://www.vividcortex.com/resources/universal-scalability-law/)
+]
+
+---
+class: center, bigger
+# Conclusions
+
+Scalability is formally definable, and black-box observable.
+
+Scalability is nonlinear; this region is the failure boundary.
+
+Scalability is a function with parameters you can estimate.
+
+---
+class: bigger
+# Further Reading & References
+
+- https://www.vividcortex.com/resources/ for ebook, Excel worksheet.
+
+- http://www.perfdynamics.com/Manifesto/USLscalability.html for the original source

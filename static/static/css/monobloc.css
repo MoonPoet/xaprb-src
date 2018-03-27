@@ -3,23 +3,23 @@
 
 /* Global Styles */
 body {
-  font-family: 'Heebo';
+  font-family: Heebo, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.remark-slide-content h1, h2 {
+.remark-slide-content h1, .remark-slide-content h2 {
   font-weight: 500;
 }
-.remark-slide-content p, li {
+.remark-slide-content p, .remark-slide-content li, .remark-slide-content td, .remark-slide-content th {
   font-size: 18pt;
   line-height: 1.6;
 }
-.remark-code, .remark-inline-code { font-family: 'Inconsolata'; }
+.remark-code, .remark-inline-code {
+	font-family: Inconsolata, monospace;
+}
 th {
 	border-bottom: 1px solid black;
 }
 td, th {
 	padding: 8px;
-	font-size: 16pt;
-	line-height: 1.2;
 }
 img {
   display: block;
@@ -32,9 +32,12 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+.bigger p, .bigger div, .bigger li {
+	font-size: 24pt;
+}
 
-/* Title Slide Layout. Use 'div.smokescreen' to contain the h1/h2. */
-.remark-slide-content.title h1, h2 {
+/* Title Slide Layout. Use .smokescreen[...] or .fog[...] to contain the h1/h2. */
+.remark-slide-content.title h1, .remark-slide-content.title h2 {
 	color: white;
 	font-size: 50pt;
 	margin: 40pt;
@@ -43,7 +46,7 @@ img {
 .remark-slide-content.title h2 {
 	font-size: 30pt;
 }
-div.smokescreen {
+.smokescreen {
 	width: 100%;
 	position: absolute;
 	left: 0px;
@@ -64,7 +67,7 @@ div.smokescreen {
 .two-column .rc, .two-column .col {
 	width: 48%;
 	float: left;
-	padding-right: 1em;
+	margin-right: 1%;
 }
 .two-column .rc img, .two-column .col img, .three-column .col img, .three-column .rc img {
 	display: block;
@@ -101,4 +104,24 @@ div.smokescreen {
 .three-column .col, .three-column .rc {
 	width: 32%;
 	float: left;
+}
+
+/* Shrink Images To Fit In A Vertical Space */
+.img-450h img {
+	display: block;
+	max-height: 450px !important;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+.img-300h img {
+	display: block;
+	max-height: 300px !important;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+.center img {
+	margin-left: auto;
+	margin-right: auto;
 }
