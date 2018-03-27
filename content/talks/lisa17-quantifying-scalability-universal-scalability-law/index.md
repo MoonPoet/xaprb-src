@@ -383,13 +383,17 @@ Adrian Colyer wrote a good blog post about teams-as-systems and USL.
 https://blog.acolyer.org/2015/04/29/applying-the-universal-scalability-law-to-organisations/
 
 ---
-class: center, bigger, img-300h
-# 4. See Your Teams As Systems
+class: image-right, bigger
 
+.col[
+# 4. See Your Teams As Systems
 The USL isn’t novel in that sense... “I gave my boss two copies of the Mythical
 Man-Month so they can read it twice as fast.”
+]
 
+.rc[
 ![Mythical Man-Month](mmm.jpg)
+]
 
 ---
 class: bigger
@@ -402,7 +406,7 @@ Map-Reduce: That’s a whole lotta overhead, but it sure is scalable.
 Mutexes: Theoretically just serialize, but those damn OS schedulers.
 
 ---
-class: center, bigger
+class: center, bigger, img-300h
 # What’s NOT Scalability?
 
 I commonly see throughput-vs-latency charts. This seems legit till you get systems under high load.
@@ -435,7 +439,9 @@ I wrote a
 [book](https://www.vividcortex.com/resources/universal-scalability-law/).
 
 I created an [Excel
-Sheet](https://www.vividcortex.com/resources/usl-modeling-workbook).
+workbook](https://www.vividcortex.com/resources/usl-modeling-workbook).
+
+These slides are at [xaprb.com/talks](https://www.xaprb.com/talks/).
 ]
 
 .col[
@@ -456,6 +462,6 @@ Scalability is a function with parameters you can estimate.
 class: bigger
 # Further Reading & References
 
-- https://www.vividcortex.com/resources/ for ebook, Excel worksheet.
+- https://www.vividcortex.com/resources/ for ebook, Excel workbook.
 
-- http://www.perfdynamics.com/Manifesto/USLscalability.html for the original source
+- http://www.perfdynamics.com/Manifesto/USLscalability.html for the original source.
