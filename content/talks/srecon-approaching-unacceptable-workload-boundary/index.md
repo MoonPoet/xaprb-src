@@ -63,11 +63,19 @@ What happens as systems get bigger and more heavily loaded?
 * Can you measure and model this behavior?
 
 ---
+background-image: url(nature-3258924-1280.jpg)
+class: title
+
+.smokescreen[
+# The Operating Domain
+]
+
+---
 class: center, img-300h
 # Operating Domain and Failure Boundaries
 
-Rasmussen's model describes an operating domain bounded by economic risk, effort, and
-safety. The system's operating state is a point within the domain, always moving
+Rasmussen's model describes an **operating domain** bounded by economic risk, effort, and
+safety. The system's **operating state** is a point within the domain, always moving
 around.
 
 ![Rasmussen's Model](rasmussens-model.jpg)
@@ -88,9 +96,12 @@ class: img-450h, center
 
 ![Real Boundaries](real-boundaries.svg)
 
-<div style="position: absolute; top: 45%; left: 27%">Margin of Error</div>
-<div style="position: absolute; top: 38%; left: 56%">Overdraft Protection</div>
-<div style="position: absolute; top: 81%; left: 45%">Overprovisioning</div>
+<div style="background: rgba(255,255,255,.9); border: 1px solid black;
+border-radius: 5px; padding: 0 5px; position: absolute; top: 45%; left: 25%">Margin of Error</div>
+<div style="background: rgba(255,255,255,.9); border: 1px solid black;
+border-radius: 5px; padding: 0 5px; position: absolute; top: 38%; left: 58%">Overdraft Protection</div>
+<div style="background: rgba(255,255,255,.9); border: 1px solid black;
+border-radius: 5px; padding: 0 5px; position: absolute; top: 81%; left: 50%">Overprovisioning</div>
 
 ---
 class: img-450h, center, two-column
@@ -113,11 +124,11 @@ It really looks more like this.
 ]
 
 ---
+class: bigger
 # Complex Systems Run In Degraded Mode
 
 Richard Cook lists 18 precepts of system failure in [How Complex Systems
 Fail](http://web.mit.edu/2.75/resources/random/How Complex Systems Fail.pdf).
-
 Precepts 4) and 5) are especially relevant.
 
 --
@@ -129,34 +140,45 @@ Precepts 4) and 5) are especially relevant.
 > **5) Complex systems run in degraded mode.**
 > A corollary to the preceding point is that complex systems run as broken systems.
 
---
+???
 
 Systems can and do function beyond their load limits.
 
 ---
+class: title
+background-image: url(gears-1236578-1280.jpg)
+
+.smokescreen[
+# System Load
+]
+
+---
+class: bigger
 # What Is The Definition Of Load?
 
-There's no one right answer to this question, but there's a useful answer for
-this discussion.
+There's no one right answer to this question, but there's a **useful answer**
+for this discussion.
 
 --
 
-Load is the sum of task residence times during an observation interval \\(T\\).
-
---
-
-You can use Little's Law to prove that this definition of load is equivalent to
-average concurrency of tasks queued or in service:
+Load is the **sum of task residence times** during an observation interval
+\\(T\\).  This is equivalent to average **concurrency** of tasks queued or in
+service:
 
 \\[
 N = \frac{\sum_{}^{}{R}}{T}
 \\]
 
+.footnote[
+You can prove this with Little's Law.
+]
+
 ---
+class: bigger
 # Load, Utilization, And Queueing
 
-Load (concurrency) is related to utilization and queue length, but it's not the
-same.
+Load (concurrency) is related to **utilization and queue length**, but it's not
+the same.
 
 --
 * Concurrency is the number of requests in process simultaneously.
@@ -171,76 +193,150 @@ same.
 * Queue length is the instantaneous or time-averaged number of tasks waiting
   to be serviced.
 
---
-* By Little's Law, utilization and queue length are types of concurrency:
+---
+class: bigger
+# Utilization, Queue Length, & Concurrency
+
+By Little's Law, utilization and queue length are **types of concurrency**.
+
   * Utilization is the concurrency of in-service tasks.
+
+--
   * Queue length is the concurrency of queued tasks.
 
 ---
-class: two-column
+class: two-column, bigger
 # What Is The Load Limit?
 
-Can utilization define the load limit? If so, queueing theory might hold an answer.
+If the load limit were defined in terms of utilization, queueing theory could
+tell us where the **load limit** will be.
+
+--
+But it can't: load can be infinite, utilization ranges 0-1.
 
 .col[
-* This is appealing because utilization has a clear limit: it can't be more than
-  100%.
-* But:
-  * Load can be unlimited
-  * The “hockey stick” queueing curve is hard to use
-  * The "knee" is unintuitive
+Plus it's impractical:
+* The “hockey stick” queueing curve is hard to use
+* The "knee" is unintuitive
 ]
 
 .col[
 ![Hockey Stick](hockey.svg)
 ]
 
----
-# Scaling A System: Ideal
+???
+This is appealing because utilization has a clear limit: it can't be more than
+100%.
 
-Suppose a clustered system can do X work per unit of time.<br>Ideally, if you double the cluster size, it can do 2X work.
+So we need to translate the problem to a different domain, where the units
+match. Scalability is the answer.
+
+---
+class: title
+background-image: url(snow-3260088-1280.jpg)
+
+.smokescreen[
+# Scalability
+]
+
+---
+class: bigger
+# What's the Definition of Scalability?
+
+There's a mathematical definition of scalability **as a function of
+concurrency**.
+
+--
+
+I'll illustrate it in terms of a **parallel processing system** that uses
+concurrency to achieve speedup.
+
+???
+It's practical, easy to use, and matches the domain well.
+
+I'll show how the equation is composed piece by piece, but don't sweat the math.
+
+---
+class: bigger, img-center
+# Linear Scaling
+
+Suppose a clustered system can complete **X tasks per second** with no
+parallelism.
+
+--
+
+With parallelism, it divides tasks and executes subtasks
+concurrently, **completing tasks faster**.
+
+--
+
+Faster completion also means **increased throughput.**
+
+???
+* Tasks per second is throughput.
+* Throughput is a function of concurrency.
+
+---
+class: bigger, img-center
+# Linear Scaling
+
+Ideally, **throughput increases linearly with concurrency**.
 
 ![Linear Scalability](linear1.svg)
 
+???
+* Linear scaling is the ideal.
+* Another way to say this is that the system's output is a linear function of
+  load.
+
 ---
-class: two-column
+class: two-column, bigger
 # The Linear Scalability Equation
 
 .col[
-The equation that describes ideal scaling:
+The equation that describes ideal scaling is
 
 \\[
 X(N) = \frac{\\lambda N}{1}
 \\]
 
-where \\(\\lambda\\) is the slope of the line.
+where the slope is \\(\\lambda=X(1)\\).
 ]
 
 .col[
 ![Linear Scalability](linear1.svg)
 ]
 
+???
+- X is throughput
+- N is concurrency, which is the workload
+- Lambda is the system's output when there's no parallelism
+- Really important to note that N is the independent parameter, the driver
+
 ---
-class: center
+class: center, bigger
 # But Our Cluster Isn’t Perfect
 
-Speedup comes from executing tasks in parallel, e.g. ~ scatter-gather.
+Linear scaling comes from subdividing tasks **perfectly**.
 
-What happens to performance if some portion isn’t parallelizable?
+--
+
+What if a portion isn’t subdividable?
 
 ![Speedup](speedup.svg)
 
 ---
 class: two-column,bigger
-# Amdahl’s Law
+# Amdahl’s Law Describes Serialization
 
 \\[
 X(N) = \frac{\\lambda N}{1+\\sigma(N-1)}
 \\]
 
 .col[
-Amdahl’s Law describes the fraction \\(\\sigma\\) that can’t be done in parallel.
-Adding nodes provides some speedup, but there’s a ceiling.
+Amdahl's Law describes throughput when
+**a fraction \\(\\sigma\\) can’t be
+parallelized**.
 ]
 
 .col[
@@ -248,16 +344,43 @@ Adding nodes provides some speedup, but there’s a ceiling.
 ]
 
 ---
-class: center
-# But What If Workers Coordinate?
+class: bigger
+# Amdahl's Law Has An Asymptote
 
-Suppose the parallel workers have dependencies on each other?
+\\[
+X(N) = \frac{\\lambda N}{1+\\sigma(N-1)}
+\\]
+
+Parallelism delivers speedup, but there’s a limit:
+
+\\[
+\lim\_{N \to \infty}{X(N)} = \frac{1}{\sigma}
+\\]
+
+--
+
+e.g. a 5% serialized task can't be sped up more than 20-fold.
+
+???
+If 5% of the work is serialized, infinite concurrency will still result in tasks
+taking 5% as long as non-parallelized tasks.
+
+---
+class: img-center, bigger
+# What If Workers Coordinate?
+
+Suppose the parallel workers **also have dependencies** on each other?
+
+--
 
 ![Coordination](coordination.svg)
 
 ---
-class: two-column,center, img-450h
-# N Workers = N(N-1) Pairs
+class: two-column, bigger, img-center, img-300h
+# How Bad Is Coordination?
+
+\\(N\\) workers = \\(N(N-1)\\) pairs of interactions, which is
+\\(\mathcal{O}(n^2)\\) in \\(N\\).
 
 .col[
 ![Complete Graph](5-simplex_graph.svg)
@@ -269,40 +392,81 @@ class: two-column,center, img-450h
 
 ---
 class: two-column, bigger
-# Universal Scalability Law
+# The Universal Scalability Law
 
 \\[
 X(N) = \frac{\\lambda N}{1+\\sigma(N-1)+\\kappa N(N-1)}
 \\]
 
 .col[
-Represents crosstalk (coherence) penalty by coefficient \\(\\kappa\\).
-The system completes _less_ work as the load increases!
+The USL adds a term for crosstalk, multiplied by the \\(\\kappa\\)
+coefficient.
+
+Now there's a **point of diminishing returns**!
 ]
 
 .col[
 ![Universal Scalability Law](linear3.svg)
 ]
 
----
-class: center, bigger, img-300h
-# Crosstalk Penalty Grows Fast
+.footnote[
+Crosstalk is also called coordination or coherence.
+]
 
-Coherence (red) grows slowly, but crosstalk (blue) grows rapidly. At saturation, \\(\\kappa\\) is creating nonlinear behavior.
+---
+class: bigger, img-center
+# This Behavior Isn't News To You
+
+You've seen lots of benchmarks with diminishing returns.
+
+![MySQL Benchmark](benchmark.png)
+
+.footnote[
+Source: http://dimitrik.free.fr/blog/
+]
+
+???
+By the way, pay attention to the axis scale, it's log-scaled by powers of two.
+If you scale the X-axis linearly you'll get the shape of the curve on the
+previous slide.
+
+---
+class: img-center, bigger, img-300h
+# The USL Describes Behavior Under Load
+
+The USL explains the **highly nonlinear behavior** we know systems exhibit near
+their saturation point.
+[desmos.com/calculator/3cycsgdl0b](https://www.desmos.com/calculator/3cycsgdl0b)
 
 ![USL Regions](regions.png)
 
+???
+- Serialization (red) grows slowly, but crosstalk (blue) grows rapidly. 
+- This is why systems get so unpredictable near their limits.
+- Near and above the point of diminishing returns, systems exhibit high variance
+  and get unpredictable.
+
 ---
 class: bigger
-# More About Crosstalk
+# A Summary Of The USL
 
-Q: Isn’t crosstalk just a design flaw?
+The Universal Scalability Law defines **throughput as a function of concurrency**.
 
-A: Yes and no. Real-life: consensus, 2-phase commit, NUMA, etc…
+It explains how and why **systems don't scale linearly with load**.
 
-Q: Doesn’t it seem odd to assume that crosstalk is a constant?
+---
+class: bigger
+# What is the USL Good For?
 
-A: It’s not, the amount of crosstalk-related work is a function of N
+Armed with the USL, you are ready to:
+
+- Measure and model nonlinear behavior.
+- Predict the onset of nonlinearity.
+- Design better systems.
+
+It's easy. Let's see how!
+
+TODO
 
 ---
 class: center
@@ -316,7 +480,6 @@ You can’t measure serialization & crosstalk directly; use regression to estima
 class: center, middle, bigger
 # Experiment Interactively
 
-[desmos.com/calculator/3cycsgdl0b](https://www.desmos.com/calculator/3cycsgdl0b)
 
 ---
 class: center, bigger
