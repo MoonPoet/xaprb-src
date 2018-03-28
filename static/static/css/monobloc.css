@@ -135,7 +135,8 @@ img {
 	margin: 0;
 	padding: 0;
 }
-.center img {
+.center img, .img-center img {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }

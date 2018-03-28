@@ -64,7 +64,7 @@ What happens as systems get bigger and more heavily loaded?
 
 ---
 class: center, img-300h
-# Failure Boundaries
+# Operating Domain and Failure Boundaries
 
 Rasmussen's model describes an operating domain bounded by economic risk, effort, and
 safety. The system's operating state is a point within the domain, always moving
@@ -89,12 +89,12 @@ class: img-450h, center
 ![Real Boundaries](real-boundaries.svg)
 
 <div style="position: absolute; top: 45%; left: 27%">Margin of Error</div>
-<div style="position: absolute; top: 38%; left: 56%">Overdraft Limit</div>
+<div style="position: absolute; top: 38%; left: 56%">Overdraft Protection</div>
 <div style="position: absolute; top: 81%; left: 45%">Overprovisioning</div>
 
 ---
 class: img-450h, center, two-column
-# The Margins Are Nonlinear
+# The Buffer Zone Is Nonlinear
 
 .col[
 ![Margins of Error](shaded-boundaries.jpg)
@@ -113,61 +113,87 @@ It really looks more like this.
 ]
 
 ---
-Cook lists 18 precepts of system failure in [How Complex Systems Fail](web.mit.edu/2.75/resources/random/How Complex Systems Fail.pdf)
+# Complex Systems Run In Degraded Mode
 
-\#5: **Complex systems run in degraded mode**
-]
+Richard Cook lists 18 precepts of system failure in [How Complex Systems
+Fail](http://web.mit.edu/2.75/resources/random/How Complex Systems Fail.pdf).
 
-.rc[
-![Cook & Rasmussen](cook-rasmussen.jpg)
-]
+Precepts 4) and 5) are especially relevant.
 
 --
 
-Cook introduces _error margin_. What’s the _workload margin_?
-
-What if you drift into it?
-
----
-class: center, bigger
-
----
-# The Failure Boundary Is Nonlinear
-
-This region is _highly_ nonlinear and unintuitive. It’s analogous to post-elastic material behavior.
-
-![Failure Boundary](failure-boundary.png)
-
----
-class: center, bigger
-# Capacity
-
-Systems can, and do, function beyond their capacity limits.
-
-Capacity limits are scalability limits.
+> **4) Complex systems contain changing mixtures of failures latent within them.**
+> The complexity of these systems makes it impossible for them to run without
+> multiple flaws being present.
+> 
+> **5) Complex systems run in degraded mode.**
+> A corollary to the preceding point is that complex systems run as broken systems.
 
 --
 
-How can we define and reason about system capacity?
-
-Ditto, for scalability?
+Systems can and do function beyond their load limits.
 
 ---
-# Queueing Theory
+# What Is The Definition Of Load?
 
-There’s a branch of operations research called queueing theory.
+There's no one right answer to this question, but there's a useful answer for
+this discussion.
 
-It analyzes what happens to customers when systems get busy.
+--
 
-It’s difficult to apply in “the real world” of capacity & ops.
+Load is the sum of task residence times during an observation interval \\(T\\).
+
+--
+
+You can use Little's Law to prove that this definition of load is equivalent to
+average concurrency of tasks queued or in service:
+
+\\[
+N = \frac{\sum_{}^{}{R}}{T}
+\\]
 
 ---
-# The Hockey Stick Curve
+# Load, Utilization, And Queueing
 
-The “hockey stick” queueing curve is hard to use in practice. And the sharpness
-of the “knee” is very nonlinear and hard for humans to intuit.
+Load (concurrency) is related to utilization and queue length, but it's not the
+same.
 
+--
+* Concurrency is the number of requests in process simultaneously.
+
+--
+* Average concurrency is an average over an observation interval \\(T\\).
+
+--
+* Utilization is the fraction of \\(T\\) that was busy.
+
+--
+* Queue length is the instantaneous or time-averaged number of tasks waiting
+  to be serviced.
+
+--
+* By Little's Law, utilization and queue length are types of concurrency:
+  * Utilization is the concurrency of in-service tasks.
+  * Queue length is the concurrency of queued tasks.
+
+---
+class: two-column
+# What Is The Load Limit?
+
+Can utilization define the load limit? If so, queueing theory might hold an answer.
+
+.col[
+* This is appealing because utilization has a clear limit: it can't be more than
+  100%.
+* But:
+  * Load can be unlimited
+  * The “hockey stick” queueing curve is hard to use
+  * The "knee" is unintuitive
+]
+
+.col[
 ![Hockey Stick](hockey.svg)
+]
 
 ---
 # Scaling A System: Ideal
