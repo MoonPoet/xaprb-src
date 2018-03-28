@@ -40,16 +40,25 @@ img {
 	bottom: 1em;
 	font-size: 8pt !important;
 }
+.remark-slide-number {
+	background-color: white;
+	padding: 0 5px;
+	border-radius: 5px;
+	font-size: 20px !important;
+}
 
-/* Title Slide Layout. Use .smokescreen[...] or .fog[...] to contain the h1/h2. */
-.remark-slide-content.title h1, .remark-slide-content.title h2 {
+/* Title Slide Layout. Use .smokescreen[...] to contain the h1/h2. */
+.remark-slide-content.title h1, .remark-slide-content.title h2, .remark-slide-content.title h3 {
 	color: white;
 	font-size: 50pt;
-	margin: 40pt;
+	margin: 30pt;
 	font-weight: 300;
 }
 .remark-slide-content.title h2 {
 	font-size: 30pt;
+}
+.remark-slide-content.title h3 {
+	font-size: 22pt;
 }
 .smokescreen {
 	width: 100%;
