@@ -71,7 +71,7 @@ img {
 }
 
 /* Columnar Layouts. Two- and three-column layouts use .col classnames and float
- * next to each other. The image-right uses .col and .rc (for right-column) and
+ * next to each other. The img-right uses .col and .rc (for right-column) and
  * they're not equal-width or height. For convenience, two-column layouts also
  * allow you to name the right column with .rc classname, so you can switch
  * between layouts without changing the markup, just the slide's class.
@@ -96,11 +96,11 @@ img {
 }
 
 /* Two-Column Layout, Text Left, Image Right */
-.image-right .col {
+.img-right .col {
 	width: 62.5%;
    padding-right: 1em;
 }
-.image-right .rc {
+.img-right .rc {
 	position: absolute;
 	top: 0;
 	left: 62.5%;
@@ -109,7 +109,7 @@ img {
 	margin: 0;
 	padding: 0;
 }
-.image-right .rc p { /* Remove empty line above image wrapped in <p> */
+.img-right .rc p { /* Remove empty line above image wrapped in <p> */
 	padding: 0;
 	margin: 0;
 }

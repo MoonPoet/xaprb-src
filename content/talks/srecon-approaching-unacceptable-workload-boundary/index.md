@@ -26,7 +26,7 @@ background-size: cover
 </div>
 
 ---
-class: image-right
+class: img-right, bigger
 # Logistics & Stuff
 
 .col[
@@ -612,7 +612,7 @@ Adrian Colyer wrote a good blog post about teams-as-systems and USL.
 https://blog.acolyer.org/2015/04/29/applying-the-universal-scalability-law-to-organisations/
 
 ---
-class: image-right, bigger
+class: img-right, bigger
 
 .col[
 # 4. See Your Teams As Systems

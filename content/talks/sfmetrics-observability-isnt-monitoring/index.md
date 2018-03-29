@@ -19,7 +19,7 @@ background-image: url(spotlight-802633_1280.jpg)
 ]
 
 ---
-class: image-right
+class: img-right
 layout: true
 
 ---
@@ -96,7 +96,7 @@ layout: false
 | Flame Graph | Aggregations of spans                                                                     |
 
 ---
-class: image-right
+class: img-right
 
 # Tradeoffs
 
@@ -306,7 +306,7 @@ Maybe you should just buy Dynatrace?
 ]
 
 ---
-class: image-right
+class: img-right
 
 .col[
 # Instrumentation Isn't Answers
@@ -319,7 +319,7 @@ You still need to turn the telemetry into actionable insights. Analytics is hard
 ]
 
 ---
-class: image-right
+class: img-right
 
 # Metrics Can Be Powerful
 
@@ -388,7 +388,7 @@ Service time (svctm)
 ]
 
 ---
-class: image-right
+class: img-right
 
 # Imitation = Flattery
 

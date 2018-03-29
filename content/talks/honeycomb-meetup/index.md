@@ -23,7 +23,7 @@ background-image: url(money-2180330-1280.jpg)
 ]
 
 ---
-class: image-right
+class: img-right, bigger
 # Logistics & Stuff
 
 .col[
@@ -55,7 +55,7 @@ VividCortex is a startup, not a mature, well-managed business (yet).
 I personally have more scars than successes.
 
 ---
-class: bigger, image-right
+class: bigger, img-right
 # What Should You Measure?
 
 .col[
@@ -109,7 +109,7 @@ background-image: url(imnl\_tesla\_watch.jpg)
 ]
 
 ---
-class: bigger, image-right
+class: bigger, img-right
 
 .col[
 # Measure What Matters
@@ -126,7 +126,7 @@ Pro tip: 3 is the magic number. People can't prioritize too many things.
 ]
 
 ---
-class: image-right, bigger
+class: img-right, bigger
 
 .col[
 # The Goal
