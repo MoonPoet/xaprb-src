@@ -415,7 +415,7 @@ Crosstalk is also called coordination or coherence.
 
 ---
 class: bigger, img-center
-# This Behavior Isn't News To You
+# You Already Know This
 
 You've seen lots of benchmarks with diminishing returns.
 
@@ -466,197 +466,176 @@ Armed with the USL, you are ready to:
 
 It's easy. Let's see how!
 
-TODO
-
 ---
-class: center
-# How Do You Measure Parameters?
+class: title
+background-image: url(compass-2946958\_1280.jpg)
 
-You can’t measure serialization & crosstalk directly; use regression to estimate them.
-
-![Curve Fitting](fitting.png)
-
----
-class: center, middle, bigger
-# Experiment Interactively
-
-
----
-class: center, bigger
-# What is Scalability?
-
-The USL is a mathematical definition of scalability.
-
-It’s a function that turns workload into throughput.
-
-It’s formally derived and has real physical meaning.
-
-\\[
-X(N) = \frac{\\lambda N}{1+\\sigma(N-1)+\\kappa N(N-1)}
-\\]
+.smokescreen[
+# How To Measure, Model, And Predict
+]
 
 ---
 class: bigger
-# But What Is Load?
+# What To Measure
 
-In most circumstances we care about, load is concurrency.
+You can’t measure serialization & crosstalk directly.
 
-Concurrency is the number of requests in progress.
+--
 
-It’s surprisingly easy to measure: \\( N = \frac{\sum_{}^{}{R}}{T} \\)
+Instead, measure **throughput** and **concurrency**.
 
-Many systems emit it as telemetry:
+--
+
+Then **fit the USL model to the data** to estimate the parameters.
+
+---
+class: center, middle
+
+![Curve Fitting](fitting.png)
+
+???
+Throughput is so trivially easy to measure in most systems that I won't talk
+about it. But there's two easy ways to measure concurrency.
+
+---
+class: bigger
+# How To Measure Concurrency, Pt. 1
+
+Many systems have a metric of concurrency already.
+Look for a metric of **things actively working**.
 
 - MySQL: `SHOW STATUS LIKE 'Threads_running'`
 - Apache: active worker count
 
----
-class: title
-background-image: url(Matterhorn-mit-Morgennebel.jpg)
-.smokescreen[
-# Four Great Uses Of The USL
-]
+--
 
----
-class: two-column, center
-# 1. Forecast Workload Failure Boundary
-
-The USL can reveal the workload failure boundary approaching. Use regression to
-extract coefficients, then plot; or plot and eyeball to see if you’re
-approaching the boundary.
-
-.col[
-![Cisco Training Set](cisco-2.svg)
-]
-
-.col[
-![Cisco Full Set](cisco.svg)
-]
-
----
-class: center, bigger
-# 1. Forecast Workload Failure Boundary
-
-Coda Hale wrote about the USL.
-https://codahale.com/usl4j-and-you/
-
-![Coda Hale Prediction](coda-hale.jpg)
+It works well to **poll this e.g. 1x/sec**, then average these into 1- or
+3-minute averages.
 
 ---
 class: bigger
-# 1. Forecast Workload Failure Boundary
+# How To Measure Concurrency, Pt. 2
 
-- By estimating the parameters, you can forecast what you can’t see.
-- This means you can “load test” under load you don’t yet experience.
-- The USL is a pessimistic model.
+If there's no metric of concurrency, you can **sum up latencies and divide by
+the duration**.
+
+\\[
+N = \frac{\sum_{}^{}{R}}{T}
+\\]
+
+???
+- Again, in my experience it's good to use averages over a moderately long window like 1-5 minutes.
+- You want to end up with dozens to hundreds of data points.
+
+---
+class: img-center, img-450h
+# Plot Your Data
+
+Simply **scatterplot your data** and eyeball it for sanity.
+
+![X-N Plot](x-n-plot.jpg)
+
+???
+Source data in "row16.csv" file. If you're reading this note and you're not a
+VividCortex employee, sorry, I can't give you access to this data.
+
+---
+class: bigger, img-450h
+# Plug The Data Into The Model
+
+Paste the data into the [Excel
+model](https://www.vividcortex.com/resources/usl-modeling-workbook) I built.
+
+![USL Model Spreadsheet](usl-model-spreadsheet.jpg)
+
+???
+You can do it in R, or gnuplot, or even with JavaScript in Plotly. Lots of
+options. This is an easy one.
+
+---
+class: bigger
+# Interpreting The Results
+
+What does the output mean?
+
+- Shows whether your system has **more serialization or crosstalk**.
+
 --
+- Shows the **estimated max load** where it'll stop scaling.
 
-  - Your systems _should_ scale better than the USL predicts.
-  - But _you_ should be even more pessimistic than the USL.
-
----
-class: bigger, center, img-300h
-# 2. Characterize Non-Scalability 
-Why doesn’t your system scale perfectly?<br>
-The USL reveals the amount of serialization & crosstalk.
-
-![USL Regions](regions.png)
+--
+- Helps you **predict nonlinearity**.
 
 ---
-# 2. Characterize Non-Scalability
+class: bigger, img-center
+# Paypal's NodeJS vs Java Benchmarks
 
-Paypal’s NodeJS vs Java benchmarks are a good example!
-https://www.vividcortex.com/blog/2013/12/09/analysis-of-paypals-node-vs-java-benchmarks/
+Paypal’s [NodeJS vs Java benchmarks](https://www.vividcortex.com/blog/2013/12/09/analysis-of-paypals-node-vs-java-benchmarks/)  are a good example!
 
 ![Paypal vs. NodeJS](paypal-node.jpg)
 
 ---
-class: bigger
-# 3. How Scalable Should It Be?
+class: bigger, img-300h, img-center
+# Bringing It Back To The Operating Domain
 
-The USL is a framework for making systems look really bad.
+The USL is one way to understand **what happens near this boundary**.
 
-Many 10+ node MPP databases barely do anything per-node.
-
-Calculate per-node a) clients b) data size c) throughput.
-
-One 18-node database: 4000 QPS ~220 QPS/node, 5ms latency.
+![Margins of Error](usl-operating-domain.jpg)
 
 ---
-class: bigger, img-300h
-# 3. How Scalable Should It Be?
-
-You should always measure databases; don’t simply use architectural
-diagrams to intuit whether they will scale.
-
-![CitusDB](animated-citus-738243d8.svg)
-
-.footnote[
-This diagram is from [CitusDB](https://www.citusdata.com/), and is
-meant only to illustrate the point, not to imply anything about CitusDB.
-]
-
----
-class: img-450h, center
-# 4. See Your Teams As Systems
-
-![Richard Branson Tweet](rbranson-tweet.jpg)
-
----
-class: center, bigger
-# 4. See Your Teams As Systems
-
-## “To go fast, go alone. To go far, go together.”
-
-Adrian Colyer wrote a good blog post about teams-as-systems and USL.
-https://blog.acolyer.org/2015/04/29/applying-the-universal-scalability-law-to-organisations/
-
----
-class: img-right, bigger
+class: bigger, two-column
+# What Happens Here?
 
 .col[
-# 4. See Your Teams As Systems
-The USL isn’t novel in that sense... “I gave my boss two copies of the Mythical
-Man-Month so they can read it twice as fast.”
+- When the system approaches **workload limits** it gets twitchy.
+- You may be able to **see this approaching** before it gets bad.
+- Simply scatterplotting **throughput vs concurrency** is super useful!
 ]
 
-.rc[
-![Mythical Man-Month](mmm.jpg)
+.col[
+![Margins of Error](usl-operating-domain.jpg)
 ]
 
 ---
-class: bigger
-# What Else Can The USL Illuminate?
+class: two-column, bigger
+# You Don't Need To Do Any Modeling!
 
-Open-plan offices: My work takes more work when others are nearby.
+.col[
+Let's take another look at this data. What jumps out?
+]
 
-Map-Reduce: That’s a whole lotta overhead, but it sure is scalable.
-
-Mutexes: Theoretically just serialize, but those damn OS schedulers.
-
----
-class: center, bigger, img-300h
-# What’s NOT Scalability?
-
-I commonly see throughput-vs-latency charts. This seems legit till you get systems under high load.
-
-![Not A Function](not-a-function.svg)
+.col[
+![Scatterplot 1](scatterplot-1.jpg)
+]
 
 ---
-class: center, bigger, img-300h
-# Scalability Isn’t Throughput-vs-Latency
+class: two-column, bigger
+# What If You Had Only The First Part?
 
-The throughput-vs-latency equation has **two** solutions.
+.col[
+- I would model and project out to the right.
+- I'd see "hmm, it's **leveling off**."
+- I'd say "don't count on much more than you see now."
+]
 
-![Nose Function](nose-equation-desmos.png)
+.col[
+![Scatterplot 2](scatterplot-2.jpg)
+]
 
 ---
-class: center, bigger, img-300h
-# Concurrency-vs-Latency is OK
+class: two-column, bigger
+# Think Differently About Outlying Points
 
-It’s a simple quadratic per Little’s Law, and is quite useful.
+.col[
+- Given all the data, I mentally cluster it into two parts.
+- If the high-end outliers deviate, **it's nonlinear already.**
+- Those points are evidence that the system is struggling there.
+- You don't need to model anything to see that.
+]
 
-![Concurrency vs. Latency](cisco-3.svg)
+.col[
+![Scatterplot 3](scatterplot-3.jpg)
+]
 
 ---
 class: center, two-column, bigger
@@ -676,21 +655,3 @@ These slides are at [xaprb.com/talks](https://www.xaprb.com/talks/).
 .col[
 [![USL Ebook Cover](usl-ebook-cover.png)](https://www.vividcortex.com/resources/universal-scalability-law/)
 ]
-
----
-class: center, bigger
-# Conclusions
-
-Scalability is formally definable, and black-box observable.
-
-Scalability is nonlinear; this region is the failure boundary.
-
-Scalability is a function with parameters you can estimate.
-
----
-class: bigger
-# Further Reading & References
-
-- https://www.vividcortex.com/resources/ for ebook, Excel workbook.
-
-- http://www.perfdynamics.com/Manifesto/USLscalability.html for the original source.
