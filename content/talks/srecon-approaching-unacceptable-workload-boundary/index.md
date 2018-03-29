@@ -8,7 +8,7 @@ location: "Hyatt Regency Santa Clara, 5101 Great America Parkway, Santa Clara, C
 site: "https://www.usenix.org/conference/srecon18americas/presentation/schwartz"
 abstract: "We've all stared in frustration at a system that degraded into nonresponsiveness, to the point that you couldn't even kill-dash-nine whatever was responsible for the problem. A key fact we all recognize, but may not recognize as significant, is that this isn't a sharp boundary. There's a gradient of deteriorating performance where the system becomes less predictable and stable. In this talk I'll explain: what the unacceptable workload boundary is; how to recognize and predict the signs; how to measure and model this simply; what causes nonlinear performance degradation; and how to use this to architect more scalable systems."
 theme: "monobloc"
-thumbnail: scalability-is-quantifiable.jpg
+thumbnail: thumbnail.jpg
 video: ""
 ---
 layout: true
@@ -491,6 +491,12 @@ Then **fit the USL model to the data** to estimate the parameters.
 class: center, middle
 
 ![Curve Fitting](fitting.png)
+
+<div style="background: rgba(255,255,255,.9); border: 1px solid black;
+border-radius: 5px; padding: 0 5px; position: absolute; top: 10%; left: 10%">Throughput</div>
+
+<div style="background: rgba(255,255,255,.9); border: 1px solid black;
+border-radius: 5px; padding: 0 5px; position: absolute; top: 85%; left: 50%">Concurrency</div>
 
 ???
 Throughput is so trivially easy to measure in most systems that I won't talk
