@@ -7,7 +7,7 @@ event: "Honeycomb Tech Talks 2018"
 site: "https://www.meetup.com/Honeycomb-Tech-Talks/events/248079634/"
 abstract: "What gets measured gets managed, and that’s as true in the business as it is in the product. In fact, arguably we’ve been a lot more sophisticated on the business side than in our systems, for decades. What kinds of things does a well-managed business measure and analyze? And how do they do it? From sales funnel stages to product analytics, I’ll share some of the things I’ve measured—and ones I wish I had—in other areas."
 theme: "monobloc"
-thumbnail: ""
+thumbnail: "observability-in-business.jpg"
 video: ""
 ---
 layout: true
