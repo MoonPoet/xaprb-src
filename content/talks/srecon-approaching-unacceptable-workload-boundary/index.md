@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Approaching the Unacceptable Workload Boundary"
 author: Baron Schwartz
 date: 2018-03-29T11:25:00-07:00
