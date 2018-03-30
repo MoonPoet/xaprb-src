@@ -643,7 +643,7 @@ class: two-column, bigger
 ]
 
 ---
-class: center, two-column, bigger
+class: center, two-column
 
 .col[
 # Some Resources
@@ -655,6 +655,10 @@ I created an [Excel
 workbook](https://www.vividcortex.com/resources/usl-modeling-workbook).
 
 These slides are at [xaprb.com/talks](https://www.xaprb.com/talks/).
+
+[Rasmussen's Model](http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf).  
+
+Richard Cook's talk about [Resilience in Complex Adaptive Systems](https://youtu.be/PGLYEDpNu60).
 ]
 
 .col[
