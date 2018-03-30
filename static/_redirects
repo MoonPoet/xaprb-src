@@ -1,2 +1,4 @@
 /blog/feed/ /index.xml
 /blog/ /
+/rss.xml /index.xml
+/feed/ /index.xml
