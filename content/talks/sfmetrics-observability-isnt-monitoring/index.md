@@ -447,6 +447,18 @@ The USL, queueing theory, etc give you a deeper understanding of how your system
 ]
 
 ---
+
+# Conclusions
+
+- Highly observable systems help you understand their behavior.
+- Monitoring the work is more important than the resources.
+- Every service should ideally have a process list. It’s pretty easy.
+- Beyond real-time monitoring, the process list can emit events.
+- Getting trustworthy answers from giant collections of events is hard.
+- Metrics are aggregations of events, and they can be awesome too.
+- Focus on the most valuable, cheapest, easiest stuff.
+
+---
 layout: false
 class: three-column
 
@@ -466,15 +478,19 @@ class: three-column
 Your artisanal hand-brewed free copy is waiting at https://vividcortex.com/resources
 
 ---
+class: two-column
+# Slides and Contact Information
 
-# Conclusions
+.col[
+Slides are at [xaprb.com/talks/](https://www.xaprb.com/talks/), or scan the QR
+code.
 
-- Highly observable systems help you understand their behavior.
-- Monitoring the work is more important than the resources.
-- Every service should ideally have a process list. It’s pretty easy.
-- Beyond real-time monitoring, the process list can emit events.
-- Getting trustworthy answers from giant collections of events is hard.
-- Metrics are aggregations of events, and they can be awesome too.
-- Focus on the most valuable, cheapest, easiest stuff.
+Contact:
 
-Hit me up on email and let’s talk about it!
+- @xaprb on Twitter
+- baron@vividcortex.com
+]
+
+.col[
+<div id="qrcode"></div>
+]

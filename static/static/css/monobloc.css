@@ -46,6 +46,10 @@ img {
 	border-radius: 5px;
 	font-size: 20px !important;
 }
+#qrcode {
+  width: 384px;
+  height: 384px;
+}
 
 /* Title Slide Layout. Use .smokescreen[...] to contain the h1/h2. */
 .remark-slide-content.title h1, .remark-slide-content.title h2, .remark-slide-content.title h3 {

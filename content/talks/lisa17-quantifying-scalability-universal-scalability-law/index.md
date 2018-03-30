@@ -427,25 +427,6 @@ It’s a simple quadratic per Little’s Law, and is quite useful.
 ![Concurrency vs. Latency](cisco-3.svg)
 
 ---
-class: center, two-column
-
-.col[
-# Some Resources
-
-I wrote a
-[book](https://www.vividcortex.com/resources/universal-scalability-law/).
-
-I created an [Excel
-workbook](https://www.vividcortex.com/resources/usl-modeling-workbook).
-
-These slides are at [xaprb.com/talks](https://www.xaprb.com/talks/).
-]
-
-.col[
-[![USL Ebook Cover](usl-ebook-cover.png)](https://www.vividcortex.com/resources/universal-scalability-law/)
-]
-
----
 class: center
 # Conclusions
 
@@ -456,8 +437,34 @@ Scalability is nonlinear; this region is the failure boundary.
 Scalability is a function with parameters you can estimate.
 
 ---
+class: two-column
 # Further Reading & References
 
-- https://www.vividcortex.com/resources/ for ebook, Excel workbook.
+.col[
 
-- http://www.perfdynamics.com/Manifesto/USLscalability.html for the original source.
+- [Neil Gunther](http://www.perfdynamics.com/Manifesto/USLscalability.html), author of the USL.
+- My USL [book](https://www.vividcortex.com/resources/universal-scalability-law/).
+- My USL [Excel workbook](https://www.vividcortex.com/resources/usl-modeling-workbook).
+]
+
+.col[
+[![USL Ebook Cover](usl-ebook-cover.png)](https://www.vividcortex.com/resources/universal-scalability-law/)
+]
+
+---
+class: two-column
+# Slides and Contact Information
+
+.col[
+Slides are at [xaprb.com/talks/](https://www.xaprb.com/talks/), or scan the QR
+code.
+
+Contact:
+
+- @xaprb on Twitter
+- baron@vividcortex.com
+]
+
+.col[
+<div id="qrcode"></div>
+]

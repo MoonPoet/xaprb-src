@@ -631,24 +631,35 @@ class: two-column
 ]
 
 ---
-class: center, two-column, smaller
+class: two-column, smaller
 
 .col[
 # Some Resources
 
-I wrote a
-[book](https://www.vividcortex.com/resources/universal-scalability-law/).
-
-I created an [Excel
-workbook](https://www.vividcortex.com/resources/usl-modeling-workbook).
-
-These slides are at [xaprb.com/talks](https://www.xaprb.com/talks/).
-
-[Rasmussen's Model](http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf).
-
-Richard Cook's talk about [Resilience in Complex Adaptive Systems](https://youtu.be/PGLYEDpNu60).
+- My USL [ebook](https://www.vividcortex.com/resources/universal-scalability-law/).
+- My USL [Excel workbook](https://www.vividcortex.com/resources/usl-modeling-workbook).
+- [Rasmussen's Model](http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf).
+- Richard Cook's talk about [Resilience in Complex Adaptive Systems](https://youtu.be/PGLYEDpNu60).
 ]
 
 .col[
 [![USL Ebook Cover](usl-ebook-cover.png)](https://www.vividcortex.com/resources/universal-scalability-law/)
+]
+
+---
+class: two-column
+# Slides and Contact Information
+
+.col[
+Slides are at [xaprb.com/talks/](https://www.xaprb.com/talks/), or scan the QR
+code.
+
+Contact:
+
+- @xaprb on Twitter
+- baron@vividcortex.com
+]
+
+.col[
+<div id="qrcode"></div>
 ]

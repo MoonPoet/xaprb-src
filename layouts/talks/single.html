@@ -50,11 +50,19 @@
     <textarea id="source">
 {{ .RawContent }}
     </textarea>
+	 <script type="text/javascript" src="/static/js/qrcode.js"></script>
     <script src="/static/js/remark.min.js">
     </script>
     <script>
       var slideshow = remark.create(
 			{{ if .Params.ratio }} { ratio: "{{ .Params.ratio }}" } {{ end }}
+		);
+	   new QRCode(
+			document.getElementById("qrcode"),
+			{
+				"useSVG": true,
+				"text": window.location.href.replace(/#\d*$/, "")
+			}
 		);
     </script>
 
