@@ -7,7 +7,8 @@
     <rights>Copyright (c) {{ .Site.LastChange.Year }}</rights>
     <updated>{{ .Date }}</updated>
 
-    {{ range where "Section" "blog" first 20 .Data.Pages }}
+    {{ $blogs := where .Data.Pages "Section" "blog" }}
+    {{ range first 20 $blogs }}
         <item>
           <title>{{ .Title }}</title>
           <link>{{ .Permalink }}</link>
