@@ -46,7 +46,7 @@ Please get in touch: [@xaprb](https://twitter.com/xaprb) or baron@vividcortex.co
 What happens as systems get bigger and more heavily loaded?
 
 --
-* What is a system's operating domain?
+* What is a system’s operating domain?
 
 --
 * How is load defined?
@@ -72,11 +72,11 @@ class: title
 class: center, img-300h
 # Operating Domain and Failure Boundaries
 
-Rasmussen's model describes an **operating domain** bounded by economic risk, effort, and
-safety. The system's **operating state** is a point within the domain, always moving
+Rasmussen’s model describes an **operating domain** bounded by economic risk, effort, and
+safety. The system’s **operating state** is a point within the domain, always moving
 around.
 
-![Rasmussen's Model](rasmussens-model.jpg)
+![Rasmussen’s Model](rasmussens-model.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ class: img-450h, center
 
 ---
 class: img-450h, center
-# We Draw Limits Where We Think It's Safe
+# We Draw Limits Where We Think It’s Safe
 
 ![Real Boundaries](real-boundaries.svg)
 
@@ -153,7 +153,7 @@ background-image: url(gears-1236578-1280.jpg)
 
 # What Is The Definition Of Load?
 
-There's no one right answer to this question, but there's a **useful answer**
+There’s no one right answer to this question, but there’s a **useful answer**
 for this discussion.
 
 --
@@ -167,13 +167,13 @@ N = \frac{\sum_{}^{}{R}}{T}
 \\]
 
 .footnote[
-You can prove this with Little's Law.
+You can prove this with Little’s Law.
 ]
 
 ---
 # Load, Utilization, And Queueing
 
-Load (concurrency) is related to **utilization and queue length**, but it's not
+Load (concurrency) is related to **utilization and queue length**, but it’s not
 the same.
 
 --
@@ -192,7 +192,7 @@ the same.
 ---
 # Utilization, Queue Length, & Concurrency
 
-By Little's Law, utilization and queue length are **types of concurrency**.
+By Little’s Law, utilization and queue length are **types of concurrency**.
 
   * Utilization is the concurrency of in-service tasks.
 
@@ -207,12 +207,12 @@ If the load limit were defined in terms of utilization, queueing theory could
 tell us where the **load limit** will be.
 
 --
-But it can't: load can be infinite, utilization ranges 0-1.
+But it can’t: load can be infinite, utilization ranges 0-1.
 
 .col[
-Plus it's impractical:
+Plus it’s impractical:
 * The “hockey stick” queueing curve is hard to use
-* The "knee" is unintuitive
+* The “knee” is unintuitive
 ]
 
 .col[
@@ -220,7 +220,7 @@ Plus it's impractical:
 ]
 
 ???
-This is appealing because utilization has a clear limit: it can't be more than
+This is appealing because utilization has a clear limit: it can’t be more than
 100%.
 
 So we need to translate the problem to a different domain, where the units
@@ -235,20 +235,20 @@ background-image: url(snow-3260088-1280.jpg)
 ]
 
 ---
-# What's the Definition of Scalability?
+# What’s the Definition of Scalability?
 
-There's a mathematical definition of scalability **as a function of
+There’s a mathematical definition of scalability **as a function of
 concurrency**.
 
 --
 
-I'll illustrate it in terms of a **parallel processing system** that uses
+I’ll illustrate it in terms of a **parallel processing system** that uses
 concurrency to achieve speedup.
 
 ???
-It's practical, easy to use, and matches the domain well.
+It’s practical, easy to use, and matches the domain well.
 
-I'll show how the equation is composed piece by piece, but don't sweat the math.
+I’ll show how the equation is composed piece by piece, but don’t sweat the math.
 
 ---
 class: img-center
@@ -280,7 +280,7 @@ Ideally, **throughput increases linearly with concurrency**.
 
 ???
 * Linear scaling is the ideal.
-* Another way to say this is that the system's output is a linear function of
+* Another way to say this is that the system’s output is a linear function of
   load.
 
 ---
@@ -304,7 +304,7 @@ where the slope is \\(\\lambda=X(1)\\).
 ???
 - X is throughput
 - N is concurrency, which is the workload
-- Lambda is the system's output when there's no parallelism
+- Lambda is the system’s output when there’s no parallelism
 - Really important to note that N is the independent parameter, the driver
 
 ---
@@ -328,7 +328,7 @@ X(N) = \frac{\\lambda N}{1+\\sigma(N-1)}
 \\]
 
 .col[
-Amdahl's Law describes throughput when
+Amdahl’s Law describes throughput when
 **a fraction \\(\\sigma\\) can’t be
 parallelized**.
 ]
@@ -338,7 +338,7 @@ parallelized**.
 ]
 
 ---
-# Amdahl's Law Has An Asymptote
+# Amdahl’s Law Has An Asymptote
 
 \\[
 X(N) = \frac{\\lambda N}{1+\\sigma(N-1)}
@@ -352,7 +352,7 @@ Parallelism delivers speedup, but there’s a limit:
 
 --
 
-e.g. a 5% serialized task can't be sped up more than 20-fold.
+e.g. a 5% serialized task can’t be sped up more than 20-fold.
 
 ???
 If 5% of the work is serialized, infinite concurrency will still result in tasks
@@ -395,7 +395,7 @@ X(N) = \frac{\\lambda N}{1+\\sigma(N-1)+\\kappa N(N-1)}
 The USL adds a term for crosstalk, multiplied by the \\(\\kappa\\)
 coefficient.
 
-Now there's a **point of diminishing returns**!
+Now there’s a **point of diminishing returns**!
 ]
 
 .col[
@@ -410,7 +410,7 @@ Crosstalk is also called coordination or coherence.
 class: img-center
 # You Already Know This
 
-You've seen lots of benchmarks with diminishing returns.
+You’ve seen lots of benchmarks with diminishing returns.
 
 ![MySQL Benchmark](benchmark.png)
 
@@ -419,8 +419,8 @@ Source: http://dimitrik.free.fr/blog/
 ]
 
 ???
-By the way, pay attention to the axis scale, it's log-scaled by powers of two.
-If you scale the X-axis linearly you'll get the shape of the curve on the
+By the way, pay attention to the axis scale, it’s log-scaled by powers of two.
+If you scale the X-axis linearly you’ll get the shape of the curve on the
 previous slide.
 
 ---
@@ -444,7 +444,7 @@ their saturation point.
 
 The Universal Scalability Law defines **throughput as a function of concurrency**.
 
-It explains how and why **systems don't scale linearly with load**.
+It explains how and why **systems don’t scale linearly with load**.
 
 ---
 # What is the USL Good For?
@@ -455,7 +455,7 @@ Armed with the USL, you are ready to:
 - Predict the onset of nonlinearity.
 - Design better systems.
 
-It's easy. Let's see how!
+It’s easy. Let’s see how!
 
 ---
 class: title
@@ -490,8 +490,8 @@ border-radius: 5px; padding: 0 5px; position: absolute; top: 10%; left: 10%">Thr
 border-radius: 5px; padding: 0 5px; position: absolute; top: 85%; left: 50%">Concurrency</div>
 
 ???
-Throughput is so trivially easy to measure in most systems that I won't talk
-about it. But there's two easy ways to measure concurrency.
+Throughput is so trivially easy to measure in most systems that I won’t talk
+about it. But there’s two easy ways to measure concurrency.
 
 ---
 # How To Measure Concurrency, Pt. 1
@@ -510,7 +510,7 @@ It works well to **poll this e.g. 1x/sec**, then average these into 1- or
 ---
 # How To Measure Concurrency, Pt. 2
 
-If there's no metric of concurrency, you can **sum up latencies and divide by
+If there’s no metric of concurrency, you can **sum up latencies and divide by
 the duration**.
 
 \\[
@@ -518,7 +518,7 @@ N = \frac{\sum_{}^{}{R}}{T}
 \\]
 
 ???
-- Again, in my experience it's good to use averages over a moderately long window like 1-5 minutes.
+- Again, in my experience it’s good to use averages over a moderately long window like 1-5 minutes.
 - You want to end up with dozens to hundreds of data points.
 
 ---
@@ -530,8 +530,8 @@ Simply **scatterplot your data** and eyeball it for sanity.
 ![X-N Plot](x-n-plot.jpg)
 
 ???
-Source data in "row16.csv" file. If you're reading this note and you're not a
-VividCortex employee, sorry, I can't give you access to this data.
+Source data in "row16.csv" file. If you’re reading this note and you’re not a
+VividCortex employee, sorry, I can’t give you access to this data.
 
 ---
 class: img-450h
@@ -554,14 +554,14 @@ What does the output mean?
 - Shows whether your system has **more serialization or crosstalk**.
 
 --
-- Shows the **estimated max load** where it'll stop scaling.
+- Shows the **estimated max load** where it’ll stop scaling.
 
 --
 - Helps you **predict nonlinearity**.
 
 ---
 class: img-center
-# Paypal's NodeJS vs Java Benchmarks
+# Paypal’s NodeJS vs Java Benchmarks
 
 Paypal’s [NodeJS vs Java benchmarks](https://www.vividcortex.com/blog/2013/12/09/analysis-of-paypals-node-vs-java-benchmarks/)  are a good example!
 
@@ -591,10 +591,10 @@ class: two-column
 
 ---
 class: two-column
-# You Don't Need To Do Any Modeling!
+# You Don’t Need To Do Any Modeling!
 
 .col[
-Let's take another look at this data. What jumps out?
+Let’s take another look at this data. What jumps out?
 ]
 
 .col[
@@ -607,8 +607,8 @@ class: two-column
 
 .col[
 - I would model and project out to the right.
-- I'd see "hmm, it's **leveling off**."
-- I'd say "don't count on much more than you see now."
+- I’d see “hmm, it’s **leveling off**.”
+- I’d say “don’t count on much more than you see now.”
 ]
 
 .col[
@@ -621,9 +621,9 @@ class: two-column
 
 .col[
 - Given all the data, I mentally cluster it into two parts.
-- If the high-end outliers deviate, **it's nonlinear already.**
+- If the high-end outliers deviate, **it’s nonlinear already.**
 - Those points are evidence that the system is struggling there.
-- You don't need to model anything to see that.
+- You don’t need to model anything to see that.
 ]
 
 .col[
@@ -638,8 +638,8 @@ class: two-column, smaller
 
 - My USL [ebook](https://www.vividcortex.com/resources/universal-scalability-law/).
 - My USL [Excel workbook](https://www.vividcortex.com/resources/usl-modeling-workbook).
-- [Rasmussen's Model](http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf).
-- Richard Cook's talk about [Resilience in Complex Adaptive Systems](https://youtu.be/PGLYEDpNu60).
+- [Rasmussen’s Model](http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf).
+- Richard Cook’s talk about [Resilience in Complex Adaptive Systems](https://youtu.be/PGLYEDpNu60).
 ]
 
 .col[
