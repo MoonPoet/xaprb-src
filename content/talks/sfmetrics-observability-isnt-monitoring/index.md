@@ -11,7 +11,7 @@ theme: "monobloc"
 thumbnail: observability-isnt-monitoring.jpg
 ---
 class: title
-background-image: url(spotlight-802633_1280.jpg)
+background-image: url(spotlight-802633\_1280.jpg)
 
 .smokescreen[
 # Observability Isn’t Monitoring
@@ -83,6 +83,7 @@ These should really be called pillars of _telemetry_.
 
 ---
 layout: false
+class: smaller
 
 # All Telemetry Originates As Events
 
@@ -115,6 +116,7 @@ layout: true
 class: two-column
 
 ---
+class: smaller
 
 # Metrics or Events?
 
@@ -147,6 +149,7 @@ Specific types of metrics have rich meaning encoded in their nonlinear relations
 ]
 
 ---
+class: smaller
 
 # What Telemetry Should You Emit?
 
@@ -183,6 +186,7 @@ Universal Scalability Law
 ]
 
 ---
+class: smaller
 
 # The Zen of Performance
 
@@ -204,6 +208,7 @@ Internal (operator’s) view is over a population (workload):
 ]
 
 ---
+class: smaller
 
 # The Seven Golden Signals
 
@@ -242,6 +247,7 @@ It’s more valuable to focus on work than resources. Most server/service system
 Your service can too, it’s pretty simple
 
 ---
+class: smaller
 
 # Process Lists Are Always Pretty Similar
 
@@ -259,6 +265,7 @@ Timings
 - Timestamp of start; ideally stage timings too
 
 ---
+class: smaller
 
 # The Service Process List at VividCortex
 
@@ -271,6 +278,7 @@ It’s easy to use. Just hook it into your API framework/boilerplate, and you’
 https://www.vividcortex.com/blog/2014/11/06/inside-distributed-architecture/
 
 ---
+class: smaller
 
 # The Process List Is Foundational
 
@@ -356,6 +364,7 @@ class: two-column
 layout: true
 
 ---
+class: smaller
 
 # Derived Insights From Diskstats
 
@@ -394,12 +403,14 @@ class: img-right
 
 .col[
 If you want the most value for the least effort, a simplified clone of /proc/diskstats isn’t the worst thing to build.
-
-See https://www.xaprb.com/blog/2011/10/06/ fundamental-performance-and-scalability- instrumentation/
 ]
 
 .rc[
 ![Storm Trooper](storm-trooper.jpg)
+]
+
+.footnote[
+See https://www.xaprb.com/blog/2011/10/06/fundamental-performance-and-scalability-instrumentation/
 ]
 
 ---
@@ -417,6 +428,7 @@ The relationship between utilization and response time is decidedly nonlinear!
 ]
 
 ---
+class: smaller
 
 # Even More
 

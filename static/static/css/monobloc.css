@@ -9,7 +9,7 @@ body {
   font-weight: 500;
 }
 .remark-slide-content p, .remark-slide-content li, .remark-slide-content td, .remark-slide-content th {
-  font-size: 18pt;
+  font-size: 24pt;
   line-height: 1.6;
 }
 .remark-code, .remark-inline-code {
@@ -32,8 +32,8 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-.bigger p, .bigger div, .bigger li {
-	font-size: 24pt;
+.smaller p, .smaller div, .smaller li, .smaller th, .smaller td {
+	font-size: 18pt;
 }
 .footnote p {
 	position: absolute;

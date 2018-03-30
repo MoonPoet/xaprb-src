@@ -67,6 +67,7 @@ One such is the unacceptable workload boundary
 ]
 
 ---
+class: smaller
 # Workload Failure Isn’t Crisp
 
 .col[
@@ -89,7 +90,7 @@ What if you drift into it?
 
 ---
 layout: true
-class: center, bigger
+class: center
 
 ---
 # The Failure Boundary Is Nonlinear
@@ -164,7 +165,7 @@ What happens to performance if some portion isn’t parallelizable?
 ![Speedup](speedup.svg)
 
 ---
-class: two-column,bigger
+class: two-column
 # Amdahl’s Law
 
 \\[
@@ -201,7 +202,7 @@ class: two-column,center, img-450h
 ]
 
 ---
-class: two-column, bigger
+class: two-column
 # Universal Scalability Law
 
 \\[
@@ -218,7 +219,7 @@ The system completes _less_ work as the load increases!
 ]
 
 ---
-class: center, bigger, img-300h
+class: center, img-300h
 # Crosstalk Penalty Grows Fast
 
 Coherence (red) grows slowly, but crosstalk (blue) grows rapidly. At saturation, \\(\\kappa\\) is creating nonlinear behavior.
@@ -227,7 +228,6 @@ Coherence (red) grows slowly, but crosstalk (blue) grows rapidly. At saturation,
 
 ---
 layout: false
-class: bigger
 # More About Crosstalk
 
 Q: Isn’t crosstalk just a design flaw?
@@ -239,7 +239,7 @@ Q: Doesn’t it seem odd to assume that crosstalk is a constant?
 A: It’s not, the amount of crosstalk-related work is a function of N
 
 ---
-class: center
+class: center, smaller
 # How Do You Measure Parameters?
 
 You can’t measure serialization & crosstalk directly; use regression to estimate them.
@@ -247,13 +247,13 @@ You can’t measure serialization & crosstalk directly; use regression to estima
 ![Curve Fitting](fitting.png)
 
 ---
-class: center, middle, bigger
+class: center, middle
 # Experiment Interactively
 
 [desmos.com/calculator/3cycsgdl0b](https://www.desmos.com/calculator/3cycsgdl0b)
 
 ---
-class: center, bigger
+class: center
 # What is Scalability?
 
 The USL is a mathematical definition of scalability.
@@ -267,7 +267,6 @@ X(N) = \frac{\\lambda N}{1+\\sigma(N-1)+\\kappa N(N-1)}
 \\]
 
 ---
-class: bigger
 # But What Is Load?
 
 In most circumstances we care about, load is concurrency.
@@ -305,7 +304,7 @@ approaching the boundary.
 ]
 
 ---
-class: center, bigger
+class: center
 # 1. Forecast Workload Failure Boundary
 
 Coda Hale wrote about the USL.
@@ -314,7 +313,6 @@ https://codahale.com/usl4j-and-you/
 ![Coda Hale Prediction](coda-hale.jpg)
 
 ---
-class: bigger
 # 1. Forecast Workload Failure Boundary
 
 - By estimating the parameters, you can forecast what you can’t see.
@@ -326,7 +324,7 @@ class: bigger
   - But _you_ should be even more pessimistic than the USL.
 
 ---
-class: bigger, center, img-300h
+class: center, img-300h
 # 2. Characterize Non-Scalability 
 Why doesn’t your system scale perfectly?<br>
 The USL reveals the amount of serialization & crosstalk.
@@ -334,6 +332,7 @@ The USL reveals the amount of serialization & crosstalk.
 ![USL Regions](regions.png)
 
 ---
+class: img-center, smaller
 # 2. Characterize Non-Scalability
 
 Paypal’s NodeJS vs Java benchmarks are a good example!
@@ -342,7 +341,6 @@ https://www.vividcortex.com/blog/2013/12/09/analysis-of-paypals-node-vs-java-ben
 ![Paypal vs. NodeJS](paypal-node.jpg)
 
 ---
-class: bigger
 # 3. How Scalable Should It Be?
 
 The USL is a framework for making systems look really bad.
@@ -354,7 +352,7 @@ Calculate per-node a) clients b) data size c) throughput.
 One 18-node database: 4000 QPS ~220 QPS/node, 5ms latency.
 
 ---
-class: bigger, img-300h
+class: img-300h
 # 3. How Scalable Should It Be?
 
 You should always measure databases; don’t simply use architectural
@@ -374,7 +372,7 @@ class: img-450h, center
 ![Richard Branson Tweet](rbranson-tweet.jpg)
 
 ---
-class: center, bigger
+class: center
 # 4. See Your Teams As Systems
 
 ## “To go fast, go alone. To go far, go together.”
@@ -383,7 +381,7 @@ Adrian Colyer wrote a good blog post about teams-as-systems and USL.
 https://blog.acolyer.org/2015/04/29/applying-the-universal-scalability-law-to-organisations/
 
 ---
-class: img-right, bigger
+class: img-right
 
 .col[
 # 4. See Your Teams As Systems
@@ -396,7 +394,6 @@ Man-Month so they can read it twice as fast.”
 ]
 
 ---
-class: bigger
 # What Else Can The USL Illuminate?
 
 Open-plan offices: My work takes more work when others are nearby.
@@ -406,7 +403,7 @@ Map-Reduce: That’s a whole lotta overhead, but it sure is scalable.
 Mutexes: Theoretically just serialize, but those damn OS schedulers.
 
 ---
-class: center, bigger, img-300h
+class: center, img-300h
 # What’s NOT Scalability?
 
 I commonly see throughput-vs-latency charts. This seems legit till you get systems under high load.
@@ -414,7 +411,7 @@ I commonly see throughput-vs-latency charts. This seems legit till you get syste
 ![Not A Function](not-a-function.svg)
 
 ---
-class: center, bigger, img-300h
+class: center, img-300h
 # Scalability Isn’t Throughput-vs-Latency
 
 The throughput-vs-latency equation has **two** solutions.
@@ -422,7 +419,7 @@ The throughput-vs-latency equation has **two** solutions.
 ![Nose Function](nose-equation-desmos.png)
 
 ---
-class: center, bigger, img-300h
+class: center, img-300h
 # Concurrency-vs-Latency is OK
 
 It’s a simple quadratic per Little’s Law, and is quite useful.
@@ -430,7 +427,7 @@ It’s a simple quadratic per Little’s Law, and is quite useful.
 ![Concurrency vs. Latency](cisco-3.svg)
 
 ---
-class: center, two-column, bigger
+class: center, two-column
 
 .col[
 # Some Resources
@@ -449,7 +446,7 @@ These slides are at [xaprb.com/talks](https://www.xaprb.com/talks/).
 ]
 
 ---
-class: center, bigger
+class: center
 # Conclusions
 
 Scalability is formally definable, and black-box observable.
@@ -459,7 +456,6 @@ Scalability is nonlinear; this region is the failure boundary.
 Scalability is a function with parameters you can estimate.
 
 ---
-class: bigger
 # Further Reading & References
 
 - https://www.vividcortex.com/resources/ for ebook, Excel workbook.

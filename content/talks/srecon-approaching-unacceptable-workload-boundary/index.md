@@ -25,7 +25,7 @@ background-size: cover
 </div>
 
 ---
-class: img-right, bigger
+class: img-right
 # Logistics & Stuff
 
 .col[
@@ -41,7 +41,6 @@ Please get in touch: [@xaprb](https://twitter.com/xaprb) or baron@vividcortex.co
 ]
 
 ---
-class: bigger
 # Introduction
 
 What happens as systems get bigger and more heavily loaded?
@@ -123,7 +122,6 @@ It really looks more like this.
 ]
 
 ---
-class: bigger
 # Complex Systems Run In Degraded Mode
 
 Richard Cook lists 18 precepts of system failure in [How Complex Systems
@@ -152,7 +150,7 @@ background-image: url(gears-1236578-1280.jpg)
 ]
 
 ---
-class: bigger
+
 # What Is The Definition Of Load?
 
 There's no one right answer to this question, but there's a **useful answer**
@@ -173,7 +171,6 @@ You can prove this with Little's Law.
 ]
 
 ---
-class: bigger
 # Load, Utilization, And Queueing
 
 Load (concurrency) is related to **utilization and queue length**, but it's not
@@ -193,7 +190,6 @@ the same.
   to be serviced.
 
 ---
-class: bigger
 # Utilization, Queue Length, & Concurrency
 
 By Little's Law, utilization and queue length are **types of concurrency**.
@@ -204,7 +200,7 @@ By Little's Law, utilization and queue length are **types of concurrency**.
   * Queue length is the concurrency of queued tasks.
 
 ---
-class: two-column, bigger
+class: two-column
 # What Is The Load Limit?
 
 If the load limit were defined in terms of utilization, queueing theory could
@@ -239,7 +235,6 @@ background-image: url(snow-3260088-1280.jpg)
 ]
 
 ---
-class: bigger
 # What's the Definition of Scalability?
 
 There's a mathematical definition of scalability **as a function of
@@ -256,7 +251,7 @@ It's practical, easy to use, and matches the domain well.
 I'll show how the equation is composed piece by piece, but don't sweat the math.
 
 ---
-class: bigger, img-center
+class: img-center
 # Linear Scaling
 
 Suppose a clustered system can complete **X tasks per second** with no
@@ -276,7 +271,7 @@ Faster completion also means **increased throughput.**
 * Throughput is a function of concurrency.
 
 ---
-class: bigger, img-center
+class: img-center
 # Linear Scaling
 
 Ideally, **throughput increases linearly with concurrency**.
@@ -289,7 +284,7 @@ Ideally, **throughput increases linearly with concurrency**.
   load.
 
 ---
-class: two-column, bigger
+class: two-column
 # The Linear Scalability Equation
 
 .col[
@@ -313,7 +308,7 @@ where the slope is \\(\\lambda=X(1)\\).
 - Really important to note that N is the independent parameter, the driver
 
 ---
-class: center, bigger
+class: center
 # But Our Cluster Isn’t Perfect
 
 Linear scaling comes from subdividing tasks **perfectly**.
@@ -325,7 +320,7 @@ What if a portion isn’t subdividable?
 ![Speedup](speedup.svg)
 
 ---
-class: two-column,bigger
+class: two-column
 # Amdahl’s Law Describes Serialization
 
 \\[
@@ -343,7 +338,6 @@ parallelized**.
 ]
 
 ---
-class: bigger
 # Amdahl's Law Has An Asymptote
 
 \\[
@@ -365,7 +359,7 @@ If 5% of the work is serialized, infinite concurrency will still result in tasks
 taking 5% as long as non-parallelized tasks.
 
 ---
-class: img-center, bigger
+class: img-center
 # What If Workers Coordinate?
 
 Suppose the parallel workers **also have dependencies** on each other?
@@ -375,7 +369,7 @@ Suppose the parallel workers **also have dependencies** on each other?
 ![Coordination](coordination.svg)
 
 ---
-class: two-column, bigger, img-center, img-300h
+class: two-column, img-center, img-300h
 # How Bad Is Coordination?
 
 \\(N\\) workers = \\(N(N-1)\\) pairs of interactions, which is
@@ -390,7 +384,7 @@ class: two-column, bigger, img-center, img-300h
 ]
 
 ---
-class: two-column, bigger
+class: two-column
 # The Universal Scalability Law
 
 \\[
@@ -413,7 +407,7 @@ Crosstalk is also called coordination or coherence.
 ]
 
 ---
-class: bigger, img-center
+class: img-center
 # You Already Know This
 
 You've seen lots of benchmarks with diminishing returns.
@@ -430,7 +424,7 @@ If you scale the X-axis linearly you'll get the shape of the curve on the
 previous slide.
 
 ---
-class: img-center, bigger, img-300h
+class: img-center, img-300h
 # The USL Describes Behavior Under Load
 
 The USL explains the **highly nonlinear behavior** we know systems exhibit near
@@ -440,13 +434,12 @@ their saturation point.
 ![USL Regions](regions.png)
 
 ???
-- Serialization (red) grows slowly, but crosstalk (blue) grows rapidly. 
+- Serialization (red) grows slowly, but crosstalk (blue) grows rapidly.
 - This is why systems get so unpredictable near their limits.
 - Near and above the point of diminishing returns, systems exhibit high variance
   and get unpredictable.
 
 ---
-class: bigger
 # A Summary Of The USL
 
 The Universal Scalability Law defines **throughput as a function of concurrency**.
@@ -454,7 +447,6 @@ The Universal Scalability Law defines **throughput as a function of concurrency*
 It explains how and why **systems don't scale linearly with load**.
 
 ---
-class: bigger
 # What is the USL Good For?
 
 Armed with the USL, you are ready to:
@@ -474,7 +466,6 @@ background-image: url(compass-2946958\_1280.jpg)
 ]
 
 ---
-class: bigger
 # What To Measure
 
 You can’t measure serialization & crosstalk directly.
@@ -503,7 +494,6 @@ Throughput is so trivially easy to measure in most systems that I won't talk
 about it. But there's two easy ways to measure concurrency.
 
 ---
-class: bigger
 # How To Measure Concurrency, Pt. 1
 
 Many systems have a metric of concurrency already.
@@ -518,7 +508,6 @@ It works well to **poll this e.g. 1x/sec**, then average these into 1- or
 3-minute averages.
 
 ---
-class: bigger
 # How To Measure Concurrency, Pt. 2
 
 If there's no metric of concurrency, you can **sum up latencies and divide by
@@ -545,7 +534,7 @@ Source data in "row16.csv" file. If you're reading this note and you're not a
 VividCortex employee, sorry, I can't give you access to this data.
 
 ---
-class: bigger, img-450h
+class: img-450h
 # Plug The Data Into The Model
 
 Paste the data into the [Excel
@@ -558,7 +547,6 @@ You can do it in R, or gnuplot, or even with JavaScript in Plotly. Lots of
 options. This is an easy one.
 
 ---
-class: bigger
 # Interpreting The Results
 
 What does the output mean?
@@ -572,7 +560,7 @@ What does the output mean?
 - Helps you **predict nonlinearity**.
 
 ---
-class: bigger, img-center
+class: img-center
 # Paypal's NodeJS vs Java Benchmarks
 
 Paypal’s [NodeJS vs Java benchmarks](https://www.vividcortex.com/blog/2013/12/09/analysis-of-paypals-node-vs-java-benchmarks/)  are a good example!
@@ -580,7 +568,7 @@ Paypal’s [NodeJS vs Java benchmarks](https://www.vividcortex.com/blog/2013/12/
 ![Paypal vs. NodeJS](paypal-node.jpg)
 
 ---
-class: bigger, img-300h, img-center
+class: img-300h, img-center
 # Bringing It Back To The Operating Domain
 
 The USL is one way to understand **what happens near this boundary**.
@@ -588,7 +576,7 @@ The USL is one way to understand **what happens near this boundary**.
 ![Margins of Error](usl-operating-domain.jpg)
 
 ---
-class: bigger, two-column
+class: two-column
 # What Happens Here?
 
 .col[
@@ -602,7 +590,7 @@ class: bigger, two-column
 ]
 
 ---
-class: two-column, bigger
+class: two-column
 # You Don't Need To Do Any Modeling!
 
 .col[
@@ -614,7 +602,7 @@ Let's take another look at this data. What jumps out?
 ]
 
 ---
-class: two-column, bigger
+class: two-column
 # What If You Had Only The First Part?
 
 .col[
@@ -628,7 +616,7 @@ class: two-column, bigger
 ]
 
 ---
-class: two-column, bigger
+class: two-column
 # Think Differently About Outlying Points
 
 .col[
@@ -643,7 +631,7 @@ class: two-column, bigger
 ]
 
 ---
-class: center, two-column
+class: center, two-column, smaller
 
 .col[
 # Some Resources
@@ -656,7 +644,7 @@ workbook](https://www.vividcortex.com/resources/usl-modeling-workbook).
 
 These slides are at [xaprb.com/talks](https://www.xaprb.com/talks/).
 
-[Rasmussen's Model](http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf).  
+[Rasmussen's Model](http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf).
 
 Richard Cook's talk about [Resilience in Complex Adaptive Systems](https://youtu.be/PGLYEDpNu60).
 ]

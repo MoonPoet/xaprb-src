@@ -23,7 +23,7 @@ background-image: url(money-2180330-1280.jpg)
 ]
 
 ---
-class: img-right, bigger
+class: img-right
 # Logistics & Stuff
 
 .col[
@@ -39,7 +39,6 @@ Please get in touch: [@xaprb](https://twitter.com/xaprb) or baron@vividcortex.co
 ]
 
 ---
-class: bigger
 # Introduction
 
 * What does a well-managed business measure?
@@ -47,7 +46,7 @@ class: bigger
 * How is it similar to systems observability?
 
 ---
-class: center middle bigger
+class: center, middle
 # Disclaimer
 
 VividCortex is a startup, not a mature, well-managed business (yet).
@@ -55,7 +54,7 @@ VividCortex is a startup, not a mature, well-managed business (yet).
 I personally have more scars than successes.
 
 ---
-class: bigger, img-right
+class: img-right
 # What Should You Measure?
 
 .col[
@@ -68,7 +67,7 @@ What gets measured gets managed.<br>
 ]
 
 ---
-class: bigger, center
+class: center
 # Therefore Be Damn Careful
 
 Most of what you will want to measure is **not worth it**.
@@ -78,7 +77,6 @@ Most of what you will want to measure is **not worth it**.
 In fact, measuring too much is actively harmful.
 
 ---
-class: bigger
 # The High Cost Of Measuring
 
 Some effects of measuring the wrong things:
@@ -109,7 +107,7 @@ background-image: url(imnl\_tesla\_watch.jpg)
 ]
 
 ---
-class: bigger, img-right
+class: img-right
 
 .col[
 # Measure What Matters
@@ -126,7 +124,7 @@ Pro tip: 3 is the magic number. People can't prioritize too many things.
 ]
 
 ---
-class: img-right, bigger
+class: img-right
 
 .col[
 # The Goal
@@ -142,7 +140,6 @@ It's one of those "business novels with a moral."
 ]
 
 ---
-class: bigger
 # A Key Lesson From The Goal
 
 Optimize systems by:
@@ -156,7 +153,7 @@ Paraphrased: _get work product through systems as fast as you can, avoid buildup
 in them, and plug the leaks_.
 
 ---
-class: bigger, img-center, img-450h
+class: img-center, img-450h
 # This Diagram Is Not Very Useful
 
 ![Sales Funnel](funnel.png)
@@ -168,7 +165,7 @@ class: bigger, img-center, img-450h
 - People rarely think about time in funnel, or velocity
 
 ---
-class: bigger, img-center, img-450h
+class: img-center, img-450h
 # This Is A Better Diagram
 
 ![Flow](flow.svg)
@@ -183,7 +180,6 @@ class: bigger, img-center, img-450h
 - Relate to finance: where is money lying around? Collections...
 
 ---
-class: bigger
 # Data-Driven Coaching
 
 You have two sales reps. Both are **working equally hard** and one is closing a lot more deals. How can you help the other one?
@@ -199,7 +195,6 @@ Sit down and walk through all the **metrics** for each stage in their process.
 - Etc.
 
 ---
-class: bigger
 # The Foundation
 
 The foundation of business observability is the **event data**.
