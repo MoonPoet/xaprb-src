@@ -26,6 +26,17 @@ presentation, you can simply unzip the presentation using the commandline
 `unzip` application. It'll expand into a folder that contains all the images and
 other assets. (Or you can right-click and open with the Archive Utility app.)
 
+Mission accomplished, but you'll probably have a bunch of `.tiff` files where
+you want compact `.jpg` or compressed `.png` files instead. If you're a
+commandline user, and you have ImageMagick installed, you can convert them all
+at once with a Bash variable substitution like this:
+
+```
+find . -name '*.tiff' | while read line; do
+   convert "$line" "${line%%tiff}jpg"
+done
+```
+
 That'll do the trick for the images. For the text, you can just open the PDF in
 Mac's default PDF viewer, the Preview app. Use Cmd-A to select all of the text
 and other content, and then you can simply paste it into any plaintext
