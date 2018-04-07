@@ -8,8 +8,8 @@ location: "San Jose Convention Center, 150 W San Carlos St., San Jose, CA 95113"
 site: "https://conferences.oreilly.com/strata/strata-ca/public/schedule/detail/63832"
 abstract: "Anomaly detection is white hot in the monitoring industry, but many don’t really understand or care about it, while others repeat the same pattern many times. VividCortex has built several features based on anomaly detection into its product, but customers have told the company that only some of them are valuable. The same is true of other companies in the space. It seems like everyone has anomaly detection, but customers generally aren’t finding it useful. Why? And what can we do about it?"
 theme: "monobloc"
-thumbnail: scalability-is-quantifiable.jpg
-video: "https://youtu.be/lZU6RK0oazM"
+thumbnail: nobody-cares-anomaly-detection.jpg
+video: ""
 ---
 layout: true
 <div class="remark-slide-number" style="left: 20px; right: unset">@xaprb</div>
