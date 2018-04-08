@@ -17,8 +17,9 @@ simple to create beautifully typeset equations such as the following:
 \\rho = \\frac{1}{2} \\left( \\sqrt{2} \\sqrt{\\lambda+2} + \\sqrt{2} \\sqrt{ \\frac{ -2 \\lambda - \\lambda^2 + \\sqrt{2} \\sqrt{\\lambda+2}}{\\lambda+2}} \\right)
 \\]
 
-[MathJax](https://www.mathjax.org/) is sophisticated, but rather large and slow,
-with a lot of dependencies.  I learned about
+[MathJax](https://www.mathjax.org/) is sophisticated, but is large and has a lot
+of dependencies. It's not exactly slow, but it does render after the page loads,
+and that's slow enough to be perceptible. I learned about
 [KaTeX](https://khan.github.io/KaTeX/), a simpler, lighter alternative, and I've
 switched to use it instead.
 
@@ -58,8 +59,8 @@ After doing this, the results were satisfactory:
 
 ![KaTeX](/media/2018/04/katex.png)
 
-If you look closely, you can see some differences in font weights, spacing, and
-other minor issues.
+If you look closely, you can see some minor differences in aspects such as font
+weights and spacing.
 
 My takeaway is this:
 
@@ -67,7 +68,7 @@ My takeaway is this:
   and output format, more sophisticated features such as the ability to interact
   with the equations in the browser, and absolutely perfect rendering.
 - KaTeX might be right for you if you value a more compact and speedy library,
-  and you don't mind ever-so-slightly inferior typesetting or less support for
+  and you don't mind ever-so-slightly different typography or less support for
   uncommon browsers.
 
 Both libraries are extraordinary works of engineering and I thank the authors
