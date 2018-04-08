@@ -58,7 +58,7 @@ kinds of smashing and splattering of oils and other carnage and destruction.
 
 The only problem is most conical burr grinders are several hundred bucks. There
 is a bargain grinder, though, and it's awesome. It's the [Hario
-Skerton](http://www.amazon.com/Hario-Ceramic-Skerton-Storage-Capacity/dp/B001802PIQ/?tag=xaprb-20), a Japanese hand-grinder
+Skerton]({{< amz B001802PIQ >}}), a Japanese hand-grinder
 that fits on top of a little jar. It's easy to use and produces a good quality
 grind, it's durable and doesn't break, *and it is not expensive at all.* The current price on Amazon is $32, and
 there's a rebranded version of it at a similar price. One or the other is
@@ -82,7 +82,7 @@ You can buy a simple thermometer, but in my opinion the easiest and cheapest way
 to get water the right temperature is to use a programmable electric kettle. The
 one I like, and have used several times a day for years (I drink one small cup
 of coffee in the morning but many cups of tea all day long) is the [Oster
-BVST-EK5967-NP](http://www.amazon.com/Oster-BVST-EK5967-NP-Digital-Temperature-1-7-Liter/dp/B00BLR03I0/?tag=xaprb-20).
+BVST-EK5967-NP]({{< amz B00BLR03I0 >}}).
 It's $30 on Amazon.
 
 ![oster](/media/2015/01/oster.jpg)
@@ -107,7 +107,7 @@ stove, and I wouldn't be surprised if it uses less electricity.
 
 Tap water, with all of its nasty chemicals and minerals, definitely doesn't make as good a
 cup of coffee as filtered water. I use an ordinary
-[Brita](http://www.amazon.com/Brita-10-Cup-Everyday-Filter-Pitcher/dp/B004GNGID0/?tag=xaprb-20)
+[Brita]({{< amz B004GNGID0 >}})
 pitcher.
 
 ![brita](/media/2015/01/brita.jpg)
@@ -127,7 +127,7 @@ Espresso takes a lot of equipment that's usually *very* expensive, and it is
 delicate and finicky. So many things have to be done "just right."
 
 My compromise is
-[Aeropress](http://www.amazon.com/Aeropress-Coffee-and-Espresso-Maker/dp/B0047BIWSK/?tag=xaprb-20). It's
+[Aeropress]({{< amz B0047BIWSK >}}). It's
 not really a "compromise" since I think it's great coffee by any standard.
 
 ![aeropress](/media/2015/01/aeropress.jpg)
@@ -148,7 +148,7 @@ disgusting coffee from the hotel lobby.
 
 There's a lot of science behind why Aeropress coffee is not bitter and tastes
 better. You can read about it on the 
-[Amazon page](http://www.amazon.com/Aeropress-Coffee-and-Espresso-Maker/dp/B0047BIWSK/?tag=xaprb-20).
+[Amazon page]({{< amz B0047BIWSK >}}).
 It also comes with good instructions that explain the correct temperature for
 your roast, how long to mix and press, and so on.
 
@@ -175,7 +175,7 @@ bit smaller than most of the mugs I'm used to.
 
 If you like lattes and mochas and the like (which I do---[see my pumpkin spice latte
 recipe](https://vividcortex.com/blog/2014/11/05/make-your-own-pumpkin-spice-latte/)), then you might like the
-[Nespresso Aeroccino Plus Milk Frother](http://www.amazon.com/Nespresso-Aeroccino-Plus-Milk-Frother/dp/B001UHZAYS/?tag=xaprb-20).
+[Nespresso Aeroccino Plus Milk Frother]({{< amz B001UHZAYS >}}).
 Years ago I got one of these for my wife as part of a Nespresso kit, and I still use it.
 
 ![aeroccino](/media/2015/01/aeroccino.jpg)

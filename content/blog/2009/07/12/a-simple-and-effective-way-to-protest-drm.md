@@ -7,7 +7,7 @@ categories:
 ---
 If you don't like [DRM (Digital Restrictions Management)](http://defectivebydesign.org/), there are lots of ways to protest it. One of the simplest and most effective is to pick a massively popular DRM'ed device, and express your dismay to the manufacturer and users. Here's an idea:
 
-1.  Browse to the [DRM-laden Amazon Kindle's](http://www.amazon.com/Kindle-Amazons-Wireless-Reading-Generation/dp/B00154JDAI/?tag=xaprb-20) product page.
+1.  Browse to the [DRM-laden Amazon Kindle's]({{< amz B00154JDAI >}}) product page.
 2.  Look for reviews that mention the problems with its DRM.
 3.  Mark them as helpful.
 

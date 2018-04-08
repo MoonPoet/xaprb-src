@@ -7,13 +7,13 @@ categories:
 ---
 <p style="float:left">
   <div id="attachment_2059" class="wp-caption alignleft" style="width: 135px">
-    <a href="http://www.amazon.com/dp/1849510601/?tag=xaprb-20"><img src="/media/2010/10/mysql-plugin-development.jpg" alt="MySQL 5.1 Plugin Development" title="MySQL 5.1 Plugin Development" width="125" height="152" class="size-full wp-image-2059" /></a><p class="wp-caption-text">
+    <a href="{{< amz 1849510601 }}"><img src="/media/2010/10/mysql-plugin-development.jpg" alt="MySQL 5.1 Plugin Development" title="MySQL 5.1 Plugin Development" width="125" height="152" class="size-full wp-image-2059" /></a><p class="wp-caption-text">
       MySQL 5.1 Plugin Development
     </p>
   </div>
 </p>
 
-[MySQL 5.1 Plugin Development](http://www.amazon.com/dp/1849510601/?tag=xaprb-20), by Sergei Golubchik and Andrew Hutchings, Packt 2010. About 250 pages. (Here's a [link to the publisher's site](https://www.packtpub.com/mysql-5-1-plugins-development/book).)
+[MySQL 5.1 Plugin Development]({{< amz 1849510601 >}}), by Sergei Golubchik and Andrew Hutchings, Packt 2010. About 250 pages. (Here's a [link to the publisher's site](https://www.packtpub.com/mysql-5-1-plugins-development/book).)
 
 This book is well worth reading for anyone interested in MySQL internals. I learned a lot from it. It is well-written and understandable. I cannot say that I'm planning to write storage engines or more advanced plugins, but I have a great many ideas how to improve MySQL, and I now understand more clearly which of those are suitable to write as plugins, and of what type of plugin is appropriate. I also think I have a better idea how much work these various ideas might involve.
 

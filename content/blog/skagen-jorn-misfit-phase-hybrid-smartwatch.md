@@ -110,14 +110,14 @@ This is a nice-looking watch that seems to have similar functionality to those I
 
 ![Fossil Q Commuter](/media/2018/03/fossil-q-commuter.jpg)
 
-[Kronaby Apex](https://www.amazon.com/Kronaby-A1000-1426-Unisex-quartz-watch/dp/B071Z29FJ6/?tag=xaprb-20)
+[Kronaby Apex]({{< amz B071Z29FJ6 >}})
 
 Kronaby specializes in hybrid smart watches. The models I examined seemed to be
 at the top of the class. They're also a bit more expensive.
 
 ![Kronaby](/media/2018/03/kronaby.jpg)
 
-[Michael Kors Gage Hybrid Smart Watch](https://www.amazon.com/Michael-Kors-Access-Hybrid-Smartwatch/dp/B074W9WMQ4/?tag=xaprb-20)
+[Michael Kors Gage Hybrid Smart Watch]({{< amz B074W9WMQ4 >}})
 
 Another upscale watch with very similar functionality to those I tested from
 Skagen and Misfit.

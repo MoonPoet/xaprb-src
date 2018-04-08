@@ -7,12 +7,12 @@ categories:
   - Reviews
 ---
 <div id="attachment_1797" class="wp-caption alignleft" style="width: 135px">
-  <a href="http://www.amazon.com/Forecasting-Oracle-Performance-Craig-Shallahamer/dp/1590598024?tag=xaprb-20"><img src="/media/2010/05/forecasting_oracle_performance.gif" alt="Forecasting Oracle Performance" title="Forecasting Oracle  Performance" width="125" height="168" class="size-full wp-image-1797" /></a><p class="wp-caption-text">
+  <a href="{{< amz 1590598024 >}}"><img src="/media/2010/05/forecasting_oracle_performance.gif" alt="Forecasting Oracle Performance" title="Forecasting Oracle  Performance" width="125" height="168" class="size-full wp-image-1797" /></a><p class="wp-caption-text">
     Forecasting Oracle Performance
   </p>
 </div>
 
-[Forecasting Oracle Performance](http://www.amazon.com/Forecasting-Oracle-Performance-Craig-Shallahamer/dp/1590598024?tag=xaprb-20). By Craig Shallahamer, Apress 2007. Page count: about 250 pages. (Here's [a link to the publisher's site](http://apress.com/book/view/9781590598023)). Short version: buy it and read it, but make sure you don't rely on it alone; deepen your knowledge through other sources.
+[Forecasting Oracle Performance]({{< amz 1590598024 >}}). By Craig Shallahamer, Apress 2007. Page count: about 250 pages. (Here's [a link to the publisher's site](http://apress.com/book/view/9781590598023)). Short version: buy it and read it, but make sure you don't rely on it alone; deepen your knowledge through other sources.
 
 I bought and read this book because I'm interested in performance, performance forecasting, and capacity planning. I'm not interested in forecasting Oracle performance per se. However, I have noticed that there is a lot of good literature in the Oracle arena that can apply to other databases (\*cough\* MySQL), and even systems of any type. Oracle and its practitioners are at least a decade ahead of MySQL in terms of treating performance scientifically.
 

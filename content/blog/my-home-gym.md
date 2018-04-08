@@ -39,7 +39,7 @@ a compound movement that combines an explosive squat with an overhead throw,
 working lots of muscle groups and adding significant metabolic load to make
 other movements more challenging. The standard medicine ball Rx is 20 pounds for
 men, 14 for women. The gold standard is the
-[Dynamax](https://www.amazon.com/Dynamax-Soft-Shell-Medicine-Ball-20lb/dp/B00NZ6I9AY/?tag=xaprb-20)
+[Dynamax]({{< amz B00NZ6I9AY >}})
 but I bought a cheaper One Fit Wonder ball I can't find anymore. It's harder to
 grip; maybe that's a good thing.
 
@@ -60,7 +60,7 @@ Rx weight is something like 30 pounds for men, 20 for women.
 [Double-unders](https://www.youtube.com/watch?v=WTOQWDugz9E) are my favorite
 metabolic challenge. There's only a few things that spike my heart rate and
 breathing like double-unders. I don't fixate on any particular rope, but [this
-rope](https://www.amazon.com/gp/product/B004P3R6LE/?tag=xaprb-20) is fine and I've had it for
+rope]({{< amz B004P3R6LE >}}) is fine and I've had it for
 5 years. I never travel without bringing it along, coiled in a ziploc bag. I've
 also modified some ropes to hold heavier cable, e.g. drilling out the holes and
 loading in cable I bought at the hardware store. My only recommendation is to
@@ -77,7 +77,7 @@ but I really only use the 40-pound and heavier ones. If I were to do it again I
 would buy individuals, not a set. I might just buy one, the heaviest I thought I
 could get away with. You can often find used kettlebells on Craigslist. That's
 where I got some of mine. I bought others from
-[Amazon](https://www.amazon.com/gp/product/B003J9E6B8/?tag=xaprb-20) and [Fringe
+[Amazon]({{< amz B003J9E6B8 >}}) and [Fringe
 Sport](https://www.fringesport.com/collections/kettlebells/products/onefitwonder-premium-kettlebells).
 
 ![Kettlebell](/media/2017/10/kettlebell.jpg)
@@ -92,7 +92,7 @@ snatches, and so on.
 
 This is one area I'd encourage you not to cut costs. I bought an adjustable set
 of [Bowflex
-dumbbells](https://www.amazon.com/gp/product/B001ARYU58/?tag=xaprb-20) and they
+dumbbells]({{< amz B001ARYU58 >}}) and they
 are *awesome*. They're easy to adjust to a variety of very specific and finely
 graduated weights, they're excellent quality, and they're a lot cheaper than
 buying tons of fixed-weight dumbbells. They store more compactly too. This is
@@ -124,11 +124,11 @@ The clamps are one of the more important parts of my gear. I can't stand the
 standard spring clamps. They get torqued and stop working right, and then you're
 fighting to get them on and off (or keep them on). I bought a relatively cheap
 set of cinch collars from
-[Amazon](https://www.amazon.com/gp/product/B01L7Z0R8Q/?tag=xaprb-20) and they're working
+[Amazon]({{< amz B01L7Z0R8Q >}}) and they're working
 fine. I don't know how long they'll last, but we'll see.
 
 I also bought a relatively cheap [squat
-rack](https://www.amazon.com/gp/product/B002ME5J3A/?tag=xaprb-20). Given that I'm the only
+rack]({{< amz B002ME5J3A >}}). Given that I'm the only
 user of these, the ability to do things like change the height is not a big
 deal, and I've been able to get away without a gym-quality rack without trouble.
 The main caution with these is that they're not very heavy, so they'd be easy to
@@ -148,7 +148,7 @@ prevents the jump rope from fraying, breaking, and becoming dangerous.
 
 A plyo box is good for box jumps, box squats, scaled pushups, and lots of other
 things. I bought a [3-in-1
-kit](https://www.amazon.com/gp/product/B00NIA4AB4/?tag=xaprb-20) from Amazon,
+kit]({{< amz B00NIA4AB4 >}}) from Amazon,
 and I've been very happy with it. It was easy to assemble. (Note that the image
 is misleading: it shows 3 boxes in different sizes, whereas you buy one box with
 3 different lengths of sides, and you can choose what size that box is---small,
@@ -160,7 +160,7 @@ medium, large; Rx for men is box jumps up to 30 inches for most workouts).
 
 The rower is one of the only machines you'll find at a CrossFit gym, and it's a
 staple. The standard is the [Concept
-2](https://www.amazon.com/Concept2-Model-Indoor-Rowing-Machine/dp/B00NH9WF4K/?tag=xaprb-20)
+2]({{< amz B00NH9WF4K >}})
 rower. I've never been at a CrossFit gym that didn't use this machine.
 
 I bought one from Craigslist. It was a much older one that needed parts and
@@ -175,9 +175,9 @@ another. I miss it.
 I don't want to go back to the days before I knew how to foam-roll. These are
 amazing for mobilizing stubborn spots in muscles and working out soreness. The
 usual standard item is an OPTP 36-inch round roller, but I like the [OPTP
-Axis](https://www.amazon.com/OPTP-AXIS-Foam-Roller-Density/dp/B001MPU106/?tag=xaprb-20)
+Axis]({{< amz B001MPU106 >}})
 better; it has a better firmness.  [Amazon
-Basics](https://www.amazon.com/AmazonBasics-High-Density-Round-Foam-Roller/dp/B00XM2MRGI/?tag=xaprb-20)
+Basics]({{< amz B00XM2MRGI >}})
 sells their own brand now! I bet the margin on these is really lucrative.
 
 After a while I discovered something even better for harder-to-reach spots. The
@@ -185,7 +185,7 @@ standard CrossFit way to do that is with a lacrosse ball, but I've found it's
 easier to get bruises and inflamed tendons with a lacrosse ball than it is to
 mobilize stuck tissues. They're too heavy and hard, whereas tennis balls are too
 weak. But, this [Pro-Tec
-Orb](https://www.amazon.com/gp/product/B00B2YAD46/?tag=xaprb-20) works wonders.
+Orb]({{< amz B00B2YAD46 >}}) works wonders.
 It's about the size of a melon and it's just the right firmness.
 
 ### Resistance Bands

@@ -8,12 +8,12 @@ categories:
   - Reviews
 ---
 <div class="wp-caption alignleft" style="width: 190px">
-  <a href="http://www.amazon.com/SQL-Relational-Theory-Write-Accurate/dp/0596523068?tag=xaprb-20"><img alt="SQL and Relational Theory" src="http://oreilly.com/catalog/covers/9780596523060_cat.gif" title="SQL and Relational Theory" width="180" height="236" /></a><p class="wp-caption-text">
+  <a href="{{< amz 0596523068 >}}"><img alt="SQL and Relational Theory" src="http://oreilly.com/catalog/covers/9780596523060_cat.gif" title="SQL and Relational Theory" width="180" height="236" /></a><p class="wp-caption-text">
     SQL and Relational Theory
   </p>
 </div>
 
-[SQL and Relational Theory](http://www.amazon.com/SQL-Relational-Theory-Write-Accurate/dp/0596523068?tag=xaprb-20) *How to Write Accurate SQL Code* by C. J. Date, O'Reilly 2009. Page count: 266 pages of "real" text, plus hefty appendixes. (Here's a link to the publisher's site: [SQL and Relational Theory *How to Write Accurate SQL Code*](http://oreilly.com/catalog/9780596523060/index.html)).
+[SQL and Relational Theory]({{< amz 0596523068 >}}) *How to Write Accurate SQL Code* by C. J. Date, O'Reilly 2009. Page count: 266 pages of "real" text, plus hefty appendixes. (Here's a link to the publisher's site: [SQL and Relational Theory *How to Write Accurate SQL Code*](http://oreilly.com/catalog/9780596523060/index.html)).
 
 **This is a very important book for anyone involved with databases**. Before I say why, I need to apologize to Mr. Date. I tech-reviewed part of the book and did not care for it. I am afraid I was quite a curmudgeon in my review comments. So, Mr. Date, if you're reading this -- I want to say I enjoyed the book very much after all.
 

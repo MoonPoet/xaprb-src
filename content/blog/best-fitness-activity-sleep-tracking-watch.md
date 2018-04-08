@@ -77,15 +77,15 @@ who was willing to recommend a Jawbone.
 
 |   | Item          | Category           | Battery | Heart Rate | Sleep | Other Features                  |
 |---|-------------------|--------------------|---------|------------|-------|---------------------------------|
-| ![Apple Watch](/media/2017/02/apple-watch.jpg)  | [Apple Watch](https://www.amazon.com/Apple-42mm-Smart-Watch-Aluminum/dp/B0157N7E12/?tag=xaprb-20)       | Smart Watch        | Short   | Yes        |       | Activities, Notifications, Apps |
-| ![Ticwatch](/media/2017/02/ticwear.jpg)  | [Ticwear](https://www.amazon.com/Ticwatch-Smartwatch-Charcoal-Android-Devices/dp/B01HHUPLRM/?tag=xaprb-20)           | Smart Watch        | Short   | Yes        |       | Activities, Notifications, GPS  |
-| ![Garmin 235](/media/2017/02/garmin-235.jpg)    | [Garmin 235](https://www.amazon.com/Garmin-Forerunner-235-Black-Gray/dp/B0160BC1FO/?tag=xaprb-20)        | Watch-Like Tracker | Medium  | Yes        | Yes   | Activities, Notifications, GPS  |
-| ![Garmin VivoMove](/media/2017/02/garmin-vivomove.jpg)    | [Garmin VivoMove](https://www.amazon.com/Garmin-vívomove-Premium-Stainless-Leather/dp/B01DOJDSSY/?tag=xaprb-20)   | Augmented Watch    | Long    |            | Yes   |                                 |
-| ![Withings Steel](/media/2017/02/withings-steel-hr.jpg)    | [Withings Steel HR](https://www.amazon.com/Withings-Activite-Steel-Black-36mm/dp/B01LX9L8NP/?tag=xaprb-20) | Augmented Watch    | Long    | Yes        | Yes   | Activities, Notifications       |
-| ![Misfit Phase](/media/2017/02/misfit-phase.jpg)    | [Misfit Phase](https://www.amazon.com/Misfit-Phase-Hybrid-Wearables-Smartwatch/dp/B01N3NQSPF/?tag=xaprb-20)      | Augmented Watch    | Long    |            | Yes   | Activities                      |
-| ![Fitbit Charge](/media/2017/02/fitbit-charge-2.jpg)    | [Fitbit Charge 2](https://www.amazon.com/Fitbit-Charge-Heart-Fitness-Wristband/dp/B01K9S24EM/?tag=xaprb-20)   | Fitness Tracker    | Medium  | Yes        | Yes   | Activities, Notifications       |
-| ![Garmin VivoSmart](/media/2017/02/garmin-vivosmart.jpg)    | [Garmin VivoSmart](https://www.amazon.com/Garmin-vívosmart-Activity-Tracker-Regular/dp/B0177V0H7K/?tag=xaprb-20)  | Fitness Tracker    | Medium  | Yes        | Yes   | Activities, Notifications, GPS  |
-| ![Samsung Gear S3](/media/2017/02/samsung-gear-s3-frontier.jpg)    | [Samsung Gear S3](https://www.amazon.com/Samsung-SM-R760NDAAXAR-Gear-S3-Frontier/dp/B01M7MDK5S/?tag=xaprb-20)  | Augmented Watch | Medium  | Yes        | Yes   | Activities, Notifications, GPS, Payments  |
+| ![Apple Watch](/media/2017/02/apple-watch.jpg)  | [Apple Watch]({{< amz B0157N7E12 >}})       | Smart Watch        | Short   | Yes        |       | Activities, Notifications, Apps |
+| ![Ticwatch](/media/2017/02/ticwear.jpg)  | [Ticwear]({{< amz B01HHUPLRM >}})           | Smart Watch        | Short   | Yes        |       | Activities, Notifications, GPS  |
+| ![Garmin 235](/media/2017/02/garmin-235.jpg)    | [Garmin 235]({{< amz B0160BC1FO >}})        | Watch-Like Tracker | Medium  | Yes        | Yes   | Activities, Notifications, GPS  |
+| ![Garmin VivoMove](/media/2017/02/garmin-vivomove.jpg)    | [Garmin VivoMove]({{< amz B01DOJDSSY >}})   | Augmented Watch    | Long    |            | Yes   |                                 |
+| ![Withings Steel](/media/2017/02/withings-steel-hr.jpg)    | [Withings Steel HR]({{< amz B01LX9L8NP >}}) | Augmented Watch    | Long    | Yes        | Yes   | Activities, Notifications       |
+| ![Misfit Phase](/media/2017/02/misfit-phase.jpg)    | [Misfit Phase]({{< amz B01N3NQSPF >}})      | Augmented Watch    | Long    |            | Yes   | Activities                      |
+| ![Fitbit Charge](/media/2017/02/fitbit-charge-2.jpg)    | [Fitbit Charge 2]({{< amz B01K9S24EM >}})   | Fitness Tracker    | Medium  | Yes        | Yes   | Activities, Notifications       |
+| ![Garmin VivoSmart](/media/2017/02/garmin-vivosmart.jpg)    | [Garmin VivoSmart]({{< amz B0177V0H7K >}})  | Fitness Tracker    | Medium  | Yes        | Yes   | Activities, Notifications, GPS  |
+| ![Samsung Gear S3](/media/2017/02/samsung-gear-s3-frontier.jpg)    | [Samsung Gear S3]({{< amz B01M7MDK5S >}})  | Augmented Watch | Medium  | Yes        | Yes   | Activities, Notifications, GPS, Payments  |
 
 Each of these makes and models typically has options or related products that
 have more or less functionality. For example, Withings offers an Activite Pop
@@ -217,8 +217,8 @@ time, trying to decide what I wanted, at least three watch and wearable
 companies were acquired or went out of business, and several new options became available.
 Here are some of them:
 
-* [Nevo Smart Watch](https://www.amazon.com/Nevo-Smartwatch-Retail-Packaging-Silver/dp/B011JLR9RA/?tag=xaprb-20) is a minimalistic analog watch with months of battery life and smartwatch features such as notifications and activity tracking.
-* [Runtastic Moment](https://www.amazon.com/RUNTASTIC-MOMENT-CLASSIC-ACTIVITY-TRACKING/dp/B016PXEML8/?tag=xaprb-20) is a classic-looking analog watch with smartwatch features and long battery life.
+* [Nevo Smart Watch]({{< amz B011JLR9RA >}}) is a minimalistic analog watch with months of battery life and smartwatch features such as notifications and activity tracking.
+* [Runtastic Moment]({{< amz B016PXEML8 >}}) is a classic-looking analog watch with smartwatch features and long battery life.
 
 ### Hybrid Watches Without Emphasis On Fitness
 

@@ -20,11 +20,11 @@ The Sennheisers are my favorites. I thought I'd write down why I've gone through
 
 <!--more-->
 
-### [Bose QuietComfort 15 Acoustic Noise Cancelling Headphones](http://www.amazon.com/Bose-QuietComfort-Acoustic-Cancelling-Headphones/dp/B0054JJ0QW/?tag=xaprb-20)
+### [Bose QuietComfort 15 Acoustic Noise Cancelling Headphones]({{< amz B0054JJ0QW >}})
 
 ![Bose QuietComfort 15 Acoustic Noise Cancelling Headphones](/media/2014/01/bose-quiet-comfort.png)
 
-I'm sure you're familiar with [Bose QuietComfort](http://www.amazon.com/Bose-QuietComfort-Acoustic-Cancelling-Headphones/dp/B0054JJ0QW/?tag=xaprb-20) headphones. They're the iconic "best-in-class" noise-cancelling headphones, the ones you see everywhere. Yet, after owning several pairs (beginning with Quiet Comfort II in 2003), I decided I'm not happy with them and won't buy them anymore. Why not?
+I'm sure you're familiar with [Bose QuietComfort]({{< amz B0054JJ0QW >}}) headphones. They're the iconic "best-in-class" noise-cancelling headphones, the ones you see everywhere. Yet, after owning several pairs (beginning with Quiet Comfort II in 2003), I decided I'm not happy with them and won't buy them anymore. Why not?
 
 * They're not very good quality. I've worn out two pairs and opted to sell the third pair that Bose sent me as a replacement. Various problems occurred, including torn speakers that buzzed and grated. I just got tired of sending them back to Bose for servicing.
 * They're more expensive than I think they're worth, especially given the cheap components used.
@@ -35,11 +35,11 @@ I'm sure you're familiar with [Bose QuietComfort](http://www.amazon.com/Bose-Qui
 
 On the plus side, the fit is very comfortable physically, they cancel noise very well, and they're smaller than some other noise-cancelling headphones. Also on the plus side, every time I've sent a pair in for servicing, Bose has just charged me $100 and sent me a new pair.
 
-### [Sony MDR-NC200D](http://www.amazon.com/Sony-Canceling-Stereo-Headphones-MDR-NC200D/dp/B005LA53BK/?tag=xaprb-20)
+### [Sony MDR-NC200D]({{< amz B005LA53BK >}})
 
 ![Sony MDR-NC200D](/media/2014/01/sony-mdr-nc200d.png)
 
-When I sent my last pair of Bose in for servicing, they replaced them with a factory-sealed pair of new ones in the box, and I decided to sell them on eBay and buy a set of [Sony MDR-NC200D](http://www.amazon.com/Sony-Canceling-Stereo-Headphones-MDR-NC200D/dp/B005LA53BK/?tag=xaprb-20) headphones, which were about $100 less money than new Bose headphones at the time. I read online reviews and thought it was worth a try.
+When I sent my last pair of Bose in for servicing, they replaced them with a factory-sealed pair of new ones in the box, and I decided to sell them on eBay and buy a set of [Sony MDR-NC200D]({{< amz B005LA53BK >}}) headphones, which were about $100 less money than new Bose headphones at the time. I read online reviews and thought it was worth a try.
 
 First, the good points. The Sonys are more compact even than the Bose, although as I recall they're a little heavier. And the noise cancellation works quite well. The passive noise blocking (muffling) is in itself quite good. You can just put them on without even turning on the switch, and block a lot of ambient noise. The sound quality is also quite good, although there is a slight hiss when noise cancellation is enabled. Active cancellation is good, but not as good as the Bose.
 
@@ -47,11 +47,11 @@ However, it wasn't long before I realized I couldn't keep them. The Sonys sit on
 
 I had to sell the Sonys on eBay too. My last stop was the Sennheisers.
 
-### [Sennheiser PXC 450 NoiseGard Active Noise-Canceling Headphones](http://www.amazon.com/Sennheiser-PXC-450-Noise-Canceling-Headphones/dp/B000R2PC2M/?tag=xaprb-20)
+### [Sennheiser PXC 450 NoiseGard Active Noise-Canceling Headphones]({{< amz B000R2PC2M >}})
 
 ![Sennheiser PXC 450 NoiseGard Active Noise-Canceling Headphones](/media/2014/01/sennheiser-pxc-450.png)
 
-The [Sennheiser PXC 450](http://www.amazon.com/Sennheiser-PXC-450-Noise-Canceling-Headphones/dp/B000R2PC2M/?tag=xaprb-20) headphones are midway in price between the Bose and the Sony: a little less expensive than the Bose. I've had them a week or so and I'm very happy with them so far.
+The [Sennheiser PXC 450]({{< amz B000R2PC2M >}}) headphones are midway in price between the Bose and the Sony: a little less expensive than the Bose. I've had them a week or so and I'm very happy with them so far.
 
 This is not the first pair of Sennheisers I've owned. I've had a pair of open-air higher-end Sennheisers for over a decade. I absolutely love them, so you can consider me a Sennheiser snob to some extent.
 

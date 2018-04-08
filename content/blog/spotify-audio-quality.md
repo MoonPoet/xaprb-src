@@ -49,7 +49,7 @@ compression that it's still pleasant.
 AirPlay became frustrating, though. There were so many reliability issues with
 it! I needed to reboot the Airport Express on a pretty regular basis to get
 audio to stream to it. It was so annoying that I eventually gave up and bought a
-[Sonos](https://www.amazon.com/Sonos-Play-Compact-Wireless-Streaming/dp/B00EWCUK1Q/?tag=xaprb-20)
+[Sonos]({{< amz B00EWCUK1Q >}})
 in the kitchen. This has been much more enjoyable than trying to stream to the
 boombox I had previously. In my listening room, though, I still used AirPlay.
 

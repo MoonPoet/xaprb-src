@@ -10,7 +10,7 @@ tags:
   - PostgreSQL
 ---
 
-<a href="http://www.amazon.com/Cacti-Network-Monitoring-Ibrahim-Lavlu/dp/1847195962?tag=xaprb-20"><img src="/media/2010/01/cacti-network-monitoring.jpg" alt="Cacti Network Monitoring" title="Cacti Network Monitoring" width="240" height="240" class="size-full wp-image-1531" /></a>
+<a href="{{< amz 1847195962 >}}"><img src="/media/2010/01/cacti-network-monitoring.jpg" alt="Cacti Network Monitoring" title="Cacti Network Monitoring" width="240" height="240" class="size-full wp-image-1531" /></a>
 
 > [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
 > your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
@@ -18,7 +18,7 @@ tags:
 > performance management](https://vividcortex.com/monitoring/postgres/) among many
 > other features.
 
-[Cacti 0.8 Network Monitoring](http://www.amazon.com/Cacti-Network-Monitoring-Ibrahim-Lavlu/dp/1847195962?tag=xaprb-20), Dinangkur Kundu and S. M. Ibrahim Lavlu, Packt, 2009. Page count: 110 pages.
+[Cacti 0.8 Network Monitoring]({{< amz 1847195962 >}}), Dinangkur Kundu and S. M. Ibrahim Lavlu, Packt, 2009. Page count: 110 pages.
 
 This is a quite short book that covers some of the breadth but very little of the depth of Cacti. For example, it focuses on Cacti as an SNMP tool for graphing network data, but SNMP is only one of the many ways Cacti can collect data, and of course it graphs anything, not just networks. Each chapter takes the reader through the most important topics, with some code listings and screenshots. On the plus side, this makes it very easy to read quickly, because it doesn't go off on many tangents about special cases and errors.
 

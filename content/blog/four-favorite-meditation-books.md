@@ -22,7 +22,7 @@ my life. Here are four books whose wisdom I treasure.
 
 ### Wherever You Go, There You Are
 
-[Wherever You Go, There You Are](https://www.amazon.com/Wherever-You-There-Are-Mindfulness/dp/1401307787?tag=xaprb-20)
+[Wherever You Go, There You Are]({{< amz 1401307787 >}})
 by Jon Kabat-Zinn is my second favorite book, and similarly to Suzuki's, it
 plainly states that meditation is nothing complicated or special: it's simply
 about being in the current moment, observing. Like Zen Mind, too, it is broken
@@ -56,7 +56,7 @@ over the world with me for years.
 ### Bonus: Get Some Headspace
 
 [Get Some
-Headspace](https://www.amazon.com/Get-Some-Headspace-Difference-Puddicombe/dp/B00DO8Q33I/?tag=xaprb-20),
+Headspace]({{< amz B00DO8Q33I >}}),
 by Andy Puddicombe, is the book that actually started my practice of mindfulness
 meditation as it is today. The [Headspace](https://www.headspace.com/) website
 and mobile app also helped me establish my practice.

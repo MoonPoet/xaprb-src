@@ -18,12 +18,12 @@ You probably know that I like to be pretty minimalistic, and don't accumulate ma
 
 I chose my components for the best combination of price, convenience, and quality. Here's the full list of components and widgets:
 
-*   [ELAC B6 Debut Series 6.5" Bookshelf Speakers](https://www.amazon.com/gp/product/B014GSEQ06/?tag=xaprb-20)
-*   [Cambridge Audio Azur 351A Integrated Amplifier](https://www.amazon.com/gp/product/B00Q666G1E/?tag=xaprb-20)
-*   [Onkyo DXC390 6 Disc CD Changer](https://www.amazon.com/Onkyo-DXC390-Disc-CD-Changer/dp/B0000EZ1KK/?tag=xaprb-20)
+*   [ELAC B6 Debut Series 6.5" Bookshelf Speakers]({{< amz B014GSEQ06 >}})
+*   [Cambridge Audio Azur 351A Integrated Amplifier]({{< amz B00Q666G1E >}})
+*   [Onkyo DXC390 6 Disc CD Changer]({{< amz B0000EZ1KK >}})
 *   [AirPort Express for AirPlay](http://www.apple.com/airport-express/)
-*   [SANUS BF31-B1 31-Inch Bookshelf Speaker Stands](https://www.amazon.com/gp/product/B00006JQ5O/?tag=xaprb-20)
-*   [APC 550VA UPS Battery Backup & Surge Protector](https://www.amazon.com/APC-Back-UPS-Battery-Protector-BE550G/dp/B0019804U8/?tag=xaprb-20)
+*   [SANUS BF31-B1 31-Inch Bookshelf Speaker Stands]({{< amz B00006JQ5O >}})
+*   [APC 550VA UPS Battery Backup & Surge Protector]({{< amz B0019804U8 >}})
 *   iTunes, Apple Music, Spotify, or another audio source
 *   A couple of adapters and some speaker wire
 
@@ -48,9 +48,9 @@ them.
 
 ### Klipsch and ELAC Subwoofers
 
-Some of my music extends below the ELACs' 40-Hz bottom end, so I tried adding a [Klipsch R-12SW Subwoofer](https://www.amazon.com/Klipsch-R-12SW-Subwoofer/dp/B00MJ1YR8Y?tag=xaprb-20). At first I thought I liked the result, but after spending some time listening, I couldn't stop hearing the subwoofer. The best way to describe it is flabby. The ELACs produce obviously superior bass within their range. The Klipsch just muddied things. I spent a lot of time trying to blend the two together, moving the Klipsch around the room, and so on. In the end I decided it's no match for the ELACs, and returned the Klipsch.
+Some of my music extends below the ELACs' 40-Hz bottom end, so I tried adding a [Klipsch R-12SW Subwoofer]({{< amz B00MJ1YR8Y >}}). At first I thought I liked the result, but after spending some time listening, I couldn't stop hearing the subwoofer. The best way to describe it is flabby. The ELACs produce obviously superior bass within their range. The Klipsch just muddied things. I spent a lot of time trying to blend the two together, moving the Klipsch around the room, and so on. In the end I decided it's no match for the ELACs, and returned the Klipsch.
 
-My next try was an [ELAC S10EQ Debut Series 400 Watt Powered Subwoofer](https://www.amazon.com/S10EQ-Powered-Subwoofer-Andrew-AutoEQ/dp/B014GSEVFQ/?tag=xaprb-20). It was clearly superior to the Klipsch, but again after listening I decided I like the bookshelf speakers alone without the subwoofer. If I were watching movies or playing games it'd be different, but the Debut B6's are more musical alone. I did like the subwoofer a lot, though. It's extremely tight and accurate, very musical in comparison to the Klipsch. And the smart features to analyze the room room's characteristics and adjust the frequency response work very well.
+My next try was an [ELAC S10EQ Debut Series 400 Watt Powered Subwoofer]({{< amz B014GSEVFQ >}}). It was clearly superior to the Klipsch, but again after listening I decided I like the bookshelf speakers alone without the subwoofer. If I were watching movies or playing games it'd be different, but the Debut B6's are more musical alone. I did like the subwoofer a lot, though. It's extremely tight and accurate, very musical in comparison to the Klipsch. And the smart features to analyze the room room's characteristics and adjust the frequency response work very well.
 
 Trying out the Klipsch and ELAC subwoofers made me conclude that these speakers
 are so good alone that it's simply not worth adding a hard-to-blend subwoofer to
@@ -58,7 +58,7 @@ gain another 10Hz or so on the low end. If I were trying to build a system that
 had Entec-like low-frequency response, that'd be different. The ELACs are more
 than capable for most music.
 
-The Cambridge amplifier doesn't have a separate subwoofer output. To hook up the subwoofer, I swapped out the Cambridge for the smallest of Yamaha's integrated amplifiers, the [Yamaha A-S301BL](https://www.amazon.com/Yamaha-S301BL-Natural-Integrated-Amplifier/dp/B00MXUCN0A/?tag=xaprb-20). Although I returned the Yamaha and kept the Cambridge, the Yamaha is very nice and if I had to do it over again, I might buy it instead. It has more inputs and outputs, and is slightly more modern and powerful. And I don't think there is any perceptible difference in quality.
+The Cambridge amplifier doesn't have a separate subwoofer output. To hook up the subwoofer, I swapped out the Cambridge for the smallest of Yamaha's integrated amplifiers, the [Yamaha A-S301BL]({{< amz B00MXUCN0A >}}). Although I returned the Yamaha and kept the Cambridge, the Yamaha is very nice and if I had to do it over again, I might buy it instead. It has more inputs and outputs, and is slightly more modern and powerful. And I don't think there is any perceptible difference in quality.
 
 ### Chromecast Audio
 
@@ -68,13 +68,13 @@ I had a short and unsatisfying experience with the Google [Chromecast Audio](htt
 
 If you have an iPhone or iPad, you can buy an inexpensive calibrated microphone
 such as the [Dayton Audio iMM-6 Calibrated Measurement
-Microphone](https://www.amazon.com/gp/product/B00ADR2B84/?tag=xaprb-20) and pair
+Microphone]({{< amz B00ADR2B84 >}}) and pair
 it with the AudioTools app to measure both your speakers and your room. I found
 that, as I had noticed from listening, the ELAC B6's in my room have a weak spot
 in their frequency response around 125Hz. If you're curious about their
 measurements you can read [Stereophile's test
 results](https://www.stereophile.com/content/elac-debut-b6-loudspeaker-measurements).
 
-[^elac]: There's [a newer generation of ELACs](https://www.amazon.com/ELAC-Uni-fi-Bookshelf-Speaker-Black/dp/B01CRYWVG2/?tag=xaprb-20) that are supposed to be even better, for a small uptick in price.
+[^elac]: There's [a newer generation of ELACs]({{< amz B01CRYWVG2 >}}) that are supposed to be even better, for a small uptick in price.
 [^airplay]: You can Option-Click on your speaker icon in your Mac's menu bar and select an AirPlay device for audio output.
 [^uncle]: I used to design and build speaker enclosures myself. I learned to appreciate fine audio from a relative who's made his living designing custom systems for wealthy people. I've listened to music on systems costing hundreds of thousands of dollars. I don't think the high price makes it more enjoyable.

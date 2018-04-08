@@ -7,12 +7,12 @@ categories:
   - Reviews
 ---
 <div id="attachment_1629" class="wp-caption alignleft" style="width: 190px">
-  <a href="http://www.amazon.com/Understanding-MySQL-Internals-Sasha-Pachev/dp/0596009577?tag=xaprb-20"><img src="/media/2010/02/understanding-mysql-internals.gif" alt="Understanding MySQL Internals" title="Understanding MySQL Internals" width="180" height="236" class="size-full wp-image-1629" /></a><p class="wp-caption-text">
+  <a href="{{< amz 0596009577 >}}"><img src="/media/2010/02/understanding-mysql-internals.gif" alt="Understanding MySQL Internals" title="Understanding MySQL Internals" width="180" height="236" class="size-full wp-image-1629" /></a><p class="wp-caption-text">
     Understanding MySQL Internals
   </p>
 </div>
 
-[Understanding MySQL Internals](http://www.amazon.com/Understanding-MySQL-Internals-Sasha-Pachev/dp/0596009577?tag=xaprb-20). By Sasha Pachev, O'Reilly 2007. Page count: about 227 pages. (Here's [a link to the publisher's site](http://oreilly.com/catalog/9780596009571)).
+[Understanding MySQL Internals]({{< amz 0596009577 >}}). By Sasha Pachev, O'Reilly 2007. Page count: about 227 pages. (Here's [a link to the publisher's site](http://oreilly.com/catalog/9780596009571)).
 
 I should have read this book a long time ago, and it's my loss that I didn't. Although the title makes it sound like it should only benefit those who'll be changing the MySQL server's own code, that's not true. To the contrary, at least parts of this book should be required reading for DBAs and developers who use MySQL, after they gain a moderate level of familiarity with how to use the server.
 

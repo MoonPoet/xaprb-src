@@ -7,12 +7,12 @@ categories:
   - Reviews
 ---
 <div class="wp-caption alignleft" style="width: 290px">
-  <a href="http://www.amazon.com/Ergohuman-Executive-Chair-With-Headrest/dp/B0014DPL9C?tag=xaprb-20"><img alt="Ergohuman Executive Chair With Headrest" src="http://ecx.images-amazon.com/images/I/417fbThbMhL._SL500_AA280_.jpg" title="ME7ERG" width="280" height="280" /></a><p class="wp-caption-text">
+  <a href="{{< amz  >}}"><img alt="Ergohuman Executive Chair With Headrest" src="http://ecx.images-amazon.com/images/I/417fbThbMhL._SL500_AA280_.jpg" title="ME7ERG" width="280" height="280" /></a><p class="wp-caption-text">
     Ergohuman Executive Chair With Headrest
   </p>
 </div>
 
-I've upgraded my office chair to the [Ergohuman Executive Chair With Headrest](http://www.amazon.com/Ergohuman-Executive-Chair-With-Headrest/dp/B0014DPL9C?tag=xaprb-20). I had a chair that was less adjustable and was leather, so in the warmer summer months it was not very pleasant to sit on.
+I've upgraded my office chair to the [Ergohuman Executive Chair With Headrest]({{< amz B0014DPL9C >}}). I had a chair that was less adjustable and was leather, so in the warmer summer months it was not very pleasant to sit on.
 
 So far I'm delighted. I'm 6-foot-4 (195cm) and this is one of the only chairs I've ever seen that seats my height comfortably, both in terms of seat height and in terms of being tall enough to relax back into (the headrest extends up high enough to support my head and neck nicely). The mesh keeps me nice and cool. The arm rests adjust out of my way if I want. There is plenty of adjustment, but not too much; it is a well-built chair, not a gadget.
 

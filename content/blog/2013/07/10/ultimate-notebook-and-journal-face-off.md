@@ -12,7 +12,7 @@ menu:
 ---
 If you're like me, you spend so much time typing on a computer that a good notebook or journal is one of life's finer pleasures. I've kept a diary of my personal life for close to 30 years now, and I have a shelf full of journals. I've found a great many that I enjoy writing in, and choosing a different one each time is part of the fun.
 
-TL;DR: The [Apica Premium C.D. Notebook](https://www.amazon.com/Apica-Premium-C-D-Notebook-Sheets/dp/B006ZTHFB2/?tag=xaprb-20) is everything. The [Quo Vadis Habana](http://www.amazon.com/gp/product/B0066NVC02/?tag=xaprb-20) is my previous pick, and I love them both.
+TL;DR: The [Apica Premium C.D. Notebook]({{< amz B006ZTHFB2 >}}) is everything. The [Quo Vadis Habana]({{< amz B0066NVC02 >}}) is my previous pick, and I love them both.
 
 You might also like:
 
@@ -33,7 +33,7 @@ Before I review any of the notebooks, let me explain what I'm looking for.
 
 ### The Perfect Notebook
 
-My quest for the Holy Grail of notebooks began innocently enough when I happened to read that [Kate Matsudaira](http://katemats.com/) is a notebook connoisseur and will only write on Semikolon Il Creativo notebooks with [Uchida Le Pen pens](http://www.amazon.com/gp/product/B004IMAQTG/?tag=xaprb-20).  Intrigued, I included one of each in my next batch of "stuff" from Amazon.com. I immediately fell in love with the pens, but the notebook was much larger than I expected it to be---far too large to be practical as I travel and carry it hither and yon.
+My quest for the Holy Grail of notebooks began innocently enough when I happened to read that [Kate Matsudaira](http://katemats.com/) is a notebook connoisseur and will only write on Semikolon Il Creativo notebooks with [Uchida Le Pen pens]({{< amz B004IMAQTG >}}).  Intrigued, I included one of each in my next batch of "stuff" from Amazon.com. I immediately fell in love with the pens, but the notebook was much larger than I expected it to be---far too large to be practical as I travel and carry it hither and yon.
 
 So what do I want?
 
@@ -46,7 +46,7 @@ So what do I want?
 *   The paper quality. As I said, I write on both sides. It needs to resist bleed-through and be smooth and strong.
 *   The ruling. I like ruled notebooks, but can do all right with blank. If there's ruling, it needs to be pretty narrow. Nothing wastes more paper and annoys me more than too-wide ruling. Any ruling also shouldn't force or encourage me to leave too much of a margin.
 *   The index, table of contents, helper charts, page numbers, and so on. Some of these things are wonderful in moderation; a table of contents and page numbers, for example, are a delight. I can quickly index a notebook after using it, and it becomes immensely more useful for reference. Do I need 12 pages of conversion tables and timezone maps? Not really.
-*   The bookmarks or page markers. I prefer a silken ribbon for journals, but for notebooks I actually prefer none; my favorite is [these magnetic owl page markers](http://www.amazon.com/gp/product/1593593422/?tag=xaprb-20).
+*   The bookmarks or page markers. I prefer a silken ribbon for journals, but for notebooks I actually prefer none; my favorite is [these magnetic owl page markers]({{< amz 1593593422 >}}).
 *   The design. This is the most subjective and intangible thing of all. The design needs to be professional, a little bit creative, and inspiring. It should make me feel like an artist as well as an engineer. If I may stereotype for a moment, the Germans perhaps err on the side of being too mechanical, the Swiss can sometimes feel as if everything is meant to be a coffee-table conversation piece, and the Americans can be deathly boring. I want something that makes me feel light and nimble, practical, yet ... a craftsman, somehow.
 
 Is that really so much to ask?
@@ -119,7 +119,7 @@ The paper is a bit coarse, almost ridged, and I am pretty sure that this texture
 
 This notebook is designed for notes, but I'll use it as a journal. I wonder if I'll write less about emotional things and dreams, and more about analytical things? 
 
-304 pages, 10 x 7.75 x 1.0 inches. Rule width: .375 inches. Bought at [Amazon](http://www.amazon.com/gp/product/B005DVEUDO/?tag=xaprb-20) for $14.97. 
+304 pages, 10 x 7.75 x 1.0 inches. Rule width: .375 inches. Bought at [Amazon]({{< amz B005DVEUDO >}}) for $14.97. 
 
 ### Quo Vadis Habana
 
@@ -140,9 +140,9 @@ All in all, a very nice notebook, and one of the top contenders for certain.
 > doesn't bleed through. It feels wonderful and writes beautifully.
 
 >> Note: I changed my mind, I found something with even better paper: the
->> [Apica Premium C.D. Notebook](https://www.amazon.com/Apica-Premium-C-D-Notebook-Sheets/dp/B006ZTHFB2/?tag=xaprb-20).
+>> [Apica Premium C.D. Notebook]({{< amz B006ZTHFB2 >}}).
 
-160 pages, 6.375 x 9.625 x .625 inches. Rule width: .222 inches. Bought at [Amazon](http://www.amazon.com/gp/product/B0066NVC02/?tag=xaprb-20) for
+160 pages, 6.375 x 9.625 x .625 inches. Rule width: .222 inches. Bought at [Amazon]({{< amz B0066NVC02 >}}) for
 $20.99. I've also bought in [blank (unlined) in bulk from Writers Bloc](http://www.shopwritersbloc.com/habana-journal-large-blank-raspberry.html).
 
 ### PaperBlanks journal
@@ -163,7 +163,7 @@ I wouldn't use these for note-taking. They're a little too bulky, the ruling is 
 
 This journal is certainly in the same class as the PaperBlanks journals. It's about the same size, and also has beautiful art on the cover; in this case, a Van Gogh. The paper is a little heavier, and there's no clasp to hold the cover shut. It has slightly fewer pages and is a little thinner. 
 
-192 pages, 9 x 7.5 x .75 inches. Rule width: .318 inches. Bought at [Amazon](http://www.amazon.com/Almond-Blossom-Journal-Notebook-Diary/dp/144130357X/?tag=xaprb-20) for $13.49. 
+192 pages, 9 x 7.5 x .75 inches. Rule width: .318 inches. Bought at [Amazon]({{< amz 144130357X >}}) for $13.49. 
 
 ### Mead Cambridge notebook
 
@@ -193,7 +193,7 @@ The journal opens absolutely flat, without a hint of resistance. This is the fla
 
 The cover is quite rigid, the corners are rounded, the paper is silky and smooth though perhaps a bit thin, and overall it feels really nice. The only points against it, as far as a notebook, are the ruling width and the stiff covers. It's also a little heavy, now that I think about it. Still, it'll easily be a great journal, and could be a very nice notebook too. 
 
-192 pages, 8.625 x 6.5 x .6875 inches. Rule width: .3125 inches. Bought at [Amazon](http://www.amazon.com/Studio-Oh-Deconstructed-Journal-Epoque/dp/B005K03NHW/?tag=xaprb-20) for $13.85; also available from Barnes & Noble. 
+192 pages, 8.625 x 6.5 x .6875 inches. Rule width: .3125 inches. Bought at [Amazon]({{< amz B005K03NHW >}}) for $13.85; also available from Barnes & Noble. 
 
 ### Whitelines Squared notebook
 
@@ -207,7 +207,7 @@ The downsides? The cover is rigid, and the corners are squared instead of rounde
 
 I'm going to have to say that a couple of the others are nicer, because of their binding and ruling with margins. 
 
-200 pages, 8.5 x 6 x .6875 inches. Rule width: .197 inches. Bought at [Amazon](http://www.amazon.com/gp/product/B0052XQDUG/?tag=xaprb-20) for $11.95. 
+200 pages, 8.5 x 6 x .6875 inches. Rule width: .197 inches. Bought at [Amazon]({{< amz B0052XQDUG >}}) for $11.95. 
 
 ### Clairefontaine notebook
 
@@ -221,7 +221,7 @@ The notebook is also a great size: not too thick, not too large (A5 again), easy
 
 Downside? There are no margins, and the ruling is wide for my taste. The binding doesn't open as flat as I'd like. Still, a very good choice for a notebook. 
 
-192 pages, 8.125 x 5.875 x .4375 inches. Rule width: .3125 inches. Bought at [Amazon](http://www.amazon.com/gp/product/B003JMZT98/?tag=xaprb-20) for $10.99. 
+192 pages, 8.125 x 5.875 x .4375 inches. Rule width: .3125 inches. Bought at [Amazon]({{< amz B003JMZT98 >}}) for $10.99. 
 
 ### Barnes & Noble journal refill
 
@@ -241,7 +241,7 @@ This Leuchtturm 1917 notebook has a very analytical, practical feel. It has some
 
 Other than the added touches such as page numbers and high-quality paper, you could easily mistake it for a Moleskine if you weren't a notebook snob. The cover is plain black, with a bit more flex than a Moleskine cover, rounded corners (and the pages are rounded too). As soon as you open it and examine it, though, you see why their motto is "details make all the difference." It's obviously a step up in quality from a Moleskine. For example, although the ruling is essentially the same in design and width, it's much lighter than the Moleskine's obtrusive, coarse rules. 
 
-249 pages, 5.75 x 8.25 x .6875 inches. Rule width: .236 inches. Bought at [Amazon](http://www.amazon.com/gp/product/B002CVAU1Y/?tag=xaprb-20) for $15.99. 
+249 pages, 5.75 x 8.25 x .6875 inches. Rule width: .236 inches. Bought at [Amazon]({{< amz B002CVAU1Y >}}) for $15.99. 
 
 ### Moleskine notebook
 
@@ -273,7 +273,7 @@ This is the small version of the large Il Creativo mentioned above. When I saw t
 
 I wanted to like it. But I just can't. I wish I'd been able to get a medium-sized one, but frankly I wouldn't have enjoyed it all that much either. Alas! 
 
-304 pages, 5.625 x 4.375 x 1 inch. Rule width: .375 inches. Bought at [Amazon](http://www.amazon.com/gp/product/B005DVEU1G/?tag=xaprb-20) for $8.37. 
+304 pages, 5.625 x 4.375 x 1 inch. Rule width: .375 inches. Bought at [Amazon]({{< amz B005DVEU1G >}}) for $8.37. 
 
 ### Small Chameleon Like notebook
 
@@ -340,7 +340,7 @@ I know some people who love these notebooks, but I haven't owned one myself:
 
 ![Maruman Mnemosyne Special Memo Notepad](/media/2013/07/maruman-mnemosyne-special-memo-notepad.jpg)
 
-You can find them on [Amazon](http://www.amazon.com/Maruman-Mnemosyne-Special-Memo-Notepad/dp/B001A1TO14/?tag=xaprb-20) and [JetPens](http://www.jetpens.com/Maruman-Mnemosyne-Special-Memo-Notepad-A5-5.8-X-8.3-7-mm-Rule-Divisions-24-Lines-X-80-Sheets/pd/4585).
+You can find them on [Amazon]({{< amz B001A1TO14 >}}) and [JetPens](http://www.jetpens.com/Maruman-Mnemosyne-Special-Memo-Notepad-A5-5.8-X-8.3-7-mm-Rule-Divisions-24-Lines-X-80-Sheets/pd/4585).
 
 ### The Winners
 
@@ -348,11 +348,11 @@ It depends.
 
 Do you want a journal? I think you can hardly go wrong with the Peter Pauper or the PaperBlanks. The Studio Oh! is a great choice too, especially because it's actually a nicer grade of book and is a little less pricey. It isn't as beautiful, though. On the larger side, the Markings leatherette is a hefty journal that will last a long time, though it's plain too. And if you want a journal that screams "Swiss watch designer's journal!" then maybe you'd like the Semikolon Il Creativo.
 
-Do you want a Moleskine? Then buy one. Do you want something like it but better quality? Then get the [Leuchtturm](http://www.amazon.com/gp/product/B002CVAU1Y/?tag=xaprb-20), hands down. It's easily the nicest thing in the Moleskine class. I also like the Clairefontaine a lot, and if you're looking for something a little different, you might like the Whitelines.
+Do you want a Moleskine? Then buy one. Do you want something like it but better quality? Then get the [Leuchtturm]({{< amz B002CVAU1Y >}}), hands down. It's easily the nicest thing in the Moleskine class. I also like the Clairefontaine a lot, and if you're looking for something a little different, you might like the Whitelines.
 
 Do you want a big, bulky, analytical notebook? That's the Semikolon Il Creativo for you again. Organize thyself!
 
-But if you're like me and you really want a compact, flexible, practical notebook that slips easily into a messenger bag, opens flat, has nice paper, is slim and inexpensive -- then I'm leaning towards recommending the [Quo Vadis Habana](http://www.amazon.com/gp/product/B0066NVC02/?tag=xaprb-20) or the Mead Cambridge Premium Notebook, depending on your taste. Note that I can't find the Cambridge online, but if you're near a Target it's probably easy to find. I might go back and buy a half dozen or so, just in case that turns out not to be true!
+But if you're like me and you really want a compact, flexible, practical notebook that slips easily into a messenger bag, opens flat, has nice paper, is slim and inexpensive -- then I'm leaning towards recommending the [Quo Vadis Habana]({{< amz B0066NVC02 >}}) or the Mead Cambridge Premium Notebook, depending on your taste. Note that I can't find the Cambridge online, but if you're near a Target it's probably easy to find. I might go back and buy a half dozen or so, just in case that turns out not to be true!
 
 > Update: alas, I can no longer find the Cambridge anywhere. So sad. I've been using the Quo Vadis exclusively for the last several books I've bought. I've switched from lined to blank and bought them in bulk from [Writers Bloc](http://www.shopwritersbloc.com/habana-journal-large-blank-raspberry.html).
 

@@ -18,7 +18,7 @@ desk, but they seem like abominations I would hate to use.
 
 As an alternative I won't regret because it's cheap and minimalistic, I've
 been using a simple but effective
-[adjustable laptop holder](http://www.amazon.com/dp/B004QXIFCC/?tag=xaprb-20)
+[adjustable laptop holder]({{< amz B004QXIFCC >}})
 for a few years. It's easy to place on a desktop or counter. At this point there
 are a few of them at work and one at home. I keep recommending them to friends
 so I might as well just post it here too.
@@ -31,9 +31,9 @@ I prefer the raspberry pink, obviously, but it also comes in black and a couple
 other colors if you don't like that. I'm also reasonably sure that I've bought a
 few different brands of similar items and they're all probably from the same
 original manufacturer. Here's [one alternative
-brand](http://www.amazon.com/gp/product/B00E6X7O5Q/?tag=xaprb-20) and here's
+brand]({{< amz B00E6X7O5Q >}}) and here's
 [another Furinno
-model](http://www.amazon.com/gp/product/B00HZT1WK6/?tag=xaprb-20).
+model]({{< amz B00HZT1WK6 >}}).
 
 I was worried at first that it wouldn't be solid enough. I hate when things
 vibrate around and jiggle. Interestingly, it works great for a laptop, though,
@@ -49,9 +49,9 @@ laptop to the same height as your monitor while placed on your desk, to use
 multiple monitors side by side.
 
 I haven't accessorized but I'm tempted to get one of these
-[mousepads](http://www.amazon.com/dp/B00K5WBH50/?tag=xaprb-20). I'm resisting.
+[mousepads]({{< amz B00K5WBH50 >}}). I'm resisting.
 
-Related: I also use a [lap desk](http://www.amazon.com/LapGear-Classic-Original-Lapdesk-45364/dp/B00FZM969E/?tag=xaprb-20)
+Related: I also use a [lap desk]({{< amz B00FZM969E >}})
 probably 2-3 hours per day for reading, writing, and sitting with a laptop. I
 prefer wooden ones with curved edges. Plastic ones warp and feel bad to rest my
 hands on. Here's the one I have.

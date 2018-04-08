@@ -7,12 +7,12 @@ categories:
   - Reviews
 ---
 <div id="attachment_1145" class="wp-caption alignleft" style="width: 250px">
-  <a href="http://www.amazon.com/MySQL-Administrators-Bible-Wiley/dp/0470416912?tag=xaprb-20"><img src="/media/2009/06/mysql-administrators-bible-240x300.jpg" alt="MySQL Administrator&#039;s Bible" title="MySQL Administrator&#039;s Bible" width="240" height="300" class="size-medium wp-image-1145" /></a><p class="wp-caption-text">
+  <a href="{{< amz 0470416912 >}}"><img src="/media/2009/06/mysql-administrators-bible-240x300.jpg" alt="MySQL Administrator&#039;s Bible" title="MySQL Administrator&#039;s Bible" width="240" height="300" class="size-medium wp-image-1145" /></a><p class="wp-caption-text">
     MySQL Administrator's Bible
   </p>
 </div>
 
-[MySQL Administrator's Bible](http://www.amazon.com/MySQL-Administrators-Bible-Wiley/dp/0470416912?tag=xaprb-20) by Sheeri K. Cabral and Keith Murphy, 2009. Page count: 800+ pages. (Here's a [link to the publisher's site](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470416912.html).)
+[MySQL Administrator's Bible]({{< amz 0470416912 >}}) by Sheeri K. Cabral and Keith Murphy, 2009. Page count: 800+ pages. (Here's a [link to the publisher's site](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470416912.html).)
 
 This book is a comprehensive reference guide to MySQL that's accessible to beginning DBAs or DBAs familiar with another database. It has enough detail to be a useful companion throughout a DBA's career. It also covers many related technologies, such as memcached, at a moderate-but-useful level of detail. This isn't exactly a how-to book, and it isn't exactly a reference manual; it's more of a blend of the two.
 

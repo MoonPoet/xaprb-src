@@ -7,14 +7,14 @@ categories:
   - Reviews
 ---
 <div id="attachment_1864" class="wp-caption alignleft" style="width: 190px">
-  <a href="http://www.amazon.com/Web-Operations-Keeping-Data-Time/dp/1449377440?tag=xaprb-20"><img src="/media/2010/05/web_operations.gif" alt="Web Operations" title="Web Operations" width="180" height="236" class="size-full wp-image-1864" /></a><p class="wp-caption-text">
+  <a href="{{< amz 1449377440 >}}"><img src="/media/2010/05/web_operations.gif" alt="Web Operations" title="Web Operations" width="180" height="236" class="size-full wp-image-1864" /></a><p class="wp-caption-text">
     Web Operations
   </p>
 </div>
 
-[Web Operations](http://www.amazon.com/Web-Operations-Keeping-Data-Time/dp/1449377440?tag=xaprb-20). By John Allspaw and Jesse Robbins, O'Reilly 2010. (Here's [a link to the publisher's site](http://oreilly.com/catalog/0636920000136)).
+[Web Operations]({{< amz 1449377440 >}}). By John Allspaw and Jesse Robbins, O'Reilly 2010. (Here's [a link to the publisher's site](http://oreilly.com/catalog/0636920000136)).
 
-This book is due out in about a month. It is part of O'Reilly's Beautiful series, which you might know through [Beautiful Code](http://www.amazon.com/Beautiful-Code-Leading-Programmers-Practice/dp/0596510047?tag=xaprb-20). This one's about web ops, of course. There are a dozen contributors, including some of my favorites such as Theo Schlossnagle, whose [Scalable Internet Architectures](http://www.amazon.com/Scalable-Internet-Architectures-Theo-Schlossnagle/dp/067232699X?tag=xaprb-20) is on my (quite short) list of [essential books](/blog/essential-books). And then there's a chapter from me.
+This book is due out in about a month. It is part of O'Reilly's Beautiful series, which you might know through [Beautiful Code]({{< amz 0596510047 >}}). This one's about web ops, of course. There are a dozen contributors, including some of my favorites such as Theo Schlossnagle, whose [Scalable Internet Architectures]({{< amz 067232699X >}}) is on my (quite short) list of [essential books](/blog/essential-books). And then there's a chapter from me.
 
 My chapter is 32 pages on choosing a relational database architecture for a web application, which of course is slanted towards MySQL, where my expertise lies. I do not discuss fads or cool new things; I write about what the majority of web applications truly need, and how that maps to choices in architecture and technology for the database backend. I focus a lot on how to build a database backend that supports the application's operational requirements, in keeping with the theme of the book. This is a much simpler topic than it's often made into. I hope you'll find it useful.
 

@@ -7,12 +7,12 @@ categories:
   - Reviews
 ---
 <div id="attachment_1235" class="wp-caption alignleft" style="width: 135px">
-  <a href="http://www.amazon.com/gp/product/1590597699/?tag=xaprb-20"><img src="/media/2009/08/beginning_database_design.gif" alt="Beginning Database Design: From Novice to Professional" title="Beginning Database Design: From Novice to Professional" width="125" height="164" class="size-full wp-image-1235" /></a><p class="wp-caption-text">
+  <a href="{{< amz 1590597699 >}}"><img src="/media/2009/08/beginning_database_design.gif" alt="Beginning Database Design: From Novice to Professional" title="Beginning Database Design: From Novice to Professional" width="125" height="164" class="size-full wp-image-1235" /></a><p class="wp-caption-text">
     Beginning Database Design: From Novice to Professional
   </p>
 </div>
 
-[Beginning Database Design: From Novice to Professional](http://www.amazon.com/gp/product/1590597699/?tag=xaprb-20). By Clare Churcher, Apress, 2007. Page count: 230 pages. (Here's [a link to the publisher's site](http://www.apress.com/book/view/9781590597699).)
+[Beginning Database Design: From Novice to Professional]({{< amz 1590597699 >}}). By Clare Churcher, Apress, 2007. Page count: 230 pages. (Here's [a link to the publisher's site](http://www.apress.com/book/view/9781590597699).)
 
 My wife bought a copy of this book, and recently I took it off her bookshelf to give it a read myself.
 

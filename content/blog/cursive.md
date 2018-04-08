@@ -231,7 +231,7 @@ it was nice.
 
 I looked on Amazon and picked out what seemed like a good value for starters:
 a $15 [Pilot fountain
-pen](https://www.amazon.com/gp/product/B00KRPFD96/?tag=xaprb-20). I didn't know
+pen]({{< amz B00KRPFD96 >}}). I didn't know
 anything about fountain pens. I wasn't even sure what to do for ink or how to
 take care of it.
 

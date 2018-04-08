@@ -14,7 +14,7 @@ I never thought I'd get a tablet, until my phone died and I got a Droid 2 as a r
 
 ### The Nook Color Hardware
 
-The Nook Color is a medium-sized Android tablet with a screen that's the same size as the [Samsung Galaxy Tab](http://www.amazon.com/Samsung-Galaxy-Tab-AT-T/dp/B004CYEQF0/?tag=xaprb-20). It's a perfect size for carrying around -- much better than iPads and Xooms and so on, which are just too big for my taste. This device literally fits in the pocket of my jeans ([specs](https://nookdeveloper.barnesandnoble.com/product/nook-color-specs.html)).
+The Nook Color is a medium-sized Android tablet with a screen that's the same size as the [Samsung Galaxy Tab]({{< amz B004CYEQF0 >}}). It's a perfect size for carrying around -- much better than iPads and Xooms and so on, which are just too big for my taste. This device literally fits in the pocket of my jeans ([specs](https://nookdeveloper.barnesandnoble.com/product/nook-color-specs.html)).
 
 The screen is amazing. It's super sharp. But the Nook Color doesn't have a microphone or a camera, and it doesn't have any phone service. This is fine. I don't want these items. I want a tablet to use primarily at home for consuming content such as blogs, books, newspapers, music, movies, and so on.
 

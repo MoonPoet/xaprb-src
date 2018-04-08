@@ -34,7 +34,7 @@ With that in mind, here's a rundown of pens I've used.
 
 ### Marvy (Uchida) Le Pen
 
-I was introduced to this Japanese pen by [Kate Matsudaira](http://katemats.com/) and have used it for years. It comes in a variety of colors and is inexpensive to [buy](http://www.amazon.com/Uchida-Pen-12-Color-Set/dp/B005987DYE/?tag=xaprb-20) in singles or bulk packs. It's also resold under various brands, such as in Michael's stores under the Recollections brand. (If that's not the same pen under a different brand it is a remarkable imitation.)
+I was introduced to this Japanese pen by [Kate Matsudaira](http://katemats.com/) and have used it for years. It comes in a variety of colors and is inexpensive to [buy]({{< amz B005987DYE >}}) in singles or bulk packs. It's also resold under various brands, such as in Michael's stores under the Recollections brand. (If that's not the same pen under a different brand it is a remarkable imitation.)
 
 ![Marvy Le Pen](/media/2015/03/le-pen.jpg)
 
@@ -52,7 +52,7 @@ Cons:
 
 ### Sakura Pigma Micron
 
-Another Japanese pen brand, these high-quality pens are great for writing, sketching, and precise drawing.  Sakura makes a variety of styles, colors, and thicknesses of pen. I am fond of about a 0.3mm tip. Here's a [six-pack in 0.20mm Black](http://www.amazon.com/Sakura-50034-6-Piece-Micron-005-0-20mm/dp/B00K3KRMFI/?tag=xaprb-20) that's a good value. You can also get variety packs---a single color in various widths; a single width in a variety of colors; combinations thereof. Here's [a 10-pack in a single color you can choose](http://www.amazon.com/Sakura-Pigma-Micron-0-20mm-Width/dp/B00C16VXXY/?tag=xaprb-20).
+Another Japanese pen brand, these high-quality pens are great for writing, sketching, and precise drawing.  Sakura makes a variety of styles, colors, and thicknesses of pen. I am fond of about a 0.3mm tip. Here's a [six-pack in 0.20mm Black]({{< amz B00K3KRMFI >}}) that's a good value. You can also get variety packs---a single color in various widths; a single width in a variety of colors; combinations thereof. Here's [a 10-pack in a single color you can choose]({{< amz B00C16VXXY >}}).
 
 ![Sakura Pigma Micron](/media/2015/03/sakura-pigma-micron.jpg)
 
@@ -69,7 +69,7 @@ Cons:
 * More expensive, though not much
 * You'll be more annoyed when you lose one of these
 
-Sakura also makes tons of other kinds of pens I also think are suitable for note-taking, such as the [Microperm](http://www.amazon.com/Sakura-34281-Microperm-Blister-Ultra-Fine/dp/B003IG9LCQ/?tag=xaprb-20). Many of these items will be available at your local office supply or craft supply store. Just don't go in there with too much time to spare. Who knows what you'll end up buying.
+Sakura also makes tons of other kinds of pens I also think are suitable for note-taking, such as the [Microperm]({{< amz B003IG9LCQ >}}). Many of these items will be available at your local office supply or craft supply store. Just don't go in there with too much time to spare. Who knows what you'll end up buying.
 
 ### Staedtler Pigment Liner
 
@@ -77,7 +77,7 @@ These premium liners are made in Germany and I love them. They come in various s
 
 ![Staedtler Pigment Liner](/media/2015/03/staedtler-pigment-liner.jpg)
 
-Staedtler also makes a related model, the [Triplus Fineliner](http://www.amazon.com/Triplus-Fineliner-Pens-Metal-Assorted/dp/B0007OEE7E/?tag=xaprb-20) pens, which I haven't tried yet, but they look really nice.
+Staedtler also makes a related model, the [Triplus Fineliner]({{< amz B0007OEE7E >}}) pens, which I haven't tried yet, but they look really nice.
 
 Pros:
 
@@ -95,7 +95,7 @@ Cons:
 Once you've picked up a pen like one of the above, you may be overcome with an
 irrational desire to do something with it, such as:
 
-* Practice Zentangling (have a [kit](http://www.amazon.com/Sakura-50011-11-Piece-Zentangle-Clamshell/dp/B00794AHLC/?tag=xaprb-20) maybe?)
+* Practice Zentangling (have a [kit]({{< amz B00794AHLC >}}) maybe?)
 * Study Spencerian penmanship
 * Draw something in the style of Art Deco blended with steampunk
 * Keep a diary

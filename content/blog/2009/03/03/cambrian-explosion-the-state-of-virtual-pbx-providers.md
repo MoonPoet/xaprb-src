@@ -80,6 +80,6 @@ I wish we could get one of these companies to partner with us and gather our req
 
 I'm sure this will all work out someday. But for right now, it feels like we're in the bad old days when every railroad in America had [different gauges](http://en.wikipedia.org/wiki/Rail_gauge), and freight had to be unloaded and transferred between railroads. Until rail was recognized as an industry that benefited from economies of scale and cooperation, things were pretty inefficient.
 
-Building virtual PBX as a utility service will remove a huge barrier to building companies such as ours, and a lot of good will come from that. A more connected world is a world with [more opportunities](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017922?tag=xaprb-20) for the individuals who are connecting.
+Building virtual PBX as a utility service will remove a huge barrier to building companies such as ours, and a lot of good will come from that. A more connected world is a world with [more opportunities]({{< amz 0316017922 >}}) for the individuals who are connecting.
 
 

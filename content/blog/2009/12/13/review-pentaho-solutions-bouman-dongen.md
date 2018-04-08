@@ -7,12 +7,12 @@ categories:
   - Reviews
 ---
 <div id="attachment_1477" class="wp-caption alignleft" style="width: 250px">
-  <a href="http://www.amazon.com/Pentaho-Solutions-Business-Intelligence-Warehousing/dp/0470484322?tag=xaprb-20"><img src="/media/2009/12/pentaho-solutions.jpg" alt="Pentaho Solutions" title="Pentaho Solutions" width="240" height="240" class="size-full wp-image-1477" /></a><p class="wp-caption-text">
+  <a href="{{< amz 0470484322 >}}"><img src="/media/2009/12/pentaho-solutions.jpg" alt="Pentaho Solutions" title="Pentaho Solutions" width="240" height="240" class="size-full wp-image-1477" /></a><p class="wp-caption-text">
     Pentaho Solutions
   </p>
 </div>
 
-[Pentaho Solutions](http://www.amazon.com/Pentaho-Solutions-Business-Intelligence-Warehousing/dp/0470484322?tag=xaprb-20), Business Intelligence and Data Warehousing with Pentaho and MySQL. By Roland Bouman and Jos van Dongen, Wiley 2009. Page count: about 570 pages. (Here's [a link to the publisher's site](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470484322.html).)
+[Pentaho Solutions]({{< amz 0470484322 >}}), Business Intelligence and Data Warehousing with Pentaho and MySQL. By Roland Bouman and Jos van Dongen, Wiley 2009. Page count: about 570 pages. (Here's [a link to the publisher's site](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470484322.html).)
 
 The book is big in part because it's about a GUI tool, so there are the requisite number of screenshots (but not too many). It is structured into four parts, each on a different topic.
 

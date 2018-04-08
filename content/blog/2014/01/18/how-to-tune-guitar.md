@@ -397,7 +397,7 @@ E       329.63              988.88
 
 The first thing to do is tune one of the strings to a reference pitch. After that, you'll tune all of the other strings relative to this first one. On the guitar, the most convenient reference pitch is A440, because the open A string is two octaves below at 110Hz.
 
-You'll need a good-quality [A440 tuning fork](http://www.amazon.com/Wittner-Tuning-Fork-In-A-440/dp/B001T21J80/?tag=xaprb-20). I prefer a Wittner for guitar tuning; it's a good-quality German brand that is compact, so it fits in your guitar case's pocket, and has a small notch behind the ball at the end of the stem, so it's easy to hold in your teeth if you prefer that.
+You'll need a good-quality [A440 tuning fork]({{< amz B001T21J80 >}}). I prefer a Wittner for guitar tuning; it's a good-quality German brand that is compact, so it fits in your guitar case's pocket, and has a small notch behind the ball at the end of the stem, so it's easy to hold in your teeth if you prefer that.
 
 ![Wittner A440 Tuning Fork](/media/2014/01/wittner-tuning-fork.jpg)
 
@@ -615,10 +615,10 @@ extending it. I have never tuned a concert harp, but I imagine it's more
 involved.
 
 Tangent: I first discovered the wire-strung harp in 1988, when I heard Patrick
-Ball's [first volume](http://www.amazon.com/Celtic-Harp-Vol-Turlough-OCarolan/dp/B0000007SD/?tag=xaprb-20) of [Turlough O'Carolan's music](http://en.wikipedia.org/wiki/Turlough_O'Carolan). If you have not
+Ball's [first volume]({{< amz B0000007SD >}}) of [Turlough O'Carolan's music](http://en.wikipedia.org/wiki/Turlough_O'Carolan). If you have not
 listened to these recordings, do yourself a favor and at least preview them on
 Amazon. All these years later, I still listen to Patrick Ball's music often.
-His newest recording, [The Wood of Morois](http://www.amazon.com/Wood-Morois-Patrick-Ball/dp/B004FA20T0/?tag=xaprb-20), is just stunning.
+His newest recording, [The Wood of Morois]({{< amz B004FA20T0 >}}), is just stunning.
 I corresponded with Patrick while planning to build my harp, and he put me in
 touch with master harpmaker [Jay Witcher](http://www.witcherharps.com/), and his own role model, Ann
 Heymann, who was responsible for reinventing the lost techniques of playing
@@ -710,7 +710,7 @@ effect.
 You might think that this inharmonicity is a bad thing, but it's not.
 Common tones with a great deal of inharmonicity are bells (which often have so much inharmonicity that you can hear the pitches of their partials are too high) and various types of chimes. I keep a little "zenergy" chime near my morning meditation table because its bright tones focus my attention. I haven't analyzed its spectrum, but because it is made with thick bars of aluminum, I'm willing to bet that it has partials that are wildly inharmonic. Yet it sounds pure and clear.
 
-[![Woodstock Percussion ZENERGY3 Zenergy Chime](/media/2014/01/zenergy.jpg)](http://www.amazon.com/Woodstock-Percussion-ZENERGY3-Zenergy-Instrument/dp/B0000775FZ/?tag=xaprb-20)
+[![Woodstock Percussion ZENERGY3 Zenergy Chime](/media/2014/01/zenergy.jpg)]({{< amz B0000775FZ >}})
 
 Much of the richness and liveliness of a string's sound is precisely because of the
 "stretched" overtones. Many people compare Patrick Ball's brass-strung wire harp to the sound of bells, and say it's "pure." It may sound pure, but pure-sounding is not simple-sounding. Its tones are complex and highly inharmonic, which is why it sounds like a bell.
@@ -733,7 +733,7 @@ It's often very helpful to mute strings while you're tuning other strings. The r
 
 When tuning the guitar, this generally isn't much of a problem. However, be careful that when you tune the low E and A strings you don't get distracted by vibrations from the high E string.
 
-When tuning other instruments such as a hammered dulcimer or harp, [small felt or rubber wedges](http://www.amazon.com/Rubber-Mutes-Piano-Tuning-Assortment/dp/B006RE74WA/?tag=xaprb-20) (with wire handles if possible) are invaluable. If you don't have these, you can use small loops of cloth.
+When tuning other instruments such as a hammered dulcimer or harp, [small felt or rubber wedges]({{< amz B006RE74WA >}}) (with wire handles if possible) are invaluable. If you don't have these, you can use small loops of cloth.
 
 In addition to distraction from sympathetic vibrations, strings can beat alone, when no other note is sounding. This is called a false beat. It's usually caused by a flaw in the string itself, such as an imperfection in the wire or a spot of rust. This is a more difficult problem, because you can't just make it go away. Instead, you will often have to nudge the tuning around a little here, a little there, to make it sound the best you can overall, given that there will be spurious beats no matter what. False beats will challenge your ear greatly, too.
 
@@ -783,7 +783,7 @@ You can find a little bit of information at various places online. One site with
 
 In this post I discussed the equally-tempered tuning, but there are many others. The study of them and their math, and the cultures and musical histories related to them, is fascinating. Next time you hear bagpipes, or a non-Western instrument, pay attention to the tuning. Is it tempered? Are there perfect intervals other than the octave? Which ones?
 
-Listening to windchimes is another interesting exercise. Are the chimes harmonic or do they have inharmonicity? What scales and tunings do they use? What are the effects? [Woodstock](http://www.amazon.com/Woodstock-Magical-Mystery-55-Inch-Odyssey/dp/B00BD8EM48/?tag=xaprb-20) chimes use many unique scales and tunings. Many of their chimes combine notes in complex ways that result in no beating between some or all of the tones. [Music of the Spheres](http://www.amazon.com/Music-Sphere-Pentatonic-Chime-PB/dp/B0007QS6YO/?tag=xaprb-20) also makes stunning chimes in a variety of [scales and tunings](https://musicofspheres.com/products/music_chart.php).
+Listening to windchimes is another interesting exercise. Are the chimes harmonic or do they have inharmonicity? What scales and tunings do they use? What are the effects? [Woodstock]({{< amz B00BD8EM48 >}}) chimes use many unique scales and tunings. Many of their chimes combine notes in complex ways that result in no beating between some or all of the tones. [Music of the Spheres]({{< amz B0007QS6YO >}}) also makes stunning chimes in a variety of [scales and tunings](https://musicofspheres.com/products/music_chart.php).
 
 As I mentioned, spreadsheets can be very helpful in computing the relationships between various notes and their overtones. I've made a small [online spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0AqLZaBImC-JLdFp0RnNpY2JPcWlPdnNQXzkyQ2hyb1E&usp=sharing) that contains some of the computations I used to produce this blog post.
 
