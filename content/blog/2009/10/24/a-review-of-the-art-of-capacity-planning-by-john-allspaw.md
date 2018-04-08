@@ -13,7 +13,7 @@ categories:
   </p>
 </div>
 
-[The Art of Capacity Planning](http://www.amazon.com/Art-Capacity-Planning-Scaling-Resources/dp/0596518579/?tag=xaprb-20). By John Allspaw, O'Reilly 2008. Page count: 130 pages. (Here's [a link to the publisher's site](http://oreilly.com/catalog/9780596518585).)
+[The Art of Capacity Planning]({{< amz 0596518579 >}}). By John Allspaw, O'Reilly 2008. Page count: 130 pages. (Here's [a link to the publisher's site](http://oreilly.com/catalog/9780596518585).)
 
 This is an outstanding book. As far as I know Ewen Fortune was the first Perconian to read it, and it's been spreading amongst us since then. I got my copy last week, and read it last night when I couldn't sleep for some reason. It took me about 90 minutes to read.
 

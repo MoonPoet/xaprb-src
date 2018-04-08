@@ -253,7 +253,7 @@ Ah, Moleskine, how we love to love you and pay a premium for you. Yet you're so.
 
 Bottom line: Moleskine notebooks are functional, with a nice binding, but you can get a much better notebook for less.
 
-240 pages, 8.25 x 5.25 x .625 inches. Rule width: .236 inches. Bought at [Amazon](http://www.amazon.com/Moleskine-Classic-Cover-Large-Notebook/dp/8883701143/?tag=xaprb-20) for $15.41. 
+240 pages, 8.25 x 5.25 x .625 inches. Rule width: .236 inches. Bought at [Amazon]({{< amz 8883701143 >}}) for $15.41. 
 
 ### Chameleon Like medium notebook
 

@@ -12,7 +12,7 @@ image: /media/2014/05/horse-race.jpg
 
 Once upon a time I managed several teams of consultants. At a certain stage of the organization's growth, we wanted to achieve a higher billable-time utilization more easily, and we wanted more structure and process.
 
-Cary Millsap, about whom I have written quite a bit elsewhere on this blog, suggested that I might profit from reading [*The Goal*](http://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951/?tag=xaprb-20) by Eliyahu Goldratt. I will let history be the judge of the outcome, but from my perspective, this was revolutionary for me. It is a clear watershed moment in my memory: I lived life one way and saw things through one lens before, and afterwards everything was different.
+Cary Millsap, about whom I have written quite a bit elsewhere on this blog, suggested that I might profit from reading [*The Goal*]({{< amz 0884271951 >}}) by Eliyahu Goldratt. I will let history be the judge of the outcome, but from my perspective, this was revolutionary for me. It is a clear watershed moment in my memory: I lived life one way and saw things through one lens before, and afterwards everything was different.
 
 ![Horse Race](/media/2014/05/horse-race.jpg)
 
@@ -20,7 +20,7 @@ Cary Millsap, about whom I have written quite a bit elsewhere on this blog, sugg
 
 *The Goal* helped me relate what I had learned about performance in the computer context --- queueing theory, system optimization, computer architecture, and so on --- to organizations. It taught me that, at least in some senses, humans and their interactions form systems that obey fundamentally the same laws as computer components. This is not to dehumanize people and treat them as components. Far from it: *The Goal* helped me to organize my thoughts and knowledge about computers by giving me human analogies. It helped me deepen and strengthen my intuition about how things work.
 
-I will summarize some of the main points of *The Goal* in this article, but I encourage you to read the book. It is a parable in the form of a novel, similar in some ways to Daniel Quinn's [*Ishmael*](http://www.amazon.com/Ishmael-Adventure-Spirit-Daniel-Quinn/dp/0553375407/?tag=xaprb-20) or Dan Millman's [*Way Of The Peaceful Warrior*](http://www.amazon.com/Way-Peaceful-Warrior-Changes-Lives/dp/1932073205/?tag=xaprb-20).
+I will summarize some of the main points of *The Goal* in this article, but I encourage you to read the book. It is a parable in the form of a novel, similar in some ways to Daniel Quinn's [*Ishmael*]({{< amz 0553375407 >}}) or Dan Millman's [*Way Of The Peaceful Warrior*]({{< amz 1932073205 >}}).
 
 ### Background
 
@@ -111,7 +111,7 @@ One of the clearest problems was that I was a huge constraint myself. I was depe
 
 ![Dependencies][dependencies]
 
-Another major theme that jumped out at me was the ways in which the lack of process was causing problems with inbound work, inventory, and throughput. Lack of process caused a lot of variation in work, and lack of knowledge-sharing caused dependencies amongst people, projects, and teams. Lack of process was either at the root of problems, or intimately involved in them. As I recall, I did not identify a single constraint that could not be improved by better and more consistent processes. For readers who are interested in this line of thought, I can suggest the book [*The E-Myth Revisited*](http://www.amazon.com/E-Myth-Revisited-Small-Businesses-About/dp/0887307280/?tag=xaprb-20) by Michael Gerber.
+Another major theme that jumped out at me was the ways in which the lack of process was causing problems with inbound work, inventory, and throughput. Lack of process caused a lot of variation in work, and lack of knowledge-sharing caused dependencies amongst people, projects, and teams. Lack of process was either at the root of problems, or intimately involved in them. As I recall, I did not identify a single constraint that could not be improved by better and more consistent processes. For readers who are interested in this line of thought, I can suggest the book [*The E-Myth Revisited*]({{< amz 0887307280 >}}) by Michael Gerber.
 
 ### Conclusion
 

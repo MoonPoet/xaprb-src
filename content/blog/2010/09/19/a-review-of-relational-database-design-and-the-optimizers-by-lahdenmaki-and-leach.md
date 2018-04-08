@@ -9,7 +9,7 @@ tags:
   - PostgreSQL
 ---
 
-[Relational Database Index Design and the Optimizers](http://www.amazon.com/Relational-Database-Index-Design-Optimizers/dp/0471719994/?tag=xaprb-20). By Tapio Lahdenmaki and Mike Leach, Wiley 2005.
+[Relational Database Index Design and the Optimizers]({{< amz 0471719994 >}}). By Tapio Lahdenmaki and Mike Leach, Wiley 2005.
 
 I picked this book up on the advice of an Oracle expert, and after one of my colleagues had read it and mentioned it to me. The focus is on how to design indexes that will produce the best performance for various types of queries. It goes into quite a bit of detail on how databases execute specific types of queries, including sort-merge joins and multiple index access, and develops a generic cost model that can be used to produce a quick upper-bound estimate (QUBE) for the execution time of a query. The book focuses on DB2, Oracle, and SQL Server, but applies equally well to MySQL and PostgreSQL.[^1] I learned a lot from this book, and will add it to my list of essential books.
 

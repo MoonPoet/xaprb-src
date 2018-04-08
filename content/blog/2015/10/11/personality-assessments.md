@@ -216,7 +216,7 @@ of worship, their types of action, the kinds of foods they eat, and so on:
 > when *tamas* is the ruling trait.
 
 This excerpt is from [Stephen Mitchell's wonderful new translation of the
-Bhagavad-Gita](http://www.amazon.com/Bhagavad-Gita-Translation-Stephen-Mitchell/dp/0609810340/?tag=xaprb-20).
+Bhagavad-Gita]({{< amz 0609810340 >}}).
 
 ### Conclusions
 

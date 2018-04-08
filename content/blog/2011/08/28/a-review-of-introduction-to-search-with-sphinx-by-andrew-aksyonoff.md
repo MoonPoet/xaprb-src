@@ -11,7 +11,7 @@ categories:
   </p>
 </div>
 
-[Introduction to Search with Sphinx](http://www.amazon.com/Introduction-Search-Sphinx-installation-relevance/dp/0596809557/?tag=xaprb-20) by Andrew Aksyonoff, O'Reilly Media 2011. About 146 pages. ([Here's a link to the publisher's page.](http://oreilly.com/catalog/9780596809539))
+[Introduction to Search with Sphinx]({{< amz 0596809557 >}}) by Andrew Aksyonoff, O'Reilly Media 2011. About 146 pages. ([Here's a link to the publisher's page.](http://oreilly.com/catalog/9780596809539))
 
 This is an engaging short introduction to Sphinx. At 146 pages, you shouldn't expect it to go into every detail, and it doesn't. There are major topics that it omits entirely or mentions only tangentially, such as distributed searching across a cluster of machines, real-time updating of indexes and attributes, and so on. But although the book doesn't boil the ocean, it does a great job at covering an introductory subset of Sphinx. It's just the book you need to get rid of MyISAM full-text indexes and return MySQL to proper performance again.
 

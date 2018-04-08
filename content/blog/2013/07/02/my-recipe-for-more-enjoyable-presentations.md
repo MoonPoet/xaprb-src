@@ -9,7 +9,7 @@ Since I started making my presentations more beautiful, people have often asked 
 
 First, realize that it's not about you. It's about your audience. Now, get *and read* a few good books on presentations. Your presentations, and your presentation skills, need to be good. You can't just make things beautiful to compensate for badness in other areas. This is something I'm always working on. (On the other hand, many a great presenter has doomed him/herself with awful slides.)
 
-My list of recommended books includes those from Nancy Duarte, especially [Slide:ology](http://www.amazon.com/slide-ology-Science-Creating-Presentations/dp/0596522347/?tag=xaprb-20) and [Resonate](http://www.amazon.com/Resonate-Present-Stories-Transform-Audiences/dp/0470632011/?tag=xaprb-20). I have also found [these](http://www.amazon.com/TJ-Walkers-Secret-Foolproof-Presentations/dp/1929774885/?tag=xaprb-20) [books](http://www.amazon.com/Confessions-Public-Speaker-English/dp/1449301959/?tag=xaprb-20) really helpful. Some of these I found in the airport, of all places.
+My list of recommended books includes those from Nancy Duarte, especially [Slide:ology]({{< amz 0596522347 >}}) and [Resonate]({{< amz 0470632011 >}}). I have also found [these]({{< amz 1929774885 >}}) [books]({{< amz 1449301959 >}}) really helpful. Some of these I found in the airport, of all places.
 
 Second, develop great content, and practice it. See the books above.
 

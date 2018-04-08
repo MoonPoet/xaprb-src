@@ -8,9 +8,9 @@ categories:
 tags:
   - PostgreSQL
 ---
-[<img src="/media/2011/06/postgreql-administration-cookbook.jpg" alt="" title="postgreql-administration-cookbook" width="200" height="247" class="alignleft size-full wp-image-2351" />](http://www.amazon.com/PostgreSQL-Admin-Cookbook-Simon-Riggs/dp/1849510288/?tag=xaprb-20)
+[<img src="/media/2011/06/postgreql-administration-cookbook.jpg" alt="" title="postgreql-administration-cookbook" width="200" height="247" class="alignleft size-full wp-image-2351" />]({{< amz 1849510288 >}})
 
-[PostgreSQL 9 Administration Cookbook](http://www.amazon.com/PostgreSQL-Admin-Cookbook-Simon-Riggs/dp/1849510288/?tag=xaprb-20). By Simon Riggs and Hannu Krosing, Packt, 2010. Approximately 330 pages.
+[PostgreSQL 9 Administration Cookbook]({{< amz 1849510288 >}}). By Simon Riggs and Hannu Krosing, Packt, 2010. Approximately 330 pages.
 
 This is a good book for PostgreSQL database administrators to pick up, especially if you're new to PostgreSQL but familiar with another system such as Oracle, SQL Server, or MySQL. It has more than 80 "recipes" that range from quick tips to moderately detailed discussion of how to accomplish specific tasks. The chapters and recipes are well organized, and you can either read the book from start to finish or jump to a specific recipe for quick help.
 

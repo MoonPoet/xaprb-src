@@ -32,7 +32,7 @@ things I'm currently working on in my business right now.
 ### Case #1: SalesForce and Cold Calling 2.0
 
 Aaron Ross has a bestselling book called [Predictable
-Revenue](http://www.amazon.com/Predictable-Revenue-Business-Practices-Salesforce-com/dp/0984380213/?tag=xaprb-20) in which he
+Revenue]({{< amz 0984380213 >}}) in which he
 declares the death and obsolescence of salespeople making cold calls.
 
 > I define a cold call as "calling someone who doesn't know you and isn't

@@ -18,7 +18,7 @@ my life. Here are four books whose wisdom I treasure.
 
 ### Zen Mind, Beginner's Mind
 
-[Zen Mind, Beginner's Mind](https://www.amazon.com/Zen-Mind-Beginners-Informal-Meditation/dp/1590308492/?tag=xaprb-220) by Shunryu Suzuki is a collection of informal talks on mindfulness meditation as given to his students. Arranged into three sections, each lecture is from one to several pages long. The voice of Suzuki Roshi springs off the page, lively, humorous, gentle. Reading this book feels like having a conversation with a very good friend who gently explains, in immensely lucid terms, how simple the solution to every problem is and how to practice.
+[Zen Mind, Beginner's Mind]({{< amz 1590308492 >}}) by Shunryu Suzuki is a collection of informal talks on mindfulness meditation as given to his students. Arranged into three sections, each lecture is from one to several pages long. The voice of Suzuki Roshi springs off the page, lively, humorous, gentle. Reading this book feels like having a conversation with a very good friend who gently explains, in immensely lucid terms, how simple the solution to every problem is and how to practice.
 
 ### Wherever You Go, There You Are
 
@@ -33,7 +33,7 @@ about the *how*.
 
 ### Walden
 
-[Walden](https://www.amazon.com/Walden-Woods-Henry-David-Thoreau/dp/1546561129/?tag=xaprb-20), by
+[Walden]({{< amz 1546561129 >}}), by
 Henry David Thoreau, is the American classic on what it means to be alive.
 Although not really a book about mindfulness, it is nonetheless woven through
 with Henry David's delightful experiences with mindfulness as he simply "enjoyed
@@ -44,7 +44,7 @@ craft, which can give an extra dimension to the experience of reading it.
 
 ### Tao-Te-Ching
 
-[Tao-Te-Ching](https://www.amazon.com/Tao-Te-Ching-Perennial-Classics/dp/0061142662/?tag=xaprb-20), by
+[Tao-Te-Ching]({{< amz 0061142662 >}}), by
 Lao-Tzu and in a new translation by Stephen Mitchell, is a gift to humankind as significant
 as the Sermon on the Mount. Again, not strictly about mindfulness or
 how to practice, but the short chapters are as rich as any Zen koan. The

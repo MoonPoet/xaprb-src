@@ -127,6 +127,6 @@ technology and medicine?
 Recommended reading:
 
 * Viktor Frankl, [Man's Search For Meaning](http://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/080701429X?tag=xaprb-20)
-* Don Miguel Ruiz, [The Four Agreements](http://www.amazon.com/Four-Agreements-Practical-Personal-Freedom/dp/1878424319/?tag=xaprb-20)
+* Don Miguel Ruiz, [The Four Agreements]({{< amz 1878424319 >}})
 
 

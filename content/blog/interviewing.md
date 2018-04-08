@@ -127,13 +127,13 @@ engaged. Just _listening_.
 
 If you're interested in books that can help you improve your hiring process, I'd
 suggest taking a look at
-[Topgrading](https://www.amazon.com/Topgrading-3rd-Promoting-Turbocharges-Performance/dp/1591845262/?tag=xaprb-20)
+[Topgrading]({{< amz 1591845262 >}})
 by Brad Smart, or
-[Who](https://www.amazon.com/Who-Geoff-Smart/dp/0345504194/?tag=xaprb-20) by
+[Who]({{< amz 0345504194 >}}) by
 Geoff Smart. I've read a _lot_ of books on interviewing and hiring, and although
 I don't fully conform to their advice, their books are the closest published
 materials I've found to the hiring process my CEO coach and I have developed.
 Many other books are written by professional recruiters and overlook the fact
 that their audience isn't recruiters, and their advice doesn't work for
 non-recruiters. I would include in this category the book [Hire With Your
-Head](https://www.amazon.com/Hire-Your-Head-Performance-Based-Hiring/dp/0470128356/?tag=xaprb-20).
+Head]({{< amz 0470128356 >}}).

@@ -8,7 +8,7 @@ categories:
   - Reviews
   - Web
 ---
-I bought a [Barnes and Noble Nook Color](http://www.amazon.com/Barnes-Noble-Color-eBook-Tablet/dp/1400532655/?tag=xaprb-20) e-book reader and ripped out the Nook software, replacing it with the [CyanogenMod](http://www.cyanogenmod.com/) distribution of the Android OS. It's really, really nice hardware, and CyanogenMod (CM) is really, really nice software. I love them both, and my regular readers will remember that I'm *not a gadget guy*. Read on for more.
+I bought a [Barnes and Noble Nook Color]({{< amz 1400532655 >}}) e-book reader and ripped out the Nook software, replacing it with the [CyanogenMod](http://www.cyanogenmod.com/) distribution of the Android OS. It's really, really nice hardware, and CyanogenMod (CM) is really, really nice software. I love them both, and my regular readers will remember that I'm *not a gadget guy*. Read on for more.
 
 I never thought I'd get a tablet, until my phone died and I got a Droid 2 as a replacement. With all those gadgets, I just started to find myself using my phone for reading my RSS feeds and so on -- but hating how small the screen was. I started to think again about a tablet after experiencing how handy the smartphone's extra features are.
 

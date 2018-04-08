@@ -7,7 +7,7 @@ categories:
   - Databases
 ---
 
-[CouchDB, the Definitive Guide](http://www.amazon.com/CouchDB-Definitive-Guide-Relax-Animal/dp/0596155891/?tag=xaprb-20). By J. Chris Anderson, Jan Lehnardt, and Noah Slater, O'Reilly 2010. About 260 pages.
+[CouchDB, the Definitive Guide]({{< amz 0596155891 >}}). By J. Chris Anderson, Jan Lehnardt, and Noah Slater, O'Reilly 2010. About 260 pages.
 
 This is a good introduction to CouchDB. I would like more information about server internals from a book titled "definitive guide." But it orients the reader well and shows CouchDB's strengths and use cases clearly. The writing is straightforward and well organized. I think it does a great job at helping the reader see the possibilities and the elegance inherent to the data model and conventions built into CouchDB. I ended up feeling very enthusiastic about CouchDB.
 

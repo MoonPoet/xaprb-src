@@ -49,8 +49,8 @@ Meditation, for me, is hyper-awareness and focus on the present moment. The fami
 
 I've learned meditation by doing it, but I've also benefited from reading many books. If I were to start over from scratch, I think I would only read two:
 
-1. [Wherever You Go, There You Are: Mindfulness Meditation in Everyday Life, by Jon Kabat-Zinn](https://www.amazon.com/Wherever-You-There-Are-Mindfulness/dp/1401307787/?tag=xaprb-20).
-2. [Zen Mind, Beginner's Mind: Informal Talks on Zen Meditation and Practice, by Shunryu Suzuki](https://www.amazon.com/Zen-Mind-Beginners-Informal-Meditation/dp/1590308492/?tag=xaprb-20).
+1. [Wherever You Go, There You Are: Mindfulness Meditation in Everyday Life, by Jon Kabat-Zinn]({{< amz 1401307787 >}}).
+2. [Zen Mind, Beginner's Mind: Informal Talks on Zen Meditation and Practice, by Shunryu Suzuki]({{< amz 1590308492 >}}).
 
 I hope these thoughts are helpful to you.
 
