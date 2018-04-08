@@ -87,7 +87,7 @@ It turns out things will sometimes do much better if transactions aren't committ
 
 ### A scary possibility
 
-I want to discuss an alternate outcome here. Imagine the query is smart enough to seek before scanning, but isn't smart enough to recognize that the first row it finds to satisfy the `WHERE` clause actually has to be the minimum value for the clustered index in the rest of the table. In this case, the query would continue scanning to the end of the table, and conclude the obvious: the first row it found in step 2 is the minimum. In general, this is no worse than scanning from the beginning every time. In either case, the query would be scanning, on average, half the table (ignoring table shrinkage due to archiving). That is, it would scan `(n * (n/2)) - n` rows, which is O(n<sup>2</sup>) -- too slow.
+I want to discuss an alternate outcome here. Imagine the query is smart enough to seek before scanning, but isn't smart enough to recognize that the first row it finds to satisfy the `WHERE` clause actually has to be the minimum value for the clustered index in the rest of the table. In this case, the query would continue scanning to the end of the table, and conclude the obvious: the first row it found in step 2 is the minimum. In general, this is no worse than scanning from the beginning every time. In either case, the query would be scanning, on average, half the table (ignoring table shrinkage due to archiving). That is, it would scan \\((n (n/2)) - n\\) rows, which is \\(O(n^2)\\) --- too slow.
 
 Though this scenario is no worse in the general case, in the specific case for which I'm writing my archiving queries, it would be worst-case. I want my queries to pop the first row off the table; if the hypothetical "stupid" query insisted on scanning through the rest of the table, this would be a disaster. Not only would it be scanning, but it'd be starting the scan at the very first row.
 
@@ -111,7 +111,7 @@ No dice. This time, the query plan said it would use the clustered index and the
 
 Why isn't it smart enough to scan the clustered index and stop at the first row that satisfies, which is guaranteed to be the minimum? I think the answer might be that InnoDB is the only storage engine that even *has* a clustered index, and the optimizer isn't engine-specific, so it only uses optimizations that would apply to all storage engines.
 
-The good news is, there's a way to get around these n<sup>2</sup> performance penalties! Since *I* know the first row it finds is the one it wants, even though *it* doesn't know that, I can tell it to scan the clustered index and stop after one row. Here's the query:
+The good news is, there's a way to get around these \\(n^2\\) performance penalties! Since *I* know the first row it finds is the one it wants, even though *it* doesn't know that, I can tell it to scan the clustered index and stop after one row. Here's the query:
 
 <pre>select id from table
 where name = 'Xaprb' limit 1;</pre>

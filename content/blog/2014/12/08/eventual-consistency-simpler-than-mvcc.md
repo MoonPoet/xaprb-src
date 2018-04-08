@@ -111,7 +111,7 @@ It works a little like this:
 	old row versions until they are no longer needed.
 3. Other isolation levels, such as READ COMMITTED, are "bad." Because they don't
 	protect you, the developer, from the complexity of the underlying
-	implementation. And they don't allow you a true ACID experience.<sup>1</sup> A true ACID
+	implementation. And they don't allow you a true ACID experience.[^1] A true ACID
 	experience is about Atomicity, Consistency, Isolation, and
 	Durability.
 4. Back to REPEATABLE READ, the only isolation level that is approved by the
@@ -136,7 +136,7 @@ to look up the definitions myself every single time. And then I always
 wind up asking myself, "what's the difference between Consistency and
 Isolation again?" Because the definitions seem like each one is halfway about the
 other, and there's no consistent way to think about them in isolation from each
-other.<sup>2</sup>
+other.[^2]
 
 Next, isolation levels. Every database implements them differently. There's a
 lot of disagreement about the right way to implement each of the isolation
@@ -146,7 +146,7 @@ opinionated, by contrast. Here's what
 [PostgreSQL says](http://www.postgresql.org/docs/9.3/static/transaction-iso.html) (emphasis mine):
 
 > The reason that PostgreSQL only provides three isolation levels is that this
-> is *the only sensible way*<sup>3</sup> to map the standard isolation levels to the
+> is *the only sensible way*[^3] to map the standard isolation levels to the
 > multiversion concurrency control architecture.
 
 And MySQL, [via InnoDB](http://dev.mysql.com/doc/refman/5.6/en/set-transaction.html):
@@ -381,13 +381,9 @@ Further reading:
 
 Notes:
 
-1. If you don't [tweet](//twitter.com/xaprb) me puns and acid-cat meme pictures about this paragraph, I shall be disappointed in you.
-2. Pun intended.
-3. Also note that PostgreSQL used to provide only *two* isolation
-	levels, and the documentation used to make the same comment about it being
-	the only sensible thing to do. It's not quite clear to me whether this is
-	meant to imply that it's the only sensible way to implement MVCC, or the only
-	sensible way to implement PostgreSQL's MVCC.
+[^1]: If you don't [tweet](//twitter.com/xaprb) me puns and acid-cat meme pictures about this paragraph, I shall be disappointed in you.
+[^2]: Pun intended.
+[^3]: Also note that PostgreSQL used to provide only *two* isolation levels, and the documentation used to make the same comment about it being the only sensible thing to do. It's not quite clear to me whether this is meant to imply that it's the only sensible way to implement MVCC, or the only sensible way to implement PostgreSQL's MVCC.
 
 
 Pic credits:

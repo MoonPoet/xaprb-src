@@ -30,7 +30,7 @@ Let's see a feature comparison. I've chosen features that were promoted in the t
 | Requires an agent on monitored servers                                                   | <input type="checkbox" />             | <input type="checkbox" checked="1" /> |
 | Requires MySQL proxy with extra scripts loaded                                           | <input type="checkbox" />             | <input type="checkbox" checked="1" /> |
 | Relays queries through a single-threaded proxy                                           | <input type="checkbox" />             | <input type="checkbox" checked="1" /> |
-| Requires changing where your application connects<sup>[<a href="#footnote1">1</a>]</sup> | <input type="checkbox" />             | <input type="checkbox" checked="1" /> |
+| Requires changing where your application connects | <input type="checkbox" />             | <input type="checkbox" checked="1" /> |
 | Captures total execution time of all queries                                             | <input type="checkbox" checked="1" /> | <input type="checkbox" checked="1" /> |
 | Measures query execution time in microseconds                                            | <input type="checkbox" checked="1" /> | <input type="checkbox" checked="1" /> |
 | Permits sampling of only a fraction of sessions                                          | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
@@ -61,10 +61,10 @@ Let's see a feature comparison. I've chosen features that were promoted in the t
 | Measures per-query full scans                                                            | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Measures per-query full joins                                                            | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Measures per-query sort merge passes                                                     | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
-| Measures queries executed by replica SQL thread<sup>[<a href="#footnote2">2</a>]</sup>     | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
+| Measures queries executed by replica SQL thread     | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Measures replica SQL thread utilization                                                    | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Provides per-database stats                                                              | <input type="checkbox" checked="1" /> | <input type="checkbox" checked="1" /> |
-| Provides per-table stats<sup>[<a href="#footnote3">3</a>]</sup>                          | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
+| Provides per-table stats                          | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Provides per-index stats                                                                 | <input type="checkbox" checked="1" /> | <input type="checkbox" />             |
 | Provides per-user stats                                                                  | <input type="checkbox" checked="1" /> | <input type="checkbox" checked="1" /> |
 | Is deployed and tested in large social network sites                                     | <input type="checkbox" checked="1" /> | ?                                     |

@@ -9,7 +9,7 @@ It's been a while since I've posted an abstract, theoretical article on a fine p
 
 ### Selecting an un-grouped column in a grouped query
 
-As far as I know, this bad behavior only applies to MySQL. As the manual explains, MySQL "[extends the use of `GROUP BY`](http://dev.mysql.com/doc/refman/5.0/en/group-by-hidden-fields.html?ff=nopfpls)" to allow selecting columns that do not appear in the `GROUP BY` clause. What does this mean? Well, suppose I have the following data:<sup>[1]</sup>
+As far as I know, this bad behavior only applies to MySQL. As the manual explains, MySQL "[extends the use of `GROUP BY`](http://dev.mysql.com/doc/refman/5.0/en/group-by-hidden-fields.html?ff=nopfpls)" to allow selecting columns that do not appear in the `GROUP BY` clause. What does this mean? Well, suppose I have the following data:
 
 <table class="borders collapsed">
   <caption>Fruits</caption> <tr>
@@ -141,7 +141,7 @@ update t1
    from t1 inner join t2 on t1.id = t2.id
 */</pre>
 
-If you're used to seeing it, it may look like there's nothing wrong with that query<sup>[2]</sup>. Suppose, though, that my data looks like this:
+If you're used to seeing it, it may look like there's nothing wrong with that query. Suppose, though, that my data looks like this:
 
 <table class="borders collapsed">
   <caption>FruitPrices</caption> <tr>
@@ -332,7 +332,7 @@ The second way, if you must use non-standard, mathematically invalid syntaxes, i
 
 The last is to follow the advice of the article linked above and group the right-hand table appropriately. This is effectively the same thing as my second suggestion.
 
-<sup>[1]</sup> You can create the tables I'm using with the following scripts:
+You can create the tables I'm using with the following scripts:
 
 <pre>create table Fruits(
    Fruit varchar(50),
@@ -358,7 +358,3 @@ The relational model, which SQL doesn't follow exactly, is all about functions i
 The incorrect statements I've shown above make no sense because they're trying to shove data into a function backwards, and there can be more than one result on the output. I've shown how RDBMSs often just pick one of the outputs, and it's fine to know that's going to happen, but it's also important to know what is really going on.
 
 This really does matter. Two days ago at work, my boss brought up a situation where a production query on our main database server had created a bad situation because of updates in a join. Bogus!
-
-<sup>[2]</sup> If you're not familiar with either of these syntaxes, I feel your pain. I wasn't either until I got out of database-theory classes. These syntaxes are confusing because they are meaningless, not because you are inexperienced. And every DB vendor implements them differently, yet another reason to avoid them.
-
-

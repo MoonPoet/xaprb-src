@@ -66,7 +66,7 @@ As SJA finds differences between the tables, it adds `WHERE` clauses to the chec
 
 <pre>where   `col1` >= 219000000 and `col1` &lt; 220000000</pre>
 
-In subsequent queries SJA also increases the size of the substring it takes on the first column, from 4 to 7 to 10 leftmost characters. If you ignore the sign digit, this means it is narrowing the grouping by 10<sup>3</sup> rows each time, or in other words grouping the current working set into a maximum of 1000 groups. This is very similar to [the algorithm I proposed in my first article](/blog/2007/03/05/an-algorithm-to-find-and-resolve-data-differences-between-mysql-tables/), as a fallback mechanism when the DBA cannot use an index to design a grouping strategy.
+In subsequent queries SJA also increases the size of the substring it takes on the first column, from 4 to 7 to 10 leftmost characters. If you ignore the sign digit, this means it is narrowing the grouping by \\(10^3\\) rows each time, or in other words grouping the current working set into a maximum of 1000 groups. This is very similar to [the algorithm I proposed in my first article](/blog/2007/03/05/an-algorithm-to-find-and-resolve-data-differences-between-mysql-tables/), as a fallback mechanism when the DBA cannot use an index to design a grouping strategy.
 
 Beyond this, SJA seems to do the kinds of queries you'd expect a sync tool to issue.
 
@@ -80,7 +80,7 @@ There are a couple theoretical weaknesses with in this approach. `SUM()` is comm
 
 The next potential problem is the law of large numbers. Using `SUM()` increases the likelihood of a collision. It changes the distribution of numbers from pseudo-random over the range to a normal distribution -- the familiar bell curve. Certain numbers will be more likely to occur than others, and this likelihood increases as the set grows.
 
-Finally, string concatenation of base-ten digits discards the most significant digits. If you convert the four sliced hex strings to base ten and they end up being 1, 2, 3, and 4, and then you concatenate them, you get 1234. But the sum of the checksum is not 1234; it is 1*16<sup>24</sup> + 2*16<sup>16</sup> + 3*16<sup>8</sup> + 4*16<sup></sup>. This truncates the full 128-bit range of `MD5()`.
+Finally, string concatenation of base-ten digits discards the most significant digits. If you convert the four sliced hex strings to base ten and they end up being 1, 2, 3, and 4, and then you concatenate them, you get 1234. But the sum of the checksum is not 1234; it is \\(1 \times 16^{24} + 2\times16^{16} + 3\times16^8 + 4\times16\\). This truncates the full 128-bit range of `MD5()`.
 
 Rohit responded to my concern:
 

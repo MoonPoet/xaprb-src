@@ -5,7 +5,7 @@ url: /blog/2005/12/15/css-good-practice-separate-layout-and-presentation/
 categories:
   - Web
 ---
-One of CSS's loftiest goals was to help separate content and presentation on the Web<sup>1</sup>. It has succeeded to some degree, bringing great benefits in terms of maintainability, usability, and accessibility.
+One of CSS's loftiest goals was to help separate content and presentation on the Web[^1]. It has succeeded to some degree, bringing great benefits in terms of maintainability, usability, and accessibility.
 
 ### Think at a higher level
 
@@ -35,8 +35,4 @@ I don't consider myself an expert on this. Not much attention has been paid to g
 
 As a side note, I would like to say complete separation of content and presentation (or anything else) is not possible in many cases, despite some people's [insistence to the contrary](http://www.alistapart.com/articles/separationdilemma/). It's a myth. A lot of this is because any given feature often belongs in several domains, so imposing a strict hierarchy rarely works (the realization that hierarchical taxonomies are flawed is exactly where all the "tagging" in Web 2.0 is coming from). I wrote my thesis on visual and informational representations of music and I've found it's rarely clear-cut, be it music or text. My experience with music made me take a fresh look at HTML, and I was amazed at how my perspective changed. There's much to be gained from an 80% solution, though, so fire away!
 
-* * *
-
-[1] People say this many different ways, such as "structure and presentation" and so forth. My memory says "content and presentation" was the first such phrase to be bandied about, and the terminology has changed over the last 6-8 years.
-
-
+[^1]: People say this many different ways, such as "structure and presentation" and so forth. My memory says "content and presentation" was the first such phrase to be bandied about, and the terminology has changed over the last 6-8 years.

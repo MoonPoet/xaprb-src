@@ -7,7 +7,7 @@ categories:
 ---
 Many people are confused by SQL terminology, particularly by subqueries and derived tables, and use the terms incorrectly. In fact the official terminology is defined very specifically. It is a good idea to use the right language. Not only does it foster clear understanding, but among people who know the difference, it helps create a good impression of competence and attention to detail.
 
-The official standard defines a derived table as follows:<sup>[1]</sup>
+The official standard defines a derived table as follows:[^1]
 
 > ## 4.3 Tables
 > 
@@ -47,10 +47,4 @@ Notice the distinction between a derived table and a base table. A base table is
 
 When someone from the Microsoft SQL Server world speaks of derived tables, it is likely s/he is speaking of a subquery in the FROM clause. Just remember, a derived table is defined much more broadly, and this is a specific use of the term.
 
-* * *
-
-<p class="footnote">
-  [1] I do not have a copy of the final SQL-2003 standard, because it is not free and I am not rich. I do have access to a very late draft of the standard.
-</p>
-
-
+[^1]: I do not have a copy of the final SQL-2003 standard, because it is not free and I am not rich. I do have access to a very late draft of the standard.

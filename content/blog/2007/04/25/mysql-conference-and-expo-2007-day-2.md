@@ -42,7 +42,7 @@ MySQL's own Jim and Ann Starkey discussed concurrency control in the still-in-be
 
 This talk's Big Idea was **Falcon is both like and unlike other storage engines.**
 
-This made me think of Guy Kawasaki's keynote from this morning. Who knows what people will use and abuse Falcon for? I'm glad MySQL and the Starkeys are doing what they believe is right, even though a lot of people (including me, frankly) don't really understand what and why they are doing. My impression is that Falcon is so different from what people are used to that most of us do not "get it," and probably will not for a long time. Someone will, though. And when they do, and learn how to make it sing and dance in ways nothing else can do, it'll make a lot of people<sup>*</sup> mad for not seeing it themselves sooner. Especially when it makes someone really successful.
+This made me think of Guy Kawasaki's keynote from this morning. Who knows what people will use and abuse Falcon for? I'm glad MySQL and the Starkeys are doing what they believe is right, even though a lot of people (including me, frankly) don't really understand what and why they are doing. My impression is that Falcon is so different from what people are used to that most of us do not "get it," and probably will not for a long time. Someone will, though. And when they do, and learn how to make it sing and dance in ways nothing else can do, it'll make a lot of people mad for not seeing it themselves sooner. Especially when it makes someone really successful.
 
 * People in Redmond, I'm guessing.
 
@@ -67,5 +67,3 @@ This evening I went to three BoF sessions: the first on DBD::mysql, the next as 
 Today's expert session was a wash because the session and the official lunch were in different places, and people couldn't bring their lunch to the meeting room. It might come together better tomorrow, it might not.
 
 Of course, I'll still be doing the two official sessions tomorrow and Thursday.
-
-
