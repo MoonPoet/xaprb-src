@@ -9,10 +9,10 @@
   </div>
 
   <nav class="sidebar-nav">
-        <a class="sidebar-nav-item" href="/talks/">Talks and Slides</a>
     {{ range .Site.Menus.main }}
         <a class="sidebar-nav-item" href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
+        <a class="sidebar-nav-item" href="/talks/">Talks and Slides</a>
   </nav>
 
   <div class="sidebar-item">
