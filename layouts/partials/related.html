@@ -1,6 +1,5 @@
 {{ $related := .Site.Pages.Related . | first 3 }}
 {{ with $related }}
-<hr>
 <h3>Read these next:</h3>
 <ul>
 	{{ range . }}

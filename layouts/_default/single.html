@@ -2,18 +2,17 @@
 
 <div class="post">
   <h1 class="post-title">{{ .Title }}</h1>
-  <span class="post-date">{{ .Date.Format .Site.Params.DateForm }} in
-		{{ range .Params.categories }}
-		<a href="/categories/{{ . | urlize | lower }}" class="btn btn-primary">{{ . | title }}</a>
-		{{ end }}
-		{{ partial "share.html" . }}
-  </span>
+  <span class="post-date">{{ .Date.Format .Site.Params.DateForm }}</span>
   <div id="post-content">
   {{ .Content }}
   </div>
-  {{ partial "related.html" . }}
   <hr>
-  {{ partial "about.html" }}
+  <span class="post-date">Posted in
+		{{ range .Params.categories }}
+		<a href="/categories/{{ . | urlize | lower }}" class="btn btn-primary">{{ . | title }}</a>{{ end }}. Discuss on
+  {{ partial "share.html" . }}
+  </span>
+  {{ partial "related.html" . }}
 <div class="pagination">
   {{ if .Prev }}
     <a class="pagination-item newer" href="{{ .Prev.URL }}">Newer</a>
@@ -26,6 +25,7 @@
     <span class="pagination-item older">Older</span>
   {{ end }}
 </div>
+  {{ partial "about.html" }}
 
 </div>
 
