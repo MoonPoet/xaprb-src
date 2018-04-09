@@ -12,7 +12,7 @@ categories:
 
 In [The Ultimate Notebook](/blog/2013/07/10/ultimate-notebook-and-journal-face-off/),
 I reviewed a large list of notebooks I bought in my quest for the perfect one
-for me. (I'm happy to say that I've been using the [Quo Vadis Habana in Raspberry](http://www.amazon.com/gp/product/B0072WW8K4/?tag=xaprb-20) exclusively
+for me. (I'm happy to say that I've been using the [Quo Vadis Habana in Raspberry]({{< amz B0072WW8K4 >}}) exclusively
 for a while). But what about the perfect pen? Ah, pens. As much a personal
 matter as notebooks are. I've tried a variety of pens. Here's my review of some
 of them.
@@ -73,7 +73,7 @@ Sakura also makes tons of other kinds of pens I also think are suitable for note
 
 ### Staedtler Pigment Liner
 
-These premium liners are made in Germany and I love them. They come in various sets of different widths, with their own plastic case. They are definitely designed for people who are serious about pens for precision work. They're quite similar in form factor to the Sakuras. I'm not sure which is better quality. I have a [set of various widths in black](http://www.amazon.com/gp/product/B004L87XRA/?tag=xaprb-20) and I don't think I'll end up using some of the thicker and thinner widths, so it might be more economical to buy uni-size sets of the Sakura pens next time. If there is a next time---these pens have a reputation for lasting forever.
+These premium liners are made in Germany and I love them. They come in various sets of different widths, with their own plastic case. They are definitely designed for people who are serious about pens for precision work. They're quite similar in form factor to the Sakuras. I'm not sure which is better quality. I have a [set of various widths in black]({{< amz B004L87XRA >}}) and I don't think I'll end up using some of the thicker and thinner widths, so it might be more economical to buy uni-size sets of the Sakura pens next time. If there is a next time---these pens have a reputation for lasting forever.
 
 ![Staedtler Pigment Liner](/media/2015/03/staedtler-pigment-liner.jpg)
 
@@ -106,7 +106,7 @@ As I wrote in [another post](/blog/cursive/), I rediscovered the joy of writing
 in cursive, and began using a fountain pen for that. I have owned 4 fountain
 pens from Pilot at this point, and would buy another. My most recent is the
 beautiful [Pilot MR Retro
-Pop](https://www.amazon.com/gp/product/B015XIKEMC/?tag=xaprb-20) in purple with
+Pop]({{< amz B015XIKEMC >}}) in purple with
 a medium nib.
 
 ![Pilot Metropolitan Fountain Pen](/media/2015/03/pilot-fountain-pen.jpg)

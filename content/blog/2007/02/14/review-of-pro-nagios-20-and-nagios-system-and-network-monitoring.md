@@ -16,13 +16,13 @@ Last week I read two books on Nagios. I found one easy to use and the other diff
 
 ### The books
 
-[<img src="/media/2007/02/nagios_cov.jpg" width="125" height="165" alt="Cover of Nagios System and Network Monitoring">](http://www.amazon.com/gp/product/1593270704?ie=UTF8&#038;tag=xaprb-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=1593270704)
+[<img src="/media/2007/02/nagios_cov.jpg" width="125" height="165" alt="Cover of Nagios System and Network Monitoring">]({{< amz 1593270704 >}})
 
-[Nagios System and Network Monitoring (Wolfgang Barth, No Starch Press, 2006)](http://www.amazon.com/gp/product/1593270704?ie=UTF8&#038;tag=xaprb-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=1593270704) is a delight. It explained Nagios briefly and clearly, showed me how to get it running, and continues to be a useful reference. I rate it 4 out of 5 stars.
+[Nagios System and Network Monitoring (Wolfgang Barth, No Starch Press, 2006)]({{< amz 1593270704 >}}) is a delight. It explained Nagios briefly and clearly, showed me how to get it running, and continues to be a useful reference. I rate it 4 out of 5 stars.
 
-<a href="http://www.amazon.com/gp/product/1590596099?ie=UTF8&#038;tag=xaprb-20&#038;link_code=as3&#038;camp=211189&#038;creative=373489&#038;creativeASIN=1590596099"><img src="/media/2007/02/pro-nagios.gif" alt="Cover of Pro Nagios 2.0" width="125" height="168" /></a>
+<a href="{{< amz 1590596099 >}}"><img src="/media/2007/02/pro-nagios.gif" alt="Cover of Pro Nagios 2.0" width="125" height="168" /></a>
 
-<a href="http://www.amazon.com/gp/product/1590596099?ie=UTF8&#038;tag=xaprb-20&#038;link_code=as3&#038;camp=211189&#038;creative=373489&#038;creativeASIN=1590596099">Pro Nagios 2.0 (James Turnbull, Apress, 2006)</a> is hard for me to read, understand and use. Mr. Turnbull is clearly an expert on Nagios, but the book doesn't communicate his knowledge effectively. I give it two stars.
+<a href="{{< amz 1590596099 >}}">Pro Nagios 2.0 (James Turnbull, Apress, 2006)</a> is hard for me to read, understand and use. Mr. Turnbull is clearly an expert on Nagios, but the book doesn't communicate his knowledge effectively. I give it two stars.
 
 Despite the differences, the books are identical in many ways. Both have chapters on the same topics. They cover exactly the same subject matter in the same level of detail, have the same target audiences, were written about the same time, are about the same size, and so on. The differences are in organization and writing style.
 
@@ -114,6 +114,6 @@ This illustrates the major differences between the books:
 
 ### Summary
 
-I like Wolfgang Barth's [Nagios System and Network Monitoring](http://www.amazon.com/gp/product/1593270704?ie=UTF8&#038;tag=xaprb-20&#038;linkCode=as2&#038;camp=1789&#038;creative=9325&#038;creativeASIN=1593270704) better than James Turnbull's [Pro Nagios 2.0](http://www.amazon.com/gp/product/1590596099?ie=UTF8&#038;tag=xaprb-20&#038;link_code=as3&#038;camp=211189&#038;creative=373489&#038;creativeASIN=1590596099).
+I like Wolfgang Barth's [Nagios System and Network Monitoring]({{< amz 1593270704 >}}) better than James Turnbull's [Pro Nagios 2.0]({{< amz 1590596099 >}}).
 
 

@@ -47,7 +47,7 @@ or worse.
 
 Another decent middle-of-the-road brand is Gevalia, which tends towards the
 better-quality range of not-too-expensive coffee. As a bonus, many of [their
-roasts](www.amazon.com/Gevalia-French-Roast-Ground-Coffee/dp/B00MBEKH6U/?tag=xaprb-20)
+roasts]({{< amz B00MBEKH6U >}})
 come pre-ground. Sometimes the convenience of pre-ground is just what I need.
 
 ### Coffee Grinder

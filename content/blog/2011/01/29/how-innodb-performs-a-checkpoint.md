@@ -7,7 +7,7 @@ categories:
 ---
 InnoDB's checkpoint algorithm is not well documented. It is too complex to explain in even a long blog post, because to understand checkpoints, you need to understand a lot of other things that InnoDB does. I hope that explaining how InnoDB does checkpoints in high-level terms, with simplifications, will be helpful. A lot of the simplifications are because I do not want to explain the complexities of how the simple rules can be tweaked for optimization purposes, while not violating the ACID guarantees they enforce.
 
-A bit of background: [Gray and Reuter's classic text on transaction processing](http://www.amazon.com/dp/1558601902?tag=xaprb-20) introduced two types of checkpoints beginning on page 605. There is a **sharp checkpoint**, and there is a **fuzzy checkpoint**.
+A bit of background: [Gray and Reuter's classic text on transaction processing]({{< amz 1558601902 >}}) introduced two types of checkpoints beginning on page 605. There is a **sharp checkpoint**, and there is a **fuzzy checkpoint**.
 
 A sharp checkpoint is accomplished by flushing all modified pages for committed transactions to disk, and writing down the log sequence number (LSN) of the most recent committed transaction. Modified pages for uncommitted transactions should not be flushed -- that would violate the rule of write-ahead logging. (This is a deliberate and gross over-simplification; I will not draw attention to further simplifications I make.) Upon recovery, log REDO can start from the LSN at which the checkpoint took place. A sharp checkpoint is called "sharp" because everything that is flushed to disk for the checkpoint is consistent as of a single point in time -- the checkpoint LSN.
 
@@ -29,7 +29,7 @@ When InnoDB shuts down, it does some additional work. First, it stops all update
 
 There is a lot more to study if you want to learn how it's really done in detail; there are many fine points to the process. This is one area where the usually excellent manual is a bit lacking. Some of the best resources are as follows:
 
-*   [Gray and Reuter's book](http://www.amazon.com/dp/1558601902?tag=xaprb-20)
+*   [Gray and Reuter's book]({{< amz 1558601902 >}})
 *   [Mark Callaghan's note on fuzzy checkpoints](http://www.facebook.com/note.php?note_id=408059000932)
 *   [Peter Zaitsev's post on why the flushing algorithm in older InnoDB used to cause spikes](http://www.mysqlperformanceblog.com/2006/05/10/innodb-fuzzy-checkpointing-woes/)
 *   [Mark Callaghan's slides from Percona Performance Conference 2009](http://www.percona.com/ppc2009/PPC2009_Life_of_a_dirty_pageInnoDB_disk_IO.pdf)

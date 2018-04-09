@@ -35,7 +35,7 @@ Thoughts from other people I talked to include:
 
 And Jez Humble offered this: 
 
-> I wrote a <a href="http://www.amazon.com/dp/0321601912" target="_blank">book</a> on the topic, plus I <a href="http://continuousdelivery.com/" target="_blank">blog</a> and <a href="http://continuousdelivery.com/talks/" target="_blank">speak</a> about it a bunch.
+> I wrote a <a href="{{< amz 0321601912 >}}" target="_blank">book</a> on the topic, plus I <a href="http://continuousdelivery.com/" target="_blank">blog</a> and <a href="http://continuousdelivery.com/talks/" target="_blank">speak</a> about it a bunch.
 > 
 > You also want to check out Michael Nygard's <a href="{{< amz 0978739213 }}" target="_blank">Release It!</a> and his <a href="http://www.youtube.com/watch?v=Luskg9ES9qI" target="_blank">stuff</a>, which is extremely awesome 
 >

@@ -5,7 +5,7 @@ url: /blog/2008/05/07/high-performance-mysql-second-edition-schedule/
 categories:
   - Databases
 ---
-I just got the rest of the production schedule from the publisher, plus the PDF files for quality control, for our [upcoming book](http://www.amazon.com/gp/redirect.html%3FASIN=0596101716%26tag=xaprb-20%26lcode=xm2%26cID=2025%26ccmID=165953%26location=/o/ASIN/0596101716%253FSubscriptionId=1N9AHEAQ2F6SVD97BE02). (Now I have to proofreeed the whole book!) This is the first time I've seen the entire production schedule. The book is supposed to go to the printer in the first week of June. I don't know what the on-the-shelf date will be, but I think very shortly after that. The publisher has promised that it'll physically be on sale at [Velocity](http://en.oreilly.com/velocity2008/public/content/home).
+I just got the rest of the production schedule from the publisher, plus the PDF files for quality control, for our [upcoming book]({{< amz 0596101716 >}}). (Now I have to proofreeed the whole book!) This is the first time I've seen the entire production schedule. The book is supposed to go to the printer in the first week of June. I don't know what the on-the-shelf date will be, but I think very shortly after that. The publisher has promised that it'll physically be on sale at [Velocity](http://en.oreilly.com/velocity2008/public/content/home).
 
 I also took a peek at the PDFs. Without the appendixes, the last page of Chapter 14 (Tools for High Performance) is page 604. The appendixes bring it to 660 pages. That's real material, not including tables of contents and indexes. So my estimate (620) was not too far off.
 

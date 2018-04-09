@@ -7,7 +7,7 @@ categories:
   - Open Source
   - Reviews
 ---
-I finally upgraded from Fedora 13 to Fedora 15 on my beloved [ASUS-UL30A-X5](http://www.amazon.com/dp/B002P3KMVC?tag=xaprb-20). It includes the new Gnome 3, with the "Gnome Shell" interface. It's quite different from anything else I've used, and you can read lots of positive and negative impressions around the web.
+I finally upgraded from Fedora 13 to Fedora 15 on my beloved [ASUS-UL30A-X5]({{< amz B002P3KMVC >}}). It includes the new Gnome 3, with the "Gnome Shell" interface. It's quite different from anything else I've used, and you can read lots of positive and negative impressions around the web.
 
 Fedora 15 and Gnome 3 have awesome support for my laptop's hardware. It's simply flawless. You could not expect better software/hardware integration if you paid thousands of dollars for something from Steve Jobs. Fedora has been great about this for a long time, actually, although there was a video driver problem in Fedora 13 that would sometimes kernel-panic if I did a lot of suspending and resuming combined with plugging and unplugging external monitors. That's not a problem I've seen in this release.
 

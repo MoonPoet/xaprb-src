@@ -7,7 +7,7 @@ categories:
   - Programming
 ---
 
-In my opinion, every Perl programmer needs at least these two books: the [Camel](http://www.amazon.com/o/ASIN/0596000278/187-9069276-9521725?tag=xaprb-20), and the [Dog (Perl Best Practices)](www.amazon.com/o/ASIN/0596001738/?tag=xaprb-20).
+In my opinion, every Perl programmer needs at least these two books: the [Camel]({{< amz 0596000278 >}}), and the [Dog (Perl Best Practices)]({{< amz B002L4EXI8 >}})
 
 The Camel teaches you how to program Perl: the syntax and so on. But the Dog teaches you how to program Perl sanely, by recommending that you use only a subset of Perl's syntax and abilities.
 

@@ -8,7 +8,7 @@ author: Baron Schwartz
 description: "I tested the Skagen Jorn Connected and Misfit Phase to see if they could replace my Nokia Steel HR."
 image: media/2018/03/skagen-jorn-misfit-phase.jpg
 ---
-I bought two of the more interesting-looking hybrid smart watches to compare their functionality to each other, and to the [Nokia Steel HR](/blog/best-fitness-activity-sleep-tracking-watch/) I already own. In the end, the [Skagen Jorn Connected](http://www.skagen.com/us/en/wearables/hybrid-smartwatches/hybrid-smartwatch-jorn-black-leather-pdpskt1203p.html) ([Amazon](https://www.amazon.com/dp/B06VV5MGV1/?tag=xaprb-20)) is a better watch and extension of my phone, but is not enough of a health or fitness tracker to replace the Nokia Steel HR; and the [Misfit Phase](https://www.samsung.com/us/explore/gear-s3/) ([Amazon](https://www.amazon.com/dp/B01MXFSTYN/?tag=xaprb-20)) has useful functionality but a poor design and feel. Neither offers the notification features I'd find most useful.
+I bought two of the more interesting-looking hybrid smart watches to compare their functionality to each other, and to the [Nokia Steel HR](/blog/best-fitness-activity-sleep-tracking-watch/) I already own. In the end, the [Skagen Jorn Connected](http://www.skagen.com/us/en/wearables/hybrid-smartwatches/hybrid-smartwatch-jorn-black-leather-pdpskt1203p.html) ([Amazon]({{< amz B06VV5MGV1 >}})) is a better watch and extension of my phone, but is not enough of a health or fitness tracker to replace the Nokia Steel HR; and the [Misfit Phase](https://www.samsung.com/us/explore/gear-s3/) ([Amazon]({{< amz B01MXFSTYN >}})) has useful functionality but a poor design and feel. Neither offers the notification features I'd find most useful.
 
 ![Watches](/media/2018/03/skagen-jorn-misfit-phase.jpg)
 
@@ -97,14 +97,14 @@ Both watches rely on combination presses on buttons, such as long presses or sin
 
 * The Skagen has three customizable buttons and Misfit has only one. It lets you do more things without reprogramming the buttons, whereas the Misfit can do only one thing at a time.
 * The Skagen’s music control is better. You can raise and lower volume as well as controlling playback, whereas the Misfit only lets you control playback and raise volume; and the playback control uses all of the combinations of button presses, which isn’t as intuitive.
-* Misfit’s presentation clicker is a neat feature. To use it, you pair the watch via Bluetooth, which requires disconnecting from the smartphone. This is easy to do; I simply turned off Bluetooth on my phone and then my iPad found the watch and paired with it quickly. You can also pair with a laptop. I tested the clicker at distances up to 20 or so feet and it worked fine. With this feature, the Misfit can replace a dedicated Bluetooth clicker such as the [Logitech Spotlight Advanced Presentation Remote](https://www.amazon.com/dp/B01N9X3DBQ/?tag=xaprb-20), which costs more than I paid for the watch.
+* Misfit’s presentation clicker is a neat feature. To use it, you pair the watch via Bluetooth, which requires disconnecting from the smartphone. This is easy to do; I simply turned off Bluetooth on my phone and then my iPad found the watch and paired with it quickly. You can also pair with a laptop. I tested the clicker at distances up to 20 or so feet and it worked fine. With this feature, the Misfit can replace a dedicated Bluetooth clicker such as the [Logitech Spotlight Advanced Presentation Remote]({{< amz B01N9X3DBQ >}}), which costs more than I paid for the watch.
 * The Misfit integrates with services through IFTTT, allowing you to extend your watch’s functionality pretty significantly. I don’t know how valuable this is. I am not sure I want a button press on my watch to do something like that. I think I’d like to keep that type of thing restricted behind at least my phone’s unlock code.
 
 ### Other Similar Watches
 
 I've found a few watches that are pretty similar to the Skagen Jorn Connected. I'm researching some of them to see what they're like. As I do so, I'll add them here.
 
-[Fossil Hybrid Smartwatch - Q Commuter Dark Brown Leather](https://www.amazon.com/dp/B075BPKBTM/?tag=xaprb-20)
+[Fossil Hybrid Smartwatch - Q Commuter Dark Brown Leather]({{< amz B075BPKBTM >}})
 
 This is a nice-looking watch that seems to have similar functionality to those I reviewed in this blog post. From my research, I'd put it neck-and-neck with the Skagen in every score.
 

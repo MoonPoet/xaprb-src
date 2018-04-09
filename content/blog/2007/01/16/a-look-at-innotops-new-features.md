@@ -26,7 +26,7 @@ I've also put a lot of work into making it easier to use innotop. There's readli
 
 While I've done a lot towards usability, some of the new features are still a bit rough. For example, user-defined expressions can now be the source of a column in the output, much like a spreadsheet. Suppose you want a column that shows the queries per second in the output; you can divide the queries by the uptime to get this. However, these expressions are basically Perl subroutines, so they're probably not that useful to you at the moment, unless you know Perl. Likewise, you can do more complex filtering on the output, but you're in Perl-land again. Over time I plan to make this more friendly.
 
-I am trying to strike a balance between usability and learnability (yep, I've been reading [Joel Spolsky's book on user-interface design](http://www.amazon.com/gp/product/1893115941?ie=UTF8&#038;tag=xaprb-20&#038;link_code=as3&#038;camp=211189&#038;creative=373489&#038;creativeASIN=1893115941)). I primarily intend for innotop to be a power-user tool. If you're not a power-user, you probably don't need it. However, I do want to make sure it is learnable, and I don't want to ignore users who just have one server to monitor. You can help by telling me what you think.
+I am trying to strike a balance between usability and learnability (yep, I've been reading [Joel Spolsky's book on user-interface design]({{< amz 1893115941 >}})). I primarily intend for innotop to be a power-user tool. If you're not a power-user, you probably don't need it. However, I do want to make sure it is learnable, and I don't want to ignore users who just have one server to monitor. You can help by telling me what you think.
 
 ### What's next
 

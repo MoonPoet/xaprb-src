@@ -11,7 +11,7 @@ I'm not a big user of acronyms, because I think they are exclusionist and they o
 
 Why does this matter? I try not to say Linux, unless I'm referring to a kernel, because **a kernel is not an operating system**. I try to be pretty careful about [saying GNU/Linux when I'm talking about an operating system](http://www.gnu.org/gnu/linux-and-gnu.html). An exception is a recruiting event yesterday at the University of Virginia, where I compromised my principles because of the noise. Trying to explain myself at that decibel level was just beyond my willingness, so I said we use Linux. If the potential recruits hire on with us, they'll get to hear me say GNU/Linux. And if they don't, maybe they'll attend Richard Stallman's upcoming talk at the engineering school there on March 27th or 28th (sorry, it's not listed online, so I can't link to it).
 
-And you'll see GNU/Linux used conscientiously if you read [the book I'm helping to write](http://www.amazon.com/gp/product/0596101716?ie=UTF8&#038;tag=xaprb-20&#038;link_code=as3&#038;camp=211189&#038;creative=373489&#038;creativeASIN=0596101716), too.
+And you'll see GNU/Linux used conscientiously if you read [the book I'm helping to write]({{< amz 0596101716 >}}), too.
 
 GNU matters. A lot. You may not think so, but if it ceased to exist, you'd find out. That applies equally even if you don't think you are a Free Software user. You have no idea how much you rely on Free Software in your daily life. And [the GNU project](http://www.fsf.org/) has been and continues to be a keystone in that arch of freedom.
 

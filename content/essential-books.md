@@ -63,9 +63,9 @@ A well-written introduction to database design. I [reviewed it here](/blog/2009/
 
 An excellent book for developers who must interact with databases. It explains the mistakes that programmers make over and over again, showing why they're bad approaches, when to use them anyway, and what good alternatives exist. I reviewed it [here](/blog/2011/06/11/a-review-of-sql-antipatterns-by-bill-karwin/).<br style="clear: both" />
 
-### [Scalable Internet Architectures](http://www.amazon.com/dp/067232699X?tag=xaprb-20)
+### [Scalable Internet Architectures]({{< amz 067232699X >}})
 
-<a href="http://www.amazon.com/dp/067232699X?tag=xaprb-20"><img src="/media/2009/02/scalable_internet_architectures-150x150.jpg" alt="Scalable Internet Architectures" title="Scalable Internet Architectures" width="150" height="150" class="size-thumbnail wp-image-868" /></a>
+<a href="{{< amz 067232699X >}}"><img src="/media/2009/02/scalable_internet_architectures-150x150.jpg" alt="Scalable Internet Architectures" title="Scalable Internet Architectures" width="150" height="150" class="size-thumbnail wp-image-868" /></a>
 
 A great all-around book about building scalable systems. I [reviewed it here](/blog/2009/02/21/review-of-scalable-internet-architectures-by-theo-schlossnagle/).
 
@@ -83,7 +83,7 @@ This book changed my whole approach to programming. It was as revolutionary for 
 
 ### [Cloud Application Architectures]({{< amz 0596156367 >}})
 
-<a href="http://www.amazon.com/dp/0596156367?tag=xaprb-20"><img src="/media/2010/01/cloud_application_architectures.gif" alt="Cloud Application Architectures" title="Cloud Application Architectures" width="122" height="160" class="size-full wp-image-1943" /></a>
+<a href="{{< amz 0596156367 >}}"><img src="/media/2010/01/cloud_application_architectures.gif" alt="Cloud Application Architectures" title="Cloud Application Architectures" width="122" height="160" class="size-full wp-image-1943" /></a>
 
 A great book on this topic. Short --- 150 pages --- but very deep, and highly readable. Mostly about the Amazon platform. The author really knows first-hand how to build apps and businesses in the cloud! [I reviewed it here](/blog/2010/07/04/a-review-of-cloud-application-architectures-by-george-reese/).
 

@@ -28,7 +28,7 @@ Today’s datasets are so large, and the workloads so demanding, that one-size-f
 
 ### Textbook Architectures Lose Relevance
 
-Many of today’s mature relational databases, such as MySQL, Oracle, SQL Server, and PostgreSQL, base much of their architecture and design on decades-old research into transactional storage and relational models that stem from two classic textbooks in the field—known simply as [Gray & Reuters](http://www.amazon.com/dp/1558601902) and [Weikum & Vossen](http://www.amazon.com/dp/1558605088). This “textbook architecture” can be described briefly as having:
+Many of today’s mature relational databases, such as MySQL, Oracle, SQL Server, and PostgreSQL, base much of their architecture and design on decades-old research into transactional storage and relational models that stem from two classic textbooks in the field—known simply as [Gray & Reuters]({{< amz 1558601902 >}}) and [Weikum & Vossen]({{< amz 1558605088 >}}). This “textbook architecture” can be described briefly as having:
 
 * Row-based storage with fixed schemas
 * B-Tree primary and secondary indexes
