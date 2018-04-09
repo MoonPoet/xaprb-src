@@ -7,10 +7,10 @@ categories:
   - Reviews
 ---
 <p style="float:right">
-  <a href="{{< amz 1847192971 }}>"><img style="float:right" src='/media/2008/07/robust_drupal_6.jpg' alt='Drupal' /></a>
+  <a href="{{< amz 1847192971 >}}"><img style="float:right" src='/media/2008/07/robust_drupal_6.jpg' alt='Drupal' /></a>
 </p>
 
-I just finished reading [Building Powerful and Robust Websites with Drupal 6]({{< amz 1847192971 >>}) ([this title on Packt's site](http://www.packtpub.com/drupal-6-create-powerful-websites/book)). I've been working on a website powered by Drupal, and though it was obvious that Drupal is very flexible and capable, I was getting pretty lost in the website. So I wanted to read a book that would explain it to me.
+I just finished reading [Building Powerful and Robust Websites with Drupal 6]({{< amz 1847192971 >}}) ([this title on Packt's site](http://www.packtpub.com/drupal-6-create-powerful-websites/book)). I've been working on a website powered by Drupal, and though it was obvious that Drupal is very flexible and capable, I was getting pretty lost in the website. So I wanted to read a book that would explain it to me.
 
 Unfortunately, this book didn't help me much. I'd give it 2 out of 5 stars.
 

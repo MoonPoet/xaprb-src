@@ -35,7 +35,7 @@ This is an essential book for anyone interested in performance of *any* system, 
 
 ### [Relational Database Design and the Optimizers]({{< amz 0471719994 >}})
 
-<a href="{{< amz 0471719994 }}"><img src="/media/2010/01/relational-index-design-optimizers-small.jpg" alt="Relational Database Index Design and the Optimizers" title="Relational Database Index Design and the Optimizers" width="150" height="239" class="size-full wp-image-2025" /></a>
+<a href="{{< amz 0471719994 >}}"><img src="/media/2010/01/relational-index-design-optimizers-small.jpg" alt="Relational Database Index Design and the Optimizers" title="Relational Database Index Design and the Optimizers" width="150" height="239" class="size-full wp-image-2025" /></a>
 
 The focus is on a scientific method to design indexes that will produce the best performance for queries. It goes into quite a bit of detail on how databases execute specific types of queries, and develops a generic cost model that can be used to produce a quick upper-bound estimate (QUBE) for the execution time of a query. The book focuses on DB2, Oracle, and SQL Server, but applies equally well to MySQL and PostgreSQL. Generally, the book concludes, we should use indexes much more than we often do, and we should not hold irrational fears about the cost of maintaining indexes. I [reviewed it here](/blog/2010/09/19/a-review-of-relational-database-design-and-the-optimizers-by-lahdenmaki-and-leach/).
 
@@ -89,7 +89,7 @@ A great book on this topic. Short --- 150 pages --- but very deep, and highly re
 
 ### [MySQL 5.1 Plugin Development]({{< amz 1849510601 >}})
 
-<a href="{{< amz 1849510601 }}"><img src="/media/2010/01/mysql-plugin-development.jpg" alt="MySQL 5.1 Plugin Development" title="MySQL 5.1 Plugin Development" width="125" height="152" class="size-full wp-image-2062" /></a>
+<a href="{{< amz 1849510601 >}}"><img src="/media/2010/01/mysql-plugin-development.jpg" alt="MySQL 5.1 Plugin Development" title="MySQL 5.1 Plugin Development" width="125" height="152" class="size-full wp-image-2062" /></a>
 
 A very useful book for anyone who wants to modify the MySQL source code. Also excellent for just understanding the code better. [I reviewed it here](/blog/2010/10/10/a-review-of-mysql-5-1-plugin-development-by-golubchik-and-hutchings/).
 

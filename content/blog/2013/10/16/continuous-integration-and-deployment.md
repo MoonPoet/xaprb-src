@@ -37,7 +37,7 @@ And Jez Humble offered this:
 
 > I wrote a <a href="{{< amz 0321601912 >}}" target="_blank">book</a> on the topic, plus I <a href="http://continuousdelivery.com/" target="_blank">blog</a> and <a href="http://continuousdelivery.com/talks/" target="_blank">speak</a> about it a bunch.
 > 
-> You also want to check out Michael Nygard's <a href="{{< amz 0978739213 }}" target="_blank">Release It!</a> and his <a href="http://www.youtube.com/watch?v=Luskg9ES9qI" target="_blank">stuff</a>, which is extremely awesome 
+> You also want to check out Michael Nygard's <a href="{{< amz 0978739213 >}}" target="_blank">Release It!</a> and his <a href="http://www.youtube.com/watch?v=Luskg9ES9qI" target="_blank">stuff</a>, which is extremely awesome 
 >
 > There are some <a href="http://continuousdelivery.com/2013/05/videos-from-the-continuous-delivery-track-at-qcon-sf-2012/" target="_blank">talks</a> from the continuous delivery tracks at various conferences (including from <a href="http://www.youtube.com/watch?v=JR-ccCTmMKY" target="_blank">Etsy</a>) 
 >
