@@ -51,6 +51,7 @@ I don't install a lot of extensions. The ones that I keep active are:
 - 1Password
 - Feedly Subscribe Button
 - History AutoDelete, which I set to clear history after 5 days
+- Blank New Tab page, to remove the annoying recently-visited tiles on new tabs
 
 There's a few others that I install but don't activate unless I need them:
 
