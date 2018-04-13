@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/01/24/ultimate-bargain-coffee-kit/
 title: "The Ultimate Bargain Coffee Kit"
 description: "If you're a coffee snob, here's your ticket to heaven."
 date: "2015-01-24"

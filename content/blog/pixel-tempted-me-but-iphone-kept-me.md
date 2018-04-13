@@ -1,4 +1,5 @@
 ---
+url: /blog/pixel-tempted-me-but-iphone-kept-me/
 title: 'Pixel Tempted Me But iPhone Kept Me'
 date: "2018-03-16T20:25:51-04:00"
 categories:

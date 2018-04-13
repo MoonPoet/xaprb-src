@@ -1,4 +1,5 @@
 ---
+url: /blog/erlang-stretch-factor-three-four/
 author: Baron Schwartz
 categories:
 - Math

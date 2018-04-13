@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/04/05/magic-secret-sauce/
 categories:
   - Commentary
 date: 2015-04-05T13:51:18-05:00

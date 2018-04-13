@@ -1,4 +1,5 @@
 ---
+url: /blog/2011/02/14/3-common-rails-mysql-mistakes/
 title: "3 Common Rails + MySQL Mistakes"
 date: "2011-02-14"
 categories:

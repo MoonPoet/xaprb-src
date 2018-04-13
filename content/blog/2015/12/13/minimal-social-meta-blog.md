@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/12/13/minimal-social-meta-blog/
 author: Baron Schwartz
 categories:
 - Web

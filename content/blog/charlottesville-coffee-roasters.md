@@ -1,4 +1,5 @@
 ---
+url: /blog/charlottesville-coffee-roasters/
 author: Baron Schwartz
 categories:
 - Craft

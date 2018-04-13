@@ -1,4 +1,5 @@
 ---
+url: /blog/2011/09/15/5-subtle-ways-youre-using-mysql-as-a-queue-and-why-itll-bite-you/
 title: "5 subtle ways you're using MySQL as a queue, and why it'll bite you"
 date: "2011-09-15"
 categories:

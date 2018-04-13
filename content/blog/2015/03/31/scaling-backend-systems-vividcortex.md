@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/03/31/scaling-backend-systems-vividcortex/
 categories:
   - Databases
   - Best Of

@@ -1,4 +1,5 @@
 ---
+url: /blog/skagen-jorn-misfit-phase-hybrid-smartwatch/
 title: The Skagen Jorn Connected and Misfit Phase Hybrid Smart Watches
 date: 2018-03-05 19:16:30 -0400
 categories:

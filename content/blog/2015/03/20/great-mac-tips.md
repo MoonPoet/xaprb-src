@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/03/20/great-mac-tips/
 categories:
   - Desktop
 date: 2015-03-20T13:51:18-05:00

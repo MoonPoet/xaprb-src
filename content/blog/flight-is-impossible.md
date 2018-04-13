@@ -1,4 +1,5 @@
 ---
+url: /blog/flight-is-impossible/
 author: Baron Schwartz
 categories:
 - Leadership

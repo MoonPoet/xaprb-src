@@ -1,4 +1,5 @@
 ---
+url: /blog/configuring-chrome-for-privacy-and-convenience/
 title: 'Configuring Chrome for Privacy and Convenience'
 date: "2018-03-23T22:15:52-04:00"
 categories:

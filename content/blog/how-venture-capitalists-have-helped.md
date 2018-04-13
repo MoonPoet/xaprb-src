@@ -1,4 +1,5 @@
 ---
+url: /blog/how-venture-capitalists-have-helped/
 author: Baron Schwartz
 categories:
 - Leadership

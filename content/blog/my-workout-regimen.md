@@ -1,4 +1,5 @@
 ---
+url: /blog/my-workout-regimen/
 title: "My Workout Regimen"
 date: 2017-10-08T16:57:13-04:00
 categories:

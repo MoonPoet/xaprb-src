@@ -1,4 +1,5 @@
 ---
+url: /blog/leadership-behaviors/
 title: Leadership Behaviors
 date: '2017-01-28T11:15:03-05:00'
 author: Baron Schwartz

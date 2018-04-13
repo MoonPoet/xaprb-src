@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/04/04/standing-desk/
 categories:
   - Hardware
   - Reviews

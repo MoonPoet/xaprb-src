@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/08/03/anomaly-detection-book/
 categories:
 - Databases
 - Math

@@ -1,4 +1,5 @@
 ---
+url: /blog/what-is-moving-average-convergence-divergence-macd/
 title: "What is Moving Average Convergence-Divergence (MACD)?"
 date: 2017-10-25T21:35:56-04:00
 categories:

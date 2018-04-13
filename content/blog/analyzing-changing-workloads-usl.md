@@ -1,4 +1,5 @@
 ---
+url: /blog/analyzing-changing-workloads-usl/
 author: Baron Schwartz
 categories:
 - Scalability

@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/04/03/digg-reader-feedly-google-reader-alternatives/
 categories:
   - Desktop
   - Web

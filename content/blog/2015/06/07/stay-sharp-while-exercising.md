@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/06/07/stay-sharp-while-exercising/
 title: Staying Sharp While Exercising
 author: Baron Schwartz
 categories:

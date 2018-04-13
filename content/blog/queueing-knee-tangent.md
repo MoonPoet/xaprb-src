@@ -1,4 +1,5 @@
 ---
+url: /blog/queueing-knee-tangent/
 author: Baron Schwartz
 categories:
 - Scalability

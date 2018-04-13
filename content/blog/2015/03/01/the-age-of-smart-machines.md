@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/03/01/the-age-of-smart-machines/
 categories:
   - Hardware
   - Programming

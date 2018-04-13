@@ -1,4 +1,5 @@
 ---
+url: /blog/cursive/
 author: Baron Schwartz
 categories:
 - Life Hacking

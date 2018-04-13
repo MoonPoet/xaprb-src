@@ -1,4 +1,5 @@
 ---
+url: /blog/2011/05/23/making-migrations-faster-and-safer/
 title: "Making Migrations Faster and Safer"
 date: "2011-05-23"
 categories:

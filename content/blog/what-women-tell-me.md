@@ -1,4 +1,5 @@
 ---
+url: /blog/what-women-tell-me/
 author: Baron Schwartz
 categories:
 - Commentary

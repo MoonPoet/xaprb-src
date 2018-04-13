@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/08/24/baron-schwartz-left-percona/
 categories:
 - Databases
 date: 2015-08-24T15:11:30-04:00

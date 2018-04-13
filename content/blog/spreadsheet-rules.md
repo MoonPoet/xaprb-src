@@ -1,4 +1,5 @@
 ---
+url: /blog/spreadsheet-rules/
 author: Baron Schwartz
 categories:
 - Desktop

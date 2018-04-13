@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/10/16/time-series-tagging/
 author: Baron Schwartz
 categories:
 - Databases

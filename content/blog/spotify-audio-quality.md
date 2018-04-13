@@ -1,4 +1,5 @@
 ---
+url: /blog/spotify-audio-quality/
 title: "How Good Is Spotify's Audio Quality?"
 date: '2018-01-21T00:00:00-05:00'
 author: Baron Schwartz

@@ -1,4 +1,5 @@
 ---
+url: /blog/my-home-gym/
 title: "My Home Gym"
 date: 2017-10-10T04:18:25-04:00
 categories:

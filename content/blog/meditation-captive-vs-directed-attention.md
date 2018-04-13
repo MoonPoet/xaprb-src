@@ -1,4 +1,5 @@
 ---
+url: /blog/meditation-captive-vs-directed-attention/
 title: 'Meditation: Captive vs Directed Attention'
 date: 2017-08-05 14:07:21 +0000
 author: Baron Schwartz

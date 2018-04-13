@@ -1,4 +1,5 @@
 ---
+url: /blog/how-to-write-exciting-conference-proposals/
 author: Baron Schwartz
 categories:
 - Conferences

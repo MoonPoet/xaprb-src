@@ -1,4 +1,5 @@
 ---
+url: /blog/remembering-alan-and-harry/
 title: Remembering Alan And Harry
 date: '2016-11-21T19:39:38-05:00'
 author: Baron Schwartz

@@ -1,4 +1,5 @@
 ---
+url: /blog/just-enough-better/
 author: Baron Schwartz
 categories:
 - Leadership

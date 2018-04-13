@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/07/21/surprising-database-bottlenecks/
 title: Your Real Database Bottleneck
 date: '2015-07-21T14:46:49-07:00'
 categories:

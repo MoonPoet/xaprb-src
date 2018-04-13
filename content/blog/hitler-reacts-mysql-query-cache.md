@@ -1,4 +1,5 @@
 ---
+url: /blog/hitler-reacts-mysql-query-cache/
 author: Baron Schwartz
 categories:
 - Databases

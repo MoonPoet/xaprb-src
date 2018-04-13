@@ -1,4 +1,5 @@
 ---
+url: /blog/best-fitness-activity-sleep-tracking-watch/
 author: Baron Schwartz
 categories:
 - Gear

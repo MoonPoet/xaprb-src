@@ -1,4 +1,5 @@
 ---
+url: /blog/four-favorite-meditation-books/
 title: My Four Favorite Meditation Books
 date: 2017-10-22 15:44:51 -0400
 categories:

@@ -1,4 +1,5 @@
 ---
+url: /blog/2006/10/19/mysql-tools/
 title: "Open Tools for MySQL Administrators"
 date: "2006-10-19"
 categories:

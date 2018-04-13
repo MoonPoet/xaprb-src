@@ -1,4 +1,5 @@
 ---
+url: /blog/how-to-be-a-winner/
 author: Baron Schwartz
 categories:
 - Life Hacking

@@ -1,4 +1,5 @@
 ---
+url: /blog/charlottesville-white-supremacy/
 title: "When White Supremacy Came To Charlottesville"
 date: 2017-10-06T18:00:00-04:00
 categories:

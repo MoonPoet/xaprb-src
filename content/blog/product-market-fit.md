@@ -1,4 +1,5 @@
 ---
+url: /blog/product-market-fit/
 title: Product Market Fit
 date: '2016-12-31T10:26:11-05:00'
 author: Baron Schwartz

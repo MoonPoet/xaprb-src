@@ -1,4 +1,5 @@
 ---
+url: /blog/gluten/
 author: Baron Schwartz
 categories:
 - Life Hacking

@@ -1,4 +1,5 @@
 ---
+url: /blog/2016/01/09/daily-inspiration-experiment/
 author: Baron Schwartz
 categories:
 - Life Hacking

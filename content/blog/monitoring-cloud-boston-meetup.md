@@ -1,4 +1,5 @@
 ---
+url: /blog/monitoring-cloud-boston-meetup/
 author: Baron Schwartz
 categories:
 - Databases

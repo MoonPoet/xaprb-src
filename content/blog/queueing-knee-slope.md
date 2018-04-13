@@ -1,4 +1,5 @@
 ---
+url: /blog/queueing-knee-slope/
 author: Baron Schwartz
 categories:
 - Scalability

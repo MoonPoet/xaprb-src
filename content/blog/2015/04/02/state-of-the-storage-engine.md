@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/04/02/state-of-the-storage-engine/
 categories:
   - Databases
 date: 2015-04-02T03:51:18-05:00

@@ -1,4 +1,5 @@
 ---
+url: /blog/sponsors-do-more-than-pay-bills/
 title: "Sponsors Do More Than Pay The Bills"
 date: 2017-10-24T14:32:21-04:00
 categories:

@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/05/18/what-i-look-for-conference-proposal/
 categories:
   - Conferences
 date: 2015-05-18T13:51:18-05:00

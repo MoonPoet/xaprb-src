@@ -1,4 +1,5 @@
 ---
+url: /blog/artificial-intelligence-machine-learning-monitoring/
 author: Baron Schwartz
 categories:
 - Monitoring

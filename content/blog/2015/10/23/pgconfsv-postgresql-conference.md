@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/10/23/pgconfsv-postgresql-conference/
 author: Baron Schwartz
 categories:
 - Databases

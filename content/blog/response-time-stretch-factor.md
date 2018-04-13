@@ -1,4 +1,5 @@
 ---
+url: /blog/response-time-stretch-factor/
 author: Baron Schwartz
 categories:
 - Math

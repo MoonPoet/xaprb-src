@@ -1,4 +1,5 @@
 ---
+url: /blog/male-fear-of-false-accusations-is-irrational/
 title: Male Fear of False Accusations Is Irrational
 date: 2017-10-12 20:16:30 -0400
 categories:

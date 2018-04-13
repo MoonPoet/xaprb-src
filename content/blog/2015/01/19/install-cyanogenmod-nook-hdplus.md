@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/01/19/install-cyanogenmod-nook-hdplus/
 title: "Installing CyanogenMod on the Barnes and Noble Nook HD+"
 description: "CyanogenMod is a great way to get a full-featured, un-crippled tablet."
 date: "2015-01-19"

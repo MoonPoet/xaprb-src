@@ -1,6 +1,7 @@
 ---
 title: My Twitter Following Strategy
 date: 2018-04-08 09:37:47 -0400
+url: /blog/my-twitter-following-strategy/
 categories:
 - Web
 author: Baron Schwartz

@@ -1,4 +1,5 @@
 ---
+url: /blog/2016/03/27/personality-assessment-values-profile/
 title: The Hartman Values Profile Assessment
 date: '2016-03-27T15:04:02-04:00'
 author: Baron Schwartz

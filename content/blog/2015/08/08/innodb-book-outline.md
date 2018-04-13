@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/08/08/innodb-book-outline/
 author: Baron Schwartz
 categories:
   - Databases

@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/11/12/universal-scalability-law-teach-mysql/
 author: Baron Schwartz
 categories:
 - Databases

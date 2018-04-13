@@ -1,4 +1,5 @@
 ---
+url: /blog/how-to-protect-your-speaking-voice/
 title: 'How to Protect Your Speaking Voice'
 date: "2018-04-03T17:10:04-04:00"
 categories:

@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/09/29/personal-tech-support/
 title: Why I Don't Give Personal Tech Support
 date: '2015-09-29T22:04:16-07:00'
 categories:

@@ -1,4 +1,5 @@
 ---
+url: /blog/2016/04/18/why-prioritize-diversity-now/
 author: Baron Schwartz
 categories:
 - Leadership

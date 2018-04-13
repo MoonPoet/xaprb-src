@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/05/22/percona-mongodb-mysql-history-repeat/
 categories:
   - Conferences
   - Databases

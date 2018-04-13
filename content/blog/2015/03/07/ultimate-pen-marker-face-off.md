@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/03/07/ultimate-pen-marker-face-off/
 date: "2015-03-07T13:52:41-05:00"
 title: "The Ultimate Pen"
 description: "Goes perfectly with your notebook addiction."

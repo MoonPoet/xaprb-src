@@ -1,4 +1,5 @@
 ---
+url: /blog/how-to-extract-pdf-content/
 title: 'How to Extract Content From a PDF'
 date: "2018-04-07T16:52:49-04:00"
 categories:

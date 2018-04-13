@@ -1,4 +1,5 @@
 ---
+url: /blog/my-stereo-system/
 title: My Budget Audiophile Stereo System
 date: 2016-11-24 18:21:57 -0500
 author: Baron Schwartz

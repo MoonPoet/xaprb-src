@@ -1,4 +1,5 @@
 ---
+url: /blog/life-on-mobile-the-last-mile/
 author: Baron Schwartz
 categories:
 - Life Hacking

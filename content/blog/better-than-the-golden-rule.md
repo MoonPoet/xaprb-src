@@ -1,4 +1,5 @@
 ---
+url: /blog/better-than-the-golden-rule/
 title: Better Than The Golden Rule
 date: '2016-12-08T19:28:07-05:00'
 author: Baron Schwartz

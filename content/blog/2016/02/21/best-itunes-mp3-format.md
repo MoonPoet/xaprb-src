@@ -1,4 +1,5 @@
 ---
+url: /blog/2016/02/21/best-itunes-mp3-format/
 title: The Best Lossy Music Compression
 date: '2016-02-21T11:12:56-05:00'
 author: Baron Schwartz

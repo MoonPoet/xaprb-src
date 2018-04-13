@@ -1,4 +1,5 @@
 ---
+url: /blog/note-taking-apps/
 title: 'Digital Note-Taking Apps'
 date: "2017-12-02T18:50:50-05:00"
 categories:

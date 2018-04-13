@@ -1,4 +1,5 @@
 ---
+url: /blog/2012/02/01/interview-with-nocoug/
 title: "A Whole New World of MySQL with Baron Schwartz"
 date: "2012-02-01"
 categories:

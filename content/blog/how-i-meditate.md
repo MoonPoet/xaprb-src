@@ -1,4 +1,5 @@
 ---
+url: /blog/how-i-meditate/
 title: How I Meditate
 date: 2018-02-24 15:10:30 +0000
 author: Baron Schwartz

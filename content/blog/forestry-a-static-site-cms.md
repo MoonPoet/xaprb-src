@@ -1,4 +1,5 @@
 ---
+url: /blog/forestry-a-static-site-cms/
 title: Forestry, a Static Site CMS
 date: '2016-11-04T20:33:23-04:00'
 author: Baron Schwartz

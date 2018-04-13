@@ -1,4 +1,5 @@
 ---
+url: /blog/switching-hugo-swiftype-static-json-index-lunrjs/
 title: Switching From Swiftype to a Static JSON Index and LunrJS
 date: 2018-02-17 21:10:41 -0500
 categories:

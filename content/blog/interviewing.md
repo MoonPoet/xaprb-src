@@ -1,4 +1,5 @@
 ---
+url: /blog/interviewing/
 author: Baron Schwartz
 categories:
 - Leadership

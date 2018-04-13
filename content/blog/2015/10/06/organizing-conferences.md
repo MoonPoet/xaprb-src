@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/10/06/organizing-conferences/
 categories:
 - Conferences
 date: 2015-10-06T10:53:36-04:00

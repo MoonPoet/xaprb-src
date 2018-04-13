@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/11/14/help-me-improve-accessibility/
 author: Baron Schwartz
 categories:
 - About

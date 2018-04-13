@@ -1,4 +1,5 @@
 ---
+url: /blog/intent/
 author: Baron Schwartz
 categories:
 - Life Hacking

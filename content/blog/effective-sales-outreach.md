@@ -1,4 +1,5 @@
 ---
+url: /blog/effective-sales-outreach/
 author: Baron Schwartz
 categories:
 - Commentary

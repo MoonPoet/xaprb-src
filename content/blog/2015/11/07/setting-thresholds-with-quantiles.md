@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/11/07/setting-thresholds-with-quantiles/
 author: Baron Schwartz
 categories:
 - Math

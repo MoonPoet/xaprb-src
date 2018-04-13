@@ -1,4 +1,5 @@
 ---
+url: /blog/four-core-ip/
 author: Baron Schwartz
 categories:
 - Leadership

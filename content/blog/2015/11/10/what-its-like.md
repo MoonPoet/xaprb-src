@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/11/10/what-its-like/
 author: Baron Schwartz
 categories:
 - Leadership

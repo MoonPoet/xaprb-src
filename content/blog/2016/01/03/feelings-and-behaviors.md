@@ -1,4 +1,5 @@
 ---
+url: /blog/2016/01/03/feelings-and-behaviors/
 author: Baron Schwartz
 categories:
 - Commentary

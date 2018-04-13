@@ -1,4 +1,5 @@
 ---
+url: /blog/2016/03/19/meditation/
 author: Baron Schwartz
 categories:
 - Best Of

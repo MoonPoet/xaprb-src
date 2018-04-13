@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/02/07/creating-high-performance-mysql-new-website/
 title: "Making High Performance MySQL's New Website"
 description: "A sweet cover image makes all the difference."
 date: "2015-02-07"

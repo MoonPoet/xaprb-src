@@ -1,4 +1,5 @@
 ---
+url: /blog/life-on-mobile-apps-services/
 author: Baron Schwartz
 categories:
 - Life Hacking

@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/10/11/personality-assessments/
 author: Baron Schwartz
 categories:
 - Life Hacking

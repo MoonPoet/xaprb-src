@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/05/25/what-makes-a-solution-mature/
 categories:
 - Databases
 date: 2015-05-25T14:40:42-04:00

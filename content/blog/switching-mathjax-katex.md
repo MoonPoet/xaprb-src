@@ -1,4 +1,5 @@
 ---
+url: /blog/switching-mathjax-katex/
 title: 'Switching from MathJax to KaTeX'
 date: "2018-04-07T20:32:07-04:00"
 categories:

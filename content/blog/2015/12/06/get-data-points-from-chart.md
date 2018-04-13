@@ -1,4 +1,5 @@
 ---
+url: /blog/2015/12/06/get-data-points-from-chart/
 author: Baron Schwartz
 categories:
 - Math
