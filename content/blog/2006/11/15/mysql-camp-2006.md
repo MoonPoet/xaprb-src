@@ -57,7 +57,8 @@ This positions MySQL extremely well to compete in a market that has bloated serv
 *   Filesystem: will allow you to access your filesystem through SQL, doing such things as querying and updating attributes of image files.
 *   [memcache](http://tangent.org/index.pl?lastnode_id=478&#038;node_id=506): access memcache via SQL.
 *   [ScaleDB](http://scaledb.com/): "currently in stealth mode. Of course, the name itself speaks volumes."
-*   I've heard discussion of a storage engine whose physical storage is on [Amazon's S3](http://www.amazon.com/gp/browse.html?node=16427261).
+*   I've heard discussion of a storage engine whose physical storage is on
+	 Amazon S3.
 *   [BrightHouse](http://www.infobright.com/): a highly-compressed engine designed for archiving data from multi-terabyte data warehouses. BrightHouse compresses data at an average ratio of 10:1 (peak compression ratios exceed 30:1), whilst maintaining immediate and comprehensive query capability.
 
 Notice how nobody's developing a storage engine for okay performance on moderate amounts of data? I guess that's up to me. I'll call it SoSoDB.

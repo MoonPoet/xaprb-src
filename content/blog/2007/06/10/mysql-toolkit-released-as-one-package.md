@@ -15,8 +15,6 @@ The most important thing this will do is make it easier to distribute. It's a re
 
 It's gotten to the point that packaging and releasing these tools takes a good bit of time, which I never foresaw. There's just a lot of stuff I have to do very carefully, like making change logs, tagging the source, building the packages, uploading them to sourceforge, going to sourceforge and making a new release, entering all the right information, and so forth. It all adds up. "Release early, release often" has its advantages, but it is a burden too.
 
-If you want to support my work, I have now made an [Amazon wishlist](http://www.amazon.com/gp/registry/registry.html?id=LOE4ZUTKFU39).
-
 Here's a unified changelog:
 
 *   mysql-show-grants 2007-06-10: version 1.0.1 
