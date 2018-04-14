@@ -5,7 +5,7 @@ date: "2018-04-02T05:55:42-04:00"
 categories:
   - Meditation
 author: "Baron Schwartz"
-description: ""
+description: "Note to self: don't burn out."
 image: "/media/2018/04/fire-1899824_1280.jpg"
 ---
 
