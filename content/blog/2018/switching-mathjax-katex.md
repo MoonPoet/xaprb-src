@@ -18,11 +18,10 @@ simple to create beautifully typeset equations such as the following:
 \\rho = \\frac{1}{2} \\left( \\sqrt{2} \\sqrt{\\lambda+2} + \\sqrt{2} \\sqrt{ \\frac{ -2 \\lambda - \\lambda^2 + \\sqrt{2} \\sqrt{\\lambda+2}}{\\lambda+2}} \\right)
 \\]
 
-[MathJax](https://www.mathjax.org/) is sophisticated, but is large and has a lot
-of dependencies. It's not exactly slow, but it does render after the page loads,
-and that's slow enough to be perceptible. I learned about
-[KaTeX](https://khan.github.io/KaTeX/), a simpler, lighter alternative, and I've
-switched to use it instead.
+[MathJax](https://www.mathjax.org/) is sophisticated, but it's large and has a
+lot of dependencies. It's not slow, but [KaTeX](https://khan.github.io/KaTeX/),
+is even faster. KaTeX is a drop-in replacement that's simpler, faster, and
+lighter.  I've switched to use it instead.
 
 ![Fractal]({{< param image >}})
 
