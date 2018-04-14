@@ -6,25 +6,13 @@
   <div id="post-content">
   {{ .Content }}
   </div>
-  <hr>
   <span class="post-date">Posted in
 		{{ range .Params.categories }}
 		<a href="/categories/{{ . | urlize | lower }}" class="btn btn-primary">{{ . | title }}</a>{{ end }}. Discuss on
   {{ partial "share.html" . }}
   </span>
   {{ partial "related.html" . }}
-<div class="pagination">
-  {{ if .Prev }}
-    <a class="pagination-item newer" href="{{ .Prev.URL }}">Newer</a>
-  {{ else }}
-    <span class="pagination-item newer">Newer</span>
-  {{ end }}
-  {{ if .Next }}
-    <a class="pagination-item older" href="{{ .Next.URL }}">Older</a>
-  {{ else }}
-    <span class="pagination-item older">Older</span>
-  {{ end }}
-</div>
+  <hr>
   {{ partial "about.html" }}
 
 </div>
