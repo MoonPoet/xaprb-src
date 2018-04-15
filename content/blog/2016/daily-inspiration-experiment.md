@@ -9,13 +9,11 @@ tags:
 - Social Media
 date: 2016-01-09T14:00:16-05:00
 description: "I made my daily devotional time public. Here's what I learned."
-image: "media/2016/01/snowflake.jpg"
+image: "/media/2016/01/snowflake.jpg"
 title: My Daily Inspiration Experiment
 ---
 
 About 18 months ago I began an experiment on social media.
-
-![snowflake](/media/2016/01/snowflake.jpg)
 
 <!--more-->
 

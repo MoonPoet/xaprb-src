@@ -24,9 +24,9 @@ for a few years. It's easy to place on a desktop or counter. At this point there
 are a few of them at work and one at home. I keep recommending them to friends
 so I might as well just post it here too.
 
-![Furinno Adjustable Laptop Stand](/media/2015/04/furinno.jpg)
-
 <!--more-->
+
+![Furinno Adjustable Laptop Stand](/media/2015/04/furinno.jpg)
 
 I prefer the raspberry pink, obviously, but it also comes in black and a couple
 other colors if you don't like that. I'm also reasonably sure that I've bought a

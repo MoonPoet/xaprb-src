@@ -8,8 +8,6 @@ categories:
   - Writing
 ---
 
-![HPM Cover](/media/2015/02/hpm-cover-perspective.png)
-
 I recently updated the [High Performance MySQL](http://www.highperfmysql.com)
 website to modernize it. I am impressed at how easy it is these days to get a
 great little brochure site hosted. It used to be a lot more work. I used a

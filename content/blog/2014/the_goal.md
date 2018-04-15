@@ -1,4 +1,5 @@
 ---
+image: /media/2014/05/horse-race.jpg
 title: The Goal
 date: "2014-05-24"
 description: "Teams are systems, too."
@@ -13,8 +14,6 @@ image: /media/2014/05/horse-race.jpg
 Once upon a time I managed several teams of consultants. At a certain stage of the organization's growth, we wanted to achieve a higher billable-time utilization more easily, and we wanted more structure and process.
 
 Cary Millsap, about whom I have written quite a bit elsewhere on this blog, suggested that I might profit from reading [*The Goal*]({{< amz 0884271951 >}}) by Eliyahu Goldratt. I will let history be the judge of the outcome, but from my perspective, this was revolutionary for me. It is a clear watershed moment in my memory: I lived life one way and saw things through one lens before, and afterwards everything was different.
-
-![Horse Race](/media/2014/05/horse-race.jpg)
 
 <!--more-->
 

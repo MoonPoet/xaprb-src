@@ -6,7 +6,7 @@ categories:
 - Commentary
 author: Baron Schwartz
 description: Let's get the truth about how dangerous it is to be alone with a woman.
-image: media/2017/10/scared-man.jpg
+image: /media/2017/10/scared-man.jpg
 
 ---
 
@@ -17,8 +17,6 @@ to avoid having your life ruined by a woman's false accusations of assault is to
 never be alone with a woman? Like Vice President Pence?
 
 This fear is itself sexist and irrational. This is an opportunity to grow and mature. Let's dig into why.
-
-![Scared Man](/media/2017/10/scared-man.jpg)
 
 <!--more-->
 

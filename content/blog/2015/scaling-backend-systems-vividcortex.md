@@ -15,8 +15,6 @@ about how we scale our backend systems at VividCortex. It's heavy on MySQL,
 sprinkled with a little bit of Redis's magic pixie dust, and Kafka is also a key
 part of the architecture.
 
-![fern](/media/2015/03/fern.jpg)
-
 <!--more-->
 
 Important takeaways:

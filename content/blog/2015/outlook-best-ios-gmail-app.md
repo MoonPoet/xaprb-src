@@ -7,7 +7,7 @@ tags:
 - Mobile
 date: 2015-12-16T08:28:38-05:00
 description: "The best iPhone/iPad GMail app is not GMail, Inbox, or Mail, it's Outlook."
-image: "media/2015/12/mailboxes.jpg"
+image: "/media/2015/12/mailboxes.jpg"
 title: Why Outlook is the best iOS GMail App
 ---
 
@@ -15,8 +15,6 @@ I switched to an iPhone about 6 months ago and have found it superior to the
 Android phones I've used, except for one baffling thing. The GMail app on iOS is
 awful compared to the Android version. Unusably awful, actually. Fortunately,
 Outlook is very good. Better than the alternatives. Here's why.
-
-![Mailboxes](/media/2015/12/mailboxes.jpg)
 
 <!--more-->
 

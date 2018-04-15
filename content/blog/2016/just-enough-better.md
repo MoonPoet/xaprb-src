@@ -6,15 +6,13 @@ categories:
 - Best Of
 date: 2016-06-04T20:36:20-04:00
 description: "What makes people want or need something?"
-image: "media/2016/06/mousetrap.jpg"
+image: "/media/2016/06/mousetrap.jpg"
 title: Just Enough Better
 ---
 
 What makes a product, project, or application become popular? People talk a lot about attributes such as stickiness, virality, addictive qualities, and gamification.
 
 I don’t pretend to have a universal answer, but many of the successful things I’ve been involved with worked well because they were just enough better for people to care a lot.
-
-![mousetrap](/media/2016/06/mousetrap.jpg)
 
 <!--more-->
 

@@ -7,7 +7,7 @@ categories:
 - Databases
 keywords: "NoSQL, RDBMS, Technology, MongoDB, MySQL, SQL, Redis, Riak, XML, JavaScript, Cassandra, Neo4J, Time, Series, InfluxDB, ElasticSearch, Kafka, Entrepreneurship"
 description: 'NoSQL was just the beginning.'
-image: 'media/2017/03/crossroads-1580168_1280.jpg'
+image: '/media/2017/03/crossroads-1580168_1280.jpg'
 
 ---
 
@@ -15,8 +15,6 @@ The rise of the LAMP stack in the early- to mid-2000s created a shift in
 the technology landscape, as well as the impetus for contenders to emerge. I've
 been reflecting on key factors in that phenomenon and what's happened since
 then---and what it can teach us about what's happening now.
-
-![Crossroads](/media/2017/03/crossroads-1580168_1280.jpg)
 
 <!--more-->
 

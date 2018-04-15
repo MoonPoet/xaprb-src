@@ -6,7 +6,7 @@ categories:
   - Gear
 author: "Baron Schwartz"
 description: "Here's why I kept my iPhone after I tested Google's flagship Pixel phone."
-image: "media/2018/03/iphone.jpg"
+image: "/media/2018/03/iphone.jpg"
 ---
 
 I [switched](/blog/life-on-mobile-android-ios/) from Android to iPhone a few years ago, and with the recent advances
@@ -14,8 +14,6 @@ in Android and some of the issues that have crept into iPhone, I wondered
 whether I should switch back. To help me decide, I got a Google Pixel 2 and used
 it for a week, with my iPhone turned off and put away. In the end, Android was
 much better than it used to be, but not good enough to woo me back. Here's why.
-
-![iPhone](/media/2018/03/iphone.jpg)
 
 <!--more-->
 

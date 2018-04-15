@@ -6,7 +6,7 @@ categories:
 - Databases
 date: 2017-04-09T20:30:04-04:00
 description: "System behavior is complex and multivariate, but most visualizations of systems are one-dimensional and hide subtleties."
-image: "media/2017/04/row-36-ts.png"
+image: "/media/2017/04/row-36-ts.png"
 title: Analyzing Changing Workloads with the USL
 ---
 
@@ -16,8 +16,6 @@ aggregate system behavior into high-level global metrics, losing all the detail.
 Multivariate analysis by another dimension often reveals something unexpected
 about server behavior. This can prompt you to explore the system, and sometimes
 leads to a deeper understanding of it. Here's one such example.
-
-![row-36-ts](/media/2017/04/row-36-ts.png)
 
 <!--more-->
 

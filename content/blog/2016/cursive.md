@@ -7,15 +7,13 @@ categories:
 - Gear
 date: 2016-06-10T12:21:54-04:00
 description: "Cursive writing is more than just writing."
-image: "media/2016/06/cursive.jpg"
+image: "/media/2016/06/cursive.jpg"
 title: Cursive Writing
 ---
 
 When I was a child, I learned to write in cursive using the A Beka Books
 homeschooling curriculum. I resumed journaling in cursive a couple years ago,
 after decades of writing with block letters (printing).
-
-![Cursive](/media/2016/06/cursive.jpg)
 
 Although my motivation to relearn cursive was to make my daily journaling more
 special by setting it apart, I didn't simply regain what I had forgotten. I

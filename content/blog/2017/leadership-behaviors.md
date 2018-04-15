@@ -7,12 +7,10 @@ categories:
 - Leadership
 description: Every leader has a unique style you can use to help reflect what's right
   for you.
-image: media/2016/12/dartboard.jpg
+image: /media/2016/12/dartboard.jpg
 
 ---
 Leadership is, by definition, a process of transition. None of us is born to be a leader. Those who are leaders have become leaders through change, and it is a very [difficult](/blog/2015/11/10/what-its-like/) and unnatural process. A lot of this process involves learning, through repeatedly asking and answering the question, "what does a leader do?"
-
-![dartboard](/media/2016/12/dartboard.jpg)
 
 As a first-time CEO, I ask this question of other CEOs again and again, and write down their answers. I also find food for thought in blogs and books. As you might expect, answers from different CEOs differ a lot, but they have similarities.
 

@@ -10,7 +10,7 @@ tags:
   - PostgreSQL
 author: Baron Schwartz
 description: "Relegating sponsors to the role of supporting a conference is a tragic missed opportunity."
-image: "media/2017/10/compass.jpg"
+image: "/media/2017/10/compass.jpg"
 ---
 
 I participate in many technical conferences every year, and I'm always struck by
@@ -18,8 +18,6 @@ the way conferences treat their sponsors. Those that simply acknowledge sponsors
 for making the event possible are seriously stunting their community. Don't do
 that!  Your community's commercial supporters aren't parasites: they're an
 essential part of your ecosystem.
-
-![Compass](/media/2017/10/compass.jpg)
 
 <!--more-->
 

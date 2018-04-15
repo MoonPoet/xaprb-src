@@ -3,13 +3,12 @@ title: "How To Print All The Way To The Edge In Microsoft Word"
 description: "It's simpler than you think."
 date: "2014-11-01"
 url: /blog/2014/11/01/print-full-bleed-microsoft-word/
+image: /media/2014/11/margin.jpg
 categories:
   - Desktop
 ---
 
 You're creating a document with Word that you want to turn into a nice full-page PDF. It has a gorgeous background color that will look great. But every time you convert it to a PDF, it ends up with ugly white borders at the edges, and Word warns you about printing beyond the printable margins. Dragging the margins and changing the Page Setup options does no good. How can you fix this?
-
-![Magic Margin](/media/2014/11/margin.jpg)
 
 <!--more-->
 

@@ -8,13 +8,11 @@ categories:
 - Web
 description: Forestry integrates with GitHub and Hugo to create a WYSIWYG CMS for
   static websites.
-image: media/2016/11/forest.jpg
+image: /media/2016/11/forest.jpg
 draft: false
 
 ---
 [Forestry](https://forestry.io) is a content management system that runs in your browser. On the backend, it integrates with a static site generator such as Hugo, letting you edit your static website in your browser just like any other content management system. I am writing this blog post with it on my iPad, using voice dictation.
-
-![forest](/media/2016/11/forest.jpg)
 
 <!--more-->
 

@@ -7,7 +7,7 @@ categories:
 date: 2017-02-21 15:31:44 -0500
 description: After researching many smartwatches and activity trackers, I bought a
   Withings Steel HR. Here's why.
-image: media/2017/02/runner.jpg
+image: /media/2017/02/runner.jpg
 title: The Nokia-Withings Steel HR
 menu:
   main: {}
@@ -21,8 +21,6 @@ tracking. Here's my experience thus far (updated after a year; scroll down).
 TL;DR: Using the Withings Steel HR has changed the way I use my smartphone. I
 love how much less distracted I am. I'm pretty happy with the health tracking
 features, and I like the traditional watch styling and long battery life.
-
-![Runner](/media/2017/02/runner.jpg)
 
 <!--more-->
 

@@ -26,8 +26,6 @@ sprouting, and most of them were massively overhyped.  But as valid as those
 arguments against NoSQL's "false economy" simplicity were and are, the arguments
 against relational databases' complexity hold true, too.
 
-![Puzzle](/media/2014/12/puzzle.jpg)
-
 <!--more-->
 
 The truth is that no database is really simple. Databases have a lot of

@@ -6,7 +6,7 @@ categories:
 date: 2017-06-04 15:57:34 -0400
 description: Reach high, for stars lie hidden in you. Dream deep, for every dream
   precedes the goal. (Rabindranath Tagore)
-image: media/2017/06/boston-evening-transcript.png
+image: /media/2017/06/boston-evening-transcript.png
 title: Heavier-Than-Air Flight Is Impossible
 
 ---

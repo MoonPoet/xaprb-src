@@ -5,8 +5,6 @@ date: '2015-09-29T22:04:16-07:00'
 categories:
 - Commentary
 description: Helping one person at a time doesn't scale
-draft: false
-
 ---
 I don't give personal, one-to-one technical support for open source software
 I've created, nor do I help people with SQL or other questions. The reasons are not obvious to many people, and this blog is meant to document them.

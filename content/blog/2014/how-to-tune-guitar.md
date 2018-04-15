@@ -11,7 +11,7 @@ image: /media/2014/01/guitar-tuning.jpg
 Do you know how to tune a guitar? I mean, do you *really* know how to tune a
 guitar?
 
-![Guitar Closeup](/media/2014/01/guitar-tuning.jpg)
+<!--more-->
 
 I've met very few people who do. Most people pick some notes, crank the tuners,
 play some chords, and endlessly fidget back and forth until they either get

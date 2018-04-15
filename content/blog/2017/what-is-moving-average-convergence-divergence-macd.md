@@ -6,14 +6,12 @@ categories:
   - Math
 author: Baron Schwartz
 description: "MACD is a terrible name for a simple concept. It's an efficient way to compare two moving averages and calculate trend in a metric."
-image: "media/2017/10/macd.png"
+image: "/media/2017/10/macd.png"
 ---
 
 Moving Average Convergence-Divergence (MACD) is an efficient, compact way to compare averages of a metric over two different intervals, and determine if the metric is trending upwards or downwards. It is widely used in finance and several other fields.
 
 MACD is a terrible name for a simple concept. It simply subtracts the long-term (distant) average from the short-term (recent) average. If the short-term average is larger, the result is positive and the metric is trending upwards.
-
-![MACD](/media/2017/10/macd.png)
 
 <!--more-->
 

@@ -8,7 +8,7 @@ categories:
   - Gear
 author: "Baron Schwartz"
 description: "I migrated from the Apple Notes app to Evernote. Here's the research I did and the results."
-image: "media/2017/12/background-2846221_1280.jpg"
+image: "/media/2017/12/background-2846221_1280.jpg"
 ---
 
 I used to use [paper notebooks][notebooks] extensively. When I didn't have paper
@@ -17,7 +17,6 @@ keeping all of my notes on my iPhone, using the [Notes app][mobile_apps]. In the
 last few months, I've moved from Notes to Evernote. This process took some time
 and research, which I'm sharing in case it's useful to you.
 
-![Notebook][background]
 
 <!--more-->
 
@@ -263,7 +262,6 @@ end tell
 [ulysses]: https://ulyssesapp.com/
 [ia_writer]: https://ia.net/writer/
 [just_enough]: /blog/just-enough-better/
-[background]: /media/2017/12/background-2846221_1280.jpg
 [pixabay]: https://pixabay.com/en/background-blank-business-2846221/
 [notebooks]: /blog/2013/07/10/ultimate-notebook-and-journal-face-off/
 [mobile_apps]: /blog/life-on-mobile-apps-services/

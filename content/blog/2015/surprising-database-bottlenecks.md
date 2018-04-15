@@ -19,8 +19,6 @@ siloed culture that accretes around the database and has far more pernicious rip
 in database optimization is the interplay between the technology and the
 team, and its communication structures.
 
-![Bottleneck](/media/2015/07/bottleneck.jpg)
-
 <!--more-->
 
 I've been thinking about this for years. While I was

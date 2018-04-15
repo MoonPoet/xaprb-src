@@ -11,8 +11,6 @@ image: "/media/2018/04/geese-1622692_1280.jpg"
 ---
 I have a deliberate strategy that guides who I follow on Twitter, and the tools and techniques I use to curate my feed. I'm not sure how unusual it is; perhaps many of us do the same types of things but don't share our thinking with each other. I wrote this post in case my thinking is useful to others.
 
-![Birds]({{< param image >}})
-
 <!--more-->
 
 My goal on Twitter is to broaden my horizons and help me to see the world

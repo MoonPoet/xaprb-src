@@ -6,7 +6,7 @@ categories:
 - Programming
 date: 2017-02-25T14:43:17-05:00
 description: "Here are some practices I've found to help keep spreadsheets manageable over the years."
-image: "media/2017/02/ledger.jpg"
+image: "/media/2017/02/ledger.jpg"
 title: Simple Guidelines For Maintainable Spreadsheets
 ---
 
@@ -14,8 +14,6 @@ The spreadsheet is one of the most powerful inventions in the history of
 computing. But with that power comes responsibility: just as with a programming
 language, the spreadsheet itself can become difficult to understand and
 maintain. 
-
-![Ledger](/media/2017/02/ledger.jpg)
 
 <!--more-->
 

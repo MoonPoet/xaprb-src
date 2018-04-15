@@ -17,8 +17,6 @@ engines](http://www.dzone.com/articles/state-storage-engine) to the recent
 Management](http://dzone.com/research/guide-to-databases). I'm cross-posting the
 article below with DZone's permission.
 
-![Boardwalk](/media/2015/04/boardwalk.jpg)
-
 <!--more-->
 
 Readers of this guide already know the database world is undergoing rapid change. From relational-only, to NoSQL and Big Data, the technologies we use for data storage and retrieval today are much different from even five years ago.

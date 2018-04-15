@@ -12,8 +12,6 @@ image: "/media/2018/04/extrude-1606468_1280.jpg"
 I've occasionally needed to extract text and/or images from a PDF. I've found a
 couple of easy, free ways to do this on MacOS.
 
-![Extrude]({{< param image >}})
-
 <!--more-->
 
 There's commercial software such as Adobe Acrobat that will extract images from

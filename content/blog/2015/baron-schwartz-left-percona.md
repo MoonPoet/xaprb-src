@@ -12,8 +12,6 @@ A number of people have commented to me over the last few years that when they
 search for me on Google, it suggests that they might want to search for "Baron
 Schwartz left Percona." This is a top suggestion when I search for myself, too.
 
-![Google](/media/2015/08/google.png)
-
 Since people are searching for it, maybe I should explain it.
 
 <!--more-->
@@ -26,6 +24,8 @@ I didn't want to leave Percona, but I wanted to pursue my dream more than I
 wanted to stay. I also wanted to change from a
 [fully remote and globally distributed](/blog/2009/09/27/6-ways-to-stay-sane-while-working-from-home/) work style to
 working in the same physical place as my colleagues.
+
+![Google](/media/2015/08/google.png)
 
 There's really nothing more to it than that. Percona is a great company and I
 have been impressed at their growth and success since I left.  I stay in touch

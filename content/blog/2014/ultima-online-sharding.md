@@ -1,4 +1,5 @@
 ---
+image: /media/2014/04/ultima.jpg
 title: "Ultima Online and the History of Sharding"
 description: "The backstory of database sharding"
 date: "2014-04-21"
@@ -16,8 +17,6 @@ it my best shot.
 architecture of some things," I said. "That would have been about 2006."
 
 "Nope. Much earlier than that," said my new friend.
-
-![ultima](/media/2014/04/ultima.jpg)
 
 I pondered. "Well, I guess there was the famous LiveJournal architecture
 article about MySQL. That was, I dunno, 2003?"

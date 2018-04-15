@@ -6,13 +6,11 @@ categories:
 - Humor
 date: 2016-10-13T21:46:24-04:00
 description: "This article is so full of win."
-image: "media/2016/10/winning.jpg"
+image: "/media/2016/10/winning.jpg"
 title: Five Surprising Secrets of People Who Always Win
 ---
 
 Are you a winner? Or are you going to let life get you back on your heels and make you into a failure? Because remember, if you lose, it means you’re a loser. By definition.
-
-![Winners](/media/2016/10/winning.jpg)
 
 Here’s the surprising truth about what winners do and how they do it, and how you can too.
 

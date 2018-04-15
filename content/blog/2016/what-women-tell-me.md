@@ -6,7 +6,7 @@ categories:
 - Best Of
 date: 2016-08-06T12:43:03-04:00
 description: "Women change my perspective more than anyone else in my life."
-image: "media/2016/08/gramophone.jpg"
+image: "/media/2016/08/gramophone.jpg"
 title: What Women Tell Me
 ---
 
@@ -21,8 +21,6 @@ started to, I decided to sit up and listen, hard.
 *Disclaimer: I'm not saying that men don't care or talk about these types of
 things. In fact, many of these episodes of sexism came to me through a man's
 Twitter post. BUT WOMEN RETWEETED IT TO ME.*
-
-![Gramophone](/media/2016/08/gramophone.jpg)
 
 I will now present things I have heard only or mostly from women, in many cases
 without attribution to the original author or the woman who drew this to my

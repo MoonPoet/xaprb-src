@@ -48,8 +48,6 @@ that in a moment.
 
 Here's a screenshot of each:
 
-![Feedly Browser](/media/2015/04/feedly-browser.png)
-
 ![Digg Reader Browser](/media/2015/04/digg-reader-browser.png)
 
 What made me curious to investigate Feedly again after all this time? One of the

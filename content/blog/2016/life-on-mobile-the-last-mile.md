@@ -6,7 +6,7 @@ categories:
 - Gear
 date: 2016-10-28T18:27:12-04:00
 description: "What keeps me using a laptop, if mobile devices are so great?"
-image: "media/2016/10/jet-engine.jpg"
+image: "/media/2016/10/jet-engine.jpg"
 title: "Life on Mobile: The Last Mile on iPad"
 ---
 
@@ -14,8 +14,6 @@ I wrote previously about [how I run much of my life on
 iPhone/iPad](/blog/life-on-mobile-apps-services/), and [how I switched from
 Android to iPhone](/blog/life-on-mobile-android-ios/). Why do I still have a
 laptop, if I can do so much on mobile devices? What holds me back?
-
-![jet engine](/media/2016/10/jet-engine.jpg)
 
 <!--more-->
 

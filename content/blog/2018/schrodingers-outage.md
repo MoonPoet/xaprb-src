@@ -8,14 +8,12 @@ categories:
 - Operations
 description: Hindsight is less often 20/20 than a biased narrative about a past that
   never existed.
-image: media/2018/02/rain-2422642_1280.jpg
+image: /media/2018/02/rain-2422642_1280.jpg
 
 ---
 A couple months ago we had an incident, in which a legacy recovery mechanism proved to be inadequate to our current scale. In our internal post-incident review, we asked if we should improve this seldom-used capability. I decided not to, because the plan is to completely replace the part of the platform that it serves. My judgment was that we were not likely to need it, and it would be a lot of time and effort to improve.
 
 Shortly thereafter, we did need it again, and again experienced the same pains. Was the decision wrong?
-
-![Raindrop Puddle](/media/2018/02/rain-2422642_1280.jpg)
 
 <!--more-->
 

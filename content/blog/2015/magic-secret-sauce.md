@@ -21,8 +21,6 @@ specific sacred-cow principles that must remain inviolate.
 You should be really skeptical of anything that smells like this. Sacred cows
 make the best steaks, and here's why.
 
-![Mugs](/media/2015/04/mugs.jpg)
-
 <!--more-->
 
 No, not the mugs, the mugs aren't why you should be skeptical. But let's talk

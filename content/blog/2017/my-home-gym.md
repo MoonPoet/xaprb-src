@@ -7,7 +7,7 @@ categories:
   - Gear
 author: Baron Schwartz
 description: "Here's the equipment I bought/built for my pseudo-CrossFit home gym."
-image: "media/2017/10/jump-rope.jpg"
+image: "/media/2017/10/jump-rope.jpg"
 ---
 
 After leaving CrossFit, I found a workout rhythm that works well for me, and

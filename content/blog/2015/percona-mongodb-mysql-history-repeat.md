@@ -16,8 +16,6 @@ History is repeating again. MongoDB is breaking out of the niche into the
 mainstream, performance and instrumentation are terrible in specific cases,
 MongoDB isn't able to fix all the problems alone, and an ecosystem is growing.
 
-![Leaf](/media/2015/05/leaf.jpg)
-
 <!--more-->
 
 This should really be a series of blog posts, because there's a book's worth of

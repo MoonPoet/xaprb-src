@@ -5,15 +5,13 @@ categories:
 - Commentary
 date: 2017-10-03 00:00:00 -0400
 description: The best sales outreach is simple, direct, and polite.
-image: media/2017/10/turbine.jpg
+image: /media/2017/10/turbine.jpg
 title: Effective Sales Outreach
 
 ---
 Sales people contact me a lot. This is common for anyone who's a founder or executive in a growing company, and I've done it too. I don't mind being contacted. I've made new friends and allies. I've even bought from some.
 
 But there are different kinds of sales outreach, and some of it just isn't effective. The key to effective sales outreach is to realize that there's either a need, timing, and budget or there isn't. The outreach itself cannot cause a sale to happen that the prospect wouldn't otherwise engage in.
-
-![Turbine](/media/2017/10/turbine.jpg)
 
 <!--more-->
 

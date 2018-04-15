@@ -6,7 +6,7 @@ categories:
   - Commentary
 author: Baron Schwartz
 description: "A synopsis of events at Charlottesville's white supremacist gathering in August 2017"
-image: "media/2017/10/fascists.jpg"
+image: "/media/2017/10/fascists.jpg"
 ---
 
 On August 11 and 12, 2017, hundreds of white supremacists traveled to my hometown of Charlottesville, Virginia, ostensibly to protest the planned removal of Confederate memorials. They assaulted, injured, and killed people.
@@ -14,8 +14,6 @@ On August 11 and 12, 2017, hundreds of white supremacists traveled to my hometow
 Many people don't know even the outlines of what happened, and have asked me to describe it to them. I've had trouble finding a concise, comprehensive story online. Most news stories are either summarized or focus on only a single incident during the rally, giving no sense of what happened overall. This post is a compilation of some of the major events.
 
 Before you continue, please be aware that this post links to and contains graphic, disturbing images and video.
-
-![Fascists](/media/2017/10/fascists.jpg)
 
 <!--more-->
 

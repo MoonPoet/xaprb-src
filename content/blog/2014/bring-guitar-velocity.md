@@ -3,6 +3,7 @@ title: "Can You Bring A Guitar To Velocity?"
 description: "And chocolate, please?"
 date: "2014-11-03"
 url: /blog/2014/11/03/bring-guitar-velocity/
+image: /media/2014/01/4542297929_49286da35a.jpg
 categories:
   - Conferences
 ---
@@ -11,8 +12,6 @@ I need help. I'm giving an Ignite talk at [Velocity
 EU](http://velocityconf.com/velocityeu2014/) that involves a guitar. I
 don't want to bring a guitar all the way from America just for this. Would you
 please loan me one?
-
-![guitar](/media/2014/01/4542297929_49286da35a.jpg)
 
 <!--more-->
 

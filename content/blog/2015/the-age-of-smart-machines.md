@@ -16,8 +16,6 @@ to 66% of the U.S. workforce may lose their jobs to computers in the coming
 decades. The report points out, however, that humans will always be needed to
 direct the computers. I'm not so sure.
 
-[![ZT 0001](/media/2015/03/zt_0001-thumb.jpg)](/media/2015/03/zt_0001.jpg)
-
 <!--more-->
 
 I think the briefing is right to predict that just as machines replaced a lot of

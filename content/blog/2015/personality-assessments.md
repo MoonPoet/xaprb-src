@@ -14,8 +14,6 @@ image: /media/2015/10/different.jpg
 
 Over the last couple of years I have increasingly studied and used personality tests for personal and professional uses, both for myself and for others. I've seen a variety of benefits, but these assessments are not without drawbacks, and not all assessments are created equal.
 
-![different](/media/2015/10/different.jpg)
-
 <!--more-->
 
 Personality assessments, at their finest, are statistical tools created and validated by teams of psychologists and mathematicians. At their worst, they are snake oil, invented and promoted by people with no real expertise, and claimed to achieve results that stretch credibility, sometimes even though they've been repeatedly shown not to work. There are many shades of gray in between: tests that work okay but are difficult to interpret, tests that show results that aren't really actionable.

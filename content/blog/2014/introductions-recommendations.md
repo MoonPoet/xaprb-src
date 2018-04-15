@@ -3,7 +3,7 @@ title: "Respectful Introductions and Recommendations"
 description: "Introducing people can be risky and costly. Always do double-opt-in with prior verification; never do blind/surprise introductions."
 date: "2014-02-23"
 url: /blog/2014/02/23/respectful-introductions-recommendations/
-image: "media/2014/02/elephant.jpg"
+image: "/media/2014/02/elephant.jpg"
 categories:
   - Commentary
 ---
@@ -17,8 +17,6 @@ introductions, and so forth.
 I've learned to be very careful about making or accepting such offers or
 requests, and I'd like to share my current thoughts about that with you, because
 a lot of trouble can come of a seemingly innocent request or offer.
-
-![Elephant](/media/2014/02/elephant.jpg)
 
 <!--more-->
 

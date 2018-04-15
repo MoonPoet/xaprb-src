@@ -7,7 +7,8 @@ tags:
 - Social Media
 date: 2015-12-13T09:14:27-05:00
 description: "Keep your site light and fast for social sharing with these minimal meta properties."
-image: ""
+image: "/media/2015/12/sharing.jpg"
+
 title: Minimal Social Meta Tags for a Blog
 ---
 
@@ -21,8 +22,6 @@ direction and add tons of redundant meta tags, which will make the page larger,
 heavier, and slower.
 
 What's the minimal necessary set of tags?
-
-![Sharing](/media/2015/12/sharing.jpg)
 
 <!--more-->
 

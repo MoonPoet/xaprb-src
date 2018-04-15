@@ -5,7 +5,7 @@ categories:
 - Leadership
 date: 2017-02-19T15:20:02-05:00
 description: "Investors say they can help their portfolio companies. I didn't understand how at first, but now I do."
-image: "media/2017/02/shuttle-carrier-aircraft.png"
+image: "/media/2017/02/shuttle-carrier-aircraft.png"
 title: How Venture Capitalists Have Helped Me
 ---
 
@@ -14,8 +14,6 @@ companies, so they pitch founders on the value they bring to their portfolio
 companies. When I was a new founder, their pitches didn't resonate with me. I
 found it difficult to understand how they could help. A few years later, I get
 it; they really can add value. This is what I've found so far.
-
-![Shuttle Carrier Aircraft](/media/2017/02/shuttle-carrier-aircraft.png)
 
 <!--more-->
 

@@ -7,16 +7,16 @@ categories:
 - Leadership
 description: There's no time to waste; the biggest lie we tell ourselves is that we
   have lots of time.
-image: media/2016/11/alan-rimm-kaufman-harry-weller.png
+image: /media/2016/11/alan-rimm-kaufman-harry-weller.png
 draft: false
 
 ---
 Harry Weller died suddenly this week. Harry was one of the greatest venture capital investors in history. He led NEA’s investment in my company, VividCortex. Harry was an advocate and mentor to me, but he was more: in both life and death, he reminded me of Alan Rimm-Kaufman, a boss and mentor who died a handful of years ago.
 
-![Alan Rimm-Kaufman and Harry Weller](/media/2016/11/alan-rimm-kaufman-harry-weller.png)
-
 <!--more-->
 
+
+![Alan Rimm-Kaufman and Harry Weller](/media/2016/11/alan-rimm-kaufman-harry-weller.png)
 
 
 ### Harry Weller

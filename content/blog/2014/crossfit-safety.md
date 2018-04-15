@@ -15,8 +15,6 @@ CrossFit too. It's fantastic. It's community, fun, health, fitness. It's the
 antidote to the boring gyms I forced myself to go to for years and hated every
 minute.
 
-![Kettlebells](/media/2014/01/9117226687_6e903b5c1b.jpg)
-
 But there is a fringe element in CrossFit, which unfortunately looks mainstream
 to some who don't really have enough context to judge. From the outside,
 CrossFit can look almost cult-like. It's easy to get an impression of people

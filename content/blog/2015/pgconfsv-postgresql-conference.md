@@ -18,16 +18,14 @@ leading PostgreSQL performance and scalability experts. It's happening November
 area to attend, since this is likely to be the best Postgres conference held
 thus far in the Silicon Valley.
 
+<!--more-->
+
 I also urge you to [buy your tickets](http://www.eventbrite.com/e/pgconf-silicon-valley-2015-tickets-16521286613) before they sell out! Of course, the earlier
 you buy, the more you save, too. (Use SeeMeSpeak for a 20% discount).
-
-![Convention Center](/media/2015/10/ssfcc.jpg)
 
 I'll be at the conference along with some of my colleagues. I'm pretty excited
 about this for a few reasons. Allow me to 'splain why?
 
-
-<!--more-->
 
 First, [I've loved PostgreSQL for a long
 time](/blog/2008/04/01/postgresql-conference-east-2008/) although fate has

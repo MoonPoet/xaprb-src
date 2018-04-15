@@ -16,8 +16,6 @@ What really happens, of course, is that the system in question becomes booby-tra
 
 Why does this happen? As usual, there's no single root cause, but a variety of problems combine to create a brittle, risky situation.
 
-![freeze](/media/2014/11/freeze.png)
-
 ### Assumptions
 
 When managers declare a freeze, they're not being malicious. They're doing something that seems to make sense. That's why it's important to understand the reasoning.

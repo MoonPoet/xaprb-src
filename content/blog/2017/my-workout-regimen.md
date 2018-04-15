@@ -6,15 +6,13 @@ categories:
   - Life Hacking
 author: Baron Schwartz
 description: "This is the workout routine that works for me."
-image: "media/2017/10/dumbbells-1634765_1280.jpg"
+image: "/media/2017/10/dumbbells-1634765_1280.jpg"
 ---
 
 I've found a workout routine that I've been able to maintain despite the
 challenges of parenting, travel, sickness, and founding and leading a startup
 company.  Not only do I sustain the regimen, it sustains me. This is my workout
 practice.
-
-![Kettlebells](/media/2017/10/dumbbells-1634765_1280.jpg)
 
 <!--more-->
 

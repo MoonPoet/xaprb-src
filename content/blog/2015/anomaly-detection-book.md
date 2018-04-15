@@ -21,8 +21,8 @@ Monitoring](http://www.oreilly.com/webops-perf/free/anomaly-detection-monitoring
 The book contains great examples of anomaly detection used for monitoring. It's
 practical and simple, and contains no hype.
 
-![Outlier](/media/2015/08/outlier.jpg)
-
 <!--more-->
+
+![Outlier](/media/2015/08/outlier.jpg)
 
 [Pic Credit](https://www.flickr.com/photos/mjfonseca/8392780221/)

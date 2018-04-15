@@ -1,4 +1,5 @@
 ---
+image: /media/2014/04/dolphin.jpg
 title: "Go MySQL Drivers"
 description: "There are excellent opensource Go drivers for MySQL"
 date: "2014-04-29"
@@ -11,8 +12,6 @@ categories:
 If you're interested in Google's Go programming language, perhaps you aren't
 sure what drivers to use for MySQL. The good news is there are *excellent*
 drivers for MySQL.
-
-![Dolphin](/media/2014/04/dolphin.jpg)
 
 There are several opensource ones on GitHub and elsewhere,
 but the driver I recommend is

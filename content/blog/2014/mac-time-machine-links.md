@@ -1,4 +1,5 @@
 ---
+image: /media/2014/07/time-machine.jpg
 title: "Mac's Time Machine and Symlinks"
 description: "A common backup failure turns out to be pretty simple to fix."
 date: "2014-07-07"
@@ -11,8 +12,6 @@ I use Mac OSX's built-in Time Machine for backups, and a couple of times I've
 noticed my backups failed and couldn't be completed successfully. I was unable
 to fix the problem until I reformatted the backup drive. Today I think I
 stumbled on the solution.
-
-![Time Machine](/media/2014/07/time-machine.jpg)
 
 <!--more-->
 

@@ -7,11 +7,9 @@ categories:
 - Health
 author: Baron Schwartz
 description: "I tested the Skagen Jorn Connected and Misfit Phase to see if they could replace my Nokia Steel HR."
-image: media/2018/03/skagen-jorn-misfit-phase.jpg
+image: /media/2018/03/skagen-jorn-misfit-phase.jpg
 ---
 I bought two of the more interesting-looking hybrid smart watches to compare their functionality to each other, and to the [Nokia Steel HR](/blog/best-fitness-activity-sleep-tracking-watch/) I already own. In the end, the [Skagen Jorn Connected](http://www.skagen.com/us/en/wearables/hybrid-smartwatches/hybrid-smartwatch-jorn-black-leather-pdpskt1203p.html) ([Amazon]({{< amz B06VV5MGV1 >}})) is a better watch and extension of my phone, but is not enough of a health or fitness tracker to replace the Nokia Steel HR; and the [Misfit Phase](https://www.samsung.com/us/explore/gear-s3/) ([Amazon]({{< amz B01MXFSTYN >}})) has useful functionality but a poor design and feel. Neither offers the notification features I'd find most useful.
-
-![Watches](/media/2018/03/skagen-jorn-misfit-phase.jpg)
 
 <!--more-->
 

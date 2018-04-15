@@ -7,14 +7,12 @@ categories:
 - Leadership
 description: Psychological safety is the foundation of teamwork. But how do you achieve
   it?
-image: media/2018/01/friends.jpg
+image: /media/2018/01/friends.jpg
 
 ---
 Psychological safety is now a prominent part of the engineering leadership lexicon. It began with Google, who reported that it is the strongest predictor of team productivity. According to those reports, this one factor trumps all other reasons that a team can perform well.
 
 It sounds good, but how do you create psychological safety within a team? My approach is based on personal experience in my closest relationships. I've found that in order to trust others, I must first feel acknowledged, validated, and supported. Here's how I try to extend that benefit to others in my life.
-
-![Friends](/media/2018/01/friends.jpg)
 
 <!--more-->
 

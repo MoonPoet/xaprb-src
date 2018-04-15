@@ -1,4 +1,5 @@
 ---
+image: /media/2014/04/loc.jpg
 title: "JOIN Versus Key-Value Stores"
 description: "Don't overlook the cost of moving data across the network"
 date: "2014-04-28"
@@ -9,7 +10,7 @@ categories:
 
 I was listening to a conversation recently and heard an experienced engineer express an interesting point of view on joins and key-value databases. I don't entirely agree with it. Here's why.
 
-![Library Of Congress](/media/2014/04/loc.jpg)
+<!--more-->
 
 First, the opinion. If I may paraphrase, the discussion was something like this:
 

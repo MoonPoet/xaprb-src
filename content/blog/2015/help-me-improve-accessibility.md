@@ -6,7 +6,8 @@ categories:
 - Web
 date: 2015-11-14T11:48:02-05:00
 description: "Please provide feedback on how I can make this blog more accessible"
-image: ""
+image: "/media/2015/11/wilderness.jpg"
+
 title: Help Me Make This Blog More Accessible
 ---
 
@@ -16,8 +17,6 @@ Hi! I probably don't know you, but I'd like to make this blog better for you. If
 you're disabled---for example, perhaps you use a screen reader, a special
 device, or have other needs that I might not anticipate, I'd really love your
 feedback on what I can do to make my content easier for you to read and enjoy.
-
-![Wilderness](/media/2015/11/wilderness.jpg)
 
 <!--more-->
 

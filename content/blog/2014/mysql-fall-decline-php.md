@@ -1,4 +1,5 @@
 ---
+image: /media/2014/02/kaleidoscope.jpg
 title: "MySQL falls with the decline of PHP"
 description: "Rumors of MySQL's decline have been greatly exaggerated."
 date: "2014-02-26"
@@ -19,8 +20,6 @@ This is an aside in the blog post, off-topic. But it's
 interesting to discuss because it reveals the completely different things people
 see when they look at something. It's like the proverbial story about the blind
 men describing an elephant. We have such a variety of perceptions.
-
-![Elephant](/media/2014/02/kaleidoscope.jpg)
 
 This post, by the way, is not yet another flame war about MySQL versus
 PostgreSQL. To the contrary, it is very important for MySQL users and

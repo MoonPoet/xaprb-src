@@ -11,8 +11,6 @@ image: /media/2014/06/timeseries.jpg
 
 I've had conversations about time-series databases with many people over the last couple of years. I [wrote previously](/blog/2014/03/02/time-series-databases-influxdb/) about some of the open-source technologies that people commonly use for time-series storage.
 
-![Time Series](/media/2014/06/timeseries.jpg)
-
 Because I have my own ideas about what constitutes a good time-series database, and because a few people have asked me to describe my requirements, I have decided to publish my thoughts here. All opinions that follow are my own, and as you read you should mentally add "in my opinion" to every sentence.
 
 <!--more-->

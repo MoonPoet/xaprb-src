@@ -20,8 +20,6 @@ casting Spotify to AirPlay. I decided to figure out what was going on and see if
 I could fix the audio quality issues. I think I've learned what's wrong, and
 unfortunately I don't think it's fixable. Read on to learn more.
 
-![Music](/media/2018/01/mobile-616012_1280.jpg)
-
 <!--more-->
 
 A while ago I did an experiment to determine the [all-around best lossy music

@@ -5,7 +5,7 @@ categories:
 - Conferences
 date: 2017-05-28T14:06:26-04:00
 description: "The secret of being a bore is to tell everything. - Voltaire"
-image: "media/2017/05/crocodiles.jpg"
+image: "/media/2017/05/crocodiles.jpg"
 title: How To Write Exciting Conference Proposals
 ---
 
@@ -17,8 +17,6 @@ trap.
 TL;DR: Your proposal should focus on your story about what you've done personally
 and what you've learned. Your story, not the topic. And, don't tell us anything
 about the importance of the topic or how high the stakes are.
-
-![Crocodile](/media/2017/05/crocodiles.jpg)
 
 <!--more-->
 

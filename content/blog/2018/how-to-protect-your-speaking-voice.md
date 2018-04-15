@@ -16,8 +16,6 @@ the stresses could overwhelm me. I'm not a professional, but I've learned a few
 things, tried some other things, and haven't had trouble with my voice for many
 years. Here's what works for me.
 
-![Microphone]({{< param image >}})
-
 <!--more-->
 
 First, recognize the stresses a conference can place on your ability to speak:

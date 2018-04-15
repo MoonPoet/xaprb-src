@@ -6,11 +6,12 @@ url: /blog/2014/06/02/can-anomaly-detection-solve-alert-spam/
 categories:
   - Math
   - Programming
+image: /media/2014/06/anomaly.jpg
 ---
 
 Anomaly detection is all the buzz these days in the "#monitoringlove" community.
 
-![anomaly][anomaly] 
+<!--more-->
 
 The conversation usually goes something like the following:
 
@@ -25,6 +26,3 @@ I'm going to give a [webinar about the science of statistical anomaly detection 
 
 
 [webinar]: https://vividcortex.com/anomaly-detection-webinar/
-[anomaly]: /media/2014/06/anomaly.jpg
-
-

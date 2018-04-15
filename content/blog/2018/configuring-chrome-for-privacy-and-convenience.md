@@ -6,7 +6,7 @@ categories:
   - Privacy
 author: "Baron Schwartz"
 description: "Here's the settings I configure to keep my browser from accumulating a lot of history and tracking cookies."
-image: "media/2018/03/pocket-watch-3156771_1280.jpg"
+image: "/media/2018/03/pocket-watch-3156771_1280.jpg"
 ---
 
 I've recently set up a new MacBook, which helped remind me of some of the
@@ -16,8 +16,6 @@ accumulation of this stuff eventually represents a loss of privacy and control
 that I dislike. On the other hand, browser features such as history are
 convenient, and I don't want to disable them entirely. I just don't want too
 much of them. This blog post is about how I've found a balance that I like.
-
-![Watch](/media/2018/03/pocket-watch-3156771_1280.jpg)
 
 <!--more-->
 

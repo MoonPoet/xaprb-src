@@ -11,6 +11,8 @@ circles I move in. There's general agreement that a lot of tools don't provide
 good alerting mechanisms, including problems such as unclear alerts, alerts that
 can't be acted upon, and alerts that lack context.
 
+<!--more-->
+
 Yesterday and today at the Strata conference, my phone and lots of
 phones around me started blaring klaxon sounds. When I looked at my phone, I saw
 something like this (the screenshot is from a later update, but otherwise

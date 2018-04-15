@@ -22,8 +22,6 @@ might not *feel* very productive, it's not that I've failed to achieve anything
 worked with an unclear mind, and later cannot remember exactly what I did during
 the day. This leads directly to self-doubt and self-criticism.
 
-![Sky](/media/2015/06/sky.jpg)
-
 Solving this problem is fairly simple for me and results in terrific
 productivity, as well as a great sense of satisfaction and progress at the end
 of the day.

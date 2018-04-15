@@ -11,8 +11,6 @@ image: /media/2015/03/converse.jpg
 If you're a Mac user like me, maybe you'll find the following tips helpful for
 making you better at your job.
 
-![Converse](/media/2015/03/converse.jpg)
-
 <!--more-->
 
 ### Maximizing a Window

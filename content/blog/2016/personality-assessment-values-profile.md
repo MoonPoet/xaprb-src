@@ -9,13 +9,11 @@ tags:
 - Culture
 - Personality
 description: The HVP measures self-view and world-view and is full of surprises.
-image: media/2016/03/justice.jpg
+image: /media/2016/03/justice.jpg
 draft: false
 
 ---
 A few months ago I [wrote](/blog/2015/10/11/personality-assessments/) about the DISC and Driving Forces personality assessments I've been using for the last couple of years, to help me be more intentional about my team interactions and [hiring](https://www.linkedin.com/pulse/article/dance-dances-itself-using-personality-assessments-hiring-schwartz). This post is about another model I use too.
-
-![Justice](/media/2016/03/justice.jpg)
 
 As Michael Gorsuch [tweeted](https://twitter.com/michaelgorsuch/status/703998409674326016), "healthy and effective teams are composed of individuals actively seeking to understand each other's needs." I couldn't have said it better. I find personality assessments helpful in several ways, including assessing candidates and coaching team members. They give people a concrete and consistent language for expressing and understanding themselves and each other.
 

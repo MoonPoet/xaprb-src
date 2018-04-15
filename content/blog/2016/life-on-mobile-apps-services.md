@@ -6,13 +6,11 @@ categories:
 - Gear
 date: 2016-10-22T21:46:24-04:00
 description: "How I run most of my life and business from iPhone and iPad apps"
-image: "media/2016/10/torx.jpg"
+image: "/media/2016/10/torx.jpg"
 title: "Life on Mobile: The iPhone Apps And Services I Use"
 ---
 
 In my [last post](/blog/life-on-mobile-android-ios/) I talked about the transition from Android to iOS and some of the experiences I had during that journey. Once I switched, I found a rich ecosystem of iPhone and iPad apps I use daily. Some of them are central to my workflow and professional life, and I use them across all my devices, including my laptop/desktop systems. In this post I'll talk about those apps and how they enable me to run the bulk of my life (and my company) on a phone screen.
-
-![Torx Bits](/media/2016/10/torx.jpg)
 
 <!--more-->
 

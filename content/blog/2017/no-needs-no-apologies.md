@@ -6,7 +6,7 @@ categories:
   - Commentary
 author: Baron Schwartz
 description: "No is a complete sentence that does not require the word 'Sorry'."
-image: "media/2017/10/feet-316978_1280.jpg"
+image: "/media/2017/10/feet-316978_1280.jpg"
 ---
 
 As I stopped on a New York City sidewalk to take a photo, a man approached me.
@@ -16,8 +16,6 @@ I scanned the area quickly and saw no danger, but I thought I knew where this
 was headed. "No," I answered, trying to dismiss him. He waved a small cellphone
 at me, his wrist gyrating emphatically. "My phone is dead," he said, his tone
 hinting that he didn't believe himself.  "Can you help me?"
-
-![Sidewalk](/media/2017/10/feet-316978_1280.jpg)
 
 <!--more-->
 

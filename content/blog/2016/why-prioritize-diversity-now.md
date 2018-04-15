@@ -11,13 +11,11 @@ tags:
 - Entrepreneurship
 date: 2016-04-18T10:09:11-05:00
 description: "Diversity is difficult to add after homogeneity takes root."
-image: "media/2016/04/board.jpg"
+image: "/media/2016/04/board.jpg"
 title: "Why I'm Not Waiting To Prioritize Diversity"
 ---
 
 I have a vacant board seat at VividCortex, and I'm making diversity one of my priorities as I begin to search. I've discussed this with a range of people over the last several months. Nearly everyone has asked me to clarify what I'm trying to achieve, and why. Some have challenged me to defend why I believe diversity is a must-have at this stage of VividCortex's growth. In the end, it's my job to make the call. I've decided that diversity is a priority (not the sole priority, but a priority) now, not later. Here's why---and here's how I'm following through on that decision.
-
-![Board](/media/2016/04/board.jpg)
 
 <!--more-->
 

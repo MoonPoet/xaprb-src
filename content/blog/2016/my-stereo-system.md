@@ -8,14 +8,14 @@ categories:
 - Gear
 description: Here's my high-class audiophile stereo system on a budget, plus a Spotify
   playlist just for you!
-image: media/2016/11/stereo.jpg
+image: /media/2016/11/stereo.jpg
 
 ---
 You probably know that I like to be pretty minimalistic, and don't accumulate many belongings. Yet for the few material things I value, I try to find the best balance of cost and quality. I enjoy music a lot, so I treated myself to an upgraded stereo system.
 
-![stereo](/media/2016/11/stereo.jpg)
-
 <!--more-->
+
+![stereo](/media/2016/11/stereo.jpg)
 
 I chose my components for the best combination of price, convenience, and quality. Here's the full list of components and widgets:
 

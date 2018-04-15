@@ -5,15 +5,13 @@ categories:
 - Databases
 date: 2016-09-09T13:30:18-04:00
 description: "Meet me in the Tang Center on October 10 to talk about cloud monitoring!"
-image: "media/2016/09/tang-center.jpg"
+image: "/media/2016/09/tang-center.jpg"
 title: Meeting The Challenges of Monitoring In The Cloud
 
 ---
 
 I'll be visiting MIT's Tang Center on October 10 in Boston to talk about
 monitoring. Join me!
-
-![Tang](/media/2016/09/tang-center.jpg)
 
 <!--more-->
 

@@ -1,4 +1,5 @@
 ---
+image: /media/2014/04/superman.jpg
 title: "Switching from Sublime Text back to Vim"
 description: "EMacs is next, no doubt."
 date: "2014-04-15"
@@ -14,8 +15,6 @@ Vim.
 
 Ever notice how the Vim logo looks a little like Superman's logo? No? Squint a
 little harder, then.
-
-![Superman](/media/2014/04/superman.jpg)
 
 <!--more-->
 

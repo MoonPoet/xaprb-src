@@ -1,4 +1,5 @@
 ---
+image: /media/2014/06/humpty.jpg
 title: "Unfixable Code"
 description: "How you can paint yourself into a corner with bad code."
 date: "2014-06-21"
@@ -15,11 +16,9 @@ I posit that some code can become literally unfixable. Programmers can paint
 themselves into a corner with the code and it becomes impossible to get out
 again.
 
-![humpty](/media/2014/06/humpty.jpg)
+<!--more-->
 
 The scenario arises when a specific set of conditions exists:
-
-<!--more-->
 
 * the code is difficult to work with for some reason --- inherent complexity, badly written code, whatever
 * the code is not tested and is not written to be testable

@@ -21,8 +21,6 @@ One of the things I said in the post was that I had no use for the "tagging"
 functionality I've seen in time series databases such as OpenTSDB. I've since
 reconsidered, although I think the functionality I now want is a bit different.
 
-![tagged](/media/2015/10/tagged.jpg)
-
 <!--more-->
 
 What does it mean to "tag" metrics? Typically, many time series databases let

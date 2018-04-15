@@ -7,14 +7,12 @@ categories:
 - Writing
 description: I avoid using many time-related words in writing, because they can be
   ambiguous and cause problems.
-image: media/2018/02/confusion.jpg
+image: /media/2018/02/confusion.jpg
 
 ---
 I've come to see time-related words as potentially dangerous to use in writing, because they have ambiguities that are difficult to parse. I didn't notice this until I started to work with many people for whom English is a second language. These people taught me that phrases I take for granted can be very confusing and illogical.
 
 Here's an example: "I avoid using these words, as they are confusing."
-
-![Confusion](/media/2018/02/confusion.jpg)
 
 <!--more-->
 

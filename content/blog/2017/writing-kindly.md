@@ -7,7 +7,7 @@ categories:
 - Writing
 - Life Hacking
 description: "Some of my rash writing has taught me better, more effective ways to say things."
-image: 'media/2017/03/bird-in-hand.jpg'
+image: '/media/2017/03/bird-in-hand.jpg'
 
 ---
 
@@ -17,8 +17,6 @@ skill I can learn if I care enough to try, and I've gotten better at it over
 time. I've also found that when I'm nice and I focus on the positive, I get
 better results. Here are some things I've learned about how to be a kinder
 person in my writing.
-
-![Bird in Hand](/media/2017/03/bird-in-hand.jpg)
 
 <!--more-->
 

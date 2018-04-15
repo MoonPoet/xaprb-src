@@ -9,13 +9,11 @@ categories:
 - Gear
 description: 'VPN, Keybase, Signal, and more: take these 6 steps to improve your digital
   security.'
-image: ''
+image: /media/2016/11/blue-abstract-glass-balls.jpg
 draft: false
 
 ---
 I wrote [previously](/blog/2013/12/18/secure-your-accounts-and-devices/) about securing your digital life. Technology and digital threats are advancing so fast that we're almost inevitably all going to be attacked in some way. Here are a few more steps I've taken recently.
-
-![Blue Marbles](/media/2016/11/blue-abstract-glass-balls.jpg)
 
 <!--more-->
 

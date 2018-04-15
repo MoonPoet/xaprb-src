@@ -18,8 +18,6 @@ easy---but it's not limiting. It's powerful enough to build advanced
 presentations.  Most of all, it makes me happy, because it gives me control and
 makes me more effective.
 
-![Deck of Cards]({{< param "image" >}})
-
 <!--more-->
 
 Remark is simple to use: it's a JavaScript library that converts a single

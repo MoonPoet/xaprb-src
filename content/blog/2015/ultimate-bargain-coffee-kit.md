@@ -16,8 +16,6 @@ picked up relatively late in life, I am kind of a snob, in that I want good
 coffee but I want it to be quick, easy, and cheap. This post is about the gear
 I've settled on for making my morning cup.
 
-![coffee](/media/2015/01/coffee.jpg)
-
 <!--more-->
 
 There's a wide range of gear you could build up, from super-cheap to really

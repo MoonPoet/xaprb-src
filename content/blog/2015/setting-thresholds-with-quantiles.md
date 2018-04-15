@@ -23,9 +23,9 @@ I couldn't find the place I'd seen the visualization (if you know prior art for
 the below, please comment!) so I decided to just blog about it. Suppose you
 start off with a time series:
 
-![time series](/media/2015/11/time-series.png)
-
 <!--more-->
+
+![time series](/media/2015/11/time-series.png)
 
 The idea is that you might want to alert on this metric breaking some threshold,
 but what's the right value? There are lots of ways you could do it: a multiple

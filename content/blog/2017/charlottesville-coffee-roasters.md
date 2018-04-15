@@ -5,7 +5,7 @@ categories:
 - Craft
 date: 2017-02-26T10:17:09-05:00
 description: "Here's a sampling of Charlottesville's vibrant coffee scene."
-image: "media/2017/02/coffee.jpg"
+image: "/media/2017/02/coffee.jpg"
 title: Charlottesville Coffee Roasters
 ---
 
@@ -18,8 +18,6 @@ also appreciate the variety and quality of coffee roasters in town and nearby.
 Of course, we have to import the beans, but there's much to the coffee story
 after the beans are harvested. Here are some of my favorite local coffee
 resources.
-
-![Coffee](/media/2017/02/coffee.jpg)
 
 <!--more-->
 

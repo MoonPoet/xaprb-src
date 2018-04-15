@@ -7,7 +7,7 @@ tags:
 - USL
 date: 2015-11-12T21:00:39-05:00
 description: "A formal mathematical analysis of MySQL's scalability yields obvious results."
-image: "media/2015/11/chicken.jpg"
+image: "/media/2015/11/chicken.jpg"
 title: What Does The Universal Scalability Law Reveal About MySQL?
 ---
 
@@ -20,8 +20,6 @@ What can the Universal Scalability Law (USL) teach us about the performance
 characteristics of these systems, as revealed by the benchmarks? To find out,
 I'll examine one particular benchmark, [MariaDB 10.1 and MySQL 5.7 performance
 on commodity hardware](https://blog.mariadb.org/maria-10-1-mysql-5-7-commodity-hardware/).
-
-![chicken](/media/2015/11/chicken.jpg)
 
 <!--more-->
 

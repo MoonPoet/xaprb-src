@@ -15,8 +15,6 @@ wrong (with the best intentions). It's not comprehensive, but I  hope it will
 help point out "low-hanging fruit" for interested people. Hopefully you'll be
 able to avoid some of the mistakes as a result.
 
-![audience](/media/2015/10/audience.jpg)
-
 <!--more-->
 
 ### Know Your Audiences

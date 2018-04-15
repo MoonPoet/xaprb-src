@@ -27,8 +27,6 @@ mature. There are different levels of maturity, naturally, but I want to
 understand whether it's mature enough for me to take a look at it. And in that
 spirit, it's worth understanding what makes a database mature.
 
-![Bristlecone](/media/2015/05/bristlecone.jpg)
-
 <!--more-->
 
 For my purposes, maturity really means *demonstrated capability and quality with

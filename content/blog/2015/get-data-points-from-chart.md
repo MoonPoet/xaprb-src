@@ -9,7 +9,7 @@ tags:
 - USL
 date: 2015-12-06T19:38:48-05:00
 description: "This post shows several ways to estimate data points from an image of a chart. As an example, I analyze CitusDB's scalability from a YouTube screen capture."
-image: "media/2015/12/espresso.jpg"
+image: "/media/2015/12/espresso.jpg"
 title: How to Extract Data Points From a Chart
 ---
 
@@ -20,8 +20,6 @@ asked, but I've been interested in
 many systems for which I can't get numbers.  Fortunately, it's usually possible
 to get approximate results without too much trouble. In this blog post I'll show
 several ways to extract estimates of values from a chart image.
-
-![Extracting](/media/2015/12/espresso.jpg)
 
 <!--more-->
 

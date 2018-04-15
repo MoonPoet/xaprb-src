@@ -6,7 +6,7 @@ categories:
 - Math
 date: 2016-11-30T22:02:08-05:00
 description: "The knee in the queueing response time curve illustrates important truths about queueing theory."
-image: "media/2016/11/knee-1.png"
+image: "/media/2016/11/knee-1.png"
 title: "The Queueing Knee, Part 1"
 ---
 
@@ -14,6 +14,8 @@ The "knee" in the [M/M/m queueing theory response time
 curve](/blog/response-time-stretch-factor/) is a topic of some debate in the
 performance community. Some say "the knee is at 75% utilization; everyone knows
 that." Others say "it depends." Others say "there is no knee."
+
+<!--more-->
 
 Depending on the definition, there _is_ a knee, but there are several
 definitions and you may choose the one you want. In this post I'll use a
@@ -24,8 +26,6 @@ preceding paragraph and whether this is the right definition, it still serves to
 illustrate important concepts.
 
 ![knee](/media/2016/11/knee-1.png)
-
-<!--more-->
 
 The image above shows the response time stretch factor curve for a queueing
 system with 8 service channels. This is analogous to a server with 8 CPUs, for

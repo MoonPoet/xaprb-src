@@ -19,11 +19,8 @@ simple to create beautifully typeset equations such as the following:
 \\]
 
 [MathJax](https://www.mathjax.org/) is sophisticated, but it's large and has a
-lot of dependencies. It's not slow, but [KaTeX](https://khan.github.io/KaTeX/),
-is even faster. KaTeX is a drop-in replacement that's simpler, faster, and
-lighter.  I've switched to use it instead.
-
-![Fractal]({{< param image >}})
+lot of dependencies. It's not slow, but [KaTeX](https://khan.github.io/KaTeX/)
+is even faster. KaTeX is a lightweight drop-in replacement. I've switched to use it instead.
 
 <!--more-->
 

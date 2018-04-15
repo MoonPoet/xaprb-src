@@ -14,8 +14,6 @@ data, but it's a growing trend in the technology world in general. What's
 perhaps most surprising is the dearth of native time-series databases, either
 commercial or opensource.
 
-![No Time to Say Hello](/media/2014/03/alice.jpg)
-
 ### The World is Time-Series
 
 The data we gather is increasingly timestamped and dealt with in time-series

@@ -6,13 +6,11 @@ categories:
 - Gear
 date: 2016-10-20T21:46:24-04:00
 description: "What it's like to switch from Android to iPhone"
-image: "media/2016/10/robot.jpg"
+image: "/media/2016/10/robot.jpg"
 title: "Life on Mobile: From Android to iOS"
 ---
 
 I’ve been living an increasingly mobile life lately, by which I mean laptops aren’t my sole or even primary computing device anymore. For the last two years I’ve been doing more computing on mobile devices than laptops or desktops. I’m writing this post on my iPad Pro. At the same time, I’m a heavy user of old-school technologies: command line, LaTeX, terminal-based editors, etc. I find it interesting that my life is increasingly possible to run on a mobile device, while at the same time my laptop remains absolutely indispensable. As I thought about this, I found myself organizing the last few years’ worth of lessons into distinct categories, which I’m strangely compelled to write into blog posts. So, here goes! In the first edition we will follow Baron on his adventures as he transitions from Android to iOS.
-
-![Metamorphosis](/media/2016/10/robot.jpg)
 
 <!--more-->
 

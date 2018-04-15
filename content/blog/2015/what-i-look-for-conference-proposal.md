@@ -13,8 +13,6 @@ I've been on the committee of various conferences many times. It's surprising
 how few people actually can write good proposals. Somehow it's also suprisingly
 hard to explain what makes a good one, so I'm going to give this another try.
 
-![Laptop](/media/2015/05/laptop.jpg)
-
 <!--more-->
 
 I think the key thing to remember, and the reason it's so hard to write a good

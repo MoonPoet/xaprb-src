@@ -17,7 +17,7 @@ tags:
 - Mobile
 description: Compression formats such as MP3, AAC, and Ogg Vorbis have a lot of nuances.
   What's the best set of tradeoffs?
-image: media/2016/02/cymatics.jpg
+image: /media/2016/02/cymatics.jpg
 
 ---
 I noticed recently that Google Play Music has a set of features I wasn't aware
@@ -32,8 +32,6 @@ produced with the LAME encoder is the most compatible choice if you
 want broad compatibility, but has low sound quality; if you want the best sound quality, AAC (Apple's native format) or Ogg Vorbis are much better than MP3 but aren't as universally supported.
 
 But before I get to that, let's sharpen some yak razors, shall we?
-
-![Cymatics](/media/2016/02/cymatics.jpg)
 
 <!--more-->
 

@@ -1,4 +1,5 @@
 ---
+image: /media/2014/05/dodecahedron.jpg
 title: Can MySQL be a 12-factor service?
 description: "12-factor systems are easier to operate; can MySQL be treated this way?"
 date: "2014-05-10"
@@ -10,8 +11,6 @@ categories:
 
 
 A while ago I [wrote](/blog/2012/04/24/the-mysql-init-script-mess/) about some of the things that can make MySQL unreliable or hard to operate. Some time after that, in a completely unrelated topic, someone made me aware of a set of principles called [12-factor](http://12factor.net) that I believe originated from experiences building Heroku.
-
-![Dodecahedron](/media/2014/05/dodecahedron.jpg)
 
 That's been over a year, and I've come to increasingly agree with the 12-factor principles. I guess I'm extremely late to the party, but making applications behave in 12-factor-compliant ways has solved a lot of problems for me.
 

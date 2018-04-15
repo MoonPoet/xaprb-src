@@ -19,8 +19,6 @@ uncluttered Android operating system on it instead of using the Nook operating
 system. The best-known general-purpose Android OS is CyanogenMod, and that's
 what I was thinking about.
 
-![cyanogenmod](/media/2015/01/cyanogenmod.jpg)
-
 Last time I did this, I didn't like the result. I'll explain why, then move on
 to show you how to install CyanogenMod easily on the Nook HD+ and talk about the
 results. (I'm very happy thus far).

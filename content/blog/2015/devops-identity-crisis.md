@@ -13,8 +13,6 @@ tags:
 
 **Why DevOps needs a manifesto after all, but may never get one.**
 
-![brain](/media/2015/02/rplusl_brain.jpg)
-
 *This article originally appeared on [O'Reilly Radar](http://radar.oreilly.com/2015/01/the-devops-identity-crisis.html).*
 
 DevOps is everywhere! The growth and mindshare of the movement is remarkable. But if you care deeply about DevOps, you might agree with me when I say that although its moment has “arrived,” DevOps is in serious trouble. The movement is fragmented and weakly defined, and is being usurped by those who care more about short-term opportunities than the long-term viability of DevOps.

@@ -6,7 +6,7 @@ categories:
 - Best Of
 date: 2016-10-08T14:07:14-04:00
 description: "A company's most valuable IP goes far beyond code and trade secrets."
-image: "media/2016/10/blueprint.png"
+image: "/media/2016/10/blueprint.png"
 title: The Four Types of Core Intellectual Property
 ---
 
@@ -14,8 +14,6 @@ If you ask people what their company's core intellectual property is, my guess
 is most responses would focus on technical things such as trade secrets,
 recipes, source code, and algorithms. But I've come to believe this definition
 doesn't encompass a company's most valuable intellectual property at all.
-
-![blueprint](/media/2016/10/Pocketwatch_cutaway_drawing.jpg)
 
 <!--more-->
 

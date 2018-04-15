@@ -16,8 +16,6 @@ lag, and impatience with a project I'm working on.  Even as I spoke about
 observing systems, I was observing my own behavior and seeing evidence that I
 needed to ease up a bit.
 
-![Fire]({{< param image >}})
-
 <!--more-->
 
 I noticed myself not being quite at top performance in a few relatively minor

@@ -5,7 +5,7 @@ categories:
 - Leadership
 date: 2017-04-03T20:38:52-07:00
 description: "By following one simple rule, literally anyone can avoid mistakes and make dramatically better hiring decisions."
-image: "media/2017/04/hexnut.jpg"
+image: "/media/2017/04/hexnut.jpg"
 title: Interviewing
 ---
 
@@ -14,8 +14,6 @@ created a mess.  But the scariest thing was I didn't know what I'd done wrong.
 Of all the many things I did, what, exactly, was making things go so badly? It
 turned out that most of my problems were caused by bad interviewing technique. I
 was setting every interview up for failure, and I didn't know it.
-
-![Hexnut](/media/2017/04/hexnut.jpg)
 
 <!--more-->
 

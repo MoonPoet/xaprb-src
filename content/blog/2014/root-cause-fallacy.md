@@ -14,8 +14,6 @@ would. But experience has taught me that there is no such thing as a single root
 cause. Instead, there's a chain of interrelated causes, each of which is
 necessary but none of which is sufficient to cause the overall problem.
 
-![Turtles](/media/2014/07/turtles.jpg)
-
 <!--more-->
 
 I am often reminded of an outage years ago. It was "caused" by a failed disk.

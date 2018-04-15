@@ -9,13 +9,11 @@ categories:
 - Programming
 description: Here are two alternatives to straightforward spreadsheet syntax when
   annoying errors seem to make things more difficult than needed.
-image: media/2016/11/min-error.png
+image: /media/2016/11/min-error.png
 draft: false
 
 ---
 I've done quite a bit of work with Excel over the last few years, and I've found a couple of recurring problems when there's missing or error data in ranges. I've had to work around this enough times that I thought it was worth sharing the solutions I've used.
-
-![Beautiful green bird eating orange peels](/media/2016/11/pexels-photo-191757.jpeg)
 
 <!--more-->
 

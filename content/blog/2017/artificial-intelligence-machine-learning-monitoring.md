@@ -5,7 +5,7 @@ categories:
 - Monitoring
 date: '2017-05-26T10:42:13-04:00'
 description: There are three major use cases for ML and AI in system monitoring.
-image: media/2017/05/artificial-intelligence.jpg
+image: /media/2017/05/artificial-intelligence.jpg
 title: Monitoring with Artificial Intelligence and Machine Learning
 
 ---
@@ -19,8 +19,6 @@ publicize.
 AI and ML [aren't magic](http://www.fast.ai/), and I think we need a broader
 understanding of this. And understanding that there are a few _types_ of ML use
 cases, especially for monitoring, could be useful to a lot of people.
-
-![Artificial Intelligence and Machine Learning](/media/2017/05/artificial-intelligence.jpg)
 
 <!--more-->
 

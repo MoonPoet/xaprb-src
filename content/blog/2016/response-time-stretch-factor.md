@@ -6,7 +6,7 @@ categories:
 - Scalability
 date: 2016-10-30T10:00:39-04:00
 description: "Is there a simple stretch-factor equation that describes M/M/m queueing delay for m>2?"
-image: "media/2016/10/error-in-heuristic.png"
+image: "/media/2016/10/error-in-heuristic.png"
 title: The Response Time Stretch Factor
 ---
 
@@ -18,10 +18,10 @@ describes this exactly, but for more complicated systems this equation is only
 approximate. This has rattled around in my brain for a long time, and rather
 than keeping my notes private I'm sharing them here (although since I'm still
 trying to learn this stuff I may just be putting my ignorance on full display).
+<!--more-->
+
 
 ![Hockey-Stick Curve](/media/2016/10/hockey-stick.png)
-
-<!--more-->
 
 I'll skip all the derivations and go through only the basics to get to the results.
 

@@ -18,9 +18,9 @@ for a while). But what about the perfect pen? Ah, pens. As much a personal
 matter as notebooks are. I've tried a variety of pens. Here's my review of some
 of them.
 
-![Pens](/media/2015/03/pens.jpg)
-
 <!--more-->
+
+![Pens](/media/2015/03/pens.jpg)
 
 First, what am I looking for? My ideal pen is:
 

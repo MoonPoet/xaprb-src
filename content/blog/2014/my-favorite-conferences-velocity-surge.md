@@ -1,4 +1,5 @@
 ---
+image: /media/2014/06/velocity.png
 title: "Two of My Favorite Conferences: Velocity and Surge"
 description: "The third is Chocolate Con, but you knew that."
 date: "2014-06-18"
@@ -17,8 +18,6 @@ I wanted to go for years, and when I finally did it was honestly one of the
 highlights of my professional career. I still don't know what I did get get
 invited to speak that first year. It was a golden horseshoe falling out of the
 sky and landing right in front of me.
-
-![Velocity](/media/2014/06/velocity.png)
 
 <!--more-->
 

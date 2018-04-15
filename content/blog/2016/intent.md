@@ -6,13 +6,11 @@ categories:
 - Best Of
 date: 2016-05-30T17:24:14-04:00
 description: "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win. - Sun Tzu"
-image: "media/2016/05/compass.jpg"
+image: "/media/2016/05/compass.jpg"
 title: Intent
 ---
 
 One of the core teachings of Drucker's classic "[Managing Oneself](http://www.csee.umbc.edu/courses/graduate/CMSC601/papers/managingoneself.pdf)" is to form hypotheses about what you'll do well or poorly, and then observe the outcomes. By repeatedly practicing this, you learn what you're good and bad at.
-
-![Compass](/media/2016/05/compass.jpg)
 
 At some point I noticed that I sometimes wasn't certain why I failed or succeeded. As I've explored this more deeply in the last few years, I've come to see that the biggest factor in my success or failure is often the clarity of my purpose itself.
 

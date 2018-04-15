@@ -7,14 +7,12 @@ categories:
 - Leadership
 - Best Of
 description: What I used to call product/market fit was really service/user fit.
-image: media/2016/12/whiskey-stones.jpg
+image: /media/2016/12/whiskey-stones.jpg
 draft: false
 
 ---
 I've built the right thing to do the right thing in the right way. Obviously product/market fit, right?
 No.  I now think about product/market fit very differently than I used to.
-
-![Whiskey Stones](/media/2016/12/whiskey-stones.jpg)
 
 <!--more-->
 

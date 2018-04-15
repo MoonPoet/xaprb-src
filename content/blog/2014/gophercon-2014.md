@@ -1,4 +1,5 @@
 ---
+image: /media/2014/05/gophercon.png
 title: "GopherCon 2014"
 description: "GopherCon 2014 was amazing."
 date: "2014-05-04"
@@ -13,8 +14,6 @@ great people in years. I have page after page of notes in my notebook, many of
 which I've yet to follow up on. The conference prompted a burst of learning and
 a flurry of creativity for me, as well as a huge list of things to study
 further.
-
-![Gophercon](/media/2014/05/gophercon.png)
 
 In no particular order, here are some of the many highlights for me:
 

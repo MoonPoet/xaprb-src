@@ -6,13 +6,11 @@ author: Baron Schwartz
 categories:
 - Leadership
 description: Treating others as we'd wish them to treat me doesn't go far enough.
-image: media/2016/12/aurora-1.jpg
+image: /media/2016/12/aurora-1.jpg
 draft: false
 
 ---
 The so-called Golden Rule is well recognized within Western culture, although most other cultures have similar concepts. Can you do better? I think the answer is yes, and it's good to try.
-
-![/media/2016/12/aurora-1.jpg](/media/2016/12/aurora-1.jpg)
 
 <!--more-->
 

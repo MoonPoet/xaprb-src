@@ -9,12 +9,10 @@ image: "/media/2018/04/justyn-warner-551351-unsplash.jpg"
 ---
 
 Many people such as venture capitalists have met and judged me and my team over
-the years. I've always found this a simultaneously amusing and frustrating
-experience, because in my experience, they're more wrong than right. I became
+the years. I've always found this simultaneously amusing and frustrating,
+because in my experience, they're more wrong than right. I became
 seriously allergic to this. But then I put on their shoes and walked a few
 steps, and the results surprised me.
-
-![Coach]({{< param image >}})
 
 <!--more-->
 

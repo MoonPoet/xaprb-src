@@ -10,15 +10,15 @@ tags:
 - Empathy
 date: 2016-01-03T15:56:52-05:00
 description: "Where I direct my attention greatly affects my interactions with the world."
-image: "media/2016/01/feelings-and-behaviors.png"
+image: "/media/2016/01/feelings-and-behaviors.png"
 title: Feelings and Behaviors
 ---
 
 It's a new year and I drew a diagram.
 
-![Feelings and Behaviors](/media/2016/01/feelings-and-behaviors.png)
-
 <!--more-->
+
+![Feelings and Behaviors](/media/2016/01/feelings-and-behaviors.png)
 
 This diagram shows the spectra of what I can pay attention to and focus upon.
 Along one axis, I can range between focusing on my feelings, or focusing on

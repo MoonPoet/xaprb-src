@@ -7,13 +7,11 @@ categories:
 - Books
 author: Baron Schwartz
 description: Four books that have helped me to know myself more deeply.
-image: media/2017/10/zen.jpg
+image: /media/2017/10/zen.jpg
 
 ---
 Mindfulness meditation has changed me perhaps more than any other influence in
 my life. Here are four books whose wisdom I treasure.
-
-![Zen Rocks](/media/2017/10/zen.jpg)
 
 <!--more-->
 
