@@ -2,16 +2,15 @@ baseurl: 'https://www.xaprb.com/'
 buildFuture: true
 blackfriday:
   plainIdAnchors: true
-publishdir: public
+theme: story
+googleAnalytics: "UA-101883-1"
 params:
    author: "Baron Schwartz"
    Tagline: "Stay Curious!"
    Title: "Baron Schwartz's Website"
-   GoogleAnalytics: "UA-101883-1"
    domain: "xaprb.com"
    DateForm: "Mon, Jan 2, 2006"
    RecentLimit: 20
-   LanyonOptions: "layout-reverse sidebar-overlay"
    Twitter: "xaprb"
    Amazon: "xaprb-20"
    Email: "&098;&097;&114;&111;&110;&064;&118;&105;&118;&105;&100;&099;&111;&114;&116;&101;&120;&046;&099;&111;&109;"
