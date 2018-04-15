@@ -1,7 +1,0 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather:700,700i|Open+Sans:400,400i,700,700i');
-
-body { font-family: 'Open Sans'; }
-h1, h2, h3 {
-  font-family: 'Merriweather';
-}
-.remark-code, .remark-inline-code { font-family: 'Inconsolata'; }
