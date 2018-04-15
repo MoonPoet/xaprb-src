@@ -209,3 +209,21 @@ The foundation of business observability is the **event data**.
 
 ---
 background-image: url(wallet-2292428\_1280.jpg)
+
+---
+class: two-column
+# Slides and Contact Information
+
+.col[
+Slides are at [xaprb.com/talks/](https://www.xaprb.com/talks/), or scan the QR
+code.
+
+Contact:
+
+- @xaprb on Twitter
+- baron@vividcortex.com
+]
+
+.col[
+<div id="qrcode"></div>
+]
