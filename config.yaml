@@ -33,7 +33,6 @@ outputs:
       - RSS
 Related:
    threshold: 50
-   includeNewer: true
    toLower: true
    indices:
       - name: keywords
