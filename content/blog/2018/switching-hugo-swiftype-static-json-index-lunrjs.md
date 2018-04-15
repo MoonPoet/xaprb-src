@@ -16,11 +16,11 @@ small changes and less than 30 minutes of work, I had a great search engine up
 and running. I moved it under the menu and made it into a separate [search
 page][search].
 
+<!--more-->
+
 If you're interested to mimic my approach, you can see the [commit][github] that
 I used[^broken] to add the search page. I copy-pasted most of this code from articles
 [here][halfelf-1] and [here][halfelf-2].
-
-<!--more-->
 
 I'd like to express my appreciation to [Swiftype][swiftype] for their excellent
 search engine, which I have now removed. I've used it for years and always loved
