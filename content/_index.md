@@ -1,5 +1,5 @@
 ---
-title: "Baron Schwartz's Home On The Web"
+title: "Baron Schwartz's Website"
 image: /media/2018/04/thomas-richter-500138-unsplash.jpg
 ---
 
