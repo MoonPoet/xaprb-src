@@ -12,6 +12,7 @@ params:
    Email: "&098;&097;&114;&111;&110;&064;&118;&105;&118;&105;&100;&099;&111;&114;&116;&101;&120;&046;&099;&111;&109;"
 MetaDataFormat: "yaml"
 Paginate: 20
+rssLimit: 20
 Taxonomies:
    category: "categories"
    tag: "tags"
