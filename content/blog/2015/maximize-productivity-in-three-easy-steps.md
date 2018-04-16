@@ -16,7 +16,11 @@ feel that you've done nothing but "stuff" at the end of the day.
 
 How can you change this? I've found three things that work for me to not only
 stay focused and achieve my objectives, but also help me feel better about
-myself. You see, although on a less [focused](/blog/2014/07/05/on-focus/) day I
+myself.
+
+<!--more-->
+
+You see, although on a less [focused](/blog/2014/07/05/on-focus/) day I
 might not *feel* very productive, it's not that I've failed to achieve anything
 (though I might have achieved fewer of my most valuable goals). It's that I've
 worked with an unclear mind, and later cannot remember exactly what I did during
@@ -25,8 +29,6 @@ the day. This leads directly to self-doubt and self-criticism.
 Solving this problem is fairly simple for me and results in terrific
 productivity, as well as a great sense of satisfaction and progress at the end
 of the day.
-
-<!--more-->
 
 It's important not only to achieve what you desire, but to feel great about it
 too. Marten Mickos, whose

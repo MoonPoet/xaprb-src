@@ -3,6 +3,8 @@ title: "The Barnes and Noble Nook HD+"
 description: "This inexpensive tablet is a great budget item."
 date: "2014-03-01"
 url: /blog/2014/03/01/barnes-noble-nook-hd/
+credit: "https://unsplash.com/photos/ZguWcDAfaYg"
+image: "/media/2014/03/alec-weir-26819-unsplash.jpg"
 categories:
   - Hardware
 ---
@@ -12,11 +14,13 @@ think the iPad is inconveniently large, and there are a lot of devices that have
 the same screen size, which eliminated many of the popular ones from my
 consideration. Many of the devices out there are 7-inch screens, and that's too
 *small*.  A while ago I [tried](/blog/2011/06/04/using-the-nook-color-as-a-full-featured-android-tablet/) using a 7-inch device but after a while I
-stopped using it. Now I've found a tablet I really like.
-
-![Nook](/media/2014/03/nook.jpg)
+stopped using it.
 
 <!--more-->
+
+Now I've found a tablet I really like.
+
+![Nook](/media/2014/03/nook.jpg)
 
 After seeing and holding a lot of tablets, I decided that somewhere between 8
 and 9 inches is the right size. It may seem like nitpicking, but the screen size

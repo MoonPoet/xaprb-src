@@ -10,13 +10,11 @@ image: "/media/2016/08/gramophone.jpg"
 title: What Women Tell Me
 ---
 
-Someday I'll write a companion blog post about what men tell me, but today I
-want to write about what I've learned by listening to women over the last few
-years.
+Women tell me things that men rarely, sometimes *never* tell me. I failed to
+notice this for years, but the more I listen to women, the more I want to learn
+from them.
 
-Why do I care? It's because women tell me things that men rarely, sometimes
-*never* tell me. I failed to notice this for the longest time, but when I
-started to, I decided to sit up and listen, hard.
+<!--more-->
 
 *Disclaimer: I'm not saying that men don't care or talk about these types of
 things. In fact, many of these episodes of sexism came to me through a man's
@@ -25,8 +23,6 @@ Twitter post. BUT WOMEN RETWEETED IT TO ME.*
 I will now present things I have heard only or mostly from women, in many cases
 without attribution to the original author or the woman who drew this to my
 attention (because I think that's the safest thing to do).
-
-<!--more-->
 
 ### The Virginia Governor's UVA Board Appointment Announcement
 

@@ -3,6 +3,8 @@ title: "Generating Realistic Time Series Data"
 date: "2014-01-24"
 description: "Can non-random, useful data for time-series analysis be achieved?"
 url: /blog/2014/01/24/methods-generate-realistic-time-series-data/
+credit: "https://unsplash.com/photos/GkinCd2enIY"
+image: "/media/2014/01/raphael-schaller-88040-unsplash.jpg"
 categories:
   - Programming
   - Operations

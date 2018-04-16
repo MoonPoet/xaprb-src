@@ -16,6 +16,8 @@ improvements in PostgreSQL 9.4](http://www.databasesoup.com/2014/02/why-hstore2j
 > MySQL largely rose on the success of PHP, and it fell as PHP became
 > marginalized.
 
+<!--more-->
+
 This is an aside in the blog post, off-topic. But it's
 interesting to discuss because it reveals the completely different things people
 see when they look at something. It's like the proverbial story about the blind
@@ -29,8 +31,6 @@ arguments about things like MySQL versus PostgreSQL result from people (or
 groups of people) holding such differences but being unaware of them, and
 therefore misinterpreting words and actions from a group who doesn't share the
 same worldview, believing them to be dishonest, irrational, or hostile.
-
-<!--more-->
 
 Looking at Josh's statements again, we can see two assertions that are just
 calmly stated as though everyone knows these things, they're true, it's stating

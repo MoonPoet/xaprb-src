@@ -3,6 +3,8 @@ title: "A Free Tutorial On Go's Database/SQL Package"
 description: "Learn how to write effective, idiomatic code"
 date: "2014-12-06"
 url: /blog/2014/12/06/free-tutorial-golang-database-sql/
+image: "/media/2014/12/heidi-sandstrom-120382-unsplash.jpg"
+credit: "https://unsplash.com/photos/M2Kxb80gqcc"
 categories:
   - Programming
 tags:

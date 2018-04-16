@@ -6,7 +6,8 @@ categories:
 - Gear
 date: 2016-10-20T21:46:24-04:00
 description: "What it's like to switch from Android to iPhone"
-image: "/media/2016/10/robot.jpg"
+image: "/media/2016/10/siyan-ren-29565-unsplash.jpg"
+credit: "https://unsplash.com/photos/qLiFcanSpuA"
 title: "Life on Mobile: From Android to iOS"
 ---
 

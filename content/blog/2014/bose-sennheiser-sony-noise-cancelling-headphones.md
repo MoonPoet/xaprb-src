@@ -12,11 +12,12 @@ categories:
 draft: false
 
 ---
-I've used active noise-cancelling headphones for over ten years now, and have owned several pairs of Bose, one of Sony, and most recently a pair of Sennheiser headphones.
 
-![Sennheiser PXC 450 NoiseGard Active Noise-Canceling Headphones](/media/2014/01/sennheiser-pxc-450.png)
-
-The Sennheisers are my favorites. I thought I'd write down why I've gone through so many sets of cans and what I like and dislike about them.
+I've used active noise-cancelling headphones for over ten years now, and
+have owned several pairs of Bose, one of Sony, and most recently a pair of
+Sennheiser headphones.  The Sennheisers are my favorites. I thought I'd write
+down why I've gone through so many sets of cans and what I like and dislike
+about them.
 
 <!--more-->
 

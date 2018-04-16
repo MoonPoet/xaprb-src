@@ -10,15 +10,14 @@ categories:
 
 TL;DR: **Always do double-opt-in introductions. This means you contact each person separately and get their informed consent to the introduction. "Blind" introductions waste time and damage relationships.**
 
-In the last few years of my career, I've increasingly been involved in meeting
-people. This often involves requests or offers for recommendations,
+In the last few years I've increasingly been involved in meeting
+people. This involves many more requests or offers for recommendations,
 introductions, and so forth.
-
 I've learned to be very careful about making or accepting such offers or
-requests, and I'd like to share my current thoughts about that with you, because
-a lot of trouble can come of a seemingly innocent request or offer.
+requests, because they can cause a lot of trouble.
 
 <!--more-->
+
 
 ### Never Make Blind Introductions
 

@@ -1,8 +1,10 @@
 ---
-title: "Slides From Percona Live"
+title: "Slides From Percona Live 2014"
 description: "Embedded slides for the two talks I gave at Percona Live."
 date: "2014-04-13"
 url: /blog/2014/04/13/slides-from-percona-live/
+image: "/media/2014/04/jeremy-yap-160713-unsplash.jpg"
+credit: "https://unsplash.com/photos/J39X2xX_8CQ"
 categories:
   - Databases
 ---

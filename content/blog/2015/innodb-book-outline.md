@@ -13,11 +13,11 @@ Years ago I pursued my interest in InnoDB's architecture and design, and became 
 
 I decided to at least outline a book on InnoDB. After researching it for a while, it became clear that it would need to be a series of books in multiple volumes, with somewhere between 1000 and 2000 pages total.
 
+<!--more-->
+
 At one time I actually understood a lot of this material, but I have forgotten most of it now.
 
 I did not begin writing. Although it is incomplete, outdated, and in some cases wrong, I share the outline here in case anyone is interested. It might be of particular interest to someone who thinks it's an easy task to write a new database.
-
-<!--more-->
 
 <code>
 High-Level Outline:

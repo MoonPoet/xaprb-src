@@ -14,6 +14,8 @@ data, but it's a growing trend in the technology world in general. What's
 perhaps most surprising is the dearth of native time-series databases, either
 commercial or opensource.
 
+<!--more-->
+
 ### The World is Time-Series
 
 The data we gather is increasingly timestamped and dealt with in time-series
@@ -24,8 +26,6 @@ do search-engine marketing and advertising. Cost tables are a given, and there's
 usually cost-per-ad-per-day and half a dozen other summary tables. In my case I
 saw these things in the MySQL context, but you can pick your technology and
 someone's trying to do time-series tasks on top of it.
-
-<!--more-->
 
 One of the problems you see in these situations is very limited flexibility. For
 example, you can't run ad-hoc queries. You can only run queries that are

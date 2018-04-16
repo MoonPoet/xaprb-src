@@ -14,9 +14,9 @@ A while ago I [wrote](/blog/2012/04/24/the-mysql-init-script-mess/) about some o
 
 That's been over a year, and I've come to increasingly agree with the 12-factor principles. I guess I'm extremely late to the party, but making applications behave in 12-factor-compliant ways has solved a lot of problems for me.
 
-This experience has repeatedly reminded me of one of the applications that continues to cause a lot of the kinds of pain that the 12-factor principles have solved for me: MySQL.
-
 <!--more-->
+
+This experience has repeatedly reminded me of one of the applications that continues to cause a lot of the kinds of pain that the 12-factor principles have solved for me: MySQL.
 
 Example: configuration files. I initially thought MySQL's technique of multiple configuration files that serve as defaults, overrides to the defaults, and eventually are overridden by the commandline options was a good thing. In fact, you can blame me for that pattern being imitated in Percona Toolkit, if you want to blame anyone for it.
 

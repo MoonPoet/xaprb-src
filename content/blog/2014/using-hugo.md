@@ -3,12 +3,16 @@ title: "Xaprb now uses Hugo"
 date: "2014-01-15"
 description: "The Xaprb blog is now using Hugo, a fast static site generator written in Go."
 url: /blog/2014/01/15/using-hugo/
+credit: "https://unsplash.com/photos/J5Vl1LNmkn8"
+image: "/media/2014/01/bas-emmen-544006-unsplash.jpg"
 categories:
   - Web
 ---
 I've switched this blog from Wordpress to [Hugo](https://gohugo.io). If you see any broken links or
 other problems, let me know. I'll re-enable comments and other features in the
 coming days.
+
+<!--more-->
 
 **Why not Wordpress?** I've used Wordpress since very early days, but I've had my
 fill of security problems, the need to worry about whether a database is up and

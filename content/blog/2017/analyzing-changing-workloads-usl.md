@@ -6,7 +6,7 @@ categories:
 - Databases
 date: 2017-04-09T20:30:04-04:00
 description: "System behavior is complex and multivariate, but most visualizations of systems are one-dimensional and hide subtleties."
-image: "/media/2017/04/row-36-ts.png"
+image: "/media/2017/04/jeremy-bishop-195926-unsplash.jpg"
 title: Analyzing Changing Workloads with the USL
 ---
 

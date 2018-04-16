@@ -15,14 +15,12 @@ don't pay much attention to social media, news sites, or the like of Hacker News
 and Slashdot. I like the flexibility and unhurried pace of subscribing to
 updates from specific individuals and companies.
 
-![Grapes](/media/2015/04/grapes.jpg)
+<!--more-->
 
 At first, I didn't see a reader that offered the experience I was looking for: a
 GMail-like user interface with feeds clustered together in categories, navigable
 with keystrokes. Importantly, some subtle features such as marking an item
 unread are a key part of my usage.
-
-<!--more-->
 
 I tried [Feedly](https://feedly.com) first, but it had some bugs that drove me
 away. Recall that this was a couple of years ago; this is not a criticism of

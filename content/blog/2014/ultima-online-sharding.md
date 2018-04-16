@@ -13,6 +13,8 @@ Have you heard of *sharding* a database? Of course you have. Do you know where
 the term comes from? Someone asked me this at a cocktail party recently. I gave
 it my best shot.
 
+<!--more-->
+
 "The earliest I remember was Google engineers using it to describe the
 architecture of some things," I said. "That would have been about 2006."
 
@@ -23,8 +25,6 @@ article about MySQL. That was, I dunno, 2003?"
 
 The person then told me the following history. I can neither
 confirm nor deny it; what do you know about it?
-
-<!--more-->
 
 > Years ago there was a game called *Ultima Online*. It....
 

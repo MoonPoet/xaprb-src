@@ -3,7 +3,8 @@ title: Immutability, MVCC, and Garbage Collection
 date: "2013-12-28"
 url: /blog/2013/12/28/immutability-mvcc-and-garbage-collection/
 description: "Immutable databases seem elegant but create difficult tradeoffs, sometimes resolved via short-term immutability."
-image: "media/2013/12/uluru.jpg"
+credit: "https://unsplash.com/photos/7he8rO3qdsc"
+image: "/media/2013/12/martina-misar-tummeltshammer-232911-unsplash.jpg"
 categories:
   - Databases
   - Best Of
@@ -18,8 +19,6 @@ can be presented as *advanced*, there's another side to the story, which also
 holds true for similar databases such as CouchDB. It's a really difficult
 problem space, and clean and elegant solutions without nasty edge cases are
 difficult to design and implement.
-
-![Uluru](/media/2013/12/uluru.jpg)
 
 <!--more-->
 

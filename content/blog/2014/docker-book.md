@@ -3,6 +3,8 @@ title: "A Review Of The Docker Book"
 description: "This book is a great way to get started with Docker."
 date: "2014-07-14"
 url: /blog/2014/07/14/the-docker-book/
+credit: "https://unsplash.com/photos/9cCeS9Sg6nU"
+image: "/media/2014/07/chuttersnap-255210-unsplash.jpg"
 categories:
   - Programming
 ---

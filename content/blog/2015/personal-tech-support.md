@@ -2,6 +2,8 @@
 url: /blog/2015/09/29/personal-tech-support/
 title: Why I Don't Give Personal Tech Support
 date: '2015-09-29T22:04:16-07:00'
+credit: "https://unsplash.com/photos/EC3YUeuVkzw"
+image: "/media/2015/09/igor-ovsyannykov-440149-unsplash.jpg"
 categories:
 - Commentary
 description: Helping one person at a time doesn't scale

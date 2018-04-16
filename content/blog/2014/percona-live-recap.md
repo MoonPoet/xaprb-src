@@ -1,8 +1,10 @@
 ---
-title: "Percona Live Recap"
+title: "Percona Live 2014 Recap"
 description: "Percona Live was the best MySQL conference I've been to."
 date: "2014-04-11"
 url: /blog/2014/04/11/percona-live-recap/
+credit: "https://unsplash.com/photos/gWHmLWmSxIA"
+image: "/media/2014/04/matteo-catanese-393210-unsplash.jpg"
 categories:
   - Databases
 ---

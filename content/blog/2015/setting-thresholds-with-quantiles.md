@@ -7,7 +7,7 @@ categories:
 date: 2015-11-07T19:39:36-05:00
 description: "A simple visualization reveals lots of details about the shape of
 data."
-image: "/media/2015/11/quantiles.png"
+image: "/media/2015/11/time-series.png"
 title: Setting Thresholds With Quantiles
 ---
 

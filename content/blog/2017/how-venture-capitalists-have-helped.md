@@ -5,7 +5,8 @@ categories:
 - Leadership
 date: 2017-02-19T15:20:02-05:00
 description: "Investors say they can help their portfolio companies. I didn't understand how at first, but now I do."
-image: "/media/2017/02/shuttle-carrier-aircraft.png"
+image: "/media/2017/02/spacex-71873-unsplash.jpg"
+credit: "https://unsplash.com/photos/-p-KCm6xB9I"
 title: How Venture Capitalists Have Helped Me
 ---
 

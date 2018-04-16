@@ -3,6 +3,8 @@ title: "Replication Sync Checking Algorithms"
 description: "Is MySQL ignoring a decade of research and hard work?"
 date: "2014-04-12"
 url: /blog/2014/04/12/replication-sync-algorithms/
+credit: "https://unsplash.com/photos/NFs6dRTBgaM"
+image: "/media/2014/04/ferdinand-stohr-149422-unsplash.jpg"
 categories:
   - Databases
 ---
@@ -62,7 +64,7 @@ For more on the performance and other characteristics of the algorithms that I
 tried and tested (and implemented) in various incarnations of what's now Percona
 Toolkit, please see the following:
 
-* /blog/2007/03/30/comparison-of-table-sync-algorithms/
-* /blog/2007/04/05/mysql-table-sync-vs-sqlyog-job-agent/
+* [Comparison of Table Sync Algorithms](/blog/2007/03/30/comparison-of-table-sync-algorithms/)
+* [MySQL Table Sync](/blog/2007/04/05/mysql-table-sync-vs-sqlyog-job-agent/)
 
 

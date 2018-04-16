@@ -12,15 +12,17 @@ image: /media/2014/11/freeze.png
 
 I have $10 that says you've experienced this before: there's a holiday, trade show, or other important event coming up. Management is worried about the risk of an outage during this all-important time, and restricts deployments from the week prior through the end of the event.
 
-What really happens, of course, is that the system in question becomes booby-trapped with extra risk. As a result, problems are more likely, and when there there is even a slight issue, it has the potential to escalate into a major crisis.
+What really happens, of course, is that the system in question becomes booby-trapped with extra risk. 
+
+<!--more-->
+
+As a result, problems are more likely, and when there there is even a slight issue, it has the potential to escalate into a major crisis.
 
 Why does this happen? As usual, there's no single root cause, but a variety of problems combine to create a brittle, risky situation.
 
 ### Assumptions
 
 When managers declare a freeze, they're not being malicious. They're doing something that seems to make sense. That's why it's important to understand the reasoning.
-
-<!--more-->
 
 The goal is simple: prevent breaking something that's working. And a lot of issues seem to trace back to a deployment that breaks a working system, so it's natural to want to avoid a deployment.
 

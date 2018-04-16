@@ -3,6 +3,8 @@ title: "Win a Free Pass to Velocity"
 description: "VividCortex is giving away a ticket."
 date: "2014-10-30"
 url: /blog/2014/10/30/win-free-pass-velocity/
+image: "/media/2014/10/igor-ovsyannykov-440143-unsplash.jpg"
+credit: "https://unsplash.com/photos/yB5cYEq7y2U"
 categories:
   - Conferences
 ---

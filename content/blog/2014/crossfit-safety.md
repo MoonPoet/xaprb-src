@@ -15,6 +15,8 @@ CrossFit too. It's fantastic. It's community, fun, health, fitness. It's the
 antidote to the boring gyms I forced myself to go to for years and hated every
 minute.
 
+<!--more-->
+
 But there is a fringe element in CrossFit, which unfortunately looks mainstream
 to some who don't really have enough context to judge. From the outside,
 CrossFit can look almost cult-like. It's easy to get an impression of people
@@ -22,8 +24,6 @@ doing dangerous things with little caution or training. To hear people talk
 about it, everyone in CrossFit works out insanely until they vomit, pushing
 themselves until their muscles break down and vital organs go into failure
 modes.
-
-<!--more-->
 
 That's not what I've experienced. I've never seen anyone vomit, or even come
 close to it as far as I know. I think that part of this dichotomy comes from
