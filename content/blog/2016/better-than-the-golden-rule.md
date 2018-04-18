@@ -5,7 +5,7 @@ date: '2016-12-08T19:28:07-05:00'
 author: Baron Schwartz
 categories:
 - Leadership
-description: Treating others as we'd wish them to treat me doesn't go far enough.
+description: "It's not enough to treat others as I'd wish them to treat me."
 image: /media/2016/12/aurora-1.jpg
 draft: false
 
