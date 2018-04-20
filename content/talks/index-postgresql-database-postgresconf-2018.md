@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "How To Index Your Database"
 date: "2018-04-20T12:50:00-04:00"
 url: "/talks/index-postgresql-database-postgresconf-2018/"
