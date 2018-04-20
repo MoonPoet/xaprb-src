@@ -1,6 +1,8 @@
 ---
 title: "How To Index Your Database"
 date: "2018-04-20T12:50:00-04:00"
+tags:
+- PostgreSQL
 url: "/talks/index-postgresql-database-postgresconf-2018/"
 event: "PostgresConf US 2018"
 location: "479 Washington Blvd, Jersey City, New Jersey 07310, United States"
