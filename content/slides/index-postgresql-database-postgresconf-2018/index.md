@@ -70,7 +70,7 @@ They essentially do two things with the data:
 1. Maintain a **search-optimized copy** of the data.
 --
 
-2. Point to the data's **original location**.
+2. Point to the data’s **original location**.
 
 ---
 class: img-right
@@ -123,7 +123,7 @@ Indexes **help find rows** without full-scans.
 ---
 # What About Starting From 70?
 
-The index is more than a plain copy. It's organized in **seekable
+The index is more than a plain copy. It’s organized in **seekable
 ranges.**
 
 --
@@ -132,15 +132,15 @@ That lets the database **seek to a starting point** in the
 index.
 
 ---
-# That's All You Need To Know
+# That’s All You Need To Know
 
 Just remember an index is a **sorted, searchable** copy of data.
 
 --
 
-* You don't need to know about **B-Tree Algorithms**.
-* You don't need to know **data structures**.
-* You don't need to understand \\( O(\log_{\frac{b}{k}}(n)) \\).
+* You don’t need to know about **B-Tree Algorithms**.
+* You don’t need to know **data structures**.
+* You don’t need to understand \\( O(\log_{\frac{b}{k}}(n)) \\).
 
 ---
 class: img-right
@@ -280,7 +280,7 @@ Create an index with **all columns mentioned**: `index(b,c)`
 
 `SELECT c FROM t WHERE b > 70;`
 
-Now the index &ldquo;covers" the query and it **doesn't access** the table at all!
+Now the index “covers” the query and it **doesn’t access** the table at all!
 
 - No row-by-row lookups
 - No randomly ordered access
@@ -350,7 +350,7 @@ class: img-right
 .col[
 # 3. Read Data Presorted
 
-Indexes are sorted, so the database doesn't need to sort.
+Indexes are sorted, so the database doesn’t need to sort.
 
 This helps optimize queries such as:
 
@@ -374,7 +374,7 @@ Grade an index with three stars, one for each:
 
 - A star if the rows are densely packed.
 - A star if the rows are sorted.
-- A star if the query doesn't access the table.
+- A star if the query doesn’t access the table.
 
 The **third star** is often much more important!
 ]
@@ -396,7 +396,7 @@ background-size: cover
 class: img-right
 
 .col[
-# 1. Don't Defeat Indexes
+# 1. Don’t Defeat Indexes
 
 This query **defeats** an index on column `a`:
 
@@ -422,9 +422,9 @@ class: img-right
 Multi-column indexes are sorted by column 1, then column 2, etc.
 
 - Queries can use a **prefix of an index**.
-- They generally **can't use a suffix**.
+- They generally **can’t use a suffix**.
 
-`WHERE c < 70` won't work, it will be a full index scan.
+`WHERE c < 70` won’t work, it will be a full index scan.
 ]
 
 .rc[
@@ -458,7 +458,7 @@ Create *covering indexes* for important queries (index-only queries).
 
 Remember: it works only if the index has **all** the columns the query mentions.
 
-It's often possible to union the indexes needed by several important queries.
+It’s often possible to union the indexes needed by several important queries.
 
 ---
 # 4. Exploit Clustered Indexes
@@ -488,7 +488,7 @@ class: img-right
 .col[
 # 6. Avoid Over-Indexing...
 
-Indexes add cost to writes and complicate the planner's job
+Indexes add cost to writes and complicate the planner’s job
 
 * Avoid duplicates
 * Analyze redundant indexes with a common prefix
@@ -503,14 +503,14 @@ Indexes add cost to writes and complicate the planner's job
 class: img-right
 
 .col[
-# 6. But Don't Fear Indexes
+# 6. But Don’t Fear Indexes
 
-Caution: &ldquo;unused&rdquo; indexes often really aren't!
+Caution: &ldquo;unused&rdquo; indexes often really aren’t!
 
-Indexes are a lot less expensive than you'd guess. Cost/benefit tradeoffs
+Indexes are a lot less expensive than you’d guess. Cost/benefit tradeoffs
 usually weigh in favor of indexes.
 
-For a rigorous analysis, see Lahdenmaki and Leach's book.
+For a rigorous analysis, see Lahdenmaki and Leach’s book.
 ]
 
 .rc[
