@@ -181,10 +181,19 @@ them.
 ]
 
 ---
+class: title
+background-image: url(dariusz-sankowski-46479-unsplash.jpg)
+background-size: cover
+
+.smokescreen[
+# Three Data Access Rules
+]
+
+---
 class: img-right
 
 .col[
-# Data Access Rules
+# Three Data Access Rules
 
 1. Reading a range of data in order is fast.
 2. Reading a range out of order is slow.
@@ -199,7 +208,7 @@ class: img-right
 class: img-right
 
 .col[
-# Data Access Rules
+# Three Data Access Rules
 
 1. Reading a range of data in order is fast.
    * Scanning the index for `b < 70` is a range.
