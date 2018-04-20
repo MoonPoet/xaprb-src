@@ -250,7 +250,7 @@ class: img-right
 .col[
 # 1. Read Less Data
 
-`SELECT c FROM t WHERE b > 70;`
+`SELECT c FROM t WHERE b < 70;`
 
 Without an index, this is a full table scan that reads **all rows and all
 columns**.
@@ -265,7 +265,7 @@ class: img-right
 .col[
 # 1. Read Less Data
 
-`SELECT c FROM t WHERE b > 70;`
+`SELECT c FROM t WHERE b < 70;`
 
 With an index, it reads only matching rows.
 **Three inefficiencies**:
@@ -340,7 +340,7 @@ class: img-right
 .col[
 # 2. Read Data In Bulk
 
-`SELECT c FROM t WHERE b > 70;`
+`SELECT c FROM t WHERE b < 70;`
 
 The query scans a range from the table only.
 
