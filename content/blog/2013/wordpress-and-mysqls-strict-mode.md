@@ -4,6 +4,8 @@ date: "2013-03-15"
 url: /blog/2013/03/15/wordpress-and-mysqls-strict-mode/
 categories:
   - Databases
+credit: "https://unsplash.com/photos/Dm974WDaErc/download"
+image: "/media/2013/03/unsplash-photos-Dm974WDaErc.jpg"
 ---
 I really don't like [running my database in "I Love Garbage" mode](/blog/2012/12/23/handling-mysqls-warnings-in-go-code/), so I set the following SQL_MODE:
 
@@ -17,5 +19,3 @@ This problem was [reported to WordPress at least 7 years ago](http://wordpress.o
 *   That software will break in unlovely ways when you try to make MySQL behave more correctly.
 *   Those who gripe about MySQL's bugs (as I sometimes do) should remember that MySQL is probably better quality than most of the software that is built to use it. This is probably a universal truth -- the Linux kernel is probably better quality than most software that runs in Linux, for example.
 *   MySQL's bugs often get fixed faster than aforementioned software's bugs, too.
-
-

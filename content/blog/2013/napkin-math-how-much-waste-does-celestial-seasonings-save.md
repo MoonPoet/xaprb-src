@@ -2,6 +2,8 @@
 title: "Napkin math: How much waste does Celestial Seasonings save?"
 date: "2013-12-22"
 url: /blog/2013/12/22/napkin-math-how-much-waste-does-celestial-seasonings-save/
+credit: "https://unsplash.com/photos/05A-kdOH6Hw"
+image: "/media/2013/12/unsplash-photos-05A-kdOH6Hw.jpg"
 categories:
   - Commentary
 ---

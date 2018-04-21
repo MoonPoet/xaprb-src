@@ -2,6 +2,8 @@
 title: "Early-access books: a double-edged sword"
 date: "2013-12-26"
 url: /blog/2013/12/26/early-access-books-a-double-edged-sword/
+credit: "https://unsplash.com/photos/YLSwjSy7stw"
+image: "/media/2013/12/unsplash-photos-YLSwjSy7stw.jpg"
 categories:
   - Commentary
 ---

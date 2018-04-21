@@ -4,7 +4,8 @@ date: "2013-12-18"
 url: /blog/2013/12/18/secure-your-accounts-and-devices/
 menu: main
 description: "Many people neglect basic online security because they don't know how. It doesn't have to be hard."
-image: "media/2013/12/lock.jpg"
+image: "/media/2013/12/lock.jpg"
+credit: "https://www.flickr.com/photos/karolfranks/15136260663/"
 categories:
   - Security
   - Best Of
@@ -12,8 +13,6 @@ categories:
 This is a public service announcement. Many people I know are not taking important steps necessary to secure their online accounts and devices (computers, cellphones) against malicious people and software. It's a matter of time before something seriously harmful happens to them.
 
 It's much easier than you think to do the basics right. If you turn on automatic updates, use a password manager, and use two-factor authentication, you can dramatically improve your personal safety and security. There's a lot more you can do, but read on for the details.
-
-![Lock](/media/2013/12/lock.jpg)
 
 <!--more-->
 
@@ -193,4 +192,3 @@ Do you have any other suggestions? Please use the comments below to add your tho
 * [Storing SSH Keys on a USB Drive for 2-Factor Auth](http://tammersaleh.com/posts/building-an-encrypted-usb-drive-for-your-ssh-keys-in-os-x/)
 * [Stronger 2-Factor with a Security Key](http://googleonlinesecurity.blogspot.com/2014/10/strengthening-2-step-verification-with.html)
 
-[Photo Credit](https://www.flickr.com/photos/karolfranks/15136260663/)

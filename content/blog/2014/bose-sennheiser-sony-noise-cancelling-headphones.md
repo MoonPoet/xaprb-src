@@ -1,10 +1,10 @@
 ---
 title: A review of Bose, Sony, and Sennheiser noise-cancelling headphones
 date: '2014-01-16T00:00:00+00:00'
-description: Why I keep coming back to Sennheiser headphones no matter how many pairs
-  of Bose I own
-image: /media/2014/01/sennheiser-pxc-450.png
+description: Why I keep coming back to Sennheiser headphones no matter how many pairs of Bose I own
 url: "/blog/2014/01/16/bose-sennheiser-sony-noise-cancelling-headphones/"
+credit: "https://unsplash.com/photos/1WbzZKyVHlc"
+image: "/media/2014/01/unsplash-photos-1WbzZKyVHlc.jpg"
 categories:
 - Music
 - Hardware
