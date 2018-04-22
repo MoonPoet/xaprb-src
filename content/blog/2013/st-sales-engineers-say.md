@@ -2,12 +2,17 @@
 title: "S**t sales engineers say"
 date: "2013-12-07"
 url: /blog/2013/12/07/st-sales-engineers-say/
+credit: "https://unsplash.com/photos/arJ3d_EpBqs"
+image: "/media/2013/12/unsplash-photos-arJ3d_EpBqs.jpg"
+description: "Sometimes sales engineers are real engineers, other times they bluff."
 categories:
   - Databases
 ---
-Here's a trip down memory lane. I was just cleaning out some stuff and I found some notes I took from a hilarious MySQL seminar a few years back. I won't say when or where, to protect the guilty.[1] 
+Here's a trip down memory lane. I was just cleaning out some stuff and I found some notes I took from a hilarious MySQL seminar a few years back. I won't say when or where, to protect the guilty.[^1] I found it so absurd that I had to write down what I was witnessing.
 
-I found it so absurd that I had to write down what I was witnessing. Enough time has passed that we can probably all laugh about this now. Times and people have changed. 
+<!--more-->
+
+Enough time has passed that we can probably all laugh about this now. Times and people have changed. 
 
 The seminar was a sales pitch in disguise, of course. The speakers were singing Powerpoint Karaoke to slides real tech people had written. Every now and then, when they advanced a slide, they must have had a panicked moment. "I don't remember this slide at all!" they must have been thinking. So they'd mumble something really funny and trying-too-hard-to-be-casual about "oh, yeah, [insert topic here] but you all already know this, I won't bore you with the details [advance slide hastily]." It's strange how transparent that is to the audience. 
 
@@ -21,6 +26,4 @@ There was more, but that's enough for a chuckle. Note to sales engineers everywh
 
 What are your best memories of worst sales engineer moments? 
 
-*1. For the avoidance of doubt, it was NOT any of the trainers, support staff, consultants, or otherwise anyone prominently visible to the community. Nor was it anyone else whose name I've mentioned before. I doubt any readers of this blog, except for former MySQL AB employees (pre-Sun), would have ever heard of these people. I had to think hard to remember who those names belonged to.*
-
-
+[^1]: For the avoidance of doubt, it was NOT any of the trainers, support staff, consultants, or otherwise anyone prominently visible to the community. Nor was it anyone else whose name I've mentioned before. I doubt any readers of this blog, except for former MySQL AB employees (pre-Sun), would have ever heard of these people. I had to think hard to remember who those names belonged to.*

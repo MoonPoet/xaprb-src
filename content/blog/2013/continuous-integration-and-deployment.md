@@ -2,6 +2,9 @@
 title: Continuous integration and deployment
 date: "2013-10-16"
 url: /blog/2013/10/16/continuous-integration-and-deployment/
+credit: "https://unsplash.com/photos/DCLnygG4F6Y"
+image: "/media/2013/10/unsplash-photos-DCLnygG4F6Y.jpg"
+description: "It feels like continuous integration and deployment is under-solved."
 categories:
   - Databases
   - Operations
@@ -9,6 +12,8 @@ categories:
 ---
 
 I've been talking to some smart people about deployment. First a little background. One of my colleagues was working on a project that ultimately didn't bear fruit. It was a system for continuous delivery, and involved reacting to `git push` by building and shipping to production. But it felt as if the problem shouldn't be separated from provisioning, and from setting up a development environment, and so these things got folded in, and the effort became a boil-the-ocean project that had to be set aside. 
+
+<!--more-->
 
 During this process I came to appreciate my colleague's point of view on topics such as how software should be deployed and how it should be designed to run in its environment. A lot of this is encapsulated in [The Twelve Factors](http://12factor.net/). In fact, I actually created and deployed to a Heroku app, and experienced firsthand why people love Heroku. 
 

@@ -2,12 +2,19 @@
 title: EXPLAIN UPDATE in MySQL 5.6
 date: "2013-11-26"
 url: /blog/2013/11/26/explain-update-in-mysql-5-6/
+credit: "https://unsplash.com/photos/7JX0-bfiuxQ"
+image: "/media/2013/11/unsplash-photos-7JX0-bfiuxQ.jpg"
+description: "I tried out EXPLAIN UPDATE in MySQL 5.6 and found unexpected results."
 categories:
   - Databases
 ---
-I just tried out EXPLAIN UPDATE in MySQL 5.6 and found unexpected results. This query has no usable index:
+I just tried out EXPLAIN UPDATE in MySQL 5.6 and found unexpected results. 
 
-<pre>
+<!--more-->
+
+This query has no usable index:
+
+```
 EXPLAIN UPDATE ... WHERE col1 = 9 AND col2 = 'something'\G
 *************************** 1. row ***************************
            id: 1
@@ -20,11 +27,11 @@ possible_keys: NULL
           ref: NULL
          rows: 51
         Extra: Using where
-</pre>
+```
 
 The EXPLAIN output makes it seem like a perfectly fine query, but it's a full table scan. If I do the old trick of rewriting it to a SELECT I see that:
 
-<pre>
+```
 *************************** 1. row ***************************
            id: 1
   select_type: SIMPLE
@@ -36,8 +43,6 @@ possible_keys: NULL
           ref: NULL
          rows: 51
         Extra: Using where
-</pre>
+```
 
 Should I file this as a bug? It seems like one to me.
-
-

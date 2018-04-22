@@ -2,11 +2,16 @@
 title: Should Velocity videos be free?
 date: "2013-10-24"
 url: /blog/2013/10/24/should-velocity-videos-be-free/
+credit: "https://unsplash.com/photos/D1XvUGLFkIE"
+image: "/media/2013/10/unsplash-photos-D1XvUGLFkIE.jpg"
+description: "I've always believed you get what you pay for."
 categories:
   - Conferences
 ---
 
 At the closing keynote of the recent Velocity conference in New York, an audience member stepped up to the microphone and called for O'Reilly to provide videos of the event free to the public, instead of behind a paywall. The conference chairs, who don't call the shots on such matters, squirmed and looked at the person who does call the shots, a few feet away. 
+
+<!--more-->
 
 Someone volunteered the information that speakers are able to download their own talks and post them freely if they wish. The original commenter then asked the audience, which presumably included most of the speakers, to do so en masse. 
 

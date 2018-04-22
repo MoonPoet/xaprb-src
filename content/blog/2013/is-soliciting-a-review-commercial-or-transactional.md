@@ -2,11 +2,18 @@
 title: Is soliciting a review commercial or transactional?
 date: "2013-10-21"
 url: /blog/2013/10/21/is-soliciting-a-review-commercial-or-transactional/
+credit: "https://unsplash.com/photos/2-cvrZDeKnw"
+image: "/media/2013/10/unsplash-photos-2-cvrZDeKnw.jpg"
+description: "Hotels.com should respect my wish not to receive emails asking me to review hotels."
 categories:
   - Commentary
 ---
 
-I've booked rooms through hotels.com a few times, and they always send me followup emails asking me to rate the stay and so forth. In my view this is commercial/marketing email, not transactional, and I should be able to opt out of it. I don't want to get the emails and I don't want to rate the hotels, in part because I don't believe in the validity of such ratings/reviews ([reference](http://www.forbes.com/sites/cherylsnappconner/2013/05/09/the-dark-side-of-reputation-management-how-it-affects-your-business/), [reference](http://www.edmunds.com/about/press/edmundscom-reaches-settlement-with-company-accused-of-submitting-fraudulent-car-dealer-ratings-and-reviews.html)). But there's no unsubscribe link at the bottom of the email, and there's no setting in their website to opt out of it. 
+I've booked rooms through hotels.com a few times, and they always send me followup emails asking me to rate the stay and so forth. In my view this is commercial/marketing email, not transactional, and I should be able to opt out of it.
+
+<!--more-->
+
+I don't want to get the emails and I don't want to rate the hotels, in part because I don't believe in the validity of such ratings/reviews ([reference](http://www.forbes.com/sites/cherylsnappconner/2013/05/09/the-dark-side-of-reputation-management-how-it-affects-your-business/), [reference](http://www.edmunds.com/about/press/edmundscom-reaches-settlement-with-company-accused-of-submitting-fraudulent-car-dealer-ratings-and-reviews.html)). But there's no unsubscribe link at the bottom of the email, and there's no setting in their website to opt out of it. 
 
 So I sent them a request: 
 

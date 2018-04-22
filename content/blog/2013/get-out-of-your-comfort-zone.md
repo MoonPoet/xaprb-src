@@ -2,12 +2,19 @@
 title: Get out of your comfort zone
 date: "2013-10-25"
 url: /blog/2013/10/25/get-out-of-your-comfort-zone/
+credit: "https://unsplash.com/photos/Jiyoj5B72iU"
+image: "/media/2013/10/unsplash-photos-Jiyoj5B72iU.jpg"
+description: "If you don't challenge yourself, nothing will happen."
 categories:
   - Commentary
   - Conferences
 ---
 
-One of the most valuable life skills you can ever develop is to overcome the urge to stay within your comfort zone. If you stay where you're familiar and feel safe, two things might happen: 
+One of the most valuable life skills you can ever develop is to overcome the urge to stay within your comfort zone.
+
+<!--more-->
+
+If you stay where you're familiar and feel safe, two things might happen: 
 
 
 *   You might find out that it's not safe after all. Bad things can happen where you feel at home just as well as out of the familar. 
@@ -41,6 +48,4 @@ Per Scholas students aren't paying anything (financially) for their training. Ar
 
 
 Get out of your comfort zone. If you don't, the worst thing in the world happens to you: *nothing*.
-
-
 
