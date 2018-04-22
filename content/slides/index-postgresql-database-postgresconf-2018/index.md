@@ -474,10 +474,10 @@ It’s often possible to union the indexes needed by several important queries.
 
 The benefit of a clustered index is the table is physically organized in PK order.
 
-* Supported in Oracle, MySQL, SQL Server
+* Supported in Oracle, MySQL, SQL Server, IBM DB2 LUW
 * Not supported in PostgreSQL, despite `CLUSTER` command (~ `DEFRAG`)
 
-You can only have one clustering index per table.
+There can be **only one** clustered index per table.
 
 ---
 # 5. Consider Column Selectivity And Order
@@ -546,6 +546,8 @@ class: two-column
 
 .col[
 Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
+
+License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Contact: @xaprb and baron@vividcortex.com
 ]
