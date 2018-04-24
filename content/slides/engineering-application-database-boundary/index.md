@@ -269,6 +269,21 @@ class: img-right
 .rc[
 ![Wine](wine.jpg)
 ]
+
+---
+class: img-right
+.col[
+# Share The Load
+]
+.rc[
+![Fire Brigade](fire-brigade.jpg)
+]
+
+???
+- Don't let the database problems be just your problems.
+- Make everyone responsible for database health and performance
+- That requires shared visibility and observability
+
 ---
 class: img-right
 .col[
@@ -277,6 +292,7 @@ class: img-right
 .rc[
 ![The Storm](1880_Pierre_Auguste_Cot_-_The_Storm.jpg)
 ]
+
 ---
 class: img-right
 .col[
