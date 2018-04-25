@@ -41,7 +41,7 @@ class: title
 background-image: url(julian-mora-141924-unsplash.jpg)
 background-size: cover
 .smokescreen[
-# This is a culture talk
+# This is a culture talk, not technical
 ]
 
 ???
@@ -84,7 +84,7 @@ class: title
 background-image: url(tom-barrett-364228-unsplash.jpg)
 background-size: cover
 .smokescreen[
-# Did the cloud come from open source?
+# Open source is key to our future
 ]
 
 ???
@@ -100,21 +100,21 @@ class: title
 background-image: url(nasa-53884-unsplash.jpg)
 background-size: cover
 .smokescreen[
-# Open source values and behaviors
+# We share open source values
 ]
 
 ???
 
 Let’s start by examining open source database communities. There are many of them, but we share many values. For example, we value open source. We value sharing what we do so others can both benefit from it and help us build it. We value collaboration. We value progress. We want to get better every day, and we want our work to grow and spread.
 
-We have a lot to be proud of. Open source is more than source code, it is a set of shared beliefs and behaviors. In open source, we work in a distributed fashion, and often control and power are decentralized. At first people were skeptical that this could work, but we now know that it actually works better. It was pretty unthinkable when I was in college, but nearly every new database is open source these days, and most new proprietary databases struggle. Cloud databases that provide open source are the fastest-growing.  
+We have a lot to be proud of. Open source is more than source code, it is a set of shared beliefs and behaviors. In open source, we work in a distributed fashion, and often control and power are decentralized. At first people were skeptical that this could work, but we now know that it actually works better. It was pretty unthinkable when I was in college, but nearly every new database is open source these days, and most new proprietary databases struggle.
 
 ---
 class: title
 background-image: url(mike-labrum-151765-unsplash.jpg)
 background-size: cover
 .smokescreen[
-# Open source should be welcoming
+# We share open source ideals
 ]
 
 ???
@@ -150,7 +150,7 @@ class: title
 background-image: url(luke-michael-275911-unsplash.jpg)
 background-size: cover
 .smokescreen[
-# Ethical constraints
+# Ethical dilemmas
 ]
 
 ???
@@ -173,12 +173,12 @@ class: title
 background-image: url(krista-mangulsone-53122-unsplash.jpg)
 background-size: cover
 .smokescreen[
-# We are not alone
+# Fortunately, we have company
 ]
 
 ???
 
-But these principles are not unique to us in open source, and there are also examples of other communities who govern themselves successfully through challenges such as those we face. There’s the Apache Software Foundation, Electronic Frontier Foundation, the ACLU, and others like them who have set precedents. We can take inspiration from the success of projects like Creative Commons. We can examine the principles of grassroots movements like DevOps. None of these is perfect, but they’re making progress. All of them struggle against the same forces we do.
+But these principles are not unique to us in open source, and there are also examples of other communities who govern themselves successfully through challenges such as those we face. There’s the Apache Software Foundation, Electronic Frontier Foundation, the ACLU, and others like them who have set precedents. We can take inspiration from the success of projects like Creative Commons. We can examine the principles of grassroots movements like DevOps. None of these is perfect, but they’re making progress. All of them face the same pressures we do.
 
 ---
 class: title, img-300h
@@ -236,7 +236,7 @@ class: title
 background-image: url(unsplash-photos-oMpAz-DN-9I.jpg)
 background-size: cover
 .smokescreen[
-# We’re all growing
+# Our communities are all growing
 ]
 
 ???
@@ -250,7 +250,7 @@ class: title
 background-image: url(unsplash-photos--l1_DNSrnuE.jpg)
 background-size: cover
 .smokescreen[
-# We’re not growing at anyone’s expense
+# It is not a zero-sum game
 ]
 
 ???
@@ -264,7 +264,7 @@ class: title
 background-image: url(unsplash-photos-lROtSV-7dWc.jpg)
 background-size: cover
 .smokescreen[
-# The bar is higher now
+# Yesterday’s goal is irrelevant
 ]
 
 ???
@@ -306,7 +306,7 @@ class: title
 background-image: url(unsplash-photos-AWYI4-h3VnM.jpg)
 background-size: cover
 .smokescreen[
-# Success motivates more success
+# Success attracts more success
 ]
 
 ???
@@ -332,7 +332,7 @@ class: title
 background-image: url(unsplash-photos-Z2ImfOCafFk.jpg)
 background-size: cover
 .smokescreen[
-# We should include everyone
+# Everyone has something to offer
 ]
 
 ???
@@ -346,7 +346,7 @@ class: title
 background-image: url(aleksandr-ledogorov-310150-unsplash.jpg)
 background-size: cover
 .smokescreen[
-# There’s a lot at stake
+# Precious things can be fragile
 ]
 
 ???
