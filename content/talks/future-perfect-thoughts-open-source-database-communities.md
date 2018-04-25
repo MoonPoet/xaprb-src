@@ -1,5 +1,4 @@
 ---
-draft: true
 title: 'Future Perfect: Thoughts On Open-Source Database Communities'
 date: "2018-04-25T09:50:00-07:00"
 url: "/talks/future-perfect-thoughts-open-source-database-communities/"
