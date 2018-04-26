@@ -2,6 +2,9 @@
 title: It happened again
 date: "2013-09-27"
 url: /blog/2013/09/27/it-happened-again/
+credit: "https://unsplash.com/photos/wk833OrQLJE"
+image: "/media/2013/09/unsplash-photos-wk833OrQLJE.jpg"
+description: "Oracle released a huge batch of MySQL improvements and blog posts all at once, again."
 categories:
   - Databases
 ---

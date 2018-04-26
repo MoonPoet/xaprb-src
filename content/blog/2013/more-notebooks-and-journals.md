@@ -2,6 +2,9 @@
 title: More Notebooks and Journals!
 date: "2013-10-13"
 url: /blog/2013/10/13/more-notebooks-and-journals/
+credit: "https://unsplash.com/photos/HMQYg-Nzkqg"
+image: "/media/2013/10/unsplash-photos-HMQYg-Nzkqg.jpg"
+description: "Because I can't get enough notebooks in my life!"
 categories:
   - Commentary
   - Hardware

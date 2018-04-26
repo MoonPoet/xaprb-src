@@ -8,6 +8,8 @@ categories:
 ---
 I've been trying out Republic Wireless, a startup that offers very inexpensive wireless service: $19 for unlimited talk, text, and data. In a nutshell: they resell Sprint's network, and you agree to connect to wifi as much as possible; they use the Internet instead of the cell network when you're on wifi. I thought for $19/month it wouldn't hurt to give it a try. After several months, my experience has been that it isn't worth using at all, no matter how cheap it is.
 
+<!--more-->
+
 I don't want to dwell on the problems at great length, but here are some of the issues I've had.
 
 *   The phone is junk. It's a super-low-quality Motorola Defy XT, which is basically hardware and software (Android) from 3 years ago. It has flaky behavior such as turning off the screen when I try to use the keypad during a call, for example, when I try to press the 7 key to delete a message from voicemail. It also does bizarre things like rotating the screen from landscape to portrait repeatedly and unpredictably when I'm in the middle of trying to use it. It's a really poor experience in every way; my 3-year-old Droid 2 was much better.

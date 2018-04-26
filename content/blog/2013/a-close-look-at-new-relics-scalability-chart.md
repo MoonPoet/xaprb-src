@@ -8,9 +8,13 @@ categories:
   - Scalability
 ---
 
-I've written a lot about modeling MySQL with the USL, and I like it best of all the scalability models I've seen, but it's not the only way to think about scalability. I was aware that New Relic supports a scalability chart, so I decided to take a peek at that. Here's a screenshot of the chart, from [their blog](http://blog.newrelic.com/2011/06/13/of-rainbows-and-polka-dots-new-relics-scalability-charts-explained/):
+I've written a lot about modeling MySQL with the USL, and I like it best of all the scalability models I've seen, but it's not the only way to think about scalability. I was aware that New Relic supports a scalability chart, so I decided to take a peek at that.
 
-<img alt="blog-rpm-response1" src="/media/2013/01/blog-rpm-response1.png" width="510" height="295" />
+<!--more-->
+
+Here's a screenshot of the chart, from [their blog](http://blog.newrelic.com/2011/06/13/of-rainbows-and-polka-dots-new-relics-scalability-charts-explained/):
+
+![New Relic Scalability Chart](/media/2013/01/blog-rpm-response1.png)
 
 Here's how it works. It plots response time (or database time, or CPU) as the dependent variable, versus throughput as the independent variable. There's a line through it to indicate the general shape. Samples are charted as points in a scatter plot. The points are color-coded by the time of day. Outliers are automatically removed. 
 

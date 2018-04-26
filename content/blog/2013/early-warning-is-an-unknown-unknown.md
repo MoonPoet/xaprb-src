@@ -1,6 +1,9 @@
 ---
 url: /blog/2013/10/08/early-warning-is-an-unknown-unknown/
 title: "Early-Warning Is an Unknown Unknown"
+credit: "https://unsplash.com/photos/_uxcVJnQGl8"
+image: "/media/2013/10/unsplash-photos-_uxcVJnQGl8.jpg"
+description: "Proactive monitoring will always be an elusive dream."
 date: "2013-10-08"
 categories:
   - Monitoring

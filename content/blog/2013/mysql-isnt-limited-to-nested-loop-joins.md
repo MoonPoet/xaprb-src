@@ -2,10 +2,11 @@
 title: "MySQL isn't limited to nested-loop joins"
 date: "2013-10-01"
 url: /blog/2013/10/01/mysql-isnt-limited-to-nested-loop-joins/
+credit: "https://unsplash.com/photos/FOsina4f7qM"
+image: "/media/2013/10/unsplash-photos-FOsina4f7qM.jpg"
+description: "MySQL is adding more sophisticated query plans over time."
 categories:
   - Databases
-tags:
-  - MongoDB
 ---
 
 I have followed the "Use the Index, Luke!" blog for a while. Today Marcus [wrote](http://use-the-index-luke.com/blog/2013-10-01/mysql-is-to-sql-like-mongodb-to-nosql) that (I'll paraphrase) MongoDB disgraces NoSQL the same way that MySQL disgraces SQL. I agree with a lot of this, actually, although I'm not sure I'd put it so strongly. People often like products for good reasons, and to think that legions of developers are stupid or ill-educated is suspect, in my opinion. 
