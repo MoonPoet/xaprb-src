@@ -25,7 +25,7 @@ I'll break that down bit by bit.
 
 **A plan**. A strategy elucidates, at least at a high level, *how* you will
 achieve a stated goal. More precisely, it lays out the *best way* to achieve the
-goal.
+goal. The strategy is the means to the end.
 
 **To prioritize resources.** Inherent in the notion of achieving the goal in the
 best way is that the strategy deploys resources---such as time, money, or
