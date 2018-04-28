@@ -24,15 +24,15 @@ directly, for a variety of reasons such as:
 - They hope things will get better magically.
 
 As a result of keeping bad performers, they lose good ones, because eagles don't
-fly with turkeys. When a high performing team member sees the situation not
-being addressed, almost nothing is more demoralizing.
+fly with turkeys. Few things demoralize high performing team members more than
+seeing their managers avoid dealing with low performers.
 
 Worse: low-performers sometimes get put into positions where they can hire. And
 another law I've never seen violated is this: A-players hire A-players because
 they want to surround themselves with high performers; B-players hire C-players
 because they want to make themselves look good. Keep a lower-performing team
-member and you will very soon have a bunch of mediocre hires, and an insane
-amount of politics designed to maintain this status quo by making it hard to
-figure out what's really going on.
+member whose job includes hiring, and you will very soon have a bunch of
+mediocre hires, and an insane amount of politics designed to maintain this
+status quo by making it hard to figure out what's really going on.
 
-[^1]: This belief is always wrong, regardless of extenuating circumstances.
+[^1]: In my experience this belief is always wrong, regardless of extenuating circumstances.
