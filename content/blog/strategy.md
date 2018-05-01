@@ -62,4 +62,13 @@ That's what the objective is for.
 "Take the hill!" is the objective. "Under cover of darkness because it's a new
 moon, at peak fog time when the enemy spotlights won't work" is the strategy.
 
+## Other Definitions
+
+Here are some other folks' definitions, which I'll update if you tweet me yours
+and I think it's good or thought-provoking:
+
+- Strategy: how to win the war. Tactics: how to win the battles that win the war. ([@juphoff](https://twitter.com/juphoff/status/990059194039635968))
+- Strategy: which battles to fight.  Tactics: how to win those battles.
+  ([@juphoff](https://twitter.com/juphoff/status/990061059934425088))
+
 [^1]: It depends; if the strategy is really not about revenue, and the revenue is just the means to the end, then the revenue target *could* be the strategy; but you'll still need a strategy to achieve your strategy.
