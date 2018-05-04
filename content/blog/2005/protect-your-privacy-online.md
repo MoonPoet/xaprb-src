@@ -3,7 +3,7 @@ title: How to guard your privacy with blacklists and whitelists
 date: "2005-11-06"
 url: /blog/2005/11/06/protect-your-privacy-online/
 categories:
-  - Web
+  - Privacy
 ---
 This article explains how to protect your privacy online, without impairing your ability to surf, by creating a content blacklist and a cookie whitelist. In my opinion, this is the most effective combination of privacy controls that doesn't inhibit normal browsing.
 
@@ -23,7 +23,7 @@ There is a variety of software available to block cookies and such. Caveat empto
 
 I recommend a combination of cookie whitelists and content blacklists to protect your privacy. I use Mozilla Firefox and recommend you do too, for a variety of reasons: it is more secure, faster, adheres to standards, etc. Most importantly for my purposes, it gives you fine-grained control of privacy and allows extensions, one of which is a great content-blocker. In other words, your browser can guard your privacy *without requiring you to install other software*. The remainder of this article explains how I set Firefox up to blacklist content and whitelist cookies.
 
-First, I go look at my cookies in the preferences dialog under Privacy:Cookies (to open the preferences dialog, use the Tools:Options menu option in Windows, Edit:Preferences in Linux, and Firefox:Preferences in Mac). I just scan the cookies I see there. Some of them are bound to be "good" or "useful," such as my email provider, [del.icio.us](http://del.icio.us) (bookmarks), [RSS feeds](http://bloglines.com) and so forth. Others are not. These are ones like doubleclick, bluestreak, statcounter, hitbox and so on. These are the Bad Guys (I'm not picking on them exclusively; I'm just using them as examples). I don't block cookies from them, however! That would be a blacklist. I'm just making a list of the Bad Guys I see.
+First, I go look at my cookies in the preferences dialog under Privacy:Cookies (to open the preferences dialog, use the Tools:Options menu option in Windows, Edit:Preferences in Linux, and Firefox:Preferences in Mac). I just scan the cookies I see there. Some of them are bound to be "good" or "useful," such as my email provider. Others are not. These are ones like doubleclick, bluestreak, statcounter, hitbox and so on. These are the Bad Guys (I'm not picking on them exclusively; I'm just using them as examples). I don't block cookies from them, however! That would be a blacklist. I'm just making a list of the Bad Guys I see.
 
 Why look at cookies if I'm not going to block them? Well, I didn't get cookies from the Bad Guys by accident. The cookies are there because my browser requested an image, ad, or other content from them. These cookies are clues to domains whose content I need to block. I feed these domains into my [AdBlock pattern](/blog/2005/10/26/adblock-patterns/). If you don't know what [AdBlock](http://adblock.mozdev.org/) is, head over to their website and check it out. It's designed to block content, which can be used both to remove obnoxious ads and to block invasions on your privacy. Once I've blocked the domains, I shouldn't get any more cookies from them, *and* I won't be requesting tracking GIFs from them. They should be prevented from tracking me. It's feasible to make a Bad Guy blacklist because the market space for Bad Guys is fairly small (there is not much competition in the surfer-tracking, statistic-gathering market).
 
