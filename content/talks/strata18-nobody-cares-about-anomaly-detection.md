@@ -8,5 +8,6 @@ slides: /slides/strata18-nobody-cares-about-anomaly-detection/
 image: /slides/strata18-nobody-cares-about-anomaly-detection/cover.jpg
 thumbnail: /slides/strata18-nobody-cares-about-anomaly-detection/nobody-cares-anomaly-detection.jpg
 video: ""
+description: "It seems like everyone has anomaly detection, but customers generally aren’t finding it useful. Why? And what can we do about it?"
 ---
 Anomaly detection is white hot in the monitoring industry, but many don’t really understand or care about it, while others repeat the same pattern many times. VividCortex has built several features based on anomaly detection into its product, but customers have told the company that only some of them are valuable. The same is true of other companies in the space. It seems like everyone has anomaly detection, but customers generally aren’t finding it useful. Why? And what can we do about it?

@@ -8,7 +8,7 @@ thumbnail: "/slides/honeycomb-tech-talks-observability-in-business/observability
 slides: "/slides/honeycomb-tech-talks-observability-in-business/"
 image: "/slides/honeycomb-tech-talks-observability-in-business/money-2180330-1280.jpg"
 video: "https://www.youtube.com/watch?v=U__pZ2a2mT0"
-description: ""
+description: "Businesses are often much more sophisticated about their financials than about their technical operations, and there are lessons to be learned from that."
 ---
 What gets measured gets managed, and that’s as true in the business as it is in the product. In fact, arguably we’ve been a lot more sophisticated on the business side than in our systems, for decades.
 

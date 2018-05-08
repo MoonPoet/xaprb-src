@@ -8,7 +8,7 @@ image: /slides/srecon-approaching-unacceptable-workload-boundary/action-balance-
 slides: /slides/srecon-approaching-unacceptable-workload-boundary/
 thumbnail: /slides/srecon-approaching-unacceptable-workload-boundary/thumbnail.jpg
 video: "https://www.youtube.com/watch?v=8omPFYif3J8"
-description: ""
+description: "What happens to systems as they approach saturation? Understanding this highly nonlinear region offers the key to avoiding it and building more scalable, resilient systems."
 ---
 We've all stared in frustration at a system that degraded into nonresponsiveness, to the point that you couldn't even kill-dash-nine whatever was responsible for the problem. A key fact we all recognize, but may not recognize as significant, is that this isn't a sharp boundary. There's a gradient of deteriorating performance where the system becomes less predictable and stable.
 

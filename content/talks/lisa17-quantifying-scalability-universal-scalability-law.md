@@ -8,6 +8,7 @@ image: /slides/lisa17-quantifying-scalability-universal-scalability-law/Thinksto
 slides: /slides/lisa17-quantifying-scalability-universal-scalability-law/
 thumbnail: /slides/lisa17-quantifying-scalability-universal-scalability-law/scalability-is-quantifiable.jpg
 video: "https://youtu.be/lZU6RK0oazM"
+description: "Scalability is a mathematical function that describes the relationship between performance and load. This talk is an overview of the Universal Scalability Law and its applications."
 ---
 Do you know what scalability really is? It's a mathematical function that's simple, precise, and useful. REALLY useful. It describes the relationship between system performance and load. In this talk you'll learn the function (the Universal Scalability Law), how it describes and predicts system behavior you see every day, and how to use it in practice.
 
