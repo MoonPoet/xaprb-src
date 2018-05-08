@@ -29,7 +29,7 @@ layout: true
 
 ---
 class: img-right
-# The Boring Stuff
+# Logistics and Contact Info
 
 .col[
 - Ask questions anytime
@@ -41,6 +41,18 @@ class: img-right
 .rc[
 ![headshot](headshot.jpg)
 ]
+
+---
+# Introduction & Agenda
+
+- What is observability?
+- How is it different from monitoring?
+- What’s the difference from metrics, telemetry...?
+- What *should* you instrument?
+- The 7 Golden Signals and the Zen of Performance
+- The primacy of process lists
+- An ode to metrics, after all; and relationships
+- Conclusions and resources
 
 ---
 class: img-right
