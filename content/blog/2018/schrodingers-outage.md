@@ -35,6 +35,13 @@ Be vigilant against the tendency to ask "why _didn't_ you." It's dangerous: it's
 
 Instead of counterfactuals, ask what the person knew, what pressures they were under, what they thought might happen, what types of risk-reward and cost-benefit estimates they were making. And rather than _judging_ those, seek instead to understand why those seemed to be wise at the time. Because no one got up that morning and said, "today I'm going to be lazy and foolish, not caring about the obvious negative consequences of my action or inaction." That's another past that didn't happen. Don't act as if it did.
 
+A tale from a different universe: NPR
+[interviewed](https://www.npr.org/2018/05/01/607303564/pentagon-briefs-families-of-4-soldiers-killed-in-niger-last-october) the father of a soldier who
+was killed in action in Niger. The host adopted a line of questioning that
+assumed there were mistakes or errors, but the soldier's father corrected him:
+
+> From my perspective, when we look at what some people call mistakes, especially in these situations, people make decisions based on the knowledge they have, and I would not personally characterize them as mistakes. They were just decisions based on what they knew, and I believe that those decisions were sound decisions.
+
 _PS: nobody blamed me for my decision and I'm not defending myself; I'm sharing this story because I think it can be helpful._
 
 [Photo Credit](https://pixabay.com/en/rain-drip-circle-water-raindrop-2422642/)
