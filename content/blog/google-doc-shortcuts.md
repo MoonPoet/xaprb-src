@@ -24,10 +24,17 @@ isn't shared with anyone.)
 
 Here's the shortcuts you can bookmark or drag to your bookmarks bar:
 
-* [Google Docs](https://docs.google.com/document/u/0/create)
-* [Google Sheets](https://docs.google.com/spreadsheets/u/0/create)
+* [New Doc](https://docs.google.com/document/u/0/create)
+* [New Sheet](https://docs.google.com/spreadsheets/u/0/create)
 
 These have "user zero" encoded in the URL, which assumes you want to create a
 new document under the first Google account you're signed into. If you want a
 different one you'll need to edit the URL to contain `.../u/1/create` or
 similar.
+
+I found that other shortcut URLs work too, with a little trial-and-error:
+
+* [New Presentation](https://docs.google.com/presentation/u/0/create)
+
+I'm sure you can figure out one that will work for a Form or Drawing too. But I
+only use Doc and Sheet shortcuts myself.
