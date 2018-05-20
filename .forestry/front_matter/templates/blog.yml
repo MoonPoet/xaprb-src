@@ -12,11 +12,6 @@ fields:
   label: Date
   hidden: false
   type: datetime
-- name: author
-  default: Baron Schwartz
-  label: Author
-  hidden: false
-  type: text
 - name: categories
   default:
   - Databases
