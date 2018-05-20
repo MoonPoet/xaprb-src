@@ -6,7 +6,7 @@ theme: "monobloc"
 image: /slides/sfmetrics-observability-isnt-monitoring/spotlight-802633_1280.jpg
 description: ""
 ---
-class: title
+class: title, no-number
 background-image: url(spotlight-802633\_1280.jpg)
 
 .smokescreen[

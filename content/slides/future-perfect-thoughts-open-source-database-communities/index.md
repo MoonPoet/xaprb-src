@@ -8,7 +8,7 @@ ratio: "16:9"
 theme: "monobloc"
 
 ---
-class: title
+class: title, no-number
 background-image: url(will-turner-508747-unsplash.jpg)
 background-size: cover
 

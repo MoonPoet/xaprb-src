@@ -7,7 +7,7 @@ description: "What's so special about the interactions between applications and 
 ratio: "16:9"
 theme: "monobloc"
 ---
-class: title
+class: title, no-number
 background-image: url(da-vinci.jpg)
 background-size: cover
 

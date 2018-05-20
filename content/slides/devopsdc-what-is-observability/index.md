@@ -6,7 +6,7 @@ theme: "monobloc"
 image: /slides/devopsdc-what-is-observability/cover.jpg
 description: ""
 ---
-class: title
+class: title, no-number
 background-image: url(cover.jpg)
 background-size: cover
 

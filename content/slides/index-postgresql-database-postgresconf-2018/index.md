@@ -7,7 +7,7 @@ description: "Do you know what database indexes are and how they work? Do they s
 ratio: "16:9"
 theme: "monobloc"
 ---
-class: title, center
+class: title, center, no-number
 background-image: url(cover.jpg)
 background-size: cover
 

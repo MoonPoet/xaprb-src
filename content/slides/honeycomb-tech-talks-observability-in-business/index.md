@@ -9,7 +9,7 @@ layout: true
 <div class="remark-slide-number" style="left: 20px; right: unset">@xaprb</div>
 
 ---
-class: title
+class: title, no-number
 background-image: url(money-2180330-1280.jpg)
 
 .smokescreen[

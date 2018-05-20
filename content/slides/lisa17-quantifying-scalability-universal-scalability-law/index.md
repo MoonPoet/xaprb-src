@@ -5,7 +5,7 @@ ratio: "16:9"
 theme: "monobloc"
 image: /slides/lisa17-quantifying-scalability-universal-scalability-law/ThinkstockPhotos-480085336.jpg
 ---
-class: title
+class: title, no-number
 background-image: url(ThinkstockPhotos-480085336.jpg)
 
 .smokescreen[
