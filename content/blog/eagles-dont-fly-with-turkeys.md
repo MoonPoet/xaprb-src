@@ -1,12 +1,15 @@
 ---
-title: "Eagles Don't Fly With Turkeys"
-date: "2018-04-26T19:52:43-04:00"
+title: Eagles Don't Fly With Turkeys
+date: 2018-04-26 19:52:43 -0400
 url: "/blog/eagles-dont-fly-with-turkeys"
-description: "You can keep your high performing team members, or your low performers, but not both."
-credit: "https://unsplash.com/photos/CS5vT_Kin3E"
+description: You can keep your high performing team members, or your low performers,
+  but not both.
+credit: https://unsplash.com/photos/CS5vT_Kin3E
 image: "/media/2018/04/unsplash-photos-CS5vT_Kin3E.jpg"
----
+categories:
+- Entrepreneurship
 
+---
 Over the last few years I have learned this lesson many times over: You can keep
 your high performing team members, or your low performers, but not both.
 
