@@ -4,9 +4,9 @@ blackfriday:
   plainIdAnchors: true
 theme: story
 googleAnalytics: "UA-101883-1"
+title: "Baron Schwartz's Website"
 params:
    author: "Baron Schwartz"
-   Title: "Baron Schwartz's Website"
    Twitter: "xaprb"
    Amazon: "xaprb-20"
    Email: "&098;&097;&114;&111;&110;&064;&118;&105;&118;&105;&100;&099;&111;&114;&116;&101;&120;&046;&099;&111;&109;"
