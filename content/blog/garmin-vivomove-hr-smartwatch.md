@@ -1,15 +1,17 @@
 ---
-title: 'The Garmin Vivomove HR Smartwatch'
-date: "2018-05-13T15:13:38-04:00"
+title: The Garmin Vivomove HR Smartwatch
+date: 2018-05-13 15:13:38 -0400
 url: "/blog/garmin-vivomove-hr-smartwatch"
 categories:
-- Health
+- Fitness
 - Gear
-description: "I liked a lot about the Garmin Vivomove HR hybrid smartwatch, but I didn't find it completely satisfactory."
-credit: "https://unsplash.com/photos/CMIesa5_y-c"
+description: I liked a lot about the Garmin Vivomove HR hybrid smartwatch, but I didn't
+  find it completely satisfactory.
+credit: https://unsplash.com/photos/CMIesa5_y-c
 image: "/media/2018/05/unsplash-photos-CMIesa5_y-c.jpg"
----
+author: Baron Schwartz
 
+---
 I bought a [Garmin Vivomove HR smartwatch]({{< amz B074K884KQ >}}) to see if it
 would be a good replacement for my [Nokia Steel HR](/blog/best-fitness-activity-sleep-tracking-watch/). It's a great hybrid smart watch design, but it's buggy and I couldn't get it working well enough, so I didn't keep it.
 
