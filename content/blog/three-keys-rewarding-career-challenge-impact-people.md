@@ -1,14 +1,17 @@
 ---
 title: 'The Three Keys to a Rewarding Career: Challenge, Impact, and People'
-date: "2018-05-18T12:37:53-04:00"
+date: 2018-05-18 12:37:53 -0400
 url: "/blog/three-keys-rewarding-career-challenge-impact-people"
-description: "Keep these three keys in mind, and you'll never wake up and dread going to work a day in your life."
+description: Keep these three keys in mind, and you'll never wake up and dread going
+  to work a day in your life.
 categories:
 - Leadership
-credit: "https://unsplash.com/photos/9idqIGrLuTE"
+- Recruiting
+- Entrepreneurship
+credit: https://unsplash.com/photos/9idqIGrLuTE
 image: "/media/2018/05/unsplash-photos-9idqIGrLuTE.jpg"
----
 
+---
 What makes a rewarding, fulfilling career? I keep three things in mind: being challenged every day, making an impact, and working with delightful people. Keep these three keys in mind, and you'll never wake up and dread going to work a day in your life.
 
 <!--more-->
