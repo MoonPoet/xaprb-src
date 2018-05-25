@@ -16,7 +16,7 @@ The square root staffing law is a rule of thumb derived from M/M/m queueing theo
 
 <!--more-->
 
-![Square Root Staffing Law](/media/2016/10/square-root-staffing-law.png)
+{{< desmos iwsypdf7l8 >}}
 
 The square root staffing law is designed to help with capacity planning in what's called the QED regime, which tries to balance efficiency with quality of service. Capacity planning is a set of tradeoffs: for best quality of service, you must provision lots of spare capacity (headroom), but that's wasteful. For best efficiency, you minimize idle capacity, but then quality of service becomes terrible.
 
@@ -28,8 +28,6 @@ The answer is less than a linear increase to 30 servers (the red dashed line). I
 
 If you'd like to experiment interactively with this capacity planning tool, I built a [Desmos calculator](https://www.desmos.com/calculator/iwsypdf7l8) for you. You can drag the circles around to see how parameters such as utilization affect the amount of idle capacity you'll need to provision. You can download an [Excel worksheet](https://www.vividcortex.com/resources/square-root-staffing-law-workbook?utm_campaign=xaprb&utm_source=www.xaprb.com) from VividCortex as well.
 
-The square root rule is an approximation, but it's a decent one, and its bounds are well understood.
-
-To learn more about this, please read my book [The Essential Guide To Queueing Theory](https://www.vividcortex.com/resources/queueing-theory), which contains further reference material you might also find helpful.
+The square root rule is an approximation, but it's a decent one, and its bounds are well understood.  To learn more about this, please read my book [The Essential Guide To Queueing Theory](https://www.vividcortex.com/resources/queueing-theory), which contains further reference material you might also find helpful.
 
 You might also be interested in learning about the [Universal Scalability Law](https://www.vividcortex.com/resources/universal-scalability-law/), which is a great tool for capacity planning as well.

@@ -79,7 +79,7 @@ without distortion, it's quite clear that the queueing curve is on a diagonal
 right away when \\(m=1\\).  Here's the queuing curve for 1, 2, and 8 servers
 (red, blue, and green lines).
 
-![Knee](/media/2016/12/knee-1.png)
+{{< desmos fokgr3jcyl >}}
 
 For \\(m=2\\) and greater, the solution is a lot of algebra. I resorted to using
 Wolfram Alpha. For 2 service channels, the equation reduces to
@@ -107,6 +107,8 @@ calculator](https://www.desmos.com/calculator/mblitsyfkg) where you can see the
 queueing curve in blue, and its derivative in orange, as you vary \\(m\\). Where
 the derivative crosses the line \\(y=1\\) is the "knee" by the definition I'm
 using in this section.
+
+{{< desmos mblitsyfkg >}}
 
 The behavior, although I can't plot it with an equation, is not different from
 what you've seen previously: as you increase the number of service channels, the
@@ -139,7 +141,7 @@ definition. Here are both
 similar behavior. Blue is "wait equals service time" and red is Cary Millsap's
 definition.
 
-![Knee 2](/media/2016/12/knee-2.png)
+{{< desmos axjk6qjrzj >}}
 
 This definition is reasonable, in some sense, if you think "bad performance" is
 roughly equivalent to "my wait is longer than my job, that's a waste." But it's

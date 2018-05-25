@@ -25,9 +25,9 @@ number of service channels, and although we may argue about the topics in the
 preceding paragraph and whether this is the right definition, it still serves to
 illustrate important concepts.
 
-![knee](/media/2016/11/knee-1.png)
+{{< desmos cqh81xgspq >}}
 
-The image above shows the response time stretch factor curve for a queueing
+The graph above shows the response time stretch factor curve for a queueing
 system with 8 service channels. This is analogous to a server with 8 CPUs, for
 example. A line drawn from the origin, tangent to the curve, touches it at
 0.7598, or 76% utilization.
@@ -39,8 +39,7 @@ where the curve appears to lift upwards and start to climb steeply, moves toward
 the right---towards higher utilization, signified by \\(\\rho\\).
 
 You can experiment interactively with this, using this [Desmos
-calculator](https://www.desmos.com/calculator/cqh81xgspq).\*
-
+calculator](https://www.desmos.com/calculator/cqh81xgspq).[^1]
 Here's the derivation. Using the heuristic approximation,
 
 \\[
@@ -85,9 +84,4 @@ illustrates two fundamental truths about queueing systems:
 For more on this topic, please read [my free ebook on queueing
 theory](https://www.vividcortex.com/resources/queueing-theory).
 
-\* *Note that the calculator uses an approximation to the queueing theory response
-time curve, which is easier to differentiate than the Erlang C formula but
-underestimates how steeply the curve climbs at higher utilizations. I discussed
-this heuristic approximation at length in my [previous blog
-post](/blog/response-time-stretch-factor/). Even though it's an
-approximation, again, it serves the purposes of this blog post.*
+[^1]: Note that the calculator uses an approximation to the queueing theory response time curve, which is easier to differentiate than the Erlang C formula but underestimates how steeply the curve climbs at higher utilizations. I discussed this heuristic approximation at length in my [previous blog post](/blog/response-time-stretch-factor/). Even though it's an approximation, again, it serves the purposes of this blog post.

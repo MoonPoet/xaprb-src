@@ -76,6 +76,8 @@ $$
 
 If you'd like to see how this looks, check out [this Desmos calculator](https://www.desmos.com/calculator/9dr7azq0ot).
 
+{{< desmos 9dr7azq0ot >}}
+
 Now here's the part my brain has been trying to connect, almost idly in
 shower-thought time, for a while. If intuition led from one direction to the
 heuristic approximation \\(R=\\frac{1}{1-\\rho^m}\\), and an exact derivation leads to
@@ -114,11 +116,11 @@ the missing term? What shape might it have?
 To gain some intuition about this, I wrote a simple [Desmos
 calculator](https://www.desmos.com/calculator/qo1n4shf1f) to show
 the *value* of the hypothetical "missing term" in the context of the heuristic's
-value. In other words, the heuristic's *error function*.  Here's a picture of
+value. In other words, the heuristic's *error function*.  Here's a graph of
 that for several values of \\(m\\). Red is 1 server, green is 8, purple is 16, orange
 is 64.
 
-![Error in Heuristic](/media/2016/10/error-in-heuristic.png)
+{{< desmos qo1n4shf1f >}}
 
 Note that I showed utilization extending out beyond the value 1 because the
 shape of the function is interesting, but that value is impossible---a server can
@@ -245,7 +247,7 @@ divided by \\(m\\) to normalize it relative to the number of servers. I've made
 a [Desmos calculator](https://www.desmos.com/calculator/7ygut81via) illustrating
 the shape of this adjustment term for 1, 4, 8, and 16 servers:
 
-![Error in Heuristic as Func of Util](/media/2016/10/heuristic-error-func-util.png)
+{{< desmos 7ygut81via >}}
 
 One of the challenges with this is that due to the limitations of floating-point
 math in computers, the heuristic function appears to have no error at low
@@ -275,7 +277,7 @@ to 1, but if you zoom out further, it looks more like... wait for it... part of
 the Gamma function. You can see this on
 [Desmos](https://www.desmos.com/calculator/hsidkl4og8).
 
-![Heuristic Error as Func of Servers](/media/2016/10/heuristic-error-func-servers.png)
+{{< desmos hsidkl4og8 >}}
 
 I experimented with this in a different way, by trying to approximate
 \\(A_{base}\\) directly. I just guessed at its shape and came up with the
@@ -286,11 +288,15 @@ A_{base} \\approx \\rho - \\frac{2}{15} \\sqrt{m} (\\rho-1)\\rho
 $$
 
 You can see this shape, compared with the actual \\(A_{base}\\), at this
-[Desmos](https://www.desmos.com/calculator/sgwrqdcnzk). And [this
+[Desmos](https://www.desmos.com/calculator/sgwrqdcnzk).
+
+{{< desmos sgwrqdcnzk >}}
+
+And [this
 one](https://www.desmos.com/calculator/opa1sfpxfw) shows what this looks like
 when included as a term in the heuristic stretch factor.
 
-![Heuristic Skewed By Utilization](/media/2016/10/heuristic-skew-util.png)
+{{< desmos opa1sfpxfw >}}
 
 Red is Erlang, blue is my heuristic, and black dashed is Gunther's.
 Don't be fooled; mine may look better, but if you examine high utilizations

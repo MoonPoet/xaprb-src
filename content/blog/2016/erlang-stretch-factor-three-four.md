@@ -88,3 +88,5 @@ But intuition has led me astray many times.
 
 You can graph and visualize all of the above with a [Desmos
 calculator](https://www.desmos.com/calculator/kvffq77evl) that I made for you.
+
+{{< desmos kvffq77evl >}}
