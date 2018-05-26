@@ -3,8 +3,9 @@ url: /blog/skagen-jorn-misfit-phase-hybrid-smartwatch/
 title: The Skagen Jorn Connected and Misfit Phase Hybrid Smart Watches
 date: 2018-03-05 19:16:30 -0400
 categories:
+- Fitness
 - Gear
-- Health
+- Watches
 author: Baron Schwartz
 description: "I tested the Skagen Jorn Connected and Misfit Phase to see if they could replace my Nokia Steel HR."
 image: /media/2018/03/skagen-jorn-misfit-phase.jpg

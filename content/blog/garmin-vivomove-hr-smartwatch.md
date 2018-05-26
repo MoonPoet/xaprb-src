@@ -5,6 +5,7 @@ url: "/blog/garmin-vivomove-hr-smartwatch"
 categories:
 - Fitness
 - Gear
+- Watches
 description: I liked a lot about the Garmin Vivomove HR hybrid smartwatch, but I didn't
   find it completely satisfactory.
 credit: https://unsplash.com/photos/CMIesa5_y-c

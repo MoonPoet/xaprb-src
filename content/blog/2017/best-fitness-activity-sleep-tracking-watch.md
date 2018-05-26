@@ -4,6 +4,7 @@ author: Baron Schwartz
 categories:
 - Gear
 - Health
+- Watches
 date: 2017-02-21 15:31:44 -0500
 description: After researching many smartwatches and activity trackers, I bought a
   Withings Steel HR. Here's why.
