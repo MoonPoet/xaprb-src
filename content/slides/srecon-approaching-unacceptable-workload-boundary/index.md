@@ -4,6 +4,7 @@ date: "2018-03-28"
 ratio: "16:9"
 theme: "monobloc"
 image: "/slides/srecon-approaching-unacceptable-workload-boundary/action-balance-fun-305250.jpg"
+description: "What happens to systems as they approach saturation? Understanding this highly nonlinear region offers the key to avoiding it and building more scalable, resilient systems."
 ---
 layout: true
 <div class="remark-slide-number" style="left: 20px; right: unset">@xaprb</div>

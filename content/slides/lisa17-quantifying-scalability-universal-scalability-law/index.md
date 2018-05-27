@@ -4,6 +4,7 @@ date: 2017-11-01T15:00:00-08:00
 ratio: "16:9"
 theme: "monobloc"
 image: /slides/lisa17-quantifying-scalability-universal-scalability-law/ThinkstockPhotos-480085336.jpg
+description: "Scalability is a mathematical function that describes the relationship between performance and load. This talk is an overview of the Universal Scalability Law and its applications."
 ---
 class: title, no-number
 background-image: url(ThinkstockPhotos-480085336.jpg)

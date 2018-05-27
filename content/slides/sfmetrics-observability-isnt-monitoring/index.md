@@ -4,7 +4,7 @@ date: 2018-03-07T12:00:00-05:00
 ratio: "16:9"
 theme: "monobloc"
 image: /slides/sfmetrics-observability-isnt-monitoring/spotlight-802633_1280.jpg
-description: ""
+description: "This talk discusses the seven golden signals; concepts such as observability, monitoring, telemetry, and instrumentation; and how to build highly observable services."
 ---
 class: title, no-number
 background-image: url(spotlight-802633\_1280.jpg)

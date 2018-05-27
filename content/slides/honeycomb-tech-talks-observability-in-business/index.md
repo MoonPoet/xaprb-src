@@ -4,6 +4,7 @@ date: 2018-03-28T18:30:00-07:00
 ratio: "16:9"
 theme: "monobloc"
 image: "/slides/honeycomb-tech-talks-observability-in-business/money-2180330-1280.jpg"
+description: "Businesses are often much more sophisticated about their financials than about their technical operations, and there are lessons to be learned from that."
 ---
 layout: true
 <div class="remark-slide-number" style="left: 20px; right: unset">@xaprb</div>

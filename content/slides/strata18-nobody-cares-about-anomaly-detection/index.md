@@ -4,6 +4,7 @@ date: 2018-03-07T14:40:00-08:00
 ratio: "16:9"
 theme: "monobloc"
 image: /slides/strata18-nobody-cares-about-anomaly-detection/cover.jpg
+description: "It seems like everyone has anomaly detection, but customers generally aren’t finding it useful. Why? And what can we do about it?"
 ---
 layout: true
 <div class="remark-slide-number" style="left: 20px; right: unset">@xaprb</div>
