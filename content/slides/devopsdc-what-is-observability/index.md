@@ -1,10 +1,10 @@
 ---
 title: "What is Observability?"
-date: 2018-03-07T12:00:00-05:00
+date: 2018-05-08T16:00:00-05:00
 ratio: "16:9"
 theme: "monobloc"
 image: /slides/devopsdc-what-is-observability/cover.jpg
-description: ""
+description: "Observability is an attribute of a system, like testability and operability. This talk is an overview of concepts and how-to."
 ---
 class: title, no-number
 background-image: url(cover.jpg)
