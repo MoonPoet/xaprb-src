@@ -2,8 +2,7 @@
 title: 'The Three Keys to a Rewarding Career: Challenge, Impact, and People'
 date: 2018-05-18 12:37:53 -0400
 url: "/blog/three-keys-rewarding-career-challenge-impact-people"
-description: Keep these three keys in mind, and you'll never wake up and dread going
-  to work a day in your life.
+description: Keep these three keys in mind, and you'll never wake up and dread going to work a day in your life.
 categories:
 - Leadership
 - Recruiting
@@ -21,6 +20,18 @@ These three factors are what I want for myself, and I strive to recruit people w
 * **Challenge** is what makes work fun and exciting for growth-minded people. [Growth-minded]({{< amz 0345472322 >}}) people believe that their capabilities are elastic, not inherent; that they can work on their weaknesses as well as their strengths; that they can be better today than they were yesterday. These people are the most dynamic, impactful, amazing people in the world. And they do not want stagnation. They want challenges that force them outside their comfort zone where they can grow and learn and accelerate.
 * **Impact** is what makes work rewarding. I'm highly motivated to make a difference, to make the world a better place, and I seek out people who feel the same way. The single best way to assess for this, and to recruit for it, is to focus on the impact[^results-focused] of the work. Why would I bother if not for the impact? I want to see that my efforts change something for someone, directly or indirectly. It's demoralizing to work on something that never gets into production, never sees the light of day. I want people in my company who will not accept less than that.
 * **People** make all the difference. Working with delightful people, people who model the [three behaviors that create psychological safety](/blog/three-steps-to-psychological-safety/),[^psych_safety] people who are also [A-players](/blog/eagles-dont-fly-with-turkeys/) and challenge me, people with whom I share values---it is impossible to overstate how important this is. It's more than just a "no assholes" rule, it's positively affirming that I want to be surrounded by *good* people who are *great* at their vocation.
+
+In addition to making a career rewarding, these are also the defining
+characteristics of how to learn what you want to *do* in life, your true
+vocation. This is often very confusing to young people, not least because our
+society sends illogical messages to them about how to find or create their
+calling in life. Two related articles, one by [Glenn
+Kelman](https://www.redfin.com/blog/2018/04/einsteins-happiest-thought.html) and
+one by [Paul Graham](http://www.paulgraham.com/love.html). They are both worth
+considering deeply. What does Glenn
+mean when he writes this?
+
+> Often now, I meet young people who want to  be  something more than they want to  do something. What they really want, not unreasonably, is to progress in their career.  What they don’t realize is that this progression will end, but their career won’t.
 
 The company I founded, [VividCortex](https://www.vividcortex.com), has four Core Values: growth, empathy, pragmatism, and inclusiveness. Hopefully it's obvious how the three attributes of a great career, and how I use those to attract the best and keep out the rest, align with these four Core Values. If you're interested, [we're hiring](https://www.vividcortex.com/company/careers).
 

@@ -11,11 +11,11 @@ credit: "https://unsplash.com/photos/DrUguS1oBGU"
 image: "/media/2018/05/unsplash-photos-DrUguS1oBGU.jpg"
 ---
 
-I bought a Fitbit Versa smartwatch and I like some aspects of it a lot. Unlike the hybrid analog/smart watches I've been trying recently, this one is a pure smartwatch with an LED display and no physical hands. I'm still evaluating.
+I bought a [Fitbit Versa]({{< amz B07B48SQGT >}}) smartwatch and I like some aspects of it a lot. Unlike the hybrid analog/smart watches I've been trying recently, this one is a pure smartwatch with an LED display and no physical hands. I'm still evaluating.
 
 <!--more-->
 
-This is the first device from Fitbit I've seriously considered. I've always admired their biometrics functionality, but abhorred their styling. The Versa isn't ugly, so I bought it as soon as it was released! It looks quite similar to an Apple Watch, by which I mean it's unoffensive despite the fact that it's a computer strapped to my wrist.
+This is the first device from Fitbit I've seriously considered. I've always admired their biometrics functionality, but abhorred their styling. The [Versa](https://www.fitbit.com/versa) isn't ugly, so I bought it as soon as it was released! It looks quite similar to an Apple Watch, by which I mean it's unoffensive despite the fact that it's a computer strapped to my wrist.
 
 ![Fitbit Versa](/media/2018/05/fitbit-versa-three.png)
 
@@ -101,7 +101,7 @@ The charger is the real problem, though. It's big and bulky, with a long nondeta
 
 The Versa lets you install apps, but I seldom use them. The default ones are mostly useless, other than the workout tracker, timer, and alarm. It feels like someone said "we have to have apps" and that was the end of the discussion. So we got apps, but not good apps, nor a design that makes any app a good idea.
 
-There's a weather app, for example, but it doesn't display current weather predictions. It just shows nothing and says I need to sync the watch with the iPhone app, even immediately after syncing. And if the weather forecast is only updated as of the last time I used my phone, what's the point? If I'm going to have to pick up my phone to get updated weather information, I'd rather just look at the weather app on my phone instead!
+There's a weather app, for example, but it doesn't display current weather predictions. It just shows nothing and says I need to sync the watch with the iPhone app, even immediately after syncing. And if the weather forecast is only updated as of the last time I used my phone, what's the point? If I'm going to have to pick up my phone to get updated weather information, I'd rather just look at the weather app on my phone instead![^weather]
 
 The single most useful app would be an agenda view of my calendar, but there isn't one preinstalled. After the ordeal of trying to find a decent clock face, I took one look at all of the third-party calendar app offerings and found myself completely unwilling to even try the first one. The thought of searching, installing, trying, and who-knows-what-else---potentially worrying about having to grant and revoke permissions for example---was too much for me.
 
@@ -112,5 +112,5 @@ The Fitbit Versa is the best-looking piece of hardware Fitbit has ever built. It
 I'm going to keep the Versa a little longer before I decide whether it's my smartwatch of choice or whether I'll keep searching.
 
 
-
+[^weather]: Update: I later discovered through trial-and-error that the Versa's weather app works if iPhone permissions for both the Fitbit and Weather apps allow location access "always," even when not using the apps, which is not documented as far as I know.
 [^settings]: You have to configure notifications to show as banners, show on lock screen, and show in history.

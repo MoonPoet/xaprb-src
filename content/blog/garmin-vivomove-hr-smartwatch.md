@@ -6,11 +6,9 @@ categories:
 - Fitness
 - Gear
 - Watches
-description: I liked a lot about the Garmin Vivomove HR hybrid smartwatch, but I didn't
-  find it completely satisfactory.
+description: "I liked a lot about the Garmin Vivomove HR hybrid smartwatch, but I didn't find it completely satisfactory."
 credit: https://unsplash.com/photos/CMIesa5_y-c
 image: "/media/2018/05/unsplash-photos-CMIesa5_y-c.jpg"
-author: Baron Schwartz
 
 ---
 I bought a [Garmin Vivomove HR smartwatch]({{< amz B074K884KQ >}}) to see if it
@@ -156,8 +154,9 @@ Here's a few things I had issues with:
   some missed notifications every now and then (perhaps a different issue). But
   the app wouldn't show me any historical metrics such as heart rate or steps.
   It just said I needed to sync the watch, no matter how many times I synced it.
-  I submitted a support request and never got a response, even ten days later as
-  I write this post.[^support] Meanwhile I tried resetting the watch, turning
+  I submitted a support request and never got a response, even as I write this
+  post ten days later (update: 23 days later, still no response).[^support]
+  Meanwhile I tried resetting the watch, turning
   bluetooth on and off, removing the watch from the app and re-initializing it,
   deleting and reinstalling the app... and nothing worked. I ended up with a
   nonfunctional watch, at least with regards to some of the things I wanted it
