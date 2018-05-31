@@ -44,6 +44,8 @@ class: img-right
 ]
 
 ---
+class: img-right
+.col[
 # Introduction & Agenda
 
 - What is QoS and Why Does it Matter?
@@ -54,6 +56,9 @@ class: img-right
 - How To Diagnose Performance Problems
 - Don't Get Cut On Sharp Edges
 - Conclusions and Resources
+]
+
+.rc[<img src=unsplash-photos-FoKO4DpXamQ.jpg style="height: 100%; width: 100%; object-fit: cover">]
 
 ---
 class: title
@@ -83,12 +88,18 @@ Users care about *request* performance.
 The definition is *latency* in units of seconds per request.
 
 ---
+class: img-right
+
+.col[
 # You Must Care About All Requests
 
 Users care about their own requests, but you have to make sure the
 **population** of requests is getting good QoS.
 
 This is **workload QoS**.
+]
+
+.rc[<img src=unsplash-photos-ZuV4bPalclY.jpg style="width: 100%; height: 100%; object-fit: cover">]
 
 ---
 # The 4 Golden Signals of QoS
@@ -237,8 +248,10 @@ You probably have good resource monitoring, but poor (or no) workload
 monitoring.
 
 ---
-class: smaller
-# How To Measure Workload
+class: smaller, img-right
+
+.col[
+## How To Measure Workload
 
 There are three primary ways to measure requests (workload):
 
@@ -251,6 +264,10 @@ There are three primary ways to measure requests (workload):
 3. Sniff network traffic
 	1. Pros: near-zero load added, super-detailed
 	2. Cons: technically hard; doesn't measure internals
+]
+
+.rc[<img src=unsplash-photos-tf0jFfbg03U.jpg style="width: 100%; height: 100%; object-fit: cover">]
+
 
 ---
 class: title
@@ -277,13 +294,21 @@ background-size: cover
 - Resource starvation or stalls
 
 ---
+class: two-column
 # The Performance Swiss-Army Knife
+
+.col[
 
 A **profile** is an all-purpose tool for finding signal in the noise.
 
 1. Group related requests together
 2. Rank them by a metric
 3. Look at the top items
+]
+
+.col[
+![Profile](profile.png)
+]
 
 ---
 # Finding Performance Problems
@@ -296,6 +321,9 @@ A **profile** is an all-purpose tool for finding signal in the noise.
 	- Profile by `P99(latency)`
 
 ---
+class: img-right
+
+.col[
 # Prioritizing What You Find
 
 How do you know whether “optimizing” a query is worth it?
@@ -303,21 +331,26 @@ How do you know whether “optimizing” a query is worth it?
 Rule of thumb:
 * To conserve resources / reduce collateral damage, look at % of total
 * To make customers happy, look at p99 latency
+]
+
+.rc[<img src=unsplash-photos-tf0jFfbg03U.jpg style="width: 100%; height: 100%; object-fit: cover">]
 
 ---
+class: img-right, smaller
+
+.col[
 # Inspecting Individual Requests
 
 You don't learn much from aggregate data.
 
---
-
 There's no "average" request.
-
---
 
 You need to drill into individual examples (individual log lines or samples).
 
 You also need to look at the *distribution* of request latencies.
+]
+
+.rc[<img src=unsplash-photos-vWI1kTcMcDI.jpg style="width: 100%; height: 100%; object-fit: cover">]
 
 ---
 # How To Fix A “Bad” Query
