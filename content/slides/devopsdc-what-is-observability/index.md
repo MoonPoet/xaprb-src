@@ -514,7 +514,7 @@ class: two-column
 
 .col[
 Slides are at [xaprb.com/talks/](https://www.xaprb.com/talks/), or scan the QR
-code.
+code. To export as PDF, print with Chrome.
 
 Contact:
 

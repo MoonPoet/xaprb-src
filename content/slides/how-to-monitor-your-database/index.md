@@ -423,7 +423,7 @@ class: two-column
 # Slides and Contact Information
 
 .col[
-Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
+Slides are at https://www.xaprb.com/talks/ or you can scan the QR code. To export as PDF, print with Chrome.
 
 Contact: @xaprb or baron@vividcortex.com
 
