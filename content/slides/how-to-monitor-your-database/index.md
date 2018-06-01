@@ -1,6 +1,6 @@
 ---
 title: 'How to Monitor Your Database'
-date: "2018-05-30T19:23:33-04:00"
+date: "2018-05-31T17:00:00-04:00"
 url: "/slides/how-to-monitor-your-database/"
 image: "/slides/how-to-monitor-your-database/cover.jpg"
 description: "This talk is about how you can monitor your database so you can learn what it’s really doing. When you can do this, you’ll become a much better engineer, not only building better systems but also making your team members heroes too."
