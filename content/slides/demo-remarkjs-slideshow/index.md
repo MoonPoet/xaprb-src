@@ -2,7 +2,7 @@
 title: 'Demo RemarkJS Slideshow '
 date: "2018-06-02T16:43:02-04:00"
 url: "/slides/demo-remarkjs-slideshow/"
-image: "/slides/demo-remarkjs-slideshow/cover.jpg"
+image: "/slides/demo-remarkjs-slideshow/unsplash-photos-2YSTI1j5fc8.jpg"
 description: "This is a slideshow to demonstrate layout/theme designs in RemarkJS."
 ratio: "16:9"
 theme: "monobloc"
