@@ -2,8 +2,8 @@
 url: /blog/best-fitness-activity-sleep-tracking-watch/
 author: Baron Schwartz
 categories:
+- Fitness
 - Gear
-- Health
 - Watches
 date: 2017-02-21 15:31:44 -0500
 description: After researching many smartwatches and activity trackers, I bought a
