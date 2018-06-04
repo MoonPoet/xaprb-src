@@ -10,6 +10,4 @@ Last night at the [Golang-DC meetup](http://www.meetup.com/Golang-DC/events/1068
 
 Afterwards the discussion ranged to a lot of related topics. This was the best part of the evening for me. There were really great questions on a variety of topics, and insightful answers from everyone.
 
-<embed src="https://www.box.com/embed/bl9l01ul752ek76.swf" width="600" height="480" wmode="opaque" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always">
-
-
+{{< box e1thdgj9x6w6f92jqjtl >}}

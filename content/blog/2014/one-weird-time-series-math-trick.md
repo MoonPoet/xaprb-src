@@ -24,6 +24,4 @@ My slides are embedded below. Enjoy. I've also uploaded an [Excel spreadsheet](/
 can use to tinker with the math and reproduce my results. Let me know if I did
 anything wrong, please!
 
-<iframe src="https://app.box.com/embed_widget/hnd0llg8tzut/s/o60h3cxbp5fa1u5jw1pu?view=list&sort=name&direction=ASC&theme=blue" width="500" height="400" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-
+{{< box o60h3cxbp5fa1u5jw1pu >}}

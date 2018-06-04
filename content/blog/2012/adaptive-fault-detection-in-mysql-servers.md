@@ -7,6 +7,4 @@ categories:
 ---
 I've just finished presenting my work on adaptive fault detection at [Surge](http://omniti.com/surge/2012) and [Percona Live NYC](http://www.percona.com/live/nyc-2012/). My slides are embedded below.
 
-<embed src="https://www.box.com/embed/t12m58yptav00ej.swf" width="600" height="480" wmode="opaque" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always">
-
-
+{{< box 9rbjwk8c43v0w6nn3zyo >}}

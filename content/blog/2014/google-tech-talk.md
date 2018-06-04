@@ -36,6 +36,4 @@ Google!
 
 **Update**: Slides are embedded below.
 
-<iframe src="https://app.box.com/embed_widget/ko7s90gvgiix/s/0d578lmrl6xm487z4ska?view=list&sort=name&direction=ASC&theme=blue" width="640" height="420" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-
+{{< box ko7s90gvgiix >}}
