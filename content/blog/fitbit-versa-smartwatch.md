@@ -28,12 +28,18 @@ The watch is lightweight and comfortable to wear on my wrist, with a well-design
 
 It feels good-quality, and although the design is simple, it doesn't feel cheap. It's a huge upgrade over the last couple of watch designs from Fitbit (the Blaze and Ionic). And I'm glad Fitbit is producing a watch-looking device; I'd never strap one of their thick plastic handcuffs to my arm.
 
+In terms of functionality, it's halfway between the [Garmin Forerunner
+35]({{<amz B01KPUHBK6 >}}) and the Apple Watch. From the reviews I've read, the
+Garmin Forerunner 35 is a better device in some respects such as battery life
+and GPS tracking, but the Fitbit Versa has its strengths too: a better display,
+more built-in functionality...
+
 ## User Interface
 The Versa has a digital display that is bright and very sharp. It's easy to see even in direct sunlight. It is touch-enabled, so you can use gestures like touch, swipe, and long-press to interact with it. Gestures feel responsive and accurate, and the watch seems high-performance.
 
-The watch face stays dark most of the time, but lights up when you raise your arm to look at it. This works okay for me, much better than the similar feature on the Garmin Vivomove HR watch I tried out recently. I have about a 90% success rate. The 10% failure rate is enough to be annoying, and the watch frequently lights up when I'm not trying to look at it too.
+The watch face stays dark most of the time, but lights up when you raise your arm to look at it. This works okay for me, much better than the similar feature on the Garmin Vivomove HR watch I tried out recently. I have about a 90% success rate. The 10% failure rate is enough to be annoying, and the watch lights up sometimes when I'm not trying to look at it too.
 
-The big shortcoming is that the display doesn't turn on automatically when there's a notification, such as an incoming phone call. I have to interact with the watch to see why it's vibrating on my wrist. This is pointless, and significantly reduces usability when I want it most, especially in situations such as driving.
+The big shortcoming is that the display doesn't turn on automatically when there's a notification, such as an incoming phone call. I have to interact with the watch to see why it's vibrating on my wrist. This reduces usability when I want it most, especially in situations such as driving.
 
 There are three physical buttons on the sides of the watch: one on the left and two on the right. It took me several days to figure out what the buttons do. They're not well explained, and they're overloaded with multiple functions. I learned the buttons through trial-and-error, and now I can do what I want without trouble.
 
@@ -41,7 +47,9 @@ In addition to the buttons, some of the watch's functions can also be accessed i
 
 ![Fitbit Versa](/media/2018/05/fitbit-versa-two.png)
 
-A lot of the Versa's functionality feels incomplete, unsupported, undocumented, or magical (in a bad way). For example, there are various settings that mention a GPS, but the Versa doesn't have a GPS. It turns out this means the watch will use your phone's GPS in certain modes, but that took me a while to understand. Another example is the music controls: when you activate that feature on the watch face, it instructs you to start playing music on your phone, but when I tried playing Apple Music or Spotify on my phone, nothing happened.
+A lot of the Versa's functionality feels incomplete, unsupported, undocumented, or magical (in a bad way). For example, there are various settings that mention a GPS, but the Versa doesn't have a GPS. It turns out this means the watch will use your phone's GPS in certain modes, but that took me a while to understand.
+
+Another example is the music controls: when you activate that feature on the watch face, it instructs you to start playing music on your phone, but when I tried playing Apple Music or Spotify on my phone, nothing happened. *Update, 20 days in: I accidentally figured out how to use the music controls. Again, poorly documented, with defaults that assume a non-default usage scenario. Bad product and interaction design.*
 
 There are many more examples like those. One more: you can activate the apps on the Versa using the rightmost two buttons on the watch. The buttons start the apps that are in the first two positions on the screen; you can long-press and drag to reorder apps. I discovered these features accidentally.
 
