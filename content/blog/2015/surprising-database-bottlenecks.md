@@ -4,14 +4,9 @@ title: Your Real Database Bottleneck
 date: '2015-07-21T14:46:49-07:00'
 categories:
 - Databases
-tags:
-- USL
-- DevOps
-description: Your database bottleneck isn't CPU, I/O, query performance or scalability
-  after all.
-image: "/media/2015/07/bottleneck.jpg"
-author: Baron Schwartz
-
+description: Your database bottleneck isn't CPU, I/O, query performance or scalability after all.
+credit: "https://unsplash.com/photos/wxW37QUEYDY"
+image: "/media/2015/07/unsplash-photos-wxW37QUEYDY.jpg"
 ---
 Database performance optimization is usually concerned with indexes, SQL
 design, lock contention, and the like. But the real database bottleneck is the
@@ -59,8 +54,6 @@ What is that impact? Think of it this way:
 
 By understanding deeply the flow of work and communications in your teams, you can actually have this kind of impact. You do not
 need any tools (this is not a vendor pitch for VividCortex).
-
-![Hair Sticks](/media/2015/07/hairsticks.jpg)
 
 Databases aren't the only team bottlenecks. But the database is often a pretty
 central one in many teams. It's a huge lever for IT productivity.
@@ -114,6 +107,3 @@ That's your *true* database bottleneck.
 
 Further reading on this topic:
 - [Silvia Botros](http://sysadvent.blogspot.com/2016/12/day-2-dbas-priesthood-no-more.html)
-
-Photo credits: [bottleneck](https://www.flickr.com/photos/icatus/2992269179/),
-[hair pins](https://www.flickr.com/photos/grizzlymountainarts/6894273425/)
