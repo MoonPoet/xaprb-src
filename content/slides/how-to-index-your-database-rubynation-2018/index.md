@@ -1,8 +1,8 @@
 ---
 title: "How To Index Your Database"
 date: "2018-06-22T00:00:00-04:00"
-url: "/slides/slides/how-to-index-your-database-rubynation-2018/"
-image: "/slides/slides/how-to-index-your-database-rubynation-2018/cover.jpg"
+url: "/slides/how-to-index-your-database-rubynation-2018/"
+image: "/slides/how-to-index-your-database-rubynation-2018/cover.jpg"
 description: "Do you know what database indexes are and how they work? Do they seem hard to understand? They don't have to be."
 ratio: "16:9"
 theme: "monobloc"
