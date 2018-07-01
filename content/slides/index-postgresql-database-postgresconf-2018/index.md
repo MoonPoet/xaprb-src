@@ -287,7 +287,7 @@ class: img-right
 
 Create an index with **all columns mentioned**: `index(b,c)`
 
-`SELECT c FROM t WHERE b > 70;`
+`SELECT c FROM t WHERE b < 70;`
 
 Now the index “covers” the query and it **doesn’t access** the table at all!
 
@@ -415,7 +415,7 @@ This query can use the index:
 
 `... WHERE a > NOW() - INTERVAL 30 DAY;`
 
-You can seek/search for a value in an index, but not an expression.
+You can seek/search for a **value** in an index, but not for an **expression**.
 ]
 
 .rc[
