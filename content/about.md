@@ -36,6 +36,7 @@ I'm a Conducting Implementor.
 
 In plain English, my strongest behaviors are:
 
+- I have very strong opinions and I voice them without hesitation.
 - I'm direct, to-the-point, and can be blunt; I'm not very diplomatic.
 - I'm independent, assertive, demanding, and comfortable with risk.
 - I'm ambitious, determined, persistent, and competitive; I love winning and dislike losing.
