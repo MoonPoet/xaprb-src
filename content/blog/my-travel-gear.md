@@ -2,8 +2,9 @@
 title: 'My Travel Gear'
 date: "2018-07-07T12:42:30-04:00"
 url: "/blog/my-travel-gear"
-description: ""
-image: ""
+description: "Here's how I travel light and with everything I need for all the circumstances that come up."
+image: "/media/2018/07/unsplash-M0AWNxnLaMw.jpg"
+credit: "https://unsplash.com/photos/M0AWNxnLaMw"
 ---
 
 I'm not the most extreme road warrior you know, but I travel a decent amount, and I've found gear that helps make it easier and more fun for me.
@@ -165,6 +166,14 @@ I simply keep the tiny little tip inserted into my iPad and/or iPhone, and where
 I upgraded to an iPhone 8, which supports induction charging, and I now use that instead of this little connector; I have a [Mophie]({{< amz B075M4ZH17 >}}) charge pad which I love.
 Tip: if you want to buy some of these, make sure you buy the right "generation" so they all work together.
 
+## Headphones
+
+Traveling with noise-cancelling headphones makes a big difference in stress and productivity.
+I currently own a pair of [Sennheiser PXC-550s]({{< amz B01E3XLNA0 >}}), but the [Bose QuietComfort 35 Series II]({{< amz B0756CYWWD >}}) are better.
+I recently [reviewed both of them](/blog/bose-quietcomfort-35-sennheiser-pxc550-wireless-noise-cancelling-headphones) in an absurd amount of detail.
+
+![Bose and Sennheiser headphones](/media/2018/06/sennheiser-bose-headphones.jpg)
+
 ## Clip-On iPhone Lenses
 
 I have a set of [Xenvo]({{< amz B01A6D2JVI >}}) iPhone lens set that cost just about $35 and has wide-angle and macro lenses.
@@ -173,6 +182,23 @@ That said, if you're really into your photography you might want Moment lenses (
 If you do buy Moment lenses, take a look at the Moment battery case I linked above, too.
 
 ![iPhone Lenses](/media/2018/07/iphone-lenses.jpg)
+
+## Coffee and Tea
+
+I'm sort of a coffee snob---I really don't like Starbucks's charcoal, or whatever it is that they put into those in-room single-serve coffee packets in hotels.
+So I like to take my own coffee with me when I travel.
+Last year I hypothesized, loudly and repeatedly before Christmas, that it must be possible to buy single-serving pour-over coffee packets.
+My wonderful wife took the hint (how could she not) and researched it, and found that there is such a thing.
+There's not much selection, but it does exist, and after trying all the various options we could find, some of them turned out to be good quality.
+
+![Aisen Coffee Sampler](/media/2018/07/aisen.jpg)
+
+So now, when I travel, you can find packets of [Aisen]({{< amz B01LYIS9X3 >}}) stuffed into my backpack's side pocket.
+Hands off, they're mine!
+A few other varieties are available too; the selection appears to be growing over time.
+I just bought a box of [Lava Mountain]({{< amz B01LWZ5CNQ >}}) the other day and will try them out too.
+Sometimes I also carry little tea bags so I can have nice tea.
+
 
 ## Miscellaneous Stuff
 
@@ -186,6 +212,7 @@ If you open my backpack pocket right now, you'll find the following items that I
 - Some Advil; more often for others than for me, since I don't get headaches, but you never know
 - A set of [AirPods](https://www.apple.com/shop/product/MMEF2AM/A/airpods)
 - An old-fashioned wooden clothespin
+- A jump rope for [short, high-intensity workouts](/blog/my-workout-regimen/) anytime anywhere
 
 ![Misc Stuff](/media/2018/07/misc.jpg)
 
