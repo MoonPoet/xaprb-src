@@ -2,6 +2,9 @@
 title: "How to tune MySQL's sort_buffer_size"
 date: "2010-05-09"
 url: /blog/2010/05/09/how-to-tune-mysqls-sort_buffer_size/
+credit: "https://unsplash.com/photos/cTFSEWejQHE"
+image: "/media/2010/05/unsplash-photos-cTFSEWejQHE.jpg"
+description: "This article explains the right way to tune MySQL's sort_buffer_size."
 categories:
   - Databases
 ---
@@ -24,8 +27,8 @@ It's wrong and harmful.
 
 In general, I have found the following to be true:
 
-* Non-experts should leave this setting at its default, and comment it out of the configuration file.
-* Experts don't need me to tell them what to do, but most of them will leave this setting at its default, and comment it out of the configuration file.
+* Those unfamiliar with MySQL internals should leave this setting at its default, and comment it out of the configuration file.
+* Those who know MySQL's internals well don't need me to tell them what to do, but most of them will leave this setting at its default, and comment it out of the configuration file.
 
 **So if you're reading this post because you're trying to learn how to tune this
 variable, in all seriousness, the answer is you should not do it.**
