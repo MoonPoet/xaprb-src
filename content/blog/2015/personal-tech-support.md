@@ -6,7 +6,7 @@ credit: "https://unsplash.com/photos/EC3YUeuVkzw"
 image: "/media/2015/09/igor-ovsyannykov-440149-unsplash.jpg"
 categories:
 - Commentary
-description: Helping one person at a time doesn't scale
+description: Helping one person at a time does nobody any good.
 ---
 I don't give personal, one-to-one technical support for open source software
 I've created, nor do I help people with SQL or other questions. The reasons are not obvious to many people, and this blog is meant to document them.
