@@ -117,7 +117,7 @@ The single most useful app would be an agenda view of my calendar, but there isn
 
 The Fitbit Versa is the best-looking piece of hardware Fitbit has ever built. Its highlights are the form factor, weight, screen quality, health tracking, and notifications. The mobile app, watch apps, battery life, and overall interaction design are just so-so. On the downside, the clock faces, clock face store, app store, and charger are actively negative experiences. Do the designers at Fitbit use their own products before they sell them?
 
-I'm going to keep the Versa a little longer before I decide whether it's my smartwatch of choice or whether I'll keep searching.
+I'm going to keep the Versa a little longer before I decide whether it's my smartwatch of choice or whether I'll keep searching. *(Narrator: he didn't keep it. The Versa is a good fitness tracker, but utterly boring as a watch, and the few smart features that work well are not enough to redeem it.)*
 
 
 [^weather]: Update: I later discovered through trial-and-error that the Versa's weather app works if iPhone permissions for both the Fitbit and Weather apps allow location access "always," even when not using the apps, which is not documented as far as I know.

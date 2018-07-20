@@ -6,12 +6,9 @@ categories:
 - Gear
 - Watches
 date: 2017-02-21 15:31:44 -0500
-description: After researching many smartwatches and activity trackers, I bought a
-  Withings Steel HR. Here's why.
+description: I think the Nokia/Withings Steel HR is the best hybrid smart watch with heart rate tracking and notifications.
 image: /media/2017/02/runner.jpg
 title: The Nokia-Withings Steel HR
-menu:
-  main: {}
 
 ---
 After thinking about smart watches, activity trackers, and similar devices for a

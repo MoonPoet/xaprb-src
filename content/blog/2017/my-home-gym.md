@@ -10,19 +10,14 @@ description: "Here's the equipment I bought/built for my pseudo-CrossFit home gy
 image: "/media/2017/10/victor-freitas-604838-unsplash.jpg"
 ---
 
-After leaving CrossFit, I found a workout rhythm that works well for me, and
+After leaving CrossFit, I found a [workout rhythm](/blog/my-workout-regimen/) that works well for me, and
 gradually stocked my basement and patio with a few essentials so I can vary my
 workouts. Now I can do pretty much anything I used to do at a really nice CrossFit
-gym. CrossFit is great because the equipment needed is fairly minimal anyway.
+gym.[^jargon] CrossFit is great because the equipment needed is fairly minimal anyway.
 People often ask "where are the machines?" and the insider's joke is "we don't
 use machines, we build them." Here's what's in my "garage gym."
 
 <!--more-->
-
-Jargon note: Rx is CrossFit slang for "as prescribed," which a lot of athletes
-will not do---they will "scale" the workout to fit their level of ability. Rx
-workouts assume a high degree of overall fitness. Also, "box" is what you call a
-CrossFit gym.
 
 ### Pullup Bar
 
@@ -32,6 +27,10 @@ into the ground, drilling holes at the top, and threading a piece of steel plumb
 pipe into it. I added some heavy gate hinges as an ad-hoc squat rack, but since
 this is outside, I stopped using it and got an actual squat rack indoors (more
 on that later).
+
+I also built a pullup bar in my basement by dropping a couple of boards down
+from the floor joists and putting another pipe through it. I use this for my
+gymnastics rings too (see below).
 
 ### Medicine Ball
 
@@ -72,28 +71,45 @@ get a rope you can adjust as you learn the right size for your height.
 ### Kettlebells
 
 Kettlebell swings are a staple for me. You can do a lot else with kettlebells
-too, including Turkish Get-Ups, one-handed kettlebell snatches and
-clean-and-jerks, and the like. I have a range of weights because I bought a set,
-but I really only use the 40-pound and heavier ones. If I were to do it again I
-would buy individuals, not a set. I might just buy one, the heaviest I thought I
-could get away with. You can often find used kettlebells on Craigslist. That's
-where I got some of mine. I bought others from
-[Amazon]({{< amz B003J9E6B8 >}}) and [Fringe
+too, including [Simple and Sinister](/blog/simple-sinister-kettlebell-workout/),
+Turkish Get-Ups, one-handed kettlebell snatches and clean-and-jerks, and the
+like. I have a range of weights because I bought a set, but I really only use
+the 40-pound and heavier ones. If I were to do it again I would buy individuals,
+not a set. I might just buy one, the heaviest I thought I could get away with.
+You can often find used kettlebells on Craigslist. That's where I got some of
+mine. I bought others from [Amazon]({{< amz B003J9E6B8 >}}) and [Fringe
 Sport](https://www.fringesport.com/collections/kettlebells/products/onefitwonder-premium-kettlebells).
 
 ![Kettlebell](/media/2017/10/kettlebell.jpg)
 
+### Gymnastics Rings
+
+Rings are amazing for dips, ring rows (surprisingly effective at targeting
+different muscles than pullups do), and making other exercises like pushups more
+challenging. With rubber bands (below), they can assist with movements you might
+not be able to do yet. For example, if you can't do unaided dips, just clutch a
+band in your grip as you grab each ring, stretching it between the rings, and
+place your knees on it to support some of your weight.
+
+[The Titan rings I bought]({{< amz B00SAEPY72 >}}) are one of the best fitness
+bargains I've gotten. I've used a lot of rings, and a bad set of rings is just
+the worst. But these are great: smooth, high quality, thick, with great straps
+and buckles---at a great price! I just loop the straps over my indoors pullup
+bar, and hang them on nails to keep them up and out of the way when not in use.
+
+![Titan Gymnastic Rings](/media/2017/10/titan-rings.jpg)
+
 ### Dumbbells
 
-I use dumbbells more in my home setup than I did at more open gym spaces,
-because I'm often carrying things through my basement out to my patio. So
-instead of doing traditional barbell thrusters, I often do dumbbell thrusters,
-for example. I use them for farmer's carries, weighted lunges, dumbbell
+I use dumbbells more in my home setup than I did at commercial gyms, because I
+often exercise outside. That means I must carry my gear through my basement out
+to my patio. Dumbbells are easier to carry outside than a barbell. For example,
+instead of doing traditional barbell thrusters, I often do dumbbell thrusters.
+I also use my dumbbells for farmer's carries, weighted lunges, dumbbell
 snatches, and so on.
 
 This is one area I'd encourage you not to cut costs. I bought an adjustable set
-of [Bowflex
-dumbbells]({{< amz B001ARYU58 >}}) and they
+of [Bowflex dumbbells]({{< amz B001ARYU58 >}}) and they
 are *awesome*. They're easy to adjust to a variety of very specific and finely
 graduated weights, they're excellent quality, and they're a lot cheaper than
 buying tons of fixed-weight dumbbells. They store more compactly too. This is
@@ -212,6 +228,7 @@ All together, I think I've spent roughly...
 - $130 plyo box
 - $50 foam roller and ball
 - $85 resistance band set
+- $30 gymnastics rings
 
 In hindsight, I wouldn't buy all of these again. I'd buy/build them in the following
 order of priority, one at a time, gradually:
@@ -235,3 +252,9 @@ There's some standard CrossFit equipment that I never bought and I don't know
 that I ever will. The curved "ab mat" for situps, for example, never did much
 for me. On the other hand, a lot of CrossFit boxes don't have yoga mats, and I
 wouldn't be without one.
+
+[^jargon]: Jargon note: Rx is CrossFit slang for "as prescribed," which a lot of
+  athletes will not do---they will "scale" the workout to fit their level of
+  ability. Rx workouts assume a high degree of overall fitness. Also, "box" is
+  what you call a CrossFit gym.
+

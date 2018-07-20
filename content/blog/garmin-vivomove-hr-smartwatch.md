@@ -6,7 +6,7 @@ categories:
 - Fitness
 - Gear
 - Watches
-description: "I liked a lot about the Garmin Vivomove HR hybrid smartwatch, but I didn't find it completely satisfactory."
+description: "I liked a lot about the Garmin Vivomove HR hybrid smartwatch, but overall it's unsatisfactory."
 credit: https://unsplash.com/photos/CMIesa5_y-c
 image: "/media/2018/05/unsplash-photos-CMIesa5_y-c.jpg"
 
