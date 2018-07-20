@@ -5,8 +5,8 @@ date: "2014-07-21"
 url: /blog/2014/07/21/root-cause-fallacy/
 categories:
   - Operations
-  - Best Of
-image: /media/2014/07/turtles.jpg
+credit: "https://unsplash.com/photos/hW11fwjzVfA"
+image: "/media/2014/07/unsplash-photos-hW11fwjzVfA.jpg"
 ---
 
 Wouldn't you like to find the root cause of that downtime incident? Many people
