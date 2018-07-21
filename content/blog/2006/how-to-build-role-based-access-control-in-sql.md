@@ -2,12 +2,17 @@
 title: How to build role-based access control in SQL
 date: "2006-08-16"
 url: /blog/2006/08/16/how-to-build-role-based-access-control-in-sql/
+credit: "https://unsplash.com/photos/21DP3hytVHw"
+image: "/media/2006/08/unsplash-photos-21DP3hytVHw.jpg"
 categories:
   - Databases
+  - Security
 ---
 The posts I've been reading and writing recently have reminded me how Object-Relational Mapping (ORM) systems make it fun and convenient to interact with databases. For some of the reasons they're a developer's favorite, they can be a database administrator's nightmare (think surrogate keys). But designing tables with a consistent set of columns has its benefits. Just because the columns are meta-data that have no intrinsic **meaning** doesn't mean they have no **value**. In this series of articles I'll show you several ways to use such "meaningless" meta-data to enable powerful, efficient application-level role-based access control (RBAC) in the database, with a focus on web applications, though you could do this for any application.
 
-The systems I've built are complex, so I'll split this into at least two articles. This first article will discuss other privilege systems I've seen in web applications, including Access Control Lists (ACL), and introduce a simplified row-only version of the privilege system I currently use. The second article will discuss the full scope of my current system, which is much more complex and powerful. Along the way I'll explain how to add or remove features and complexity, to achieve the right balance of control and simplicity for your application.
+<!--more-->
+
+The systems I've built are complex, so I'll split this into at least two articles. This first article will discuss other privilege systems I've seen in web applications, including Access Control Lists (ACL), and introduce a simplified row-only version of the privilege system I currently use. The [second article](/blog/2006/08/18/role-based-access-control-in-sql-part-2/) will discuss the full scope of my current system, which is much more complex and powerful. Along the way I'll explain how to add or remove features and complexity, to achieve the right balance of control and simplicity for your application.
 
 My goal is to explain the systems I've built so you can design your own, without taking years to learn how, as I did. I will present sample schemas and functional queries.
 
@@ -244,6 +249,6 @@ The above is not how you will ultimately determine privileges, however. As I sai
 
 We're not ready for that yet. It will involve quite a bit more complexity, which I don't want to introduce in this article. The next article will expand this system greatly, explaining the extra capabilities I've mentioned throughout this article, and then some. What I've shown you here only scratches the surface. I'll also discuss how to pick and choose features you need, a bunch of optimizations for size and speed, and how you can build your own customizations into the full-blown system so it does exactly what you need.
 
-Finally, the next article will explain how to build truly role-based access control. What I've shown you so far doesn't really have to be implemented as role-based, though you'll see how it fits into the role-based paradigm in the next article.
+Finally, [the next article](/blog/2006/08/18/role-based-access-control-in-sql-part-2/) will explain how to build truly role-based access control. What I've shown you so far doesn't really have to be implemented as role-based, though you'll see how it fits into the role-based paradigm in the next article.
 
 

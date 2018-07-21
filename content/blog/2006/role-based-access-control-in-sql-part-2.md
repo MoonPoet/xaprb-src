@@ -4,8 +4,13 @@ date: "2006-08-18"
 url: /blog/2006/08/18/role-based-access-control-in-sql-part-2/
 categories:
   - Databases
+  - Security
+credit: "https://unsplash.com/photos/Y0iMfcOkrHE"
+image: "/media/2006/08/unsplash-photos-Y0iMfcOkrHE.jpg"
 ---
-This is my second article on how to build a role-based access control system in SQL. In the first article I gave a high-level overview of access control systems in general, especially in the web-application context, and talked about how some Access Control Lists (ACLs) are implemented. I introduced the problems I designed my system to solve, and gave a roadmap for where this series of articles will end. I finished that article with a sketch of some basics to provide row-level read, write, and delete access control.
+This is my second article on how to build a role-based access control system in SQL. In the [first article](/blog/2006/08/16/how-to-build-role-based-access-control-in-sql/) I gave a high-level overview of access control systems in general, especially in the web-application context, and talked about how some Access Control Lists (ACLs) are implemented. I introduced the problems I designed my system to solve, and gave a roadmap for where this series of articles will end. I finished that article with a sketch of some basics to provide row-level read, write, and delete access control.
+
+<!--more-->
 
 This article picks up where I left off. I want to revisit some things I swept under the rug in the first article, because I didn't want to throw all the complexity in at once. I'll explain my current system's full functionality, which includes roles, status, type checking, and table-level and set-level privileges. I will show you the design in detail, and give working examples and ready-to-run SQL queries. I'll also explore ideas for extending or restricting functionality, because your application isn't likely to be the same as mine. I'll mention possible optimizations, because performance and scalability are important design goals. I'll end with a brief explanation of how I've used this system to make my own web applications simpler and more secure.
 
@@ -447,5 +452,3 @@ I'm not trying to brag; I just want to share with you how this has been a succes
 ### Summary
 
 It's pretty hard to summarize such a complex article, but I'd like to wrap up by saying I'm keen to hear your comments. Suggestions for improvements are especially welcome. I hope this article has been helpful for you.
-
-
