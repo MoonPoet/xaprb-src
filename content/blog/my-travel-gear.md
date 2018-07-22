@@ -177,7 +177,10 @@ I recently [reviewed both of them](/blog/bose-quietcomfort-35-sennheiser-pxc550-
 ## Clip-On iPhone Lenses
 
 I have a set of [Xenvo]({{< amz B01A6D2JVI >}}) iPhone lens set that cost just about $35 and has wide-angle and macro lenses.
-It's better than any other lens set I've used to clip onto an iPhone.
+I also have the [Olloclip Active]({{< amz B01MQHI45T >}}) set, which adds ultra-wide and telephoto.
+These sets are better quality than others I've used to clip onto an iPhone.
+With a little creativity, the Olloclip even fits inside the case with the Xenvo.
+
 That said, if you're really into your photography you might want Moment lenses ([Tele](https://www.shopmoment.com/shop/new-tele-lens), [Wide](https://www.shopmoment.com/shop/new-wide-lens)), but each one will cost three times as much.
 If you do buy Moment lenses, take a look at the Moment battery case I linked above, too.
 
