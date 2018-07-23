@@ -9,7 +9,7 @@ categories:
 - Gear
 ---
 
-I'm not the most extreme road warrior you know, but I travel a decent amount, and I've found gear that helps make it easier and more fun for me.
+I travel frequently, and I've found gear that helps make it easier and more fun for me.
 A lot of it is unusual stuff I wished for offhandedly in a moment where something wasn't ideal.
 I made a note, looked it up later, and discovered that if you can dream it, someone's selling it on Amazon.
 Here's how I travel light and with everything I need for all the circumstances that come up.
