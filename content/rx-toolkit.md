@@ -1,7 +1,6 @@
 ---
 title: "Regex Toolkit"
 date: "2005-01-01"
-menu: "main"
 ---
 
 <script type="text/javascript">
@@ -213,7 +212,7 @@ function selectText(field, start, end) {
 Use the form below to test regular expressions.  Enter a regular expression,
 some input text, and click the Match button.  You can click the result to see
 where it matched in the input, and click the reference items below to enter them
-into the regex.  For a good quick regex reference, see the 
+into the regex.  For a good quick regex reference, see the
 <a href="http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference:Global_Objects:RegExp">Mozilla Developer Center</a>.
 
 <form action="" method="get" name="form1" id="form1">
@@ -348,5 +347,3 @@ into the regex.  For a good quick regex reference, see the
 </form>
 
 <br style="clear:both" />
-
-

@@ -5,6 +5,8 @@ url: "/blog/simple-rule-of-thumb-for-priorities"
 description: "This simple framework helps me clarify what to ignore, what to manage, and what to invest in."
 credit: "https://unsplash.com/photos/iecJiKe_RNg"
 image: "/media/2018/06/unsplash-photos-iecJiKe_RNg.jpg"
+categories:
+- Leadership
 ---
 
 As a CEO, there's always an endless list of things that all seem to need urgent attention.

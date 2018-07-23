@@ -1,5 +1,5 @@
 ---
-title: About Baron Schwartz
+title: About Me
 date: 2005-01-01 00:00:00 +0000
 type: page
 author: Baron Schwartz
@@ -222,7 +222,7 @@ There's usually a logic behind it, and I'm rarely arbitrary or haphazard. Here's
   make me seem hesitant or uncertain, especially when I'm speaking without
   preparation or trying to understand someone's point of view. I appreciate you
   helping me with prompts, echoing back in your own words what you think I'm
-  trying to say, or simply being patient with me. 
+  trying to say, or simply being patient with me.
 - **Visionary but visionary.** I sometimes describe the future without laying
   out a specific path to achieve it. I may jump around mentally and verbally,
   leaving thoughts unfinished in my excitement. I may not be aware when you

@@ -5,6 +5,8 @@ url: "/blog/my-travel-gear"
 description: "Here's how I travel light and with everything I need for all the circumstances that come up."
 image: "/media/2018/07/unsplash-M0AWNxnLaMw.jpg"
 credit: "https://unsplash.com/photos/M0AWNxnLaMw"
+categories:
+- Gear
 ---
 
 I'm not the most extreme road warrior you know, but I travel a decent amount, and I've found gear that helps make it easier and more fun for me.

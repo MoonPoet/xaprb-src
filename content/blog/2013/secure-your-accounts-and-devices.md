@@ -2,7 +2,6 @@
 title: Staying Secure Online
 date: "2013-12-18"
 url: /blog/2013/12/18/secure-your-accounts-and-devices/
-menu: main
 description: "Many people neglect basic online security because they don't know how. It doesn't have to be hard."
 image: "/media/2013/12/lock.jpg"
 credit: "https://www.flickr.com/photos/karolfranks/15136260663/"
@@ -18,43 +17,43 @@ It's much easier than you think to do the basics right. If you turn on automatic
 
 ### Password Security
 
-The simplest and most effective way to dramatically boost your online security is **use a password storage program**, or password safe. You need to *stop making passwords you can remember* and make long, random passwords on websites. The only practical way to do this is to use a password safe. 
+The simplest and most effective way to dramatically boost your online security is **use a password storage program**, or password safe. You need to *stop making passwords you can remember* and make long, random passwords on websites. The only practical way to do this is to use a password safe.
 
 > Update: Security experts from Google disagree with me and suggest that the
 > most important thing to do is to install security updates. I defer to them; I
 > think they know more about security than I do. Please [read more
 > here](http://googleonlinesecurity.blogspot.com/2015/07/new-research-comparing-how-security.html).
 
-Why? Because if you can remember the password, it's [trivially hackable](http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/). For example, passwords like 10qp29wo38ei47ru can be broken instantly. Anything you can feasibly remember is just too weak. 
+Why? Because if you can remember the password, it's [trivially hackable](http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/). For example, passwords like 10qp29wo38ei47ru can be broken instantly. Anything you can feasibly remember is just too weak.
 
-And, any rule you set for yourself that requires self-discipline will be violated, because you're lazy. **You need to make security easier so that you automatically do things more securely**. A password safe is the best way to do that, by far. A good rule of thumb for most people is that you should not try to know your own passwords, except the password to your password safe. (People with the need to be hyper-secure will take extraordinary measures, but those aren't practical or necessary for most of us.) 
+And, any rule you set for yourself that requires self-discipline will be violated, because you're lazy. **You need to make security easier so that you automatically do things more securely**. A password safe is the best way to do that, by far. A good rule of thumb for most people is that you should not try to know your own passwords, except the password to your password safe. (People with the need to be hyper-secure will take extraordinary measures, but those aren't practical or necessary for most of us.)
 
-I use [1Password](https://agilebits.com/onepassword). Others I know of are [LastPass](https://lastpass.com/), [Keeper](https://keepersecurity.com/), and [KeePass Password Safe](http://keepass.info/). I personally wouldn't use any others, because lesser-known ones are more likely to be malware. 
+I use [1Password](https://agilebits.com/onepassword). Others I know of are [LastPass](https://lastpass.com/), [Keeper](https://keepersecurity.com/), and [KeePass Password Safe](http://keepass.info/). I personally wouldn't use any others, because lesser-known ones are more likely to be malware.
 
 One of the things I like about 1Password is the security audit features, such as
 easy analysis of which sites have weak passwords, duplicate passwords, Watchtower to warn you if a site has been compromised and deserves a password change, and so forth.
 
-It's easy to share a password safe's data across devices, and make a backup of it, by using a service such as Dropbox. The password safe's files are encrypted, so the contents will not be at risk even if the file syncing service is compromised for some reason. (Use a strong password to encrypt your password safe!) 
+It's easy to share a password safe's data across devices, and make a backup of it, by using a service such as Dropbox. The password safe's files are encrypted, so the contents will not be at risk even if the file syncing service is compromised for some reason. (Use a strong password to encrypt your password safe!)
 
 
 ### Use Two-Factor Authentication
 
 
-Two-factor authentication (aka 2-step login) is a much stronger mechanism for account security than a password alone. It uses a "second factor" (something you physically possess) in addition to the common "first factor" (something you know---a password) to verify that you are the person authorized to access the account. 
+Two-factor authentication (aka 2-step login) is a much stronger mechanism for account security than a password alone. It uses a "second factor" (something you physically possess) in addition to the common "first factor" (something you know---a password) to verify that you are the person authorized to access the account.
 
-Typically, the login process with two-factor authentication looks like this: 
+Typically, the login process with two-factor authentication looks like this:
 
-*   You enter your username and password. 
-*   The service sends a text message to your phone. The message contains a 6-digit number. 
-*   You must enter the number to finish logging in. With two-factor auth in place, it is very difficult for malicious hackers to access your account, even if they know your password. **Two-factor auth is way more secure than other tactics such as long passwords**, but it doesn't mean you shouldn't also use a password safe and unique, random, non-memorized passwords. 
+*   You enter your username and password.
+*   The service sends a text message to your phone. The message contains a 6-digit number.
+*   You must enter the number to finish logging in. With two-factor auth in place, it is very difficult for malicious hackers to access your account, even if they know your password. **Two-factor auth is way more secure than other tactics such as long passwords**, but it doesn't mean you shouldn't also use a password safe and unique, random, non-memorized passwords.
 
-Two-factor auth has a bunch of special ways to handle other common scenarios, such as devices that can't display the dialog to ask for the 6-digit code, or what if you lose your cellphone, or what if you're away from your own computer and don't have your cellphone. Nonetheless, these edge cases are easy to handle. For example, you can get recovery codes for when you lose or don't have your cellphone. You should store these---where else?---in your password safe. 
+Two-factor auth has a bunch of special ways to handle other common scenarios, such as devices that can't display the dialog to ask for the 6-digit code, or what if you lose your cellphone, or what if you're away from your own computer and don't have your cellphone. Nonetheless, these edge cases are easy to handle. For example, you can get recovery codes for when you lose or don't have your cellphone. You should store these---where else?---in your password safe.
 
-There seems to be a perception that lots of people think two-factor auth is not convenient. I disagree. I've never found it inconvenient, even when I've lost/destroyed a two-factor device and I use two-factor auth a lot. And I've never met these people, whoever they are, who think two-factor auth is such a high burden. The worst thing that happens to me is that I sometimes have to get out of my chair and get my phone from another room to log in. 
+There seems to be a perception that lots of people think two-factor auth is not convenient. I disagree. I've never found it inconvenient, even when I've lost/destroyed a two-factor device and I use two-factor auth a lot. And I've never met these people, whoever they are, who think two-factor auth is such a high burden. The worst thing that happens to me is that I sometimes have to get out of my chair and get my phone from another room to log in.
 
-Unfortunately, most websites don't support two-factor authentication. Fortunately, many of the most popular and valuable services do, including Facebook, Google, Paypal, Dropbox, LinkedIn, Twitter, and most of the other services that you probably use which are most likely to get compromised. [Here is a list of services with two-factor auth](http://twofactorauth.org/), with instructions on how to set it up for each one. 
+Unfortunately, most websites don't support two-factor authentication. Fortunately, many of the most popular and valuable services do, including Facebook, Google, Paypal, Dropbox, LinkedIn, Twitter, and most of the other services that you probably use which are most likely to get compromised. [Here is a list of services with two-factor auth](http://twofactorauth.org/), with instructions on how to set it up for each one.
 
-**Please enable two-factor authentication if it is supported!** I can't tell you how many of my friends and family have had their Gmail, Facebook, Twitter, and other services compromised. Please don't let this happen to you! It could do serious harm to you---worse than a stolen credit card. 
+**Please enable two-factor authentication if it is supported!** I can't tell you how many of my friends and family have had their Gmail, Facebook, Twitter, and other services compromised. Please don't let this happen to you! It could do serious harm to you---worse than a stolen credit card.
 
 **Please use a code generator such as Google Authenticator instead of SMS**, if
 it is supported. SMS is too easy to hack, and there are many examples of it
@@ -83,7 +82,7 @@ I've guessed my way into many an account, including other people's accounts, by 
 
 Instead, always generate unique fake answers. City of birth? The moon. Favorite high school teacher? Swimming pool. First pet? Diesel locomotive. Store these answers in your password safe.
 
-Or generate random answers. As 
+Or generate random answers. As
 [Chris Gilbert](https://twitter.com/chriswithpants/status/770435827142840320)
 says, here's how to fill out security questions:
 
@@ -91,21 +90,21 @@ says, here's how to fill out security questions:
 
 ### Secure Your Devices
 
-Sooner or later someone is going to get access to one of your devices---tablet, phone, laptop, thumb drive. I've never had a phone or laptop lost or stolen myself, but it's a matter of time. I've known a lot of people in this situation. One of my old bosses, for example, forgot a laptop in the seat pocket of an airplane, and someone took it and didn't return it. 
+Sooner or later someone is going to get access to one of your devices---tablet, phone, laptop, thumb drive. I've never had a phone or laptop lost or stolen myself, but it's a matter of time. I've known a lot of people in this situation. One of my old bosses, for example, forgot a laptop in the seat pocket of an airplane, and someone took it and didn't return it.
 
-And how many times have you heard about some government worker leaving a laptop at the coffee shop and suddenly millions of people's Social Security numbers are stolen? 
+And how many times have you heard about some government worker leaving a laptop at the coffee shop and suddenly millions of people's Social Security numbers are stolen?
 
-Think about your phone. If someone stole my phone and it weren't protected, they'd have access to a bunch of my accounts, contact lists, email, and a lot of other stuff I really, really do not want them messing with. If you're in the majority of people who leave your phone completely unsecured, think about the consequences for a few minutes. Someone getting access to all the data and accounts on your phone could probably ruin your life for a long time if they wanted to. 
+Think about your phone. If someone stole my phone and it weren't protected, they'd have access to a bunch of my accounts, contact lists, email, and a lot of other stuff I really, really do not want them messing with. If you're in the majority of people who leave your phone completely unsecured, think about the consequences for a few minutes. Someone getting access to all the data and accounts on your phone could probably ruin your life for a long time if they wanted to.
 
-All of this is easily preventable. Given that one or more of your devices will someday certainly end up in the hands of someone who may have bad intentions, I think it's only prudent to take some basic measures: 
+All of this is easily preventable. Given that one or more of your devices will someday certainly end up in the hands of someone who may have bad intentions, I think it's only prudent to take some basic measures:
 
-*   Set the device to require a password, lock code, or pattern to be used to unlock it after it goes to sleep, when it's idle for a bit, or when you first power it on. If someone steals your device, and can access it without entering your password, you're well and truly screwed. 
-*   Use full-device encryption. If someone steals your device, for heaven's sake don't let them have access to your data. For Mac users, use File Vault under Preferences / Security and Privacy. Encrypt the whole drive, not just the home directory. On Windows, use [TrueCrypt](http://www.truecrypt.org/), and on Linux, you probably already know what you're doing. 
-*   On Android tablets and phones, you can encrypt the entire device. You have to set up a screen lock code first. 
-*   If you use a thumb drive or external hard drive to transfer files between devices, encrypt it. 
-*   Encrypt your backup hard drives. Backups are one of the most common ways that data is stolen. *(You have backups, right? I could write a book on backups. Three things are inevitable: death, taxes, and loss of data that you really care about.)* 
+*   Set the device to require a password, lock code, or pattern to be used to unlock it after it goes to sleep, when it's idle for a bit, or when you first power it on. If someone steals your device, and can access it without entering your password, you're well and truly screwed.
+*   Use full-device encryption. If someone steals your device, for heaven's sake don't let them have access to your data. For Mac users, use File Vault under Preferences / Security and Privacy. Encrypt the whole drive, not just the home directory. On Windows, use [TrueCrypt](http://www.truecrypt.org/), and on Linux, you probably already know what you're doing.
+*   On Android tablets and phones, you can encrypt the entire device. You have to set up a screen lock code first.
+*   If you use a thumb drive or external hard drive to transfer files between devices, encrypt it.
+*   Encrypt your backup hard drives. Backups are one of the most common ways that data is stolen. *(You have backups, right? I could write a book on backups. Three things are inevitable: death, taxes, and loss of data that you really care about.)*
 *   Use a service such as [Prey Project](http://preyproject.com/) to let you have at least some basic control over your device if it's lost or stolen.  Android phones now have the [Android Device Manager](https://www.google.com/android/devicemanager) and [Google Location History](https://maps.google.com/locationhistory/), but you have to enable these.
-*   Keep records of your devices' make, model, serial number, and so on. Prey Project makes this easy. 
+*   Keep records of your devices' make, model, serial number, and so on. Prey Project makes this easy.
 *   On your phone or tablet, customize the lockscreen with a message such as "user@email.com &#8211; reward if found" and on your laptops, stick a small label inside the lid with your name and phone number. You never know if a nice person will return something to you. I know I would do it for you.
 
 ### More On Passwords
@@ -113,15 +112,15 @@ All of this is easily preventable. Given that one or more of your devices will s
 I mentioned the basics about passwords above. Here's more details.
 
 
-It's important to note that online passwords are different from the password you use to log into your personal computer. Online passwords are much more exposed to brute-force, large-scale hacking attacks. By contrast, your laptop probably isn't going to be subjected to a brute-force password cracking attack, because attackers usually need physical access to the computer to do that. This is not a reason to use a weak password for your computer; I'm just trying to illustrate how important it is to use *really* long, random passwords for websites and other online services, because they *are* frequent targets of brute-force attacks. 
+It's important to note that online passwords are different from the password you use to log into your personal computer. Online passwords are much more exposed to brute-force, large-scale hacking attacks. By contrast, your laptop probably isn't going to be subjected to a brute-force password cracking attack, because attackers usually need physical access to the computer to do that. This is not a reason to use a weak password for your computer; I'm just trying to illustrate how important it is to use *really* long, random passwords for websites and other online services, because they *are* frequent targets of brute-force attacks.
 
-Here are some other important rules for password security. 
+Here are some other important rules for password security.
 
-*   Never use the same password in more than one service or login. If you do, someone who compromises it will be able to compromise other services you use. 
-*   Set your password generation program (likely part of your password safe) to make long, random passwords with numbers, special characters, and mixed case. I leave mine set to 20 characters by default. If a website won't accept such a long password I'll shorten it. For popular websites such as LinkedIn, Facebook, etc I use much longer passwords, 50 characters or more. They are such valuable attack targets that I'm paranoid. 
-*   Don't use your web browser's features for storing passwords and credit cards. Browsers themselves, and their password storage, are the target of many attacks. 
-*   Never write passwords down on paper, except once. The only paper copy of my passwords is the master password to my computer, password safe, and GPG key. These are in my bank's safe deposit box, because if something happens to me I don't want my family to be completely screwed. (I could write another article on the need for a will, power of attorney, advance medical directive, etc.) 
-*   Never treat any account online, no matter how trivial, as "not important enough for a secure password." This item deserves a little story. Ten years ago I didn't use a password safe, and I treated most websites casually. "Oh, this is just a discussion forum, I don't care about it." I used an easy-to-type password for such sites. I used the same one everywhere, and it was a common five-letter English word (not my name, if you're guessing). Suddenly one day I realized that someone could guess this password easily, log in, change the password and in many cases the email address, and lock me out of my own account. They could then proceed to impersonate me, do illegal and harmful things in my name, etc. Worse, they could go find other places that I had accounts (easy to find---just search Google for my name or username!) and do the same things in many places. I scrambled to find and fix this problem. At the end of it, I realized I had created more than 300 accounts that could have been compromised. Needless to say, I was very, very lucky. My reputation, employment, credit rating, and even my status as a free citizen could have been taken away from me. Don't let this happen to you! 
+*   Never use the same password in more than one service or login. If you do, someone who compromises it will be able to compromise other services you use.
+*   Set your password generation program (likely part of your password safe) to make long, random passwords with numbers, special characters, and mixed case. I leave mine set to 20 characters by default. If a website won't accept such a long password I'll shorten it. For popular websites such as LinkedIn, Facebook, etc I use much longer passwords, 50 characters or more. They are such valuable attack targets that I'm paranoid.
+*   Don't use your web browser's features for storing passwords and credit cards. Browsers themselves, and their password storage, are the target of many attacks.
+*   Never write passwords down on paper, except once. The only paper copy of my passwords is the master password to my computer, password safe, and GPG key. These are in my bank's safe deposit box, because if something happens to me I don't want my family to be completely screwed. (I could write another article on the need for a will, power of attorney, advance medical directive, etc.)
+*   Never treat any account online, no matter how trivial, as "not important enough for a secure password." This item deserves a little story. Ten years ago I didn't use a password safe, and I treated most websites casually. "Oh, this is just a discussion forum, I don't care about it." I used an easy-to-type password for such sites. I used the same one everywhere, and it was a common five-letter English word (not my name, if you're guessing). Suddenly one day I realized that someone could guess this password easily, log in, change the password and in many cases the email address, and lock me out of my own account. They could then proceed to impersonate me, do illegal and harmful things in my name, etc. Worse, they could go find other places that I had accounts (easy to find---just search Google for my name or username!) and do the same things in many places. I scrambled to find and fix this problem. At the end of it, I realized I had created more than 300 accounts that could have been compromised. Needless to say, I was very, very lucky. My reputation, employment, credit rating, and even my status as a free citizen could have been taken away from me. Don't let this happen to you!
 
 Changing passwords doesn't significantly enhance security unless you change from an insecure password to a strong one. Changing passwords is most useful, in my opinion, when a service has already been compromised or potentially compromised. It's possible on any given day that an attacker has gotten a list of encrypted passwords for a service, hasn't yet been discovered, and hasn't yet decrypted them, and that you'll foil the attack by changing your password in the meanwhile, but this is such a vanishingly small chance that it's not meaningful. Actually, some leading technologists sensibly say that [frequent password changes make you less secure, not more](http://arstechnica.com/security/2016/08/frequent-password-changes-are-the-enemy-of-security-ftc-technologist-says/).
 
@@ -158,7 +157,7 @@ These have some shortcomings as well, but there are workarounds:
 
 ### Avoiding Insecure Sites
 
-The limitations on length and special characters that I mentioned 
+The limitations on length and special characters that I mentioned
 previously are red flags that your password is not secured properly in
 their servers.
 
@@ -171,15 +170,15 @@ Another red flag is when you reset your password and instead of forcing you to c
 ### Summary
 
 
-Here is a summary of the most valuable steps you can take to protect yourself: 
+Here is a summary of the most valuable steps you can take to protect yourself:
 
-*   Get a password safe, and use it for all of your accounts. Protect it with a long password. Make this the *one* password you memorize. 
-*   Use long (as long as possible), randomly generated passwords for all online accounts and services, and *never* reuse a password. 
-*   Use two-factor authentication for all services that support it. 
-*   Encrypt your hard drives, phones and tablets, and backups, and use a password or code to lock all computers, phones, tablets, etc when you turn them off, leave them idle, or put them to sleep. 
-*   Install something like Prey Project on your portable devices, and label them so nice people can return them to you. 
+*   Get a password safe, and use it for all of your accounts. Protect it with a long password. Make this the *one* password you memorize.
+*   Use long (as long as possible), randomly generated passwords for all online accounts and services, and *never* reuse a password.
+*   Use two-factor authentication for all services that support it.
+*   Encrypt your hard drives, phones and tablets, and backups, and use a password or code to lock all computers, phones, tablets, etc when you turn them off, leave them idle, or put them to sleep.
+*   Install something like Prey Project on your portable devices, and label them so nice people can return them to you.
 *   Write down the location and access instructions (including passwords) for your password safe, computer, backup hard drives, etc and put it in a safe deposit box.
-* Friends try not to let friends get hacked and ruined. Don't stop at upgrading your own security. Please tell your friends and family to do it, too! 
+* Friends try not to let friends get hacked and ruined. Don't stop at upgrading your own security. Please tell your friends and family to do it, too!
 
 Do you have any other suggestions? Please use the comments below to add your thoughts.
 
@@ -191,4 +190,3 @@ Do you have any other suggestions? Please use the comments below to add your tho
 * [Good advice on common password misconceptions](https://www.qwertycards.com/strong_passwords.html)
 * [Storing SSH Keys on a USB Drive for 2-Factor Auth](http://tammersaleh.com/posts/building-an-encrypted-usb-drive-for-your-ssh-keys-in-os-x/)
 * [Stronger 2-Factor with a Security Key](http://googleonlinesecurity.blogspot.com/2014/10/strengthening-2-step-verification-with.html)
-

@@ -4,7 +4,6 @@ date: "2015-03-07T13:52:41-05:00"
 title: "The Ultimate Pen"
 description: "Goes perfectly with your notebook addiction."
 image: /media/2015/03/pens.jpg
-menu: main
 categories:
   - Commentary
   - Reviews
@@ -127,5 +126,3 @@ Great places to buy pens, in addition to the Amazon.com links embedded above, in
 * Your local craft supplies or office supply store
 
 Write! Write more! It's therapeutic. And don't forget to [choose an amazing notebook to write in](/blog/2013/07/10/ultimate-notebook-and-journal-face-off/).
-
-

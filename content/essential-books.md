@@ -1,7 +1,6 @@
 ---
 title: Essential Books
 date: "2005-01-01"
-menu: "main"
 ---
 This page lists the most valuable books on my bookshelf. In my opinion, these books contain knowledge or wisdom that is so valuable and so hard to find that they're worth far more than the cover price. I read a lot of books; [I post independent, unbiased, non-paid-for reviews of selected books](/blog/category/review/) on this blog; and I mention the best of the best here on this page. If you're interested in sending me a review copy of a book, please feel free to contact me.
 
@@ -92,5 +91,3 @@ A great book on this topic. Short --- 150 pages --- but very deep, and highly re
 <a href="{{< amz 1849510601 >}}"><img src="/media/2010/01/mysql-plugin-development.jpg" alt="MySQL 5.1 Plugin Development" title="MySQL 5.1 Plugin Development" width="125" height="152" class="size-full wp-image-2062" /></a>
 
 A very useful book for anyone who wants to modify the MySQL source code. Also excellent for just understanding the code better. [I reviewed it here](/blog/2010/10/10/a-review-of-mysql-5-1-plugin-development-by-golubchik-and-hutchings/).
-
-
