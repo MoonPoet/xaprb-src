@@ -107,7 +107,7 @@ above the centerline of each spectrum:
 
 The only dimension where I'm outside the norm is Intentional. Thus, you are
 unlikely to find me too extreme in my views, but if you are extremely
-Altruistic, you might feel I'm not caring enough. I do care, but as a CEO I have
+Altruistic, you might feel I'm not caring enough. I do care, but I have
 to balance my caring with a business focus.
 
 ### Strengths and Weaknesses
