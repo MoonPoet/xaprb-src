@@ -11,16 +11,41 @@ image: /media/2018/01/friends.jpg
 credit: https://pixabay.com/en/nature-winter-sunset-dog-human-3042751/
 
 ---
-Psychological safety is now a prominent part of the engineering leadership lexicon. It began with Google, who reported that it is the strongest predictor of team productivity. According to those reports, this one factor trumps all other reasons that a team can perform well.
+Psychological safety is now a prominent part of the engineering leadership lexicon.
+Google popularized it by [reporting](https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/foster-psychological-safety/) that it is the strongest predictor of team productivity.[^edmonson]
 
-It sounds good, but how do you create psychological safety within a team? My approach is based on personal experience in my closest relationships. I've found that in order to trust others, I must first feel acknowledged, validated, and supported. Here's how I try to extend that benefit to others in my life.
+But how do you create psychological safety within a team?
+Edmonson has an [answer](https://www.youtube.com/watch?v=LhoLuui9gX8), but I prefer a different approach, based on personal experience in my closest relationships.
+Here's how I try to create psychological safety for those around me.
 
 <!--more-->
 
-I learned this trio of trust behaviors while working on one particular relationship. Someone helped me see my partner in a new light by asking me to take the time to assure them of three things:
+I've learned that in order to trust, people must first feel acknowledged, validated, and supported.
+I was coached to model this trio of trust behaviors while working on one particular relationship.
+Someone helped me see my partner in a new light by asking me to take the time to assure them of three things:
 
 1. _I hear you_. By listening, and making sure they know I'm listening, I am actually validating that they exist. Everyone wants to know that they exist to others. This is why the "silent treatment" is such a cruel punishment for children.
 2. _I care_. By making it clear that I care about what they're experiencing, I'm saying that their existence and experiences matter to me. We all want to matter to others.
-3. _I've got your back._ Not only do I acknowledge them and care about them, but I'll support them. I'll be there if they need me.
+3. _I've got your back._ Not only do I acknowledge them and care about them, but I'll be there for them. We all need to know that help is there if we ever need it.
 
-So simple---and yet so powerful. What possibilities could this open in your life?
+I've validated this approach by seeing it bear fruit in my relationships, and by reflecting on my own experiences.
+It's so obvious that it works, and that it's what I personally need from others.
+That's why I try to give it to others.
+
+It's so simple---and yet so powerful.
+*I hear you, I care, and I've got your back.*
+You exist, you matter, and you're worth protecting.
+
+Thich Nhat Hanh says it slightly differently in [You Are Here]({{< amz 1590308387 >}}), extending it to four practices with the four Mantras of love:
+
+> 1. Dear one, I am here[^here] for you.
+> 2. Dear one, I know that you are here, and it makes me very happy.
+> 3. Dear one, I know that you are suffering, that is why I am here for you.
+> 4. Dear one, I am suffering, and I need your help.
+
+*I hear you, I care, and I've got your back.*
+What would happen if you practiced this approach with everyone you interact with?
+What would become possible if you built this into the structure and culture of your organization?
+
+[^edmonson]: Google popularized it, but [Amy Edmonson's research](https://www.jstor.org/stable/2666999) is the real source.
+[^here]: The phrase "I am here" has a special and rich meaning; I encourage you to read this wonderful book to learn more.
