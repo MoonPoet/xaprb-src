@@ -23,7 +23,7 @@ At other times, I simply buy the only item I can find.
 That's often a cheap brand from China for some of the products, for whatever reason.
 So if you're wondering why I choose a specific brand, the answer might be "it's complicated."
 
-## My Luggage
+### My Luggage
 
 Traveling with a small backpack is by far the most common for me.
 Any trip less than a week works great with my backpack.
@@ -43,7 +43,7 @@ After several of those experiences I replaced my suitcase with one that fits int
 
 Obviously, luggage is not an area where I skimp on quality.
 
-## Laptop and iPad
+### Laptop and iPad
 
 I have written elsewhere about using my iPad for many things I used to use my laptop for.
 On a lot of trips I can leave my laptop behind, saving a ton of weight and space, and benefiting from being able to use a single charger for my phone and tablet.
@@ -61,7 +61,7 @@ I see a lot of people with large, floppy webcam covers; I used to have one of th
 It's far smaller and thinner (so it doesn't keep my laptop lid from closing all the way, for example), and doesn't slide around loosely.
 It's a small oval of metal that adheres over your webcam, with an even smaller magnet that clings inside it.
 
-## Chargers, Cases, Batteries
+### Chargers, Cases, Batteries
 Assembling a collection of just the right cables, chargers, and adapters is a trick.
 With care and experience, I've found a way to have a smallish collection of compact, lightweight items that can handle any situation I've encountered.
 
@@ -114,7 +114,7 @@ It's designed for the iPhone 7 but works perfectly for the iPhone 8.
 I love it: even when I'm using my GPS for navigation, my phone lasts from morning all the way through the day and night, and halfway through the next day.
 If I were using a Moment camera lens (more on this later), I think I'd buy the [Moment iPhone 7 Battery Case]({{< amz B074KPC34P >}}) instead.
 
-## Cables and Adapters
+### Cables and Adapters
 
 The right cables and adapters make it possible to connect, charge, sync, and display whatever I need.
 I have a collection of miniature adapters that tucks perfectly inside a Trader Joe's chocolate tin, along with a pair of EarPods:
@@ -145,7 +145,7 @@ I usually have two in my backpack, and there's a few in my bedside drawer, and a
 Also, if you noticed the EarPods were wrapped in a thick rubber band, those are the [Made 2 Go Snap IN]({{< amz B01N9F4KPN >}}) and I can't live without them.
 I have bought a half dozen of them to keep all my cables tangle-free at home, at the office, and in my backpack pockets.
 
-## Magnetic Lightning Connectors
+### Magnetic Lightning Connectors
 
 I mentioned pseudo-MagSafe connectors above.
 I got frustrated with plugging, unplugging, and the risk of things like a dog catching a cord and pulling a phone onto the floor.
@@ -168,7 +168,7 @@ I simply keep the tiny little tip inserted into my iPad and/or iPhone, and where
 I upgraded to an iPhone 8, which supports induction charging, and I now use that instead of this little connector; I have a [Mophie]({{< amz B075M4ZH17 >}}) charge pad which I love.
 Tip: if you want to buy some of these, make sure you buy the right "generation" so they all work together.
 
-## Headphones
+### Headphones
 
 Traveling with noise-cancelling headphones makes a big difference in stress and productivity.
 I currently own a pair of [Sennheiser PXC-550s]({{< amz B01E3XLNA0 >}}), but the [Bose QuietComfort 35 Series II]({{< amz B0756CYWWD >}}) are better.
@@ -176,7 +176,7 @@ I recently [reviewed both of them](/blog/bose-quietcomfort-35-sennheiser-pxc550-
 
 ![Bose and Sennheiser headphones](/media/2018/06/sennheiser-bose-headphones.jpg)
 
-## Clip-On iPhone Lenses
+### Clip-On iPhone Lenses
 
 I have a set of [Xenvo]({{< amz B01A6D2JVI >}}) iPhone lens set that cost just about $35 and has wide-angle and macro lenses.
 I also have the [Olloclip Active]({{< amz B01MQHI45T >}}) set, which adds ultra-wide and telephoto.
@@ -188,7 +188,7 @@ If you do buy Moment lenses, take a look at the Moment battery case I linked abo
 
 ![iPhone Lenses](/media/2018/07/iphone-lenses.jpg)
 
-## Coffee and Tea
+### Coffee and Tea
 
 I'm sort of a coffee snob---I really don't like Starbucks's charcoal, or whatever it is that they put into those in-room single-serve coffee packets in hotels.
 So I like to take my own coffee with me when I travel.
@@ -205,7 +205,7 @@ I just bought a box of [Lava Mountain]({{< amz B01LWZ5CNQ >}}) the other day and
 Sometimes I also carry little tea bags so I can have nice tea.
 
 
-## Miscellaneous Stuff
+### Miscellaneous Stuff
 
 If you open my backpack pocket right now, you'll find the following items that I always carry:
 

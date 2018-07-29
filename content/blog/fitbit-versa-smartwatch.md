@@ -21,7 +21,7 @@ This is the first device from Fitbit I've seriously considered. I've always admi
 
 If you've been reading this blog, you'll know that I want a beautiful analog watch that's also a biometrics tracker (sleep, heart rate, activity), and acts as an extension of my iPhone so I can leave the phone out of sight more of the time. In buying the Versa, I compromised for a smartwatch with better biometrics and iPhone notifications, that can be made to look attractive with a customized face.
 
-## Initial Impressions
+### Initial Impressions
 I bought the Versa direct from Fitbit. It took almost a week to ship and was delayed an extra day because FedEx gave it to the post office for the final delivery. This was a missed opportunity to delight. Fitbit should have rushed me the watch for no extra fee. When I finally got it, I had to wait some more: it needed a firmware update, which took about an hour. After that, it still felt like there were a lot of steps to complete before I could start using the watch.
 
 The watch is lightweight and comfortable to wear on my wrist, with a well-designed band. It's not bulky and doesn't protrude, nor has it gotten in my way at all.
@@ -34,7 +34,7 @@ Garmin Forerunner 35 is a better device in some respects such as battery life
 and GPS tracking, but the Fitbit Versa has its strengths too: a better display,
 more built-in functionality...
 
-## User Interface
+### User Interface
 The Versa has a digital display that is bright and very sharp. It's easy to see even in direct sunlight. It is touch-enabled, so you can use gestures like touch, swipe, and long-press to interact with it. Gestures feel responsive and accurate, and the watch seems high-performance.
 
 The watch face stays dark most of the time, but lights up when you raise your arm to look at it. This works okay for me, much better than the similar feature on the Garmin Vivomove HR watch I tried out recently. I have about a 90% success rate. The 10% failure rate is enough to be annoying, and the watch lights up sometimes when I'm not trying to look at it too.
@@ -59,7 +59,7 @@ The settings are a bit scattered: some things can be changed from the watch face
 
 I found a lot more information by searching the community forums and reading what Fitbit's employees wrote. This sometimes involved following an external link to other sources of information, such as an employee's personal blog.
 
-## Notifications
+### Notifications
 When I bought my [Nokia](/blog/best-fitness-activity-sleep-tracking-watch/) (then Withings) hybrid smartwatch about 16 months ago, I didn't think I wanted my watch to send me smartphone notifications at all. Now it's the killer feature for me. It lets me keep my phone silenced and out of sight more of the time.
 
 The Nokia Steel HR's notifications are spartan but useful: call, text, and calendar, with only the minimal information such as who's texting, but not what they wrote. The Fitbit Versa's notifications are more full-featured, and I like this a lot.
@@ -70,7 +70,7 @@ Notifications that have the magic settings[^settings] in the iPhone's Settings >
 
 Notifications only get a B+ grade from me because the watch stays dark by default when a notification arrives, and the UI to view and dismiss them leaves a little to be desired.
 
-## Biometrics and Activity Tracking
+### Biometrics and Activity Tracking
 
 Fitbit's biometrics (heart rate, sleep tracking, step counting, etc) is good. It has accurately detected when I go to bed and wake up, and seems to track accurately when I wake up briefly in the night. The pulse tracking also seems to be pretty good, though it seems to be time-averaged and lags changes in my pulse a bit. (I think Garmin has a slight edge in that regard). During one period I noticed the Fitbit Versa wasn't able to measure my pulse, but otherwise it's been reliable.
 
@@ -84,7 +84,7 @@ I don't use the community/competitive features of Fitbit's service. I heard this
 
 The smartphone app's display of my health and fitness data is okay, but the design and attention to details leaves something to be desired. After disabling the goal-tracking features I don't want, there's not much left, and I can't reorder it in the priority order I want. And the features I want (analysis of sleep and heart-rate data) are shown only as high-level summaries that take a lot of taps and swipes to inspect, and are hard to read. For example, tapping in to view detailed heart rate minute-by-minute actually zooms *out* the data, because the default vertical axis is fixed-range from 0-240 BPM instead of adapting to the data it displays. (Does *anyone* get their heart rate up to 240BPM? Really?)
 
-## Watch Faces
+### Watch Faces
 Ah, the watch faces. If I have to have a watch with an LED screen, can it at least look good, like an imitation analog watch? The answer is sort of, but it took me a solid week to figure out how.
 
 Fitbit's iPhone app has a watch face store, with hundreds of faces from Fitbit and third-party developers. But most of them are terrible, and they're *super* slow to browse and install---the first time I accessed the store I had to wait about 15 minutes for thumbnail previews to load. And important details such as features, configurability, and price are only possible to learn by navigating to each face's individual details view, and some things are only possible to learn by installing them.
@@ -97,15 +97,15 @@ You could easily spend a few hours trying clock faces without finding a good one
 
 ![Fitbit Versa](/media/2018/05/fitbit-versa-one.jpg)
 
-## Battery
+### Battery
 
 The battery life is borderline okay, but the charger turns battery life into a hassle.
 
-During normal use (checking a few notifications an hour, doing a short workout) the Versa discharges 15%--20% per day; over a 4.5 day period it discharged until only 10% remained. The charging speed is about 1% per minute and it takes about 90 minutes to charge fully from empty, so it needs about 15-20 minutes of charging per day. 
+During normal use (checking a few notifications an hour, doing a short workout) the Versa discharges 15%--20% per day; over a 4.5 day period it discharged until only 10% remained. The charging speed is about 1% per minute and it takes about 90 minutes to charge fully from empty, so it needs about 15-20 minutes of charging per day.
 
 The charger is the real problem, though. It's big and bulky, with a long nondetachable USB cable (so I can't pull it out and use a shorter one). Because the watch won't last through most trips I will take, I'm going to have to take this annoying charger and cable with me when I travel. And the charger is thoughtlessly designed. Fitbit's watch bands attach at an angle, and both watch and charger are lightweight, so the Versa doesn't sit flat when it's in the charger. It wants to flip over and lie on its side, and the watch face doesn't show charging progress unless you turn it on---but the buttons are concealed by the charger and tapping on the display doesn't work reliably, so it's tedious to figure out when the watch is charged fully.
 
-## Watch Apps
+### Watch Apps
 
 The Versa lets you install apps, but I seldom use them. The default ones are mostly useless, other than the workout tracker, timer, and alarm. It feels like someone said "we have to have apps" and that was the end of the discussion. So we got apps, but not good apps, nor a design that makes any app a good idea.
 
@@ -113,7 +113,7 @@ There's a weather app, for example, but it doesn't display current weather predi
 
 The single most useful app would be an agenda view of my calendar, but there isn't one preinstalled. After the ordeal of trying to find a decent clock face, I took one look at all of the third-party calendar app offerings and found myself completely unwilling to even try the first one. The thought of searching, installing, trying, and who-knows-what-else---potentially worrying about having to grant and revoke permissions for example---was too much for me.
 
-## Conclusions
+### Conclusions
 
 The Fitbit Versa is the best-looking piece of hardware Fitbit has ever built. Its highlights are the form factor, weight, screen quality, health tracking, and notifications. The mobile app, watch apps, battery life, and overall interaction design are just so-so. On the downside, the clock faces, clock face store, app store, and charger are actively negative experiences. Do the designers at Fitbit use their own products before they sell them?
 

@@ -62,7 +62,7 @@ That's what the objective is for.
 "Take the hill!" is the objective. "Under cover of darkness because it's a new
 moon, at peak fog time when the enemy spotlights won't work" is the strategy.
 
-## Other Definitions
+### Other Definitions
 
 Here are some other folks' definitions, which I'll update if you tweet me yours
 and I think it's good or thought-provoking:

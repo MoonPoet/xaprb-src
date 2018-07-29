@@ -35,7 +35,7 @@ Both headphones offer substantially similar features: Bluetooth connection,
 built-in microphones, music controls, and more. In the following sections I will
 summarize my opinion of them.
 
-## Noise Cancelling
+### Noise Cancelling
 
 The Bose noise cancelling is noticeably better than the Sennheiser. In a busy
 airport terminal, with a television blaring overhead, the Bose cut out the
@@ -69,7 +69,7 @@ In summary, the Bose's noise cancellation is dramatically better than the
 Sennheiser, resulting in near-total silence that reduces stress and allows music
 to come through clearly---which is my next topic.
 
-## Sound Quality
+### Sound Quality
 
 I performed extensive subjective listening tests. The Bose delivers obviously
 superior sound quality to the Sennheiser. I believe it is mostly because of their
@@ -174,7 +174,7 @@ either one: muddy and boomy, though the Sennheiser did a more credible job on
 this song's bass. (Back at home, my [ELAC](/blog/my-stereo-system/) speakers did
 a better job with this track, and also revealed why the headphones struggled:
 the bass is oddly percussive and subdued at the same time, a difficult
-combination to reproduce.) 
+combination to reproduce.)
 
 Next I disabled Bluetooth, turned the power off completely, and connected the
 'phones via a cable to my MacBook Pro, and listened to *Dansons La Gigue* from
@@ -196,7 +196,7 @@ person. I remember my old pair of Bose being pretty fatiguing after a few hours,
 and it seems Bose has figured out how to make the sound a little more silky
 without being tiring or obviously artificial.
 
-## General Characteristics
+### General Characteristics
 
 - **Bluetooth Connectivity**. Both headphones offer Bluetooth connectivity. The
   Bose uses an AAC codec when connected to my MacBook, and I believe the same is
@@ -245,7 +245,7 @@ without being tiring or obviously artificial.
   of my head where the band rests, but on a long flight the Sennheiser begins to
   ache there and I have to move the band to a different spot periodically.
 
-## Conclusions
+### Conclusions
 
 Buy the [Bose QuietComfort 35]({{< amz B0756CYWWD >}}).  (You're welcome.) It
 has dramatically better sound, is easier to pack, more comfortable, and cancels

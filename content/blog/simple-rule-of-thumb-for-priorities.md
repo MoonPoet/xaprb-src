@@ -17,7 +17,7 @@ Here it is.
 
 <!--more-->
 
-## 1. Don't Break What's Working
+### 1. Don't Break What's Working
 
 Hopefully some things are working well.
 They can always be improved, but they're working well enough that there doesn't appear to be a lot of uncaptured potential.
@@ -29,7 +29,7 @@ More importantly, I don't think there's anything they're not doing that could dr
 I have no intention of messing with the sales team or processes right now.
 I tell them to ask if they need me.
 
-## 2. Manage Or Contain What's Not
+### 2. Manage Or Contain What's Not
 
 Some things suck.
 They're a source of irritation or frustration.
@@ -49,7 +49,7 @@ If you do that well, most people will understand that although we want to get to
 
 When something isn't as good as it should be, but there's no benefit to perfecting it, try to figure out how to duct-tape it as cheaply as you can.
 
-## 3. Invest Heavily In The Top Three Game-Changers
+### 3. Invest Heavily In The Top Three Game-Changers
 
 Of the rest of the things that could merit your attention, there's probably a very long list of stuff that has the potential to create outsized returns.
 These are the things that, if done well or if you get lucky, could add a big multiple to your results.
@@ -71,7 +71,7 @@ Those have to go somewhere, and they do.
 They fall into the category of stuff you need to manage or contain, *for the time being*.
 Explain to the team why it can't be a focus *yet*, and thus needs duct tape now.
 
-## It's A Strategy
+### It's A Strategy
 
 My three-part framework is actually a prioritization [strategy](/blog/strategy/).
 

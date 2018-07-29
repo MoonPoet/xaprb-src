@@ -16,7 +16,7 @@ steps, and the results surprised me.
 
 <!--more-->
 
-This post isn't really about my team or any VC or the like, and I won't write
+This post isn't really about my team or any venture capitalist or the like, and I won't write
 anything that could be taken to refer to a specific individual. But I want to
 describe for you the experience of being judged by people who are trying to
 decide whether to invest in your company. Because they're operating with
