@@ -1,4 +1,5 @@
 ---
+draft: true
 title: 'Intrinsic Motivation, Rewards, and Punishments'
 date: "2018-07-25T19:45:21-04:00"
 url: "/blog/intrinsic-motivation-reward-punishment"
