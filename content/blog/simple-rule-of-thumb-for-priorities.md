@@ -15,6 +15,8 @@ It took me a while to learn how to isolate the few things that deserve focus.
 Along the way I created a simple three-part prioritization framework that helps me a lot.
 Here it is.
 
+<!--more-->
+
 ## 1. Don't Break What's Working
 
 Hopefully some things are working well.
