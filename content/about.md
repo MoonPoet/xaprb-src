@@ -264,7 +264,3 @@ There's usually a logic behind it, and I'm rarely arbitrary or haphazard. Here's
 
 Please feel free to give me feedback that will help me learn more about myself!
 It's OK to be very direct about this; you won't hurt my feelings. (See above.)
-
-<p style="clear:both">
-  &nbsp;
-</p>
