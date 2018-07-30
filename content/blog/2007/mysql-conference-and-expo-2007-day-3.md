@@ -5,7 +5,6 @@ url: /blog/2007/04/26/mysql-conference-and-expo-2007-day-3/
 categories:
   - Databases
 ---
-[<img style="float:right; margin-left: 15px" src="http://conferences.oreillynet.com/images/mysqluc2007/banners/speakers/120x240.jpg" width="120" height="240" alt="Speaker at MySQLConf 2007" />](http://www.mysqlconf.com/) 
 In my third day at the [MySQL Conference and Expo 2007](http://www.mysqlconf.com/), I again attended keynotes and sessions, one of which I participated in. This evening I had dinner with a fellow community member and arrived late to the Quiz Show, even though I was supposed to be on one of the teams! I blame it on the restaurant, because they took too long to figure out what I meant when I said "kÃ¶nnen wir einen Hubschrauber essen heute abend?"
 
 Today I attended by a decent margin the best sessions I've been at all week. If you don't think they're saving the best for last, come to my [tutorial and demo on monitoring MySQL and InnoDB with innotop](http://www.mysqlconf.com/cs/mysqluc2007/view/e_sess/13213) tomorrow and see!

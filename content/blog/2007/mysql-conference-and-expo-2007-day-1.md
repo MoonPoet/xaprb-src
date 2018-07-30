@@ -5,7 +5,6 @@ url: /blog/2007/04/23/mysql-conference-and-expo-2007-day-1/
 categories:
   - Databases
 ---
-[<img style="float:right; margin-left: 15px" src="http://conferences.oreillynet.com/images/mysqluc2007/banners/speakers/120x240.jpg" width="120" height="240" alt="Speaker at MySQLConf 2007" />](http://www.mysqlconf.com/) 
 In my first day at the [MySQL Conference and Expo 2007](http://www.mysqlconf.com/), I attended the [Scaling and High Availability Architectures](http://www.mysqlconf.com/cs/mysqluc2007/view/e_sess/10893) tutorial in the morning, and [Real-world MySQL Performance Tuning](http://www.mysqlconf.com/cs/mysqluc2007/view/e_sess/12080) in the afternoon. This is a brief article on each session's Big Ideas, and a short blurb about the conference overall so far.
 
 I'll also be involved in at least three sessions at the conference, and I describe them.

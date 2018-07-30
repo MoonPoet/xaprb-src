@@ -5,7 +5,7 @@ url: /blog/2008/04/01/postgresql-conference-east-2008/
 categories:
   - Databases
 ---
-[<img src="http://www.postgresql.org/layout/images/hdr_left.png" width="230" height="80" alt="PostgreSQL" style="float:right" />](http://www.postgresql.org)As a I wrote a couple of days ago, I went to the second day of [PostgreSQL Conference East 2008](http://postgresqlconference.org/) last Sunday. I had a good time and really enjoyed meeting everyone, listening, learning, and occasionally talking. I asked a number of fearless-newbie questions that paid off handsomely: people were very willing to humor me. I also left with a beautiful t-shirt, mug, and bag combo thanks to [EnterpriseDB](http://www.enterprisedb.com/). The bag has already been put to use for a grocery shopping trip.
+As a I wrote a couple of days ago, I went to the second day of [PostgreSQL Conference East 2008](http://postgresqlconference.org/) last Sunday. I had a good time and really enjoyed meeting everyone, listening, learning, and occasionally talking. I asked a number of fearless-newbie questions that paid off handsomely: people were very willing to humor me. I also left with a beautiful t-shirt, mug, and bag combo thanks to [EnterpriseDB](http://www.enterprisedb.com/). The bag has already been put to use for a grocery shopping trip.
 
 Note to conference/website organizers: I can't link to anything but the front page, so I assume my link above will someday point to the 2009 conference, or the 2008 West conference. It would be good to give each event a permalink right from the start...
 

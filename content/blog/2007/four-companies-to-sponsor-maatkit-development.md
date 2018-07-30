@@ -14,8 +14,6 @@ Here are the companies who have promised their financial support:
 
 ### MySQL AB
 
-[<img src="http://www.mysql.com/common/logos/mysql_100x52-64.gif" width="100" height="52" alt="MySQL AB" style="float:left" />](http://www.mysql.com/)
-
 [MySQL AB](http://www.mysql.com/) have offered $3000 USD in support. I had an email conversation with [MÃ¥rten Mickos](http://www.mysql.com/company/management.html), MySQL's CEO, and he expressed his happiness about the project's success, and his pleasure in supporting the project:
 
 > We have seen you operate in the community and you always have constructive and good ideas. That's why we want to support you. Our goal with this is to stimulate innovation in the MySQL ecosystem.
@@ -28,19 +26,13 @@ I don't know how the idea to support the project started at MySQL AB, but that q
 
 ### Blue Ridge Internetworks
 
-[<img src="http://www.briworks.com/_images/graphics/bri_logo.gif" width="238" height="70" alt="Blue Ridge Internetworks" style="float:left" />](http://www.briworks.com/)
-
 [Blue Ridge Internetworks](http://www.briworks.com/) have offered $1000 USD in support. BRIworks, as they're known locally, is headquartered in the town where I live, Charlottesville, Virginia. They offer networking consulting and services. Jeff Cornejo, who offered the support to me, is a friend and used to work where I used to work, and several other highly respected friends and ex-co-workers work at BRIworks too. BRIworks provides Internet service and hosting for my employer.
 
 ### Percona
 
-[<img src="http://www.percona.com/files/percona_logo.jpg" width="214" height="51" alt="Percona" style="float: left" />](http://percona.com/)
-
 [Percona](http://percona.com/) have offered $500 USD in support. Percona does high-performance website consulting, and are perhaps best known for having some of the world's top MySQL experts, including Peter Zaitsev and Vadim Tkachenko, two of the co-authors on High Performance MySQL, second edition.
 
 ### The Rimm-Kaufman Group
-
-[ <img src='http://www.rimmkaufman.com/content/images/rkg-logo.gif' alt='Rimm-Kaufman Group' width="216" height="22" style="float:left" />](http://www.rimmkaufman.com/)
 
 Last, but absolutely not least, my employer, [The Rimm-Kaufman Group](http://www.rimmkaufman.com/), who do paid search marketing and website effectiveness consulting. They have let me spend a significant amount of time writing these tools for use on our own systems, and instead of keeping them in our own Subversion repository, allowed the code to be released as [Free Software](http://www.fsf.org/). The time I've spent on the tools has gone well above and beyond what we needed to get our work done. Finally, RKG has blessed my unpaid week off to work on the tools.
 

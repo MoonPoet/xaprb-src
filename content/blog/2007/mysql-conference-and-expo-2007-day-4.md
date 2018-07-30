@@ -5,10 +5,9 @@ url: /blog/2007/04/27/mysql-conference-and-expo-2007-day-4/
 categories:
   - Databases
 ---
-[<img style="float:right; margin-left: 15px" src="http://conferences.oreillynet.com/images/mysqluc2007/banners/speakers/120x240.jpg" width="120" height="240" alt="Speaker at MySQLConf 2007" />](http://www.mysqlconf.com/) 
 In my fourth day at the [MySQL Conference and Expo 2007](http://www.mysqlconf.com/), I attended several great sessions, starting with my own.
 
-If you're wondering why this is a day late, it's because the conference ended in the late afternoon, and they almost immediately -- within a half-hour or so &#8211; removed the free wireless Internet access in the hotel. That was uncool.
+If you're wondering why this is a day late, it's because the conference ended in the late afternoon, and they almost immediately---within a half-hour or so---removed the free wireless Internet access in the hotel. That was uncool.
 
 ### Keynotes etc
 
@@ -52,7 +51,7 @@ The new version of innotop will be in theaters near you as release 1.4.2 in a fe
 
 Incidentally, I got to meet Rohit Nadhani from [webyog](http://www.webyog.com/en/), who wrote the [SQLYog Job Agent I benchmarked against MySQL Table Sync](/blog/2007/04/05/mysql-table-sync-vs-sqlyog-job-agent/) recently. I saw a demo of their new monitoring tool, MONyog. It looks really impressive, but I will try it out some more and let you know. A well-known MySQL user asked in my session if there could be any chance of innotop becoming an interactive web application. The answer is no. But take a look at MONyog.
 
-Rohit said they plan to integrate some of the data from SHOW INNODB STATUS in future releases. He looked terrified and said "oh, no!" when I told him I had to read the InnoDB source code to figure out some of the SHOW INNODB STATUS parsing. To anyone who wants to parse it -- my advice is "rip off my Perl code. It's GPL and I have an enormous test suite." This will save you a huge amount of work.
+Rohit said they plan to integrate some of the data from SHOW INNODB STATUS in future releases. He looked terrified and said "oh, no!" when I told him I had to read the InnoDB source code to figure out some of the SHOW INNODB STATUS parsing. To anyone who wants to parse it---my advice is "rip off my Perl code. It's GPL and I have an enormous test suite." This will save you a huge amount of work.
 
 On a related topic, I got a chance to ask the NitroEDB developers the license on the NitroEDB storage engine for MySQL. The answer was how much it cost, which is A Lot. "Price isn't license," I pointed out. "What about GPLing it?" The answer to that was "It's millions of lines of Modula-2. If you think you can do anything with that, we'll GPL it."
 

@@ -5,7 +5,7 @@ url: /blog/2008/01/25/my-presentations-at-the-2008-mysql-conference-and-expo/
 categories:
   - Databases
 ---
-[ <img src="http://en.oreilly.com/mysql2008/public/asset/asset/561" width="120" height="240"  border="0"  alt="MySQL Conference &#038; Expo 2008" title="MySQL Conference &#038; Expo 2008"  style="float: right" />](http://en.oreilly.com/mysql2008/) I'll be attending the [2008 MySQL Conference and Expo](http://en.oreilly.com/mysql2008/) again this year, and I'm looking forward to hearing some great sessions, meeting new and old friends, and giving sessions myself. As a proposal reviewer, I looked at and voted on 250+ proposals for sessions and tutorials for this conference. There are going to be some great sessions and tutorials.[^[1]]
+I'll be attending the [2008 MySQL Conference and Expo](http://en.oreilly.com/mysql2008/) again this year, and I'm looking forward to hearing some great sessions, meeting new and old friends, and giving sessions myself. As a proposal reviewer, I looked at and voted on 250+ proposals for sessions and tutorials for this conference. There are going to be some great sessions and tutorials.[^1]
 
 If you haven't come to the conference previously, it's well worth your time and money, in my opinion.
 
@@ -16,4 +16,3 @@ I haven't decided yet which sessions I want to attend, but I know this: I'm not 
 Hopefully there'll be plenty of time to sit down for meals and chats with all the people I correspond with throughout the year, but rarely get to see or talk to!
 
 [^1]: And no, I don't get any kickback for saying nice things about the conference. Even reviewing all those proposals was a volunteer job. And Jay Pipes tricked me into it, the rat! He told me it would be only a few hours. Haha, you can't review 250 proposals in a few hours... I have to say though, some of them were really rewarding to read. One of them was about holding a cosmic prayer circle or something like that. Without expressing any opinion on my religion/spirituality, I did have to vote NO on that one -- sorry, wrong conference.
-

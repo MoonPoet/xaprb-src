@@ -5,7 +5,6 @@ url: /blog/2007/04/25/mysql-conference-and-expo-2007-day-2/
 categories:
   - Databases
 ---
-[<img style="float:right; margin-left: 15px" src="http://conferences.oreillynet.com/images/mysqluc2007/banners/speakers/120x240.jpg" width="120" height="240" alt="Speaker at MySQLConf 2007" />](http://www.mysqlconf.com/) 
 In my second day at the [MySQL Conference and Expo 2007](http://www.mysqlconf.com/), I attended keynotes, several sessions, and three BoF (Birds of a Feather) sessions. This article is about these sessions. Again, I'll focus on the Big Ideas and let you read other people's blog posts for the small details.
 
 ### Keynotes
@@ -43,8 +42,6 @@ MySQL's own Jim and Ann Starkey discussed concurrency control in the still-in-be
 This talk's Big Idea was **Falcon is both like and unlike other storage engines.**
 
 This made me think of Guy Kawasaki's keynote from this morning. Who knows what people will use and abuse Falcon for? I'm glad MySQL and the Starkeys are doing what they believe is right, even though a lot of people (including me, frankly) don't really understand what and why they are doing. My impression is that Falcon is so different from what people are used to that most of us do not "get it," and probably will not for a long time. Someone will, though. And when they do, and learn how to make it sing and dance in ways nothing else can do, it'll make a lot of people mad for not seeing it themselves sooner. Especially when it makes someone really successful.
-
-* People in Redmond, I'm guessing.
 
 ### [Professional Cat Herding](http://www.mysqlconf.com/cs/mysqluc2007/view/e_sess/13866)
 
