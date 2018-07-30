@@ -14,7 +14,8 @@ I have a deliberate strategy that guides who I follow on Twitter, and the tools 
 <!--more-->
 
 My goal on Twitter is to broaden my horizons and help me to see the world
-through other peoples' eyes. I explicitly do _not_ use Twitter to learn about what's happening in the world, stay in touch with friends and family, share photos, or discover articles or other content I value control over what I consume, and I value quality over quantity.
+through other peoples' eyes. I explicitly do _not_ use Twitter to learn about what's happening in the world, stay in touch with friends and family, share photos, or discover articles or other content.
+I value control over what I consume, and I value quality over quantity.
 
 To achieve that goal, I balance carefully whom I follow and how, to create a high signal-to-noise ratio in my feed. This article is a set of principles and opinions I've developed over time, some fundamental and some in response to circumstances that arise.
 
