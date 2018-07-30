@@ -5,8 +5,8 @@ date: "2014-07-21"
 url: /blog/2014/07/21/root-cause-fallacy/
 categories:
   - Operations
-credit: "https://unsplash.com/photos/hW11fwjzVfA"
-image: "/media/2014/07/unsplash-photos-hW11fwjzVfA.jpg"
+credit: "https://unsplash.com/photos/EwKXn5CapA4"
+image: "/media/2014/07/jeremy-bishop-556948-unsplash.jpg"
 ---
 
 Wouldn't you like to find the root cause of that downtime incident? Many people
@@ -58,7 +58,3 @@ the aftermath of an incident. I'm happy the times are changing. These days, even
 some companies have stopped saying their tools or products can find root causes.
 Maybe this trend will allow us to replace the manifest failures of root-cause
 analysis with something more helpful.
-
-[Pic Credit](https://www.flickr.com/photos/animaltourism/5096371069/)
-
-
