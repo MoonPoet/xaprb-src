@@ -6,6 +6,7 @@ date: 2015-04-02T03:51:18-05:00
 title: State Of The Storage Engine - DZone
 description: "For the first time in decades, there's actual innovation in databases."
 image: /media/2015/04/boardwalk.jpg
+credit: https://unsplash.com/photos/LCPUm3qTExU
 tags:
   - PostgreSQL
   - MongoDB
@@ -67,7 +68,7 @@ There are other interesting technologies to consider besides LSM trees. One is [
 No matter what underlying storage you use, there’s always a trade-off. The iron triangle of storage engines is this:
 
 
-You can have **sequential reads without amplification, sequential writes without amplification, or an immutable write-once design**—<i>pick any two</i>.
+You can have **sequential reads without amplification, sequential writes without amplification, or an immutable write-once design**—*pick any two*.
 
 
 Today’s emerging Big Data use cases, in which massive datasets are kept in raw form for a long time instead of being summarized and discarded, represent some of the classes of workloads that can potentially be addressed well with LSM tree storage (time-series data is a good example). However, knowledge of the specific LSM implementation must be combined with a deep understanding of the workload, hardware, and application. 
@@ -87,5 +88,3 @@ Whatever road you take, a good deal of creativity and experience is required fro
 To read the full report free of charge, download the
 [DZone Guide To Database and Persistence
 Management](http://dzone.com/research/guide-to-databases).
-
-Cropped boardwalk image by [Nuno Silva](https://unsplash.com/nmsilva).

@@ -8,7 +8,8 @@ categories:
   - Leadership
   - Reviews
   - Best Of
-image: /media/2014/05/horse-race.jpg
+image: /media/2014/05/unsplash-photos-OqBAhbdRsFg.jpg
+credit: https://unsplash.com/photos/OqBAhbdRsFg
 ---
 
 Once upon a time I managed several teams of consultants. At a certain stage of the organization's growth, we wanted to achieve a higher billable-time utilization more easily, and we wanted more structure and process.
@@ -118,7 +119,7 @@ Another major theme that jumped out at me was the ways in which the lack of proc
 
 As an aside, *The Goal* contributed directly to the thought processes that led to my founding VividCortex, and to crucial breakthroughs such as defining a [system fault](https://vividcortex.com/blog/2014/04/24/fault-anomaly-detection/) in terms of throughput, inventory, and operating expense. You can read more about this in a [blog post][perfmgmt] explaining how and why VividCortex is different from a monitoring system.
 
-Photo credits: [horse race](https://www.flickr.com/photos/kingstongal/6011726882/),
+Photo credits:
 [smoke](https://www.flickr.com/photos/almostinfamous/4603824077/),
 [chain](https://www.flickr.com/photos/intherough/3470183543),
 [chain-link fence](https://www.flickr.com/photos/willmontague/3813295674/).
@@ -127,5 +128,3 @@ Photo credits: [horse race](https://www.flickr.com/photos/kingstongal/6011726882
 [smoke]: /media/2014/05/chaos.jpg
 [chain]: /media/2014/05/chain.jpg
 [dependencies]: /media/2014/05/chain-link.jpg
-
-
