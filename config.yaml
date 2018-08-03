@@ -10,9 +10,15 @@ menu:
    - name: Talks
      title: Talks
      url: /talks/
+   social:
+   - name: linkedin
+     title: "fab fa-linkedin-square"
+     url: "https://linkedin.com/in/xaprb"
+   - name: twitter
+     title: "fab fa-twitter-square"
+     url: "https://twitter.com/xaprb"
 params:
    author: "Baron Schwartz"
-   Twitter: "xaprb"
    Amazon: "xaprb-20"
    Email: "&098;&097;&114;&111;&110;&064;&118;&105;&118;&105;&100;&099;&111;&114;&116;&101;&120;&046;&099;&111;&109;"
 MetaDataFormat: "yaml"
