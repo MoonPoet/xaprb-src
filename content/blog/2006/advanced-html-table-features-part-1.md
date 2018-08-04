@@ -13,16 +13,18 @@ For the authoritative details, refer to the [Tables in HTML documents](http://ww
 
 The `caption` is a label for the table. It's semantically associated with the table because it is contained inside it, as opposed to some text that is "near" the table (a common, but meaningless, method of labelling tables and images). Most browsers display it above the table, centered by default. The HTML spec defines some methods of positioning the caption, but they're not fully supported in all browsers. Here's an example:
 
-<pre>&lt;table class="borders collapsed"&gt;
-&lt;caption&gt;apples and oranges&lt;/caption&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Variety&lt;/th&gt;&lt;th&gt;Price&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;&lt;td&gt;Apple&lt;/td&gt;&lt;td&gt;Fuji&lt;/td&gt;&lt;td&gt;5.00&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Apple&lt;/td&gt;&lt;td&gt;Gala&lt;/td&gt;&lt;td&gt;6.00&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Orange&lt;/td&gt;&lt;td&gt;Valencia&lt;/td&gt;&lt;td&gt;4.00&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Orange&lt;/td&gt;&lt;td&gt;Navel&lt;/td&gt;&lt;td&gt;5.00&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</pre>
+```sql
+<table class="borders collapsed">
+<caption>apples and oranges</caption>
+<thead><tr><th>Type</th><th>Variety</th><th>Price</th></tr></thead>
+<tbody>
+<tr><td>Apple</td><td>Fuji</td><td>5.00</td></tr>
+<tr><td>Apple</td><td>Gala</td><td>6.00</td></tr>
+<tr><td>Orange</td><td>Valencia</td><td>4.00</td></tr>
+<tr><td>Orange</td><td>Navel</td><td>5.00</td></tr>
+</tbody>
+</table>
+```
 
 And here is the result:
 
@@ -31,67 +33,67 @@ And here is the result:
     <th>
       Type
     </th>
-    
+
     <th>
       Variety
     </th>
-    
+
     <th>
       Price
     </th>
   </tr>
-  
+
   <tr>
     <td>
       Apple
     </td>
-    
+
     <td>
       Fuji
     </td>
-    
+
     <td>
       5.00
     </td>
   </tr>
-  
+
   <tr>
     <td>
       Apple
     </td>
-    
+
     <td>
       Gala
     </td>
-    
+
     <td>
       6.00
     </td>
   </tr>
-  
+
   <tr>
     <td>
       Orange
     </td>
-    
+
     <td>
       Valencia
     </td>
-    
+
     <td>
       4.00
     </td>
   </tr>
-  
+
   <tr>
     <td>
       Orange
     </td>
-    
+
     <td>
       Navel
     </td>
-    
+
     <td>
       5.00
     </td>
@@ -100,7 +102,9 @@ And here is the result:
 
 `summary` is an attribute of the `table` element itself. It is not displayed visually by any browser of which I'm aware, but it may be read by screen readers. Here's how to use it:
 
-<pre>&lt;table summary="Prices of apples and oranges"...&gt;</pre>
+```sql
+<table summary="Prices of apples and oranges"...>
+```
 
 `abbr` is not unique to tables. It is both a [phrase element](http://www.w3.org/TR/html4/struct/text.html#edef-ABBR) and an [attribute for table cells](http://www.w3.org/TR/html4/struct/tables.html#adef-abbr). The first use is familiar to more people than the second, in my experience. In the second usage, it is <q cite="http://www.w3.org/TR/html4/struct/tables.html#adef-abbr">used to provide an abbreviated form of the cell's content.</q> I use it in my article on [tables and data](/blog/2006/01/02/tables-and-data-part-1/).
 
@@ -117,5 +121,3 @@ The HTML authors probably included this attribute because tabular data can be ve
 ### To be continued
 
 Next time I'll talk about adding meta-data to tables, multi-dimensional tables, and related concepts.
-
-

@@ -11,109 +11,27 @@ It's been a while since I've posted an abstract, theoretical article on a fine p
 
 As far as I know, this bad behavior only applies to MySQL. As the manual explains, MySQL "[extends the use of `GROUP BY`](http://dev.mysql.com/doc/refman/5.0/en/group-by-hidden-fields.html?ff=nopfpls)" to allow selecting columns that do not appear in the `GROUP BY` clause. What does this mean? Well, suppose I have the following data:
 
-<table class="borders collapsed">
-  <caption>Fruits</caption> <tr>
-    <th>
-      Fruit
-    </th>
-    
-    <th>
-      Price
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-    
-    <td>
-      6.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-    
-    <td>
-      4.00
-    </td>
-  </tr>
-</table>
+| Fruit   | Price |
+|---------|-------|
+| Apples  | 5.00  |
+| Apples  | 5.00  |
+| Oranges | 6.00  |
+| Oranges | 4.00  |
 
 MySQL lets me write the following query against the data:
 
-<pre>select Fruit, Price, count(*) as c
+```sql
+select Fruit, Price, count(*) as c
 from Fruits
-group by Fruit;</pre>
+group by Fruit;
+```
 
 The results will look like this:
 
-<table class="borders collapsed">
-  <tr>
-    <th>
-      Fruit
-    </th>
-    
-    <th>
-      Price
-    </th>
-    
-    <th>
-      c
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-    
-    <td>
-      5.00
-    </td>
-    
-    <td>
-      2
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-    
-    <td>
-      6.00
-    </td>
-    
-    <td>
-      2
-    </td>
-  </tr>
-</table>
+| Fruit   | Price | c |
+|---------|-------|---|
+| Apples  | 5.00  | 2 |
+| Oranges | 6.00  | 2 |
 
 Here's the problem: the query groups the tuples (rows) into two groups, one group containing two Apples and one with two Oranges. **I can't logically get "the price" from two tuples in a group, because there is no one "the" price**. In the formal mathematics upon which SQL is based, this query is nonsense. MySQL's documentation admits as much, and tells me not to do this unless all the tuples in the group have the same value in that column -- or I'll risk getting unpredictable behavior. In my example, it's pretty easy to see MySQL chooses the value from the "first" tuple in the group (a funny notion, given that there is no first tuple because *sets are theoretically unordered*).
 
@@ -131,7 +49,8 @@ It's important to group the query by the *data*, not by the expressions used to 
 
 Unlike the first gotcha above, this one can happen systems other than MySQL. The issue is an `UPDATE` in a join with a `FROM`, where tuples from the base table being updated appear multiple times. Here is a query:
 
-<pre>update t1
+```sql
+update t1
    inner join t2 on t1.id = t2.id
 set t1.col1 = t2.col1;
 
@@ -139,143 +58,34 @@ set t1.col1 = t2.col1;
 update t1
    set t1.col1 = t2.col1
    from t1 inner join t2 on t1.id = t2.id
-*/</pre>
+*/
+```
 
 If you're used to seeing it, it may look like there's nothing wrong with that query. Suppose, though, that my data looks like this:
 
-<table class="borders collapsed">
-  <caption>FruitPrices</caption> <tr>
-    <th>
-      Fruit
-    </th>
-    
-    <th>
-      Price
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-    
-    <td>
-      NULL
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-    
-    <td>
-      NULL
-    </td>
-  </tr>
-</table>
+| Fruit   | Price |
+|---------|-------|
+| Apples  | NULL  |
+| Oranges | NULL  |
 
 (Ignore for a moment that this table has pretty much the same data as the Fruits table...)
 
 I'll re-write the query to show how I might unwittingly update a FruitPrices tuple from multiple Fruits tuples:
 
-<pre>update FruitPrices as fp
+```sql
+update FruitPrices as fp
    inner join Fruits as f on f.Fruit = fp.Fruit
-set fp.Price = f.Price;</pre>
+set fp.Price = f.Price;
+```
 
 What does this statement actually do? Well, logically it first [joins the base tables together](/blog/2005/10/03/understanding-sql-joins/):
 
-<table class="borders collapsed">
-  <caption>FruitPrices and Fruits</caption> <tr>
-    <th>
-      Fruit
-    </th>
-    
-    <th>
-      Price
-    </th>
-    
-    <th>
-      Fruit
-    </th>
-    
-    <th>
-      Price
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-    
-    <td>
-      NULL
-    </td>
-    
-    <td>
-      Apples
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-    
-    <td>
-      NULL
-    </td>
-    
-    <td>
-      Apples
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-    
-    <td>
-      NULL
-    </td>
-    
-    <td>
-      Oranges
-    </td>
-    
-    <td>
-      6.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-    
-    <td>
-      NULL
-    </td>
-    
-    <td>
-      Oranges
-    </td>
-    
-    <td>
-      4.00
-    </td>
-  </tr>
-</table>
+| Fruit   | Price | Fruit   | Price |
+|---------|-------|---------|-------|
+| Apples  | NULL  | Apples  | 5.00  |
+| Apples  | NULL  | Apples  | 5.00  |
+| Oranges | NULL  | Oranges | 6.00  |
+| Oranges | NULL  | Oranges | 4.00  |
 
 Next it updates each `Price` value in the left-hand side from the column on the right-hand side. But wait, the value appears twice -- that means logically, Apples are being assigned $5.00 twice, and Oranges are being assigned both $4.00 and $6.00 prices. Danger, Will Robinson! Which one wins? As it turns out, in MySQL again the "first" value wins. Not in SQL Server 2000, though -- the "last" one wins on that platform, if memory serves. It doesn't really matter the particulars of which value wins; it would be more legitimate if the database server threw an error, in my opinion.
 
@@ -283,46 +93,43 @@ I can think of a few ways to avoid this situation.
 
 #### Method 1: Avoid non-standard syntax
 
-Neither syntax above is standard, and neither makes any sense from a true relational standpoint, which is why they have undefined, vendor-specific behavior. A standard `UPDATE` statement does **not** have a `FROM` clause. Joe Celko has written extensively about this:
+Neither syntax above is standard, and neither makes any sense from a true relational standpoint, which is why they have undefined, vendor-specific behavior. A standard `UPDATE` statement does **not** have a `FROM` clause. Joe Celko has [written](http://groups.google.com/group/microsoft.public.sqlserver.programming/browse_thread/thread/c7bff2f93c2a90e0/e9cb0f92a9361619%23e9cb0f92a9361619?sa=X&#038;oi=groupsr&#038;start=1&#038;num=3) extensively about this, saying that "the correct syntax for a searched update statement is [the below]... The `UPDATE` clause simply gives the name of the base table or updatable view to be changed."
 
-<blockquote cite="http://groups.google.com/group/microsoft.public.sqlserver.programming/browse_thread/thread/c7bff2f93c2a90e0/e9cb0f92a9361619%23e9cb0f92a9361619?sa=X&#038;oi=groupsr&#038;start=1&#038;num=3">
-  <p>
-    The correct syntax for a searched update statement is
-  </p>
-  
-  <pre>&lt;update statement&gt; ::=
-  UPDATE &lt;table name&gt;
-     SET &lt;set clause list&gt;
-  [WHERE &lt;search condition&gt;]
 
-&lt;set clause list&gt; ::=
-  &lt;set clause&gt; [{ , &lt;set clause&gt; }...]
+```sql
+<update statement> ::=
+  UPDATE <table name>
+     SET <set clause list>
+  [WHERE <search condition>]
 
-&lt;set clause&gt; ::= &lt;object column&gt; = &lt;update source&gt;
+<set clause list> ::=
+  <set clause> [{ , <set clause> }...]
 
-&lt;update source&gt; ::= &lt;value expression&gt; | NULL | DEFAULT
+<set clause> ::= <object column> = <update source>
 
-&lt;object column&gt; ::= &lt;column name&gt;</pre>
-  
-  <p>
-    The <code>UPDATE</code> clause simply gives the name of the base table or updatable view to be changed.
-  </p>
-</blockquote>
+<update source> ::= <value expression> | NULL | DEFAULT
+
+<object column> ::= <column name>
+```
 
 That's not terribly enlightening to most people, especially those not used to reading BNF! Let me try to correct the query:
 
-<pre>update FruitPrices as fp
+```sql
+update FruitPrices as fp
    set fp.Price =  (
       select f.Price from Fruits as f
       where f.Fruit = fp.Fruit);
-ERROR 1242 (21000): Subquery returns more than 1 row</pre>
+ERROR 1242 (21000): Subquery returns more than 1 row
+```
 
 Oops! It looks like MySQL is now complaining about me trying to update a single value from a whole set of values! Very good. This shows me that my query is wrong, instead of silently doing something bad. Here's a query that works:
 
-<pre>update FruitPrices as fp
+```sql
+update FruitPrices as fp
    set fp.Price =  (
       select max(f.Price) from Fruits as f
-      where f.Fruit = fp.Fruit);</pre>
+      where f.Fruit = fp.Fruit);
+```
 
 #### Method 2: Join one-to-one
 
@@ -334,7 +141,8 @@ The last is to follow the advice of the article linked above and group the right
 
 You can create the tables I'm using with the following scripts:
 
-<pre>create table Fruits(
+```sql
+create table Fruits(
    Fruit varchar(50),
    Price decimal(3,2));
 
@@ -342,14 +150,15 @@ create table FruitPrices(
    Fruit varchar(50) not null primary key,
    Price decimal(3,2));
 
-insert into Fruits values 
+insert into Fruits values
    ("Apples", 5.00),
    ("Apples", 5.00),
    ("Oranges", 6),
    ("Oranges", 4);
 
 insert into FruitPrices(Fruit)
-   values("Apples"), ("Oranges");</pre>
+   values("Apples"), ("Oranges");
+```
 
 ### What's really wrong with these queries?
 

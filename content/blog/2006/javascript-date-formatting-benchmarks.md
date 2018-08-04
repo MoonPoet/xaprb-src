@@ -5,10 +5,6 @@ url: /blog/2006/05/14/javascript-date-formatting-benchmarks/
 categories:
   - Web
 ---
-<p style="border:solid red 1px; background:yellow">
-  If you have questions or comments or bugs report, or a change to make, be sure to use the project's new homepage: <a href="http://code.google.com/p/flexible-js-formatting/">Flexible JS Formatting Libraries</a>
-</p>
-
 Two earlier articles demonstrated how to [format](/blog/2005/12/12/javascript-closures-for-runtime-efficiency/) and [parse](/blog/2005/12/20/javascript-date-parsing/) dates flexibly with JavaScript. I asserted in those articles that my approach was efficient, though I didn't provide any numbers to prove my claim. This article compares the performance of my date-formatting library against several other date-formatting libraries I've found online.
 
 I'd like to benchmark my date-parsing library too, but I haven't seen any comparable implementations. By the way, my date-formatting and date-parsing libraries are wrapped into a single file, so even though I'm not actually executing the date-parsing functions in this benchmark, they're compiled anyway.
@@ -33,118 +29,16 @@ I had to increase the script timeout so Firefox wouldn't interrupt the tests. I 
 
 Here's a graph of the times. The algorithms are in alphabetical order:
 
-<img src="/media/2006/05/date-formatting-benchmark.png" alt="JavaScript date-formatting benchmark" height="311" width="463" /> 
+<img src="/media/2006/05/date-formatting-benchmark.png" alt="JavaScript date-formatting benchmark" height="311" width="463" />
 Obviously, the method I use is much faster -- between 3.15 and 4.89 times faster. Here are the results as numbers in a table. **WARNING**: If you click on the links to the benchmarks, your browser will probably freeze for the better part of a minute on a fast machine -- maybe longer on a slow machine.
 
-<table class="borders collapsed">
-  <caption>Javascript date-formatting benchmark</caption> <tr>
-    <th scope="row">
-      Algorithm
-    </th>
-    
-    <th scope="row">
-      Time
-    </th>
-    
-    <th scope="row">
-      Relative Time
-    </th>
-    
-    <th scope="row">
-      Link to benchmark
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      <a href="http://www.dojotoolkit.org/">Dojo</a>
-    </td>
-    
-    <td>
-      34.00 seconds
-    </td>
-    
-    <td>
-      3.15
-    </td>
-    
-    <td>
-      <a href="/media/2006/05/date-formatting-benchmarks/test-dojotoolkit.html">Link</a>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      <a href="http://web.archive.org/web/20050204062056/http://gazingus.org/html/Date_Formatting_Function.html">Gazingus</a>
-    </td>
-    
-    <td>
-      44.36
-    </td>
-    
-    <td>
-      4.11
-    </td>
-    
-    <td>
-      <a href="/media/2006/05/date-formatting-benchmarks/test-gazingus.html">Link</a>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      <a href="http://http://www.mattkruse.com/javascript/date/source.html">Matt Kruse</a>
-    </td>
-    
-    <td>
-      37.42
-    </td>
-    
-    <td>
-      3.46
-    </td>
-    
-    <td>
-      <a href="/media/2006/05/date-formatting-benchmarks/test-mattkruse.html">Link</a>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      <a href="http://www.svendtofte.com/code/date_format/">Svend Tofte</a>
-    </td>
-    
-    <td>
-      52.83
-    </td>
-    
-    <td>
-      4.89
-    </td>
-    
-    <td>
-      <a href="/media/2006/05/date-formatting-benchmarks/test-svendtofte.html">Link</a>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      <a href="/blog/2005/12/20/javascript-date-parsing/">Xaprb</a>
-    </td>
-    
-    <td>
-      10.80
-    </td>
-    
-    <td>
-      1.00
-    </td>
-    
-    <td>
-      <a href="/media/2006/05/date-formatting-benchmarks/test-xaprb.html">Link</a>
-    </td>
-  </tr>
-</table>
+| Algorithm | Time (sec) | Relative Time | Link to benchmark |
+|-----------|-----:|--------------:|-------------------|
+| [Dojo](http://www.dojotoolkit.org/) | 34.00 | 3.15 | [Link](/media/2006/05/date-formatting-benchmarks/test-dojotoolkit.html) |
+| [Gazingus](http://web.archive.org/web/20050204062056/http://gazingus.org/html/Date_Formatting_Function.html) | 44.36 | 4.11 | [Link](/media/2006/05/date-formatting-benchmarks/test-gazingus.html) |
+| [Matt Kruse](http://http://www.mattkruse.com/javascript/date/source.html) | 37.42 |  3.46 | [Link](/media/2006/05/date-formatting-benchmarks/test-mattkruse.html) |
+| [Svend Tofte](http://www.svendtofte.com/code/date_format/) | 52.83 |   4.89 | [Link](/media/2006/05/date-formatting-benchmarks/test-svendtofte.html) |
+| [Xaprb](/blog/2005/12/20/javascript-date-parsing/) |   10.80 |  1.00 | [Link](/media/2006/05/date-formatting-benchmarks/test-xaprb.html) |
 
 ### Is this an apples-to-apples comparison?
 
@@ -155,5 +49,3 @@ First of all, I'm only testing a single method of formatting -- producing a date
 Beyond that, though, these various bits of code I've benchmarked are vastly different. The one that provides the most similar *formatting* functionality to mine is Svend Tofte's (that's probably why it's the slowest), but even that one only does *parsing*, not *formatting* (mine does both). The others are much less fully-featured, which means they'd probably be even less performant if someone extended them to implement the same set of functionality.
 
 As I said above, I'm not doing this to pick on anyone, but the Dojo method is probably the least efficient. It's the simplest of all, providing only a few formatting characters, and it's not really that much faster than Svend Tofte's implementation. It's probably so slow because it a) uses lots of `if` statements and b) uses repeated string replacements with regular expressions. This is just a hunch, but if it had the rich feature set of my implementation or Svend Tofte's, I think it would probably be the slowest by far.
-
-

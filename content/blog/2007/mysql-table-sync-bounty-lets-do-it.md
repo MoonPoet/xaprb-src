@@ -10,7 +10,7 @@ A little while ago I offered to take time off work and improve [MySQL Table Sync
 ### The conditions
 
 *   The bounty is $2500 USD.
-*   I'll work on the following features and improvements. I have the grand plan in my head, so this list just kind of describes the plan; I'll probably end up improving other things at the same time. 
+*   I'll work on the following features and improvements. I have the grand plan in my head, so this list just kind of describes the plan; I'll probably end up improving other things at the same time.
     *   Modularizing and writing a test suite (this is mandatory; the script is collapsing under its own weight without them) (the good news is a lot of this is done already; I've been modularizing a lot of the code for other tools in the toolkit)
     *   Bugs, bugs, bugs! The test suite should help a lot here.
     *   Bi-directional syncing
@@ -33,36 +33,6 @@ A little while ago I offered to take time off work and improve [MySQL Table Sync
 I was thinking about using a third party to handle the money, but I decided it's not that much money, and the people I spoke to had no qualms about sending me money directly. Here's how I'm thinking of handling it:
 
 *   I'm just passing the hat, I'm not an official charitable organization or anything :-)
-*   Leave a comment with your email, or send an email to me [thisdomain] @ [thisdomain].com.
+*   Leave a comment with your email, or send an email to me.
 *   We can work out how to transfer the money, in whatever way is kosher for you. I have a PayPal account, or I can give you my address and you can mail me a check, or we can figure out something else if that doesn't work.
-*   I'll keep this post updated with the total amount pledged.
-*   Let me know if you wish to be acknowledged. I'll add a "donors" section to this post with your name and a link, if you want. Otherwise I'll just list "anonymous."
 *   Let me know if there's a particular feature you want.
-
-### Donors
-
-The total pledged so far is $0 of $2500 USD.
-
-<table class="borders compact collapsed">
-  <tr>
-    <th>
-      Donor
-    </th>
-    
-    <th>
-      Amount
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Your name here
-    </td>
-    
-    <td class="currency">
-      ???
-    </td>
-  </tr>
-</table>
-
-

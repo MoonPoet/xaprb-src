@@ -25,57 +25,12 @@ At some point, meaning becomes very important, because there is often a wide lat
 
 There are also variations on data types that might confuse the issue. For example, in SQL Server 2000 the `DECIMAL` data type has the following storage requirements, depending on the precision (maximum total number of digits, both to the left and right of the decimal point):
 
-<table class="borders collapsed">
-  <caption>Storage requirements in SQL Server 2000</caption> <tr>
-    <th>
-      Precision
-    </th>
-    
-    <th>
-      Storage bytes
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      1 &#8211; 9
-    </td>
-    
-    <td>
-      5
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      10-19
-    </td>
-    
-    <td>
-      9
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      20-28
-    </td>
-    
-    <td>
-      13
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      29-38
-    </td>
-    
-    <td>
-      17
-    </td>
-  </tr>
-</table>
+| Precision | Storage bytes |
+|-----------|---------------|
+| 1 – 9     | 5             |
+| 10-19     | 9             |
+| 20-28     | 13            |
+| 29-38     | 17            |
 
 I recently saw a table designed with a `DECIMAL(9, 1)` column to hold average customer ratings, whose values range from 0 to 5 with one decimal place. The best data type, in my opinion, is `DECIMAL(2, 1)`. Why did the developer add more precision?
 
@@ -107,5 +62,3 @@ User-defined types do bring their own challenges; they require more work, may ha
 ### The moral of the story
 
 The moral of the story is "think carefully." Now, if only I were better at that myself! The other moral, of course, is "have fun."
-
-

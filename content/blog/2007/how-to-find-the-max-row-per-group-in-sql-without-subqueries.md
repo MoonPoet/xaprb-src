@@ -21,105 +21,14 @@ My first thought on this problem was to use a [mutex table](/blog/2005/09/22/mut
 
 Let's say you have a table of people, and you want to find the youngest of each gender. Here's the table:
 
-<table class="borders collapsed compact">
-  <tr>
-    <th>
-      age
-    </th>
-    
-    <th>
-      name
-    </th>
-    
-    <th>
-      gender
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      5
-    </td>
-    
-    <td>
-      david
-    </td>
-    
-    <td>
-      m
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      8
-    </td>
-    
-    <td>
-      john
-    </td>
-    
-    <td>
-      m
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      9
-    </td>
-    
-    <td>
-      jane
-    </td>
-    
-    <td>
-      f
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      4
-    </td>
-    
-    <td>
-      kelly
-    </td>
-    
-    <td>
-      f
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      11
-    </td>
-    
-    <td>
-      mary
-    </td>
-    
-    <td>
-      f
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      13
-    </td>
-    
-    <td>
-      kay
-    </td>
-    
-    <td>
-      f
-    </td>
-  </tr>
-</table>
+| age | name  | gender |
+|----:|-------|--------|
+|   5 | david | m      |
+|   8 | john  | m      |
+|   9 | jane  | f      |
+|   4 | kelly | f      |
+|  11 | mary  | f      |
+|  13 | kay   | f      |
 
 The problem is easy if I rephrase it as "find all people where **there is no younger person** of the same gender." That's easy to write as a join and translate into an [exclusion join](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/):
 
@@ -129,7 +38,8 @@ The problem is easy if I rephrase it as "find all people where **there is no you
 
 Here are the first two bullet points in SQL:
 
-<pre>select young.*, younger.age
+```sql
+select young.*, younger.age
 from person as young
    left outer join person as younger on younger.gender = young.gender
       and younger.age &lt; young.age
@@ -138,19 +48,21 @@ from person as young
 | age  | name  | gender | age  |
 +------+-------+--------+------+
 |    5 | david | m      | NULL | 
-|    8 | john  | m      |    5 | 
-|    9 | jane  | f      |    4 | 
-|    4 | kelly | f      | NULL | 
-|   11 | mary  | f      |    9 | 
-|   11 | mary  | f      |    4 | 
-|   13 | kay   | f      |    9 | 
-|   13 | kay   | f      |    4 | 
-|   13 | kay   | f      |   11 | 
-+------+-------+--------+------+</pre>
+|    8 | john  | m      |    5 |
+|    9 | jane  | f      |    4 |
+|    4 | kelly | f      | NULL |
+|   11 | mary  | f      |    9 |
+|   11 | mary  | f      |    4 |
+|   13 | kay   | f      |    9 |
+|   13 | kay   | f      |    4 |
+|   13 | kay   | f      |   11 |
++------+-------+--------+------+
+```
 
 Look at the rightmost column. There are `NULL`s only in rows where there's **no younger person** of the same gender. Now it's easy to "cross out" the other rows with the `WHERE` clause, and we're done:
 
-<pre>select young.*
+```sql
+select young.*
 from person as young
    left outer join person as younger on younger.gender = young.gender
       and younger.age &lt; young.age
@@ -159,9 +71,10 @@ where younger.age is null;
 +------+-------+--------+------+
 | age  | name  | gender | age  |
 +------+-------+--------+------+
-|    5 | david | m      | NULL | 
-|    4 | kelly | f      | NULL | 
-+------+-------+--------+------+</pre>
+|    5 | david | m      | NULL |
+|    4 | kelly | f      | NULL |
++------+-------+--------+------+
+```
 
 ### How efficient is it?
 
@@ -170,5 +83,3 @@ As long as you have appropriate indexes on the table, this might not be as ineff
 ### Conclusion
 
 As with so many other SQL challenges, if you re-phrase the question, it's easy to select the maximum or minimum row per group without subqueries. The key is to understand what you want, and to be able to word the problem in a way that translates from English to SQL.
-
-

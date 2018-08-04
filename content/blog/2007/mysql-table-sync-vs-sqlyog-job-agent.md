@@ -28,7 +28,7 @@ I downloaded version 5.27 of SJA on April 2, noticed some potential issues with 
 There can still be problems even with the new order of operations, and I saw strange behavior in the sync jobs I ran. For example, to sync a table that was merely missing 500 rows, it was deleting 103 rows and then inserting 603, instead of just inserting 500. I asked Rohit about this, and he confirmed it was a bug that was fixed in version 5.28:
 
 > This algorithm was introduced for a very small period of time to handle "live" changes on a source table during sync of that table. Now we have changed it to update/delete/update. Update includes both INSERTs and UPDATEs. You should download 5.28 and try.
-> 
+>
 > The extra phase for update is required only if you choose to delete "Extra rows from the target". Consider this situation: After updating the target in Phase-I, we want to find out extra rows in the target. During this period, a source row changes. The target assumes that this data is "extra" and delete it from itself. So you might land up with an "non-synced" dataset most of the times in a live database.
 
 I must have downloaded 5.27 only a few hours before 5.28 was available. In any case, I re-downloaded (it's just over 1MB -- not large) and as Rohit promised, the issues I saw were gone.
@@ -39,7 +39,8 @@ I also mentioned some other minor things I saw in the query log output, such as 
 
 I would never reverse engineer a closed-source application, but peeking in the query log is fair game! I found most queries fairly straightforward. SJA finds differences with checksum queries, which appear to be inspired by [Giuseppe Maxia's work on remote database comparison in 2004](http://www.perlmonks.org/?node_id=381053). Here's a typical query, abbreviated to fit on the page:
 
-<pre>select  left(concat(IF(`col1`&lt;0,'-','+'), lpad(abs(`col1`),9,'0')),4),
+```sql
+select  left(concat(IF(`col1`&lt;0,'-','+'), lpad(abs(`col1`),9,'0')),4),
    concat(
       sum(conv(substring(md5(concat_ws(",",[all columns])),1,8),16,10)),
       sum(conv(substring(md5(concat_ws(",",[all columns])),9,8),16,10)),
@@ -48,23 +49,28 @@ I would never reverse engineer a closed-source application, but peeking in the q
    )as hashkey,
    count(*)as yog_cnt, `col1`
 from test2
-group by 1 order by 2</pre>
+group by 1 order by 2
+```
 
 Here are the first few rows resulting from that query on my test data set:
 
-<pre>+------+------------------------------------------------------+---------+-----------+
+```
++------+------------------------------------------------------+---------+-----------+
 | [..] | hashkey                                              | yog_cnt | col1      |
 +------+------------------------------------------------------+---------+-----------+
-| +411 | 1034880993212471840918027163413727068358             |       1 | 411149050 | 
-| +100 | 10388239781124433886971298309216711174110863         |       6 | 100356640 | 
-| +483 | 104843946004106862890734106456706210129920770876     |      49 | 483694780 | 
-| +284 | 10504012808811182574082112225135699596455074096      |      51 | 284017580 | 
-| +368 | 1054403046550107382218321910460918668291081851629911 |     489 | 368027560 | 
-+------+------------------------------------------------------+---------+-----------+</pre>
+| +411 | 1034880993212471840918027163413727068358             |       1 | 411149050 |
+| +100 | 10388239781124433886971298309216711174110863         |       6 | 100356640 |
+| +483 | 104843946004106862890734106456706210129920770876     |      49 | 483694780 |
+| +284 | 10504012808811182574082112225135699596455074096      |      51 | 284017580 |
+| +368 | 1054403046550107382218321910460918668291081851629911 |     489 | 368027560 |
++------+------------------------------------------------------+---------+-----------+
+```
 
 As SJA finds differences between the tables, it adds `WHERE` clauses to the checksum query, narrowing the range of rows by limiting the upper and lower boundaries of the rows that are being checksummed. Here's a typical `WHERE` clause:
 
-<pre>where   `col1` >= 219000000 and `col1` &lt; 220000000</pre>
+```sql
+where   `col1` >= 219000000 and `col1` &lt; 220000000
+```
 
 In subsequent queries SJA also increases the size of the substring it takes on the first column, from 4 to 7 to 10 leftmost characters. If you ignore the sign digit, this means it is narrowing the grouping by \\(10^3\\) rows each time, or in other words grouping the current working set into a maximum of 1000 groups. This is very similar to [the algorithm I proposed in my first article](/blog/2007/03/05/an-algorithm-to-find-and-resolve-data-differences-between-mysql-tables/), as a fallback mechanism when the DBA cannot use an index to design a grouping strategy.
 
@@ -115,337 +121,337 @@ The following is a summary of the benchmark results. SJA means SQLyog Job Agent,
     <td>
       &nbsp;
     </td>
-    
+
     <th colspan="2">
       Delete 5
     </th>
-    
+
     <th colspan="2">
       Delete 500
     </th>
-    
+
     <th colspan="2">
       Delete Chunk
     </th>
-    
+
     <th colspan="2">
       Change 1
     </th>
-    
+
     <th colspan="2">
       Delete Chunk
     </th>
   </tr>
-  
+
   <tr>
     <td>
     </td>
-    
+
     <th>
       SJA
     </th>
-    
+
     <th>
       MTS
     </th>
-    
+
     <th>
       SJA
     </th>
-    
+
     <th>
       MTS
     </th>
-    
+
     <th>
       SJA
     </th>
-    
+
     <th>
       MTS
     </th>
-    
+
     <th>
       SJA
     </th>
-    
+
     <th>
       MTS
     </th>
-    
+
     <th>
       SJA
     </th>
-    
+
     <th>
       MTS
     </th>
   </tr>
-  
+
   <tr>
     <th>
       Time
     </th>
-    
+
     <td style="text-align:right">
       67
     </td>
-    
+
     <td style="text-align:right">
       17
     </td>
-    
+
     <td style="text-align:right">
       95
     </td>
-    
+
     <td style="text-align:right">
       40
     </td>
-    
+
     <td style="text-align:right">
       145
     </td>
-    
+
     <td style="text-align:right">
       58
     </td>
-    
+
     <td style="text-align:right">
       68
     </td>
-    
+
     <td style="text-align:right">
       14
     </td>
-    
+
     <td style="text-align:right">
       128
     </td>
-    
+
     <td style="text-align:right">
       13
     </td>
   </tr>
-  
+
   <tr>
     <th>
       Bytes In
     </th>
-    
+
     <td style="text-align:right">
       22416
     </td>
-    
+
     <td style="text-align:right">
       14019
     </td>
-    
+
     <td style="text-align:right">
       959541
     </td>
-    
+
     <td style="text-align:right">
       660240
     </td>
-    
+
     <td style="text-align:right">
       7530599
     </td>
-    
+
     <td style="text-align:right">
       3325356
     </td>
-    
+
     <td style="text-align:right">
       9791
     </td>
-    
+
     <td style="text-align:right">
       4172
     </td>
-    
+
     <td style="text-align:right">
       5313711
     </td>
-    
+
     <td style="text-align:right">
       2909
     </td>
   </tr>
-  
+
   <tr>
     <th>
       Bytes Out
     </th>
-    
+
     <td style="text-align:right">
       312668
     </td>
-    
+
     <td style="text-align:right">
       383713
     </td>
-    
+
     <td style="text-align:right">
       3575005
     </td>
-    
+
     <td style="text-align:right">
       2968327
     </td>
-    
+
     <td style="text-align:right">
       11998535
     </td>
-    
+
     <td style="text-align:right">
       1730543
     </td>
-    
+
     <td style="text-align:right">
       110347
     </td>
-    
+
     <td style="text-align:right">
       229229
     </td>
-    
+
     <td style="text-align:right">
       3325058
     </td>
-    
+
     <td style="text-align:right">
       89128
     </td>
   </tr>
-  
+
   <tr>
     <th>
       Rows Sorted
     </th>
-    
+
     <td style="text-align:right">
       4637
     </td>
-    
+
     <td style="text-align:right">
       725
     </td>
-    
+
     <td style="text-align:right">
       44412
     </td>
-    
+
     <td style="text-align:right">
       32592
     </td>
-    
+
     <td style="text-align:right">
       18916
     </td>
-    
+
     <td style="text-align:right">
     </td>
-    
+
     <td style="text-align:right">
       1640
     </td>
-    
+
     <td style="text-align:right">
       4
     </td>
-    
+
     <td style="text-align:right">
       23597
     </td>
-    
+
     <td style="text-align:right">
     </td>
   </tr>
-  
+
   <tr>
     <th>
       Filesorts
     </th>
-    
+
     <td style="text-align:right">
       24
     </td>
-    
+
     <td style="text-align:right">
     </td>
-    
+
     <td style="text-align:right">
       980
     </td>
-    
+
     <td style="text-align:right">
     </td>
-    
+
     <td style="text-align:right">
       5522
     </td>
-    
+
     <td style="text-align:right">
     </td>
-    
+
     <td style="text-align:right">
       10
     </td>
-    
+
     <td style="text-align:right">
     </td>
-    
+
     <td style="text-align:right">
       5584
     </td>
-    
+
     <td style="text-align:right">
     </td>
   </tr>
-  
+
   <tr>
     <th>
       Bookmark Lookup
     </th>
-    
+
     <td style="text-align:right">
       309598
     </td>
-    
+
     <td style="text-align:right">
       82
     </td>
-    
+
     <td style="text-align:right">
       398251
     </td>
-    
+
     <td style="text-align:right">
       4572
     </td>
-    
+
     <td style="text-align:right">
       350432
     </td>
-    
+
     <td style="text-align:right">
       10
     </td>
-    
+
     <td style="text-align:right">
       301988
     </td>
-    
+
     <td style="text-align:right">
       20
     </td>
-    
+
     <td style="text-align:right">
       325477
     </td>
-    
+
     <td style="text-align:right">
       10
     </td>
@@ -469,5 +475,3 @@ Both points are well put. I was initially surprised that there's no command-line
 ### Conclusion
 
 I found [SQLyog Job Agent](http://www.webyog.com/en/downloads.php) to be a well-rounded tool for syncing data between MySQL tables. Though not designed purely as a stand-alone tool, once I figured out the XML job file format, it was easy to use. My analysis showed me some areas where there's theoretically a possibility of incorrectly syncing data, but I never observed that happening. I ran some unscientific benchmarks and found that my design for [MySQL Table Sync](http://code.google.com/p/maatkit) is several times more efficient *for my test case* in terms of network I/O, which seems to be the major contributor to the time it takes to sync tables.
-
-

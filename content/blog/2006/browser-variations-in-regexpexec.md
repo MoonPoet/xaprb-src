@@ -15,298 +15,55 @@ In case you don't know the ins and outs of JavaScript regexes, there is a subtle
 
 Here's what I get when I call `/abc|d(e)/g.exec("abcde")` twice in a row on the browsers in question:
 
-<table class="borders collapsed" style="width:100%">
-  <tr>
-    <td>
-    </td>
-    
-    <th scope="col" style="width: 20%">
-      Property
-    </th>
-    
-    <th scope="col" style="width: 20%">
-      Value
-    </th>
-    
-    <th scope="col" style="width: 20%">
-      Property
-    </th>
-    
-    <th scope="col" style="width: 20%">
-      Value
-    </th>
-  </tr>
-  
-  <tr>
-    <th scope="col" style="width: 20%">
-      Browser
-    </th>
-    
-    <th scope="col" colspan="2">
-      Result 1
-    </th>
-    
-    <th scope="col" colspan="2">
-      Result 2
-    </th></thead> 
-    
-    <tr>
-      <th scope="row" rowspan="4">
-        Firefox
-      </th>
-      
-      <td>
-      </td>
-      
-      <td>
-        abc
-      </td>
-      
-      <td>
-      </td>
-      
-      <td>
-        de
-      </td>
-    </tr>
-    
-    <tr>
-      <td>
-        1
-      </td>
-      
-      <td>
-        undefined
-      </td>
-      
-      <td>
-        1
-      </td>
-      
-      <td>
-        e
-      </td>
-    </tr>
-    
-    <tr>
-      <td>
-        index
-      </td>
-      
-      <td>
-      </td>
-      
-      <td>
-        index
-      </td>
-      
-      <td>
-        3
-      </td>
-    </tr>
-    
-    <tr>
-      <td>
-        input
-      </td>
-      
-      <td>
-        abcde
-      </td>
-      
-      <td>
-        input
-      </td>
-      
-      <td>
-        abcde
-      </td>
-    </tr>
-    
-    <tr>
-      <th scope="row" rowspan="5">
-        IE
-      </th>
-      
-      <td>
-        input
-      </td>
-      
-      <td>
-        abcde
-      </td>
-      
-      <td>
-        input
-      </td>
-      
-      <td>
-        abcde
-      </td>
-    </tr>
-    
-    <tr>
-      <td>
-        index
-      </td>
-      
-      <td>
-      </td>
-      
-      <td>
-        index
-      </td>
-      
-      <td>
-        3
-      </td>
-    </tr>
-    
-    <td>
-      lastIndex
-    </td>
-    
-    <td>
-      3
-    </td>
-    
-    <td>
-      lastIndex
-    </td>
-    
-    <td>
-      5
-    </td></tr> 
-    
-    <td>
-    </td>
-    
-    <td>
-      abc
-    </td>
-    
-    <td>
-    </td>
-    
-    <td>
-      de
-    </td></tr> 
-    
-    <td>
-      1
-    </td>
-    
-    <td>
-    </td>
-    
-    <td>
-      1
-    </td>
-    
-    <td>
-      e
-    </td></tr> 
-    
-    <tr>
-      <th scope="row" rowspan="4">
-        Opera
-      </th>
-      
-      <td>
-      </td>
-      
-      <td>
-        abc
-      </td>
-      
-      <td>
-      </td>
-      
-      <td>
-        de
-      </td>
-    </tr>
-    
-    <tr>
-      <td colspan="2">
-      </td>
-      
-      <td>
-        1
-      </td>
-      
-      <td>
-        e
-      </td>
-    </tr>
-    
-    <tr>
-      <td>
-        index
-      </td>
-      
-      <td>
-      </td>
-      
-      <td>
-        index
-      </td>
-      
-      <td>
-        3
-      </td>
-    </tr>
-    
-    <tr>
-      <td>
-        input
-      </td>
-      
-      <td>
-        abcde
-      </td>
-      
-      <td>
-        input
-      </td>
-      
-      <td>
-        abcde
-      </td>
-    </tr></table> 
-    
-I got the results with a <code>for/in</code> loop, like so:
-    
-<pre>var re = /abc|d(e)/g;
+| | Property | Value     | Property  | Value     |
+|----------|-----------|-----------|-----------|-------|
+| Firefox  |           | abc       |           | de    |
+| Firefox  | 1         | undefined | 1         | e     |
+| Firefox  | index     |           | index     | 3     |
+| Firefox  | input     | abcde     | input     | abcde |
+| IE       | input     | abcde     | input     | abcde |
+| IE       | index     |           | index     | 3     |
+| IE       | lastIndex | 3         | lastIndex | 5     |
+| IE       |           | abc       |           | de    |
+| IE       | 1         |           | 1         | e     |
+| Opera    |           | abc       |           | de    |
+| Opera    |           |           | 1         | e     |
+| Opera    | index     |           | index     | 3     |
+| Opera    | input     | abcde     | input     | abcde |
+
+I got the results with a `for/in` loop, like so:
+
+```JavaScript
+var re = /abc|d(e)/g;
 var result = re.exec("abcde");
 for (var prop in result) {
-    ...</pre>
-    
+  // ...
+}
+```
+
 Here are the differences:
-    
-*        Opera doesn't enumerate over the first captured subexpression in the first result. In Firefox, it exists without a value (has the special value <code>undefined</code>), and in IE it exists <strong>with a value</strong> -- the empty string.
-*        IE adds the proprietary <code>lastIndex</code> property to the result.
+
+*        Opera doesn't enumerate over the first captured subexpression in the first result. In Firefox, it exists without a value (has the special value `undefined`), and in IE it exists **with a value** -- the empty string.
+*        IE adds the proprietary `lastIndex` property to the result.
 
 ###      Subexpressions
 
-I said Opera <em>doesn't enumerate over</em> the property named "1&#8243; in the first result. According to the spec, the property named "1&#8243; should still exist. Opera knows the property should exist, as I proved by examining the <code>length</code> property. Its value is 2 in all browsers, which is correct as specified by section 15.10.6.2 of the [spec](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf):
-    
-Performs a regular expression match of <em>string</em> against the regular expression and returns an Array object containing the results of the match, or <strong>null</strong> if the string did not match...  Let <em>n</em> be the length of <em>r</em>'s <em>captures</em> array. (This is the same value as 15.10.2.1&#8242;s <em>NCapturingParens</em>.)
+I said Opera *doesn't enumerate over* the property named "1" in the first result. According to the spec, the property named "1" should still exist. Opera knows the property should exist, as I proved by examining the `length` property. Its value is 2 in all browsers, which is correct as specified by section 15.10.6.2 of the [spec](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf):
 
-So, the length of the array <em>should</em> be 2 even in the first match, because the length of the array depends <strong>only</strong> on the number of capturing subexpressions in the pattern -- so the browsers are doing the right thing.
-    
-If the property exists, Opera should enumerate it in the <code>for/in</code> loop. The spec is clear about what properties are enumerable (section 15.2.4.7), and it never says such a property should get the <code>dontEnum</code> attribute, so I think Opera's behavior is incorrect. In fact, I'm pretty sure Opera is actually never creating the property. I ran some tests with an Array and set one of the properties to <code>undefined</code>. Opera still enumerates it, so it's not as though Opera doesn't enumerate properties that have no value. I think Opera is setting <code>length</code> to 2, but never creating properties for capturing subexpressions that don't participate in the match. Technically this does not violate the spec's instructions on an Array's <code>length</code> property, but it is suspicious.
+Performs a regular expression match of *string* against the regular expression and returns an Array object containing the results of the match, or **null** if the string did not match...  Let *n* be the length of *r*'s *captures* array. (This is the same value as 15.10.2.1's *NCapturingParens*.)
 
-The moral of the story is you shouldn't use a <code>for/in</code> loop when iterating through subexpressions. Just iterate from 0 through <code>length</code> minus one.
+So, the length of the array *should* be 2 even in the first match, because the length of the array depends **only** on the number of capturing subexpressions in the pattern -- so the browsers are doing the right thing.
 
-I take exception to IE giving the capture a value. The subexpression doesn't capture anything and doesn't participate in the match, so it should not have a value -- not even the empty string or <code>null</code>. I suppose this one is up for debate, but that's my personal opinion.
+If the property exists, Opera should enumerate it in the `for/in` loop. The spec is clear about what properties are enumerable (section 15.2.4.7), and it never says such a property should get the `dontEnum` attribute, so I think Opera's behavior is incorrect. In fact, I'm pretty sure Opera is actually never creating the property. I ran some tests with an Array and set one of the properties to `undefined`. Opera still enumerates it, so it's not as though Opera doesn't enumerate properties that have no value. I think Opera is setting `length` to 2, but never creating properties for capturing subexpressions that don't participate in the match. Technically this does not violate the spec's instructions on an Array's `length` property, but it is suspicious.
 
-### IE's <code>lastIndex</code> property
+The moral of the story is you shouldn't use a `for/in` loop when iterating through subexpressions. Just iterate from 0 through `length` minus one.
 
-Technically, this property shouldn't be there; it should be a property of the global <code>RegExp</code> object in ECMA-262, or the regex itself in later versions of JavaScript (I have no idea why you'd make it a property of a global object; that seems like it would cause all sorts of stupid bugs, so I think the way IE does it is probably a lot smarter than the spec).
+I take exception to IE giving the capture a value. The subexpression doesn't capture anything and doesn't participate in the match, so it should not have a value -- not even the empty string or `null`. I suppose this one is up for debate, but that's my personal opinion.
+
+### IE's `lastIndex` property
+
+Technically, this property shouldn't be there; it should be a property of the global `RegExp` object in ECMA-262, or the regex itself in later versions of JavaScript (I have no idea why you'd make it a property of a global object; that seems like it would cause all sorts of stupid bugs, so I think the way IE does it is probably a lot smarter than the spec).
 
 ### Other stuff
 
 I spent a lot of time messing with the various browsers to see if I could find obscure bugs enumerating properties that don't exist, setting a value and then unsetting it on subsequent calls, and so forth. The good news is I didn't find any more bugs (though they could still exist!), and I found that the quasi-bugs discussed above are really trivial.
-
-

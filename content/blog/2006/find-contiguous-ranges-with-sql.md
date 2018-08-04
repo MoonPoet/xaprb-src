@@ -13,57 +13,12 @@ Someone posted a comment on the article linked above, asking how to do this. At 
 
 I'll use the same sample data as in the earlier article: a sequence of integers from 1 to 20, with the numbers 5, 11, 12, 13, and 14 missing. I'll also delete the value 7, so 6 is a range of length 1. The desired answer is
 
-<table class="borders collapsed">
-  <tr>
-    <th>
-      start
-    </th>
-    
-    <th>
-      end
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      1
-    </td>
-    
-    <td>
-      4
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      6
-    </td>
-    
-    <td>
-      6
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      8
-    </td>
-    
-    <td>
-      10
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      15
-    </td>
-    
-    <td>
-      20
-    </td>
-  </tr>
-</table>
+| start | end |
+|-------|-----|
+| 1     | 4   |
+| 6     | 6   |
+| 8     | 10  |
+| 15    | 20  |
 
 ### The solution
 
@@ -73,96 +28,51 @@ The end of a range is almost the reverse: it has no "next" but might have a "pre
 
 Each of these queries is fairly simple by itself, using [exclusion joins](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/). Here's one that will find the start of every range:
 
-<pre>select l.id
+```sql
+select l.id
 from sequence as l
     left outer join sequence as r on r.id = l.id - 1
-where r.id is null;</pre>
+where r.id is null;
+```
 
-<table class="borders collapsed">
-  <tr>
-    <th>
-      id
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      1
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      6
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      8
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      15
-    </td>
-  </tr>
-</table>
+| id |
+|----|
+| 1  |
+| 6  |
+| 8  |
+| 15 |
+
 
 I'm referring to the left-hand table as "l" and the right-hand table as "r." Here's a query that will find the end of every range. It's almost the same:
 
-<pre>select l.id
+```sql
+select l.id
 from sequence as l
     left outer join sequence as r on r.id = l.id + 1
-where r.id is null;</pre>
+where r.id is null;
+```
 
-<table class="borders collapsed">
-  <tr>
-    <th>
-      id
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      4
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      6
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      10
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      20
-    </td>
-  </tr>
-</table>
+| id |
+|----|
+| 4  |
+| 6  |
+| 10 |
+| 20 |
 
 Bringing the two together, and meeting the "smallest value greater than or equal to" requirement, is a more complex query. Here I solve it with a correlated subquery:
 
-<pre>select l.id as start,
+```sql
+select l.id as start,
     (
         select min(a.id) as id
         from sequence as a
             left outer join sequence as b on a.id = b.id - 1
         where b.id is null
-            and a.id &gt;= l.id
+            and a.id >= l.id
     ) as end
 from sequence as l
     left outer join sequence as r on r.id = l.id - 1
-where r.id is null;</pre>
+where r.id is null;
+```
 
 I've re-aliased the subquery's tables as "a" and "b" to avoid confusion with "r" and "l."
-
-

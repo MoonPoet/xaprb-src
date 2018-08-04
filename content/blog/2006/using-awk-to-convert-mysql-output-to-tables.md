@@ -19,29 +19,28 @@ The result is formatted into HTML rows and columns, and all I need to do is wrap
 
 I sometimes use Perl, too. Here's a script I've saved in my `PATH` so I can pipe results into it:
 
-<pre>#!/usr/bin/perl
+```perl
+#!/usr/bin/perl
 use strict;
 use warnings;
 
 LINE:
-while (my $line = &lt;STDIN&gt;) {
+while (my $line = <STDIN>) {
     next LINE if $line =~ m/^\+/;
     chomp $line;
     if ($line =~ m/^\|/) {
         $line =~ s#^\| | \|$##g;
         chomp $line;
-        print "&lt;tr&gt;&lt;td&gt;"
-            . join("&lt;/td&gt;&lt;td&gt;", split(/(?&lt;=\S)\s+\|\s+(?=\S)/, $line))
-            . "&lt;/td&gt;&lt;/tr&gt;\n";
+        print "<tr><td>"
+            . join("</td><td>", split(/(?<=\S)\s+\|\s+(?=\S)/, $line))
+            . "</td></tr>\n";
     }
     else {
-        print "&lt;tr&gt;&lt;td&gt;"
-            . join("&lt;/td&gt;&lt;td&gt;", split(/\t/, $line))
-            . "&lt;/td&gt;&lt;/tr&gt;\n";
+        print "<tr><td>"
+            . join("</td><td>", split(/\t/, $line))
+            . "</td></tr>\n";
     }
-}</pre>
+}
+```
 
 **Update** Looks like the MySQL folks already did this work for me, duh. The `-H` option outputs HTML for query results.
-
-
-

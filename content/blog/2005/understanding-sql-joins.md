@@ -15,315 +15,48 @@ A join is a SELECT statement with multiple data sources. The data streams from t
 
 Let's look at two tables of data, `apples` and `oranges`.
 
-<table class="borders collapsed">
-  <caption>apples</caption> <tr>
-    <th>
-      Variety
-    </th>
-    
-    <th>
-      Price
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Fuji
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Gala
-    </td>
-    
-    <td>
-      6.00
-    </td>
-  </tr>
-</table>
+| Variety | Price |
+|---------|-------|
+| Fuji    | 5.00  |
+| Gala    | 6.00  |
 
-<table class="borders collapsed">
-  <caption>oranges</caption> <tr>
-    <th>
-      Variety
-    </th>
-    
-    <th>
-      Price
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Valencia
-    </td>
-    
-    <td>
-      4.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Navel
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-</table>
+| Variety  | Price |
+|----------|-------|
+| Valencia | 4.00  |
+| Navel    | 5.00  |
 
 Here is an example SELECT statement:
 
-<pre>select apples.Variety, oranges.Price
+```sql
+select apples.Variety, oranges.Price
 from apples
-    inner join oranges on apples.Price = oranges.Price</pre>
+    inner join oranges on apples.Price = oranges.Price;
+```
 
 Here is (conceptually) what happens when we join these tables:
 
-Choose a left-hand table (the first table in the SELECT statement).
-For each row in the right-hand table, take the entire left-hand table and stack its rows next to the row in the right-hand table.
+- Choose a left-hand table (the first table in the SELECT statement).
+- For each row in the right-hand table, take the entire left-hand table and stack its rows next to the row in the right-hand table.
+- Fill in the missing rows in the right-hand table by duplicating them into the empty spaces.
 
-<table class="borders collapsed">
-      <caption>apples and oranges</caption> <tr>
-        <th>
-          Variety
-        </th>
-        
-        <th>
-          Price
-        </th>
-        
-        <th>
-          Variety
-        </th>
-        
-        <th>
-          Price
-        </th>
-      </tr>
-      
-      <tr>
-        <td>
-          Fuji
-        </td>
-        
-        <td>
-          5.00
-        </td>
-        
-        <td rowspan="2">
-          Valencia
-        </td>
-        
-        <td rowspan="2">
-          4.00
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          Gala
-        </td>
-        
-        <td>
-          6.00
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          Fuji
-        </td>
-        
-        <td>
-          5.00
-        </td>
-        
-        <td rowspan="2">
-          Navel
-        </td>
-        
-        <td rowspan="2">
-          5.00
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          Gala
-        </td>
-        
-        <td>
-          6.00
-        </td>
-      </tr>
-    </table>
-
-Fill in the missing rows in the right-hand table by duplicating them into the empty spaces.
-
-<table class="borders collapsed">
-      <caption>apples and oranges</caption> <tr>
-        <th>
-          Variety
-        </th>
-        
-        <th>
-          Price
-        </th>
-        
-        <th>
-          Variety
-        </th>
-        
-        <th>
-          Price
-        </th>
-      </tr>
-      
-      <tr>
-        <td>
-          Fuji
-        </td>
-        
-        <td>
-          5.00
-        </td>
-        
-        <td>
-          Valencia
-        </td>
-        
-        <td>
-          4.00
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          Gala
-        </td>
-        
-        <td>
-          6.00
-        </td>
-        
-        <td>
-          Valencia
-        </td>
-        
-        <td>
-          4.00
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          Fuji
-        </td>
-        
-        <td>
-          5.00
-        </td>
-        
-        <td>
-          Navel
-        </td>
-        
-        <td>
-          5.00
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          Gala
-        </td>
-        
-        <td>
-          6.00
-        </td>
-        
-        <td>
-          Navel
-        </td>
-        
-        <td>
-          5.00
-        </td>
-      </tr>
-    </table>
+| Variety | Price | Variety  | Price |
+|---------|-------|----------|-------|
+| Fuji    | 5.00  | Valencia | 4.00  |
+| Gala    | 6.00  | Valencia | 4.00  |
+| Fuji    | 5.00  | Navel    | 5.00  |
+| Gala    | 6.00  | Navel    | 5.00  |
 
 The result is a large table containing the *cross-product* or *Cartesian product* of the two data sets. Now satisfy the matching criteria by applying them as a predicate to each row in this new data set. If the predicate is true for the row, include it, otherwise exclude it. The result contains a single row:
 
-<table class="borders collapsed">
-      <caption>apples and oranges</caption> <tr>
-        <th>
-          Variety
-        </th>
-        
-        <th>
-          Price
-        </th>
-        
-        <th>
-          Variety
-        </th>
-        
-        <th>
-          Price
-        </th>
-      </tr>
-      
-      <tr>
-        <td>
-          Fuji
-        </td>
-        
-        <td>
-          5.00
-        </td>
-        
-        <td>
-          Navel
-        </td>
-        
-        <td>
-          5.00
-        </td>
-      </tr>
-    </table>
+| Variety | Price | Variety  | Price |
+|---------|-------|----------|-------|
+| Fuji    | 5.00  | Navel    | 5.00  |
+
 
 Now choose only the desired columns from the result:
 
-<table class="borders collapsed">
-      <caption>apples and oranges</caption> <tr>
-        <th>
-          Variety
-        </th>
-        
-        <th>
-          Price
-        </th>
-      </tr>
-      
-      <tr>
-        <td>
-          Fuji
-        </td>
-        
-        <td>
-          5.00
-        </td>
-      </tr>
-    </table>
+| Variety | Price |
+|---------|-------|
+| Fuji    | 5.00  |
 
 This may not be what a given query optimizer really does to execute a join, but the result is the same regardless of the algorithm. If a query optimizer does something different, it is for efficiency, not correctness. *Every* join *always* involves a cross product followed by choosing the desired data from the result.
-
-

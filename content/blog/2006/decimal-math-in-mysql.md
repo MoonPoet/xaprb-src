@@ -17,174 +17,32 @@ MySQL supports `DECIMAL` data types, which store numbers as strings instead of a
 
 I first encountered this problem while building a system to import my financial data into a database so I could query the transactions with SQL. I ran a query to find unbalanced transactions caused by splits that had been deleted:
 
-<pre>select transaction, sum(amount) as amount
+```sql
+select transaction, sum(amount) as amount
 from split
 group by transaction
-having sum(amount) &lt;&gt; 0;</pre>
+having sum(amount) &lt;&gt; 0;
+```
 
 Here's the result:
 
-<table class="borders collapsed">
-  <tr>
-    <th>
-      transaction
-    </th>
-    
-    <th>
-      amount
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      1198d02fd0d69f117f4617ba964b69f
-    </td>
-    
-    <td style="text-align:right">
-      -2103.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      182fedf6bf740de209da658362307d6
-    </td>
-    
-    <td style="text-align:right">
-      0.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2054cd0a4ce9ef8c7c61625b8c8fe1d
-    </td>
-    
-    <td style="text-align:right">
-      -4288.60
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      3c6cb1aa8df451e0d2a234bea919edd
-    </td>
-    
-    <td style="text-align:right">
-      0.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      559a3896c86610d860c37cd2ddd9d11
-    </td>
-    
-    <td style="text-align:right">
-      -2977.52
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      81487469bdbc9e862ddaf068086aabe
-    </td>
-    
-    <td style="text-align:right">
-      -0.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      8b35ecf20129dae97ba08cd75b6eb69
-    </td>
-    
-    <td style="text-align:right">
-      -875.70
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      96779b5478b7b4cda07e639729ac4ff
-    </td>
-    
-    <td style="text-align:right">
-      -0.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      9906d1f5e2c30208f6c922db4c6eea0
-    </td>
-    
-    <td style="text-align:right">
-      -2884.80
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      a05aeca558816b7ed8e86b06cce1a60
-    </td>
-    
-    <td style="text-align:right">
-      -0.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      a482d3416841b6870e22aeb7bc1e65b
-    </td>
-    
-    <td style="text-align:right">
-      -0.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      b1ae92ed169b21d7495b41c8980ae59
-    </td>
-    
-    <td style="text-align:right">
-      -886.82
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      d96ac1878cbbc0b25324acf1304c5ec
-    </td>
-    
-    <td style="text-align:right">
-      -4792.32
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      e8e1fcd15fc82ae2cdc057341efe4af
-    </td>
-    
-    <td style="text-align:right">
-      0.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      f5bfdeb0a7e93f501ca530663fa7ef9
-    </td>
-    
-    <td style="text-align:right">
-      -3241.28
-    </td>
-  </tr>
-</table>
+| transaction                     |   amount |
+|---------------------------------|---------:|
+| 1198d02fd0d69f117f4617ba964b69f | -2103.00 |
+| 182fedf6bf740de209da658362307d6 |     0.00 |
+| 2054cd0a4ce9ef8c7c61625b8c8fe1d | -4288.60 |
+| 3c6cb1aa8df451e0d2a234bea919edd |     0.00 |
+| 559a3896c86610d860c37cd2ddd9d11 | -2977.52 |
+| 81487469bdbc9e862ddaf068086aabe |    -0.00 |
+| 8b35ecf20129dae97ba08cd75b6eb69 |  -875.70 |
+| 96779b5478b7b4cda07e639729ac4ff |    -0.00 |
+| 9906d1f5e2c30208f6c922db4c6eea0 | -2884.80 |
+| a05aeca558816b7ed8e86b06cce1a60 |    -0.00 |
+| a482d3416841b6870e22aeb7bc1e65b |    -0.00 |
+| b1ae92ed169b21d7495b41c8980ae59 |  -886.82 |
+| d96ac1878cbbc0b25324acf1304c5ec | -4792.32 |
+| e8e1fcd15fc82ae2cdc057341efe4af |     0.00 |
+| f5bfdeb0a7e93f501ca530663fa7ef9 | -3241.28 |
 
 The comparison `sum(amount) <> 0` should have eliminated about half those tuples. The fact that it didn't, combined with the presence of -0.00 (negative zero), made me suspect floating-point values were being used behind the scenes. The numbers were being displayed as fixed-point, but if I could display them as floating-point, I could verify my theory. It's not possible to use `CAST` to cast a value to floating-point in MySQL 4.1, but I accomplished the same thing by multiplying the `amount` column by 1e1. When I did this, I found the numbers weren't exactly zero; they were just close, for example, 3.1086244689504e-13.
 
@@ -194,102 +52,23 @@ After hunting around for a while without luck, [I entered a bug report](http://b
 
 There's still at least one real bug, though. The following query adds an `ORDER BY` clause to the query above:
 
-<pre>select...
-order by amount;</pre>
+```sql
+select...
+order by amount;
+```
 
 The results are interesting indeed!
 
-<table class="borders collapsed">
-  <tr>
-    <th>
-      transaction
-    </th>
-    
-    <th>
-      amount
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      d96ac1878cbbc0b25324acf1304c5ec
-    </td>
-    
-    <td style="text-align:right">
-      -4792.32
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2054cd0a4ce9ef8c7c61625b8c8fe1d
-    </td>
-    
-    <td style="text-align:right">
-      -4288.60
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      f5bfdeb0a7e93f501ca530663fa7ef9
-    </td>
-    
-    <td style="text-align:right">
-      -3241.28
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      559a3896c86610d860c37cd2ddd9d11
-    </td>
-    
-    <td style="text-align:right">
-      -2977.52
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      9906d1f5e2c30208f6c922db4c6eea0
-    </td>
-    
-    <td style="text-align:right">
-      -2884.80
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      1198d02fd0d69f117f4617ba964b69f
-    </td>
-    
-    <td style="text-align:right">
-      -2103.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      b1ae92ed169b21d7495b41c8980ae59
-    </td>
-    
-    <td style="text-align:right">
-      -886.82
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      8b35ecf20129dae97ba08cd75b6eb69
-    </td>
-    
-    <td style="text-align:right">
-      -875.70
-    </td>
-  </tr>
-</table>
+| transaction                     |   amount |
+|---------------------------------|---------:|
+| d96ac1878cbbc0b25324acf1304c5ec | -4792.32 |
+| 2054cd0a4ce9ef8c7c61625b8c8fe1d | -4288.60 |
+| f5bfdeb0a7e93f501ca530663fa7ef9 | -3241.28 |
+| 559a3896c86610d860c37cd2ddd9d11 | -2977.52 |
+| 9906d1f5e2c30208f6c922db4c6eea0 | -2884.80 |
+| 1198d02fd0d69f117f4617ba964b69f | -2103.00 |
+| b1ae92ed169b21d7495b41c8980ae59 |  -886.82 |
+| 8b35ecf20129dae97ba08cd75b6eb69 |  -875.70 |
 
 What happened to the spurious results? They disappeared! An `ORDER BY` clause is never supposed to do anything but order the results; it certainly should not eliminate tuples. I think this is kind of weird, creepy and cool at the same time.
 
@@ -307,5 +86,3 @@ There is *no way to force precision math* in these types of operations. It canno
 *   Upgrade to version 5.0 or above, where exact math is implemented with 64-bit integer operations. Yay!
 
 With a little imagination, it's probably possible to work around most situations. I hope this article helps you avoid possible problems with imprecise math.
-
-

@@ -20,7 +20,8 @@ I'm using 5.0.22-Debian_0ubuntu6.06.2-log for my tests.
 
 I started with the following table, and an `INSERT` statement to populate it with a million rows of data. Aside from the fact that this data is all evenly distributed, this table and data are similar to some tables my coworkers and I redesigned earlier this year (see my article on [how to re-index a large database table](/blog/2006/06/14/how-to-re-index-a-large-database-table/)).
 
-<pre>CREATE TABLE `tracking` (
+```sql
+CREATE TABLE `tracking` (
   `id` int(11) NOT NULL auto_increment,
   `day` date NOT NULL,
   `ad` int(11) NOT NULL,
@@ -39,16 +40,19 @@ insert into tracking(day, ad, clicks, impressions, client)
         rand() * 100,
         rand() * 100,
         rand() * 20
-    from numbers as a 
+    from numbers as a
         cross join numbers as b
-    where a.i &lt;= 1000 and b.i &lt;= 1000;</pre>
+    where a.i <= 1000 and b.i <= 1000;
+```
 
 This table is designed with a surrogate key that isn't used at all, and prevents the table from being clustered day-first, which is how it tends to be queried. Here's a typical query for this data, which consistently takes 0.58 seconds to run on my machine:
 
-<pre>select day, ad, sum(clicks), sum(impressions)
+```sql
+select day, ad, sum(clicks), sum(impressions)
 from tracking
 where client = 11 and day between '2007-01-01' and '2007-01-31'
-group by day;</pre>
+group by day;
+```
 
 ### Step 1: Measure the query before re-indexing
 
@@ -60,7 +64,8 @@ I'll show you a synopsis of the data in a bit, but in case you're curious, [here
 
 I re-indexed the table, removing the surrogate key and clustering on `day, ad`. Now I have the following table:
 
-<pre>CREATE TABLE `tracking` (
+```sql
+CREATE TABLE `tracking` (
   `day` date NOT NULL,
   `ad` int(11) NOT NULL,
   `clicks` int(11) NOT NULL,
@@ -69,7 +74,8 @@ I re-indexed the table, removing the surrogate key and clustering on `day, ad`. 
   PRIMARY KEY  (`day`,`ad`),
   KEY `ad` (`ad`),
   KEY `client` (`client`)
-) ENGINE=InnoDB;</pre>
+) ENGINE=InnoDB;
+```
 
 The same query now consistently runs in two or three hundredths of a second. Here are the `SHOW STATUS` [numbers for the redesigned table](/media/2006/10/status-after-indexing.csv).
 
@@ -77,301 +83,29 @@ The same query now consistently runs in two or three hundredths of a second. Her
 
 That's a lot of numbers to look at, so here's a synopsis of all the numbers that didn't come out to zero in both cases:
 
-<table class="borders collapsed compact">
-  <caption>Query Improvements from Table Redesign</caption> <tr>
-    <th scope="col">
-      Variable_name
-    </th>
-    
-    <th scope="col">
-      Design1
-    </th>
-    
-    <th scope="col">
-      Design2
-    </th>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Com_select
-    </th>
-    
-    <td>
-      1
-    </td>
-    
-    <td>
-      1
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Created_tmp_tables
-    </th>
-    
-    <td>
-      1
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Handler_read_key
-    </th>
-    
-    <td>
-      1574
-    </td>
-    
-    <td>
-      2
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Handler_read_next
-    </th>
-    
-    <td>
-      49987
-    </td>
-    
-    <td>
-      31000
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Handler_read_rnd
-    </th>
-    
-    <td>
-      31
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Handler_read_rnd_next
-    </th>
-    
-    <td>
-      32
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Handler_update
-    </th>
-    
-    <td>
-      1540
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Handler_write
-    </th>
-    
-    <td>
-      31
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Innodb_buffer_pool_read_ahead_rnd
-    </th>
-    
-    <td>
-      3
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Innodb_buffer_pool_read_ahead_seq
-    </th>
-    
-    <td>
-      169
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Innodb_buffer_pool_read_requests
-    </th>
-    
-    <td>
-      205242
-    </td>
-    
-    <td>
-      3969
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Innodb_buffer_pool_reads
-    </th>
-    
-    <td>
-      86
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Innodb_data_read
-    </th>
-    
-    <td>
-      46153728
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Innodb_data_reads
-    </th>
-    
-    <td>
-      265
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Innodb_pages_read
-    </th>
-    
-    <td>
-      2817
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Innodb_rows_read
-    </th>
-    
-    <td>
-      49987
-    </td>
-    
-    <td>
-      31001
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Questions
-    </th>
-    
-    <td>
-      1
-    </td>
-    
-    <td>
-      1
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Select_range
-    </th>
-    
-    <td>
-    </td>
-    
-    <td>
-      1
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Sort_rows
-    </th>
-    
-    <td>
-      31
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Sort_scan
-    </th>
-    
-    <td>
-      1
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Table_locks_immediate
-    </th>
-    
-    <td>
-      1
-    </td>
-    
-    <td>
-      1
-    </td>
-  </tr>
-</table>
+| Variable_name                     | Design1  | Design2 |
+|-----------------------------------|----------|---------|
+| Com_select                        | 1        | 1       |
+| Created_tmp_tables                | 1        |         |
+| Handler_read_key                  | 1574     | 2       |
+| Handler_read_next                 | 49987    | 31000   |
+| Handler_read_rnd                  | 31       |         |
+| Handler_read_rnd_next             | 32       |         |
+| Handler_update                    | 1540     |         |
+| Handler_write                     | 31       |         |
+| Innodb_buffer_pool_read_ahead_rnd | 3        |         |
+| Innodb_buffer_pool_read_ahead_seq | 169      |         |
+| Innodb_buffer_pool_read_requests  | 205242   | 3969    |
+| Innodb_buffer_pool_reads          | 86       |         |
+| Innodb_data_read                  | 46153728 |         |
+| Innodb_data_reads                 | 265      |         |
+| Innodb_pages_read                 | 2817     |         |
+| Innodb_rows_read                  | 49987    | 31001   |
+| Questions                         | 1        | 1       |
+| Select_range                      |          | 1       |
+| Sort_rows                         | 31       |         |
+| Sort_scan                         | 1        |         |
+| Table_locks_immediate             | 1        | 1       |
 
 I gave a high-level, hand-waving overview of interpreting results in my previous article, because there's just too much to go over in one article. Hopefully you can sink your teeth into this example. For example, you can see the first design created a temporary table for some reason, made more index reads, made lots more requests to the buffer pool, and read a lot more bytes of data. What's going on here?
 
@@ -382,7 +116,8 @@ As I mentioned in the first article, it really helps to
 
 The `EXPLAIN` is the missing link here. Here it is:
 
-<pre>*************************** Design 1
+```sql
+*************************** Design 1
            id: 1
   select_type: SIMPLE
         table: tracking
@@ -404,7 +139,8 @@ possible_keys: PRIMARY,client
       key_len: 3
           ref: NULL
          rows: 46284
-        Extra: Using where</pre>
+        Extra: Using where
+```
 
 The query against the first table required a temporary table and filesort. It scanned the `client` key and did bookmark lookups to the clustered index. The second query just scanned a range of the clustered index. Armed with this knowledge, look back at the actual numbers; it's pretty amazing how much extra work is caused in the first case by having to navigate a secondary index and then a clustered index. The most dramatic difference is how the InnoDB buffer pool is used. Here are some highlights:
 
@@ -419,40 +155,15 @@ I hope you agree that's much more concrete and useful than comparing execution t
 
 ### One really strange result
 
-One thing I didn't show you about those two queries was the value of `Last_query_cost`. That's because it showed the slower, more data-intensive query actually having a *lower* cost than the faster one: <table class="borders collapsed compact">
-  <caption>Last Query Cost in Table Redesign</caption> <tr>
-    <th scope="col">
-      Variable_name
-    </th>
-    
-    <th scope="col">
-      Design1
-    </th>
-    
-    <th scope="col">
-      Design2
-    </th>
-  </tr>
-  
-  <tr>
-    <th scope="row">
-      Last_query_cost
-    </th>
-    
-    <td>
-      20343.599000
-    </td>
-    
-    <td>
-      71039.632551
-    </td>
-  </tr>
-</table>
+One thing I didn't show you about those two queries was the value of `Last_query_cost`. That's because it showed the slower, more data-intensive query actually having a *lower* cost than the faster one:
+
+| Variable_name   | Design1      | Design2      |
+|-----------------|--------------|--------------|
+| Last_query_cost | 20343.599000 | 71039.632551 |
+
 
 That's pretty bizarre, isn't it? I don't know how the query cost is calculated; I believe the optimizer calculates it in advance of actually executing the query. It definitely doesn't match the actual cost of executing these queries. It is usually more in line with the true cost, but not always. You should not rely on it absolutely.
 
 ### Conclusion
 
 The example I gave should make it pretty clear how much you can measure about query performance -- execution time is only one data point. In the third article in this series, I'll take the wraps off a shiny new tool that can do all this tedious math for you in the blink of an eye. Stay tuned.
-
-

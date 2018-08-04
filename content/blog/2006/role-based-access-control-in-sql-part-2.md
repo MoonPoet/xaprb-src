@@ -37,10 +37,12 @@ I find it useful to define a generic set of semi-UNIX-ish actions, which can be 
 
 Actions are stored in the database, because they need to be involved in some of the queries I'll show you later. This means they could theoretically be subject to ACL privileges like other objects, but in practice I find this is needless complexity (what good would it do to define a new action in the database, unless there is application code to implement it? Perhaps in an application with plug-in functionality this would be useful, but I'm not doing that.) For that reason I don't give them extra columns like other tables, and I exclude them from my ORM system. Here's the basic schema:
 
-<pre>create table t_action (
+```sql
+create table t_action (
     c_title           varchar(100) not null primary key,
     c_apply_object    tinyint      not null
-);</pre>
+);
+```
 
 The `c_apply_object` column specifies whether an action applies to objects or tables. Certain actions, like "create," apply only to tables. I find the system is easier to manage if I choose my actions so they can only apply to one or the other, not both.
 
@@ -50,14 +52,16 @@ In my applications I typically add more columns to define user-interface labels 
 
 Your privilege system can represent reality better if it respects the object's status, because some things can only be done when an object is in a certain status. Flashback to the imaginary application code:
 
-<pre>if ( $user-&gt;can('join', $event) ) {
-   if ( $event-&gt;status() == 'active' ) {
+```php
+if ( $user->can('join', $event) ) {
+   if ( $event->status() == 'active' ) {
       // the user joins the event
    }
    else {
       print_error("Sorry, this event isn't active");
    }
-}</pre>
+}
+```
 
 It's happening again -- the code is taking too much responsibility. Shouldn't the code just be asking if the event is joinable? In fact, isn't it cleaner to make privileges contingent upon the event's status? If you haven't really explored this possibility in your own code, I encourage you to do so. My personal experience is it's a much better way to do it. Think about the places in your code where you could omit checking something's status before doing something to it. You might get rid of a lot of code.
 
@@ -65,24 +69,28 @@ While this represents reality better in one way, it mis-represents it another wa
 
 Now that I've explained my decision to include status in the privilege system, let's look at status values themselves. They're like groups and permissions: they are so static in the applications I use, they probably ought to be defined in the code. What statuses should you define? Well, for the "event" data type, maybe you need "active," "inactive," "cancelled," and so forth. A membership, for example, might be "pending" when the user signs up, and "active" when the administrators receive payment and activate it. Statuses are powers of two, like groups:
 
-<pre>$statuses = array(
-   "deleted"     =&gt; 1,
-   "inactive"    =&gt; 2,
-   "active"      =&gt; 4,
-   "cancelled"   =&gt; 16,
-   "pending"     =&gt; 32
-);</pre>
+```php
+$statuses = array(
+   "deleted"     => 1,
+   "inactive"    => 2,
+   "active"      => 4,
+   "cancelled"   => 16,
+   "pending"     => 32
+);
+```
 
 An object's status is stored in its `c_status` column, which I need to add to my generic set of columns. Now my table template looks like this:
 
-<pre>create table t_foo (
+```sql
+create table t_foo (
     c_uid             int not null auto_increment primary key,
     c_owner           int not null default 1,
     c_group           int not null default 1,
     c_unixperms       int not null default 500,
     c_status          int not null default 0,
     -- other columns ...
-);</pre>
+);
+```
 
 ### Where's the type information?
 
@@ -94,12 +102,14 @@ But there's another reason, too: your types probably share some actions. Here's 
 
 The type-action-status information lives in `t_implemented_action`, another "system table" that doesn't get all the auto-increment baggage, like `t_action`:
 
-<pre>create table t_implemented_action (
+```sql
+create table t_implemented_action (
     c_table           varchar(100)    not null,
     c_action          varchar(100)    not null,
-    c_status          int             not null default 0, 
+    c_status          int             not null default 0,
     primary key (c_table, c_action)
-);</pre>
+);
+```
 
 This is the first place I've shown you where a column contains a table name. Remember, in the ORM worldview, a table's name is its data type (I hope your code has an easy way to translate between an object's data type and the name of the table it lives in). A row in `t_implemented_action`, then, says "this type of object implements this action in this status."
 
@@ -118,7 +128,8 @@ I store privileges two different ways. First, there are the UNIX-style privilege
 
 Next, if I need additional granularity, there's the `t_privilege` table. I have denormalized the design for performance and space efficiency, and crammed all three privilege types into one table:
 
-<pre>create table t_privilege (
+```sql
+create table t_privilege (
     c_role            varchar(30)     not null,
     c_who             int             not null default 0,
     c_action          varchar(100)    not null,
@@ -126,7 +137,8 @@ Next, if I need additional granularity, there's the `t_privilege` table. I have 
     c_related_table   varchar(100)    not null,
     c_related_uid     int             not null default 0,
     primary key(c_role, c_who, c_action, c_type, c_related_table, c_related_uid)
-);</pre>
+);
+```
 
 From top to bottom, these columns mean the following:
 
@@ -143,133 +155,12 @@ It's a fairly complex table because of all the different types of things it hold
 
 Examples might help understand the table structure. Suppose I have the following entries in `t_privilege`:
 
-<table class="borders collapsed">
-  <tr>
-    <th>
-      c_role
-    </th>
-    
-    <th>
-      c_who
-    </th>
-    
-    <th>
-      c_action
-    </th>
-    
-    <th>
-      c_type
-    </th>
-    
-    <th>
-      c_related_table
-    </th>
-    
-    <th>
-      c_related_uid
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      group
-    </td>
-    
-    <td>
-      4
-    </td>
-    
-    <td>
-      join
-    </td>
-    
-    <td>
-      global
-    </td>
-    
-    <td>
-      t_event
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      group
-    </td>
-    
-    <td>
-      4
-    </td>
-    
-    <td>
-      list_all
-    </td>
-    
-    <td>
-      table
-    </td>
-    
-    <td>
-      t_event
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      self
-    </td>
-    
-    <td>
-    </td>
-    
-    <td>
-      passwd
-    </td>
-    
-    <td>
-      object
-    </td>
-    
-    <td>
-      t_user
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      user
-    </td>
-    
-    <td>
-      3
-    </td>
-    
-    <td>
-      delete
-    </td>
-    
-    <td>
-      object
-    </td>
-    
-    <td>
-      t_event
-    </td>
-    
-    <td>
-      1
-    </td>
-  </tr>
-</table>
+| c_role | c_who | c_action | c_type | c_related_table | c_related_uid |
+|--------|-------|----------|--------|-----------------|---------------|
+| group  | 4     | join     | global | t_event         |               |
+| group  | 4     | list_all | table  | t_event         |               |
+| self   |       | passwd   | object | t_user          |               |
+| user   | 3     | delete   | object | t_event         | 1             |
 
 *   The first row grants group 4 (users) the privilege to join every event (all rows in the `t_event` table).
 *   The second row grants all users the right to list the contents of the `t_event` table. This is the first example of a table-level privilege I've given. This is equivalent to setting the executable bit on a directory in UNIX.
@@ -280,7 +171,8 @@ Examples might help understand the table structure. Suppose I have the following
 
 Here's a complete script (again, for MySQL) to create and populate a sample schema with some sample data. This is what I'll run queries against later:
 
-<pre>drop table if exists t_user;
+```sql
+drop table if exists t_user;
 create table t_user (
    c_uid             int             not null auto_increment primary key,
    c_owner           int             not null default 1,
@@ -326,7 +218,7 @@ drop table if exists t_implemented_action;
 create table t_implemented_action (
    c_table           varchar(100)    not null,
    c_action          varchar(100)    not null,
-   c_status          int             not null default 0, 
+   c_status          int             not null default 0,
    primary key (c_table, c_action)   
 );
 
@@ -362,7 +254,8 @@ insert into t_privilege
    ('self',  0, 'passwd',   'object', 't_user',  0),
    ('group', 4, 'join',     'global', 't_event', 0),
    ('group', 4, 'list_all', 'table',  't_event', 0),
-   ('user',  3, 'delete',   'object', 't_event', 1);</pre>
+   ('user',  3, 'delete',   'object', 't_event', 1);
+```
 
 One note on this schema -- I have not included the indexes good performance will require. I've only included primary keys to ensure data validity. My real application has more indexes on `t_implemented_action` and `t_privilege`.
 
@@ -383,7 +276,7 @@ How about seeing if 'xaprb' can join the 'MySQL Camp' event:
 xaprb cannot join the event. Can he join the 'Microsoft Keynote' event?
 
 1.  The first two steps are the same, and this time the event's status matches, so we can go to the next step.
-2.  We need to look in the `t_privilege` table for a row that matches any of the following: 
+2.  We need to look in the `t_privilege` table for a row that matches any of the following:
     *   c\_role is 'user', c\_who is 2, c\_action is 'join', c\_type is 'object', c\_related\_table is 't\_event', and c\_related_uid is 2,
     *   or, c\_role is 'user', c\_who is 2, c\_action is 'join', c\_type is 'global', and c\_related\_table is 't_event',
     *   ... this goes on for a long time.
@@ -401,7 +294,9 @@ I've mentioned several times that the trick to doing this easily is to ask the q
 
 The queries are built dynamically with a few substitution variables. You can test these queries by saving them to a .php file and piping their output directly into mysql, like so:
 
-<pre>php all-object-privileges.php | mysql</pre>
+```
+php all-object-privileges.php | mysql
+```
 
 ### How efficient is it, really?
 
@@ -441,7 +336,7 @@ These systems may work better for you, especially if you need a more traditional
 
 I currently use this system to implement a lot of the logic behind my web application. Between the privileges, type checking in the queries, and status-awareness, all my web application needs to do is ask the database what the user can do, and then display it. For example, I often use a "tab" metaphor, and the tabs are generated from the query. Here's a screenshot of the property pages I mentioned:
 
-[<img src="/media/2006/08/thumb-property-pages-screenshot.png" width="200" height="" alt="Property Pages Screenshot" />](/media/2006/08/property-pages-screenshot.png)
+![Property Pages Screenshot](/media/2006/08/property-pages-screenshot.png)
 
 I use the same query to populate drop-down menus and so on.
 

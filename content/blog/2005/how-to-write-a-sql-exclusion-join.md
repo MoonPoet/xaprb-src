@@ -13,78 +13,26 @@ There is usually more than one way to write a given query, but not all ways are 
 
 I'll use two tables of data, `apples` and `oranges`.
 
-<table class="borders collapsed">
-  <caption>apples</caption> <tr>
-    <th>
-      Variety
-    </th>
-    
-    <th>
-      Price
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Fuji
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Gala
-    </td>
-    
-    <td>
-      6.00
-    </td>
-  </tr>
-</table>
+| Variety | Price |
+|---------|------:|
+| Fuji    |  5.00 |
+| Gala    |  6.00 |
 
-<table class="borders collapsed">
-  <caption>oranges</caption> <tr>
-    <th>
-      Variety
-    </th>
-    
-    <th>
-      Price
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Valencia
-    </td>
-    
-    <td>
-      4.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Navel
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-</table>
+| Variety  | Price |
+|----------|------:|
+| Valencia |  4.00 |
+| Navel    |  5.00 |
 
 ### The old-style way
 
 In old-style SQL, one joined data sets by simply specifying the sets, and then specifying the match criteria in the `WHERE` clause, like so:
 
-<pre>select *
+```sql
+select *
 from apples, oranges
 where apples.Price = oranges.Price
-    and apples.Price = 5</pre>
+    and apples.Price = 5
+```
 
 Placing the join conditions in the `WHERE` clause is confusing when queries get more complex. It becomes hard to tell which conditions are used to join the tables (`apples.Price = oranges.Price`), and which are used to exclude results (`apples.Price = 5`). The two are equivalent in old-style joins, but as mentioned, some joins cannot be written in this style (more on this later).
 
@@ -92,11 +40,13 @@ Placing the join conditions in the `WHERE` clause is confusing when queries get 
 
 The updated SQL standard addressed these issues by separating the join conditions from the `WHERE` clause. Join conditions now go in the `FROM` clause, greatly clarifying the syntax. Here is the simple join written in the newer style:
 
-<pre>select *
+```sql
+select *
 from apples
     inner join oranges
          on apples.Price = oranges.Price
-where apples.Price = 5</pre>
+where apples.Price = 5
+```
 
 ### Outer joins
 
@@ -104,101 +54,58 @@ Separating the join conditions from the `WHERE` clause allows `OUTER` joins. The
 
 In a `LEFT OUTER` join, *every row* from the left-hand table is included, whether there is a matching row in the right-hand table or not. When there is a matching row in the right-hand table, it is included; otherwise the right-hand table's columns are filled with `NULL`s. A demonstration may clarify:
 
-<pre>select *
-from apples
-    left outer join oranges
-        on apples.Price = oranges.Price</pre>
-
-<table class="borders collapsed">
-  <caption>apples and oranges</caption> <tr>
-    <th>
-      Variety
-    </th>
-    
-    <th>
-      Price
-    </th>
-    
-    <th>
-      Variety
-    </th>
-    
-    <th>
-      Price
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Fuji
-    </td>
-    
-    <td>
-      5.00
-    </td>
-    
-    <td>
-      Navel
-    </td>
-    
-    <td>
-      5.00
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Gala
-    </td>
-    
-    <td>
-      6.00
-    </td>
-    
-    <td class="null">
-      NULL
-    </td>
-    
-    <td class="null">
-      NULL
-    </td>
-  </tr>
-</table>
-
-`INNER` joins select matching rows in the result set. It is possible to use an `INNER` join to select apples and oranges with matching prices, as above. With `LEFT OUTER` joins it is possible to answer the reverse query, "show me apples for which there are no oranges with a matching price." Simply eliminate matching rows in the `WHERE` clause:
-
-<pre>select apples.Variety
+```sql
+select *
 from apples
     left outer join oranges
         on apples.Price = oranges.Price
-where oranges.Price is null</pre>
+```
+
+| Variety | Price | Variety | Price |
+|---------|------:|---------|------:|
+| Fuji    |  5.00 | Navel   |  5.00 |
+| Gala    |  6.00 | NULL    |  NULL |
+
+`INNER` joins select matching rows in the result set. It is possible to use an `INNER` join to select apples and oranges with matching prices, as above. With `LEFT OUTER` joins it is possible to answer the reverse query, "show me apples for which there are no oranges with a matching price." Simply eliminate matching rows in the `WHERE` clause:
+
+```sql
+select apples.Variety
+from apples
+    left outer join oranges
+        on apples.Price = oranges.Price
+where oranges.Price is null
+```
 
 ### Outer joins are not possible with inner join
 
 The above query is not possible with `INNER JOIN`. The following query does **not** accomplish the same thing:
 
-<pre>select apples.Variety
+```sql
+select apples.Variety
 from apples
     inner join oranges
         on apples.Price = oranges.Price
-where apples.Price &lt;&gt; oranges.Price</pre>
+where apples.Price &lt;&gt; oranges.Price
+```
 
 In fact, this query will return nothing, because the join condition contradicts the `WHERE` clause. This query is not the same thing either:
 
-<pre>select apples.Variety
+```sql
+select apples.Variety
 from apples
     inner join oranges on
-        apples.Price &lt;&gt; oranges.Price</pre>
+        apples.Price &lt;&gt; oranges.Price
+```
 
 Why? Because if there are no rows in oranges, nothing will get returned. It is simply not possible to write this query with an `INNER` join or an old-style join, no matter what technique is used. Don't be fooled by analyzing the two data sets presented in this article; for some cases you may be able to get the same behavior, but not for all possible data sets. There is a way to write this query using subqueries, though:
 
-<pre>select apples.Variety
+```sql
+select apples.Variety
 from apples
 where apples.Price not in (
-        select Price from oranges)</pre>
+        select Price from oranges)
+```
 
 ### Outer joins and subqueries
 
 Why use a `LEFT OUTER` join instead of using a subquery? Depending on the query, this technique may force the subquery to be evaluated for *every* row in the left-hand table (especially for correlated subqueries, where the subquery refers to values from the left-hand table). A `LEFT OUTER` join, by contrast, can often use a much more efficient query plan. Again, they may be mathematically equivalent -- and a good query optimizer may generate the same query plan, but this is not always the case. It depends heavily on the query, the optimizer, and how the tables are indexed. I have seen queries perform orders of magnitude better when rewritten with an exclusion join.
-
-

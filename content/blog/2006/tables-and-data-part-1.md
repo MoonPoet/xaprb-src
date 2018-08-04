@@ -15,71 +15,19 @@ I could do either, but I think it's better to go the second route, and let CSS c
 
 To set the stage, here's some sample data, which I'll use throughout this series of articles:
 
-<table id="table1" class="cleanHeaders elbowroom">
-  <caption>Weekly Sales Stats</caption> <tr>
-    <th scope="col">
-      Date
-    </th>
-    
-    <th scope="col">
-      Net Sales
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      2005-01-01
-    </td>
-    
-    <td>
-      581
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2005-01-02
-    </td>
-    
-    <td>
-      557.23
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2005-01-03
-    </td>
-    
-    <td>
-      532.1
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2005-01-04
-    </td>
-    
-    <td>
-      20.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      2005-01-05
-    </td>
-    
-    <td>
-      -82.58
-    </td>
-  </tr>
-</table>
+| Date       | Net Sales |
+|------------|----------:|
+| 2005-01-01 |       581 |
+| 2005-01-02 |    557.23 |
+| 2005-01-03 |     532.1 |
+| 2005-01-04 |       20. |
+| 2005-01-05 |    -82.58 |
 
 Aside from an alarming trend in the numbers (quick! Get me the VP of Marketing!), this table is pretty uninteresting and hard to read, especially since the numbers aren't formatted consistently (they represent the values accurately, but not legibly). A sample row looks like this:
 
-<pre>&lt;tr&gt;&lt;td&gt;2005-01-05&lt;/td&gt;&lt;td&gt;-82.58&lt;/td&gt;&lt;/tr&gt;</pre>
+```
+<tr><td>2005-01-05</td><td>-82.58</td></tr>
+```
 
 I used standard formats for the data. The dates are in ISO8601 standard format, and the numbers are just plain... numbers. No fanciness here. That's intentional, because I want it to be easy for a program to use in a future article (you'll see, it will get pretty complex).
 
@@ -99,98 +47,22 @@ To keep the type/presentation/value separation clear, I won't mark negative numb
 
 I used `class="currency"` above as an example, but I'm going to use certain class name conventions to help organize the CSS classes. I'll use the prefix `dt-` to indicate "data type," and `dst-` to mean "data subtype." Here are the values I'll use:
 
-<table class="cleanHeaders elbowroom">
-  <tr>
-    <th scope="col">
-      Data Type
-    </th>
-    
-    <th scope="col">
-      Class Name
-    </th>
-    
-    <th scope="col">
-      Misc
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Date
-    </td>
-    
-    <td>
-      dt-datetime
-    </td>
-    
-    <td>
-      All date and time data.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Date and Time
-    </td>
-    
-    <td>
-      dst-date
-    </td>
-    
-    <td>
-      Date only; no time information.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Numeric
-    </td>
-    
-    <td>
-      dt-number
-    </td>
-    
-    <td>
-      All numeric data, including currency.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Currency
-    </td>
-    
-    <td>
-      dst-currency
-    </td>
-    
-    <td>
-      A subset of <code>number</code>.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Currency Type
-    </td>
-    
-    <td>
-      dst-???
-    </td>
-    
-    <td>
-      Use ISO 4217 currency codes.
-    </td>
-  </tr>
-</table>
+| Data Type     | Class Name   | Misc                                  |
+|---------------|--------------|---------------------------------------|
+| Date          | dt-datetime  | All date and time data.               |
+| Date and Time | dst-date     | Date only; no time information.       |
+| Numeric       | dt-number    | All numeric data, including currency. |
+| Currency      | dst-currency | A subset of `number`.                   |
+| Currency Type | dst-???      | Use ISO 4217 currency codes.          |
 
 I can think of many other variations, but [I'll invent them when I need them](http://xp.c2.com/YouArentGonnaNeedIt.html). The sample row now looks like this:
 
-<pre>&lt;tr&gt;
-    &lt;td class="dt-datetime dst-date"&gt;2005-01-05&lt;/td&gt;
-    &lt;td class="dt-number dst-currency dst-USD"&gt;-82.58&lt;/td&gt;
-&lt;/tr&gt;</pre>
+```sql
+<tr>
+    <td class="dt-datetime dst-date">2005-01-05</td>
+    <td class="dt-number dst-currency dst-USD">-82.58</td>
+</tr>
+```
 
 That's as far as I'll take it with plain CSS at this point -- I'm happy with the markup. It is structural and semantic, but not presentational; the CSS will handle that later.
 
@@ -210,5 +82,3 @@ Even though many of these techniques aren't well supported, some of them are. He
 ### Upcoming work
 
 That's all for now. In upcoming articles, several threads (JavaScript, date and number formatting, CSS, tables) are going to start converging, and I'll introduce a lot more material. You'll see how to add load-time processing to your tables, apply predefined and user-defined format strings by naming them in the CSS, get around the row/column multiple-hierarchy problem so you don't have to specify the classes on every single row or cell separately, allow users to really choose their preferred view of the data, and maybe even more. Stay tuned!
-
-

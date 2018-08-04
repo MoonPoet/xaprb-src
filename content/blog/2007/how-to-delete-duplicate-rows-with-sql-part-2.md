@@ -13,83 +13,23 @@ This is a special case of deleting duplicates. I've written another article abou
 
 In general, this is a hard problem. Suppose you have the following data, and you want to delete everything but the first row of its type (you don't care which, because all duplicate rows are completely identical).
 
-<table class="borders compact collapsed">
-  <tr>
-    <th>
-      Fruit
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-  </tr>
-</table>
+| Fruit   |
+|---------|
+| Oranges |
+| Oranges |
+| Oranges |
+| Apples  |
+| Apples  |
+| Apples  |
+| Apples  |
+| Apples  |
 
 When you're done, you want just two rows in the table:
 
-<table class="borders compact collapsed">
-  <tr>
-    <th>
-      Fruit
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      Oranges
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Apples
-    </td>
-  </tr>
-</table>
+| Fruit   |
+|---------|
+| Oranges |
+| Apples  |
 
 ### Why this is hard
 
@@ -107,14 +47,16 @@ Once you've done that, you're on easy street. Now go read my [previous article](
 
 Build a new table with distinct values from the old table, then drop and rename:
 
-<pre>CREATE TABLE new_fruits ...;
+```sql
+CREATE TABLE new_fruits ...;
 
 INSERT INTO new_fruits(fruit)
    SELECT DISTINCT fruit FROM fruits;
 
 DROP TABLE fruits;
 
-RENAME TABLE new_fruits fruits;</pre>
+RENAME TABLE new_fruits fruits;
+```
 
 ### If you can't do that...
 
@@ -124,19 +66,22 @@ Perhaps you simply can't do either of the above. Maybe your table is too large, 
 
 Here's a quick technique that uses [advanced user-variable techniques on MySQL](/blog/2006/12/15/advanced-mysql-user-variable-techniques/) to delete the rows. MySQL's server-side cursors are read-only, so some other technique has to be used. User-variables can do the trick, if you write the statement just right -- it's very touchy.
 
-<pre>set @num := 0, @type := '';
+```sql
+set @num := 0, @type := '';
 
 delete from fruits
 where greatest(0,
    @num := if(type = @type, @num + 1, 0),
-   least(0, length(@type := type))) &gt; 1
-order by type;</pre>
+   least(0, length(@type := type))) > 1
+order by type;
+```
 
 If you don't understand that, go read the article :-) This can be very efficient because it doesn't require any `GROUP BY` clause. If your rows are "naturally ordered" with all the duplicates adjacent to each other, you can even omit the `ORDER BY` clause (if your rows aren't "sorted naturally," you will miss some duplicate rows).
 
 The other obvious option is to repeatedly identify a duplicated row, find how many times it's duplicated, and delete one less than that many rows. You will need to either do this in a stored routine, or get help from some programming language. For example, in pseudo-code:
 
-<pre>set @num := 0;
+```sql
+set @num := 0;
 
 select @type := type, @num := count(*)
    from fruits
@@ -153,15 +98,14 @@ while @num > 0
    select @type := type, @num := count(*)
       from fruits
       group by type
-      having count(*) &gt; 1
+      having count(*) > 1
       limit 1;
 
-end while</pre>
+end while
+```
 
 That is pseudo-code, by the way; if you're doing this in a stored procedure, you're going to have to concatenate strings together to make an executable statement and execute it. If you're using an external programming language, you'll need to fetch the values that are duplicated and dynamically build a statement that deletes all but one row.
 
 ### Summary
 
 In this article I explained how to solve the special-case problem of removing duplicate rows with no distinguishing columns at all. It's a harder case of the general problem, and SQL has no built-in way to solve it, so you have to learn your platform's tricks to solve it. I showed you how to add a unique column so you can use the "easy" techniques I explained in an earlier article. You might also be able to put the rows into another table and drop the original table. Failing that, you have to use something like cursors. As a bonus, I explained two ways to do this in MySQL, one of them sneaky and the other not.
-
-
