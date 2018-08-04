@@ -17,6 +17,9 @@ menu:
    - name: twitter
      title: "fab fa-twitter-square"
      url: "https://twitter.com/xaprb"
+   - name: github
+     title: "fab fa-github-square"
+     url: "https://github.com/xaprb"
 params:
    author: "Baron Schwartz"
    Amazon: "xaprb-20"
