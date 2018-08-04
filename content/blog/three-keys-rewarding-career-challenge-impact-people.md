@@ -9,6 +9,7 @@ categories:
 - Entrepreneurship
 credit: https://unsplash.com/photos/9idqIGrLuTE
 image: "/media/2018/05/unsplash-photos-9idqIGrLuTE.jpg"
+thumbnail: /media/2018/05/unsplash-photos-9idqIGrLuTE.tn-256x256.jpg
 
 ---
 What makes a rewarding, fulfilling career? I keep three things in mind: being challenged every day, making an impact, and working with delightful people. Keep these three keys in mind, and you'll never wake up and dread going to work a day in your life.

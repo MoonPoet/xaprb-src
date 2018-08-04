@@ -9,6 +9,7 @@ categories:
 description: "I liked a lot about the Garmin Vivomove HR hybrid smartwatch, but overall it's unsatisfactory."
 credit: https://unsplash.com/photos/CMIesa5_y-c
 image: "/media/2018/05/unsplash-photos-CMIesa5_y-c.jpg"
+thumbnail: /media/2018/05/unsplash-photos-CMIesa5_y-c.tn-256x256.jpg
 
 ---
 I bought a [Garmin Vivomove HR smartwatch]({{< amz B074K884KQ >}}) to see if it

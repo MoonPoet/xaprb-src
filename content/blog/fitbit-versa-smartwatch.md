@@ -9,6 +9,7 @@ categories:
 description: "The Versa is Fitbit's best smartwatch to date, with a lot to like and some things that could be improved."
 credit: "https://unsplash.com/photos/DrUguS1oBGU"
 image: "/media/2018/05/unsplash-photos-DrUguS1oBGU.jpg"
+thumbnail: /media/2018/05/unsplash-photos-DrUguS1oBGU.tn-256x256.jpg
 ---
 
 I bought a [Fitbit Versa]({{< amz B07B48SQGT >}}) smartwatch and I like some aspects of it a lot. Unlike the hybrid analog/smart watches I've been trying recently, this one is a pure smartwatch with an LED display and no physical hands. I'm still evaluating.

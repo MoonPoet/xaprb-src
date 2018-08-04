@@ -5,6 +5,7 @@ url: "/blog/decision-quadrant-priority-system"
 description: "This simple rubric can clarify seemingly tough decisions by helping prioritize what matters most."
 credit: "https://unsplash.com/photos/MAgPyHRO0AA"
 image: "/media/2018/06/unsplash-photos-MAgPyHRO0AA.jpg"
+thumbnail: /media/2018/06/unsplash-photos-MAgPyHRO0AA.tn-256x256.jpg
 categories:
 - Leadership
 ---

@@ -5,6 +5,7 @@ url: "/blog/strategy"
 description: "Strategy: the most misunderstood business word?"
 credit: "https://unsplash.com/photos/A96fjzFd9cY"
 image: "/media/2018/04/unsplash-photos-A96fjzFd9cY.jpg"
+thumbnail: /media/2018/04/unsplash-photos-A96fjzFd9cY.tn-256x256.jpg
 categories:
 - Entrepreneurship
 ---

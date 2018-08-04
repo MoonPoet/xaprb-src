@@ -4,6 +4,7 @@ date: "2018-04-20T19:46:19-04:00"
 url: "/blog/generate-pixel-perfect-screenshots"
 description: "Use this simple trick to crop sequences of screenshots to exactly the same dimensions and location."
 image: "/media/2018/04/dimitri-tyan-232294-unsplash.jpg"
+thumbnail: /media/2018/04/dimitri-tyan-232294-unsplash.tn-256x256.jpg
 categories:
 - Conferences
 - Productivity

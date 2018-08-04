@@ -6,6 +6,7 @@ description: You can keep your high performing team members, or your low perform
   but not both.
 credit: https://unsplash.com/photos/CS5vT_Kin3E
 image: "/media/2018/04/unsplash-photos-CS5vT_Kin3E.jpg"
+thumbnail: /media/2018/04/unsplash-photos-CS5vT_Kin3E.tn-256x256.jpg
 categories:
 - Entrepreneurship
 

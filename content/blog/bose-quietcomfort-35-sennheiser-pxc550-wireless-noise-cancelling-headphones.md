@@ -8,6 +8,7 @@ categories:
 - Gear
 description: "Which is better: the Bose or Sennheiser noise-cancelling headphones?"
 image: "/media/2018/06/sennheiser-bose-headphones.jpg"
+thumbnail: /media/2018/06/sennheiser-bose-headphones.tn-256x256.jpg
 ---
 
 I bought pairs of [Bose QuietComfort 35 Series II]({{< amz B0756CYWWD >}}) and

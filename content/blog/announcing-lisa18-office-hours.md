@@ -7,6 +7,7 @@ categories:
 - Conferences
 credit: "https://unsplash.com/photos/JWiMShWiF14"
 image: "/media/2018/05/unsplash-photos-JWiMShWiF14.jpg"
+thumbnail: /media/2018/05/unsplash-photos-JWiMShWiF14.tn-256x256.jpg
 ---
 There will be online “office hours” with the LISA organizing committee on Thursday May 17th, at 12-1pm PST. Anyone is welcome to join and discuss possible conference speaking proposals.
 
