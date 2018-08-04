@@ -13,7 +13,9 @@ Why is this better? Because replication is a more tested way of applying binary 
 
 Replication also has the ability to correctly reproduce more types of changes than mysqlbinlog does. Try this with statement-based replication:
 
-<pre>insert into tbl(col) values(connection_id());</pre>
+```
+insert into tbl(col) values(connection_id());
+```
 
 That'll work just fine through replication, because the SQL thread on the replica will change its connection ID to match the original. It won't work through mysqlbinlog.
 

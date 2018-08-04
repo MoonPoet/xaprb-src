@@ -19,7 +19,8 @@ Interesting and significant things to mention this month:
 
 Here's the changelog:
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2009-03-31: version 1.0.14
 
@@ -224,6 +225,6 @@ Changelog for mk-visual-explain:
    * Connection options were not read from the [client] section (issue 249).
    * Set connection options immediately after connecting (issue 286).
    * Updates to shared code.
-</pre>
+```
 
 

@@ -8,7 +8,8 @@ categories:
 ---
 This isn't actually new -- it has been out for a few releases. The [mk-query-digest](http://www.maatkit.org/doc/mk-query-digest.html) tool from Maatkit now outputs information about each class of queries' variance-to-mean ratio. The new output goes in a couple of places, including perhaps most usefully the "profile" report. Here's an example from a real MySQL system:
 
-<pre># Profile
+```
+# Profile
 # Rank Query ID           Response time    Calls R/Call Apdx V/M   Item
 # ==== ================== ================ ===== ====== ==== ===== =======
 #    1 0xBFCF8E3F293F6466 11256.3618 68.1% 78069 0.1442 1.00  0.21 SELECT [redacted]
@@ -16,7 +17,7 @@ This isn't actually new -- it has been out for a few releases. The [mk-query-dig
 #    3 0xB90978440CC11CC7  1345.3445  8.1%  3520 0.3822 1.00  0.00 SHOW STATUS
 #    4 0xCB73D6B5B031B4CF  1341.6432  8.1%  3509 0.3823 1.00  0.00 SHOW STATUS
 # MISC 0xMISC               560.7556  3.4% 23930 0.0234   NS   0.0 &lt;17 ITEMS&gt;
-</pre>
+```
 
 The variance-to-mean ratio is placed in the V/M column. It is the ratio of the query response time's variance to the mean, for that class of queries. It also appears in the detailed output for the queries in the rest of the report.
 
@@ -26,7 +27,8 @@ A query with a highly variable response time is interesting not only because it 
 
 To see what I mean, let's look at the detailed report for one of the queries whose V/M ratio was 0.21:
 
-<pre># Query 1: 24.28 QPS, 3.50x concurrency, ID 0xBFCF8E3F293F6466 at byte 5590079
+```
+# Query 1: 24.28 QPS, 3.50x concurrency, ID 0xBFCF8E3F293F6466 at byte 5590079
 # This item is included in the report because it matches --limit.
 # Scores: Apdex = 1.00 [1.0], V/M = 0.21
 # Query_time sparkline: | _^_.^_ |
@@ -49,7 +51,7 @@ To see what I mean, let's look at the detailed report for one of the queries who
 #    1s  #
 #  10s+
 SELECT ... FROM ... WHERE (col1 = 87041469) AND (col2 = 1138714082) LIMIT 1\G
-</pre>
+```
 
 You can see from the Query_time distribution that this query often executes in the hundreds of microseconds, but also frequently in the hundreds of milliseconds. I redacted some details to protect client data, but this query is a primary-key lookup on an extremely large table. I'll hazard a guess here: when the data is in memory, it runs in hundreds of microseconds; and when it has to hid the disk, it takes tens to hundreds of milliseconds.
 

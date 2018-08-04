@@ -27,7 +27,8 @@ A list of simple delimited values doesn't need XML -- it's overkill. A better al
 
 Here is a user-defined function that will split a delimited set of words into a table and return the table:
 
-<pre>CREATE function dbo.fn_SplitWords (
+```
+CREATE function dbo.fn_SplitWords (
     @Words varchar(8000),
     @Delim char(1))
     returns @Words_table table(word varchar(255), ident int identity not null)
@@ -69,19 +70,22 @@ as begin
         else set @Wordstart = 0 -- Terminate the loop
     end
     return
-end</pre>
+end
+```
 
 Please note the bug I'm avoiding in the `while` loop above. I explain the [SQL Server 2000 `replace` bug](/blog/2005/11/15/a-bug-in-microsoft-sql-servers-replace-function/) in another post.
 
 Here are some test calls for the UDF:
 
-<pre>select * from dbo..fn_SplitWords('this is a test call', ' ')
+```
+select * from dbo..fn_SplitWords('this is a test call', ' ')
 select * from dbo..fn_SplitWords(' this is a test call', ' ')
 select * from dbo..fn_SplitWords('this is a test call ', ' ')
 select * from dbo..fn_SplitWords('this-is-a-test-call', '-')
 select * from dbo..fn_SplitWords('this is a test      call', ' ')
 select * from dbo..fn_SplitWords(' ', ' ')
-select * from dbo..fn_SplitWords('', ' ')</pre>
+select * from dbo..fn_SplitWords('', ' ')
+```
 
 After I wrote this, I saw someone else did the same thing elsewhere, though in my opinion very poorly implemented and explained. In any case, here's a link for the sake of completeness: [Treat Yourself to Fn_Split()](http://msdn.microsoft.com/library/en-us/dnsqlmag01/html/TreatYourself.asp)
 

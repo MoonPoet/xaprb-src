@@ -24,12 +24,14 @@ This means you can use the tool for other things. For example, you can get a lis
 
 The output is much more compact now. Here's a sample:
 
-<pre>mysql-duplicate-key-checker -d gamer -t semaphore
+```
+mysql-duplicate-key-checker -d gamer -t semaphore
 DATABASE TABLE     ENGINE OBJECT           TYPE STRUCT   PARENT        COLUMNS
 gamer    semaphore InnoDB PRIMARY          KEY  BTREE    NULL          `i`
 gamer    semaphore InnoDB i                KEY  BTREE    NULL          `i`
 gamer    semaphore InnoDB semaphore_ibfk_1 FK   NULL     `gamer`.`foo` `i`
-gamer    semaphore InnoDB semaphore_ibfk_2 FK   NULL     `gamer`.`foo` `i`</pre>
+gamer    semaphore InnoDB semaphore_ibfk_2 FK   NULL     `gamer`.`foo` `i`
+```
 
 You only see output if you have duplicated indexes or foreign keys (unless you disable the filtering, in which case you'll see everything). I deliberately added some duplicate keys to that table.
 

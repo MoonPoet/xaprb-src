@@ -27,7 +27,8 @@ Here's how I verify all my replicas are in sync with the master:
 
 MySQL Table Checksum makes this very easy. Here's how:
 
-<pre># Take a fast initial checksum and save to a file
+```
+# Take a fast initial checksum and save to a file
 $ mysql-table-checksum --slavelag master replica1 replica2 \
    | tee checksums
 
@@ -37,7 +38,8 @@ $ mysql-checksum-filter --master master checksums
 # Run again on the bad table(s), this time forcing
 # replicas to checksum at the same binlog position
 $ mysql-table-checksum --databases db1 --tables tbl1,tbl2 \
-  --wait 600 master replica1 replica2 | tee bad_checksums</pre>
+  --wait 600 master replica1 replica2 | tee bad_checksums
+```
 
 ### I found differences. What now?
 

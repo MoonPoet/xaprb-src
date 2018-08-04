@@ -23,17 +23,20 @@ For simplicity's sake, I'm also going to imagine that nothing ever deletes any r
 
 Here's the table definition:
 
-<pre>CREATE TABLE q (
+```
+CREATE TABLE q (
    id int NOT NULL,
    modulo int NOT NULL,
    fruit varchar(10) NOT NULL,
    PRIMARY KEY(id),
    UNIQUE KEY(modulo)
-)</pre>
+)
+```
 
 This table has two unique keys: one to serve as a monotonically increasing "row number," and one to cause the wrap-around effect to work. The only real data is the `fruit` column. Here's a query to insert "apples" into the queue:
 
-<pre>insert into q(id, modulo, fruit)
+```
+insert into q(id, modulo, fruit)
    select
       (coalesce(max(id), -1) + 1),
       (coalesce(max(id), -1) + 1) mod 5,
@@ -41,7 +44,8 @@ This table has two unique keys: one to serve as a monotonically increasing "row 
    from q
       on duplicate key update
          id    = values(id),
-         fruit = values(fruit)</pre>
+         fruit = values(fruit)
+```
 
 Here's what the query does: it finds the maximum value of `id` in the table, which ought to be efficient since it's indexed. If there are no rows, the result will be `NULL`, which `COALESCE()` converts into -1. Then it adds one to that value, which will become the next largest value in the `id` sequence. What I'm really doing here is rolling my own `AUTO_INCREMENT`, with a slight twist: the sequence starts at zero, not one.
 
@@ -49,16 +53,19 @@ The sequence needs to start at zero to make the modulo arithmetic easy to unders
 
 Here's what the table contains after the above insert:
 
-<pre>select * from q;
+```
+select * from q;
 +----+--------+--------+
 | id | modulo | fruit  |
 +----+--------+--------+
 |  0 |      0 | apples |
-+----+--------+--------+</pre>
++----+--------+--------+
+```
 
 Let me now insert four more rows for oranges, peaches, cherries and pears, so the queue is full:
 
-<pre>insert into q(id, modulo, fruit)
+```
+insert into q(id, modulo, fruit)
    select
       (coalesce(max(id), -1) + 1),
       (coalesce(max(id), -1) + 1) mod 5,
@@ -96,16 +103,20 @@ insert into q(id, modulo, fruit)
    from q
       on duplicate key update
          id    = values(id),
-         fruit = values(fruit);</pre>
+         fruit = values(fruit);
+```
 
 Each row I inserted caused MySQL to print the following back to the command prompt:
 
-<pre>Query OK, 1 row affected (0.05 sec)
-Records: 1  Duplicates: 0  Warnings: 0</pre>
+```
+Query OK, 1 row affected (0.05 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+```
 
 And now, the contents of the table:
 
-<pre>select * from q;
+```
+select * from q;
 +----+--------+----------+
 | id | modulo | fruit    |
 +----+--------+----------+
@@ -114,11 +125,13 @@ And now, the contents of the table:
 |  2 |      2 | peaches  |
 |  3 |      3 | cherries |
 |  4 |      4 | pears    |
-+----+--------+----------+</pre>
++----+--------+----------+
+```
 
 Now I'll insert another row for bananas:
 
-<pre>insert into q(id, modulo, fruit)
+```
+insert into q(id, modulo, fruit)
    select
       (coalesce(max(id), -1) + 1),
       (coalesce(max(id), -1) + 1) mod 5,
@@ -126,16 +139,20 @@ Now I'll insert another row for bananas:
    from q
       on duplicate key update
          id    = values(id),
-         fruit = values(fruit);</pre>
+         fruit = values(fruit);
+```
 
 That query should have wrapped around to the beginning of the queue and triggered the unique index violation. As a result, MySQL should have overwritten the 'apples' row. In fact, the messages at the command prompt indicate something did happen:
 
-<pre>Query OK, 2 rows affected (0.03 sec)
-Records: 1  Duplicates: 1  Warnings: 0</pre>
+```
+Query OK, 2 rows affected (0.03 sec)
+Records: 1  Duplicates: 1  Warnings: 0
+```
 
 Two rows were "affected" because of the duplicate key (you can read the MySQL manual for more on what "rows affected" really means). And there was indeed a duplicate row. Here's what's in the table now:
 
-<pre>select * from q order by modulo;
+```
+select * from q order by modulo;
 +----+--------+----------+
 | id | modulo | fruit    |
 +----+--------+----------+
@@ -144,11 +161,13 @@ Two rows were "affected" because of the duplicate key (you can read the MySQL ma
 |  2 |      2 | peaches  |
 |  3 |      3 | cherries |
 |  4 |      4 | pears    |
-+----+--------+----------+</pre>
++----+--------+----------+
+```
 
 Notice I ordered that query by `modulo` to show the entries in the same order as before. The "oldest" row, which is at the "front" of the queue, is now the one with the smallest value of `id`, so to see them "in queue order," you can order by `id`:
 
-<pre>select * from q order by id;
+```
+select * from q order by id;
 +----+--------+----------+
 | id | modulo | fruit    |
 +----+--------+----------+
@@ -157,18 +176,21 @@ Notice I ordered that query by `modulo` to show the entries in the same order as
 |  3 |      3 | cherries |
 |  4 |      4 | pears    |
 |  5 |      0 | bananas  |
-+----+--------+----------+</pre>
++----+--------+----------+
+```
 
 ### Method two: use `REPLACE` on MySQL
 
 If it's easier to write your query this way, or you need support on older versions of MySQL, you can use `REPLACE` instead of `INSERT... ON DUPLICATE KEY UPDATE`. Here's an example:
 
-<pre>replace into q(id, modulo, fruit)
+```
+replace into q(id, modulo, fruit)
    select
       (coalesce(max(id), -1) + 1),
       (coalesce(max(id), -1) + 1) mod 5,
       'bananas'
-   from q;</pre>
+   from q;
+```
 
 The query *may* be more or less efficient, depending on your MySQL version, the storage engine you chose, and so forth. If I were doing this in production, I'd test it.
 

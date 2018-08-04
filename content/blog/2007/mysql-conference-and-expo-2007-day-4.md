@@ -99,11 +99,13 @@ Brian talked for a few minutes about real-time data warehousing where you need t
 
 The data warehousing Holy Grail is to use all hash joins for joining fact and dimension tables, but MySQL doesn't (yet) support hash joins. However, you can simulate it with MEMORY tables, which have HASH indexes. You have to do some tricks like keeping a disk (MyISAM) and memory table updated together, and loading the memory tables automatically on server start, but apparently this is a really good technique. Your joins then take the general form
 
-<pre>SELECT ..
+```
+SELECT ..
 FROM (
    SELECT [MyISAM tables]
 ) INNER JOIN [MEMORY tables]
-GROUP ...</pre>
+GROUP ...
+```
 
 The effect is similar to a hash join.
 

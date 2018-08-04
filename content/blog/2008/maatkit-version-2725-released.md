@@ -10,7 +10,8 @@ This release of [Maatkit](http://www.maatkit.org/) is basically all about [mk-lo
 
 Major changes:
 
-<pre>* Added --analyze option to combine analysis and --review (issue 162).
+```
+* Added --analyze option to combine analysis and --review (issue 162).
    * Added --fingerprints (-f) option (issue 160).
    * Trying to take log of 0 caused a crash (issue 141).
    * Improved performance of log parsing and fingerprinting about 2x (issue 137).
@@ -20,7 +21,7 @@ Major changes:
    * Incompatible changes to fingerprint; old reviews will lose their history.
    * Much enhanced --review functionality.
    * Default --top to 95% to analyze the top 95% of the load (issue 171).
-</pre>
+```
 
 That's just the major stuff. Note that it's in very active development, and [that will probably continue](http://code.google.com/p/maatkit/issues/list?q=tool:mk_log_parser). However, the documentation is now up-to-date and pretty complete.
 

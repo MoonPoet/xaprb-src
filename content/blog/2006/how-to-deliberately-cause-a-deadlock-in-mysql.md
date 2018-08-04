@@ -13,12 +13,15 @@ Since the only purpose of causing a deadlock is to shrink the InnoDB monitor's t
 
 First, choose an unused table name. I'll use `test.innodb_deadlock_maker`. Here are the statements you need to execute:
 
-<pre>create table test.innodb_deadlock_maker(a int primary key) engine=innodb;
-insert into test.innodb_deadlock_maker(a) values(0), (1);</pre>
+```
+create table test.innodb_deadlock_maker(a int primary key) engine=innodb;
+insert into test.innodb_deadlock_maker(a) values(0), (1);
+```
 
 Now the table and its data are set up. Next, execute the following on two different connections:
 
-<pre>-- connection 0
+```
+-- connection 0
 set transaction isolation level serializable;
 start transaction;
 select * from test.innodb_deadlock_maker where a = 0;
@@ -28,7 +31,8 @@ update test.innodb_deadlock_maker set a = 0 where a &lt;&gt; 0;
 set transaction isolation level serializable;
 start transaction;
 select * from test.innodb_deadlock_maker where a = 1;
-update test.innodb_deadlock_maker set a = 1 where a &lt;&gt; 1;</pre>
+update test.innodb_deadlock_maker set a = 1 where a &lt;&gt; 1;
+```
 
 *Voila*, you have a deadlock. Notice how connection 0 and connection 1 run the same statements, except they use a different value in their `WHERE` and `SET` clauses. This makes it easy to write a program to run these statements, and just pass in a value each connection should use.
 
@@ -46,14 +50,16 @@ If you need to use a different table for the deadlock, you can edit the configur
 
 Programmers sometimes play "golf" in their language, by seeing how few strokes they need to solve some problem. How small can you make your deadlock? It's not hard to cause a deadlock on a single-row table in just three statements, assuming `AutoCommit` is 0. Starting with the same table structure as above, but with no rows in the table:
 
-<pre>-- Connection 0
+```
+-- Connection 0
 insert into test.innodb_deadlock_maker values(1);
 
 -- Connection 1
 select * from test.innodb_deadlock_maker for update;
 
 -- Connection 0
-insert into test.innodb_deadlock_maker values(0);</pre>
+insert into test.innodb_deadlock_maker values(0);
+```
 
 This trick works because of the same principle I explained in a [previous article on deadlocks](/blog/2006/08/03/a-little-known-way-to-cause-a-database-deadlock/). The statements are asymmetrical, so it's not the method I use for innotop, but I think it's a minimal deadlock. I can't think of a way to prove it formally, but I don't think you can do it in less than three statements.
 

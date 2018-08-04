@@ -23,23 +23,27 @@ Since MySQL is Free Software, I was able to patch InnoDB and MySQL the way I wan
 
 With this patch, you get two new server variables, which you can set in either your `my.cnf` file, or dynamically via SET GLOBAL. By default, they are as follows:
 
-<pre>mysql> show variables like 'innodb_show%';
+```
+mysql> show variables like 'innodb_show%';
 +---------------------------+-------+
 | Variable_name             | Value |
 +---------------------------+-------+
 | innodb_show_locks_held    | 10    | 
 | innodb_show_verbose_locks | 0     | 
-+---------------------------+-------+</pre>
++---------------------------+-------+
+```
 
 The first is the number of locks to print for each transaction. The second is whether to print the verbose record dumps for each lock. (My advice is to leave the second variable at 0).
 
 Now when you run `SHOW INNODB STATUS`, you'll see something like the following in the TRANSACTIONS section:
 
-<pre>---TRANSACTION 0 268216580, ACTIVE 27 sec, process no 16382, OS thread id 2424191888
+```
+---TRANSACTION 0 268216580, ACTIVE 27 sec, process no 16382, OS thread id 2424191888
 2 lock struct(s), heap size 320
 MySQL thread id 8, query id 949 localhost 192.168.0.5 xaprb
 TABLE LOCK table `test/t1` trx id 0 268216580 lock mode IX
-RECORD LOCKS space id 0 page no 2670602 n bits 72 index `PRIMARY` of table `test/t1` trx id 0 268216580 lock_mode X locks rec but not gap</pre>
+RECORD LOCKS space id 0 page no 2670602 n bits 72 index `PRIMARY` of table `test/t1` trx id 0 268216580 lock_mode X locks rec but not gap
+```
 
 I caused that output by doing a `SELECT FOR UPDATE` query on an InnoDB table in a transaction.
 

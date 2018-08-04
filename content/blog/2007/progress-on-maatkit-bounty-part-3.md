@@ -30,7 +30,8 @@ Whew! So what isn't done yet?
 
 Here's a sample of what it can do, using a replication sandbox I set up with Giuseppe's [MySQL Sandbox](http://sourceforge.net/projects/mysql-sandbox). The sandbox contains a copy of the Sakila sample database. I'll just mangle a few films on the replicas:
 
-<pre>baron@kanga:~$ cd rsandbox_5_0_45/
+```
+baron@kanga:~$ cd rsandbox_5_0_45/
 baron@kanga:~/rsandbox_5_0_45$ ./s1
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 6
@@ -54,16 +55,19 @@ replica2 [localhost] {msandbox} ((none)) &gt; update sakila.film set title='acad
 Query OK, 1 row affected, 1 warning (0.05 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
-replica2 [localhost] {msandbox} ((none)) &gt; Bye</pre>
+replica2 [localhost] {msandbox} ((none)) &gt; Bye
+```
 
 OK, now I've messed up the first 12 films on one replica, and the first 1 on another. I could just go ahead and sync them right away, but first I'll do a table checksum to demonstrate that functionality:
 
-<pre>baron@kanga:~/rsandbox_5_0_45$ mk-table-checksum --replicate=test.checksum --port=16045 127.0.0.1 -q
-</pre>
+```
+baron@kanga:~/rsandbox_5_0_45$ mk-table-checksum --replicate=test.checksum --port=16045 127.0.0.1 -q
+```
 
 And now I'll tell the sync tool to go fix the differences the checksum revealed:
 
-<pre>baron@kanga:~/rsandbox_5_0_45$ mk-table-sync  --replicate=test.checksum h=127.0.0.1,P=16045 -vx
+```
+baron@kanga:~/rsandbox_5_0_45$ mk-table-sync  --replicate=test.checksum h=127.0.0.1,P=16045 -vx
 # Syncing P=16046,h=127.0.0.1
 # DELETE INSERT UPDATE ALGORITHM DATABASE.TABLE
 #      0      0     12 Chunk     sakila.film
@@ -73,7 +77,7 @@ And now I'll tell the sync tool to go fix the differences the checksum revealed:
 #      0      0      0 Chunk     sakila.film
 #      0      0      0 Chunk     sakila.film_text
 baron@kanga:~/rsandbox_5_0_45$ 
-</pre>
+```
 
 Pretty easy, huh? Take a look at the output: the first thing it did was fix the 12 films I changed. `sakila.film` has a trigger that updates `sakila.film_text`, so that table got changed too. The checksum tool caught this difference, but the differences were gone by the time the sync tool examined them, again due to the trigger. On the second replica, no differences were found at all, because the changes to the first replica were made on the master, automatically fixing the second replica. (This won't always be the case, but it worked in this example).
 

@@ -9,9 +9,9 @@ When gaining access to resources, such as loading a DLL or invoking a program, b
 
 ### Invoking an executable program
 
-If you do not specify the absolute location of the executable, where does the OS look for it? In Microsoft Windows, the search path is first in the current directory, then in the $PATH environment variable. This leads to a very easy exploit: find out the current directory, then place a compromised executable in that location, named the same as a standard executable like notepad.exe. Now when the user types <kbd>notepad file.txt</kbd>, the fake "notepad" executes and does whatever it wants.
+If you do not specify the absolute location of the executable, where does the OS look for it? In Microsoft Windows, the search path is first in the current directory, then in the $PATH environment variable. This leads to a very easy exploit: find out the current directory, then place a compromised executable in that location, named the same as a standard executable like notepad.exe. Now when the user types `notepad file.txt`, the fake "notepad" executes and does whatever it wants.
 
-UNIX solves this problem by forcing you to explicitly specify "I mean the executable in the current directory." If you want to execute <kbd>prog</kbd> in the current directory, you must type <kbd>./prog</kbd>. Otherwise the search path is in $PATH only. You can override this by adding "." to $PATH, but only a very foolish user would do that.
+UNIX solves this problem by forcing you to explicitly specify "I mean the executable in the current directory." If you want to execute `prog` in the current directory, you must type `./prog`. Otherwise the search path is in $PATH only. You can override this by adding "." to $PATH, but only a very foolish user would do that.
 
 ### The .NET Global Application Cache
 

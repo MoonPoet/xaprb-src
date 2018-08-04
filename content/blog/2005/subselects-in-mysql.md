@@ -13,7 +13,8 @@ The basic principle that makes this work is this: a subquery in the FROM clause 
 
 I'll demonstrate how to add a sum across two grouped subqueries with a single grouped select. The three example tables are as follows:
 
-<pre>create table category (
+```
+create table category (
     uid int primary key,
     title varchar(50)
 );
@@ -27,7 +28,8 @@ create table bulk_checkout (
     uid int primary key,
     cat int,
     qty int
-);</pre>
+);
+```
 
 These tables represent a very simplified version of an inventory system I maintain. Items are entered individually where possible, and tagged with their ID number; tents, bikes etc are entered individually, with a quantity of 1. There are also items that we don't count separately, such as AA batteries. These are entered together as a single item, and given a quantity of 30, for example.
 
@@ -37,7 +39,8 @@ When we check items out, we either check out a certain item, say item #47, or we
 
 The example query is a summary of item count and checked-out count, grouped by category. Here is how I would write this query with subqueries:
 
-<pre>select
+```
+select
   category.title,
   it.qty,
   coalesce(it.qtyout, 0)
@@ -55,13 +58,15 @@ from category
     select cat, sum(qty) as qtyout
     from bulk_checkout
     group by cat
-  ) as bulk on bulk.cat = category.uid</pre>
+  ) as bulk on bulk.cat = category.uid
+```
 
 ### A failed attempt
 
 Here is how I first tried to write this without subqueries. It will not work; see if you can figure out why:
 
-<pre>select
+```
+select
   category.title,
   sum(it.qty) as qty,
   sum(
@@ -70,7 +75,8 @@ Here is how I first tried to write this without subqueries. It will not work; se
 from category
   left outer join item as it on it.cat = category.uid
   left outer join bulk_checkout
-    on bulk_checkout.cat = category.uid</pre>
+    on bulk_checkout.cat = category.uid
+```
 
 It will not work because the joins may cause rows to appear more than once in the result set, which will cause them to be counted too many times in the sums. For instance, if there are two entries in `bulk_checkout` for category 1, every row in `item` for category 1 will be duplicated, and the `qty` will be twice too large. You may think you can divide by `count(*)`, or take averages, or do some other such magic, but I don't think there is a way to do so. Leave a comment if you find a way to do it!
 
@@ -80,7 +86,8 @@ Why is this? The subselects need to be independent, so rows in bulk`_checkout` a
 
 I need a way to join to both tables in one query, while having the effect of two queries that each join only to one of them. How is this possible? I can think of only one way: join on some mutually exclusive values, so rows from one table aren't mixed with rows from the other table. A [mutex table](/blog/2005/09/22/mutex-tables-in-sql/) is the only answer I am aware of. Here is the query written with the mutex table:
 
-<pre>select category.title, sum(it.qty) as qty,
+```
+select category.title, sum(it.qty) as qty,
   sum(
     case when checkedout = 1 then it.qty else 0 end
     + coalesce(bulk_checkout.qty, 0)) as qtyout
@@ -90,7 +97,8 @@ from category
     on it.cat = category.uid and i = 0
   left outer join bulk_checkout
     on bulk_checkout.cat = category.uid and i = 1
-group by category.title</pre>
+group by category.title
+```
 
 I'm not saying subqueries should be rewritten like this. If your RDBMS supports them, subqueries can simplify and clarify queries, and may improve query performance (if you're using them as you should). The mutex technique actually results in 50% null values on the right-hand side, which hurts performance. There is also another table in the join, which depending on the query plan chosen will cause twice the probing, inner looping, or hashing (because it has two rows). There is also grouping, which requires sorting (bad), and coalescing, (negligible).
 

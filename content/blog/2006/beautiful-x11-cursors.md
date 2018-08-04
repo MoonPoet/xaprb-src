@@ -61,13 +61,17 @@ There's a concept of a default theme. The default theme is located in the `defau
 
 If you installed your theme system-wide or system-wide local, you need to edit the `/usr/share/cursors/xorg-x11/default/index.theme` or the `/usr/local/share/cursors/xorg-x11/default/index.theme` file. Specify the default theme should **inherit from** the theme you want to use. For example, here is the default X11 theme if you haven't specified anything else:
 
-<pre>[Icon Theme]
-Inherits=core</pre>
+```
+[Icon Theme]
+Inherits=core
+```
 
 That file tells X11 to use the `core` cursor theme -- the one built right into X11 itself. If you want to use the `neutral` theme instead, edit the file thusly:
 
-<pre>[Icon Theme]
-Inherits=neutral</pre>
+```
+[Icon Theme]
+Inherits=neutral
+```
 
 If you installed the theme in your `~/.icons/` directory, you can do several different things:
 

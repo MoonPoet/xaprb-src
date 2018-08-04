@@ -19,21 +19,27 @@ It's sometimes desirable *not* to use the provided feature. For instance, I migh
 
 In these cases, it's possible to generate the next value in the insert statement. Suppose my table looks like this:
 
-<pre>create table t1 (
+```
+create table t1 (
     c1 int not null primary key,
     c2 int not null
-);</pre>
+);
+```
 
 The next value for `c1` is simply the maximum value + 1. If there is no maximum value, it is 1, which is the same as 0 + 1.
 
-<pre>select 1 + coalesce(max(c1), 0) as next
-from t1;</pre>
+```
+select 1 + coalesce(max(c1), 0) as next
+from t1;
+```
 
 There are platform-dependent ways to write that statement as well, such as using SQL Server's `ISNULL` function or MySQL's `IFNULL`. This code can be combined into an `INSERT` statement, such as the following statement to insert 3 into the second column:
 
-<pre>insert into t1 (c1, c2)
+```
+insert into t1 (c1, c2)
     select 1 + coalesce(max(c1), 0), 3
-    from t1;</pre>
+    from t1;
+```
 
 The code above is a single atomic statement and will prevent any two concurrent inserts from getting the same value for `c1`. It is *not* safe to find the next value in one statement and use it in another, unless both statements are in a transaction. I would consider that a bad idea, though. There's no need for a transaction in the statement above.
 
@@ -43,16 +49,19 @@ Downsides to this approach are inability to find the value of `c1` immediately a
 
 Surrogate keys are often considered very bad practice, for a variety of good reasons I won't discuss here. Sometimes, though, there is just nothing for it but to artificially unique-ify the data. In these cases, a sequence number can often be a less evil approach. A sequence is just a surrogate key that restarts at 1 for each group of related records. For example, consider a table of log entries related to records in my `t1` table:
 
-<pre>create table t1log(
+```
+create table t1log(
     t1 int not null references t1(c1),
     seq int not null,
     message varchar(50) not null,
     primary key(t1, seq)
-);</pre>
+);
+```
 
 At this point I might want to enter some more records (0, 11) into `t1`:
 
-<pre>insert into t1 (c1, c2)
+```
+insert into t1 (c1, c2)
     select 1 + coalesce(max(c1), 0), 0 from t1;
 insert into t1 (c1, c2)
     select 1 + coalesce(max(c1), 0), 11 from t1;
@@ -63,21 +72,25 @@ select * from t1;
 | 1  | 3  |
 | 2  | 0  |
 | 3  | 11 |
-+----+----+</pre>
++----+----+
+```
 
 Now suppose I want the following three log entries for the first row in `t1`:
 
-<pre>+----+------------------+
+```
++----+------------------+
 | t1 | message          |
 +----+------------------+
 | 1  | Sent to customer |
 | 1  | Received reply   |
 | 1  | Responded        |
-+----+------------------+</pre>
++----+------------------+
+```
 
 There's no good primary key in this data. I will have to add a surrogate key. It might seem I could add a date-time column instead, but that's a dangerous design. It breaks as soon as two records are inserted within a timespan less than the maximum resolution of the data type. It also breaks if two records are inserted in a single transaction where the time is consistent from the first to the last statement. I'm much happier with a sequence column. The following statement will insert the log records as desired:
 
-<pre>insert into t1log(t1, seq,message)
+```
+insert into t1log(t1, seq,message)
     select 1, 1 + coalesce(max(seq), 0), "Sent to customer"
     from t1log
     where t1 = 1;
@@ -96,11 +109,13 @@ insert into t1log(t1, seq,message)
 | 1  | 1   | Sent to customer |
 | 1  | 2   | Received reply   |
 | 1  | 3   | Responded        |
-+----+-----+------------------+</pre>
++----+-----+------------------+
+```
 
 If I want to enter a log record on another record in `t1`, the sequence will start at 1 for it:
 
-<pre>insert into t1log(t1, seq,message)
+```
+insert into t1log(t1, seq,message)
     select 11, 1 + coalesce(max(seq), 0), "Deleted"
     from t1log
     where t1 = 11;
@@ -112,7 +127,8 @@ If I want to enter a log record on another record in `t1`, the sequence will sta
 | 1  | 2   | Received reply   |
 | 1  | 3   | Responded        |
 | 11 | 1   | Deleted          |
-+----+-----+------------------+</pre>
++----+-----+------------------+
+```
 
 MySQL actually allows an `AUTO_INCREMENT` value to serve as a sequence for certain table types (MyISAM and BDB). To do tihs, just make the column the last column in a multi-column primary key. I'm not aware of any other RDBMS that does this.
 

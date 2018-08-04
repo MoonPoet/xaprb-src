@@ -23,7 +23,7 @@ There are [upgrade instructions](http://code.google.com/p/mysql-cacti-templates/
 
 The full changelog follows.
 
-<pre>
+```
 2011-01-22: version 1.1.8
 
   * The cache file names could conflict due to omitting --port (issue 171).
@@ -37,6 +37,6 @@ The full changelog follows.
   * Added a minimum option to the template construction logic (issue 169).
   * Added memtotal for Memory (issue 146).
   * make-template.pl sanity checks were too strict (issue 168).
-</pre>
+```
 
 

@@ -22,7 +22,7 @@ There are [upgrade instructions](http://code.google.com/p/mysql-cacti-templates/
 
 The full changelog follows.
 
-<pre>
+```
 2010-01-10: version 1.1.6
 
   * Added OpenVZ graphs (--type openvz) (issue 95).
@@ -37,6 +37,6 @@ The full changelog follows.
   * There was ambiguity (but no error) in SHOW STATUS overrides (issue 106).
   * It was hard to debug failures caused by missing ext/mysql (issue 105).
   * Code to make ss_get_mysql_stats.php testable was broken (issue 108).
-</pre>
+```
 
 

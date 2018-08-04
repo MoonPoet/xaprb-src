@@ -15,7 +15,8 @@ I just uploaded the 1.0.0 release of my [MySQL templates for Cacti](http://code.
 > performance management](https://vividcortex.com/monitoring/postgres/) among many
 > other features.
 
-<pre>2008-06-01: version 1.0.0
+```
+2008-06-01: version 1.0.0
 
 	* Fixed when SHOW MASTER LOGS has no File_size column.
 	* Fixed Cacti-version-specific problems with include files.
@@ -24,6 +25,7 @@ I just uploaded the 1.0.0 release of my [MySQL templates for Cacti](http://code.
 	* Fixed make-template.pl issues when downloaded from SVN.
 	* Replication graph shows only replica_lag instead of Seconds_behind_master
 	* Generate a version for Cacti 0.8.6i.
-	* Support generating custom versions with make-template.pl.</pre>
+	* Support generating custom versions with make-template.pl.
+```
 
 

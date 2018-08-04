@@ -19,13 +19,15 @@ Why did it die? Because when I logged out, the shell sent the SIGHUP signal to a
 
 There's a way to do this, though: press Control-Z, type 'bg', and then type 'disown %1&#8242;. Now the job won't get the SIGHUP signal. Here's a demo:
 
-<pre>baron@kanga:~$ run_forrest_run 
+```
+baron@kanga:~$ run_forrest_run 
 CTRL-Z
 [1]+  Stopped                 run_forrest_run
 baron@kanga:~$ bg
 [1]+ run_forrest_run &#038;
 baron@kanga:~$ disown %1
-baron@kanga:~$</pre>
+baron@kanga:~$
+```
 
 That's method one: [disown](http://linux.die.net/man/1/disown) the job. It has a variety of shortcomings, though. Let's see what Method 2 has to offer.
 
@@ -37,14 +39,15 @@ What's the difference? Whereas disown is a job control feature that is part of t
 
 Demo time:
 
-<pre>baron@kanga:~$ nohup run_forrest_run 
+```
+baron@kanga:~$ nohup run_forrest_run 
 nohup: ignoring input and appending output to `nohup.out'
 CTRL-Z
 [1]+  Stopped                 nohup run_forrest_run
 baron@kanga:~$ bg
 [1]+ nohup run_forrest_run &#038;
 baron@kanga:~$ 
-</pre>
+```
 
 I consider both of these really crude, though. For example, after you log back in, how do you attach your terminal to the program's standard input to type answers if it wants to ask you questions? This is just one thing that's not ideal. You know what's elegant? Method 3.
 

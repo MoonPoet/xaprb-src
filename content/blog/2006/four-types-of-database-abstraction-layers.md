@@ -66,11 +66,15 @@ Type 2 software's goal is presenting your code a common API for different databa
 
 The third type of software tries to abstract away the differences in SQL dialect between different database systems. For example, in some databases, you insert a row by the following SQL:
 
-<pre>insert into table(col, col, col) values (val, val, val)</pre>
+```
+insert into table(col, col, col) values (val, val, val)
+```
 
 In others, you may do this:
 
-<pre>insert into table set col = val, col = val, col = val</pre>
+```
+insert into table set col = val, col = val, col = val
+```
 
 Type 3 software wants to help you avoid writing SQL so you can express in your code what you want the SQL to do, and let the abstraction layer sort out how to tell the database server to do it. This is typically accomplished with a non-SQL interface, such as in PHP's [PEAR::MDB2](http://pear.php.net/manual/en/package.database.mdb2.php) package. From the documentation:
 

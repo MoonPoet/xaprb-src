@@ -13,7 +13,8 @@ I wrote recently about the theoretical problems caused by `UPDATE` statements wi
 
 The application for this query is to update a table with aggregated clicks per day from a table of click-tracking data for online advertising. I have pre-populated the `aggregate` table, with one row per ad per day, over the time period I'm interested in. I have a table called `tracking` that holds non-aggregated click data. Here are the simplified table structures:
 
-<pre>create table aggregate(
+```
+create table aggregate(
     day date not null,
     ad int not null,
     clicks int,
@@ -27,7 +28,8 @@ create table tracking (
     clicktype enum('real','fraud','unknown') not null,
     clicks int not null,
     unique index(day, ad, clicktype)
-) type=InnoDB;</pre>
+) type=InnoDB;
+```
 
 Since the tables are InnoDB, the clustered index is the primary key. Notice two things about the `tracking` table: it has a surrogate key so it's not clustered on the natural primary key (day, ad, clicktype), and clicks are separated out by clicktype, so I'll have to aggregate the clicks I want. These are the design constraints I have to work with; I didn't design the table.
 
@@ -35,7 +37,8 @@ For this article, I populated my tables with some pseudo-random data. First, I f
 
 Given a [numbers table](/blog/2005/12/07/the-integers-table/) with at least 1,000 rows, here are scripts to populate the tables. The second query will probably take a while to run, and will create a medium-sized chunk of data, so don't think something is wrong when it keeps on grinding (15 minutes isn't unreasonable). By the way, it's not a good idea to run these queries on a production server!
 
-<pre>insert into aggregate(day, ad)        
+```
+insert into aggregate(day, ad)        
     select date_add('2006-01-01', interval a.i - 1 day), b.i
     from number as a
         cross join number as b 
@@ -53,13 +56,15 @@ insert into tracking(day, ad, clicktype, clicks)
             union all select 'fraud'
             union all select 'unknown'
         ) as c
-    where a.i &lt;= 1000 and b.i &lt;= 1000;</pre>
+    where a.i &lt;= 1000 and b.i &lt;= 1000;
+```
 
 Now that the tables are set up, I'll move on to the queries. Since MySQL doesn't provide really good tools to profile queries, I ran these queries several times, disregarding the first run because it may not have been cached the same way as subsequent runs. The first query is the "bad, evil" way to do it. The second is the official, standards-compliant way.
 
 Notice that the first query is a join, but the second query is a dependent (correlated) subquery, where the subquery refers to values in the enclosing query. They are equivalent, but the query plan is likely to be completely different. My goal here is to measure the performance characteristics of the two methods.
 
-<pre>update aggregate as a
+```
+update aggregate as a
     inner join (
         select day, ad, sum(t.clicks) as c
         from tracking as t
@@ -75,7 +80,8 @@ update aggregate as a
         where t.day = a.day
             and t.ad = a.ad
             and t.clicktype in ('real', 'unknown')
-    );</pre>
+    );
+```
 
 The first query runs in 96.4 seconds on my machine, plus or minus .15 seconds. The second runs in 0.02 seconds consistently. That's a pretty big performance difference. Since these are `UPDATE` statements, I can't `EXPLAIN` them and see exactly what the optimizer is doing differently, but I know one thing: the first query fails entirely when the `tracking` table has 30 million rows instead of 3 million, because it runs out of space for locks.
 
@@ -93,7 +99,8 @@ Moral of the story: try different ways of doing the same thing!
 
 I have mentioned before, without going into specifics, that using joins instead of subqueries can be hugely more efficient. Even though two queries might mean the same thing, and even though you're supposed to tell the server **what** to do and let it figure out **how**, sometimes you just have to tell it how. Otherwise, the query optimizer might choose a really stupid query plan. I ran into an example of this recently. I have a three-level hierarchy of tables: `category`Â¸ `subcategory`, and `item`. There are a few thousand rows in `category`, a few hundred thousand in `subcategory`, and millions in `item`. You can disregard the `category` table from now on; I mentioned it for context, but it's not used in the queries. Here are the table create statements:
 
-<pre>create table subcategory (
+```
+create table subcategory (
     id int not null primary key,
     category int not null,
     index(category)
@@ -103,11 +110,13 @@ create table item(
     id int not null auto_increment primary key,
     subcategory int not null,
     index(subcategory)
-) engine=InnoDB;</pre>
+) engine=InnoDB;
+```
 
 I'll fill the tables with some sample data again:
 
-<pre>insert into subcategory(id, category)
+```
+insert into subcategory(id, category)
     select i, i/100 from number
     where i &lt;= 300000;
 
@@ -129,13 +138,15 @@ insert into item (subcategory)
     select subcategory
     from t
         cross join number
-    where i &lt; 2000;</pre>
+    where i &lt; 2000;
+```
 
 Again, these queries may take a while to complete, and are not suitable for a production machine. The idea is to insert pseudo-random numbers of rows into `item`, so each subcategory has between 1 and 2018 items. It's not a completely realistic distribution, but it'll do.
 
 I want to find all subcategories containing more than 2000 items in a given category. First, I find a subcategory with more than 2000 items, then use its category in the rest of the queries that follow. Here are queries that will do this:
 
-<pre>select c.id
+```
+select c.id
 from subcategory as c
     inner join item as i on i.subcategory = c.id
 group by c.id
@@ -143,22 +154,26 @@ having count(*) &gt; 2000;
 
 -- choose one of the results, then
 select * from subcategory where id = ????
--- result: category = 14</pre>
+-- result: category = 14
+```
 
 Now that I have found a suitable value (14), I'll use it in subsequent queries. Here's my query to find all subcategories with more than 2000 items in category 14:
 
-<pre>select c.id
+```
+select c.id
 from subcategory as c
     inner join item as i on i.subcategory = c.id
 where c.category = 14
 group by c.id
-having count(*) &gt; 2000;</pre>
+having count(*) &gt; 2000;
+```
 
 In my specific data, there are 10 rows in the results, and the query finishes in a couple of seconds. `EXPLAIN` shows good index usage; it's not a bad query at all, considering the table size. The query plan is to just run through ranges on some indexes and count the entries. So far, so good.
 
 Now suppose I wanted to grab all columns from `subcategory`. I could join the results of the above query as a subquery, or select `MAX` or some such (since I know the values will be [unique over the grouping set](/blog/2006/03/11/many-to-one-problems-in-sql/)), but I could also do the following, right?
 
-<pre>select * from subcategory
+```
+select * from subcategory
 where id in (
     select c.id
     from subcategory as c
@@ -166,11 +181,13 @@ where id in (
     where c.category = 14
     group by c.id
     having count(*) &gt; 2000
-);</pre>
+);
+```
 
 This query will finish about the time the Sun turns into a brown dwarf and swallows the Earth. I don't know how long it will take because I've never felt like letting it run indefinitely. You'd think, from looking at the query, that it would a) evaluate the inner query and find the 10 values, b) go find those 10 rows in `subcategory`, which should be really fast to look up by their primary keys. Nope. Here's the query plan:
 
-<pre>*************************** 1. row ***************************
+```
+*************************** 1. row ***************************
            id: 1
   select_type: PRIMARY
         table: subcategory
@@ -202,7 +219,8 @@ possible_keys: subcategory
       key_len: 4
           ref: c.id
          rows: 28
-        Extra: Using index</pre>
+        Extra: Using index
+```
 
 If you're not familiar with analyzing MySQL query plans, here's the synopsis: MySQL has decided to run the query from the outside in, not the inside out. I'll look at each part of the query in turn.
 
@@ -210,7 +228,8 @@ The outer query simply becomes `select * from subcategory`. Even though there's 
 
 For each row in the outer query, it's performing the inner query, even though there are no references in the inner query to values in the enclosing scope, because it has "optimized" the inner query by rewriting it to refer to the outer query. At this point, the query plan becomes nested loops. For each loop in the outer query, the query probes into the inner query. Here is the query plan, after the optimizer rewrites it:
 
-<pre>select * from subcategory as s
+```
+select * from subcategory as s
 where &lt;in_optimizer&gt;(
    s.id,&lt;exists&gt;(
    select c.id
@@ -220,7 +239,8 @@ where &lt;in_optimizer&gt;(
    group by c.id
    having ((count(0) > 2000)
       and (&lt;cache&gt;(s.id) = &lt;ref_null_helper&gt;(c.id))))
-)</pre>
+)
+```
 
 You can get the optimized query from `EXPLAIN EXTENDED` followed by `SHOW WARNINGS`. Notice the reference to the outer scope in the `HAVING` clause.
 
@@ -234,7 +254,8 @@ The query in the preceding section suffers because MySQL executes it from the ou
 
 MySQL materializes subqueries in the `FROM` clause (commonly, and somewhat misleadingly, known as [derived tables](/blog/2005/09/26/sql-subqueries-and-derived-tables/)). This means MySQL executes the inner query first and saves the results in a temporary table, then uses it in the rest of the table. This is exactly the behavior I wanted to happen when I wrote that query! Here's the modified query:
 
-<pre>select * from subcategory
+```
+select * from subcategory
 where id in (
     select id from (
         select c.id
@@ -244,7 +265,8 @@ where id in (
         group by c.id
         having count(*) &gt; 2000
     ) as x
-);</pre>
+);
+```
 
 All I did was wrap the subquery in another subquery. MySQL thinks there's a dependent subquery, but now it's only the wrapper query, which is probing into a temporary table with only a few rows, so it is fast anyway. At this point this is a silly optimization; it would probably be better to just rewrite the query as a join. Among other things, that would avoid the danger of someone noticing the wrapper subquery is superfluous and "cleaning up the code."
 

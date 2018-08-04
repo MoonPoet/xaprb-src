@@ -9,7 +9,8 @@ At both my current and previous employer I've been involved in designing and mai
 
 As an example of data that gets rolled up to aggregate tables, I'll use my current employer's data structures (more or less). The main table looks something like this:
 
-<pre>create table ad_day (
+```
+create table ad_day (
    ad int not null,
    day date not null,
    impressions int not null,
@@ -17,7 +18,8 @@ As an example of data that gets rolled up to aggregate tables, I'll use my curre
    cost_cents int not null,
    avg_pos decimal(3, 1) not null,
    primary key (day, ad)
-) engine = InnoDB;</pre>
+) engine = InnoDB;
+```
 
 As an aside, notice the table is called `ad_day`, which is the way people generally want to say it -- "rolled up by ad by day" -- but the primary key is (`day, ad`) -- the reverse of the way people say it. When I joined the company, it was indexed (`ad, day`), which generally doesn't help most queries, which want to look at data in a date range. Actually, it had a surrogate key, so there wasn't even a good clustered index! I've written a lot about this in the past, and the woes it caused us. You might find those articles interesting if you're considering designing some large tables.
 
@@ -33,9 +35,11 @@ The challenge with this set of tables is to make sure the rollup tables are alwa
 
 One thing to keep in mind when rolling up tables like this is orphan rows. Deletes in the atomic table may leave rows dangling in the rollups unless you're careful to delete them. For example, if I delete all ads for a client in the `ad_day` table, then run a naive rollup query like so:
 
-<pre>insert/update into client_day (client, day, ...)
+```
+insert/update into client_day (client, day, ...)
    select client, day, sum(clicks)...
-   from ad_day...</pre>
+   from ad_day...
+```
 
 That query will correctly sum the rows in the `ad_day` table, but it won't touch the rows left over in the `client_day` table. These rows are orphans. This is important to keep in mind when desiging a rollup system.
 

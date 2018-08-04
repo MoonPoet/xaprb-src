@@ -17,7 +17,8 @@ I'll speak mostly about MySQL here, but the same techniques apply almost univers
 
 Take a look at the following EXPLAIN plan:
 
-<pre>mysql&gt; explain select * from t where id = '0cc175b9c0f1b6a831c399e269772661'\G
+```
+mysql&gt; explain select * from t where id = '0cc175b9c0f1b6a831c399e269772661'\G
 *************************** 1. row ***************************
            id: 1
   select_type: SIMPLE
@@ -29,15 +30,16 @@ possible_keys: PRIMARY
           ref: const
          rows: 1
         Extra: Using index
-</pre>
+```
 
 Why is the index 98 bytes long? Simple -- the utf8 character set was used:
 
-<pre>CREATE TABLE `t` (
+```
+CREATE TABLE `t` (
   `id` varchar(32) NOT NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8
-</pre>
+```
 
 You don't need to store hexadecimal values with utf8. It doesn't actually use any more space on disk for the table itself (long complex topic I won't get into) but it uses about three times more memory and disk space for sorts, group-by, implicit temp tables, and so on. This is MySQL-specific as far as I know.
 
@@ -50,27 +52,31 @@ You can see I'm storing the value in a VARCHAR. It would be better to store it i
 You don't actually need to store characters. The characters are just a way of representing numbers. Store them directly. For example, what is 00000000000000000000000000002E2A really? It's really the base-16 representation of the (base-ten) number 11818 and is much better stored as an integer in 4 bytes (or less) instead of 32.
 
 The problem is, these long values aren't representable in commonly available integer storage sizes. They're much bigger than a BIGINT. However, MySQL does permit you to store them in a BINARY column, which is just a string of bytes with no character set semantics. It's more compactand it's a lot faster to do comparisons (and hence index lookups). You can use the HEX() and UNHEX() functions to transform between the representations, or just use hexadecimal literal syntax: 
-<pre>mysql&gt; select x'7861707262';
+```
+mysql&gt; select x'7861707262';
 +---------------+
 | x'7861707262' |
 +---------------+
 | xaprb         | 
 +---------------+
-</pre>
+```
 
 This makes it easy to work with the values without having to do conversions in your code if that's more convenient (although note that you'll be sending more data from/to the server -- but if it makes it easier for your code, it might be a reasonable compromise). So instead of
 
-<pre>select * from t where id = '0cc175b9c0f1b6a831c399e269772661';
-</pre>
+```
+select * from t where id = '0cc175b9c0f1b6a831c399e269772661';
+```
 
 You can just add a single 'x' to the query, like this:
 
-<pre>select * from t where id = x'0cc175b9c0f1b6a831c399e269772661';
-</pre>
+```
+select * from t where id = x'0cc175b9c0f1b6a831c399e269772661';
+```
 
 After converting the table to use a BINARY(16) column and re-inserting the same data in binary form, look at the difference it makes:
 
-<pre>explain select * from t where id = x'0cc175b9c0f1b6a831c399e269772661'\G
+```
+explain select * from t where id = x'0cc175b9c0f1b6a831c399e269772661'\G
 *************************** 1. row ***************************
            id: 1
   select_type: SIMPLE
@@ -82,7 +88,7 @@ possible_keys: PRIMARY
           ref: const
          rows: 1
         Extra: Using index
-</pre>
+```
 
 The lookup is on a much smaller value. If you're using a UUID() that is formatted with strings of hex characters separated by dashes, you can delete the dashes with REPLACE(); they are for visual formatting only and don't have any semantics.
 
@@ -92,12 +98,13 @@ In many but not all cases, you don't need to index the full length of the value.
 
 Figuring out how much of the value to index can be complex when there is skew (more on this later). In the simplest cases you can just run a query like this:
 
-<pre>mysql&gt; select count(distinct id), count(distinct left(id, 8)), count(distinct left(id, 9)) from t\G
+```
+mysql&gt; select count(distinct id), count(distinct left(id, 8)), count(distinct left(id, 9)) from t\G
 *************************** 1. row ***************************
          count(distinct id): 2
 count(distinct left(id, 8)): 2
 count(distinct left(id, 9)): 2
-</pre>
+```
 
 Here you can see I have a trivial 2-row test case so it's not a good example. In the real world you can compare the number of distinct values (you can omit that for a primary key, but this technique generally applies best to secondary indexes which may not be unique) to the number of distinct prefixes, for each prefix length, and choose the shortest one that's "good enough." Then make an index on that prefix.
 
@@ -109,7 +116,8 @@ This does two things. One, it makes keys really, really really long. Two, it mak
 
 When there's skew like this, you need to compare the average cardinality to the worst-case, which you can find with queries such as
 
-<pre>mysql&gt; select left(id, 10) as left_10, count(*) as cnt from t
+```
+mysql&gt; select left(id, 10) as left_10, count(*) as cnt from t
 group by left_10 order by cnt desc limit 10;
 +------------+-----+
 | left_10    | cnt |
@@ -117,12 +125,13 @@ group by left_10 order by cnt desc limit 10;
 | 0cc175b9c0 |   1 | 
 | 92eb5ffee6 |   1 | 
 +------------+-----+
-</pre>
+```
 
 Of course here you see again my trivial test case, but you might see very bad results; you might have a half-million rows in the table and one-third of them start with 0cc175b9c0. Even if you make the prefix 32 characters long, you'll still match one-third of the table. You don't get a good usable prefix until 32 characters plus 8 characters -- and a 40-character index is loooong. So prefix indexing really doesn't work in cases like this.
 
 What you can do is generate a checksum of the values and index that. That's right, a hash-of-a-hash. For most cases, CRC32() works pretty well (if not, you can use a [64-bit hash function](/blog/2008/03/09/a-very-fast-fnv-hash-function-for-mysql/)). Create another column: 
-<pre>mysql&gt; alter table t add crc int unsigned not null, add key(crc);
+```
+mysql&gt; alter table t add crc int unsigned not null, add key(crc);
 mysql&gt; update t set crc=crc32(id);
 mysql&gt; explain select * from t use index(crc) where id = '0cc175b9c0f1b6a831c399e269772661' and crc=crc32('0cc175b9c0f1b6a831c399e269772661')\G
 *************************** 1. row ***************************
@@ -136,7 +145,7 @@ possible_keys: crc
           ref: const
          rows: 1
         Extra: Using where
-</pre>
+```
 
 Now it's using the 4-byte index on the CRC values. (I had to say "use index(crc)" because on my silly test case there's so little data it used the PRIMARY key otherwise). You can keep the CRC column updated with a pair of triggers, or maintain it directly in your queries that modify the table. Triggers add side effects you might not desire.
 

@@ -15,7 +15,8 @@ This tool was contributed by [Proven Scaling](http://provenscaling.com/)'s [Jere
 
 The most common way to use it is to run one process to update a heartbeat on the master, and another to monitor the lag on a replica (you can run as many as you wish to monitor multiple replicas). By default it prints moving averages of delay over one, five and fifteen-minute time windows:
 
-<pre>0s [  0.00s,  0.00s,  0.00s ]
+```
+0s [  0.00s,  0.00s,  0.00s ]
    0s [  0.00s,  0.00s,  0.00s ]
    1s [  0.02s,  0.00s,  0.00s ]
    2s [  0.05s,  0.01s,  0.00s ]
@@ -23,7 +24,8 @@ The most common way to use it is to run one process to update a heartbeat on the
    4s [  0.17s,  0.03s,  0.01s ]
    0s [  0.17s,  0.03s,  0.01s ]
    0s [  0.17s,  0.03s,  0.01s ]
-   0s [  0.17s,  0.03s,  0.01s ]</pre>
+   0s [  0.17s,  0.03s,  0.01s ]
+```
 
 (of course, I couldn't resist making that configurable, so you can specify your own time windows).
 
@@ -33,7 +35,8 @@ You can also run it as a daemon. Running the update process as a daemon is intui
 
 Here's a changelog for the other tools I updated in this release:
 
-<pre>Changelog for mysql-deadlock-logger:
+```
+Changelog for mysql-deadlock-logger:
 
 2007-09-20: version 1.0.4
 
@@ -74,6 +77,7 @@ Changelog for mysql-visual-explain:
 
 2007-09-20: version 1.0.3
 
-   * filesort wasn't applied to the first non-constant table.</pre>
+   * filesort wasn't applied to the first non-constant table.
+```
 
 

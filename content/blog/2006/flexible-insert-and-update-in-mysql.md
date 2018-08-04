@@ -11,7 +11,8 @@ MySQL provides several variations on `INSERT` and `UPDATE` to allow inserting an
 
 I am using MySQL 4.1.15 to create my examples. I assume MyISAM tables without support for transactions, with the following sample data:
 
-<pre>create table t1 (
+```
+create table t1 (
     a int not null primary key,
     b int not null,
     c int not null
@@ -31,7 +32,8 @@ insert into t1 (a, b, c) values
 insert into t2 (d, e, f) values
     (1, 1, 1),
     (4, 4, 4),
-    (5, 5, 5);</pre>
+    (5, 5, 5);
+```
 
 ### Overview
 
@@ -47,31 +49,39 @@ If I want to insert only the rows that will not violate the unique index, I can:
 
 *   Delete duplicate rows from `t2` and insert everything that remains:
     
-    <pre>delete t2 from t2 inner join t1 on a = d;
-insert into t1 select * from t2;</pre>
+    ```
+delete t2 from t2 inner join t1 on a = d;
+insert into t1 select * from t2;
+```
     
     The first statement deletes the first row from t2; the second inserts the remaining two. The disadvantage of this approach is that it's not transactional, since the tables are MyISAM and there are two statements. This may not be an issue if nothing else is altering either table at the same time. Another disadvantage is that I just deleted some data I might want in subsequent queries.
 
 *   Use an [exclusion join](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/). This query should work on any RDBMS that supports `LEFT OUTER JOIN`:
     
-    <pre>insert into t1 (a, b, c)
+    ```
+insert into t1 (a, b, c)
     select l.d, l.e, l.f
     from t2 as l
         left outer join t1 as r on l.d = r.a
-    where r.a is null;</pre>
+    where r.a is null;
+```
     
     The downside to this method may be lower efficiency, depending on the data and how complex the join needs to be. The join is done up front, which can be a lot of work on large datasets, especially when only a few duplicate rows might exist.
 
 *   Use `INSERT IGNORE` to ignore the duplicate rows:
     
-    <pre>insert ignore into t1 select * from t2;</pre>
+    ```
+insert ignore into t1 select * from t2;
+```
     
     The duplicate rows are ignored. Note that *MySQL does not do a generic "duplicate-check" to see if the rows contain duplicate values* when determining if a row is a duplicate and should be ignored. It only ignores rows that violate a unique index. If I have no unique index on a column, `IGNORE` has no effect.
     
     When using `IGNORE`, MySQL prints information about duplicates:
     
-    <pre>Query OK, 2 rows affected (0.02 sec)
-Records: 3  Duplicates: 1  Warnings: 0</pre>
+    ```
+Query OK, 2 rows affected (0.02 sec)
+Records: 3  Duplicates: 1  Warnings: 0
+```
     
     This method is probably the fastest of all, especially if very few duplicate keys exist in `t2`. MySQL simply tries to insert every row and keeps going when one fails. The disadvantage is that `IGNORE` is a proprietary, non-standard extension.
 
@@ -81,33 +91,38 @@ Now suppose I want to insert new rows *and* update existing rows. Again, there a
 
 *   Use standard SQL in a two-step process to insert new rows and update existing rows. The following is one way to do it, but it's not the best way:
     
-    <pre>insert into t1 (a, b, c)
+    ```
+insert into t1 (a, b, c)
     select l.d, l.e, l.f
     from t2 as l
         left outer join t1 as r on l.d = r.a
     where r.a is null;
     update t1 as l
         inner join t2 as r on l.a = r.d
-        set l.b = r.e, l.c = r.f;</pre>
+        set l.b = r.e, l.c = r.f;
+```
         
     The benefit to this approach is standards compliance. This should work on a wide variety of database platforms.
     
     The downside is poor efficiency. Imagine the datasets are huge and there are only a few duplicate rows. The first statement inserts the (huge number of) new rows by joining the two huge datasets together. The next statement joins them together again, except this time the join is even bigger because of all the new rows in `t1`! And worse yet, it updates the rows that just got inserted, which is certainly not needed. It is far better to do the update first, which should only affect a few rows, then insert the new rows:
     
-    <pre>update t1 as l
+    ```
+update t1 as l
     inner join t2 as r on l.a = r.d
     set l.b = r.e, l.c = r.f;
     insert into t1 (a, b, c)
         select l.d, l.e, l.f
         from t2 as l
             left outer join t1 as r on l.d = r.a
-        where r.a is null;</pre>
+        where r.a is null;
+```
         
     This is far more efficient, but it still might be very bad. It could lock the tables for a long time with large datasets, and like all two-step processes, it is not transactional.
 
 *   Use non-standard MySQL extensions to make the two-step process more efficient. MySQL allows multiple-table updates, which can be used to mark which rows are duplicates during the `UPDATE`, eliminating the need for an exclusion join in the `INSERT`. To accomplish this, `t2` needs a new column to record its "status," which I will call `done`.
     
-    <pre>alter table t2 add done tinyint null;
+    ```
+alter table t2 add done tinyint null;
 update t1
     inner join t2 on t1.a = t2.d
     set t1.b = t2.e,
@@ -115,21 +130,26 @@ update t1
         t2.done = 1;
 insert into t1 (a, b, c)
     select d, e, f from t2
-    where done is null;</pre>
+    where done is null;
+```
     
     This can be significantly more efficient on the large datasets I've been imagining. The downside to this approach is non-portability to other database platforms.
 
 *   Use MySQL's non-standard `ON DUPLICATE KEY UPDATE` extension to accomplish the insert and update in a single step. As with the non-standard `INSERT IGNORE` above, this is probably the fastest method:
     
-    <pre>insert into t1(a, b, c)
+    ```
+insert into t1(a, b, c)
     select d, e, f from t2
-    on duplicate key update b = e, c = f;</pre>
+    on duplicate key update b = e, c = f;
+```
     
     There are other ways to write this statement, for example using the `VALUES` function, which can help simplify complex queries by referring to the value which would have been inserted into the given column:
     
-    <pre>insert into t1(a, b, c)
+    ```
+insert into t1(a, b, c)
     select d, e, f from t2
-    on duplicate key update b = values(b), c = values(c);</pre>
+    on duplicate key update b = values(b), c = values(c);
+```
     
     The disadvantage to this approach is lack of portability, of course. Inserting and updating in a single statement is highly non-standard.
 
@@ -141,11 +161,13 @@ If the queries above look like perfect solutions, don't be fooled. I chose my da
 *   Some versions of MySQL have bugs that involve the above types of queries. For example, version 4.1.7 doesn't like queries of the form `INSERT... SELECT... ON DUPLICATE KEY UPDATE` at all. It will complain about a syntax error. It allows inserting literal values, but not the results of a `SELECT` statement. In these buggy versions, the MySQL features may be available but not usable.
 *   Some versions of MySQL get confused by the `VALUES` syntax I demonstrated above. If your source and destination tables have similar column names, you may have this problem. For example, in MySQL 5.0.15-log with tables that have the same column names,
     
-    <pre>insert into t1 (a, b, c)
+    ```
+insert into t1 (a, b, c)
     select a, b, c
     from t2
     on duplicate key update b = values(b);
-ERROR 1052 (23000): Column 'b' in field list is ambiguous</pre>
+ERROR 1052 (23000): Column 'b' in field list is ambiguous
+```
 
 *   Multi-table updates can be tricky if there is ambiguity in column names. Using an alias, such as 'r' for 'right' and 'l' for 'left' as I did above, can help.
 *   MySQL reports values for the number of rows affected. When an operation affects rows in multiple tables, or when a duplicate row causes an update to existing values, the rows-affected statistics change in odd ways. The MySQL manual explains how this works, so I don't want to go into it; I just want to point out that you should expect odd values.

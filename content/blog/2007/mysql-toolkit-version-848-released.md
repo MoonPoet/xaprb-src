@@ -13,7 +13,8 @@ For those who requested features for MySQL Query Profiler, the tab-separated for
 
 Here's a changelog:
 
-<pre>Changelog for mysql-duplicate-key-checker:
+```
+Changelog for mysql-duplicate-key-checker:
 
 2007-09-01: version 1.1.0
 
@@ -43,6 +44,7 @@ Changelog for mysql-visual-explain:
 
    * FULLTEXT indexes were not recognized (type=fulltext in EXPLAIN).
    * Temporary/filesort were not added to the right node in the tree.
-   * Added a new node type for "Range checked for each record."</pre>
+   * Added a new node type for "Range checked for each record."
+```
 
 

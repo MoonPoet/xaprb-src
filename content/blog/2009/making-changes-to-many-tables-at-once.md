@@ -8,15 +8,17 @@ categories:
 ---
 As an alternative to [another recent blog post](http://blogs.sun.com/trentlloyd/entry/making_changes_to_all_tables) that answered the question "how can I truncate all the tables in my database," I thought I'd show another way to do it, which does *not* use the INFORMATION_SCHEMA.
 
-<pre>$ wget http://www.maatkit.org/get/mk-find
+```
+$ wget http://www.maatkit.org/get/mk-find
 $ perl mk-find --exec 'TRUNCATE TABLE %D.%N'
-</pre>
+```
 
 The other example is how to alter MyISAM tables to be InnoDB. That one's easy, too. Let's alter all MyISAM tables in the 'test' database:
 
-<pre>$ wget http://www.maatkit.org/get/mk-find
+```
+$ wget http://www.maatkit.org/get/mk-find
 $ perl mk-find test --engine MyISAM --exec 'ALTER TABLE %D.%N ENGINE=InnoDB'
-</pre>
+```
 
 If you want to print out the commands instead of executing them, you can just use &#8211;printf instead of &#8211;exec.
 

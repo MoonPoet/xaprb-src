@@ -11,7 +11,8 @@ I'm trying to get feedback much earlier in this chapter's lifecycle, for several
 
 The outline, as it stands now, is basically headings with bulleted lists of important details. Here are the top-level headings:
 
-<pre>[Intro]
+```
+[Intro]
 Scaling and High Availability Requirements
 Replication Overview
 Configuring Replication
@@ -22,7 +23,8 @@ Replication Problems and Solutions
 The Future of MySQL Replication
 Scaling MySQL Horizontally
 Clustering with MySQL
-Load Balancing</pre>
+Load Balancing
+```
 
 Just a few notes. These sections are top-level, and will likely be split into many sub-sections like other chapter outlines I've posted. A typical section has a couple dozen bullet-points in it, at a high level of granularity, such as "Using DRBD for log replication only." I think we'll also add in a separate section on fail-over and fail-back, but that's not in the outline as of right now (what do you think belongs in it?).
 

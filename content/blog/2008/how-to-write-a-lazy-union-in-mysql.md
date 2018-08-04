@@ -9,9 +9,11 @@ The other day I was explaining options to someone who wanted to know about [arch
 
 One way to deal with this, as long as the archived data is on the same server, is a UNION.
 
-<pre>select user_id from user where user_id = 123
+```
+select user_id from user where user_id = 123
 union all
-select user_id from user_archive where user_id = 123;</pre>
+select user_id from user_archive where user_id = 123;
+```
 
 The benefit is that you don't have to issue two queries. That saves network round trips, and makes your code shorter. But it has a disadvantage, too: you're still querying the archive table when you don't need to. Does this matter? Yes, it does. Your archive table may be very large and slow -- perhaps stored on a big slow hard drive, perhaps on a SAN -- and just peeking at it is kind of expensive in some cases.
 
@@ -21,7 +23,8 @@ My idea here is to use a user variable. If the first part of the UNION finds a r
 
 Here's a complete example:
 
-<pre>drop table if exists user, user_archive;
+```
+drop table if exists user, user_archive;
 create table user(user_id int not null primary key);
 create table user_archive like user;
 insert into user(user_id) values(1);
@@ -41,11 +44,13 @@ union all
 select user_id as user_id, 'user_archive' as which_tbl
    from user_archive where user_id = 2 and @found is null
 union all
-select 1, '' from dual where ( @found := null ) is not null;</pre>
+select 1, '' from dual where ( @found := null ) is not null;
+```
 
 You can play around with it and verify that indeed, the second part of the UNION never executes if the first part finds a row. There are several ways to do this: with EXPLAIN, by adding some more variables to show which part of the query executes, etc. The results of the above query are as follows:
 
-<pre>+---------+-----------+
+```
++---------+-----------+
 | user_id | which_tbl |
 +---------+-----------+
 |       1 | user      | 
@@ -57,7 +62,8 @@ You can play around with it and verify that indeed, the second part of the UNION
 +---------+--------------+
 |       2 | user_archive | 
 +---------+--------------+
-1 row in set (0.00 sec)</pre>
+1 row in set (0.00 sec)
+```
 
 I have not benchmarked this. My gut feeling is that whether it's beneficial is going to depend on your workload. But it's a fun little hack I thought I'd share with you. By the way, there's no reason you have to stop at two; you could add any number of queries to the UNION.
 

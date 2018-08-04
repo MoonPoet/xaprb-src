@@ -26,22 +26,25 @@ Someone recently posted this to an email list as a sample of an interesting SHOW
 |  _____)| |   | |(_____  )   | |   | | ____ |     __)|  __)   (_____  )
 | (      | |   | |      ) |   | |   | | \_  )| (\ (   | (            ) |
 | )      | (___) |/\____) |   | |   | (___) || ) \ \__| (____/\/\____) |
-|/       (_______)\_______)   )_(   (_______)|/   \__/(_______/\_______) </pre>
+|/       (_______)\_______)   )_(   (_______)|/   \__/(_______/\_______) 
+```
 
 I thought it was worth trying out, so I gave it a shot:
 
-<pre>mysql> use postgres
+```
+mysql> use postgres
 ERROR 1049 (42000): Unknown database 'postgres'
-</pre>
+```
 
 Clearly I just need to create the database. Short work:
 
-<pre>mysql> create database postgres;
+```
+mysql> create database postgres;
 Query OK, 1 row affected (0.00 sec)
 
 mysql> use postgres
 Database changed
-</pre>
+```
 
 So now I'm using Postgres. I still feel like I'm missing something, though. It feels a lot like reading [XKCD](http://xkcd.com/) comics. Where's the tooltip?
 

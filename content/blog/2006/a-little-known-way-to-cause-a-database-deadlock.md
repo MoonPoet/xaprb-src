@@ -19,16 +19,20 @@ A deadlock is a cycle of "I've got this, you have to gimme that before I'll let 
 
 Here's a recent example of a deadlock I found at work. Transaction 1 was [aggregating an atomic traffic data table](/blog/2006/07/19/3-ways-to-maintain-rollup-tables-in-sql/) with a query like the following:
 
-<pre>create temporary table cost as
+```
+create temporary table cost as
    select day, client, sum(clicks), sum(cost)
       from ad_data
       where day = '2006-08-01'
-      group by day, client;</pre>
+      group by day, client;
+```
 
 Transaction 2 was inserting into that same table:
 
-<pre>insert into ad_data(day, ad_id, client, clicks, cost)
-   values('2006-08-01', 5, 1, 50, 500);</pre>
+```
+insert into ad_data(day, ad_id, client, clicks, cost)
+   values('2006-08-01', 5, 1, 50, 500);
+```
 
 Boom! They deadlocked. Now, why would that happen? Shouldn't one of them just
 wait for whoever got there first?  I haven't told you enough to know why, though you
@@ -38,8 +42,10 @@ is on `(day, ad_id)`.
 The missing information is that in addition to the row it was trying to insert
 for `ad_id` 5, transaction 2 had previously inserted a row for `ad_id` 7:
 
-<pre>insert into ad_data(day, ad_id, client, clicks, cost)
-   values('2006-08-01', 7, 1, 70, 700);</pre>
+```
+insert into ad_data(day, ad_id, client, clicks, cost)
+   values('2006-08-01', 7, 1, 70, 700);
+```
 
 To help you understand how this situation caused a deadlock, consider the following: both queries were getting locks on the primary key, which in an InnoDB table is the [clustered index](/blog/2006/07/04/how-to-exploit-mysql-index-optimizations/). The two queries were getting the locks very differently. Transaction 1 was *scanning* the index. It had to, in order to get every row for the date specified in the `WHERE` clause. And since it was selecting the data to use elsewhere, it was getting shared locks on each row it encountered, locking an entire range of the table.
 
@@ -63,7 +69,8 @@ This deadlock was not obvious for me to debug. It showed up in the output of `SH
 
 I'll deliberately cause this deadlock so you can see what the InnoDB monitor output looks like. Here's the setup:
 
-<pre>create table ad_data(
+```
+create table ad_data(
    day date not null,
    ad_id int not null,
    client int not null,
@@ -78,11 +85,13 @@ insert into ad_data(day, ad_id, client, clicks, cost)
    ('2006-08-01', 2, 1, 20, 200),
    ('2006-08-01', 3, 1, 30, 300),
    ('2006-08-01', 4, 1, 40, 400),
-   ('2006-08-01', 6, 1, 60, 600);</pre>
+   ('2006-08-01', 6, 1, 60, 600);
+```
 
 Now open two connections to this database, and issue the following queries:
 
-<pre>-- On connection 2
+```
+-- On connection 2
 start transaction;
 insert into ad_data(day, ad_id, client, clicks, cost)
    values
@@ -100,11 +109,13 @@ create temporary table cost as
 -- On connection 2,
 insert into ad_data(day, ad_id, client, clicks, cost)
    values
-   ('2006-08-01', 5, 1, 50, 500);</pre>
+   ('2006-08-01', 5, 1, 50, 500);
+```
 
 I just did this, and Transaction 1 was chosen as the victim. Here's the relevant output of `SHOW ENGINE INNODB STATUS`:
 
-<pre>------------------------
+```
+------------------------
 LATEST DETECTED DEADLOCK
 ------------------------
 060803 20:04:04
@@ -141,7 +152,8 @@ RECORD LOCKS space id 0 page no 45 n bits 80 index `PRIMARY` of table `test/ad_d
 Record lock, heap no 6 PHYSICAL RECORD: n_fields 7; compact format; info bits 0
  0: len 3; hex 8fad01; asc    ;; 1: len 4; hex 80000006; asc     ;; 2: len 6; hex 00000001720a; asc     r ;; 3: len 7; hex 80000000320154; asc     2 T;; 4: len 4; hex 80000001; asc     ;; 5: len 4; hex 8000003c; asc    &lt;;; 6: len 4; hex 80000258; asc    X;;
 
-*** WE ROLL BACK TRANSACTION (1)</pre>
+*** WE ROLL BACK TRANSACTION (1)
+```
 
 That's fairly verbose, because it prints information about the locks it was waiting for and holding, but that's exactly what you need to figure out what was really going on. Notice how you can see Transaction 1 waiting for exactly the same lock Transaction 2 holds. Notice also Transaction 2 locks the "rec but not gap" on that lock. That means it locks the record, as opposed to the [gap before the record](http://dev.mysql.com/doc/refman/5.0/en/innodb-next-key-locking.html). You can read more about this in the MySQL manual -- the entire section on InnoDB transactional model is recommended reading.
 

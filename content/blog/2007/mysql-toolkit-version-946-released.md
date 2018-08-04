@@ -15,7 +15,8 @@ I wrote an [introduction to MySQL Parallel Dump](/blog/2007/09/30/introducing-my
 
 ### Changelog
 
-<pre>Changelog for mysql-parallel-dump:
+```
+Changelog for mysql-parallel-dump:
 
 2007-10-01: version 0.9.5
 
@@ -32,6 +33,7 @@ Changelog for mysql-table-sync:
 2007-10-01: version 0.9.7
 
    * The special command-line syntax didn't allow a bare hostname.
-   * Added an informative printout of what is being synced.</pre>
+   * Added an informative printout of what is being synced.
+```
 
 

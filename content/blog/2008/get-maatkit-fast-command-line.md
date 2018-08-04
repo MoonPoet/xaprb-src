@@ -12,13 +12,16 @@ I intentionally wrote the [Maatkit](http://www.maatkit.org) tools so they don't 
 
 I fixed that. Now, at the command line, you can just run this:
 
-<pre>wget http://www.maatkit.org/get/mk-table-sync</pre>
+```
+wget http://www.maatkit.org/get/mk-table-sync
+```
 
 Now it's ready to run. Behind the scenes are some Apache mod_rewrite rules, a Perl script or two, and Subversion. When you do this, you're getting the latest code from Subversion's trunk.\[1][2\] (I like to run on the bleeding edge. Releases are for people who want to install stuff.)
 
 Because there's some Perl magic behind it, I made it even easier -- it does pattern-matching on partial names and Does The Right Thing:
 
-<pre>baron@kanga:~$ wget http://www.maatkit.org/get/sync
+```
+baron@kanga:~$ wget http://www.maatkit.org/get/sync
 --21:38:50--  http://www.maatkit.org/get/sync
            =&gt; `sync'
 Resolving www.maatkit.org... 64.130.10.15
@@ -33,7 +36,8 @@ Length: unspecified [application/x-perl]
 
     [      &lt;=&gt;                            ] 163,259      136.51K/s             
 
-21:38:51 (136.13 KB/s) - `mk-table-sync' saved [163259]</pre>
+21:38:51 (136.13 KB/s) - `mk-table-sync' saved [163259]
+```
 
 The redirection is there because otherwise wget will save the file under the name 'sync' instead of 'mk-table-sync'.
 

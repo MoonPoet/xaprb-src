@@ -11,7 +11,8 @@ If you've worked much with XML Schema, or tried to read a schema, you've probabl
 
 Suppose I'm writing code to talk to a web service, and I've been getting error messages complaining about something called "email" being malformed when I try to invoke the `getPreferences` operation. I want to figure out exactly what the service expects me to send it. I open up the WSDL and search until I find the relevant definitions:
 
-<pre>&lt;element name="email"&gt;
+```
+&lt;element name="email"&gt;
   &lt;simpleType&gt;
     &lt;restriction base="xsd:string" /&gt;
   &lt;/simpleType&gt;
@@ -23,7 +24,8 @@ Suppose I'm writing code to talk to a web service, and I've been getting error m
       &lt;element name="email" type="email" /&gt;
     &lt;/sequence&gt;
   &lt;/complexType&gt;
-&lt;/element&gt;</pre>
+&lt;/element&gt;
+```
 
 WSDL is written with [XML Schema](http://www.w3.org/XML/Schema), so I'm looking at an XML Schema document. But I've forgotten exactly what it means. What are `simpleType` and `complexType` again? Unless I work with schemas fairly frequently, I get confused about this (even though I've worked with schemas for many years). I always have to refresh my memory.
 
@@ -46,9 +48,11 @@ To summarize,
 
 Now I know the web service is expecting an element that looks like the following:
 
-<pre>&lt;getPreferences&gt;
+```
+&lt;getPreferences&gt;
   &lt;email&gt;john@nowhere.com&lt;/email&gt;
-&lt;/getPreferences&gt;</pre>
+&lt;/getPreferences&gt;
+```
 
 ### So why am I confused?
 

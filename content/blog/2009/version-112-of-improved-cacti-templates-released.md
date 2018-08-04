@@ -22,7 +22,8 @@ Anyone who would like to help write documentation (or do anything else, for that
 
 Changelog:
 
-<pre>2009-05-07: version 1.1.2
+```
+2009-05-07: version 1.1.2
 
 	* The parsing code did not handle InnoDB plugin / XtraDB (issue 52).
 	* The servername was hardcoded in ss_get_by_ssh.php (issue 57).
@@ -36,6 +37,6 @@ Changelog:
 	* Unknown output is now -1 instead of 0 to prevent spikes in graphs.
 	* If you want to use a script server, you must now explicitly configure it.
 	* UNIX sockets weren't permitted for MySQL (issue 38).
-</pre>
+```
 
 

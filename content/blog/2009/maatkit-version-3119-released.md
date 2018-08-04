@@ -15,7 +15,8 @@ The full list of changes follows.
 
 <!--more-->
 
-<pre>Changelog for mk-duplicate-key-checker:
+```
+Changelog for mk-duplicate-key-checker:
 
 2009-03-01: version 1.2.1
 
@@ -67,6 +68,6 @@ Changelog for mk-table-sync:
    * Throw an error when trying to use D= to restrict syncing to one database.
    * Checking tables for triggers caused a crash (issue 262).
    * Database or table names with spaces caused a crash (issue 262).
-</pre>
+```
 
 

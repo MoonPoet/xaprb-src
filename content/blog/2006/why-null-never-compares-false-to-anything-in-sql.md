@@ -13,9 +13,11 @@ If you're new to SQL and have a hard time understanding this article, I encourag
 
 Here are two common queries that just don't work:
 
-<pre>select * from table where column = null;
+```
+select * from table where column = null;
 
-select * from table where column &lt;&gt; null;</pre>
+select * from table where column &lt;&gt; null;
+```
 
 They both return **no** rows! Countless SQL veterans have tried to explain this one to beginners. The beginner usually thinks the first row should return rows where `c1` is `NULL`. The veteran then points out that `NULL` is never equal to anything. The beginner then thinks, "if `NULL` isn't equal to anything, then '`WHERE COLUMN IS NOT EQUAL TO NULL`' is always true, so the second query should return all results!" The second `WHERE` clause is the logical opposite of the first, right? Right? Sadly, no it's not.
 
@@ -56,9 +58,11 @@ It has to be this way, because if a comparison to a non-value had a defined valu
 
 Instead of using boolean comparison operators such as less-than and greater-than, equal-to and not-equal-to, these queries must be written with the special comparison operator `IS NULL`:
 
-<pre>select * from table where column is null;
+```
+select * from table where column is null;
 
-select * from table where column is not null;</pre>
+select * from table where column is not null;
+```
 
 The `IS NULL` operator tests whether a value is null or not null, and returns a boolean.
 
@@ -72,14 +76,16 @@ I'm glossing over something about comparisons to `NULL`, too. `NULL`s result in 
 
 MySQL, for example, implements `UNKNOWN` as `NULL`, though it it isn't perfectly consistent about it -- try these queries:
 
-<pre>select unknown;
+```
+select unknown;
 select null;
 select true;
 select false;
 select null is unknown;
 select false is null;
 select true is null;
-select unknown is null;</pre>
+select unknown is null;
+```
 
 Just remember `NULL` is neither equal nor unequal to anything, and I promise you will always be safe. It's no use to get really picky about the fine points of `NULL` versus `UNKNOWN` and all that.
 
@@ -87,13 +93,15 @@ Just remember `NULL` is neither equal nor unequal to anything, and I promise you
 
 Someone posted a comment on the MySQL manual page about [extensions to the GROUP BY clause](http://dev.mysql.com/doc/refman/5.0/en/group-by-hidden-fields.html), and I think it's interesting to discuss here. The query is a way to count subsets within a group:
 
-<pre>select shoeStyle,
+```
+select shoeStyle,
    count(color) as Count,
    count(color = 'red' OR NULL) as redCount,
    count(color = 'green' OR NULL) as greenCount,
    count(color = 'blue' OR NULL) as blueCount
 from bowlingShoes
-group by shoeStyle;</pre>
+group by shoeStyle;
+```
 
 The comment's author said "`OR NULL` is necessary, or you will just get a count of all rows in the group." Why is this?
 
@@ -103,7 +111,8 @@ On the other hand, the result of the expression `color = 'green' OR NULL` is eit
 
 You can see this in action with the following queries:
 
-<pre>mysql&gt; select true or null;
+```
+mysql&gt; select true or null;
 +--------------+
 | true or null |
 +--------------+
@@ -117,6 +126,7 @@ mysql&gt; select false or null;
 +---------------+
 | NULL          |
 +---------------+
-1 row in set (0.00 sec)</pre>
+1 row in set (0.00 sec)
+```
 
 

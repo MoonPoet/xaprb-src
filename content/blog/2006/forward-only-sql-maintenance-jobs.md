@@ -13,10 +13,12 @@ In my current employment, I've been optimizing databases for size, speed, and co
 
 The query was performing an update in a table scan on a non-indexed column. The table is very large, and is the business's core table, so it's constantly accessed. There's a column that indicates something true or false about each row, and the nightly job updates that column by joining with a regular expression match against another table. The query looks like this:
 
-<pre>update core_table as c
+```
+update core_table as c
    inner join client_patterns as p on c.client = p.client
       and c.phrase rlike p.pattern
-   set c.important_phrase = 1;</pre>
+   set c.important_phrase = 1;
+```
 
 None of the relevant columns in `core_table` is indexed. `word` is a large `VARCHAR` that could definitely stand to be indexed, but the table is too large to index at this point, and I can't nibble it down to size (since it's *the* core table, it's very hard to know when a row is archivable; maybe at some point I'll figure out how). This is one of the tables that remains troublesome. Until we find a suitable archive strategy, we've just got to walk on eggshells around it.
 
@@ -42,7 +44,8 @@ I created a table to hold a "bookmark" of the last row we processed. This could 
 
 The "snapshot" is a temporary table that holds all the rows greater than or equal to the marker. Here are the queries I wrote:
 
-<pre>create temporary table snapshot as 
+```
+create temporary table snapshot as 
    select distinct c.id from core_table as c
       inner join client_patterns as p on c.client = p.client
          and c.phrase rlike p.pattern
@@ -60,7 +63,8 @@ insert into last_processed_row(job, last_row)
    select "update core_table", max(id)
    from snapshot
    on duplicate key update
-      last_row = greatest(last_row, values(last_row));</pre>
+      last_row = greatest(last_row, values(last_row));
+```
 
 There are some subtleties in these queries that bear explanation. First, I just chose a string value -- any arbitrary value will do -- to hold the "job" in the `last_processed_row` bookmark table. That "job" value is the table's primary key. As long as no other job uses the same value, and every query in a single job uses the same value, it'll work.
 

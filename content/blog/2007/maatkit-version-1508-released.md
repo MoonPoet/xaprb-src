@@ -9,7 +9,8 @@ categories:
 
 This release fixes a few bugs, adds minor features, and adds some debugging support to shared code. I'm working on the Nibble sync algorithm for mk-table-sync, and someone has found a few more bugs with mk-parallel-dump, but those might take me a while to complete.
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2007-12-16: version 1.0.5
 
@@ -95,6 +96,7 @@ Changelog for mk-visual-explain:
 
 2007-12-16: version 1.0.6
 
-   * Updated common code, added debugging.</pre>
+   * Updated common code, added debugging.
+```
 
 

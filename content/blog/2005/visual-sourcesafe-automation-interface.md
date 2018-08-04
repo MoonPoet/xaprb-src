@@ -20,6 +20,6 @@ I notice a number of bugs. For instance, no matter what I do, I cannot get the I
 
 ### Command-line interface
 
-There is a command-line tool, SS.EXE, but it is almost totally unusable for scripting purposes. It has strange dependencies on the Visual SourceSafe client program, requires environment variables instead of accepting command-line arguments, and does very frustrating things that cannot be overriden easily. For example, the "get" command gets the file into the *current directory* even if you specify a subdirectory; in other words, the command <kbd>ss Get dir/file.txt</kbd> will get the file into the current directory, not <tt>dir</tt>. This is a shame, as this is the command I really want to use because it doesn't work via the automation interface in VBScript.
+There is a command-line tool, SS.EXE, but it is almost totally unusable for scripting purposes. It has strange dependencies on the Visual SourceSafe client program, requires environment variables instead of accepting command-line arguments, and does very frustrating things that cannot be overriden easily. For example, the "get" command gets the file into the *current directory* even if you specify a subdirectory; in other words, the command `ss Get dir/file.txt` will get the file into the current directory, not `dir`. This is a shame, as this is the command I really want to use because it doesn't work via the automation interface in VBScript.
 
 

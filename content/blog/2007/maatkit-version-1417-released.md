@@ -23,7 +23,8 @@ Performance will come back, better than ever. I promise. But for now, please hel
 
 Changelog:
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2007-12-07: version 1.0.4
 
@@ -119,6 +120,7 @@ Changelog for mk-visual-explain:
 2007-12-07: version 1.0.5
 
    * Updated common code.
-   * Queries of the form "... FROM (SELECT 1) AS X" crashed the tool.</pre>
+   * Queries of the form "... FROM (SELECT 1) AS X" crashed the tool.
+```
 
 

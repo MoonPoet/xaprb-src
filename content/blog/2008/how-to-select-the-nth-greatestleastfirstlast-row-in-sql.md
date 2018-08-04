@@ -13,9 +13,11 @@ This is a continuation of my articles on [how to select the desired rows from ra
 
 Sounds like fun! Let me start by saying the sum is the easy part. You can always do that like so:
 
-<pre>select sum(price) from (
+```
+select sum(price) from (
    -- find desired rows here
-) as x;</pre>
+) as x;
+```
 
 Finding the desired rows is the hard part. In my previous articles I focused on extrema:
 
@@ -28,7 +30,8 @@ In this article, we're going to see how to get not the most extreme row, not the
 
 Let's create some sample data to get started.
 
-<pre>drop table if exists fruits;
+```
+drop table if exists fruits;
 
 create table fruits (
    type varchar(20) not null,
@@ -47,13 +50,14 @@ insert into fruits values
 ('orange', 'valencia',   7),
 ('pear',   'bartlett',   8),
 ('pear',   'bradford',   9);
-</pre>
+```
 
 For convenience so it's easier to see how they are ordered, I've just ordered the fruits alphabetically and given them unique prices.
 
 The desired results -- second-cheapest prices for each fruit -- are as follows:
 
-<pre>+--------+-----------------+
+```
++--------+-----------------+
 | type   | second_cheapest |
 +--------+-----------------+
 | apple  |               2 | 
@@ -61,13 +65,14 @@ The desired results -- second-cheapest prices for each fruit -- are as follows:
 | orange |               7 | 
 | pear   |               9 | 
 +--------+-----------------+
-</pre>
+```
 
 ### The solution
 
 The intuition you need here is that if you get the 2 cheapest fruits in each group, and then take the single most extreme from each group, you can get the Nth offset. Let's begin with one of the queries from my earlier article. (You should be able to use any of them. I'm just using this one because it's convenient and pretty clear.)
 
-<pre>select type, variety, price
+```
+select type, variety, price
 from fruits
 where (
    select count(*) from fruits as f
@@ -85,11 +90,12 @@ where (
 | pear   | bartlett |     8 | 
 | pear   | bradford |     9 | 
 +--------+----------+-------+
-</pre>
+```
 
 The result is the 2 cheapest fruits from each type. (Notice that all we really did was eliminate one row -- the most expensive apple.) Now let's get the second cheapest -- and what is that? It's simply the most expensive of the fruits we found in that query. And that's just a MAX().
 
-<pre>select type, max(price) as second_cheapest
+```
+select type, max(price) as second_cheapest
 from (
    select type, variety, price
    from fruits
@@ -107,7 +113,7 @@ group by type;
 | orange |               7 | 
 | pear   |               9 | 
 +--------+-----------------+
-</pre>
+```
 
 That's it!
 
@@ -115,7 +121,8 @@ That's it!
 
 By now you probably see the pattern: do it one step at a time, turning each thing into a simpler question that's easy to answer. So how do we sum the second cheapest prices for each type of fruit? First, we find them (done!), then we sum them.
 
-<pre>select sum(second_cheapest) from (
+```
+select sum(second_cheapest) from (
    select type, max(price) as second_cheapest
    from (
       select type, variety, price
@@ -132,7 +139,7 @@ By now you probably see the pattern: do it one step at a time, turning each thin
 +----------------------+
 |                   23 | 
 +----------------------+
-</pre>
+```
 
 ### Conclusion
 

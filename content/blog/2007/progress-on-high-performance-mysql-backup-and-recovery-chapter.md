@@ -9,7 +9,8 @@ I wrote a couple weeks ago about my work on the [Backup and Recovery chapter for
 
 I've had several questions about what is included in the chapter, so I thought I'd post the outline as it stands now:
 
-<pre>[Introduction]
+```
+[Introduction]
 It's All About Recovery
 Topics We Won't Cover
 Why Backups?
@@ -55,7 +56,8 @@ Backup Tools
   Zmanda Recovery Manager
     Installing and Testing ZRM
   Comparison of Backup Tools
-Scripting Backups</pre>
+Scripting Backups
+```
 
 Whew! Even with such a detailed outline, it's hard to tell how much material is in there (it could be all headings and no text, right?). To give you a rough idea, it's 32 pages in OpenOffice.org. In fact, I'd say the places that are the least in-depth are "Why Backups?" and the last two sections. As I wrote, I became conscious that a lot of these topics are not specific to MySQL, and there are other books specifically about backup that you should read. My focus for this book, I decided, should be on High Performance MySQL Backup and Recovery.
 

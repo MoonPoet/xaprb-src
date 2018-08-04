@@ -31,13 +31,17 @@ These and other gems make the book worth both reading through once and owning pe
 
 Some of the hacks miss obvious good solutions and propose bad ones instead. Take #16, "Search for a String Across Columns." The hack is introduced with the question "does anyone have yellow anywhere in their room?" Then it advocates bludgeoning this query to death with the following blunt instrument:
 
-<pre>select name from bedroom
-where concat(floorcolor, ceilingcolor, wallcolor) like '%yellow%'</pre>
+```
+select name from bedroom
+where concat(floorcolor, ceilingcolor, wallcolor) like '%yellow%'
+```
 
 That really makes me cringe. There are many ways to do that better, most obviously:
 
-<pre>select name from bedroom
-where 'yellow' in(floorcolor, ceilingcolor, wallcolor);</pre>
+```
+select name from bedroom
+where 'yellow' in(floorcolor, ceilingcolor, wallcolor);
+```
 
 The query isn't written to return results where someone's room has 'yellow-orange' or some other partial string matching. It explicitly states that concatenating, and then using a pattern matching operator, is better because it helps you avoid errors in typing. I disagree with this cost-benefit analysis; it's an ugly kludge that will completely defeat indexing on any system I know of (the book mentions that it "will not usually employ an index," which is an understatement).
 

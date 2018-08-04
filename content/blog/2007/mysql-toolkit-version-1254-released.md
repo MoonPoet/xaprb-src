@@ -15,7 +15,8 @@ Honestly, I hope MySQL's tools make this pair of tools obsolete in the future, b
 
 Here's the full changelog:
 
-<pre>Changelog for mysql-archiver:
+```
+Changelog for mysql-archiver:
 
 2007-11-12: version 1.0.3
 
@@ -53,6 +54,6 @@ Changelog for mysql-table-sync:
    * DSN parsing was broken when --synctomaster was given with one DSN.
    * Changed --replicate to --synctomaster option.
    * Errors were being hidden in an EVAL when --execute was specified (bug #1819744).
-</pre>
+```
 
 

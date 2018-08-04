@@ -12,8 +12,10 @@ I recently got a message letting me know FreeBSD users will soon be able to inst
 
 When this is finalized, FreeBSD users will be able to install innotop with the following commands:
 
-<pre>cd /usr/ports/databases/innotop
-make all install</pre>
+```
+cd /usr/ports/databases/innotop
+make all install
+```
 
 This is great news. It makes innotop easier to find, install and use. It also means a lot to me that a FreeBSD maintainer thinks innotop is worth including in ports.
 
@@ -27,7 +29,9 @@ Since the Gentoo bug doesn't seem to be getting any attention, I've also opened 
 
 **Edit** One of the Gentoo developers saw this post and added innotop to the main Portage tree! Thank you! Gentoo users can now install innotop like this:
 
-<pre>emerge innotop</pre>
+```
+emerge innotop
+```
 
 Yay!
 

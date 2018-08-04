@@ -13,7 +13,8 @@ My current employer has created a policy for documenting database tables. When t
 
 None of these is convenient or safe when browsing around the databases. Given all the hassles and risks, I decided to write my own system stored procedure to display the documentation. It should be created in `master`, so it can be called as though it exists in every database. It returns one row for the table's documentation, followed by one row for each column's documentation. Here's the code:
 
-<pre>create procedure sp_showdoc
+```
+create procedure sp_showdoc
     @tablename sysname
 as
 
@@ -36,7 +37,8 @@ union all select cast('Column' as varchar(10)) as type, col.name, prop.value
         and prop.smallid = col.colid
         and prop.type = 4
         and prop.name = 'MS_Description'
-    where col.id = object_id(@tablename)</pre>
+    where col.id = object_id(@tablename)
+```
 
 I'm accessing the `sysproperties` table directly because it's simpler than creating a wrapper around `fn_listextendedproperty`. There are other tweaks that could be made depending on the usage -- for example, return the table and column documentation in separate recordsets.
 

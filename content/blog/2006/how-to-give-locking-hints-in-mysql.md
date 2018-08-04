@@ -13,15 +13,19 @@ I've been trying to learn more about MySQL locks and deadlocks, and have written
 
 The two most common lock hints I used on queries at my former employer were `nolock` and `updlock holdlock`. The first hint tells the server not to acquire any locks at all on a query:
 
-<pre>select col1, col2 from tbl1(<strong>nolock</strong>)</pre>
+```
+select col1, col2 from tbl1(<strong>nolock</strong>)
+```
 
 That's a big efficiency win, because locks are extra overhead. The side effect is you could be reading another transaction's uncommitted data.
 
 The second method was useful for avoiding lock escalation deadlocks. Suppose I read from a table into a temporary table, did some manipulation, and then updated the base table again. Without any lock hints, the initial read would acquire shared read locks, which would be escalated later for writing. If something else acquired shared locks in the meantime, the escalation would cause at least a block, and possibly a deadlock. To avoid this, our DBA's coding standard was to acquire and hold those write locks as early as possible in the transaction: at the first read. For instance,
 
-<pre>create table #temp ...
+```
+create table #temp ...
 insert into #temp... select col1, col2
-   from tbl1(<strong>updlock holdlock</strong>)</pre>
+   from tbl1(<strong>updlock holdlock</strong>)
+```
 
 ### Transaction isolation levels
 

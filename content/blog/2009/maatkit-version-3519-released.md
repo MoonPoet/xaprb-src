@@ -24,7 +24,8 @@ Aside from that, we've made minor bug fixes and functionality changes this month
 
 The full change log follows.
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2009-05-03: version 1.0.15
 
@@ -266,6 +267,6 @@ Changelog for mk-visual-explain:
    * Removed the -f short option.  Use --format instead.
    * Added config file handling and --config (issue 231).
    * Converted script to runnable module (issue 315).
-</pre>
+```
 
 

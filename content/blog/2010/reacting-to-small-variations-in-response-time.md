@@ -37,7 +37,7 @@ This in itself does not provide a good way to know when something unusual is hap
 
 First, here's a bit of the slow query log chopped into 1-second segments and aggregated:
 
-<pre>
+```
            Time        Total  Count          Avg    1-Min Avg  1-Min StDev        Sigma
 100519 18:05:17     0.477078   2084     0.000229     0.000795     0.063251     0.008954
 100519 18:05:18     0.264729   1823     0.000145     0.000756     0.061334     0.009960
@@ -52,7 +52,7 @@ First, here's a bit of the slow query log chopped into 1-second segments and agg
 100519 18:05:27     0.303697   1672     0.000182     0.000552     0.049908     0.007412
 100519 18:05:28     0.182106   1416     0.000129     0.000539     0.049163     0.008346
 100519 18:05:29     0.211202   1631     0.000129     0.000525     0.048347     0.008186
-</pre>
+```
 
 The columns mean the following:
 
@@ -66,7 +66,7 @@ The columns mean the following:
 
 As you can see, most of the time the deviation between this second's average and the last minute's average is quite low. But when there's a meaningful fluctuation in performance, that changes pretty clearly. Here's a sample with a blip at 18:09:30:
 
-<pre>
+```
            Time        Total  Count          Avg    1-Min Avg  1-Min StDev        Sigma
 100519 18:09:26     0.187038   1245     0.000150     0.000159     0.006844     0.001343
 100519 18:09:27     0.269272   1697     0.000159     0.000160     0.006862     0.000178
@@ -77,11 +77,11 @@ As you can see, most of the time the deviation between this second's average and
 100519 18:09:32     0.384193   1879     0.000204     0.000163     0.007133     0.005783
 100519 18:09:33     0.345033   2044     0.000169     0.000163     0.007133     0.000815
 100519 18:09:34     0.289663   1793     0.000162     0.000163     0.007148     0.000255
-</pre>
+```
 
 That was a fast one! It flew by too quickly to do much about. But it was also not a very large deviation, and could have been a false positive. In any case, I highly doubt that we would have caught anything meaningful by triggering a stats-collection process just then. Let's keep looking.
 
-<pre>
+```
            Time        Total  Count          Avg    1-Min Avg  1-Min StDev        Sigma
 100519 18:10:05     0.209619   1578     0.000133     0.000181     0.009542     0.005044
 100519 18:10:06     0.279070   1849     0.000151     0.000181     0.009546     0.003167
@@ -96,11 +96,11 @@ That was a fast one! It flew by too quickly to do much about. But it was also no
 100519 18:10:17     1.140011   2859     0.000399     0.000256     0.024555     0.005817
 100519 18:10:18     0.325617   2240     0.000145     0.000255     0.024491     0.004460
 100519 18:10:19     0.243101   1538     0.000158     0.000255     0.024510     0.003966
-</pre>
+```
 
 Another relatively short blip but a bit longer. The mean response time really didn't deviate as much as my client was complaining about -- they were showing me New Relic transaction traces with 50-second waits. Maybe I could have caught something here, but I doubt that it'd be enough to separate the signal from the noise. Still, at this point you can clearly see how sensitive this technique is. The deviation in average response varies from a few thousandths of a sigma to a few hundredths. Let's keep looking for something more dramatic to use as a trigger:
 
-<pre>
+```
            Time        Total  Count          Avg    1-Min Avg  1-Min StDev        Sigma
 100519 18:10:57     0.352336   2038     0.000173     0.000282     0.026701     0.004092
 100519 18:10:58     0.260373   1692     0.000154     0.000283     0.026725     0.004817
@@ -124,7 +124,7 @@ Another relatively short blip but a bit longer. The mean response time really di
 100519 18:11:16    14.577523     40     0.364438     0.002397     0.215261     1.681870
 100519 18:11:17    47.602524     34     1.400074     0.003094     0.278776     5.011118
 100519 18:11:18     0.016022     84     0.000191     0.003180     0.282795     0.010570
-</pre>
+```
 
 We totally hit pay dirt here. This period in the log corresponded exactly to one of the visible spikes in New Relic. There were extremely long queries in the log, and throughput dropped to the floor -- for an extended time. In the far right-hand column, Sigma is in the double digits. More experience showed me that on this particular client's workload, anything above 0.3 Sigma is a reliable indicator of a real performance problem. If that condition becomes true, then it's time to gather diagnostic data for a while. This is resistant to false positives from things like the occasional one-off long-running query.
 

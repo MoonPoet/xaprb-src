@@ -13,7 +13,7 @@ Maatkit does more than just MySQL. I've just committed a new version of [mk-quer
 
 A brief tutorial:
 
-<pre>
+```
 # Get it
 $ wget http://www.maatkit.org/trunk/mk-query-digest
 
@@ -22,7 +22,7 @@ $ perl mk-query-digest --type pglog /path/to/log/file
 
 # Learn about it (search for the string "pglog")
 $ perldoc mk-query-digest
-</pre>
+```
 
 I'm going to close comments on this blog post so I don't get bug reports in the comments. If you have feedback, please post it to the [Maatkit mailing list](http://groups.google.com/group/maatkit-discuss), or the [Maatkit issue tracker](http://code.google.com/p/maatkit/issues/list). Or reply to the thread I just started on the Postgres mailing list.
 

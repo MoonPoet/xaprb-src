@@ -13,17 +13,20 @@ This lets a plugin override the prepared statement the tool will use to insert r
 
 This came up because some of the tables I'm archiving to suddenly hit the bend in the [hockey-stick curve](http://en.wikipedia.org/wiki/Hockey_Stick_graph). I diagnosed the problem very simply: inserts began taking most of the time during archiving. As you might know, MySQL Archiver has a statistics mode where it profiles every operation and reports the stats at the end. I'm archiving out of InnoDB into MyISAM; take a look at the stats:
 
-<pre>Action          Count       Time        Pct
+```
+Action          Count       Time        Pct
 inserting      800584 12722.8245      88.35
 deleting       800584  1464.1040      10.17
 print_file     800584    58.3453       0.41
 commit           3204    29.4391       0.20
 select           1602     8.5654       0.06
-other               0   116.5321       0.81</pre>
+other               0   116.5321       0.81
+```
 
 Inserting suddenly took 88% of the time spent archiving, when it had been taking a very small fraction of the time. I'd been meaning to split the archived data out by date and/or customer, and this convinced me it was time to stop procrastinating. There are columns in the archived rows for both of these dimensions in the data, so it shouldn't be hard. So I added the custom_sth hook, wrote a 40-line plugin, and did it. Results:
 
-<pre>Action             Count       Time        Pct
+```
+Action             Count       Time        Pct
 deleting           51675   525.2777      87.62
 inserting          51675    49.3903       8.24
 print_file         51675     4.4639       0.74
@@ -34,7 +37,8 @@ before_insert      51675     0.1135       0.02
 before_begin           1     0.0001       0.00
 plugin_start           1     0.0000       0.00
 after_finish           1     0.0000       0.00
-other                  0    15.9868       2.67</pre>
+other                  0    15.9868       2.67
+```
 
 (You can see the effect of having a plugin, because the time taken for all the hooks is listed in the stats. There was no plugin previously.)
 

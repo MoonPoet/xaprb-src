@@ -19,7 +19,8 @@ Here's the changelog:
 
 <!--more-->
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2008-09-19: version 1.0.11
 
@@ -168,6 +169,7 @@ Changelog for mk-visual-explain:
 2008-09-19: version 1.0.10
 
    * Updates to shared code.
-   * Made debugging code more efficient in non-debug mode.</pre>
+   * Made debugging code more efficient in non-debug mode.
+```
 
 

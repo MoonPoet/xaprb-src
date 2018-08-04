@@ -13,7 +13,8 @@ Note, the formatting overflow in MySQL Query Profiler was not a security vulnera
 
 Here's the whole changelog:
 
-<pre>Changelog for mysql-archiver:
+```
+Changelog for mysql-archiver:
 
 2007-08-23: version 1.0.1
 
@@ -101,6 +102,7 @@ Changelog for mysql-visual-explain:
    * MySQL socket connection option didn't work.
    * Added --askpass option.
    * UNIONs inside a SUBQUERY weren't correctly nested.
-   * Some types of impossible queries weren't handled.</pre>
+   * Some types of impossible queries weren't handled.
+```
 
 

@@ -18,7 +18,8 @@ The technique is implemented in two ways: with a variable accumulator (a modifie
 
 It's now practical -- nay, easy -- to run MySQL Table Checksum from a cron job, and just as easy to check whether a replica is out of sync with the master. First, you create a table to hold the checksums:
 
-<pre>CREATE TABLE test.checksum (
+```
+CREATE TABLE test.checksum (
      db         char(64)     NOT NULL,
      tbl        char(64)     NOT NULL,
      this_crc   char(40)     NOT NULL,
@@ -27,18 +28,23 @@ It's now practical -- nay, easy -- to run MySQL Table Checksum from a cron job, 
      master_cnt int unsigned     NULL,
      ts         timestamp    NOT NULL,
      PRIMARY KEY (db,tbl)
-  );</pre>
+  );
+```
 
 Then you run MySQL Table Checksum:
 
-<pre>mysql-table-checksum --replicate=test.checksum master-hostname</pre>
+```
+mysql-table-checksum --replicate=test.checksum master-hostname
+```
 
 When it's all done, you check the replica:
 
-<pre>SELECT db, tbl, this_cnt-master_cnt AS cnt_diff,
+```
+SELECT db, tbl, this_cnt-master_cnt AS cnt_diff,
      this_crc &lt;&gt; master_crc AS crc_diff
 FROM checksum
-WHERE master_cnt &lt;&gt; this_cnt OR master_crc &lt;&gt; this_crc;</pre>
+WHERE master_cnt &lt;&gt; this_cnt OR master_crc &lt;&gt; this_crc;
+```
 
 That's it! Is that easy to throw into Nagios, or what?
 

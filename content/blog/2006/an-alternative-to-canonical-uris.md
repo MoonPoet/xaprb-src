@@ -13,7 +13,9 @@ That's where URI canonicalization strategies come into play. The usual strategy 
 
 How about a META tag instead?
 
-<pre>&lt;meta name="significant-query-params" content="itemno categoryno" /&gt;</pre>
+```
+&lt;meta name="significant-query-params" content="itemno categoryno" /&gt;
+```
 
 Of course, search engines would have to agree upon this as a standard, but it seems reasonable to me. The search spider would then compare any query parameters to the significant ones, and ignore the page if it's already in the search cache.
 

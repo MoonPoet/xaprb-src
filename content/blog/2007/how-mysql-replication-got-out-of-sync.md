@@ -13,7 +13,8 @@ I finally figured out what was causing one of my most persistent and annoying ou
 
 Here's the table I saw getting out of sync, usually within hours of being synced:
 
-<pre>CREATE TABLE `workpriority` (
+```
+CREATE TABLE `workpriority` (
   `client` smallint(5) unsigned NOT NULL,
   `workunit` bigint(20) NOT NULL,
   `priority` float NOT NULL,
@@ -21,11 +22,13 @@ Here's the table I saw getting out of sync, usually within hours of being synced
   PRIMARY KEY  (`client`,`workunit`),
   KEY `priority` (`priority`),
   KEY `processor` (`processor`,`priority`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1</pre>
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+```
 
 This table is essentially a queue of work that needs to be done, along with the priority of each item (`workunit` refers to another table, where the application retrieves the work to do). Applications work against this table in parallel. They run an `UPDATE` statement to claim some work for themselves, then fetch the rows the statement affected. To avoid any race conditions, the "token" is the result of the `CONNECTION_ID()` function. Here's the statement:
 
-<pre>update workpriority as p
+```
+update workpriority as p
    inner join (
       select client, workunit
       from workpriority
@@ -33,13 +36,16 @@ This table is essentially a queue of work that needs to be done, along with the 
       order by priority desc
       limit 10
    ) as chosen using(client, workunit)
-   set p.processor = $cxn_id;</pre>
+   set p.processor = $cxn_id;
+```
 
 The nested `SELECT` statement finds 10 unclaimed (`processor = 0`) rows in order of descending priority. The outer `UPDATE` statement claims these rows by setting `processor` to `CONNECTION_ID()`.
 
 Now the application can find out what work it claimed with a simple `SELECT` with the token in the `WHERE` clause. Later, after the application processes each row, it issues the following statement to clean out the table:
 
-<pre>delete from workpriority where client = ? and workunit = ? and processor = ?;</pre>
+```
+delete from workpriority where client = ? and workunit = ? and processor = ?;
+```
 
 ### The problem
 
@@ -59,7 +65,8 @@ The problem is that `ORDER BY... LIMIT` is non-deterministic. If several rows ar
 
 Very simple: resolve the ties. The query now causes a filesort because it can't use the index to sort, but it's not that big a table and this query doesn't run that often. Here's the fixed query:
 
-<pre>update workpriority as p
+```
+update workpriority as p
    inner join (
       select client, workunit
       from workpriority
@@ -67,7 +74,8 @@ Very simple: resolve the ties. The query now causes a filesort because it can't 
       order by priority desc, workunit
       limit 10
    ) as chosen using(client, workunit)
-   set p.processor = $cxn_id;</pre>
+   set p.processor = $cxn_id;
+```
 
 This limitation of statement-based replication is so basic and simple, and I've known about it for a long time, but it's so innocuously hidden in plain sight that it took me forever to see it.
 

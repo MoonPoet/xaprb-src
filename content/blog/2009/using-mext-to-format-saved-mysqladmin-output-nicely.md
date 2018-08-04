@@ -9,13 +9,16 @@ I wrote a while ago about how [mext](/blog/2009/04/11/formatting-mysqladmin-exte
 
 Let's see how this can be useful. Imagine I have a server that stalls every now and then, and I've set up mk-loadavg to watch for this and capture information about system activity with a script that contains
 
-<pre>$ mysqladmin ext -c 30 -i1 > mysqladmin-output.txt</pre>
+```
+$ mysqladmin ext -c 30 -i1 > mysqladmin-output.txt
+```
 
 That'll gather 30 samples one second apart. Now I'll format it:
 
-<pre>$ wget -q http://www.maatkit.org/mext
+```
+$ wget -q http://www.maatkit.org/mext
 $ sh mext -r -- cat mysqladmin-output.txt | less -S
-</pre>
+```
 
 I'm piping the output into less -S so that I can see unwrapped output. 30 samples of mysql status variables are going to be aligned in columns next to each other, so without the -S flag I'll probably see something unhelpful.
 

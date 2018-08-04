@@ -13,7 +13,8 @@ In "Walden," Thoreau advised: *simplify, simplify, simplify.* Emerson is suppose
 
 In that light, let us examine one of the worst comments I have ever seen in code:
 
-<pre>/*
+```
+/*
  * Delayhover effectively creates a phase-shifted version of sfhover
  * that runs parallel with it.  The CSS listens for any of the hover
  * options: :hover, .sfhover, and .delayhover.  There are multiple
@@ -22,7 +23,8 @@ In that light, let us examine one of the worst comments I have ever seen in code
  * somehow, a mouseover-mouseout will probably fix it - I've never
  * seen this, though).
  * code reference: T__ M_____.
- */</pre>
+ */
+```
 
 This comment is in a Javascript file that implements drop-down navigation menus on a website. The code is only 170 lines long, and does nothing resembling the comment very much; it simply opens and closes the drop-down menus. It doesn't even add delays to the menus. The comments are completely wrong, and to add insult to injury, they scared T.M.'s managers. After this fellow worked on our website, my manager was so afraid of it that he thought we would never be able to replace the man, and I had to literally calm him down in a meeting and explain that in fact, someone in our company *could* maintain the code, that we did *not* need to hire an outside consultant, and T.M. was *not* a "Javascript Ninja." Nice going T.M.
 

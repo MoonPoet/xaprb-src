@@ -13,11 +13,15 @@ The most important thing I did was make my UDF accept 1 to infinity arguments. T
 
 Here's how my implementation works:
 
-<pre>SELECT FNV_64(col1, col2, col3, .... colN) FROM ...</pre>
+```
+SELECT FNV_64(col1, col2, col3, .... colN) FROM ...
+```
 
 Compare this to MD5() hashing that accomplishes the same thing:
 
-<pre>SELECT MD5(CONCAT_WS('#', col1, col2, col3, .... colN)) FROM ...</pre>
+```
+SELECT MD5(CONCAT_WS('#', col1, col2, col3, .... colN)) FROM ...
+```
 
 The UDF's code is distributed with Maatkit, and I plan to eventually build it as a binary that can be installed without requiring you to compile it. However, compiling is very easy; there are instructions in the source code comments. Installing is also easy: just a simple SQL statement.
 

@@ -53,7 +53,9 @@ I've solved all these problems by *not naming tables randomly*. Instead, I name 
 
 That last point deserves a bit of explanation. You can run `SHOW FULL PROCESSLIST` and see a list of all current connections. If the number isn't there, and you have the `PROCESS` privilege so you're certain you can see all connections, the table is deadwood and should be pruned. I'm sure you saw this coming, but `mysql-find` can do all this for you, too; you just give it a regular expression pattern to capture the connection ID from the table name, and it takes care of the rest (including the privilege check):
 
-<pre>mysql-find --pid '\D_(\d+)$' --exec_plus "DROP TABLE IF EXISTS %s"</pre>
+```
+mysql-find --pid '\D_(\d+)$' --exec_plus "DROP TABLE IF EXISTS %s"
+```
 
 ### Conclusion
 

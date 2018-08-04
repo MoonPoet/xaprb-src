@@ -9,7 +9,8 @@ categories:
 
 This release contains bug fixes and new features. It also contains a new tool: [my implementation of Paul Tuckfield's relay log pipelining idea.](/blog/2008/01/13/how-pre-fetching-relay-logs-speeds-up-mysql-replication-slaves/) I have had quite a few responses to that blog post, and requests for the code. So I'm releasing it as part of Maatkit.
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2008-01-24: version 1.0.7
 
@@ -45,6 +46,7 @@ Changelog for mk-table-sync:
 
    * Made the --algorithm option case-insensitive (bug #1873152).
    * Fixed a quoting bug.
-   * Made the UTF-8 options configurable.</pre>
+   * Made the UTF-8 options configurable.
+```
 
 

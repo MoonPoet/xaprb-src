@@ -9,13 +9,16 @@ I sometimes see advice to do SQL date operations with the + and &#8211; operator
 
 My example is in MySQL, but it applies to some other systems too. Suppose you have a table with something keyed on date, such as a count of alien sightings per day. Now you want to see how the count has changed over time. Today is 11th December 2006. What does this query return?
 
-<pre>select day, num from counter
+```
+select day, num from counter
 where counter = 'aliens sighted'
-   and day &gt;= current_date - 15;</pre>
+   and day &gt;= current_date - 15;
+```
 
 It doesn't return the last 15 days, if that's what you expected:
 
-<pre>+------------+-----+
+```
++------------+-----+
 | day        | num |
 +------------+-----+
 | 2006-12-01 |  19 | 
@@ -28,29 +31,35 @@ It doesn't return the last 15 days, if that's what you expected:
 | 2006-12-09 |  19 | 
 | 2006-12-10 |  20 | 
 | 2006-12-11 |  27 | 
-+------------+-----+</pre>
++------------+-----+
+```
 
 Why not? Well, that `current_date - 15` doesn't result in a date 15 days ago. It results in an integer that is not a valid date:
 
-<pre>select current_date - 15;
+```
+select current_date - 15;
 +-------------------+
 | current_date - 15 |
 +-------------------+
 |          20061196 | 
-+-------------------+</pre>
++-------------------+
+```
 
 That's because this operation casts the date to MySQL's internal 3-byte integer representation (20061211) and subtracts 15 from it to get 20061196. What is the result?
 
-<pre>select date(current_date - 15);
+```
+select date(current_date - 15);
 +-------------------------+
 | date(current_date - 15) |
 +-------------------------+
 | NULL                    | 
-+-------------------------+</pre>
++-------------------------+
+```
 
 It's an invalid date. It is better to use the date-manipulation functions and a) do date math, not integer math b) get a date back, not an integer. The query can be written as follows in MySQL:
 
-<pre>select day, num from counter
+```
+select day, num from counter
 where counter = 'aliens sighted'
    and day &gt;= date_sub(current_date, interval 15 day);
 +------------+-----+
@@ -71,7 +80,8 @@ where counter = 'aliens sighted'
 | 2006-12-09 |  19 | 
 | 2006-12-10 |  20 | 
 | 2006-12-11 |  27 | 
-+------------+-----+</pre>
++------------+-----+
+```
 
 Much better!
 

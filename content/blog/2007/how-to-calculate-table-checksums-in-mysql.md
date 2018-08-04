@@ -28,11 +28,13 @@ After processing each row in the table this way, you have a checksum of the enti
 
 Giuseppe showed two ways to iterate over every row in the table: one with cursors, and another with user variables. Cursors in MySQL can't be used with dynamically prepared statements, so they are much less practical for a generic method of checksumming any table; that would require creating a different routine for each table. So cursors are out, and user-variables are in. Here's the essential code:
 
-<pre>set @crc := '', @cnt := 0;
+```
+set @crc := '', @cnt := 0;
 select @crc := sha1(concat(@crc,
     sha1(concat_ws('#', col1, col2... colN)))),
     @cnt := @cnt + 1 from tbl order by ID;
-select @crc, @cnt;</pre>
+select @crc, @cnt;
+```
 
 (This code both CRCs the table and counts the number of rows in it).
 
@@ -52,7 +54,8 @@ I'll show you how to avoid both problems.
 
 If you've read my articles about [advanced user-variable techniques in MySQL](/blog/2006/12/15/advanced-mysql-user-variable-techniques/), you might see where I'm headed. You don't have to generate a large result set from that SELECT statement. In fact, you can hide the variable assignments, which you care about, inside a function whose result you don't care about, and use an aggregate function to eliminate all but one row. Study the following code, which uses the same `fruits` table as in the user-variables article:
 
-<pre>set @crc := '';
+```
+set @crc := '';
 
 select min(
       length(@crc := sha1(concat(
@@ -71,13 +74,15 @@ select @crc;
 | @crc                                     |
 +------------------------------------------+
 | 3be9117fff37bcdd3f422e6ce4d24ee2a6642566 |
-+------------------------------------------+</pre>
++------------------------------------------+
+```
 
 Notice a couple of things: there's only one row, and the `MIN()` calculation that collapses all those rows into one is very efficient. Maybe a MySQL developer can comment on exactly how much memory this will take, but I think it should be really cheap, since it processes a row at a time and then throws it away.
 
 I omitted the row count calculation for clarity. If you want to count rows as well, the following code will do both in one statement:
 
-<pre>set @crc := '', @cnt := 0;
+```
+set @crc := '', @cnt := 0;
 
 select min(least(
       length(@crc := sha1(concat(
@@ -87,7 +92,8 @@ select min(least(
    )) as discard
 from fruits use index(PRIMARY);
 
-select @crc, @cnt;</pre>
+select @crc, @cnt;
+```
 
 You should always reset `@crc` and `@cnt` between runs so you get repeatable results.
 
@@ -107,7 +113,8 @@ Finally, just a comment on doing this on running servers: if you're comparing a 
 
 For the Perl programmers out there, the following subroutine accepts a database handle, database name and table name, and returns the table's storage engine and a ready-to-run query.
 
-<pre>sub checksum_query {
+```
+sub checksum_query {
    my ( $dbh, $db, $tbl ) = @_;
    my $ddl = ($dbh->selectrow_array("show create table $db.$tbl"))[1];
    my ( $type ) = $ddl =~ m/^\) (?:ENGINE|TYPE)=(\S+)/m;
@@ -117,7 +124,8 @@ For the Perl programmers out there, the following subroutine accepts a database 
       . 'CONCAT_WS("#", @crc, SHA1(CONCAT_WS("#", ' . $cols . '))))),'
       . '@cnt := @cnt + 1)) AS len FROM ' . "`$db`.`$tbl` $index";
    return ( $type, $query );
-}</pre>
+}
+```
 
 I prefer to use `SHOW CREATE TABLE` instead of `DESCRIBE TABLE`, because it gives me all information about the table, such as the storage engine and index types. I have also found it to be faster, and of course it works on pre-5.0 versions.
 

@@ -11,13 +11,15 @@ MySQL doesn't allow referring to a table that's targeted for update in a `FROM` 
 
 Suppose I want to update a table with data from a subquery that refers to the same table. I might want to do this for a variety of reasons, such as trying to populate a table with its own aggregate data (this would require assignment from a grouped subquery), updating one row from another row's data [without using non-standard syntax](/blog/2006/03/11/many-to-one-problems-in-sql/), and so on. Here's a contrived example:
 
-<pre>create table apples(variety char(10) primary key, price int);
+```
+create table apples(variety char(10) primary key, price int);
 
 insert into apples values('fuji', 5), ('gala', 6);
 
 update apples
     set price = (select price from apples where variety = 'gala')
-    where variety = 'fuji';</pre>
+    where variety = 'fuji';
+```
 
 The error message is `ERROR 1093 (HY000): You can't specify target table 'apples' for update in FROM clause`. The MySQL manual mentions this at the bottom of the [UPDATE documentation](http://dev.mysql.com/doc/refman/5.0/en/update.html): "Currently, you cannot update a table and select from the same table in a subquery."
 
@@ -27,13 +29,15 @@ It's pretty easy to work around the problem in this contrived example, but there
 
 Since MySQL materializes subqueries in the `FROM` clause (["derived tables"](/blog/2005/09/26/sql-subqueries-and-derived-tables/)) as temporary tables, wrapping the subquery into another inner subquery in the FROM clause causes it to be executed and stored into a temporary table, then referenced implicitly in the outer subquery. The following statement will succeed:
 
-<pre>update apples
+```
+update apples
    set price = (
       select price from (
          select * from apples
       ) as x
       where variety = 'gala')
-   where variety = 'fuji';</pre>
+   where variety = 'fuji';
+```
 
 If you want to know more about how this works, read the relevant section in the [MySQL Internals Manual](http://dev.mysql.com/doc/internals/en/select-derived.html).
 

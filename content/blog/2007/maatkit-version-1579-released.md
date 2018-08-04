@@ -13,7 +13,8 @@ I'm finally feeling like the table sync tool is getting in good shape!
 
 Let me know what you think, and of course, if you have questions or bug reports, please use the Sourceforge forums, bug tracker, etc so others can benefit too.
 
-<pre>Changelog for mk-heartbeat:
+```
+Changelog for mk-heartbeat:
 
 2007-12-27: version 1.0.5
 
@@ -43,6 +44,7 @@ Changelog for mk-table-sync:
    * Allow one DSN without --replicate, as long as --synctomaster is given.
    * Added the Nibble sync algorithm.
    * MASTER_POS_WAIT() failed when the server was not a master (bug #1855480).
-   * DBD::mysql died after 'commands out of sync' error (bug #1856046).</pre>
+   * DBD::mysql died after 'commands out of sync' error (bug #1856046).
+```
 
 

@@ -16,7 +16,8 @@ Mark Wong's entry titled "[Following up a couple questions from the presentation
 
 If you know me, you know I can't pass up "I/O statistics per process." No way. So, after a moment of browsing the code, which is short and to the point, I tried it out:
 
-<pre>baron@kanga:~$ wget -q -O iopp.c "http://git.postgresql.org/?p=~markwkm/iopp.git;a=blob_plain;f=iopp.c;hb=HEAD"
+```
+baron@kanga:~$ wget -q -O iopp.c "http://git.postgresql.org/?p=~markwkm/iopp.git;a=blob_plain;f=iopp.c;hb=HEAD"
 baron@kanga:~$ gcc -o iopp iopp.c 
 baron@kanga:~$ ./iopp --help
 usage: iopp -h|--help
@@ -26,11 +27,12 @@ usage: iopp [-ci] [-k|-m] [delay [count]]
             -i, --idle hides idle processes
             -k, --kilobytes display data in kilobytes
             -m, --megabytes display data in megabytes
-</pre>
+```
 
 Sweet! Next,
 
-<pre>baron@kanga:~$ ./iopp -i -k 5
+```
+baron@kanga:~$ ./iopp -i -k 5
   pid    rchar    wchar    syscr    syscw      rkb      wkb     cwkb command
  4912        2        1        0        0        0        0        0 dbus-daemon
  5713        0        1        0        0        0        0        0 hald
@@ -40,7 +42,7 @@ Sweet! Next,
 22238        4        4        0        0        0        0        0 pulseaudio
 22684       29       55        1        0        0        0        0 firefox
 26860        0       43        0        0        0        0        0 gnome-terminal
-</pre>
+```
 
 It behaves just like vmstat -- it loops every 5 seconds until I stop it.
 

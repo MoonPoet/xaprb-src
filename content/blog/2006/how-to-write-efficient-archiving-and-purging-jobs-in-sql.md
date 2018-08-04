@@ -25,7 +25,8 @@ The problem is, that wouldn't have helped much anyway. We still needed to delete
 
 At my former employer, an all-Microsoft shop, expert DBAs had developed a strategy that worked well for archiving and purging data from Microsoft SQL Server in a variety of situations. The approach was to scan the clustered index linearly through the table, archiving one (or sometimes a few) rows at a time. The jobs I wrote, which were patterned after other jobs and guided by the DBAs, were stored procedures that looked something like this:
 
-<pre>create procedure archive_table as
+```
+create procedure archive_table as
 declare @id int
 -- Find the minimum value that satisfies the archive condition
 select @id = min(id) from table where [conditions]
@@ -38,7 +39,8 @@ begin
     commit transaction
     -- Find the next greater minimum value
     select min(id) from table where id &gt; @id and [conditions]
-end</pre>
+end
+```
 
 The important points to notice are:
 
@@ -67,9 +69,11 @@ Once satisfied that the query is efficient, I ran several at once and observed t
 
 While the queries seem to do OK archiving rows from the middle of the table, there's an even better scenario. If the query can simply pop rows off the beginning of the table, it doesn't have to do much work at all -- the first row it finds is always the one it wants. It will be weeks before the tables are down to a reasonable size, so in the meantime I chose an absolute max value for the clustered index. That means I can rewrite the queries so they don't include any non-clustered columns in the `WHERE` clause. Until these tables are pretty small, the get-next-row query looks like this:
 
-<pre>select min(id)
+```
+select min(id)
 from table
-where id &lt; ?</pre>
+where id &lt; ?
+```
 
 This is very efficient indeed. `EXPLAIN` says "Select tables optimized away," which means the table is completely optimized out of the query. You can't get any better than that.
 
@@ -99,13 +103,17 @@ How can I tell if the query is scanning the rest of the table, rather than stopp
 
 After it occurred to me that MySQL might not optimize the scan along the clustered index, as I mentioned above, I decided to test it. I used `EXPLAIN` to look at the query plans. Lo and behold, it said it would scan the entire table rather than stopping at the first row! This was very bad news. I wasn't sure if it would really do that, or if that was just the anticipated query plan, so I tested by looking at the very first row in a large table and writing a `WHERE` clause it would satisfy. For example, suppose my table had a clustered key called `id` and an un-indexed column called `name`. The first row is `(1, 'Xaprb')`, followed by a few million rows. I wrote the following query:
 
-<pre>select min(id) from table
-where name = 'Xaprb'</pre>
+```
+select min(id) from table
+where name = 'Xaprb'
+```
 
 This query's plan was a table scan, and it took several minutes to finish, indicating it read through the entire table to find the first row. I tried some other variations to encourage it to use the clustered index:
 
-<pre>select min(id) from table
-where name = 'Xaprb' and id > 0</pre>
+```
+select min(id) from table
+where name = 'Xaprb' and id > 0
+```
 
 No dice. This time, the query plan said it would use the clustered index and the `WHERE` clause, but it estimated it would have to scan exactly half the table, which just means it's doing the math and saying its best guess is average-case. The performance and query plan are actually identical.
 
@@ -113,8 +121,10 @@ Why isn't it smart enough to scan the clustered index and stop at the first row 
 
 The good news is, there's a way to get around these \\(n^2\\) performance penalties! Since *I* know the first row it finds is the one it wants, even though *it* doesn't know that, I can tell it to scan the clustered index and stop after one row. Here's the query:
 
-<pre>select id from table
-where name = 'Xaprb' limit 1;</pre>
+```
+select id from table
+where name = 'Xaprb' limit 1;
+```
 
 Notice *I'm no longer using the `MIN()` function*. This is really important. If I use `MIN()`, it **will** scan the rest of the table.
 

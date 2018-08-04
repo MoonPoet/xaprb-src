@@ -21,7 +21,8 @@ Lots of people ([1](http://www.gazingus.org/html/Date_Formatting_Function.html),
 
 I used to use the hard-coded, slow method on my [JavaScript date chooser](/blog/2005/09/29/javascript-date-chooser/). Here's the old, inefficient formatting code:
 
-<pre>Date.prototype.dateFormat = function(format) {
+```
+Date.prototype.dateFormat = function(format) {
     var result = "";
     for (var i = 0; i &lt; format.length; ++i) {
         result += this.dateToString(format.charAt(i));
@@ -37,16 +38,21 @@ Date.prototype.dateToString = function(character) {
     default:
         return character;
     }
-}</pre>
+}
+```
 
 Here's how I used the code:
 
-<pre>var d = new Date();
-alert(d.dateFormat("Y-m-d"));</pre>
+```
+var d = new Date();
+alert(d.dateFormat("Y-m-d"));
+```
 
 What's wrong with that? Well, looping is slow, and I shouldn't have to re-evaluate the format specifier every time I format a date with the same format specifier. That part of the code should be evaluated just once. For example, the formatting string `Y-m-d` should just be "compiled" into something like this:
 
-<pre>return this.getFullYear() + '-' + this.getMonthName()...</pre>
+```
+return this.getFullYear() + '-' + this.getMonthName()...
+```
 
 That would be great! But, since the format specifier is passed in at runtime, how is it possible to hard-code that ahead of time?
 
@@ -62,12 +68,16 @@ It's not possible to hard-code the more efficient method, because I don't know w
 
 Lots of programming languages can do this. Perl and LISP in particular are great for it, and it's "what you do" in Artificial Intelligence work. In JavaScript, it's not too hard either: all I need to do is parse the format string and build a definition of the function that will implement it. Assuming I want to name the function `format0`, I would get something like this:
 
-<pre>var funcString = "Date.prototype.format0 = function() {return this.getFullYear() + '-' + (zeroPad(this.getMonth() + 1)) + '-' + zeroPad(this.getDate());}"</pre>
+```
+var funcString = "Date.prototype.format0 = function() {return this.getFullYear() + '-' + (zeroPad(this.getMonth() + 1)) + '-' + zeroPad(this.getDate());}"
+```
 
 This isn't a function, it's a string. But by `eval()`ing it, I can make it a function, and then when I want the date formatted as `Y-m-d`, I just do this:
 
-<pre>var d = new Date();
-alert(d.format0());</pre>
+```
+var d = new Date();
+alert(d.format0());
+```
 
 ### How can I call a function without a name?
 
@@ -80,7 +90,9 @@ There's still an obvious problem -- I can't call this code at runtime because I 
 
 Sounds good to me! Since JavaScript has associative arrays (objects are associative arrays), I'll use those as the hashtable. The resulting function looks for an entry in the hashtable, builds the function if it's not there, and then uses it. There's an initial cost the first time I format a string with a given format, but after that, it's cheap, so I can go to town. Essentially I'm unrolling and pre-compiling a loop. To prove it, I can `document.write(Date.prototype.format0);` and see what the code ended up being:
 
-<pre>function () { return this.getFullYear() + "-" + String.leftPad(this.getMonth() + 1, 2, "0") + "-" + String.leftPad(this.getDate(), 2, "0"); }</pre>
+```
+function () { return this.getFullYear() + "-" + String.leftPad(this.getMonth() + 1, 2, "0") + "-" + String.leftPad(this.getDate(), 2, "0"); }
+```
 
 The functions are named in the order in which they're defined: `format0`, `format1` and so forth. Why do that? Why not just use the formatting string's own value as the name of the function? Hashtable keys can be any string value, but functions have to have legal, callable names (at least in some browsers). That's why I'm making a legal name for the function and using the hashtable to look it up.
 

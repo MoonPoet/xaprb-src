@@ -11,7 +11,8 @@ This article shows you how to use a little-known InnoDB feature to find out what
 
 One of the most common complaints I've heard from DBAs used to other database servers is "I can't find out who holds the locks that are blocking all these connections and making them time out." I feel your pain. Before I helped scale my employer's systems to deal with larger volumes of data, InnoDB lock contention was a serious issue. And as far as I knew, you couldn't find out who was holding locks. I knew you could see who was *waiting for locks to be granted*; that's easy. You just run `SHOW INNODB STATUS` and look for the following text:
 
-<pre>------------
+```
+------------
 TRANSACTIONS
 ------------
 Trx id counter 0 4874
@@ -26,7 +27,8 @@ MySQL thread id 9, query id 173 localhost root Sending data
 select * from t1 for update
 ------- <strong>TRX HAS BEEN WAITING 6 SEC FOR THIS LOCK TO BE GRANTED</strong>:
 RECORD LOCKS space id 9 page no 3 n bits 72 index `PRIMARY` of table `test/t1` trx id 0 4873 lock_mode X waiting
-...</pre>
+...
+```
 
 That's fine, but who holds the lock? I thought there was no way to find that out.
 
@@ -34,13 +36,16 @@ That's fine, but who holds the lock? I thought there was no way to find that out
 
 Until I learned about the <a href="http://dev.mysql.com/doc/en/innodb-monitor.html">InnoDB Lock Monitor</a>, that is. You enable it by running the following command:
 
-<pre>CREATE TABLE innodb_lock_monitor(a int) ENGINE=INNODB;</pre>
+```
+CREATE TABLE innodb_lock_monitor(a int) ENGINE=INNODB;
+```
 
 It's quite an ugly hack, but it turns out the table name is actually "magical." It's a special table name that tells InnoDB to start the lock monitor. You can stop it by dropping the table again.
 
 This little-noticed feature makes InnoDB print out a slightly modified version of what you see with `SHOW INNODB STATUS`. The "slight modification" is to print out not only the locks the transaction waits for, but also those it *holds*. For example, here's the transaction that holds the locks:
 
-<pre>---TRANSACTION 0 4872, ACTIVE 32 sec, process no 7142, OS thread id 1141287232
+```
+---TRANSACTION 0 4872, ACTIVE 32 sec, process no 7142, OS thread id 1141287232
 2 lock struct(s), heap size 368
 MySQL thread id 8, query id 164 localhost root
 <strong>TABLE LOCK table `test/t1` trx id 0 4872 lock mode IX
@@ -49,7 +54,8 @@ Record lock, heap no 1 PHYSICAL RECORD: n_fields 1; compact format; info bits 0
  0: len 8; hex 73757072656d756d; asc supremum;;
 
 Record lock, heap no 2 PHYSICAL RECORD: n_fields 3; compact format; info bits 0
- 0: len 4; hex 80000001; asc     ;; 1: len 6; hex 000000000d35; asc      5;; 2: len 7; hex 800000002d0110; asc     -  ;;</pre>
+ 0: len 4; hex 80000001; asc     ;; 1: len 6; hex 000000000d35; asc      5;; 2: len 7; hex 800000002d0110; asc     -  ;;
+```
 
 That's fine, but there are, ah, limitations. As the manual says, InnoDB periodically prints out this text -- essentially spewing InnoDB's guts -- to its standard output. This gets redirected to the server error log in any sane installation. Who's looking there? And it gets printed out at long intervals, which seems to be about every 16 seconds on the machines I use.
 
@@ -65,13 +71,15 @@ Here's how this works: you start innotop, and press the L key to switch to Lock 
 
 This mode shows you something like the following:
 
-<pre>_____________________________ InnoDB Locks __________________________
+```
+_____________________________ InnoDB Locks __________________________
 CXN   ID  Type    Waiting  Wait   Active  Mode  DB    Table  Index
 file  12  RECORD        1  00:10   00:10  X     test  t1     PRIMARY
 file  12  TABLE         0  00:10   00:10  IX    test  t1
 file  12  RECORD        1  00:10   00:10  X     test  t1     PRIMARY
 file  11  TABLE         0  00:00   00:25  IX    test  t1
-file  11  RECORD        0  00:00   00:25  X     test  t1     PRIMARY</pre>
+file  11  RECORD        0  00:00   00:25  X     test  t1     PRIMARY
+```
 
 That's helpful! I can see the locks held and waited for in a nice tabular format. It's pretty easy to see connection 11 is blocking connection 12.
 

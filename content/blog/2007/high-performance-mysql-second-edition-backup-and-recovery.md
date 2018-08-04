@@ -13,7 +13,8 @@ The chapter devotes a lot of space to code listings and such, and not enough on 
 
 The outline, as I have it so far, is as follows. If you compare it to the first edition, you'll see I've rearranged it quite a bit:
 
-<pre>1  Why Backups?
+```
+1  Why Backups?
    (very brief, even more so than the first edition)
 2 Considerations and Tradeoffs
    2.1 How Much Can You Afford to Lose?
@@ -36,7 +37,8 @@ The outline, as I have it so far, is as follows. If you compare it to the first 
    4.6 Filesystem Snapshots
    4.7 MySQL Global Hot Backup
    4.8 Automating and Scripting Backups
-5 Rolling Your Own Backup Script</pre>
+5 Rolling Your Own Backup Script
+```
 
 At this point, I have written sections 1, 2 and 3, which are about 11 pages in OpenOffice.org (compare to 6 pages on paper in the first edition). I'm sure this will only grow as other things occur to me. The outline of section 4 is completely open to change, and section 5 might not even happen; if you can script, you can script. Otherwise, you might want to use one of the tools listed in section 4. All in all, I'd say we're looking at about 25 to 30 pages, just based on what's in my head and not yet written down.
 

@@ -20,7 +20,7 @@ First, set everything up.
 
 Next let's set up a script that `mk-loadavg` can use to gather some information when it detects a high CPU condition. Save the contents of this script as "collect-stats.sh". The script will gather about 30 seconds worth of statistics. It uses a simple sentinel file `/tmp/gatherinfo` to prevent multiple occurrences from gathering statistics at the same time. (This is intentionally simple for demo purposes.)
 
-<pre>
+```
 #!/bin/bash
 
 if [ -f /tmp/gatherinfo ]; then exit 0; fi
@@ -37,12 +37,13 @@ sleep 30
 ps -eaf >> collected/$d-ps 2>&1 &
 mysql -e 'show innodb status\G show full processlist\G' >> collected/$d-innodbstatus 2>&1 &
 rm /tmp/gatherinfo
-</pre>
+```
 
 Now make the script executable: `chmod +x collect-stats.sh`. At this point we're ready to start working. Let's fire the stats-collection script when the system's user CPU goes above 40%.<cod>
 
-<pre>perl mk-loadavg --watch "Server:vmstat:us:>:40" --interval 1 --execute collect-stats.sh
-</pre></code> 
+```
+perl mk-loadavg --watch "Server:vmstat:us:>:40" --interval 1 --execute collect-stats.sh
+```</code> 
 
 If the CPU goes over 40%, you'll get a bunch of files in the `collected` directory, with helpful information to diagnose the problem. This example usage is pretty similar to a real-life one I set up recently. It enabled me to take a methodical approach to the problem: 
 1.  From the `top` output I was able to identify that MySQL was causing the spike.

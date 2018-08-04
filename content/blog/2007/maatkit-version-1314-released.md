@@ -11,7 +11,8 @@ categories:
 
 This release fixes several minor bugs. It also renames all the tools to avoid trademark violation, completing the project rename. (Let me know if I missed anything.)
 
-<pre>Changelog for mk-find:
+```
+Changelog for mk-find:
 
 2007-11-25: version 0.9.7
 
@@ -27,6 +28,7 @@ Changelog for mk-table-checksum:
 
 2007-11-25: version 1.1.20
 
-   * --replcheck didn't recurse; it should recurse one level (to replicas).</pre>
+   * --replcheck didn't recurse; it should recurse one level (to replicas).
+```
 
 

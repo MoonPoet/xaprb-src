@@ -9,7 +9,8 @@ categories:
 
 This release fixes some minor bugs. It also adds a few major new features to several of the tools. The command-line option and help functionality, as well as several other pieces of common functionality, has been replaced with common modules that have a test suite. This is the first step towards a gradual rewrite to replace untested 'script' code with tested, maintainable code.
 
-<pre>Changelog for mysql-archiver:
+```
+Changelog for mysql-archiver:
 
 2007-11-04: version 1.0.2
 
@@ -128,6 +129,7 @@ Changelog for mysql-visual-explain:
 
    * Made command-line help easier to use.
    * Removed the dependency on Term::ReadKey.
-   * Replaced some code with modules that are unit-tested.</pre>
+   * Replaced some code with modules that are unit-tested.
+```
 
 

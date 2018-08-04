@@ -19,13 +19,17 @@ As far as I know, there is only one tool that is capable of doing this. It is mk
 
 The correct way to sync a master-master setup with mk-table-sync is with the `--synctomaster` option, which tells it to make changes on the master:
 
-<pre>mk-table-sync --synctomaster h=server2,D=sakila,t=film</pre>
+```
+mk-table-sync --synctomaster h=server2,D=sakila,t=film
+```
 
 Notice that I'm connecting to the replica, but instructing it to make changes on the master. (Yes, it is able to find the master by inspecting the replica).
 
 If you do the following, you'll probably cause problems:
 
-<pre>mk-table-sync h=server1,D=sakila,t=film h=server2</pre>
+```
+mk-table-sync h=server1,D=sakila,t=film h=server2
+```
 
 I've just updated the documentation to point out the subtleties with master-master replication. However, you should always keep in mind: it's not just master-master replication. *Any* replication configuration is best synchronized by making the changes on the master, and you should *always* avoid changing data on a replica -- even to "fix" the replica. I might also add a feature to mk-table-sync to warn you when it detects that you are trying to change data on a replica.
 

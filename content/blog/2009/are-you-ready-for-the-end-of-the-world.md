@@ -7,13 +7,14 @@ categories:
 ---
 Have you prepared yourself?
 
-<pre>mysql&gt; select 1234567890 - unix_timestamp();
+```
+mysql&gt; select 1234567890 - unix_timestamp();
 +-------------------------------+
 | 1234567890 - unix_timestamp() |
 +-------------------------------+
 |                         25091 | 
 +-------------------------------+
-</pre>
+```
 
 Not much longer now!
 

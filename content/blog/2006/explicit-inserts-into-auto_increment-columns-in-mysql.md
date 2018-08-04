@@ -11,30 +11,36 @@ It is possible to explicitly insert values into an `AUTO_INCREMENT` in MySQL, bu
 
 Suppose I have the following table:
 
-<pre>create table number (
+```
+create table number (
     number int not null auto_increment primary key
-) ;</pre>
+) ;
+```
 
 Now suppose I insert some values into the primary key explicitly, bypassing the `AUTO_INCREMENT` feature:
 
-<pre>insert into number(number) values (-100);
+```
+insert into number(number) values (-100);
 select * from number;
 +--------+
 | number |
 +--------+
 | -100   |
-+--------+</pre>
++--------+
+```
 
 So far, so good. Now, I'll try to insert the value 0:
 
-<pre>insert into number(number) values (0);
+```
+insert into number(number) values (0);
 select * from number;
 +--------+
 | number |
 +--------+
 | -100   |
 | 1      |
-+--------+</pre>
++--------+
+```
 
 Why is the value 1? It turns out that, by default, MySQL generates the next AUTO_INCREMENT value for the column when either `NULL` or 0 is inserted. The next value is *not* the maximum value plus one; it is the next value larger than an internal counter MySQL maintains, which starts at 0 by default.
 

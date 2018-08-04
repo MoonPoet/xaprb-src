@@ -16,12 +16,14 @@ It has what I consider to be smart defaults. For example, by default it commits 
 
 I've been following the "release early, release often" philosophy with these two tools. You should test carefully before you trust them with your data. If you can't restore your data accurately, it's probably a bug. I've been testing with the following procedure:
 
-<pre>mysql-table-checksum -a ACCUM localhost > checksum-before
+```
+mysql-table-checksum -a ACCUM localhost > checksum-before
 mysqldump --all-databases | gzip -c - > sanity.gz
 mysql-parallel-dump ... options ... 
 mysql-parallel-restore ... options ... default/
 mysql-table-checksum -a ACCUM localhost > checksum-after
-mysql-checksum-filter checksum-before checksum-after</pre>
+mysql-checksum-filter checksum-before checksum-after
+```
 
 If the checksums don't match after restoring, you can restore the original data from the sanity dump. I encourage you to report any bugs you find with this procedure. Incidentally, this exercise taught me that `LOAD DATA INFILE` is pretty hard to get just right. It has all sorts of weird dependencies on character sets that aren't documented. That's why I'm a little cautious and I'm asking you to tell me if you can't restore correctly.
 

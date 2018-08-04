@@ -9,7 +9,8 @@ Work continues apace on [High Performance MySQL, Second Edition](/blog/2007/08/3
 
 I should note that there are separate chapters on architecture, schema and indexing design, application optimization, query optimization, etc. We're trying to focus this chapter on "advanced features" and how to get high performance out of them. Also, the outline is still subject to change: there's so much material that it's hard to decide the best place to put something, and exactly what is an "advanced feature" might be open to interpretation, or we might feel something is better placed elsewhere. That said, please throw your ideas at us and we'll worry about the details for you. Here's the outline of this chapter, as of three minutes ago:
 
-<pre>[Intro]
+```
+[Intro]
 The MySQL Query Cache
   Operational Detail and Caveats
   Optimizations
@@ -49,6 +50,7 @@ Merge Tables and Partitioning
   Partitioned Tables
     Optimizing Queries Against Partitioned Tables
     Maintaining Partitioned Tables
-Distributed Transactions (XA)</pre>
+Distributed Transactions (XA)
+```
 
 

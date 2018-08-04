@@ -15,10 +15,12 @@ In MySQL, creating a temporary table has exactly the same syntax as creating a r
 
 Temporary tables can only appear once in every query. Sometimes this can bite unexpectedly. For example, sometimes I use temporary tables to assist in writing queries, and I might write a subquery against the temporary table, then join it back to itself:
 
-<pre>select... from temp_table
+```
+select... from temp_table
 inner join (
    select ... from temp_table
-);</pre>
+);
+```
 
 This will fail. It's fairly obvious in this example, but I've run into this a few times when it caught me off guard and took a while to figure out what was going on. The error message is `ERROR 1137 (HY000): Can't reopen table: 'temp_table'`. Again that's fairly obvious, but for whatever reason -- I can't recall the circumstances -- it was actually hard to root out the problem.
 
@@ -46,7 +48,9 @@ It's easy to work around the problem; disabling the [query cache](http://dev.mys
 
 The privilege to create temporary tables is separate from the privilege to create regular tables, and implies the privilege to drop them. One thing I've seen happen is someone has permission to create temporary tables, creates some, and tries to drop them, but gets denied. The gotcha here is the drop statement must also have the word `TEMPORARY`, e.g.
 
-<pre>drop temporary table temp_table;</pre>
+```
+drop temporary table temp_table;
+```
 
 If the word `TEMPORARY` is omitted, the statement tries to drop a regular table. It is a very good idea to **always** include the word `TEMPORARY` to avoid accidentally dropping a regular table! It is way too easy to get confused, especially when working with temporary tables that mask real tables. When working across databases, things get even worse; imagine I'm in database A, create temporary table `B.orders`, and then drop table `orders`, forgetting to qualify it with the database name. Oops! If there's a table named `orders` in database A, I just dropped it! If I'd included the word `TEMPORARY` in my statement, nothing bad would have happened. I won't say who but, ahem, "somebody I know well" has done this on a production system.
 

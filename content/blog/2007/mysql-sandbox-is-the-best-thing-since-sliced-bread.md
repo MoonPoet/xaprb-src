@@ -9,8 +9,10 @@ I've been preparing for my [innotop session](http://www.mysqlconf.com/cs/mysqluc
 
 To get started, I just read through Giuseppe's Sandbox article on O'Reilly Databases Blog. After reading this, I downloaded the scripts and a bunch of binary distributions of MySQL (I'm using Ubuntu). I took the "how to make it easy" advice and unpacked them all in /opt/mysql:
 
-<pre>baron@wabbit:~ $ ls /opt/mysql
-3.23.58  4.0.27  4.1.0  4.1.22  5.1.15  5.2.3</pre>
+```
+baron@wabbit:~ $ ls /opt/mysql
+3.23.58  4.0.27  4.1.0  4.1.22  5.1.15  5.2.3
+```
 
 After that, all I had to do was change to the sandbox directory and say `./express_install.pl <version>` for each version, and it set everything up for me. Boy, was that easy! Before I did this, I had spent a couple hours reading through the manual's instructions on how to get many servers on one machine -- this was much faster and easier.
 

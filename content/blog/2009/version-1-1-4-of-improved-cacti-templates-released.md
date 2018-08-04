@@ -26,7 +26,7 @@ To ease the process of future upgrades, I've also added in a gratuitous GPRINT d
 
 The full changelog follows.
 
-<pre>
+```
 2009-10-25: version 1.1.4
 
         * Changed SSH options so host keys are accepted automatically (issue 68).
@@ -47,6 +47,6 @@ The full changelog follows.
         * Added the InnoDB Tables In Use graph (issue 32).
         * Added the InnoDB Current Lock Waits graph.
         * Added the InnoDB Lock Structures graph (issue 32).
-</pre>
+```
 
 

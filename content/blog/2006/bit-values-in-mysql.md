@@ -23,7 +23,8 @@ This change in behavior means it's not safe to use the `BIT` type in earlier ver
 
 The client libraries, including the command-line client and all the GUI clients I've seen, don't seem to know how to handle `BIT` values. They don't display them as a series of ones and zeroes. For instance, the following code even breaks the alignment of the command-line output!
 
-<pre>mysql> create table test (i bit not null default 0);
+```
+mysql> create table test (i bit not null default 0);
 mysql> insert into test (i) values (1), (1), (0), (0);
 mysql> select * from test;
 +---+
@@ -33,18 +34,21 @@ mysql> select * from test;
 |  |
 |   |
 |   |
-+---+</pre>
++---+
+```
 
 As I mentioned above, the data seems to be stored internally, and transmitted through the client libraries, as a `BINARY` value, which is actually a string type in MySQL. How it displays depends on the width of the column. For example, if the column is 32 bits wide, it is treated as `CHAR(4)`. If it's 8 bits wide, it is treated as `CHAR(1)`:
 
-<pre>create table test(ch bit(8));
+```
+create table test(ch bit(8));
 mysql> insert into test values (b'01011010');
 mysql> select * from test;
 +------+
 | ch   |
 +------+
 | Z    |
-+------+</pre>
++------+
+```
 
 To display the value as an integer, it has to be cast to another type. One way to do this is add 0 to the value: `select ch + 0 from test;`. Another way is `select cast(ch as unsigned) from test;`
 

@@ -21,7 +21,8 @@ If you do want to hack the source, I encourage you to be ready to use a debugger
 
 I never wrote much documentation for this library, but I might attempt to remedy that at some point (I probably don't have time though -- sorry). In the meantime, here's a synopsis to get you started:
 
-<pre>&lt;?php
+```
+&lt;?php
 
 # Create a parser and parse a simple document.
 include_once("XmlParser.php");
@@ -44,7 +45,8 @@ $serializer = new XmlSerializer("XML");
 echo $serializer-&gt;serializeNode($document);
 echo "\n";
 
-?&gt;</pre>
+?&gt;
+```
 
 The real documentation is the [DOM core specification](http://www.w3.org/TR/DOM-Level-2-Core/core.html), as I said. The object you get back from calling `parse()` is a `Document`, and you just use the DOM as normal after that.
 

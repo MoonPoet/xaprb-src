@@ -15,12 +15,13 @@ But even within the ranks of people who supposedly know MySQL's workings, lots o
 
 Let's see it in action from start to finish.
 
-<pre>SELECT SQL_NO_CACHE COUNT(col1) FROM users
+```
+SELECT SQL_NO_CACHE COUNT(col1) FROM users
 WHERE userid IN(
    SELECT userid FROM othertbl
 )
 ORDER BY userid DESC;
-</pre>
+```
 
 The steps to execute this query are as follows:
 
@@ -42,7 +43,9 @@ That's pretty much the whole thing. I almost posted the lines and file names of 
 
 If you're really curious, you can use the following query to test your knowledge of MySQL's execution plan. Trace this one in your Visual Studio debugger and see how it works:
 
-<pre>SELECT 0x417072696C20466F6F6C21;</pre>
+```
+SELECT 0x417072696C20466F6F6C21;
+```
 
 That query doesn't access any tables, so it has a special execution plan that should show you whether you understand what's been explained above. Have fun!
 

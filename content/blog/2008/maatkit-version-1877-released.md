@@ -11,7 +11,8 @@ Maatkit contains essential command-line utilities for MySQL, such as a table che
 
 This release contains major bug fixes and new features. Some of the changes are not backwards-compatible. It also contains new tools to help you discover replication replicas and move them around the replication hierarchy.
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2008-03-16: version 1.0.8
 
@@ -139,6 +140,6 @@ Changelog for mk-visual-explain:
 
    * Added --setvars option (bug #1904689, bug #1911371).
    * Added --charset option (bug #1877548).
-</pre>
+```
 
 

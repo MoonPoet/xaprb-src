@@ -11,7 +11,8 @@ Maatkit contains essential command-line utilities for MySQL, such as a table che
 
 This release contains bug fixes and new features.
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2008-01-05: version 1.0.6
 
@@ -80,6 +81,7 @@ Changelog for mk-table-sync:
    * Added the --function command-line option.
    * Added support for the FNV_64 hash function (see mk-table-checksum).
    * Made suffixes for time options optional (bug #1858696).
-   * InnoDB tables use --transaction unless it's explicitly specified.</pre>
+   * InnoDB tables use --transaction unless it's explicitly specified.
+```
 
 

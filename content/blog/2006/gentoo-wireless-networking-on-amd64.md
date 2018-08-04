@@ -37,10 +37,12 @@ After some banging of the head against the wall, I returned the card and got one
 
 I built the 2.6.15-gentoo-r4 kernel with SMP support and built in the encryption routines used by the card:
 
-<pre>Processor type and features ---&gt;
+```
+Processor type and features ---&gt;
     [*] Symmetric multi-processing support
 
-Cryptographic options ---&gt; (I enabled them all)</pre>
+Cryptographic options ---&gt; (I enabled them all)
+```
 
 then did `emerge madwifi-driver` (version 0.1443.20060207) and followed the instructions for setting up the `ath0` interface via `udev` (version 079-r1). These are well documented at many websites, including the Gentoo forums, but the output of `emerge` is really all you need. I didn't need to create the interface via a command as the instructions say; I was able to just let `udev` create it at boot.
 
@@ -48,11 +50,13 @@ Then all I needed to do was `modprobe ath_pci` and the interface appeared! Of co
 
 After this bump in the road, it's been smooth sailing. The network works great -- better than my DSL, that's for sure. And I have to say, this machine absolutely flies. It probably has a lot to do with the large L1 cache (and everything else for that matter). Look at this:
 
-<pre>tigger ~ # time emerge xorg-x11
+```
+tigger ~ # time emerge xorg-x11
 [snip...]
 real    24m59.155s
 user    18m3.664s
-sys     6m27.860s</pre>
+sys     6m27.860s
+```
 
 Needless to say, there are no [problems running Firefox](/blog/2006/01/23/firefox-or-opera-on-slow-hardware/) on this machine.
 

@@ -25,7 +25,8 @@ Both are fairly easy to implement; really just a dozen or so lines of code. But 
 
 With `mysql-find`, now I can do these tasks and many more, very easily:
 
-<pre># Delete scratch tables created by processes that died
+```
+# Delete scratch tables created by processes that died
 mysql-find --pid '\D_(\d+)$' scratch --exec_plus "DROP TABLE %s";
 
 # Delete old tables created by analysts
@@ -33,7 +34,7 @@ mysql-find --mtime +30 analyst_scratch --exec_plus "DROP TABLE %s";
 
 # Save table size and row count for monitoring over time
 mysql-find --noquote --exec "INSERT INTO stat.tblsize(db, tbl, idxlen, datalen, rowcount) VALUES('%D', '%N', %I, %d, %S)";
-</pre>
+```
 
 I'll write separately about the `--pid` option and how I use it. It's a simple naming convention that makes life easy when you don't want to use temporary tables (in my case, because of replication). If you're curious, there are more details in the mysql-find man page.
 

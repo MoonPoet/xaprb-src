@@ -7,6 +7,7 @@ date: 2015-08-08T17:24:37-04:00
 title: "An Outline for a Book on InnoDB"
 description: "This would have been epic. Epic. EPIC. But it never happened."
 image: /media/2015/08/iceberg.jpg
+credit: https://www.flickr.com/photos/29317846@N03/2743294768/
 ---
 
 Years ago I pursued my interest in InnoDB's architecture and design, and became impressed with its sophistication. Another way to say it is that [InnoDB is complicated, as are all MVCC databases](/blog/2014/12/08/eventual-consistency-simpler-than-mvcc/). However, InnoDB manages to hide the bulk of its complexity entirely from most users.
@@ -19,7 +20,7 @@ At one time I actually understood a lot of this material, but I have forgotten m
 
 I did not begin writing. Although it is incomplete, outdated, and in some cases wrong, I share the outline here in case anyone is interested. It might be of particular interest to someone who thinks it's an easy task to write a new database.
 
-<code>
+```
 High-Level Outline:
 
 - Introduction
@@ -841,6 +842,4 @@ Further reading:
      (http://blogs.innodb.com/wp/2011/04/mysql-5-6-innodb-scalability-fix-kernel-mutex-removed/)
   * The Wikipedia article on InnoDB?
   * InnoDB does bulk commits for things like ALTER, every 10k rows, to avoid problems internally.
-</code>
-
-Photo credits: [iceberg](https://www.flickr.com/photos/29317846@N03/2743294768/)
+```

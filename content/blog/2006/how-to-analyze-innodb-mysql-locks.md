@@ -19,7 +19,8 @@ I've found only a very limited set of circumstances in which MySQL will say what
 
 The first way to see locks is when there's been a deadlock. The status text will show transaction information on the transactions that deadlocked, which locks they held, and which they were waiting for. Here is a sample. Look at the sections titled "WAITING FOR THIS LOCK TO BE GRANTED" and "HOLDS THE LOCKS."
 
-<pre>------------------------
+```
+------------------------
 LATEST DETECTED DEADLOCK
 ------------------------
 060731 20:19:58
@@ -56,7 +57,8 @@ RECORD LOCKS space id 0 page no 131120 n bits 72 index `GEN_CLUST_INDEX` of tabl
 Record lock, heap no 2 PHYSICAL RECORD: n_fields 4; compact format; info bits 0
  0: len 6; hex 000000019000; asc       ;; 1: len 6; hex 000000016e01; asc     n ;; 2: len 7; hex 80000000320110; asc     2  ;; 3: len 4; hex 80000000; asc     ;;
 
-*** WE ROLL BACK TRANSACTION (2)</pre>
+*** WE ROLL BACK TRANSACTION (2)
+```
 
 More importantly, the lines beginning "RECORD LOCKS space id 0&#8243; show which index of which table was locked. That is the real meat of the matter -- that's what you need to know.
 
@@ -66,7 +68,8 @@ There's just one problem: after there's been a deadlock, it's too late. You don'
 
 The next place you can sometimes see lock information is in the transaction section of the output. Here's a sample:
 
-<pre>---TRANSACTION 0 93789802, ACTIVE 19 sec, process no 9544, OS thread id 389120018
+```
+---TRANSACTION 0 93789802, ACTIVE 19 sec, process no 9544, OS thread id 389120018
 MySQL thread id 23740, query id 194861248 worker1.office 192.168.0.12 robot
 ---TRANSACTION 0 93789797, ACTIVE 20 sec, process no 9537, OS thread id 389005359 starting index read
 mysql tables in use 1, locked 1
@@ -82,7 +85,8 @@ Record lock, heap no 77 PHYSICAL RECORD: n_fields 15; compact format; info bits 
 ---TRANSACTION 0 93789679, ACTIVE 31082 sec, process no 9535, OS thread id 388972583 starting index read, thread declared inside InnoDB 6
 mysql tables in use 4, locked 4
 11614 lock struct(s), heap size 683328
-MySQL thread id 23731, query id 194861117 elpaso 192.168.0.31 robot</pre>
+MySQL thread id 23731, query id 194861117 elpaso 192.168.0.31 robot
+```
 
 Notice the first transaction has been waiting 20 seconds for a lock to be granted, and it tells you which table and index as above. The other transaction I included (there were many in this section, but I omitted most) says it has 4 tables open and 4 locked. What it doesn't say is which ones.
 

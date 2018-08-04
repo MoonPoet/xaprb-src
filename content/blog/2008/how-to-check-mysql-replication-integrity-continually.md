@@ -22,14 +22,18 @@ Let's take a look at the new features.
 
 Suppose you want a rough idea of whether your data is really different on a replica. Maybe you're a consultant who needs to check a really big data set to see if there's cause for concern. (Hmm, this sounds familiar, almost as though... nevermind.) One way to do that is to checksum a random sample of the rows. Let's checksum 5% of the data:
 
-<pre>mk-table-checksum --replicate test.checksum --chunksize 1000 --probability 5 localhost</pre>
+```
+mk-table-checksum --replicate test.checksum --chunksize 1000 --probability 5 localhost
+```
 
 When this completes, you can check the results on the replica.
 
 While this is handy, it's not what you need if you're trying to set up a routine job to check all your data on an ongoing basis. You want complete coverage over some period of time. That's what `--modulo` and `--offset` are for. Let's do 1/7th of the data every day, to achieve full coverage over the course of a week:
 
-<pre>mk-table-checksum --replicate test.checksum --chunksize 1000 \
-   --modulo 7 --offset 'WEEKDAY(NOW())' localhost</pre>
+```
+mk-table-checksum --replicate test.checksum --chunksize 1000 \
+   --modulo 7 --offset 'WEEKDAY(NOW())' localhost
+```
 
 Notice that I'm passing a SQL expression to the `--offset` option. There's a little bit of magic here. The tool puts `SELECT` in front of this and executes it in MySQL; if there's no error, then the result of the `SELECT` is used as the option's argument.
 
@@ -39,15 +43,19 @@ The final new feature is the ability to checksum based on newness.
 
 Scenario 1 is tables that don't change often, so they can be skipped entirely. Let's skip things that haven't changed in the last week:
 
-<pre>mk-table-checksum --replicate test.checksum --chunksize 1000 \
-   --since 'CURRENT_DATE - INTERVAL 7 DAY' localhost</pre>
+```
+mk-table-checksum --replicate test.checksum --chunksize 1000 \
+   --since 'CURRENT_DATE - INTERVAL 7 DAY' localhost
+```
 
 Again, the argument is an expression that MySQL can evaluate. (You could also write clever things here, such as selecting from an actual table.) If the table has an `Update_time` timestamp, and the value of `--since` looks like a temporal value, then the two are compared and the table can be skipped or checksummed, based on that comparison.
 
 But there's another scenario. The `--since` value can also be the value of the table's primary key (actually, the column by which the table is chunked, but the primary key is usually preferred for that.) Suppose you have an auto_increment primary key column named ID. Last time you checksummed, the maximum value in that column was 123,456. This time we can checksum only newer rows:
 
-<pre>mk-table-checksum --replicate test.checksum --chunksize 1000 \
-   --tables mydb.mytbl --since 123456 localhost</pre>
+```
+mk-table-checksum --replicate test.checksum --chunksize 1000 \
+   --tables mydb.mytbl --since 123456 localhost
+```
 
 The table will be divided into chunks of 1000 rows based on the range of values in the ID column, and the `--since` value will be applied as an extra `WHERE` clause mentioning that column. You can also use the `--sincecol` option to specify which column to apply the `WHERE` clause to, if necessary.
 
@@ -57,28 +65,35 @@ So far these options are useful, but of course you don't want to checksum your s
 
 This is the purpose of the `--argtable` argument, which lets you specify per-table options for the checksum operation. You create a table -- I'll use `checksum_args`, but you can call it whatever you like. What's important is the columns in the table:
 
-<pre>CREATE TABLE checksum_args (
+```
+CREATE TABLE checksum_args (
      db         char(64)     NOT NULL,
      tbl        char(64)     NOT NULL,
      -- other columns as desired
      PRIMARY KEY (db, tbl)
   );
-</pre>
+```
 
 You pass the name of this table to the tool:
 
-<pre>mk-table-checksum --argtable mydb.checksum_args [other options....]</pre>
+```
+mk-table-checksum --argtable mydb.checksum_args [other options....]
+```
 
 Now you can add columns to the table, named the same as the short form of some of mk-table-checksum's options. For example, if you want mydb.mytbl to be checksummed in chunks of 500 rows, add a `C` column to the table. (The short form of `--chunksize` is `-C`.) Now insert a row into the table:
 
-<pre>insert into checksum_args(db, tbl, C) values('mydb', 'mytbl', 500);</pre>
+```
+insert into checksum_args(db, tbl, C) values('mydb', 'mytbl', 500);
+```
 
 You can also add a `since` column to this table. And finally, you can use `--savesince` to specify whether to save the last-used `--since` back into the table after the checksum operation. This way the value persists from one run to the next. For tables that are skipped based on the timestamp of the table (instead of the biggest known value of the chunk column), the current timestamp is saved instead.
 
 You can also add the `--modulo` and `--offset` into the table.
 
-<pre>insert into checksum_args(db, tbl, C, M, O)
-  values('mydb', 'mytbl', 500, 7, 'DAYOFWEEK(NOW())');</pre>
+```
+insert into checksum_args(db, tbl, C, M, O)
+  values('mydb', 'mytbl', 500, 7, 'DAYOFWEEK(NOW())');
+```
 
 ### Conclusion
 

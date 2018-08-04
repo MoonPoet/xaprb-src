@@ -108,7 +108,7 @@ octave, the frequency increase from one note to the next is the twelfth root of
 Staying with Western music, where we define the A above middle C to have the
 frequency of 440Hz, the scale from A220 to A440 is as follows:
 
-<pre>
+```
 Note     Frequency
 =======  =========
 A220     220.0000
@@ -124,7 +124,7 @@ F-sharp  369.9944
 G        391.9954
 G-sharp  415.3047
 A440     440.0000
-</pre>
+```
 
 We'll refer back to this later.
 
@@ -139,7 +139,7 @@ count upwards five notes on a major scale, you'll reach the second note in the
 interval. Here's the C scale, with the intervals between the lowest C and the
 given note listed at the right:
 
-<pre>
+```
 Note  Name  Interval from C
 ====  ====  ===============
 C     Do    Unison
@@ -150,7 +150,7 @@ G     So    5th (a.k.a. Perfect 5th)
 A     La    Major 6th
 B     Ti    Major 7th
 C     Do    Octave (8th)
-</pre>
+```
 
 On the guitar, adjacent strings form intervals of fourths, except for the
 interval between the G and B strings, which is a major third.
@@ -367,7 +367,7 @@ With all that theory behind us, we can move on to a tuning system for the guitar
 
 Let's list the strings, their frequencies, and some of their overtones.
 
-<pre>
+```
 String  Freq    Overtone_2  Overtone_3  Overtone_4  Overtone_5
 ======  ======  ======      ======      =======     =======
 E       82.41   164.81      247.22      329.63      412.03
@@ -376,13 +376,13 @@ D       146.83  293.66      440.50      587.33      734.16
 G       196.00  392.00      587.99      783.99      979.99
 B       246.94  493.88      740.82      987.77      1234.71
 E       329.63  659.26      988.88      1318.51     1648.14
-</pre>
+```
 
 Because the open strings of the guitar form 4ths and one 3rd, you can tune the guitar's strings open, without any frets, using just those intervals. There's also a double octave from the lowest E to the highest E, but you don't strictly need to use that except as a check after you're done.
 
 For convenience, here's the same table with only the overtones we'll use.
 
-<pre>
+```
 String  Freq    Overtone_2  Overtone_3  Overtone_4  Overtone_5
 ======  ======  ==========  ==========  ==========  ==========
 E       82.41               247.22      329.63 
@@ -391,7 +391,7 @@ D       146.83              440.50      587.33      734.16
 G       196.00              587.99                  979.99
 B       246.94              740.82      987.77
 E       329.63              988.88      
-</pre>
+```
 
 #### Tuning the A String
 
@@ -571,13 +571,13 @@ scales are laid out. If I do that, however, I find that I have ugly-sounding
 thirds more often than not. So I'll tune by combinations of fifths, fourths, and
 thirds:
 
-<pre>
+```
 G A B C D E F G A B-flat C D...
 ^-------------^                 (up an octave)
       ^-------^                 (down a fifth)
       ^---^                     (up a third)
   ^-------^                     (down a fifth)
-</pre>
+```
 
 And so on. In addition to using thirds where I can (G-B, C-E), I'll check my
 fifths and fourths against each other. If you do the math, you'll notice that

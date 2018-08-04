@@ -27,9 +27,11 @@ To create a date-chooser on your HTML document, follow these steps:
 
 Here's some sample code:
 
-<pre>&lt;input id="dob" name="dob" size="10" maxlength="10" type="text"/&gt;&lt;img src="/files/calendar.gif" onclick="showChooser(this, 'dob', 'chooserSpan', 1950, 2010, 'Y-m-d', false);"/&gt;
+```
+&lt;input id="dob" name="dob" size="10" maxlength="10" type="text"/&gt;&lt;img src="/files/calendar.gif" onclick="showChooser(this, 'dob', 'chooserSpan', 1950, 2010, 'Y-m-d', false);"/&gt;
 &lt;div id="chooserSpan" class="dateChooser select-free" style="display: none; visibility: hidden; width: 160px;"&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+```
 
 This code causes the date chooser to be shown with a date range of 1950 to 2010, with the date formatted in ISO-8601 date format.
 

@@ -25,12 +25,15 @@ Even if it's set in your USE flags, your system might not be using NPTL for thre
 
 First, check whether software you compile can be configured with support for NPTL:
 
-<pre>$ getconf GNU_LIBPTHREAD_VERSION
-linuxthreads-0.10</pre>
+```
+$ getconf GNU_LIBPTHREAD_VERSION
+linuxthreads-0.10
+```
 
 If you see that output, this system is still using linuxthreads. Just to be sure, you can also execute the library (yep, the library itself can be executed):
 
-<pre>$ /lib/libc.so.6
+```
+$ /lib/libc.so.6
 GNU C Library stable release version 2.3.6, by Roland McGrath et al.
 ... snip ...
 Compiled on a Linux 2.6.11 system on 2006-06-18.
@@ -39,20 +42,23 @@ Available extensions:
         crypt add-on version 2.1 by Michael Glad and others
         linuxthreads-0.10 by Xavier Leroy
         The C stubs add-on version 2.1.2.
-... snip ...</pre>
+... snip ...
+```
 
 You want to look at the "Available extensions" section of the output. Again, in this example you can see linuxthreads is included, but not NPTL.
 
 On the other hand, maybe if you execute `/lib/tls/... ` you'd find an NPTL version there. In any case, once you rebuild with the `nptlonly` USE flag, you should see the following from executing `/lib/lib.so.6`:
 
-<pre>$ /lib/libc.so.6 
+```
+$ /lib/libc.so.6 
 GNU C Library stable release version 2.3.6, by Roland McGrath et al.
 ... snip ...
 Available extensions:
         GNU libio by Per Bothner
         crypt add-on version 2.1 by Michael Glad and others
         Native POSIX Threads Library by Ulrich Drepper et al
-... snip ...</pre>
+... snip ...
+```
 
 The `getconf` call should also return NPTL now.
 

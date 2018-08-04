@@ -13,7 +13,8 @@ I will cover several things in this article: assignments as r-values and its sid
 
 I'll use the same data as in recent articles:
 
-<pre>CREATE TABLE fruits (
+```
+CREATE TABLE fruits (
   type varchar(10) NOT NULL,
   variety varchar(20) NOT NULL,
   price decimal(5,2) NOT NULL default 0,
@@ -29,20 +30,23 @@ insert into fruits(type, variety, price) values
 ('pear',   'bradford',   6.05),
 ('pear',   'bartlett',   2.14),
 ('cherry', 'bing',       2.55),
-('cherry', 'chelan',     6.33);</pre>
+('cherry', 'chelan',     6.33);
+```
 
 ### Simultaneous assignment and reading
 
 MySQL lets you assign and read a variable at the same time. This is familiar in many programming languages where an assignment can be an r-value. For example,
 
-<pre>set @test1 := 0;
+```
+set @test1 := 0;
 set @test2 := @test1 := 5;
 select @test1, @test2;
 +--------+--------+
 | @test1 | @test2 |
 +--------+--------+
 | 5      | 5      | 
-+--------+--------+</pre>
++--------+--------+
+```
 
 The second statement sets `@test1` to 5, and then sets `@test2` to the result of that assignment, which is the current value of `@test1`. My previous articles have shown you how to exploit this to number rows in a result set, among other things. For example, you can keep a running count as MySQL processes rows, updating and returning the count at the same time.
 
@@ -50,7 +54,8 @@ The second statement sets `@test1` to 5, and then sets `@test2` to the result of
 
 Unfortunately, it got a bit messy sometimes. For example, the following batch, which restarts the numbering every time `type` changes, spews an extra `dummy` column into the output, because that column is where the calculations are taking place:
 
-<pre>set @type := '', @num := 1;
+```
+set @type := '', @num := 1;
 
 select type, variety,
    @num := if(@type = type, @num + 1, 1) as row_number,
@@ -70,7 +75,8 @@ order by type, variety;
 | orange | valencia   |          2 | orange | 
 | pear   | bartlett   |          1 | pear   | 
 | pear   | bradford   |          2 | pear   | 
-+--------+------------+------------+--------+</pre>
++--------+------------+------------+--------+
+```
 
 In previous articles I suggested wrapping that query in a subquery so you can pick which columns you want in the output. That is a bit inefficient (it creates a temporary table internally) and feels kind of kludgey.
 
@@ -78,21 +84,13 @@ In previous articles I suggested wrapping that query in a subquery so you can pi
 
 [MySQL doesn't evaluate expressions containing user variables until they are sent to the client](http://dev.mysql.com/doc/refman/5.0/en/user-variables.html), so some expressions don't work as expected. Setting a variable in one place (such as the `SELECT` list) and reading it another (such as the `HAVING` clause) might give weird results, like as those I demonstrated in my last article where every row was numbered 1 instead of getting incremented as expected.
 
-Here's further clarification from the manual:
+Here's further clarification from the [manual](http://dev.mysql.com/doc/refman/5.0/en/user-variables.html):
 
-<blockquote cite="http://dev.mysql.com/doc/refman/5.0/en/user-variables.html">
-  <p>
-    In a SELECT statement, each expression is evaluated only when sent to the client. This means that in a HAVING, GROUP BY, or ORDER BY clause, you cannot refer to an expression that involves variables that are set in the SELECT list. For example, the following statement does not work as expected:
-  </p>
-  
-  <p>
-    <code>mysql&gt; SELECT (@aa:=id) AS a, (@aa+3) AS b FROM tbl_name HAVING b=5;</code>
-  </p>
-  
-  <p>
-    The reference to b in the HAVING clause refers to an alias for an expression in the SELECT list that uses @aa. This does not work as expected: @aa contains the value of id from the previous selected row, not from the current row.
-  </p>
-</blockquote>
+> In a SELECT statement, each expression is evaluated only when sent to the client. This means that in a HAVING, GROUP BY, or ORDER BY clause, you cannot refer to an expression that involves variables that are set in the SELECT list. For example, the following statement does not work as expected:
+>
+> `mysql> SELECT (@aa:=id) AS a, (@aa+3) AS b FROM tbl_name HAVING b=5;`
+>
+> The reference to b in the HAVING clause refers to an alias for an expression in the SELECT list that uses @aa. This does not work as expected: @aa contains the value of id from the previous selected row, not from the current row.
 
 In other words, the "alias" in the `HAVING` clause is probably a pointer to a memory location, whose content is not determined for the current row until the current row is output to the client -- at which point it's too late to apply any `HAVING` criteria to the row.
 
@@ -100,7 +98,8 @@ In other words, the "alias" in the `HAVING` clause is probably a pointer to a me
 
 In my last article I showed you how to select the top N rows from each group with user variables. To make that work right, I had to group the query, use a `HAVING` clause, and force a certain index order for that query -- because of lazy evaluation. Otherwise, I might have been able to just use the variable in a `WHERE` clause, right? Lazy evaluation is why this doesn't work:
 
-<pre>set @type := '', @num := 1;
+```
+set @type := '', @num := 1;
 
 select type, variety, price,
        @num := if(@type = type, @num + 1, 1) as row_number,
@@ -114,7 +113,8 @@ where @num &lt;= 2;
 | apple | gala       |  2.79 |          1 | apple | 
 | apple | fuji       |  0.24 |          2 | apple | 
 | apple | limbertwig |  2.87 |          3 | apple | 
-+-------+------------+-------+------------+-------+</pre>
++-------+------------+-------+------------+-------+
+```
 
 That last row gets output even though it seems `@num` should have the value 3, eliminating it from the results. However, you can infer from this behavior that `@num` really had the value 2 at the time the `WHERE` clause was evaluated, and was only incremented to 3 after the row was sent to the client.
 
@@ -128,7 +128,8 @@ You can see this in a subquery in the `FROM` clause, which is internally stored 
 
 Let me show you the previous query slightly rewritten, and you'll see what I mean:
 
-<pre>set @type := '', @num := 1;
+```
+set @type := '', @num := 1;
 
 select type, variety, price, row_number
 from (
@@ -150,7 +151,8 @@ where row_number &lt;= 2;
 | pear   | bartlett |  2.14 |          2 | 
 | cherry | bing     |  2.55 |          1 | 
 | cherry | chelan   |  6.33 |          2 | 
-+--------+----------+-------+------------+</pre>
++--------+----------+-------+------------+
+```
 
 Just by introducing an intermediate step in the query, I forced the variables to be evaluated so the results, when they get to the outer `WHERE` clause, are deterministic. But as I mentioned before, this is kind of kludgey, and depending on the data, it might not be very efficient to create an intermediate temporary table for the results.
 
@@ -164,21 +166,25 @@ For this to work, you'd need a function that guarantees the expression is evalua
 
 Theoretically, then you could write something like the following and get the desired results:
 
-<pre>set @type := '', @num := 1;
+```
+set @type := '', @num := 1;
 
 select type, variety, price,
    coalesce(@num := if(@type = type, @num + 1, 1)) as row_number
-...</pre>
+...
+```
 
 It doesn't work. Why not? Because the `COALESCE` itself isn't evaluated until the rows are generated. So much for that idea.
 
 What about a scalar subquery, then?
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select type, variety, price,
    (select(@num := if(@type = type, @num + 1, 1))) as row_number,
-...</pre>
+...
+```
 
 Sorry, no dice. This gives exactly the same results.
 
@@ -188,13 +194,15 @@ This idea will not work, period. *Each and every expression in the `SELECT` list
 
 One thing I do know: subqueries in the `FROM` clause are materialized to a temp table, so this will definitely result in rows being generated. This might do what I want, at the expense of generating temporary tables willy-nilly:
 
-<pre>set @type := '', @num := 1;
+```
+set @type := '', @num := 1;
 
 select type, variety, price,
    (select n from (select @num := if(@type = type, @num + 1, 1) as n) as x) as row_number,
    (select t from (select @type := type as t) as x) as dummy
 from fruits
-where @num &lt;= 2;</pre>
+where @num &lt;= 2;
+```
 
 That won't work either, as it turns out. The subqueries are correlated -- they refer to columns from the outer table. That isn't allowed because of the intermediate step, which insulates the inner queries from the outer. This is a limitation of correlated subqueries: you can't nest a subquery in the `FROM` clause inside them.
 
@@ -204,7 +212,8 @@ This is really getting silly. It's time to stop trying to force this to work.
 
 What if I stop trying to get the `SELECT` clause to be evaluated at the same time as the `WHERE` clause? What if I work *with* the server's order of operations, and do all the evaluating *and* updating in the `WHERE` clause instead of in two places? Maybe it looks like this:
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select type, variety, price, @num
 from fruits
@@ -224,21 +233,25 @@ where
 | pear   | bartlett   |  2.14 | 0    | 
 | cherry | bing       |  2.55 | 0    | 
 | cherry | chelan     |  6.33 | 0    | 
-+--------+------------+-------+------+</pre>
++--------+------------+-------+------+
+```
 
 Hmm, that was not really what I wanted. It looks like the variable is never getting updated at all! I'm not sure why not. Maybe if I 'parenthesize' the variable expression like I tried before? I'll use the `GREATEST()` function, which I know will evaluate all its arguments instead of short-cutting like `COALESCE()`:
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select type, variety, price, @num
 from fruits
 where
    2 &gt;= @num := greatest(0, if(@type = type, @num + 1, 1))
-   and @type := type;</pre>
+   and @type := type;
+```
 
 No, that gives the same result. I feel like I'm getting close, though. What if I separate out the assignment and comparison?
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select * from fruits
 where @num := if(type = @type, @num + 1, 1)
@@ -251,18 +264,22 @@ select @num, @type;
 | @num | @type |
 +------+-------+
 | 0    | 0     | 
-+------+-------+</pre>
++------+-------+
+```
 
 That didn't work either. How did `@type` get assigned an integer? It should be a string. It turns out the [`:=` operator has the lowest possible operator precedence](http://dev.mysql.com/doc/refman/5.0/en/operator-precedence.html), so that `WHERE` clause is actually equivalent to
 
-<pre>where @num := (
+```
+where @num := (
    if(type = @type, @num + 1, 1)
       and (@type := (
-         type and @num &lt;= 2)));</pre>
+         type and @num &lt;= 2)));
+```
 
 If I use parentheses right, maybe I can get it to do what I want:
 
-<pre>select * from fruits
+```
+select * from fruits
 where (@num := if(type = @type, @num + 1, 1))
       and (@type := type)
       and (@num &lt;= 2);
@@ -273,7 +290,8 @@ select @num, @type;
 | @num | @type  |
 +------+--------+
 | 9    | cherry | 
-+------+--------+</pre>
++------+--------+
+```
 
 Now I've gotten the variables to be assigned, but the `WHERE` clause is still eliminating all the rows. This feels so close to being right. What's missing?
 
@@ -281,17 +299,20 @@ Now I've gotten the variables to be assigned, but the `WHERE` clause is still el
 
 In fact, I was very close. All I need to do is move the entire assignment and the evaluation inside the function. It seems the variable expressions need to be sealed away from the comparison operator. In the example below, I've put everything inside the `GREATEST()` function, but the expression that updates `@type` has an incompatible type (string), so I convert it to a number with `LENGTH()` and mask its value with `LEAST()`.
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select type, variety, price, @num
 from fruits
 where 2 &gt;= greatest(
    @num := if(@type = type, @num + 1, 1),
-   least(0, length(@type := type)));</pre>
+   least(0, length(@type := type)));
+```
 
 The entire `GREATEST()` expression evaluates to the resulting value of `@num`, which is what I want on the right-hand side of the comparison. And guess what? This works:
 
-<pre>+--------+----------+-------+------+
+```
++--------+----------+-------+------+
 | type   | variety  | price | @num |
 +--------+----------+-------+------+
 | apple  | gala     |  2.79 | 1    | 
@@ -302,16 +323,19 @@ The entire `GREATEST()` expression evaluates to the resulting value of `@num`, w
 | pear   | bartlett |  2.14 | 2    | 
 | cherry | bing     |  2.55 | 1    | 
 | cherry | chelan   |  6.33 | 2    | 
-+--------+----------+-------+------+</pre>
++--------+----------+-------+------+
+```
 
 After playing with more and more combinations, I found another way that works too:
 
-<pre>select *, @num
+```
+select *, @num
 from fruits
 where
    (@num := if(type = @type, @num + 1, 1)) is not null
    and (@type := type) is not null
-   and (@num &lt;= 2);</pre>
+   and (@num &lt;= 2);
+```
 
 I confess, I don't fully understand this. I figured it out through trial and error. If the user manual explains it well enough for me to have gotten there by reason, I don't know where. Can someone make it make sense please? I don't want to have to read the source...
 
@@ -327,14 +351,16 @@ Putting the variable assignments inside functions not only let me put everything
 
 As in previous articles, rows are processed and numbered in order. I never really stated what I was trying to accomplish in the example above. The query I showed you will just output a maximum of two consecutive rows of the same type, in the order they're read from the table (actually, I guess that's the order they pass through the `WHERE `filter, which might not be the same). If I want to do something specific, such as get the two cheapest varieties from each type of fruit, I need to add an explicit `ORDER BY` to get the rows in order of price:
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select type, variety, price, @num
 from fruits
 where 2 &gt;= greatest(
    @num := if(@type = type, @num + 1, 1),
    least(0, length(@type := type)))
-order by type, price;</pre>
+order by type, price;
+```
 
 Exercise for the reader: run this query without an index that can be used for ordering. What's in the `@num` column? Why? Add an index on `(type, price)` and try again. How does it change? Why? `EXPLAIN` the queries to find out.
 

@@ -18,7 +18,8 @@ Versioning each tool separately makes sense to me, because some tools are stable
 
 Right now I have organized the Subversion tree like this:
 
-<pre>/branches
+```
+/branches
    /1.1
       /mysql-table-checksum
 /tags
@@ -36,7 +37,8 @@ Right now I have organized the Subversion tree like this:
    /mysql-query-profiler
    /mysql-show-grants
    /mysql-table-checksum
-   /mysql-table-sync</pre>
+   /mysql-table-sync
+```
 
 I rarely branch anything; I do most development in /trunk. When I'm ready to release something, I do a `svn copy` to /tags/version/whatever. If the tag already exists I just copy into it; if not I make a new tag subdirectory and copy into that. I try not to make any changes in /tags (but occasionally I want to change the README file or something and I do it there). I'm not super-disciplined about all this, but I rarely deviate from it.
 

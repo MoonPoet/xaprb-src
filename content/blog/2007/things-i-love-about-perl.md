@@ -17,7 +17,9 @@ Sometimes the sense of humor, especially when imitated by neophytes trying to pr
 
 If you've never read [Programming Perl]({{< amz 0596000278 >}}), you're missing out on a lot of extremely subtle, very sharp and intelligent wit. I don't have my copy of the book at hand, but one joke that comes to mind is how to write the Lord of the Rings trilogy with a regular expression substitution:
 
-<pre>($lotr = $hobbit) =~ s/bilbo/frodo/g;</pre>
+```
+($lotr = $hobbit) =~ s/bilbo/frodo/g;
+```
 
 Or something like that. There are many fun examples that manage to teach the matter at hand *more* clearly, and keep me engaged more, than even the clearest straightforward explanation could.
 

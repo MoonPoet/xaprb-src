@@ -9,7 +9,8 @@ I'm going to try to explain how to make software testable in really practical te
 
 Here is a pseudocode snippet. There is some function that parses some IP address out of the output of the "ifconfig" command, and some other code that uses this to get an IP address and do something with it.
 
-<pre>parse_ip_address() {
+```
+parse_ip_address() {
    hostname = system.execute("hostname");
    ifconfig = system.execute("/sbin/ifconfig");
    ip = regex.capture(ifconfig, "/some/regex/" + hostname + "/some/other/regex/");
@@ -20,13 +21,14 @@ Here is a pseudocode snippet. There is some function that parses some IP address
 
 ip = parse_ip_address();
 // do something with the ip address.
-</pre>
+```
 
 This code is extremely hard to test. If someone says "it doesn't work on my computer," you can only respond "it works on mine and I can't reproduce it." The code relies on the server's hostname and the output of the ifconfig command, so the only way you can reproduce it is if you get access to your reporter's computer and run the code there. (Imagine if it relied on the time of day or the date!)
 
 Let's rewrite the code.
 
-<pre>parse_ip_address(hostname, ifconfig) {
+```
+parse_ip_address(hostname, ifconfig) {
    ip = regex.capture(ifconfig, "/some/regex/" + hostname + "/some/other/regex/");
    return ip;
 }
@@ -37,7 +39,7 @@ hostname = system.execute("hostname");
 ifconfig = system.execute("/sbin/ifconfig");
 ip = parse_ip_address(hostname, ifconfig);
 // do something with the ip address.
-</pre>
+```
 
 Now you can write back to the person who reported the issue and say "please send me the output of /sbin/ifconfig, and your hostname." You can write a test case, verify that it breaks, fix the code, and verify that all of your other tests still pass.
 

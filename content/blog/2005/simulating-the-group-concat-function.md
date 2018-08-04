@@ -9,7 +9,8 @@ MySQL 4.1 adds a number of new aggregate functions, among them [GROUP_CONCAT](ht
 
 It is possible to use [user variables](http://dev.mysql.com/doc/mysql/en/variables.html) to write some queries without GROUP_CONCAT. The key is to understand how MySQL implements selects. As the following example shows, it really loops through each row one at a time, evaluating the expression for each. This example uses the same `fruits` table as in my article on [simulating the ROW_NUMBER function](/blog/2005/09/27/simulating-the-sql-row_number-function/):
 
-<pre>set @result = '';
+```
+set @result = '';
 select @result := concat(@result, variety, ' ') 
 from fruits where type = 'apple';
 +------------------------------------------+
@@ -24,15 +25,18 @@ select @result;
 | @result               |
 +-----------------------+
 | fuji gala limbertwig  |
-+-----------------------+</pre>
++-----------------------+
+```
 
 It is possible to get similar functionality from Microsoft SQL Server 2000 with a local variable.
 
-<pre>declare @result varchar(8000);
+```
+declare @result varchar(8000);
 set @result = '';
 select @result = @result + name + ' '
     from master.dbo.systypes;
-select rtrim(@result);</pre>
+select rtrim(@result);
+```
 
 The result is the string "image text uniqueidentifier tinyint smallint int smalldatetime real money datetime float sql_variant ntext bit decimal numeric smallmoney bigint varbinary varchar binary char timestamp nvarchar nchar sysname." It is necessary to initialize the string to " before the select, because NULL concatenates to NULL.
 

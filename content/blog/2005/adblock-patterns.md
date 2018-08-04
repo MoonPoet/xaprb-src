@@ -51,13 +51,17 @@ Blocking content is a delicate dance. It's very easy to block too much, so the p
 *   tribalfusion
 *   webtrends
 
-To use it, join the entire list with <kbd>|</kbd> and start and end it with <kbd>/</kbd>. The following is everything together as a single regular expression. This is my one and only Adblock filter:
+To use it, join the entire list with `|` and start and end it with `/`. The following is everything together as a single regular expression. This is my one and only Adblock filter:
 
-<pre>/\bads\b|2o7|a1\.yimg|adbrite|adclick|adfarm|adrevolver|adserver|adtech|advert|atdmt|atwola|banner|bizrate|blogads|bluestreak|burstnet|casalemedia|coremetrics|doubleclick|falkag|fastclick|feedstermedia|googlesyndication|hitbox|httpads|imiclk|intellitxt|js\.overture|kanoodle|kontera|mediaplex|nextag|pointroll|qksrv|rightmedia|speedera|statcounter|tribalfusion|webtrends/</pre>
+```
+/\bads\b|2o7|a1\.yimg|adbrite|adclick|adfarm|adrevolver|adserver|adtech|advert|atdmt|atwola|banner|bizrate|blogads|bluestreak|burstnet|casalemedia|coremetrics|doubleclick|falkag|fastclick|feedstermedia|googlesyndication|hitbox|httpads|imiclk|intellitxt|js\.overture|kanoodle|kontera|mediaplex|nextag|pointroll|qksrv|rightmedia|speedera|statcounter|tribalfusion|webtrends/
+```
 
 If you're familiar with regular expressions, you will have realized some of the entries can be combined into one with grouping. Without taking this to extremes, here is the shorter version:
 
-<pre>/\bads\b|2o7|a1\.yimg|ad(brite|click|farm|revolver|server|tech|vert)|at(dmt|wola)|banner|bizrate|blogads|bluestreak|burstnet|casalemedia|coremetrics|(double|fast)click|falkag|(feedster|right)media|googlesyndication|hitbox|httpads|imiclk|intellitxt|js\.overture|kanoodle|kontera|mediaplex|nextag|pointroll|qksrv|speedera|statcounter|tribalfusion|webtrends/</pre>
+```
+/\bads\b|2o7|a1\.yimg|ad(brite|click|farm|revolver|server|tech|vert)|at(dmt|wola)|banner|bizrate|blogads|bluestreak|burstnet|casalemedia|coremetrics|(double|fast)click|falkag|(feedster|right)media|googlesyndication|hitbox|httpads|imiclk|intellitxt|js\.overture|kanoodle|kontera|mediaplex|nextag|pointroll|qksrv|speedera|statcounter|tribalfusion|webtrends/
+```
 
 I don't block `swf` because the [flashblock](http://flashblock.mozdev.org/) extension blocks Flash more conveniently than AdBlock, in my opinion.
 

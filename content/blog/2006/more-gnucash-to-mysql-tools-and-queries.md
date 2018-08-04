@@ -14,10 +14,12 @@ The heart of the schema that holds the GnuCash data remains the same, but I've a
 
 This system is about as simple as possible. Here's the query to create the new table:
 
-<pre>create table account_category (
+```
+create table account_category (
    account char(31) not null primary key,
    category char(20)
-) ENGINE=InnoDB;</pre>
+) ENGINE=InnoDB;
+```
 
 It would be more normalized to place this data in the `account` table itself, but that makes it too easy to wipe out your category data when you recreate the schema. For that reason I decided to separate the account and its category.
 

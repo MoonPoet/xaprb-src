@@ -84,7 +84,7 @@ think it's a better idea to analyze only a single version of the server. Let's
 look at the results for MySQL 5.6.27 only, because on this benchmark it beat the
 other versions:
 
-<pre>
+```
 clients qps
 1 24456
 2 45314
@@ -95,7 +95,7 @@ clients qps
 64 125526
 128 124158
 256 116337
-</pre>
+```
 
 And the USL analysis of this data up to 8 clients:
 

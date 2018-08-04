@@ -9,7 +9,9 @@ Thanks to [a comment on a recent blog post](/blog/2011/06/07/impressions-of-fedo
 
 I already use Vim for my note-keeping system. I simply add a modeline to the top of the file,
 
-<pre># vim: set ic hlsearch:</pre>
+```
+# vim: set ic hlsearch:
+```
 
 This makes searches case-insensitive, so I can just open the file and start typing a search, and it highlights it and moves to the first match as I type. It's a great way to find something in a file. I have used this simple technique for many years to build a topical index over thousands of interesting email threads, code snippets, posts from bloggers, and customer issues. To use a buzzword, it scales as large as I need it to, and I can quickly find just about anything on any topic I've cared about in the past.
 

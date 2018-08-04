@@ -13,22 +13,26 @@ I found [a post on Stack Overflow](http://stackoverflow.com/questions/249570/) t
 
 Here's how you use it. First, get it:
 
-<pre>wget http://aspersa.googlecode.com/svn/trunk/iodump
-</pre>
+```
+wget http://aspersa.googlecode.com/svn/trunk/iodump
+```
 
 Then turn on kernel messages about I/O:
 
-<pre>echo 1 > /proc/sys/vm/block_dump
-</pre>
+```
+echo 1 > /proc/sys/vm/block_dump
+```
 
 This makes the kernel start writing messages about every I/O operation that takes place. Now all you have to do is get those messages and feed them into my script:
 
-<pre>while true; do sleep 1; dmesg -c; done | perl iodump
-</pre>
+```
+while true; do sleep 1; dmesg -c; done | perl iodump
+```
 
 Wait a little while, then cancel the script. The results should look something like the following:
 
-<pre>root@kanga:~# while true; do sleep 1; dmesg -c; done | perl iodump
+```
+root@kanga:~# while true; do sleep 1; dmesg -c; done | perl iodump
 ^C# Caught SIGINT.
 TASK                   PID      TOTAL       READ      WRITE      DIRTY DEVICES
 firefox               4450       4538        251       4287          0 sda4, sda3
@@ -42,7 +46,7 @@ firefox              28413          1          1          0          0 sda4
 firefox              28410          1          1          0          0 sda4
 firefox              28307          1          1          0          0 sda4
 firefox              28451          1          1          0          0 sda4
-</pre>
+```
 
 I deliberately generated a bunch of I/O by deleting my Firefox history and cache.
 

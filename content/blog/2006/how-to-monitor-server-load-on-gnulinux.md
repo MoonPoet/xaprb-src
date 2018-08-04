@@ -72,7 +72,9 @@ The only trouble is, it's not really obvious what the graph means. The man page 
 
 `watch` isn't really a load-monitoring tool, but it's beastly handy because it takes any command as input and monitors the result of running that command. For example, if I wanted to monitor when the "foozle" program is executing, I could run
 
-<pre>watch --interval=5 "ps aux | grep foozle | grep -v xaprb"</pre>
+```
+watch --interval=5 "ps aux | grep foozle | grep -v xaprb"
+```
 
 ### Summary
 

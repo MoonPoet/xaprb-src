@@ -13,10 +13,11 @@ The trick to this is to explicitly format the text with the **Normal Paragraph T
 
 Now that you've done that, you can add the following CSS with the **Edit/Edit CSS** menu:
 
-<pre>p {
+```
+p {
   margin: 1em 0 1em 0;
 }
-</pre>
+```
 
 You should now see the desired spacing between paragraphs.
 

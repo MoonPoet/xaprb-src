@@ -23,11 +23,13 @@ Plus, it makes authoring content *much* easier. Let's see how.
 
 Here's typical code you might see to create a "captioned" image:
 
-<pre>&lt;div style="width:100px"&gt;
+```
+&lt;div style="width:100px"&gt;
    &lt;img src="treefrog.png" alt="A tree frog"
       width="100" height="100" /&gt;
    &lt;p&gt;A tree frog&lt;/p&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+```
 
 You may also see inline styles, a `table` instead of a `div`, and other ugliness.
 
@@ -37,9 +39,11 @@ The better way to do this is simply eliminate all that redundant typing. What's 
 
 Let's strip things down to the bare minimum:
 
-<pre>&lt;img src="treefrog.png" alt="A tree frog"
+```
+&lt;img src="treefrog.png" alt="A tree frog"
       title="A tree frog" class="figure"
-      width="100" height="100" /&gt;</pre>
+      width="100" height="100" /&gt;
+```
 
 Does that look minimal to you? If you're thinking the `alt` attribute and the `title` attribute are redundant, I disagree. The `alt` attribute is never to be presented to the user when the image can be presented. It is an alternate representation of the content when the image isn't available. It is not a title for the image. That's why there is a `title` attribute for images! If it were redundant to the `alt` attribute, it wouldn't be there.
 
@@ -49,14 +53,16 @@ I propose this as the bare minimum for an image, except for one thing: CSS styli
 
 Time for a demonstration of the starting point. I'll insert two images from [stock.xchng](http://www.sxc.hu/), a great free stock photography site. I'll float one of them left and the other right with the following CSS:
 
-<pre>.left {
+```
+.left {
    float: left;
    margin-right: 5px;
 }
 .right {
    float: right;
    margin-left: 5px;
-}</pre>
+}
+```
 
 You can see a [demonstration here](/media/2006/10/automatic-image-captions-before.html). It's pretty plain, isn't it? But it works. Nothing fancy, but then again you can do a lot with this basic markup. Now let's add some captions to those images.
 
@@ -64,7 +70,8 @@ You can see a [demonstration here](/media/2006/10/automatic-image-captions-befor
 
 It's actually really easy to lift the images out of the page, insert a wrapper element, and put the image back into the wrapper. There are some subtleties, and I've done a thing or two to make the technique easily extensible. Here's the code:
 
-<pre>function addCaptionsToImages() {
+```
+function addCaptionsToImages() {
    wrapImagesInDiv( 'figure', [], [ 'float' ] );
 }
 
@@ -103,7 +110,8 @@ function wrapImagesInDiv( className, attributes, styles ) {
          frame.style[styles[j]] = img.style[styles[j]];
       }
    }
-}</pre>
+}
+```
 
 I'll break that down a bit at a time. The first few lines define a function to be called on page load. I use [Scott Andrew's cross-browser onload functionality](http://www.scottandrew.com/weblog/articles/cbs-events) to add an event that'll call the `wrapImagesInDiv` function with the desired arguments. I do this because I want the flexibility of passing desired arguments.
 

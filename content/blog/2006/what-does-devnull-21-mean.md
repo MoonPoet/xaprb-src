@@ -9,7 +9,9 @@ I remember being confused for a very long time about the trailing garbage in com
 
 Here's an example command:
 
-<pre>wibble &gt; /dev/null 2&gt;&1</pre>
+```
+wibble &gt; /dev/null 2&gt;&1
+```
 
 ### Output redirection
 

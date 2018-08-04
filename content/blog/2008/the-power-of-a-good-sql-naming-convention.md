@@ -23,7 +23,8 @@ In this post I'll explain the components of my ideal naming conventions.
 
 That's not a lot of rules, is it? Let's see how the [Sakila sample database](http://dev.mysql.com/doc/sakila/en/sakila.html) would fare if these rules were applied to it. Two of the core tables are `actor` and `film`, with the "acted in" relationship expressed in the `film_actor` table. The tables look like this (simplified):
 
-<pre>CREATE TABLE actor (
+```
+CREATE TABLE actor (
   actor_id smallint unsigned NOT NULL auto_increment,
   first_name varchar(45) NOT NULL,
   last_name varchar(45) NOT NULL,
@@ -43,22 +44,26 @@ CREATE TABLE film_actor (
   film_id smallint unsigned NOT NULL,
   PRIMARY KEY  (actor_id,film_id)
 );
-</pre>
+```
 
 ### What's right about this
 
 This is already a pretty nice convention. For example, tables are singular, and the columns that have the same meaning have the same name everywhere. This means you can write
 
-<pre>select actor.first_name
+```
+select actor.first_name
 from actor
    inner join film_actor using(actor_id)
-   inner join film using(film_id);</pre>
+   inner join film using(film_id);
+```
 
 The ability to use the `USING` keyword in a join is one way to test whether your naming convention makes sense. If you had gone with the "every primary key is named `id`, and foreign keys are named `[table]_id`" convention that's pretty common, you'd have to write
 
-<pre>from actor
+```
+from actor
    inner join film_actor on <strong>actor.id = film_actor.actor_id</strong>
-   inner join film on <strong>film.id = film_actor.film_id</strong>;</pre>
+   inner join film on <strong>film.id = film_actor.film_id</strong>;
+```
 
 This is not nearly as elegant. So Sakila's naming convention is pretty nice already.
 
@@ -66,7 +71,8 @@ This is not nearly as elegant. So Sakila's naming convention is pretty nice alre
 
 If I had designed Sakila, I'd have done this:
 
-<pre>CREATE TABLE actor (
+```
+CREATE TABLE actor (
   <strong>actor</strong> smallint unsigned NOT NULL auto_increment,
   first_name varchar(45) NOT NULL,
   last_name varchar(45) NOT NULL,
@@ -86,18 +92,19 @@ CREATE TABLE <strong>cast</strong> (
   <strong>film</strong> smallint unsigned NOT NULL,
   PRIMARY KEY  (actor, film)
 );
-</pre>
+```
 
 It's not a dramatic change in this case, and it doesn't really simplify the example queries a lot, but consider what happens when you write an <acronym title="Object-relational mapping">ORM</acronym> on top of this simplified naming convention.
 
 As an example, suppose your database has accounts that belong to clients, each of which is managed by a single employee. Look at the following code snippet:
 
-<pre>$acc = new Account($account_no);
+```
+$acc = new Account($account_no);
 $email = new Email();
 $email->to($acc->client->employee->email);
 $email->body("Account $acc for client $acc->client is expired");
 $email->send();
-</pre>
+```
 
 If the table and column names match, such an ORM is really easy to build. If they don't, there's more code to write.
 

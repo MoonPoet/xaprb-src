@@ -16,19 +16,21 @@ There is a big problem with LEFT JOIN. Can you think what it is? If not, ask you
 
 What's wrong with this query?
 
-<pre>select tweedle, dee, dum
+```
+select tweedle, dee, dum
 from table1
    left join table2 on table1.foo = table2.foo
 where bar = 5;
-</pre>
+```
 
 If you don't see a problem, you've just discovered why this is an expensive query pattern. Suppose I rewrote it like this?
 
-<pre>select tweedle, dee, dum
+```
+select tweedle, dee, dum
 from table1
    left join table2 on table1.foo = table2.foo
 where <strong>table2.bar</strong> = 5;
-</pre>
+```
 
 Consider what happens when there is no matching row in table2. SQL fills in the "missing" row with NULL. And what happens then? table2.bar = 5 is unknown (it's neither true nor false), so that entire row is eliminated from the result.
 
@@ -42,21 +44,23 @@ To recap briefly, COUNT() has two behaviors. If you say COUNT(expression), then 
 
 There's a lot to discuss here, but I want to look at just one thing. Let's look at the following query:
 
-<pre>select user.userid, count(email.subject)
+```
+select user.userid, count(email.subject)
 from user
    inner join email on user.userid = email.userid
 group by user.userid;
-</pre>
+```
 
 What's happening in that query? There are a few possibilities I see. The most obvious way to translate this query into English is "get the number of conversations for each user." Except that's not what it does. It counts the number of emails each user has. If I wanted the number of conversations, I'd need to say "count(distinct email.subject)". You need the DISTINCT keyword there.
 
 I said it counts the number of emails each user has, but it really doesn't. It actually counts the number of times there is a value in email.subject (e.g. it is NOT NULL). If the column is defined to allow NULL, there *might* be a difference between the number of values in email.subject and the number of emails! So, if the query's author really wanted to know the number of emails, the query should be this:
 
-<pre>select user.userid, <strong>count(*)</strong>
+```
+select user.userid, <strong>count(*)</strong>
 from user
    inner join email on user.userid = email.userid
 group by user.userid;
-</pre>
+```
 
 But what if that's not what the author of the query meant? There's no way to really know. There are several possible intended meanings for the query, and there are several different ways to write the query to express those meanings more clearly. But the original query is ambiguous, for a few reasons. And everyone who reads this query afterwards will end up guessing what the original author meant. "I think I can safely change this to..."
 

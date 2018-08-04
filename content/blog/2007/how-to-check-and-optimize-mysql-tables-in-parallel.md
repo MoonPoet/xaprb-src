@@ -7,7 +7,9 @@ categories:
 ---
 I wanted to point out something that might not be obvious from the name: MySQL Parallel Dump can be used as a generic wrapper to discover tables and databases, and fork off worker processes to do something to them in parallel. That "something" can easily be invoking `mysqlcheck` -- or any other program. This makes it really easy for you to do multi-threaded whatever-you-need-to-do on MySQL tables. Here's how:
 
-<pre>mysql-parallel-dump [options] -- 'mysqlcheck --optimize %D %N'</pre>
+```
+mysql-parallel-dump [options] -- 'mysqlcheck --optimize %D %N'
+```
 
 There are several things going on here:
 
@@ -20,7 +22,8 @@ The net effect is to loop through all the tables and run `OPTIMIZE TABLE` on the
 
 MySQL Parallel Dump takes responsibility for noticing the exit status of the system command, keeping track of times, and reporting it all when it's done. And its functionality for working on sets of things is also generic. You could easily create a table of "optimization jobs" and point it at that table, perhaps using the `--age` option, and it would obediently do what the table's contents specify:
 
-<pre>mysql> select setname, db, tbl from test.opti_job;
+```
+mysql> select setname, db, tbl from test.opti_job;
 +-----------+--------+------------+
 | setname   | db     | tbl        |
 +-----------+--------+------------+
@@ -33,7 +36,7 @@ $ mysql-parallel-dump --nolocktables --sets set1,dvd_store --settable test.opti_
         set1:              2 tables,     2 chunks,     2 successes,  0 failures,  0.14 wall-clock time,  0.17 dump time
    dvd_store:              2 tables,     2 chunks,     2 successes,  0 failures,  0.51 wall-clock time,  0.85 dump time
 Final result:  2 sets,     4 tables,     4 chunks,     4 successes,  0 failures,  0.65 wall-clock time,  1.02 dump time
-</pre>
+```
 
 Much of the code for any kind of parallel tool is generic. I put a little extra time into this tool to make that code reusable, not special-purpose.
 

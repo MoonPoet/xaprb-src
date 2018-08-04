@@ -21,9 +21,9 @@ Then I find an image that seems to fit. My favorite way to do this is a Flickr s
 
 In Chrome, I use a custom search engine. The keyword is "f" and the URL pattern is:
 
-<pre>
-	http://www.flickr.com/search/?q=%s&#038;l=cc&#038;ct=0&#038;mt=photos&#038;adv=1&#038;s=int
-</pre>
+```
+http://www.flickr.com/search/?q=%s&#038;l=cc&#038;ct=0&#038;mt=photos&#038;adv=1&#038;s=int
+```
 
 Try it. Here's a Flickr search for [heart](http://www.flickr.com/search/?q=heart&#038;l=cc&#038;ct=0&#038;mt=photos&#038;adv=1&#038;s=int), for example. Isn't that a beautiful page full of images?
 

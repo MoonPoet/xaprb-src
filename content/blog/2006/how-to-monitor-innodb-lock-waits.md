@@ -17,7 +17,8 @@ This is one in a series of articles on how to use the innotop MySQL and InnoDB m
 
 First, the background. The output of `SHOW ENGINE INNODB STATUS`'s transaction section prints InnoDB transactions, including information about the locks they're waiting for, if any:
 
-<pre>---TRANSACTION 0 93789797, ACTIVE 20 sec, process no 9537, OS thread id 38900535
+```
+---TRANSACTION 0 93789797, ACTIVE 20 sec, process no 9537, OS thread id 38900535
 9 starting index read
 mysql tables in use 1, locked 1
 LOCK WAIT 2 lock struct(s), heap size 320
@@ -26,7 +27,8 @@ update test.test set a = 1 where a = 2
 ------- TRX HAS BEEN WAITING 20 SEC FOR THIS LOCK TO BE GRANTED:
 RECORD LOCKS space id 0 page no 299998 n bits 200 index `PRIMARY` of table `test/test` trx id 0 93789797 lock_mode X locks rec but not gap waiting
 Record lock, heap no 77 PHYSICAL RECORD: n_fields 15; compact format; info bits 0
-[... a bunch of record dump information omitted here ...]</pre>
+[... a bunch of record dump information omitted here ...]
+```
 
 The important information there is the line beginning RECORD LOCKS. It, together with the line above it, tells what the transaction is waiting for, and for how long.
 

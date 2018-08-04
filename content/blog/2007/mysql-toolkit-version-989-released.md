@@ -13,13 +13,17 @@ This release of MySQL Toolkit fixes some minor bugs, and adds major new function
 
 I wrote a lot more tests and cleaned up MySQL Parallel Dump a lot (fixed bugs with failed dumps not being reported, for instance) but the *really* big news is I added chunking functionality to it. Now you can say
 
-<pre>mysql-parallel-dump --chunksize 100000</pre>
+```
+mysql-parallel-dump --chunksize 100000
+```
 
 and it will try to divide each table into chunks with 100,000 rows each. It can do the chunks in parallel, so it can actually be running several dumps from one table at the same time. The chunking is fuzzy: it's a hard problem, and I adapted (and improved) the code from MySQL Table Checksum to do it. If you can improve it, please contribute your fixes (the Sourceforge project page has several ways for you to do that).
 
 You can also dump by size, which is probably more useful for most people. To do 10MB per chunk (approximately), use this command:
 
-<pre>mysql-parallel-dump --chunksize 10M</pre>
+```
+mysql-parallel-dump --chunksize 10M
+```
 
 This is a big deal not just because it lets you parallelize dumps from a single table, but because having the dump split up makes it easier to restore in small chunks, which as readers have pointed out is a big help on transactional storage engines.
 
@@ -27,7 +31,8 @@ The parallel restore tool is in incubation. In the meantime, please put this too
 
 ### Changelog
 
-<pre>Changelog for mysql-find:
+```
+Changelog for mysql-find:
 
 2007-10-03: version 0.9.5
 
@@ -51,6 +56,6 @@ Changelog for mysql-parallel-dump:
    * Made --locktables negatable.
    * Changed default output to be less verbose and added --verbose option.
    * Added summary output.
-</pre>
+```
 
 

@@ -25,7 +25,8 @@ Version 1.1.1 is actually just a repackaging of 1.1.0.
 
 The changelog follows.
 
-<pre>2008-10-15: version 1.1.1
+```
+2008-10-15: version 1.1.1
 
 	* The tarball didn't have make-template.pl mysql_definitions.pl (issue 34)
 
@@ -41,6 +42,6 @@ The changelog follows.
 	* The text on the graph could overflow the right-hand edge.
 	* Truncated SHOW INNODB STATUS could cause an SQL error (issue 27).
 	* The poller script requires proper cmdline options (incompatible change).
-</pre>
+```
 
 

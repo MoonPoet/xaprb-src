@@ -11,18 +11,21 @@ For now you can try this:
 
 <!--more-->
 
-<pre>CREATE TEMPORARY TABLE typeof AS SELECT [expression] AS col;</pre>
+```
+CREATE TEMPORARY TABLE typeof AS SELECT [expression] AS col;
+```
 
 For example, let's see what the type of CRC32 is.
 
-<pre>mysql> CREATE TEMPORARY TABLE typeof AS SELECT CRC32('hello world') AS col;
+```
+mysql> CREATE TEMPORARY TABLE typeof AS SELECT CRC32('hello world') AS col;
 mysql> DESCRIBE typeof;
 +-------+------------------+------+-----+---------+-------+
 | Field | Type             | Null | Key | Default | Extra |
 +-------+------------------+------+-----+---------+-------+
 | col   | int(10) unsigned | NO   |     | 0       |       | 
 +-------+------------------+------+-----+---------+-------+
-</pre>
+```
 
 This is one possible way to programmatically determine the type of an expression -- even an arbitrarily complex one.
 

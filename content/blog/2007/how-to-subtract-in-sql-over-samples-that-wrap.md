@@ -15,7 +15,8 @@ A key assumption is that the counter never wraps back to zero more than once bet
 
 To simplify the math, pretend the counter wraps at 1,000 and you have the following table:
 
-<pre>create table samples(
+```
+create table samples(
    num int not null auto_increment primary key,
    bytes int not null
 );
@@ -36,7 +37,8 @@ select * from samples;
 |   5 |   982 | 
 |   6 |   163 | 
 |   7 |   600 | 
-+-----+-------+</pre>
++-----+-------+
+```
 
 ### How much traffic?
 
@@ -56,7 +58,8 @@ While these methods seem easy to humans, they resist many relational solutions b
 
 However, it's not that hard to get the current and last row matched up side-by-side so you can operate upon them within the context of a single row:
 
-<pre>select cur.num, cur.bytes, prev.bytes as prev_bytes
+```
+select cur.num, cur.bytes, prev.bytes as prev_bytes
 from samples as cur
    left outer join samples as prev on cur.num = prev.num + 1;
 +-----+-------+------------+
@@ -69,7 +72,8 @@ from samples as cur
 |   5 |   982 |        700 | 
 |   6 |   163 |        982 | 
 |   7 |   600 |        163 | 
-+-----+-------+------------+</pre>
++-----+-------+------------+
+```
 
 Once you think of "previous" in SQL terms, it becomes easy. Armed with this tool, we are ready to take on the queries.
 
@@ -77,7 +81,8 @@ Once you think of "previous" in SQL terms, it becomes easy. Armed with this tool
 
 Now that we've figured out how to find the "previous row," how can we express the "count wraps and clean up edges" algorithm in SQL? Brace yourself:
 
-<pre>select 1000 * sum(t1.wraps) - t2.start + o.bytes as total
+```
+select 1000 * sum(t1.wraps) - t2.start + o.bytes as total
 from samples as o
    inner join (
       select cur.num, count(prev.num) as wraps
@@ -90,11 +95,13 @@ from samples as o
       select bytes as start from samples order by num limit 1
    ) as t2
 where o.num = 7
-group by o.num</pre>
+group by o.num
+```
 
 Anything I say about that query will probably make it harder to understand, so I'll just count on you reading it carefully. It may help to remove some of it so you can see the intermediate results:
 
-<pre>select sum(t1.wraps) as wraps, t2.start, o.bytes
+```
+select sum(t1.wraps) as wraps, t2.start, o.bytes
 from samples as o
    inner join (
       select cur.num, count(prev.num) as wraps
@@ -117,11 +124,13 @@ group by o.num;
 |     1 |   100 |   982 | 
 |     2 |   100 |   163 | 
 |     2 |   100 |   600 | 
-+-------+-------+-------+</pre>
++-------+-------+-------+
+```
 
 You can also write it as a correlated subquery, instead of a subquery in the `FROM` clause:
 
-<pre>select 1000 * (
+```
+select 1000 * (
       select count(*) from samples as cur
          inner join samples as prev on cur.num = prev.num + 1
             and cur.bytes &lt; prev.bytes
@@ -130,11 +139,13 @@ You can also write it as a correlated subquery, instead of a subquery in the `FR
    - (select bytes from samples order by num limit 1)
    + samples.bytes as total
 from samples
-where num = 7</pre>
+where num = 7
+```
 
 Both queries need `WHERE` clauses in multiple places to make them behave if you want anything other than the full range of data summed up. For example, if you want to sum over rows 3 through 6, the first query becomes
 
-<pre>select 1000 * sum(t1.wraps) - t2.start + o.bytes as total
+```
+select 1000 * sum(t1.wraps) - t2.start + o.bytes as total
 from samples as o
    inner join (
       select cur.num, count(prev.num) as wraps
@@ -148,7 +159,8 @@ from samples as o
       select bytes as start from samples where num &gt;= 3 order by num limit 1
    ) as t2
 where o.num = 6
-group by o.num</pre>
+group by o.num
+```
 
 The problem with both queries is the `<=` predicate, which turns them into \\( O(n^2) \\) algorithms. They're essentially a cross-join. Plus, they're hard to understand. It turns out that the simplest method by hand is complicated in SQL.
 
@@ -156,22 +168,26 @@ The problem with both queries is the `<=` predicate, which turns them into \\( O
 
 The second method I showed above is more complex for humans, but it's actually simpler to do in SQL:
 
-<pre>select sum(
+```
+select sum(
    if (cur.bytes &gt;= prev.bytes,
       cur.bytes - prev.bytes,
       cur.bytes - prev.bytes + 1000)) as total
 from samples as cur
    inner join samples as prev on cur.num = prev.num + 1
 -- optional WHERE clause for choosing start/end:
--- where cur.num &gt; 3 and cur.num &lt;= 6</pre>
+-- where cur.num &gt; 3 and cur.num &lt;= 6
+```
 
 A slightly more compact way to write this is
 
-<pre>select sum(
+```
+select sum(
    cur.bytes - prev.bytes + if(cur.bytes &gt;= prev.bytes, 0, 1000)) as total
 from samples as cur
    inner join samples as prev on cur.num = prev.num + 1
--- where cur.num &gt; 3 and cur.num &lt;= 6</pre>
+-- where cur.num &gt; 3 and cur.num &lt;= 6
+```
 
 This query is both simpler and more efficient than the first method I showed. If your platform doesn't support `IF()`, use a `CASE` statement.
 
@@ -179,7 +195,8 @@ This query is both simpler and more efficient than the first method I showed. If
 
 It's possible to do even better than the simple join technique on MySQL. Using some MySQL-specific tricks, you can make this query a once-through, low-cost algorithm, much the way you might do it by hand or in a programming language that supports iteration. If you want to know how this works, and why the query has to be written in such a contorted way, read my article on [advanced user-variable techniques in MySQL](/blog/2006/12/15/advanced-mysql-user-variable-techniques/).
 
-<pre>set @last_bytes := null;
+```
+set @last_bytes := null;
 
 select sum(greatest(
       if(bytes &gt;= @last_bytes,
@@ -187,7 +204,8 @@ select sum(greatest(
          coalesce(bytes + 1000 - @last_bytes, 0)),
       least(0, @last_bytes := bytes)
    )) as bytes
-from samples order by num;</pre>
+from samples order by num;
+```
 
 This is a bit trickier to write than some of the other user-variable examples I've shown, because you can't use `@last_bytes is null` in any `IF()` or `CASE` statement. If you do, the query optimizer will look at `@last_bytes` at compile time, see that the statement can be optimized out and replaced with a constant, and your query will not work as you expect it to.
 

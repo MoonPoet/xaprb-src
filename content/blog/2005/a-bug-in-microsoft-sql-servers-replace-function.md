@@ -7,7 +7,8 @@ categories:
 ---
 I have found a bug in Microsoft SQL Server's replace() function. The function treats `char` and `varchar` differently, and replacements will fail in some cases. Here is a demonstration of the bug:
 
-<pre>declare @string varchar(40),
+```
+declare @string varchar(40),
     @find char(2),
     @replace char(1)
 set @string = 'two  spaces'
@@ -16,7 +17,8 @@ set @replace = ' '
 if replace(@string, @find, @replace) = 'two spaces'
     print 'Replacement worked'
 else
-    print 'Replacement failed'</pre>
+    print 'Replacement failed'
+```
 
 Result: "Replacement failed." This is clearly incorrect behavior. To make it more interesting, here are some test cases that succeed:
 

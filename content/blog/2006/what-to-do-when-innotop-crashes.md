@@ -31,6 +31,8 @@ If your crash was caused by selecting a certain mode, for example by pressing th
 
 You can specify the mode on the command-line to solve this:
 
-<pre>% innotop -mode Q</pre>
+```
+% innotop -mode Q
+```
 
 

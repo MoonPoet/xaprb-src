@@ -11,18 +11,24 @@ If necessary, INSERT IF NOT EXISTS queries can be written in a single atomic sta
 
 Suppose a table of urls has a unique index on the url:
 
-<pre>create table urls(url varchar(200) primary key);</pre>
+```
+create table urls(url varchar(200) primary key);
+```
 
 Now suppose I want to insert a row in a single statement, without using a transaction, and I only want the row to get inserted if the url isn't already in the table. I don't want any warnings or errors. I just want to issue a normal `INSERT` statement and know the url is now in the table.
 
 Standard SQL provides no means of doing this. There's no syntax like this:
 
-<pre>insert if not exists into url(url) values(...)</pre>
+```
+insert if not exists into url(url) values(...)
+```
 
 In Microsoft SQL Server, I can use an `IF` statement:
 
-<pre>if not exists (select * from url where url = ...)
-   insert into url...</pre>
+```
+if not exists (select * from url where url = ...)
+   insert into url...
+```
 
 This has to be wrapped in a transaction to avoid a race condition, though. Otherwise someone might insert a row between the time I check the table and when I insert the row. I want to do this in a single statement, without a transaction.
 
@@ -30,41 +36,49 @@ This has to be wrapped in a transaction to avoid a race condition, though. Other
 
 One solution is to use a [mutex table](/blog/2005/09/22/mutex-tables-in-sql/):
 
-<pre>insert into urls(url)
+```
+insert into urls(url)
 select '/blog/'
 from mutex
     left outer join urls
         on urls.url = '/blog/'
-where mutex.i = 1 and urls.url is null;</pre>
+where mutex.i = 1 and urls.url is null;
+```
 
 There are more flexible variations on this technique. Suppose there is no unique index on the url column. If desired, it is possible to insert several values in a single statement by changing the `WHERE` clause:
 
-<pre>insert into urls(url)
+```
+insert into urls(url)
 select '/blog/'
 from mutex
     left outer join urls
         on urls.url = '/blog/'
-where mutex.i &lt; 5 and urls.url is null;</pre>
+where mutex.i &lt; 5 and urls.url is null;
+```
 
 Now suppose the requirements specify up to three duplicate entries in the table, and each insert should add a single row. It is possible to insert a row at a time while enforcing the requirement with the following query:
 
-<pre>insert into urls(url)
+```
+insert into urls(url)
 select '/blog/'
 from mutex
     left outer join urls
         on urls.url = '/blog/'
 where mutex.i = 1
 group by urls.url
-having count(*) &lt; 3;</pre>
+having count(*) &lt; 3;
+```
 
 This query shows the input to the `INSERT` statement:
 
-<pre>select '/blog/', count(*)
+```
+select '/blog/', count(*)
 from mutex
     left outer join urls
         on urls.url = '/blog/'
 where mutex.i = 1
-group by urls.url;</pre>
+group by urls.url;
+```
 
 If this article was useful to you, you should [subscribe](/index.xml) to stay current with my upcoming articles. It's free and convenient.
 

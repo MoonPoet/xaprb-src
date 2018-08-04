@@ -27,10 +27,12 @@ The basic technique is to do a grouped self-join or subquery. That will make mor
 
 First, familiarize yourself with the basic techniques I explained for [finding the duplicate rows](/blog/2006/10/09/how-to-find-duplicate-rows-with-sql/), especially the section on finding the data you need to delete them. This will become the innermost query in your self-join. Here's the query I'll use (refer to the other article for details):
 
-<pre>select day, MIN(id)
+```
+select day, MIN(id)
 from test
 group by day
-having count(*) &gt; 1</pre>
+having count(*) &gt; 1
+```
 
 You cannot delete from that result set, but you can delete by joining against it or using it in a subquery. First, I'll show you how to self-join against the grouped query.
 
@@ -38,7 +40,8 @@ You cannot delete from that result set, but you can delete by joining against it
 
 Place the find-bad-rows query into a subquery in the `FROM` clause, and join against it in such a way that the join will succeed only on rows you don't want:
 
-<pre>select bad_rows.*
+```
+select bad_rows.*
 from test as bad_rows
    inner join (
       select day, MIN(id) as min_id
@@ -46,11 +49,13 @@ from test as bad_rows
       group by day
       having count(*) &gt; 1
    ) as good_rows on good_rows.day = bad_rows.day
-      and good_rows.min_id &lt;&gt; bad_rows.id;</pre>
+      and good_rows.min_id &lt;&gt; bad_rows.id;
+```
 
 Notice I'm joining on days that match **and excluding the row I want to keep, the one with the minimum value for `id`.** If that query returns the rows you don't want, you're good to go. All you have to do is put the `DELETE` in front of it:
 
-<pre>delete bad_rows.*
+```
+delete bad_rows.*
 from test as bad_rows
    inner join (
       select day, MIN(id) as min_id
@@ -58,7 +63,8 @@ from test as bad_rows
       group by day
       having count(*) &gt; 1
    ) as good_rows on good_rows.day = bad_rows.day
-      and good_rows.min_id &lt;&gt; bad_rows.id;</pre>
+      and good_rows.min_id &lt;&gt; bad_rows.id;
+```
 
 The syntax will vary slightly depending on your RDBMS. I've written this for MySQL (MySQL users might also need to be careful about [cross-database deletes](/blog/2006/08/07/how-to-write-multi-table-cross-database-deletes-with-aliases-in-mysql/)). This will also only work on versions of MySQL where subqueries are implemented.
 
@@ -66,7 +72,8 @@ The syntax will vary slightly depending on your RDBMS. I've written this for MyS
 
 The second method is to use a correlated subquery and place the find-bad-rows query inside the subquery. You can write these subqueries many different ways. Here's one rather sub-optimal way:
 
-<pre>delete test_outer.*
+```
+delete test_outer.*
 from test as test_outer
 where exists(
    select *
@@ -75,7 +82,8 @@ where exists(
    group by day
    having count(*) &gt; 1
       and min(test_inner.id) &lt;&gt; test_outer.id
-);</pre>
+);
+```
 
 This won't even work on MySQL because it is trying to [select from the same table it's modifying](/blog/2006/06/23/how-to-select-from-an-update-target-in-mysql/). There are some silly tricks to get around this, which force intermediate materialization of the subquery, but in general you're better off using the `JOIN` technique in MySQL.
 
@@ -87,10 +95,12 @@ Both the previous techniques rely on certain behaviors and database features. Ho
 
 If most groups have duplicates, but there are not many duplicate rows within each group, this can be very efficient and doesn't require any subqueries:
 
-<pre>delete bad_rows.*
+```
+delete bad_rows.*
 from test as good_rows
    inner join test as bad_rows on bad_rows.day = good_rows.day
-      and bad_rows.id &gt; good_rows.id;</pre>
+      and bad_rows.id &gt; good_rows.id;
+```
 
 This works because I decided I wanted to keep the row with the smallest `id` in each group. That means I can do a self-join that matches rows with a strict greater-than. Greater than what? The minimum value of `id` for that value of `day`, of course.
 

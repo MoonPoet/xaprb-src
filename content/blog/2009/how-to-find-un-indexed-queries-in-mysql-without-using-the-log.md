@@ -14,27 +14,31 @@ The key is knowing what it really means for a query to "not use an index." There
 
 I'm sure you can see where this is going. Let's use tcpdump to capture queries, consume the output with [mk-query-digest](http://www.maatkit.org/doc/mk-query-digest.html), and filter out all but ones that don't use an index or use no good index:
 
-<pre>$ sudo tcpdump -i lo port 3306 -s 65535  -x -n -q -tttt \
+```
+$ sudo tcpdump -i lo port 3306 -s 65535  -x -n -q -tttt \
   | mk-query-digest --type tcpdump \
-  --filter '($event->{No_index_used} eq "Yes" || $event->{No_good_index_used} eq "Yes")'</pre>
+  --filter '($event->{No_index_used} eq "Yes" || $event->{No_good_index_used} eq "Yes")'
+```
 
 If I run a few full table scans now, and then cancel mk-query-digest, I'll get output like the following (abbreviated for clarity):
 
-<pre>#              pct   total     min     max     avg     95%  stddev  median
+```
+#              pct   total     min     max     avg     95%  stddev  median
 # Count        100       8
 # Exec time    100     5ms   511us   857us   604us   839us   106us   582us
 # 100% (8)    No_index_used
 select * from t\G
-</pre>
+```
 
 You can see I ran the query 8 times and each time it reported back that it didn't use an index. This is a dead-easy way to find queries that might not have an index available!
 
 Want to print out tables from those queries? You can do that too. Just add ` --group-by tables --report-format profile` to the command above, and instead of grouping queries together by the query text, it'll group them by the tables they mention. Then the report will contain one item per table and you'll just see a summary at the end, like so:
 
-<pre># Rank Query ID           Response time    Calls   R/Call     Item
+```
+# Rank Query ID           Response time    Calls   R/Call     Item
 # ==== ================== ================ ======= ========== ====
 #    1 0x                     0.0037 100.0%       8   0.000467 test.t
-</pre>
+```
 
 Aha, looks like `test.t` is the problem table!
 

@@ -17,20 +17,24 @@ Everything has the same username because all our software connects through one d
 
 Here's the trick: create a table like this,
 
-<pre>create table connection_info (
+```
+create table connection_info (
    connection_id int not null,
    unix_proc_id int not null,
    prog_name varchar(50) not null,
    ts timestamp not null,
    primary key(connection_id),
    key(unix_proc_id)
-) engine = MyISAM;</pre>
+) engine = MyISAM;
+```
 
 This is obviously designed for UNIX systems. Our client software is written in Perl, so any program that connects can be recorded simply by changing the DB access layer to issue the following query right after connecting:
 
-<pre>replace into connection_info
+```
+replace into connection_info
    (connection_id, unix_proc_id, prog_name, ts)
-   select connection_id(), $PID, '$PROGRAM_NAME', current_timestamp</pre>
+   select connection_id(), $PID, '$PROGRAM_NAME', current_timestamp
+```
 
 `$PID` and `$PROGRAM_NAME` are Perl variables for the current process's ID and the name of the program currently executing. Every programming language and operating system I know has some way to get this information.
 

@@ -18,33 +18,40 @@ A client recently asked me to fix some Cacti graphs that had broken after upgrad
 
 After turning on the debug logs, I found that the script was returning the data correctly -- it was not a script problem. But after Cacti got the data from the script, it wasn't associating it correctly with the RRD archives. Here's a log message:
 
-<pre>10/14/2009 12:05:05 PM - CMDPHP: Poller[0] Host[11] DS[1270] CMD: /usr/bin/php -q
+```
+10/14/2009 12:05:05 PM - CMDPHP: Poller[0] Host[11] DS[1270] CMD: /usr/bin/php -q
   /opt/cacti/scripts/ss_get_mysql_stats.php --host dbserver
   --items bj,bm --user --pass , output: bj:68 bm:64
 10/14/2009 12:05:05 PM - CMDPHP: Poller[0] DEVEL: SQL Exec: "insert into poller_output
   (local_data_id, rrd_name, time, output) values
-  (1270, '', '2009-10-14 12:05:03', 'bj:68 bm:64')"</pre>
+  (1270, '', '2009-10-14 12:05:03', 'bj:68 bm:64')"
+```
 
 The suspicious thing here is that the rrd_name is blank in the INSERT statement. That shows me that Cacti is having trouble with something. A little more digging in the log, and I found
 
-<pre>10/14/2009 12:05:06 PM - POLLER: Poller[0] CACTI2RRD: /usr/bin/rrdtool update
+```
+10/14/2009 12:05:06 PM - POLLER: Poller[0] CACTI2RRD: /usr/bin/rrdtool update
   /opt/cacti/rra/dbserver_thread_cache_size_1270.rrd
-  --template Threads_created 1255547103:68</pre>
+  --template Threads_created 1255547103:68
+```
 
 Here we see that Cacti is only updating the Threads\_created item in the RRD file. It should be updating a couple of them. Indeed the graphs showed nan for thread\_cache_size, as expected from this command.
 
 Next I found this SQL statement (all by searching for 1270 in the log, by the way):
 
-<pre>select
+```
+select
      data_template_rrd.data_source_name,
      data_input_fields.data_name
      from (data_template_rrd,data_input_fields)
      where data_template_rrd.data_input_field_id=data_input_fields.id
-     and data_template_rrd.local_data_id=1270</pre>
+     and data_template_rrd.local_data_id=1270
+```
 
 I executed this and found a result like this:
 
-<pre>mysql> select
+```
+mysql> select
     ->      data_template_rrd.data_source_name,
     ->      data_input_fields.data_name
     ->      from (data_template_rrd,data_input_fields)
@@ -56,7 +63,7 @@ I executed this and found a result like this:
 | thread_cache_size | thread_cache_size        | 
 | Threads_created   | bj                       | 
 +-------------------+--------------------------+
-</pre>
+```
 
 That's not right -- the data\_name for thread\_cache_size should be "bm". This is a "compression" tactic I employed a while ago to limit the size of the returned data, because Cacti has a silly buffer size limit that was truncating and discarding data from the script. So this server's Cacti install seemed to have been upgraded from an older version of the templates, and not all of the data sources were updated correctly.
 

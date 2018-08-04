@@ -13,7 +13,8 @@ Here's the setup: I was trying to select every day in the current month. Have yo
 
 In many queries this would be OK, but in my particular query it caused trouble. Here's a test suite so you can follow along:
 
-<pre>create table date_test(d date primary key);
+```
+create table date_test(d date primary key);
 
 insert into date_test(d)
    select date_sub(current_date, interval i day)
@@ -21,7 +22,8 @@ insert into date_test(d)
    where i &lt;= 60;
 
 select d from date_test
-   where d between left(current_date, 7) and last_day(current_date);</pre>
+   where d between left(current_date, 7) and last_day(current_date);
+```
 
 What does this query do? You might think it selects every row where `d` is in the current month, but it selects every row in the table. Why? Something must be getting converted to an unexpected type, right?
 
@@ -29,8 +31,10 @@ What does this query do? You might think it selects every row where `d` is in th
 
 [Sheeri wrote recently about how `BETWEEN` optimizes to exactly the same thing as two comparisons](http://sheeri.com/archives/120). In theory, yes, but apparently not in practice:
 
-<pre>select d from date_test
-   where d &gt;= left(current_date, 7) and d &lt;= last_day(current_date);</pre>
+```
+select d from date_test
+   where d &gt;= left(current_date, 7) and d &lt;= last_day(current_date);
+```
 
 That query does what I wanted -- it selects rows where `d` is in the current month. It behaves differently from `BETWEEN`. What's the difference?
 
@@ -50,17 +54,21 @@ That really doesn't clarify things for me. I still don't know whether they all g
 
 Here's another possible lead: the query causes warnings, which say 'Incorrect date value: '2006-09' for column 'd' at row 1'. OK, so what does '2006-09' convert to? Plugging it into any date function shows that it comes out as `NULL`:
 
-<pre>select date('2006-09');
+```
+select date('2006-09');
 +-----------------+
 | date('2006-09') |
 +-----------------+
 | NULL            | 
-+-----------------+</pre>
++-----------------+
+```
 
 Assuming that the conversion is to the `DATE` type, and is implemented internally with a date function, then my `BETWEEN` query would be
 
-<pre>select d from date_test
-   where d between NULL and last_day(current_date);</pre>
+```
+select d from date_test
+   where d between NULL and last_day(current_date);
+```
 
 Of course, that selects no rows, so that can't be what's happening.
 
@@ -72,9 +80,11 @@ The moral of this story is that it's always better to be explicit, and avoid que
 
 My new query, which I feel very confident about, is
 
-<pre>select d from date_test
+```
+select d from date_test
    where d &gt;= date_sub(current_date, interval (day(current_date) - 1) day)
-      and d &lt;= last_day(current_date);</pre>
+      and d &lt;= last_day(current_date);
+```
 
 I think you can agree there's no ambiguity there! Everything is explicitly `DATE` types from start to finish.
 

@@ -29,7 +29,8 @@ The tool will now (as of the latest trunk code) work very well on every test cas
 
 There are cases where there is literally no way to update rows whose non-primary key columns have changed. Consider the following example:
 
-<pre>create table test1(
+```
+create table test1(
   a int not null primary key,
   b int not null, unique key(b)
 );
@@ -52,18 +53,23 @@ select * from test2;
 +---+---+
 | 1 | 2 | 
 | 2 | 1 | 
-+---+---+</pre>
++---+---+
+```
 
 Notice that column `b` has a unique key on it. Now let's run the sync tool against these two tables, and ask it to print out the queries it would issue to sync the tables:
 
-<pre>$ mysql-table-sync -1 test1 test2 -p
+```
+$ mysql-table-sync -1 test1 test2 -p
 UPDATE `test2` SET `b`='1' WHERE `a` = '1';
-UPDATE `test2` SET `b`='2' WHERE `a` = '2';</pre>
+UPDATE `test2` SET `b`='2' WHERE `a` = '2';
+```
 
 It found that the two rows have the same primary key in each table, so of course they must be the same row -- it's just that their `b` value has changed. The rows must therefore be updated, right? Let's try again and tell it to execute the queries to sync the table this time:
 
-<pre>$ mysql-table-sync -1 test1 test2 -x
-DBD::mysql::db do failed: Duplicate entry '1' for key 2 at mysql-table-sync line 1028.</pre>
+```
+$ mysql-table-sync -1 test1 test2 -x
+DBD::mysql::db do failed: Duplicate entry '1' for key 2 at mysql-table-sync line 1028.
+```
 
 This table cannot be synced with straightforward `UPDATE` statements. I see three ways to do it:
 
@@ -73,11 +79,13 @@ This table cannot be synced with straightforward `UPDATE` statements. I see thre
 
 The third technique is the only feasible one to do programmatically. I've added such a feature to the tool, and it will now handle these two tables correctly:
 
-<pre>$ mysql-table-sync test1 test2 -p --deleteinsert
+```
+$ mysql-table-sync test1 test2 -p --deleteinsert
 DELETE FROM `test2` WHERE `a` = '1';
 DELETE FROM `test2` WHERE `a` = '2';
 INSERT INTO `test2`(`a`,`b`) VALUES('1','1');
-INSERT INTO `test2`(`a`,`b`) VALUES('2','2');</pre>
+INSERT INTO `test2`(`a`,`b`) VALUES('2','2');
+```
 
 The neat thing is, it only required a couple lines of code to change. That's always a good feeling.
 

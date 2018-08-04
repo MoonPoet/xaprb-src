@@ -7,16 +7,19 @@ categories:
 ---
 There's a really important difference between a unique index (MySQL's answer to a "unique constraint") and a primary key in MySQL. Please take a look at this:
 
-<pre>CREATE TABLE `t` (
+```
+CREATE TABLE `t` (
   `a` int,
   `b` int,
   `c` int,
   UNIQUE KEY `a` (`a`,`b`)
-)</pre>
+)
+```
 
 The combination of columns `a, b` should uniquely identify any tuple in the table, right?
 
-<pre>select * from t;
+```
+select * from t;
 +------+------+------+
 | a    | b    | c    |
 +------+------+------+
@@ -25,7 +28,7 @@ The combination of columns `a, b` should uniquely identify any tuple in the tabl
 | NULL | NULL |    1 | 
 | NULL | NULL |    1 | 
 +------+------+------+
-</pre>
+```
 
 Wrong. Our arch-enemy `NULL` [messes things up](http://dev.mysql.com/doc/en/create-index.html) again:
 

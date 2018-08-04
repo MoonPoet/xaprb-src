@@ -11,7 +11,8 @@ I've started getting a lot of spam comments, so I decided the time has come to p
 
 Create a new file, say `captchas.php`. Fill it with an array of entries, one per question:
 
-<pre>&lt;?php
+```
+&lt;?php
 $captchas = Array();
 
 # Create a single entry
@@ -21,15 +22,19 @@ $captchas[] = array(
     "options" =&gt; array("blue", "red", "orange"));
 
 # Create as many as desired by copy-and-paste...
-?&gt;</pre>
+?&gt;
+```
 
 Modify the comment form. Include the above file in `wp-content/themes/default/comments.php`, and change a few lines where the form is displayed. At the top of the file:
 
-<pre>&lt;?php require_once("captchas.php"); ?&gt;</pre>
+```
+&lt;?php require_once("captchas.php"); ?&gt;
+```
 
 Then, just before the SUBMIT button for the form, 
     
-<pre>&lt;?php
+```
+&lt;?php
 $tabindex = 5;
 $captcha_index = rand(0, count($captchas) - 1);
 ?&gt;
@@ -42,26 +47,31 @@ $captcha_index = rand(0, count($captchas) - 1);
     id="captcha_&lt;?php echo $captcha_answer; ?&gt;" type="radio"
     name="captcha" value="&lt;?php echo $captcha_answer; ?&gt;"
     /&gt;&lt;?php echo $captcha_answer; ?&gt;&lt;/label&gt;
-&lt;?php } ?&gt;&lt;/p&gt;</pre>
+&lt;?php } ?&gt;&lt;/p&gt;
+```
 
 Now the randomly chosen question's ID and the user's answer are submitted along with the form.
 
 On the receiving end of the form, which is in `wp-comments-post.php`, all I have to do is check the answer against the correct answer for the question. First, I include the `captchas.php` file as before. Then I grab the two new inputs where the rest of the input is grabbed:
 
-<pre>$comment_author       = trim($_POST['author']);
+```
+$comment_author       = trim($_POST['author']);
 $comment_author_email = trim($_POST['email']);
 $comment_author_url   = trim($_POST['url']);
 $comment_content      = trim($_POST['comment']);
 $comment_captcha_idx  = trim($_POST['captcha_index']);
-$comment_captcha      = trim($_POST['captcha']);</pre>
+$comment_captcha      = trim($_POST['captcha']);
+```
 
 Only the last two lines are changed in that code sample -- I included the first lines for context. I use the input a bit later, where the input checking occurs:
     
-<pre>if ( !is_numeric($comment_captcha_idx) || !$comment_captcha
+```
+if ( !is_numeric($comment_captcha_idx) || !$comment_captcha
     || $captchas[$comment_captcha_idx]["answer"] != $comment_captcha)
 {
         die( __("Error: wrong answer to the CAPTCHA question"));
-}</pre>
+}
+```
 
 That's it. I'm done. It took longer to explain than to actually write the code.
 

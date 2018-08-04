@@ -28,13 +28,17 @@ This problem-first type of tip is great for me: tell me the problem, then how to
 
 In case you're wondering, bang-splat substitutes the arguments to the last command, and bang-dollar substitutes the last argument of the last command. So, instead of this:
 
-<pre>$ touch file1 file2 file3
-$ rm file1 file2 file3</pre>
+```
+$ touch file1 file2 file3
+$ rm file1 file2 file3
+```
 
 I can do this:
 
-<pre>$ touch file1 file2 file3
-$ rm !*</pre>
+```
+$ touch file1 file2 file3
+$ rm !*
+```
 
 There were lots of other nice tips too.
 

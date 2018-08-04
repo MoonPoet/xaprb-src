@@ -13,7 +13,8 @@ The newest release of Maatkit contains mk-audit bug fixes, lots of [new features
 
 Here's the changelog:
 
-<pre>Changelog for mk-audit:
+```
+Changelog for mk-audit:
 
 2008-10-17: version 0.9.3
 
@@ -47,6 +48,6 @@ Changelog for mk-visual-explain:
 2008-10-17: version 1.0.11
 
    * There was a Perl compilation error on Perl 5.10 (issue 90).
-</pre>
+```
 
 

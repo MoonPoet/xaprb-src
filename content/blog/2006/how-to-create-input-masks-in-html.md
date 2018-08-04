@@ -51,10 +51,12 @@ By the way, this library depends on the [Prototype library](http://prototype.con
 
 The setup function iterates over the elements and connects a callback to the `onkeypress` event. The callback is created by another function. To decide which mask to apply, it does a regular expression match against the element's `className`. If the element's `class` is "input\_mask mask\_**date_us**", the regular expression captures "date_us," and looks up the `date_us` mask. Here's how that is defined:
 
-<pre>date_us: {
+```
+date_us: {
          format: '  /  /    ',
          regex:  /\d/,
-      }</pre>
+      }
+```
 
 The `format` property is a string with spaces where input should go, and other characters get inserted automatically. The `regex` property is a regular expression that matches a valid character, in this case a digit.
 

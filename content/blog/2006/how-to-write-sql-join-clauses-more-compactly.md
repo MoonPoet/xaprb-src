@@ -9,31 +9,39 @@ Here's a way to write join clauses so they are more compact, more readable, and 
 
 Standard SQL:2003 defines a `USING` clause that can serve the same function as the `ON` clause in the familiar `JOIN` syntax. For example, the following join
 
-<pre>select a.col1, b.col2
+```
+select a.col1, b.col2
 from a
-   inner join b on a.col3 = b.col3</pre>
+   inner join b on a.col3 = b.col3
+```
 
 May be written as follows:
 
-<pre>select a.col1, b.col2
+```
+select a.col1, b.col2
 from a
-   inner join b <strong>using(col3)</strong></pre>
+   inner join b <strong>using(col3)</strong>
+```
 
 That may not look like much of an improvement, but it is a big help in larger joins where many tables have columns with the same names. In these cases, not only is it tedious to write out every pair of columns that must match in the join, you often have to refer to the tables with aliases too. And it's tough to read such a join and understand it, or debug it. For example, what's wrong with this join?
 
-<pre>select tbl1.col1, tbl2.col2, tbl3.col2, tbl4.col1
+```
+select tbl1.col1, tbl2.col2, tbl3.col2, tbl4.col1
 from apples as tbl1
    inner join oranges as tbl2 on tbl1.col3 = tbl2.col3
    inner join grapes as tbl3 on tbl3.col3 = tbl2.col3
-   inner join peaches as tbl4 on tbl3.col3 = tbl2.col3</pre>
+   inner join peaches as tbl4 on tbl3.col3 = tbl2.col3
+```
 
 The statement is valid and will execute, but it won't give the results you probably wanted (tbl4&#8242;s join clause doesn't refer to any columns from tbl4). The bug is even harder to find if the statement isn't [neatly indented and consistently organized](/blog/2006/04/26/sql-coding-standards/). That statement is better written with `USING` clauses:
 
-<pre>select tbl1.col1, tbl2.col2, tbl3.col2, tbl4.col1
+```
+select tbl1.col1, tbl2.col2, tbl3.col2, tbl4.col1
 from apples as tbl1
    inner join oranges as tbl2 <strong>using(col3)</strong>
    inner join grapes as tbl3 <strong>using(col3)</strong>
-   inner join peaches as tbl4 <strong>using(col3)</strong></pre>
+   inner join peaches as tbl4 <strong>using(col3)</strong>
+```
 
 `USING` matches the specified columns from each table, eliminating the need to write them out twice explicitly with aliases. In MySQL 5, you can see how the statement gets rewritten by the optimizer with `EXPLAIN EXTENDED` followed by `SHOW WARNINGS`. The result shows that it gets rewritten as an old-style join with the column-matching done in the `WHERE` clause.
 

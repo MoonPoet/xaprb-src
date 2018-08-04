@@ -11,7 +11,8 @@ How can a query like "SELECT * FROM tbl WHERE col IS NULL" return a row where th
 
 Try this one yourself:
 
-<pre>create table test(
+```
+create table test(
    a int not null auto_increment,
    b int not null,
    primary key (a)
@@ -24,12 +25,15 @@ select * from test where a is null;
 | a | b |
 +---+---+
 | 1 | 1 | 
-+---+---+</pre>
++---+---+
+```
 
 Your reaction might be, as mine was, "what the heck is going on here?" And then you might re-try the query, just because you can't believe your eyes, and guess what you get this time?
 
-<pre>select * from test where a is null;
-Empty set (0.00 sec)</pre>
+```
+select * from test where a is null;
+Empty set (0.00 sec)
+```
 
 ### What happened?
 

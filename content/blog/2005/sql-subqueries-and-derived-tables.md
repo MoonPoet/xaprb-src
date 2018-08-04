@@ -15,7 +15,9 @@ The official standard defines a derived table as follows:[^1]
 
 Here is the actual production from the SQL grammar:
 
-> <pre>&lt;derived table&gt; ::= &lt;table subquery&gt;</pre>
+> ```
+&lt;derived table&gt; ::= &lt;table subquery&gt;
+```
 
 This makes it clear that "derived table" is a much more general term than is commonly used by many, especially those familiar with Microsoft SQL Server. Those folks typically mean a subquery in the FROM clause. The real meaning is "the result of a table subquery."
 
@@ -29,19 +31,23 @@ There are actually three types of subquery: scalar, row, and table. Here is the 
 > 
 > ### Format
 > 
-> <pre>&lt;scalar subquery&gt; ::= &lt;subquery&gt;
+> ```
+&lt;scalar subquery&gt; ::= &lt;subquery&gt;
 &lt;row subquery&gt; ::= &lt;subquery&gt;
 &lt;table subquery&gt; ::= &lt;subquery&gt;
-&lt;subquery&gt; ::= &lt;left paren&gt; &lt;query expression&gt; &lt;right paren&gt;</pre>
+&lt;subquery&gt; ::= &lt;left paren&gt; &lt;query expression&gt; &lt;right paren&gt;
+```
 
 There are other common terms for various types of subqueries. Most people use different terms depending on how subqueries are used. For example, a subquery with *outer references* is often called a *correlated subquery*. Here is an example:
 
-<pre>select emp.Name, emp.Dept, emp.Salary
+```
+select emp.Name, emp.Dept, emp.Salary
 from employees as emp
 where Salary > (
     select avg(Salary)
     from employees as inn
-    where inn.Dept = emp.Dept);</pre>
+    where inn.Dept = emp.Dept);
+```
 
 Notice the distinction between a derived table and a base table. A base table is the actual named database table, whereas a derived table is the result of any table subquery. Some people also use the term *anonymous view* to denote a derived table, especially one in the FROM clause.
 

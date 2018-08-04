@@ -25,7 +25,8 @@ By the way, I seem to remember seeing some comments in the InnoDB source code th
 
 The `<a href="/blog/2006/07/02/innotop-mysql-innodb-monitor/">innotop</a>` tool can format and display the `LATEST FOREIGN KEY ERROR` output for easy reading. I check our systems for foreign key violations regularly. Here is a sample of `innotop`'s output for a violation I deliberately manufactured for this article:
 
-<pre>Reason: Foreign key constraint fails for table `test/table_2`:
+```
+Reason: Foreign key constraint fails for table `test/table_2`:
 
 User xaprb from 192.168.0.225, thread 64548 was executing:
 
@@ -39,6 +40,7 @@ Parent DB       test
 Parent Table    table_1
 Parent Column   table_1
 Parent Index    PRIMARY
-Constraint      table_2_ibfk_1</pre>
+Constraint      table_2_ibfk_1
+```
 
 

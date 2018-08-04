@@ -21,7 +21,8 @@ GCC, and certain other packages such as MySQL, require the system administrator 
 
 On my workstation at work, I became root, then ran the following command to view available profiles:
 
-<pre># gcc-config -l
+```
+# gcc-config -l
  [1] i686-pc-linux-gnu-3.3.6 *
  [2] i686-pc-linux-gnu-3.3.6-hardened
  [3] i686-pc-linux-gnu-3.3.6-hardenednopie
@@ -31,17 +32,20 @@ On my workstation at work, I became root, then ran the following command to view
  [7] i686-pc-linux-gnu-3.4.6-hardened
  [8] i686-pc-linux-gnu-3.4.6-hardenednopie
  [9] i686-pc-linux-gnu-3.4.6-hardenednopiessp
- [10] i686-pc-linux-gnu-3.4.6-hardenednossp</pre>
+ [10] i686-pc-linux-gnu-3.4.6-hardenednossp
+```
 
 My current profile was `i686-pc-linux-gnu-3.3.6`, as indicated by the asterisk after that entry (`gcc-config -c` also prints this information). To choose a newer profile, I ran
 
-<pre># gcc-config i686-pc-linux-gnu-3.4.6
+```
+# gcc-config i686-pc-linux-gnu-3.4.6
  * Switching native-compiler to i686-pc-linux-gnu-3.4.6 ...
 >>> Regenerating /etc/ld.so.cache...                                                                [ ok ]
  * If you intend to use the gcc from the new profile in an already
  * running shell, please remember to do:
 
- *   # source /etc/profile</pre>
+ *   # source /etc/profile
+```
 
 As you can see, it switched me to the new profile, and advised me to update my environment variables if I wanted to use the new profile in my existing shell.
 

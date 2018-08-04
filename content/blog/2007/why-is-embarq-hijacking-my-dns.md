@@ -15,7 +15,8 @@ categories:
 
 <p>And here's what happens when I do a DNS lookup:</p>
 
-<pre>baron@kanga:~$ dig www.toggl.com
+```
+baron@kanga:~$ dig www.toggl.com
 
 ; &lt;&lt;&gt;&gt; DiG 9.4.1-P1 &lt;&lt;&gt;&gt; www.toggl.com
 ;; global options:  printcmd
@@ -36,7 +37,8 @@ www.toggl.com.          22      IN      A       66.199.249.106
 
 baron@kanga:~$ ping www.toggl.com
 PING www.toggl.com (66.199.249.106) 56(84) bytes of data.
-64 bytes from 66-199-249-106.reverse.ezzi.net (66.199.249.106): icmp_seq=1 ttl=53 time=79.2 ms</pre>
+64 bytes from 66-199-249-106.reverse.ezzi.net (66.199.249.106): icmp_seq=1 ttl=53 time=79.2 ms
+```
 
 <p>Did I mention that this makes me mad?  Time to get on the phone.</p>
 

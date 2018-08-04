@@ -9,7 +9,8 @@ Here are some common SQL problems, all of which have related solutions: how do I
 
 This topic is related to numbering rows, which I just wrote about (see my articles about [MySQL-specific](/blog/2006/12/02/how-to-number-rows-in-mysql/) and [generic techniques](/blog/2005/09/27/simulating-the-sql-row_number-function/) to assign a number to each row in a group). Therefore I'll use nearly the same table and data as I used in those articles, with the addition of a `price` column:
 
-<pre>+--------+------------+-------+
+```
++--------+------------+-------+
 | type   | variety    | price |
 +--------+------------+-------+
 | apple  | gala       |  2.79 | 
@@ -22,26 +23,29 @@ This topic is related to numbering rows, which I just wrote about (see my articl
 | cherry | bing       |  2.55 | 
 | cherry | chelan     |  6.33 | 
 +--------+------------+-------+
-</pre>
+```
 
 ### Selecting the one maximum row from each group
 
 Let's say I want to select the most recent log entry for each program, or the most recent changes in an audit table, or something of the sort. This question comes up over and over on IRC channels and mailing lists. I'll re-phrase the question in terms of fruits. I want to select the cheapest fruit from each type. Here's the desired result:
 
-<pre>+--------+----------+-------+
+```
++--------+----------+-------+
 | type   | variety  | price |
 +--------+----------+-------+
 | apple  | fuji     |  0.24 | 
 | orange | valencia |  3.59 | 
 | pear   | bartlett |  2.14 | 
 | cherry | bing     |  2.55 | 
-+--------+----------+-------+</pre>
++--------+----------+-------+
+```
 
 There are a few common solutions to this problem. All involve two steps: finding the desired value of `price`, and then selecting the rest of the row based on that.
 
 One common solution is a so-called self-join. Step one is to group the fruits by type (apple, cherry etc) and choose the minimum price:
 
-<pre>select type, min(price) as minprice
+```
+select type, min(price) as minprice
 from fruits
 group by type;
 +--------+----------+
@@ -51,11 +55,13 @@ group by type;
 | cherry |     2.55 | 
 | orange |     3.59 | 
 | pear   |     2.14 | 
-+--------+----------+</pre>
++--------+----------+
+```
 
 Step two is to select the rest of the row by joining these results back to the same table. Since the first query is grouped, it needs to be put into a subquery so it can be joined against the non-grouped table:
 
-<pre>select f.type, f.variety, f.price
+```
+select f.type, f.variety, f.price
 from (
    select type, min(price) as minprice
    from fruits group by type
@@ -67,11 +73,13 @@ from (
 | cherry | bing     |  2.55 | 
 | orange | valencia |  3.59 | 
 | pear   | bartlett |  2.14 | 
-+--------+----------+-------+</pre>
++--------+----------+-------+
+```
 
 Another common way to do this is with a correlated subquery. This can be much less efficient, depending on how good your system's query optimizer is. You might find it clearer, though.
 
-<pre>select type, variety, price
+```
+select type, variety, price
 from fruits
 where price = (select min(price) from fruits as f where f.type = fruits.type);
 +--------+----------+-------+
@@ -81,7 +89,8 @@ where price = (select min(price) from fruits as f where f.type = fruits.type);
 | orange | valencia |  3.59 | 
 | pear   | bartlett |  2.14 | 
 | cherry | bing     |  2.55 | 
-+--------+----------+-------+</pre>
++--------+----------+-------+
+```
 
 Both queries are logically equivalent, though they may not perform the same.
 
@@ -91,7 +100,8 @@ This is a slightly harder problem to solve. Finding a single row from each group
 
 Let's say I want to select the two cheapest fruits from each type. Here's a first try:
 
-<pre>select type, variety, price
+```
+select type, variety, price
 from fruits
 where price = (select min(price) from fruits as f where f.type = fruits.type)
    or price = (select min(price) from fruits as f where f.type = fruits.type
@@ -107,18 +117,21 @@ where price = (select min(price) from fruits as f where f.type = fruits.type)
 | pear   | bartlett |  2.14 | 
 | cherry | bing     |  2.55 | 
 | cherry | chelan   |  6.33 | 
-+--------+----------+-------+</pre>
++--------+----------+-------+
+```
 
 Yuck! That can be written as a self-join, but it's just as bad (I leave it as an exercise for the reader). This gets worse as you go to higher numbers (top 3, top 4...). There are other ways to phrase the statement, but they all boil down to the same thing, and they're all pretty unwieldy and inefficient.
 
 There's a better way: select the variety from each type where the variety is no more than the second-cheapest of that type.
 
-<pre>select type, variety, price
+```
+select type, variety, price
 from fruits
 where (
    select count(*) from fruits as f
    where f.type = fruits.type and f.price &lt;= fruits.price
-) &lt;= 2;</pre>
+) &lt;= 2;
+```
 
 This is elegant, and lets you vary N without rewriting your query (a very good thing!), but it's functionally the same as the previous query. Both are essentially a quadratic algorithm relative to the number of varieties in each type. And again, some query optimizers may not do well with this and make it quadratic with respect to the number of rows in the table overall (especially if no useful index is defined), and the server might get clobbered. Are there better ways? Can it be done with one pass through the data, instead of the many passes required by a correlated subquery? You know it can, or I wouldn't be writing this, now would I?
 
@@ -126,13 +139,15 @@ This is elegant, and lets you vary N without rewriting your query (a very good t
 
 If there's an index on (type, price), and there are many more records to eliminate than to include in each group, a more efficient single-pass method (especially for MySQL, but also for some other RDBMSs) is to break the queries out separately and put a limit on each, then `UNION` them all back together. Here's the syntax you need for MySQL:
 
-<pre>(select * from fruits where type = 'apple' order by price limit 2)
+```
+(select * from fruits where type = 'apple' order by price limit 2)
 union all
 (select * from fruits where type = 'orange' order by price limit 2)
 union all
 (select * from fruits where type = 'pear' order by price limit 2)
 union all
-(select * from fruits where type = 'cherry' order by price limit 2)</pre>
+(select * from fruits where type = 'cherry' order by price limit 2)
+```
 
 [Peter Zaitsev has written in detail about this technique](http://www.mysqlperformanceblog.com/2006/08/10/using-union-to-implement-loose-index-scan-to-mysql/), so I won't go into it too much more here. If it suits your purposes, it can be a very good solution.
 
@@ -142,7 +157,8 @@ One note: use `UNION ALL`, not just `UNION`. It prevents the server sorting the 
 
 The `UNION` trick is an especially good idea when the results are a small fraction of the rows in the table and there is an index that can be used for sorting the rows. Another linear-time technique, which might be a good option in cases where you are selecting most of the rows from the table anyway, is user variables. This is MySQL-specific. Please refer to my previous post on [how to number rows in MySQL](/blog/2006/12/02/how-to-number-rows-in-mysql/) for the gory details of why this works:
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select type, variety, price
 from (
@@ -151,7 +167,8 @@ from (
       @type := type as dummy
   from fruits
   order by type, price
-) as x where x.row_number &lt;= 2;</pre>
+) as x where x.row_number &lt;= 2;
+```
 
 This isn't one pass through the table, by the way. The subquery is implemented as a temporary table behind the scenes, so filling it with data is one pass; then selecting every row from it and applying the `WHERE` clause is another. However, twice through is still O(n) with respect to the table size. That's a lot better than correlated subqueries, which are \\(O(n^2)\\) with respect to the group size -- even moderate group sizes cause bad performance (say there are five varieties of each fruit. That's on the order of 25 passes through the table, all told).
 
@@ -159,18 +176,21 @@ This isn't one pass through the table, by the way. The subquery is implemented a
 
 If you want to leave your queries up the the query optimizer's whims, you can try this technique, which builds no temporary tables and makes just one pass through:
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select type, variety, price,
       @num := if(@type = type, @num + 1, 1) as row_number,
       @type := type as dummy
 from fruits
 group by type, price, variety
-having row_number &lt;= 2;</pre>
+having row_number &lt;= 2;
+```
 
 This theoretically ought to work if MySQL orders by the `GROUP BY` criteria, which it sometimes does for efficiency and to produce the expected results. Does it work? Here's what it returns on MySQL 5.0.27 on Windows:
 
-<pre>+--------+----------+-------+------------+--------+
+```
++--------+----------+-------+------------+--------+
 | type   | variety  | price | row_number | dummy  |
 +--------+----------+-------+------------+--------+
 | apple  | gala     |  2.79 |          1 | apple  |
@@ -181,11 +201,13 @@ This theoretically ought to work if MySQL orders by the `GROUP BY` criteria, whi
 | pear   | bartlett |  2.14 |          3 | pear   |
 | cherry | bing     |  2.55 |          1 | cherry |
 | cherry | chelan   |  6.33 |          3 | cherry |
-+--------+----------+-------+------------+--------+</pre>
++--------+----------+-------+------------+--------+
+```
 
 Look closely... it's returning rows one and three from each group, and they're not numbered in order of increasing price? Huh? But the `HAVING` clause says the row_number should be no greater than 2! Here's what it returns on version 5.0.24a on Ubuntu:
 
-<pre>+--------+------------+-------+------------+--------+
+```
++--------+------------+-------+------------+--------+
 | type   | variety    | price | row_number | dummy  |
 +--------+------------+-------+------------+--------+
 | apple  | fuji       |  0.24 |          1 | apple  |
@@ -197,28 +219,34 @@ Look closely... it's returning rows one and three from each group, and they're n
 | orange | navel      |  9.36 |          1 | orange |
 | pear   | bartlett   |  2.14 |          1 | pear   |
 | pear   | bradford   |  6.05 |          1 | pear   |
-+--------+------------+-------+------------+--------+</pre>
++--------+------------+-------+------------+--------+
+```
 
 Look, this time everything is numbered 1 and every row is returned. Wonky. This is exactly what the [MySQL manual page on user variables](http://dev.mysql.com/doc/refman/5.0/en/user-variables.html) warns about.
 
 This technique is pretty much non-deterministic, because it relies on things that you and I don't get to control directly, such as which indexes MySQL decides to use for grouping. However, if you need to use it -- and I know there are some folks out there who do, because I've consulted for them -- you can still tweak it. We're getting into the realm of really bastardizing SQL, but the results above came from a table without indexes other than the primary key on (`type, variety`). What happens if I add an index MySQL can use for grouping?
 
-<pre>alter table fruits add key(type, price);</pre>
+```
+alter table fruits add key(type, price);
+```
 
 Nothing changes, and `EXPLAIN` shows why: the query doesn't use the index I just added. Why? Because the grouping is on three columns, and the index is only on two. In fact, the query is using a temp table and filesort anyway, so this is still not achieving the once-through goal. I can force it to use the index:
 
-<pre>set @num := 0, @type := '';
+```
+set @num := 0, @type := '';
 
 select type, variety, price,
       @num := if(@type = type, @num + 1, 1) as row_number,
       @type := type as dummy
 from fruits <strong>force index(type)</strong>
 group by type, price, variety
-having row_number &lt;= 2;</pre>
+having row_number &lt;= 2;
+```
 
 Let's see if that works:
 
-<pre>+--------+----------+-------+------------+--------+
+```
++--------+----------+-------+------------+--------+
 | type   | variety  | price | row_number | dummy  |
 +--------+----------+-------+------------+--------+
 | apple  | fuji     |  0.24 |          1 | apple  | 
@@ -229,7 +257,8 @@ Let's see if that works:
 | orange | navel    |  9.36 |          2 | orange | 
 | pear   | bartlett |  2.14 |          1 | pear   | 
 | pear   | bradford |  6.05 |          2 | pear   | 
-+--------+----------+-------+------------+--------+</pre>
++--------+----------+-------+------------+--------+
+```
 
 Ah, now we're cooking! It did what I wanted, without a filesort or temporary table. Another way to do this, by the way, is to take `variety` out of the `GROUP BY` so it uses the index on its own. Because this selects a [non-grouped column from a grouped query](/blog/2006/03/11/many-to-one-problems-in-sql/), this only works if you are running with [`ONLY_FULL_GROUP_BY` mode turned off](http://dev.mysql.com/doc/refman/5.0/en/server-sql-mode.html), which I hope you are not doing without good reason.
 

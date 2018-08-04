@@ -15,16 +15,22 @@ Now I find it *is* possible to alias the tables, with certain restrictions. Appa
 
 For example, suppose you want to delete rows from `apples`, when they match in a join to `oranges`. The tables are in different databases. The following will not work:
 
-<pre>delete apples
-ERROR 1109 (42S02): Unknown table 'apples' in MULTI DELETE</pre>
+```
+delete apples
+ERROR 1109 (42S02): Unknown table 'apples' in MULTI DELETE
+```
 
 The error is because `apples` is aliased to `a`. If you try to name `a` in the `DELETE` clause, a similar error happens. However, the following will work:
 
-<pre>delete db1.apples as a</pre>
+```
+delete db1.apples as a
+```
 
 Now you've named the tables identically in both places, so it works. It's as though you have to re-alias the table in the `DELETE` clause. The optional `AS` keyword may be omitted in one or both places you declare an alias, so even this form will work:
 
-<pre>delete db1.apples a</pre>
+```
+delete db1.apples a
+```
 
 ... but see my [SQL coding standards](/blog/2006/04/26/sql-coding-standards/) for why I always include the optional but should-be-mandatory `AS` keyword.
 

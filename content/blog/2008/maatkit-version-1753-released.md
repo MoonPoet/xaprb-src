@@ -9,17 +9,20 @@ categories:
 
 This release contains minor bug fixes and new features. Besides the little bug fixes, there's a fun new feature in mk-heartbeat: it can auto-discover replicas recursively, and show the replication delay on all of them, to wit:
 
-<pre>baron@keywest ~ $ mk-heartbeat --check --host master -D rkdb --recurse 10
+```
+baron@keywest ~ $ mk-heartbeat --check --host master -D rkdb --recurse 10
 master 0
 slave1 1
 slave2 1
-slave3 4</pre>
+slave3 4
+```
 
 (Not actual results. Your mileage may vary. Closed course, professional driver. Do not attempt).
 
 Nothing else in this release is very exciting. I just wanted to get the bug fixes out there.
 
-<pre>Changelog for mk-heartbeat:
+```
+Changelog for mk-heartbeat:
 
 2008-02-10: version 1.0.7
 
@@ -58,6 +61,7 @@ Changelog for mk-table-sync:
 2008-02-10: version 1.0.5
 
    * The Stream algorithm wasn't chosen when a table had no key.
-   * Numeric strings beginning with 0 weren't quoted (bug #1883019).</pre>
+   * Numeric strings beginning with 0 weren't quoted (bug #1883019).
+```
 
 

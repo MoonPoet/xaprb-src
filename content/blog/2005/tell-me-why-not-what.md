@@ -11,9 +11,11 @@ I have [written before](/blog/2005/09/28/a-comment-on-comments/) about badly com
 
 The first example of a bad comment is in a SQL stored procedure, where a table is updated from a view:
 
-<pre>-- *** THIS MUST BE SEPARATE ***
+```
+-- *** THIS MUST BE SEPARATE ***
 update table1 set col1 = someVal
-    from table1 join view1 on [join critieria]</pre>
+    from table1 join view1 on [join critieria]
+```
 
 I did a quick search and found *18 places this code had been copied and pasted*. I asked about it, and after some time found someone who knew what the code did. Here's the answer I got about it:
 
@@ -27,11 +29,13 @@ I can't think of a more effective way to make code impossible to maintain. It's 
 
 The second instance of this "worst practice" is an internal ASP article editor. If a user viewed the editor with Internet Explorer on a Macintosh, the following code would print out an error:
 
-<pre>sBrowserType = request.ServerVariables("HTTP_USER_AGENT")
+```
+sBrowserType = request.ServerVariables("HTTP_USER_AGENT")
 if instr(sBrowserType, "MSIE") &gt; 0 and instr(sBrowserType, "Mac") &gt; 0 then
     response.Write "You can not edit the body text of this article with Mac IE - please use a different browser"
     ' some code to prevent further use of the page
-end if</pre>
+end if
+```
 
 There was no comment explaining why, and the intern who wrote the code several summers ago was long gone. After I asked everyone -- programmers, writers, team leaders -- one person dredged up a vague recollection that this particular browser wouldn't save all the article's text, causing your article to truncate after a certain point.
 
@@ -47,7 +51,9 @@ I'm probably not the first to say this, but I don't know of anyone else who's sa
 
 The rule follows from the principle of [Don't Repeat Yourself](http://c2.com/cgi/wiki?DontRepeatYourself) (DRY), which states "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system." **The code already says what** and is the authoritative representation. In the first example, the code and comment repeat each other and omit a piece of system knowledge (the missing knowledge is **why**), so the comment is about as useful as saying
 
-<pre>-- *** THIS CODE IS SEPARATE ***</pre>
+```
+-- *** THIS CODE IS SEPARATE ***
+```
 
 In the second example, there's no *comment*, but there's a *behavior* and a *message*. **The message repeats the behavior**. Both say "you can't use this page," which is repeated knowledge. Neither says why. Again, a piece of system knowledge ("why") is not represented at all. DRY, together with [Once and Only Once](http://c2.com/cgi/wiki?OnceAndOnlyOnce), requires not only **at most** one representation of a piece of knowledge, but also **at least** one. Both examples in this article fail these criteria.
 

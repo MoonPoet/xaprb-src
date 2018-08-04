@@ -9,18 +9,20 @@ As you can probably guess, I'm catching up on reading my blogs. I've just read w
 
 Anyway, we already know that there are quite a few database products that use clustered indexes and to avoid update overhead, require every non-clustered index to store the clustered key as the "pointer" for row lookups. Thus there are "hidden columns" which are present at the leaf nodes, but not the non-leaf nodes, of secondary indexes. Why not take that idea and run with it a little? Here's what I mean:
 
-<pre>create table test (
+```
+create table test (
   a int,
   b int,
   c int,
   primary key(a),
   key(b) <strong>plus(c)</strong>
 );
-</pre>
+```
 
 This would index column b, which because of the clustered primary key would contain column a at the leaf nodes; and additionally we've requested for it to store column c. And then we would be able to do this:
 
-<pre>explain select c from test where b = 1\G
+```
+explain select c from test where b = 1\G
 *************************** 1. row ***************************
            id: 1
   select_type: SIMPLE
@@ -32,7 +34,7 @@ possible_keys: b
           ref: const
          rows: 1
         Extra: Using index
-</pre>
+```
 
 The "Using index" is the key to note there. (Yes, I invented that EXPLAIN result; it is not possible to get with current MySQL and current storage engines.) This strikes me as an improvement over TokuDB, which apparently says you can have all or none. Why not let people say which columns they want?
 

@@ -7,7 +7,9 @@ categories:
 ---
 I've seen a lot of silly non-standard datetime formats, but this one beats them:
 
-<pre>Current Time                     : 6:11:14 2/19, 2009</pre>
+```
+Current Time                     : 6:11:14 2/19, 2009
+```
 
 Any guesses where that's from?
 

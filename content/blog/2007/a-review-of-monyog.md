@@ -11,7 +11,7 @@ categories:
 
 <p>MONyog starts an HTTP listener on your machine.  After you start the program, you point your Web browser at localhost:9999.  Your browser talks to MONyog, which talks to one or many MySQL servers.  My impression is that MONyog is meant to be a nearly zero-footprint desktop install you'll put on your own desktop machine, and monitor remote servers.  In other words, you don't install it on the servers you'll monitor.</p>
 
-<p>It initially prompts you for connection information, which it saves for the future.  After you create and select a connection, MONyog starts watching the MySQL instance.  As far as I can see, it just retrieves <code>SHOW STATUS</code> and <code>SHOW VARIABLES</code>, though I believe there are plans for more in the future.</p>
+<p>It initially prompts you for connection information, which it saves for the future.  After you create and select a connection, MONyog starts watching the MySQL instance.  As far as I can see, it just retrieves `SHOW STATUS` and `SHOW VARIABLES`, though I believe there are plans for more in the future.</p>
 
 <p>Your web browser, in turn, communicates with MONyog via <abbr title="Asynchronous JavaScript And XML">AJAX</abbr>.  You view the data in a dashboard through Flash graphs.  If you have more than one server on your screen, you see the graphs side by side in multiple columns.  Here's a screenshot of the dashboard (nothing's really happening because this is just watching my wife's laptop, which is idle).</p>
 

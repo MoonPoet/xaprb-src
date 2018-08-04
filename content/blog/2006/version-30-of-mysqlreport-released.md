@@ -9,7 +9,8 @@ Daniel Nichter has released version 3.0 of [mysqlreport](http://www.hackmysql.co
 
 It looks like this:
 
-<pre>$ perl mysqlreport --innodb-only
+```
+$ perl mysqlreport --innodb-only
 MySQL 5.0.26-standard-l  uptime 3 9:57:51       Fri Dec  8 17:29:07 2006
 
 __ InnoDB Buffer Pool __________________________________________________
@@ -34,7 +35,8 @@ Current             0
 Time acquiring
   Total        492478 ms
   Average         724 ms
-  Max            5182 ms</pre>
+  Max            5182 ms
+```
 
 As always, very helpful... just the facts, nothing more. I have 1.25 GB of buffer pool, 100% used, very small percentage of dirty pages, etc etc. You can see it all at a glance.
 

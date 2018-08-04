@@ -11,7 +11,8 @@ If you don't see [your bug fixed or feature request implemented](http://code.goo
 
 A big, big thanks to [EngineYard](http://www.engineyard.com/), [Vantage Media](http://www.vantagemedia.com/) and [Kongregate](http://www.kongregate.com/), who sponsored the features they needed in Maatkit this month.
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2009-02-01: version 1.0.13
 
@@ -115,6 +116,6 @@ Changelog for mk-table-sync:
 
    * An older DBD library caused an infinite loop (issue 11).
    * Updated common modules.
-</pre>
+```
 
 

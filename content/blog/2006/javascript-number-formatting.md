@@ -9,7 +9,8 @@ This article continues my series on parsing and formatting data with JavaScript,
 
 First, the idea: you have a number, you want it formatted a certain way. Here's how:
 
-<pre>var dollars = 5.001;
+```
+var dollars = 5.001;
 alert(dollars.numberFormat("$0.00");
 // result: "$5.00"
 var percent = .08134;
@@ -17,7 +18,8 @@ alert(percent.numberFormat("0.00%");
 // result: "8.13%"
 var bignum = 12831242485472;
 alert(bignum.numberFormat("0,0,, million");
-// result: "12,831,243 million"</pre>
+// result: "12,831,243 million"
+```
 
 My custom date formatting code used PHP's date-formatting syntax because it's much less context-sensitive and (I think) more useful than Microsoft's, but my number-formatting syntax is similar to Microsoft's because it's much more widely used and I don't see an existing, better alternative. Rather than documenting it separately, I'll just point you to the ([poor quality](/blog/2005/12/30/excel-calc-number-formatting/)) Microsoft documentation for the [.NET Custom Numeric Format Strings](http://msdn.microsoft.com/library/en-us/cpguide/html/cpconcustomnumericformatstrings.asp) functionality, and list the differences from my implementation:
 

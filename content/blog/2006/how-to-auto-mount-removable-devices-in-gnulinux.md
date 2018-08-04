@@ -19,8 +19,10 @@ In my opinion, some methods are definitely easier than others. I suggest you eit
 
 If you're running Gnome, or if you have it installed but run another desktop environment, such as XFCE, you need `gnome-volume-manager` to be running. Gnome usually starts it automatically. If you use another desktop environment, you need to start it so it runs in the background. For example, you could put this in your `.xinitrc`file:
 
-<pre>gnome-volume-manager &
-startxfce4</pre>
+```
+gnome-volume-manager &
+startxfce4
+```
 
 That starts it running in the background, then starts XFCE.
 
@@ -34,12 +36,16 @@ So, I prefer to run software that does nothing but sit in the background waiting
 
 For this to work, it needs the same things Gnome relies on: `hal`, `dbus`, and `udev`. All three need to be running as daemons. If you're using Gentoo, you almost certainly have udev already, since it's been part of the standard installation instructions for years. Other distributions should have udev as well. Installing `hal` through your distribution's package management system should install `dbus` as a dependency. Likewise, starting the `hald` daemon should start `dbus` as a dependency. In Gentoo, installing `ivman` will install these as dependencies, so it's as easy as
 
-<pre>tigger ~ # emerge ivman
-tigger ~ # rc-update add hald default</pre>
+```
+tigger ~ # emerge ivman
+tigger ~ # rc-update add hald default
+```
 
 Now all the software I need is installed, and `hald` and `dbus` will start when the computer boots. All that remains is to give myself the proper permissions, and start `ivman`. As root, I can run `vigr` or use `usermod` to make myself a member of the `plugdev` group. I need to log out and back in for this to take effect. To start `ivman` automatically, I can add it to the end of my `.bashrc` file:
 
-<pre>ivman --nofork &gt; /dev/null 2&gt;&1 &</pre>
+```
+ivman --nofork &gt; /dev/null 2&gt;&1 &
+```
 
 Now I'm done. When I plug a device in, `ivman` finds it and mounts it (actually, it can do a lot more than just mount it; read the man page). I have the permissions I need to change files on the device and unmount it again. It appears under `/media`. If I'm running a file manager such as Nautilus, it shows up on the desktop and in the left-hand pane of the browser view, and I can unmount it with a right-click.
 

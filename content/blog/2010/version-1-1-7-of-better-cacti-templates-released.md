@@ -22,7 +22,7 @@ There are [upgrade instructions](http://code.google.com/p/mysql-cacti-templates/
 
 The full changelog follows.
 
-<pre>
+```
   * Added graphs for Innodb_row_lock_waits and Innodb_row_lock_time (issue 118).
   * Added graphs for the MyISAM key buffer memory consumption (issue 127).
   * The loadavg/users graphs failed when only 1 user was logged in (issue 131).
@@ -35,6 +35,6 @@ The full changelog follows.
   * Added JMX graphs (--type jmx) (issue 139).
   * Big-integer math printf spec was missing a % character (issue 137).
   * Partially accepted patches from Artur Kaszuba (more remaining in issue 120).
-</pre>
+```
 
 

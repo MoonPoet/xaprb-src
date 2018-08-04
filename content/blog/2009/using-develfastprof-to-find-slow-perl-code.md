@@ -6,7 +6,8 @@ categories:
   - Programming
 ---
 I've been profiling a Perl program recently with [Devel::FastProf](http://search.cpan.org/~salva/Devel-FastProf-0.08/lib/Devel/FastProf.pm), and I had a little bit of a hard time finding one of my hot spots. I had a construct like the following: 
-<pre>if ( $condition_one ) {
+```
+if ( $condition_one ) {
   # some code
 }
 elsif ( $other_condition ) {
@@ -18,7 +19,7 @@ elsif ( my (@temp) = $text =~ m/(complex) (regex)/g ) {
 elsif {
   # and so on
 }
-</pre>
+```
 
 Devel::FastProf showed me that my hot spot in the code was the very first line. I could not understand why. I tried a few different things -- always the same result.
 

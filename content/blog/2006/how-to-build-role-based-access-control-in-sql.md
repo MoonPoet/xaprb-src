@@ -43,16 +43,19 @@ I omitted several features commonly found in other systems -- namely, the abilit
 
 Most of the privilege systems I've seen -- for example, those that control photo galleries, bulletin boards, shared calendars and the like -- are not very fine-grained. They usually take the form of a few database tables that define users, groups, and a mapping between the two. The table of groups usually has a few entries with a column for each privilege that applies. For example, you might get the following if you select everything from the groups table:
 
-<pre>+-------+------------+------------+
+```
++-------+------------+------------+
 | group | can_delete | can_update |
 +-------+------------+------------+
 | admin | 1          | 1          | 
 | user  | 0          | 1          | 
-+-------+------------+------------+</pre>
++-------+------------+------------+
+```
 
 The application code often looks like this:
 
-<pre>if ( $user-&gt;is_in_group("admin") ) {
+```
+if ( $user-&gt;is_in_group("admin") ) {
    $message-&gt;delete();
 }
 else {
@@ -61,7 +64,8 @@ else {
 
 if ( $user-&gt;is_in_group("users" || $user-&gt;is_in_group("officers") ) {
    // display some link here... ad nauseum
-}</pre>
+}
+```
 
 Does that look familiar? That's how a lot of applications start, but as it grows larger, I guarantee it will become a disaster. Such systems tend to get extremely buggy and hard to work on, and may perform very badly. I've written before about [separation of concerns](/blog/2005/12/15/css-good-practice-separate-layout-and-presentation/); for example, today's web programmers know about using CSS to separate content and presentation. Separating your privilege system from the other logic in your code is a very good thing too; perhaps one of the most important design decisions you can make. It should be the foundation of your system, rather than woven through it.
 
@@ -122,13 +126,15 @@ I'll start with a simplified system to control access to rows (you'll see how to
 
 A word on naming: In this article I'll use a prefix of `t_` for tables and `c_` for columns. Not only does this keep the queries clear, as you'll see later, but it lets me use reserved words as identifiers (such as `c_group`). I'll also use MySQL as an example, though of course you could use other databases. Here is the basic table schema:
 
-<pre>create table t_foo (
+```
+create table t_foo (
     c_uid             int not null auto_increment primary key,
     c_owner           int not null default 1,
     c_group           int not null default 1,
     c_unixperms       int not null default 500,
     -- other columns ...
-);</pre>
+);
+```
 
 You need these columns in every table. I'll introduce the columns here, and explain them in more detail as I go.
 
@@ -141,12 +147,14 @@ You need these columns in every table. I'll introduce the columns here, and expl
 
 Groups could be defined in the database, but in practice I find them so static that it's better to hard-code a lookup table or enumeration in the application code, eliminating a trip to the database to fetch the group definitions for every request. Here's a typical definition for PHP:
 
-<pre>$groups = array(
+```
+$groups = array(
    "root"          =&gt; 1,
    "officer"       =&gt; 2,
    "user"          =&gt; 4,
    "wheel"         =&gt; 8
-);</pre>
+);
+```
 
 Notice these are powers of two. That's because I'm going to use a lot of [bitwise arithmetic](/blog/2005/09/28/bitwise-arithmetic/) to do the queries for groups. This limits the number of groups to the number of bits in an integer, but for simplicity and speed, I've found it better to accept that limitation (I've never needed more than 8 groups to define a nicely granular system of privileges, and an unsigned integer allows 32). One thing to keep in mind here is that groups and roles do not have a one-to-one relationship, so this design doesn't limit your total *roles* to the number of bits in the column, just your *groups*.
 
@@ -162,7 +170,8 @@ A user who is in both the "root" and "user" groups has a `c_group_memberships` v
 
 The UNIX-style read, write, and delete permissions are defined in another array in the code, and packed into each row's `c_unixperms` column:
 
-<pre>$permissions = array(
+```
+$permissions = array(
    "owner_read"   =&gt; 256,
    "owner_write"  =&gt; 128,
    "owner_delete" =&gt; 64,
@@ -172,7 +181,8 @@ The UNIX-style read, write, and delete permissions are defined in another array 
    "other_read"   =&gt; 4,
    "other_write"  =&gt; 2,
    "other_delete" =&gt; 1
-);</pre>
+);
+```
 
 A row whose `c_unixperms` column has the value 500 (decimal) has the value 111110100 in binary, so that means, from most to least significant bit, the owner can read, write and delete; members of the owner group can read and write; and other users can just read. This is probably familiar to you if you know UNIX filesystem permissions.
 
@@ -180,7 +190,8 @@ A row whose `c_unixperms` column has the value 500 (decimal) has the value 11111
 
 Sample data is helpful at this point, so I'm going to script out a minimal schema and populate it for some queries. Here's the script:
 
-<pre>drop table if exists t_user;
+```
+drop table if exists t_user;
 create table t_user (
    c_uid             int             not null auto_increment primary key,
    c_owner           int             not null default 1,
@@ -203,7 +214,8 @@ create table t_event (
 );
 
 insert into t_event(c_owner, c_group, c_description) values
-   (1, 1, 'MySQL Camp'), (1, 4, 'Microsoft Keynote');</pre>
+   (1, 1, 'MySQL Camp'), (1, 4, 'Microsoft Keynote');
+```
 
 ### How to determine whether a user can take an action
 
@@ -230,12 +242,14 @@ So sakila can update the event.
 
 Because the privileges are packed into bits, you can reduce this to logical and bitwise operators. Assuming `$u` is the user and `$e` is the event, this expression determines whether the user can write the event:
 
-<pre>$can_write
+```
+$can_write
    =  (( $e->owner == $u->id ) 
          && ( $e->unixperms & $permissions['owner_write'] ))
    || (( $e->group & $u->group_memberships )
          && ( $e->unixperms & $permissions['group_write'] ))
-   ||       ( $e->unixperms & $permissions['other_write'] );</pre>
+   ||       ( $e->unixperms & $permissions['other_write'] );
+```
 
 And so it goes; you can do similar calculations for read and delete permissions. You would probably want to write a class method that would allow you to express this as `$u->can('write', $e)` or something similar. This is also an easy query to write in SQL, although you don't need to go to the database to find data you already have in your objects.
 

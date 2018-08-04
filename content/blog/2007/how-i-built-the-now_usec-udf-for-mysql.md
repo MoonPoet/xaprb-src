@@ -11,7 +11,8 @@ The [manual section on user-defined functions](http://dev.mysql.com/doc/en/addin
 
 Here's the source, which I basically cribbed from a NOW_MSEC() function I saw in a bug report somewhere. Really, there's not much to it besides the basic skeleton of a UDF, with a few lines to actually get the system time. And I actually believe if I took another ten minutes to learn about strftime(), there's probably no need to do it in two steps; I could probably do the whole thing with one strftime() call and save a little memory and time. But that's what I get for copying and pasting code of unknown quality:
 
-<pre>#include &lt;my_global.h&gt;
+```
+#include &lt;my_global.h&gt;
 #include &lt;my_sys.h&gt;
 #include &lt;mysql.h&gt;
 
@@ -58,11 +59,12 @@ char *now_usec(UDF_INIT *initid, UDF_ARGS *args, char *result,
 
   return(usec_time_string);
 }
-</pre>
+```
 
 The installation looks like this:
 
-<pre>baron@tigger now_usec $ make
+```
+baron@tigger now_usec $ make
 gcc -fPIC -Wall -I/usr/include/mysql -shared -o now_usec.so now_usec.cc
 baron@tigger now_usec $ sudo cp now_usec.so /lib
 baron@tigger now_usec $ mysql test
@@ -74,7 +76,8 @@ mysql> select now_usec();
 | now_usec()                 |
 +----------------------------+
 | 2007-10-23 10:28:13.862116 | 
-+----------------------------+</pre>
++----------------------------+
+```
 
 For those who have reached this page via Google searches and are looking for more information, you should check out the [MySQL User Defined Function Library](http://www.xcdsql.org/MySQL/UDF/) project. Lots of good UDFs there.
 

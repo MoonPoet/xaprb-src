@@ -13,14 +13,16 @@ A bit of basic chapter information: It's currently 45 pages and very nearly a fi
 
 Here's the chapter outline:
 
-<pre>[Intro]
+```
+[Intro]
 Slow Query Basics: Optimize Data Access
 Ways to Restructure Queries
 Query Execution Basics
 MySQL Query Optimizer Limitations
 Optimizing Specific Types of Queries
 Query Optimizer Hints
-User-Defined Variables</pre>
+User-Defined Variables
+```
 
 
 

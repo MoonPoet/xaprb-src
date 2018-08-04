@@ -15,7 +15,8 @@ For one-off queries, though, it may be faster to simply turn on the desired stat
 
 Here is a simple `awk` program. Save it to a file named `sql-stats.awk`:
 
-<pre>/CPU time/ {
+```
+/CPU time/ {
     cpu += $4
     elapsed += $9
 }
@@ -32,7 +33,8 @@ END {
     printf("Read-ahead reads: %7d\n", ahead);
     printf("CPU time:         %7d ms\n", cpu);
     printf("Elapsed time:     %7d ms\n", elapsed);
-}</pre>
+}
+```
 
 Now follow these steps to sum the statistics for easy consumption:
 
@@ -43,23 +45,29 @@ Now follow these steps to sum the statistics for easy consumption:
 *   paste the messages into a text file called `stats.txt`
 *   execute `awk` against the file as follows:
 
-<pre>C:> awk -f sql-stats.awk stats.txt</pre>
+```
+C:> awk -f sql-stats.awk stats.txt
+```
 
 The results should look something like this:
 
-<pre>Scans:               1110
+```
+Scans:               1110
 Logical reads:     531208
 Physical reads:       187
 Read-ahead reads:  131895
 CPU time:          146922 ms
-Elapsed time:      200718 ms</pre>
+Elapsed time:      200718 ms
+```
 
 ### Watch out for query caches!
 
 Remember, for unbiased results, you need to initialize your caches to a known state before comparing queries:
 
-<pre>dbcc freeproccache
-dbcc dropcleanbuffers</pre>
+```
+dbcc freeproccache
+dbcc dropcleanbuffers
+```
 
 Please share if you have other ideas. You could get as fancy as you want with awk, but this solves my common need.
 

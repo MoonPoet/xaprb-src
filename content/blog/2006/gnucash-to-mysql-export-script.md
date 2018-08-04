@@ -29,7 +29,8 @@ These queries assume precision decimal math. Versions of MySQL less than 5.0 use
 
 This query finds all unbalanced non-equity transactions by summing the splits:
 
-<pre>select
+```
+select
     s.amount,
     a.name,
     t.description,
@@ -42,11 +43,13 @@ from account as a
         having sum(amount) &lt;&gt; 0
     ) as s on s.account = a.id
     inner join transaction as t on t.id = s.transaction
-where a.type &lt;&gt; 'EQUITY'</pre>
+where a.type &lt;&gt; 'EQUITY'
+```
 
 This query sums all expenses for 2005 by month and account:
 
-<pre>select date_format(posted, '%Y-%m') as month, name, sum(amount) as amount
+```
+select date_format(posted, '%Y-%m') as month, name, sum(amount) as amount
 from transaction as t
     inner join split as s on s.transaction = t.id
     inner join (
@@ -55,11 +58,13 @@ from transaction as t
     ) as a on a.id = s.account
 where year(posted) = 2005
 group by date_format(posted, '%Y-%m'), name
-order by date_format(posted, '%Y-%m'), name;</pre>
+order by date_format(posted, '%Y-%m'), name;
+```
 
 This query finds average monthly expenditures by account since January 2005:
 
-<pre>select @num_months := count(distinct date_format(posted, '%Y-%m'))
+```
+select @num_months := count(distinct date_format(posted, '%Y-%m'))
     from transaction
     where posted &gt;= '2005-01-01';
 
@@ -87,7 +92,8 @@ from (
     group by date_format(posted, '%Y-%m'), a.name
 ) as x
 group by name
-order by name;</pre>
+order by name;
+```
 
 
 

@@ -17,23 +17,28 @@ MySQL Visual Explain is a command-line tool, not a Graphical User Interface (GUI
 
 Here's a simple example. Given the following query,
 
-<pre>select actor_id,
+```
+select actor_id,
    (select count(film_id) from sakila.film join sakila.film_actor using(film_id))
-from sakila.actor;</pre>
+from sakila.actor;
+```
 
 You get this EXPLAIN output:
 
-<pre>+----+-------------+------------+-------+----------------+--------------------+---------+---------------------+------+-------------+
+```
++----+-------------+------------+-------+----------------+--------------------+---------+---------------------+------+-------------+
 | id | select_type | table      | type  | possible_keys  | key                | key_len | ref                 | rows | Extra       |
 +----+-------------+------------+-------+----------------+--------------------+---------+---------------------+------+-------------+
 |  1 | PRIMARY     | actor      | index | NULL           | PRIMARY            | 2       | NULL                |  200 | Using index | 
 |  2 | SUBQUERY    | film       | index | PRIMARY        | idx_fk_language_id | 1       | NULL                |  951 | Using index | 
 |  2 | SUBQUERY    | film_actor | ref   | idx_fk_film_id | idx_fk_film_id     | 2       | sakila.film.film_id |    2 | Using index | 
-+----+-------------+------------+-------+----------------+--------------------+---------+---------------------+------+-------------+</pre>
++----+-------------+------------+-------+----------------+--------------------+---------+---------------------+------+-------------+
+```
 
 MySQL Visual Explain turns this into the following query execution plan:
 
-<pre>SUBQUERY
+```
+SUBQUERY
 +- JOIN
 |  +- Index lookup
 |  |  key            film_actor->idx_fk_film_id
@@ -49,7 +54,8 @@ MySQL Visual Explain turns this into the following query execution plan:
 +- Index scan
    key            actor->PRIMARY
    key_len        2
-   rows           200</pre>
+   rows           200
+```
 
 You should read this as a depth-first tree traversal. In other words, the root of the tree is the output node -- the last thing that happens in query execution.
 

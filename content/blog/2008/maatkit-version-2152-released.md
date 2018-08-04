@@ -21,7 +21,8 @@ Keep reporting those bugs and feature requests!
 
 As you might expect, the changelog for such a long release cycle is, er, large. There's a lot of new stuff here. I'd like to highlight the new features in mk-parallel-dump and mk-parallel-restore -- which I just used to reduce a job that would have taken weeks down to mere days -- and a lot of new code in mk-table-sync, as well as the up-and-coming mk-audit, which is in release-early/often mode.
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2008-08-11: version 1.0.10
 
@@ -160,6 +161,6 @@ Changelog for mk-visual-explain:
 2008-08-11: version 1.0.9
 
    * Files downloaded directly from SVN crashed due to version information.
-</pre>
+```
 
 

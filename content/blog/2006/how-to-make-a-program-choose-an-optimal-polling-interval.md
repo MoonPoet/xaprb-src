@@ -11,7 +11,8 @@ My co-worker John taught me a useful technique to let a program choose an optima
 
 Here is pseudo-code for a process that needs to poll a resource:
 
-<pre>wait = 128;
+```
+wait = 128;
 minWait = 1;
 maxWait = 32768;
 didSomething = false;
@@ -38,7 +39,8 @@ while (true) {
 
    // Wait
    sleep(wait);
-}</pre>
+}
+```
 
 This code is an infinite loop that polls something, does what needs to be done, then sleeps a varying amount of time. If there was something to do, it must have waited too long last time, so it halves the current wait time. If there was nothing to do, it waits twice as long. I've specified minimum, maximum, and initial wait times. All are powers of 2, which is important because the algorithm always halves or doubles it, so it needs to always be divisible by two.
 

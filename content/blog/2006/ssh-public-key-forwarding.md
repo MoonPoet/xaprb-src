@@ -34,8 +34,10 @@ OK, so I've set everything up. I have put my public key on the two computers I c
 
 What happened is, I logged into `server1` with my private key, but when I tried to connect to `server2`, my private key wasn't available to authenticate me. At this point, I might copy my private key to `server1`, but that's not the best way to do it. In fact, it's possible to tell SSH to forward my private key to servers when I connect to them. This is in-memory only; the key never gets stored on the disk, so it stays secure. But it's available if it's needed to connect to other servers. This chain of forwarding can go on and on. All I need to do is tell SSH to forward the keys (more strictly, forward the *agent*, which has loaded my keys into memory). This is a configuration option, set in the `.ssh/config` file on my local computer -- the one I'm sitting at:
 
-<pre>Host *
-ForwardAgent yes</pre>
+```
+Host *
+ForwardAgent yes
+```
 
 That configuration directive tells SSH to forward my SSH agent to all hosts. Voila!
 

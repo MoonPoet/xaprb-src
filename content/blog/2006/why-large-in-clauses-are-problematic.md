@@ -15,30 +15,40 @@ Just for the record, I'm not a *huge* fan of it for a variety of reasons, but I 
 
 `Ima::DBI` allows defining sql statements as subroutines, like this:
 
-<pre>__PACKAGE__-&gt;set_sql('foo', 'select * from foo', 'conn');
+```
+__PACKAGE__-&gt;set_sql('foo', 'select * from foo', 'conn');
 # elsewhere:
-$statements-&gt;sql_foo-&gt;execute();</pre>
+$statements-&gt;sql_foo-&gt;execute();
+```
 
 That's code for "create a subroutine named `sql_foo`, which will execute the `SELECT` against a connection named `conn`". Later, the code executes that subroutine.
 
 There's a lot more that can be done with this. `?` placeholders can go in the SQL definition, like so:
 
-<pre>...'select * from foo where bar = ?'...
+```
+...'select * from foo where bar = ?'...
 # elsewhere:
-$statements-&gt;sql_foo-&gt;execute(5);</pre>
+$statements-&gt;sql_foo-&gt;execute(5);
+```
 
 That's standard DBI prepared-statement syntax for inserting a '5&#8242; where the question mark is, but look at this:
 
-<pre>'select * from foo where bar in (%s)</pre>
+```
+'select * from foo where bar in (%s)
+```
 
 That's a string substitution parameter, `sprintf` style, which gets used at runtime to alter the statement before executing it, like so:
 
-<pre>$sth = $statements-&gt;sql_foo("?, ?, ?");
-$sth-&gt;execute(5, 6, 7);</pre>
+```
+$sth = $statements-&gt;sql_foo("?, ?, ?");
+$sth-&gt;execute(5, 6, 7);
+```
 
 This last usage results in the statement
 
-<pre>select * from foo where bar in (5, 6, 7)</pre>
+```
+select * from foo where bar in (5, 6, 7)
+```
 
 It's very easy to slip into this coding style when working with lists of things. For example, a program that accepts a list of account numbers on the command line. The traffic data roll-up system I've mentioned works this way; we run the roll-up program with a list of client IDs.
 
@@ -50,12 +60,14 @@ The first problem with a large `IN` clause is performance. `IN` is equivalent to
 
 One solution to this is to move the `IN` clause to the `FROM` clause. It may be counter-intuitive, but giving the query a 'table' to act as a filter can be much more efficient, depending on the platform. Here's the above query, re-written:
 
-<pre>select * from foo
+```
+select * from foo
    inner join (
       select 5 as bar
       union all select 6
       union all select 7
-   ) as x on foo.bar = x.bar</pre>
+   ) as x on foo.bar = x.bar
+```
 
 One example where this worked well on MySQL is explained in a recent e-mail from my coworker:
 
@@ -67,11 +79,13 @@ I wouldn't say a factor-of-six improvement is revolutionary, but every little bi
 
 Performance may or may not be a real problem, but maintainability definitely is. It's really hard to debug or understand what queries are doing when the query text isn't written until runtime (With `Ima::DBI`, it's even harder because the subroutines get written as closures, which the debugger can't step into). The code to work with these types of queries also gets really ugly. This is onerous:
 
-<pre>@params = $something_from_arguments;
+```
+@params = $something_from_arguments;
 $placeholders = join(',', '?' x scalar(@params));
 $sth = $statements-&gt;sql_foo1($placeholders);
 $sth-&gt;execute(@params);
-# ... do that 15 times</pre>
+# ... do that 15 times
+```
 
 And when I see the query being executed at runtime, with 250 question marks and 250 variables to take their places, I really want to pull my hair out. Debugging statements don't help. I rewrote one such application that had obviously been hard to debug, because it printed debugging output all over the place, ostensibly to help the programmer ensure the correct number of question marks was being created to accept the correct number of variables (there were other parameters to the query besides the `IN` clause, making it even more complex).
 

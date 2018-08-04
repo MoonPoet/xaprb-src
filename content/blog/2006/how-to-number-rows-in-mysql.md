@@ -17,7 +17,8 @@ Unfortunately, that's a quadratic algorithm, so it's not something I'd do much (
 
 In MySQL you can simultaneously assign to and read from [user variables](http://dev.mysql.com/doc/refman/5.0/en/user-variables.html) in a SELECT statement. This allows the following method of numbering rows:
 
-<pre>set @type = '';
+```
+set @type = '';
 set @num  = 1;
 
 select
@@ -39,7 +40,8 @@ from fruits;
 | orange | valencia   |          2 | orange | 
 | pear   | bartlett   |          1 | pear   | 
 | pear   | bradford   |          2 | pear   | 
-+--------+------------+------------+--------+</pre>
++--------+------------+------------+--------+
+```
 
 How does that work? I'm restarting the row number each time the `type` column changes, by keeping track of the value it had in the last row. And I'm simultaneously incrementing and selecting the row number in each row.
 
@@ -54,7 +56,8 @@ You can refer to the generated `row_number` column in a `HAVING` or `GROUP BY` c
 
 Now that you've read that section of the manual, particularly the part about the aliased expression, you should understand why the following query might be a safer paradigm when using the result in the `HAVING` clause, even though it produces another dummy column:
 
-<pre>set @type = '';
+```
+set @type = '';
 set @num  = 1;
 
 select
@@ -74,13 +77,15 @@ having row_number = 1;
 | cherry | bing     |       1 | cherry  | 1          | 
 | orange | navel    |       1 | orange  | 1          | 
 | pear   | bartlett |       1 | pear    | 1          | 
-+--------+----------+---------+---------+------------+</pre>
++--------+----------+---------+---------+------------+
+```
 
 (If I'm wrong about that, somebody please correct me).
 
 A safer technique is to use a subquery in the `FROM` clause. This will cause the results to be materialized in a temporary table behind the scenes. It might be less efficient for some uses, though:
 
-<pre>select type, variety
+```
+select type, variety
 from (
    select
       type,
@@ -98,7 +103,8 @@ where row_number = 1;
 | cherry | bing     | 
 | orange | navel    | 
 | pear   | bartlett | 
-+--------+----------+</pre>
++--------+----------+
+```
 
 ### Conclusion
 

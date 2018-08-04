@@ -15,7 +15,7 @@ This second utility does most of the work. It is called 'collect' and by default
 
 Here's a sample of how to use the tools. In summary: get them and make them executable, then configure them; then start a screen session and run the 'stalk' utility as root. Go do something else and come back later to check! A code sample follows.
 
-<pre>
+```
 $ wget http://aspersa.googlecode.com/svn/trunk/stalk
 $ wget http://aspersa.googlecode.com/svn/trunk/collect
 $ chmod +x stalk collect
@@ -24,7 +24,7 @@ $ mv stalk collect ~/bin
 $ vim ~/bin/stalk # Configure it
 $ screen -S stalking.the.server
 $ sudo ~/bin/stalk
-</pre>
+```
 ` 
 Inside the 'stalk' tool, you'll see a few things you can configure. By default, it tries to connect to mysqld via mysqladmin and see how many threads are connected to the server. If this increases over 100 (a sample number you should almost certainly change), or if it can't connect to mysqld, then it fires off the 'collect' tool, or whatever else you configure it to execute.
 

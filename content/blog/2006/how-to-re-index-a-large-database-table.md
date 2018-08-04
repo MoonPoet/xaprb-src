@@ -79,7 +79,8 @@ I didn't create the new tables without indexes and then add the indexes later. A
 
 I tried this with some of the smaller tables, and it seemed to go well. To insert the data from the old table into the new "in small chunks," I wrote the "nibbler" archiving job in a shell script. Instead of doing it one row at a time, I did one day's worth of data at a time. I ran it early in the morning before anyone else was on the system, and each day's worth of data seemed to take from a few seconds to a few minutes, depending on which table. That was an encouraging sign. Here's what the shell script looked like:
 
-<pre>#!/bin/bash
+```
+#!/bin/bash
 
 for day in `seq 90 -1 2`;
 do
@@ -88,7 +89,8 @@ do
    if [ -f /home/xaprb/oktorun ]; then
       time echo $cmd | mysql;
    fi
-done</pre>
+done
+```
 
 I used a file as an "OK" signal for the script. If I decided to stop in the middle of the process, all I had to do was remove the file and the script would loop through the remaining days without actually sending the query to the server. I did do this once or twice when an automated job started.
 

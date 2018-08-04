@@ -21,7 +21,8 @@ This tool is designed to help you run maintenance commands on your MySQL tables.
 
 Here's sample output:
 
-<pre>$ mysql-table-maintainer -ac
+```
+$ mysql-table-maintainer -ac
 DATABASE TABLE                   ENGINE    SIZE   ROWS OP       TYPE     CNT TIME MSG
 test     __cmp006arz0EZC992_d__0 InnoDB   32.0k  94.0  analyze  status     1    0 OK
 test     __cmp006arz0EZC992_d__0 InnoDB   32.0k  94.0  check    status     1    0 OK
@@ -50,7 +51,8 @@ test     deadlocks               InnoDB   16.0k   2.0  check    status     1    
 test     foo                     MyISAM    0.0    0.0  analyze  status     1    0 Table is already up to date
 test     foo                     MyISAM    0.0    0.0  check    status     1    0 OK
 test     smallhist2              InnoDB   32.0k  89.0  analyze  status     1    0 OK
-test     smallhist2              InnoDB   32.0k  89.0  check    status     1    0 OK</pre>
+test     smallhist2              InnoDB   32.0k  89.0  check    status     1    0 OK
+```
 
 ### How this is different from myisamchk
 

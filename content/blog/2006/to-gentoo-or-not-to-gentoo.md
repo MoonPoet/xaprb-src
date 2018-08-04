@@ -93,9 +93,11 @@ Gentoo isn't infinitely flexible, no matter how many USE flags there are. Here a
 
 The first is MySQL. You can't just get the `mysql` client, or C libraries, which means you have to download and build the entire server if anything on your system needs MySQL support. For example, suppose you're setting up a web server, which will run Perl web apps that talk to other servers running MySQL. You can't just build Perl with MySQL support. You build `dev-perl/DBD-mysql`, and it depends on `dev-db/mysql`. Look at the ebuild:
 
-<pre>DEPEND="dev-lang/perl
+```
+DEPEND="dev-lang/perl
 	dev-perl/DBI
-	dev-db/mysql"</pre>
+	dev-db/mysql"
+```
 
 If you want anything to do with MySQL, you just installed a MySQL server, even if you wanted your web servers to be "minimal." Other distributions let you get just the client programs or C libraries.
 

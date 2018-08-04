@@ -18,7 +18,8 @@ This release is part of the unstable 1.5 branch. Its features will ultimately go
 
 The major change is a new Command Summary' mode (switch to this mode with the 'C' key) that's similar to [mytop's](http://jeremy.zawodny.com/mysql/mytop/) 'c' mode. It shows you the relative size of variables from SHOW STATUS and SHOW VARIABLES. Here's a sample:
 
-<pre>Command Summary (? for help) localhost, 25+07:16:43, 2.45 QPS, 3 thd, 5.0.40
+```
+Command Summary (? for help) localhost, 25+07:16:43, 2.45 QPS, 3 thd, 5.0.40
 
 _____________________ Command Summary _____________________
 Name                    Value    Pct     Last Incr  Pct    
@@ -26,7 +27,8 @@ Select_scan             3244858  69.89%          2  100.00%
 Select_range            1354177  29.17%          0    0.00%
 Select_full_join          39479   0.85%          0    0.00%
 Select_full_range_join     4097   0.09%          0    0.00%
-Select_range_check            0   0.00%          0    0.00%</pre>
+Select_range_check            0   0.00%          0    0.00%
+```
 
 The default is to show the `Com_*` variables, but I've used a different prefix to illustrate that you can view any variables you want. You just choose the prefix. Useful ones are `Select_`, `Handler_` and `Sort_`. This gives you instant insight into the kind of work your server is doing. You can see in the sample above that the kinds of joins the server does is healthily balanced towards scans and ranges on the first table. The server does very few full joins, full range joins, and range-check query plans (this is good).
 

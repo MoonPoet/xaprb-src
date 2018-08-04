@@ -11,7 +11,8 @@ We (Percona) just [announced our Percona Performance Conference](http://www.mysq
 
 There's a handy iCal download of the conference schedule on the conference website. iCal is a plain text format that is easy to parse with a scripting language. I downloaded this year's and last year's schedules, and aggregated the number of times each company and speaker is listed as presenting a session. Here's the [Perl script I used to do the calculations](/media/2009/02/icspl.txt); and here's the result of running the script.
 
-<pre>baron@kanga:~$ perl ics.pl Desktop/*.ics
+```
+baron@kanga:~$ perl ics.pl Desktop/*.ics
 Desktop/2008.ics
 	Number of speakers:              166
 	Number of companies:             106
@@ -22,7 +23,7 @@ Desktop/2009.ics
 	Number of companies:             58
 	Number of times Sun/MySQL speak: 85
 	Number of times others speak:    76
-</pre>
+```
 
 This year's conference so far boasts only half the diversity of last year's in terms of companies represented, and only three-quarters the diversity of speakers. Companies other than Sun/MySQL speak only six-tenths as many times as they did last year. But Sun/MySQL's speakers take the lectern for 12 more sessions than they did last year. Last year, Sun/MySQL's employees spoke only about half as often as employees of other companies; this year Sun/MySQL dominates the roster.
 

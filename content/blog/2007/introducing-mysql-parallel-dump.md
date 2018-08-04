@@ -14,7 +14,8 @@ A while ago [Peter Zaitsev wrote about his wishes for mysqldump](http://www.mysq
 
 The resulting script is satisfactory to me. If you just run it without arguments, it connects to the server mentioned in your .my.cnf file and dumps all databases and tables, one file per table, gzipped, in parallel (at least two, but by default it detects the number of CPUs and runs that many in parallel).
 
-<pre>baron@kanga $ mysql-parallel-dump
+```
+baron@kanga $ mysql-parallel-dump
 SET     DATABASE TABLE                      TIME STATUS THREADS
 default mysql    columns_priv                  0      0       2
 default mysql    db                            0      0       2
@@ -23,11 +24,13 @@ default mysql    func                          0      0       2
 default mysql    help_keyword                  0      0       2
 ...snip...
 default test     t1                            0      0       2
-default test     t2                            0      0       1</pre>
+default test     t2                            0      0       1
+```
 
 You can tell it to dump elsewhere, and it's easy to dump all tables in tab-delimited format. Here it's reading its configuration from the database, writing to /tmp, and not backing up tables that have been dumped in the last 5 minutes:
 
-<pre>baron@kanga $ mysql-parallel-dump --basedir /tmp --tab --sets set1 \
+```
+baron@kanga $ mysql-parallel-dump --basedir /tmp --tab --sets set1 \
     --settable test.backupset --age 5m
 Nothing to do for set set1
 baron@kanga $ ls -lR /tmp/set1
@@ -41,7 +44,8 @@ total 16
 -rw-rw-rw- 1 baron baron 549 2007-09-30 21:43 t1.sql.gz
 -rw-rw-rw- 1 baron baron  31 2007-09-30 21:43 t1.txt.gz
 -rw-rw-rw- 1 baron baron 550 2007-09-30 21:43 t2.sql.gz
--rw-rw-rw- 1 baron baron  29 2007-09-30 21:43 t2.txt.gz</pre>
+-rw-rw-rw- 1 baron baron  29 2007-09-30 21:43 t2.txt.gz
+```
 
 And as you can see, it knows I've dumped those tables recently and didn't do them again. Pretty handy for scheduling and resuming backups, no? It makes it easy to keep going if something happens in the middle of the backup and you want to restart.
 
@@ -49,7 +53,9 @@ I'm aware of the similar [mysqlpdump](http://www.fr3nd.net/projects/mysqlpdump/)
 
 Oh, and in keeping with my tradition, it's sort of ridiculously sophisticated and overly generic. It has a little macro language that you can use to basically turn it into a loop iterator over the selected databases and tables, and run any command you wish. Here's an example:
 
-<pre>mysql-parallel-dump -- mysqldump --skip-lock-tables '%D' '%N' \| gzip --fast -c - \> '%D.%N.gz'</pre>
+```
+mysql-parallel-dump -- mysqldump --skip-lock-tables '%D' '%N' \| gzip --fast -c - \> '%D.%N.gz'
+```
 
 That basically duplicates the built-in defaults (except the defaults are actually a lot more complicated than that). But it illustrates how you could use this as a shell to select which tables to dump and fork off sub-processes, handling all the locking, error checking, and so forth for them. Here I'm spawning off mysqldump, but it would be just as easy to execute a custom script.
 

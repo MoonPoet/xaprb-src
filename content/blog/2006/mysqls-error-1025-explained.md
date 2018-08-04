@@ -7,10 +7,12 @@ categories:
 ---
 MySQL issues a cryptic error message, "Error on rename," when you try to alter a table in such a way that it would break a foreign key constraint:
 
-<pre>create table test1(a int not null primary key)engine=innodb;
+```
+create table test1(a int not null primary key)engine=innodb;
 create table test2(a int not null, foreign key(a) references test1 (a)) engine=innodb;
 alter table test2 modify a smallint not null;       
-ERROR 1025 (HY000): Error on rename of './test/#sql-2fa8_1' to './test/test2' (errno: 150)</pre>
+ERROR 1025 (HY000): Error on rename of './test/#sql-2fa8_1' to './test/test2' (errno: 150)
+```
 
 This happens because `ALTER TABLE` really works by making a copy of the table, then renaming to move the old table out of the way and move the new table into its place. It is certainly one of the less meaningful error messages I've seen in MySQL.
 

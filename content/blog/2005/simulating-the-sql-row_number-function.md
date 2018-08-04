@@ -17,7 +17,8 @@ One easy solution is a temporary table with an identity (`AUTO_INCREMENT` in MyS
 
 If the data has multiple partitions, the solution is more complex. Here is one possible solution:
 
-<pre>create table fruits (
+```
+create table fruits (
     type varchar(10) not null,
     variety varchar(20) not null,
     primary key(type, variety));
@@ -52,7 +53,8 @@ group by l.type, l.variety;
 | orange | valencia   |   2 |
 | pear   | bartlett   |   1 |
 | pear   | bradford   |   2 |
-+--------+------------+-----+</pre>
++--------+------------+-----+
+```
 
 Here I've partitioned the data by the `type` column, so there are four partitions (apple, cherry, orange, pear). Notice the `num` column starts at 1 for each partition and counts upward.
 

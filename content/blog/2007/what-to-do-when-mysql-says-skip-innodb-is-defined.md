@@ -27,11 +27,15 @@ If so, you most likely have an InnoDB configuration error. Not that you've disab
 
 When this happened to me, it was a config file upgrade that I didn't check carefully. The old directive for the InnoDB data file was as follows:
 
-<pre>innodb_data_file_path           = ibdata1:10M:autoextend</pre>
+```
+innodb_data_file_path           = ibdata1:10M:autoextend
+```
 
 When I upgraded the file, I changed it to
 
-<pre>innodb_data_file_path = ibdata1:10M:autoextend:max:128M</pre>
+```
+innodb_data_file_path = ibdata1:10M:autoextend:max:128M
+```
 
 That wouldn't have been a problem, except the file was already larger than 128MB. This is a slightly hard error to catch sometimes, because it may not show up in your MySQL error log (it doesn't on my Ubuntu laptop when I deliberately force the error to happen).
 

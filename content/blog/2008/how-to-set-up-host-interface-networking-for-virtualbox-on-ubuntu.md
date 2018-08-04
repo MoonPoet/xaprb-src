@@ -14,7 +14,8 @@ The manual explains a bunch of ways to set up host interface networking, general
 
 I created a little shell script and put it into my $PATH. All I have to do is run this before I start my virtual machine, and it sets up bridging and so forth:
 
-<pre>#!/bin/sh
+```
+#!/bin/sh
 
 set -e
 set -u
@@ -32,11 +33,13 @@ sudo bash -c 'echo 1 &gt; /proc/sys/net/ipv4/conf/tap0/proxy_arp'
 IP=`ifconfig | grep 192 | head -n 1 | awk '{print $2}' | cut -d: -f2`
 sudo route add -host $IP dev tap0
 sudo arp -Ds $IP eth0 pub
-</pre>
+```
 
 The script assumes that your machine's primary network device is named eth0. For this to work, you need a couple of packages installed:
 
-<pre>sudo apt-get install uml-utilities bridge-utils</pre>
+```
+sudo apt-get install uml-utilities bridge-utils
+```
 
 Specify 'tap0&#8242; as the network device in the VirtualBox machine's settings.
 

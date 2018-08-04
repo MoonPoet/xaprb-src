@@ -7,8 +7,10 @@ categories:
 ---
 Attribute values in XML are usually double-quoted, but single-quotes can be used as well, according to the relevant part of the [XML Spec](http://www.w3.org/TR/REC-xml/#NT-AttValue). Here is the production:
 
-<pre>[10] AttValue ::= '"' ([^&lt;&"] | Reference)* '"'
-                  | "'" ([^&lt;&'] | Reference)* "'"</pre>
+```
+[10] AttValue ::= '"' ([^&lt;&"] | Reference)* '"'
+                  | "'" ([^&lt;&'] | Reference)* "'"
+```
 
 In plain English: an attribute consists of
 

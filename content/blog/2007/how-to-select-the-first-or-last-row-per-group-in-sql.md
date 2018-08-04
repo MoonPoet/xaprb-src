@@ -19,7 +19,8 @@ Here's the idea: crush an entire table down to a single checksum value by checks
 
 An example might clarify:
 
-<pre>select * from fruit;
+```
+select * from fruit;
 +---------+
 | variety |
 +---------+
@@ -39,11 +40,13 @@ select variety, @crc := md5(concat(@crc, md5(variety))) from fruit;
 | orange  | 7ec613c796f44ef5ccb0e24e94323e38        | 
 | lemon   | a2475f37be12cebf733ebfc7ee2ee473        | 
 | pear    | ec98fe57833bbd91790ebc7ccf84c7e9        | 
-+---------+-----------------------------------------+</pre>
++---------+-----------------------------------------+
+```
 
 I want the "last" value of `@crc` after the statement is done processing. How can I do this? The solution I found is to use a counter variable. I'll demonstrate:
 
-<pre>set @crc := '', @cnt := 0;
+```
+set @crc := '', @cnt := 0;
 
 select variety,
    @cnt := @cnt + 1 as cnt,
@@ -56,11 +59,13 @@ from fruit;
 | orange  |    2 | 7ec613c796f44ef5ccb0e24e94323e38 | 
 | lemon   |    3 | a2475f37be12cebf733ebfc7ee2ee473 | 
 | pear    |    4 | ec98fe57833bbd91790ebc7ccf84c7e9 | 
-+---------+------+----------------------------------+</pre>
++---------+------+----------------------------------+
+```
 
 The counter variable might make you want to write something like `HAVING cnt = MAX(cnt)`, but that won't work (try it!). Instead, I prefixed the checksum with the count so the last row is the stringwise maximum:
 
-<pre>select variety,
+```
+select variety,
    @crc := concat(lpad(@cnt := @cnt + 1, 10, '0'),
       md5(concat(right(@crc, 32), md5(variety)))) as crc
 from fruit;
@@ -72,11 +77,12 @@ from fruit;
 | lemon   | 0000000003a2475f37be12cebf733ebfc7ee2ee473 | 
 | pear    | 0000000004ec98fe57833bbd91790ebc7ccf84c7e9 | 
 +---------+--------------------------------------------+
-</pre>
+```
 
 You can see I also left-padded the count so a lexical sort will agree with a numeric sort, and so I can predict how many extra characters I'll need to remove to get back the original value. Now I can use the `MAX()` function to select the last row, and simply lop off the leftmost ten digits (I use the `RIGHT()` function for convenience, but generally you want to use `SUBSTRING()`):
 
-<pre>select right(max(
+```
+select right(max(
    @crc := concat(lpad(@cnt := @cnt + 1, 10, '0'),
       md5(concat(right(@crc, 32), md5(variety))))
    ), 32) as crc
@@ -85,7 +91,8 @@ from fruit;
 | crc                              |
 +----------------------------------+
 | ec98fe57833bbd91790ebc7ccf84c7e9 | 
-+----------------------------------+</pre>
++----------------------------------+
+```
 
 *Et voila*, I got the last value in the group. By the way, this will work with ONLY\_FULL\_GROUP_BY in the server's [SQL mode](http://dev.mysql.com/doc/refman/5.0/en/server-sql-mode.html).
 

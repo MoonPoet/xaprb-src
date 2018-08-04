@@ -9,9 +9,11 @@ Sometimes multi-table deletes fail in MySQL with a message about an unknown tabl
 
 First, the symptoms:
 
-<pre>delete a from db1.t1 as a
+```
+delete a from db1.t1 as a
     inner join db1.t2 as b  on a.c1 = b.c1;
-ERROR 1109: Unknown table 'b' in MULTI DELETE</pre>
+ERROR 1109: Unknown table 'b' in MULTI DELETE
+```
 
 This will happen if the following are true:
 

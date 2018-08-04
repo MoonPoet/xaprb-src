@@ -37,9 +37,10 @@ No offense, guys, I do consider you friends, but I don't care that you added me 
 
 The Google+ notifications box is a little harder to hide, because it uses CSS classes to generate the numbers in the box. But a little digging into the page source yielded the following custom AdBlock rules:
 
-<pre>
+```
 google.com##DIV[id*="gbgs"]
-google.com##SPAN[id*="gbgs"]</pre>
+google.com##SPAN[id*="gbgs"]
+```
 
 And now all of my Google pages are free of one more time-wasting, attention-disrupting, productivity-killing distraction.
 

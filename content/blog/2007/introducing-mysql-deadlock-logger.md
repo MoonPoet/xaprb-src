@@ -14,17 +14,21 @@ Like the rest of the tools in the toolkit, tried to to make this tool follow the
 
 Because I have my database connection parameters in my .my.cnf file, I can run the deadlock logger with just the &#8211;print option and see a compact summary of the latest deadlock:
 
-<pre>$ mysql-deadlock-logger --print
+```
+$ mysql-deadlock-logger --print
 server ts thread txn_id txn_time user hostname ip db tbl idx lock_type lock_mode wait_hold victim query
 localhost 2007-03-08T20:34:22 81 21309 29 baron localhost  test c GEN_CLUST_INDEX RECORD X w 1 select * from c for update
-localhost 2007-03-08T20:34:22 83 21310 19 baron localhost  test a GEN_CLUST_INDEX RECORD X w 0 select * from a for update</pre>
+localhost 2007-03-08T20:34:22 83 21310 19 baron localhost  test a GEN_CLUST_INDEX RECORD X w 0 select * from a for update
+```
 
 It's easy to specify which of those bits of data you want to see, too:
 
-<pre>$ mysql-deadlock-logger --print -C ts,user,hostname,db,tbl,idx
+```
+$ mysql-deadlock-logger --print -C ts,user,hostname,db,tbl,idx
 ts user hostname db tbl idx
 2007-03-08T20:34:22 baron localhost test c GEN_CLUST_INDEX
-2007-03-08T20:34:22 baron localhost test a GEN_CLUST_INDEX</pre>
+2007-03-08T20:34:22 baron localhost test a GEN_CLUST_INDEX
+```
 
 If you've spent much time poring over the output of `SHOW INNODB STATUS`, you no doubt see what an improvement this is. You also might see some resemblance to [innotop](http://code.google.com/p/innotop)'s Deadlock mode. It's no coincidence, of course; I copied some of the parsing code.
 
@@ -36,13 +40,15 @@ If it weren't reading from my .my.cnf file, I'd have to be more specific: `mysql
 
 Here's what ends up in the table:
 
-<pre>mysql&gt; select ts, user, hostname, db, tbl, idx from deadlocks;
+```
+mysql&gt; select ts, user, hostname, db, tbl, idx from deadlocks;
 +---------------------+-------+-----------+------+-----+-----------------+
 | ts                  | user  | hostname  | db   | tbl | idx             |
 +---------------------+-------+-----------+------+-----+-----------------+
 | 2007-03-08 20:34:22 | baron | localhost | test | c   | GEN_CLUST_INDEX | 
 | 2007-03-08 20:34:22 | baron | localhost | test | a   | GEN_CLUST_INDEX | 
-+---------------------+-------+-----------+------+-----+-----------------+</pre>
++---------------------+-------+-----------+------+-----+-----------------+
+```
 
 I'm only including some of the columns so the output isn't too big, but you get the idea.
 

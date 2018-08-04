@@ -29,13 +29,15 @@ Glom is packaged for installation on [Ubuntu GNU/Linux](http://www.ubuntu.com/),
 
 Glom's website has information about installing it on Gentoo by using the popular [Break My Gentoo](http://www.breakmygentoo.net/) unofficial e-build repository. Though it sounds like an invitation to disaster, in fact it is just a repository of e-builds that have not yet gotten into the main Gentoo Portage tree, and you should not fear it. That said, this was my first experience using a Portage overlay. Assuming your Gentoo system has [Subversion](http://subversion.tigris.org/) installed, and you don't yet have any Portage overlays either, the following commands (executed as root) should do the trick:
 
-<pre>cd /usr/local/
+```
+cd /usr/local/
 svn co https://svn.breakmygentoo.org/bmg-main/
 echo 'PORTDIR_OVERLAY="/usr/local/bmg-main"' >> /etc/make.conf
 echo dev-db/glom >> /etc/portage/package.keywords
 echo dev-cpp/bakery >> /etc/portage/package.keywords
 echo dev-cpp/libgdamm >> /etc/portage/package.keywords
-emerge -av dev-db/glom</pre>
+emerge -av dev-db/glom
+```
 
 In words: I checked out the Break My Gentoo tree to `/usr/local/bmg-main`, added that directory as a Portage overlay, unmasked Glom and two of its dependencies, and then started the `emerge` process. I ran this on my AMD64 system on 2006-09-01 and it worked fine for me. I ended up with version 1.0.4 of Glom, 2.4.0 of bakery, and 1.3.7 of libgdamm from the Break My Gentoo tree. Everything else was installed from the standard Gentoo Portage tree.
 
@@ -49,12 +51,15 @@ You need to create a database user that can create and edit databases. Glom also
 
 First I started PostgreSQL and added it to the default runlevel, so it will start automatically: 
 
-<pre>/etc/init.d/postgresql start
-rc-update add postgresql default</pre>
+```
+/etc/init.d/postgresql start
+rc-update add postgresql default
+```
 
 I added a PostgreSQL user called `glom`. For reasons I'll explain in a bit, I also created a `glom` database:
 
-<pre>xaprb@tigger ~ $ su -
+```
+xaprb@tigger ~ $ su -
 root@tigger ~ # su - postgres
 postgres@tigger ~ $ createuser -P
 Enter name of user to add: glom
@@ -65,42 +70,53 @@ Shall the new user be allowed to create more new users? (y/n) y
 CREATE USER
 postgres@tigger ~ $ createdb glom
 CREATE DATABASE
-postgres@tigger ~ $ exit</pre>
+postgres@tigger ~ $ exit
+```
 
 You don't have to create the     `glom` database, but it makes it easier to verify your user is set up correctly, as you'll see later.
 
 As root, I edited the PostgreSQL configuration files to allow TCP/IP connections: 
 
-<pre>root@tigger ~ # vim /var/lib/postgresql/data/postgresql.conf
+```
+root@tigger ~ # vim /var/lib/postgresql/data/postgresql.conf
 # I added the following line:
 listen_addresses = '*'
 root@tigger ~ # vim /var/lib/postgresql/data/pg_hba.conf
 # I added the following line:
-host    all         all         0.0.0.0 0.0.0.0               md5</pre>
+host    all         all         0.0.0.0 0.0.0.0               md5
+```
 
 These steps took a careful eye; I made some mistakes at first, because I'm not that familiar with configuring PostgreSQL.
 
 I restarted PostgreSQL. It is **not** necessary to restart the computer: 
 
-<pre>/etc/init.d/postgresql restart</pre>
+```
+/etc/init.d/postgresql restart
+```
 
 If you made mistakes, as I did, you may think it restarted, but it actually didn't. I took a look at the log to see what was the matter: 
 
-<pre>root@tigger ~ # tail /var/lib/postgresql/data/postgresql.log
+```
+root@tigger ~ # tail /var/lib/postgresql/data/postgresql.log
 FATAL:  unrecognized configuration parameter "listen_address"
-FATAL:  unrecognized configuration parameter "listen_address"</pre>
+FATAL:  unrecognized configuration parameter "listen_address"
+```
 
 I needed to say `listen_address<strong>es</strong>` in postgresql.conf. Unfortunately Gentoo thought PostgreSQL was already started, so trying to start or stop it failed; I had to "zap" it to proceed:
 
-<pre>/etc/init.d/postgresql zap</pre>
+```
+/etc/init.d/postgresql zap
+```
 
 Eventually I got the user and database created, and PostgreSQL listening for TCP/IP connections.
 
 At this point, I recommend you make sure the user you created can connect to PostgreSQL. If it can't, you may have misconfigured PostgreSQL, created the user wrong, or had some other trouble. To verify all is well, connect via the command-line client:
 
-<pre>xaprb@tigger ~ $ psql -h localhost -W -U glom
+```
+xaprb@tigger ~ $ psql -h localhost -W -U glom
 Password: 
-Welcome to psql 8.0.8, the PostgreSQL interactive terminal.</pre>
+Welcome to psql 8.0.8, the PostgreSQL interactive terminal.
+```
 
 If you see the welcome message, everything is fine. Explicitly specifying `-h localhost` causes `psql` to connect via TCP/IP, so this is a good way to verify your configuration is correct. This is why I created a `glom` database before, by the way. If I didn't do that, my connection attempt would be rejected because it automatically tries to connect to a database named the same as the user. Maybe a PostgreSQL expert can write in a better way to do this, but I'm still new at this, so I just took the simple route.
 
@@ -116,8 +132,10 @@ If all is well, Glom will start and ask you if you want to create a new database
 
 At this point, I ran into some troubles. The first issue was Glom couldn't connect to PostgreSQL, even though I could connect on the command-line. Fortunately a quick web search turned up the issue: libgda, which Glom uses as a database abstraction library, wasn't compiled with support for PostgreSQL. This is my fault. I have the `postgresql` USE flag turned off globally in `/etc/make.conf`, to avoid building extra dependencies for many packages. I added the USE flag and re-compiled the library:
 
-<pre>root@tigger ~ # echo gnome-extra/libgda postgres >> /etc/portage/package.use
-root@tigger ~ # emerge libgda</pre>
+```
+root@tigger ~ # echo gnome-extra/libgda postgres >> /etc/portage/package.use
+root@tigger ~ # emerge libgda
+```
 
 This solved the connection issues. Now I could log in as the `glom` user I created before, and I was able to create a new database, but I couldn't switch Glom from Operator mode to Developer mode. I could create an empty database, but pretty much nothing else. I couldn't create tables, and many menus and menu entries were grayed out. When I tried to use the User Level menu to switch from Operator to Developer mode, Glom displayed an error dialog saying "Developer mode not available. Developer mode is not available. Check that you have sufficient database access rights and that the glom file is not read-only." Here's a screenshot:
 
@@ -125,17 +143,21 @@ This solved the connection issues. Now I could log in as the `glom` user I creat
 
 This also turned out to be a minor configuration issue, but Glom's documentation is a bit thin at the time of writing, so it took me a while to understand what was wrong. Fortunately, because I'd started Glom from a terminal, I was also able to see some debugging output, which gave me a hint:
 
-<pre>DEBUG: User=glom is _not_ in the developer group on the server.</pre>
+```
+DEBUG: User=glom is _not_ in the developer group on the server.
+```
 
 My first attempt to solve this was just to add a `developer` group in PostgreSQL, and add the `glom` user to the group:
 
-<pre>xaprb@tigger ~ $ psql -h localhost -W -U glom
+```
+xaprb@tigger ~ $ psql -h localhost -W -U glom
    [ snipped  some output ]
 glom=# create group developer;
 CREATE GROUP
 glom=# alter group developer add user glom;
 ALTER GROUP
-glom=# \q</pre>
+glom=# \q
+```
 
 This didn't solve the problem. I dropped the `developer` group to clean up the clutter I'd just created, and tried web searches. I saw some messages on the Glom mailing list about the same problem, starting with this thread about [problems with Glom not letting the user switch to Developer mode](http://mail.gnome.org/archives/glom-devel-list/2006-March/msg00001.html). According to the message and its follow-ups, Glom wanted my user to belong to a group called `glom-developer`, not just `developer`. This still didn't solve the issue, though!
 
@@ -143,10 +165,12 @@ I was getting a bit frustrated with the lack of documentation, and was just abou
 
 Though this was a minor issue, it really was annoying. I've since edited the installation documentation to indicate the required group memberships. If you want to configure PostgreSQL correctly without using the example database, run the following from within `psql`:
 
-<pre>glom=# create group glom_developer;
+```
+glom=# create group glom_developer;
 CREATE GROUP
 glom=# alter group glom_developer add user glom;
-ALTER GROUP</pre>
+ALTER GROUP
+```
 
 This is for PostgreSQL prior to version 8.1, which has a significantly different permission system; I imagine in 8.1 you would say `CREATE ROLE... ALTER ROLE`, though I've not tried it.
 
@@ -206,17 +230,20 @@ I poked around to see what Glom really does behind the scenes. This is something
 
 First of all, when creating a new database, Glom names it with a `glom_` prefix, and creates two tables as soon as you submit your password. It never shows you these tables, but I looked at the newly created database through `psql` to see what was there before I created any user-defined tables. In my case the database is called `glom_servertest`. Here are the two default tables:
 
-<pre>glom_servertest=# \d
+```
+glom_servertest=# \d
                   List of relations
  Schema |            Name            | Type  | Owner 
 --------+----------------------------+-------+-------
  public | glom_system_autoincrements | table | glom
  public | glom_system_preferences    | table | glom
-(2 rows)</pre>
+(2 rows)
+```
 
 The user-defined tables aren't named with a prefix, so after I defined tables for my sample application, I had the following tables:
 
-<pre>glom_servertest=# \d
+```
+glom_servertest=# \d
                   List of relations
  Schema |            Name            | Type  | Owner 
 --------+----------------------------+-------+-------
@@ -225,7 +252,8 @@ The user-defined tables aren't named with a prefix, so after I defined tables fo
  public | Server                     | table | glom
  public | glom_system_autoincrements | table | glom
  public | glom_system_preferences    | table | glom
-(5 rows)</pre>
+(5 rows)
+```
 
 I looked at the columns in the tables. In every case a hidden `glom_lock` column was added to the table. Otherwise the tables look pretty straightforward, and the columns use generic data types.
 
@@ -244,9 +272,11 @@ Glom is not perfect. I found many areas where something could be improved, but I
 7.  Reports are related to tables, so it can be confusing to not find the reports you expect just because you have a different table selected. In fact, at first it seemed the reports were appearing and disappearing randomly.
 8.  When I tried to create a new database called Glom-test-1, there was a database error, which leads me to believe Glom may not be quoting things correctly when it sends SQL to the database server.
 9.  Glom doesn't like multi-column primary keys. When I tried changing a PK to be multi-column, Glom completely crashed: 
-    <pre>Glom  Base_DB::query_execute(): Error while executing SQL
+    ```
+Glom  Base_DB::query_execute(): Error while executing SQL
   ALTER TABLE "Installation" ADD PRIMARY KEY ("server")
-Internal error (Database): ERROR:  multiple primary keys for table "Installation" are not allowed</pre>
+Internal error (Database): ERROR:  multiple primary keys for table "Installation" are not allowed
+```
 
 10. Apparently Glom wants everything to have a single auto-incrementing numeric primary key. I tried to remove the auto-increment columns, and just use natural data for the keys, but then it had issues entering records in Details mode, giving me errors about not being able to save the data because no primary key was defined. In fact it did save the entry, but not the non-primary-key data, which is very strange. I also noticed that sometimes when I'm in list view and switch to details view, it creates a new entry I don't intend it to make. And it won't let me delete it from there because it says the entry has no primary key. I think it just has issues with non-numeric primary keys.
 11. The relationship editor has some issues showing the proper fields in the parent table; I chose the `Server` table and it showed me available columns from `Program`. Clicking around to other items in the dialog, then returning to that relationship editor, solved the problem; apparently it just needed to freshen its view of the data or something.

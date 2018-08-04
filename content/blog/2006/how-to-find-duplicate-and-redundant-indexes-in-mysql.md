@@ -13,7 +13,8 @@ Why use `SHOW CREATE TABLE`'s output? Why not query `SHOW INDEXES FROM ____` and
 
 OK, on to my "advanced, patented algorithm." Here's a sample `SHOW CREATE` statement (I'm using a table from my recent article on role-based access control for an example):
 
-<pre>mysql &gt; show create table t_privilege\G
+```
+mysql &gt; show create table t_privilege\G
 *************************** 1. row ***************************
        Table: t_privilege
 Create Table: CREATE TABLE `t_privilege` (
@@ -25,11 +26,13 @@ Create Table: CREATE TABLE `t_privilege` (
   `c_related_uid` int(11) NOT NULL default '0',
   PRIMARY KEY  (`c_role`,`c_who`,`c_action`,`c_type`,`c_related_table`,`c_related_uid`),
   KEY `c_role` (`c_role`,`c_who`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8</pre>
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
 
 You'll notice I added a key on `(c_role, c_who)` which is a leftmost prefix of the primary key. In general, indexes always appear in this output as `KEY (column names)`, with a possible `PRIMARY` or `UNIQUE` in front (update: it should not have FOREIGN in front, because that's not an index). That's pretty easy to parse with a regular expression, and grab **just the columns**. A global match captures every index into an array. Then it's just a matter of looping through the array and comparing. Here is the code:
 
-<pre>foreach my $table ( @tables ) {
+```
+foreach my $table ( @tables ) {
    my $ddl = $dbh-&gt;selectall_arrayref("show create table $table")
       ->[0]->[1];
 
@@ -52,11 +55,13 @@ You'll notice I added a key on `(c_role, c_who)` which is a leftmost prefix of t
    if ( $has_dupes ) {
       print "Here is the CREATE TABLE statement:\n$ddl\n\n";
    }
-}</pre>
+}
+```
 
 I literally wrote that in five minutes, so it may not catch everything, but it caught the duplicate I defined above:
 
-<pre>Table t_privilege has possible duplicate indexes:
+```
+Table t_privilege has possible duplicate indexes:
         `c_role`,`c_who`,`c_action`,`c_type`,`c_related_table`,`c_related_uid`
         `c_role`,`c_who`
 Here is the CREATE TABLE statement:
@@ -69,7 +74,8 @@ CREATE TABLE `t_privilege` (
   `c_related_uid` int(11) NOT NULL default '0',
   PRIMARY KEY  (`c_role`,`c_who`,`c_action`,`c_type`,`c_related_table`,`c_related_uid`),
   KEY `c_role` (`c_role`,`c_who`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8</pre>
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
 
 As I said in my comments on Peter's blog, I don't really need to have something generate statements that can correct the problem for me, or anything like that. It's nice, but it's not essential. First of all, I'd never just trust a tool to go "fix" my tables for me. I'd want it to tell me where it found potential problems. Then I'd go inspect and alter the table by myself if I want to.
 

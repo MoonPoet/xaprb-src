@@ -41,7 +41,7 @@ Here are all three sets of numbers. The three sets are the query against the ini
     </th>
 
     <th scope="col" colspan="2">
-      Redesign, <code>FORCE INDEX</code>
+      Redesign, `FORCE INDEX`
     </th>
   </tr>
 
@@ -652,48 +652,10 @@ Here are all three sets of numbers. The three sets are the query against the ini
 
 You can see the queries that use the `client` index perform almost identically to each other. They use the same query plan, build the same temporary table, and so on. The main difference is there's a different amount of data in the table and indexes after the redesign:
 
-<table class="borders collapsed compact">
-  <caption>Data and Index Size</caption> <tr>
-    <td>
-    </td>
-
-    <th scope="col">
-      Before Redesign
-    </th>
-
-    <th scope="col">
-      After Redesign
-    </th>
-  </tr>
-
-  <tr>
-    <th scope="row">
-      Data Size
-    </th>
-
-    <td>
-      45678592
-    </td>
-
-    <td>
-      40452096
-    </td>
-  </tr>
-
-  <tr>
-    <th scope="row">
-      Index Size
-    </th>
-
-    <td>
-      53067776
-    </td>
-
-    <td>
-      39944192
-    </td>
-  </tr>
-</table>
+|            | Before Redesign | After Redesign |
+|------------|----------------:|---------------:|
+| Data Size  |        45678592 |       40452096 |
+| Index Size |        53067776 |       39944192 |
 
 Using the surrogate key is less space-efficient in this case, so the redesigned table is smaller. However, each index is smaller in the table with the surrogate key, because the primary key is not as wide. If I had to guess, I wouldn't know whether this would result in more or less data being read, which is why I don't guess, I measure. It turns out InnoDB reads the same number of rows, but they fit in fewer pages after re-indexing, so it reads a couple hundred fewer pages. Still, either of the queries using the `client` index reads about 40 MiB of data, whether it's run cold or warm.
 
@@ -712,37 +674,11 @@ where day between '2007-01-01' and '2007-01-31';
 
 This is one less than the number of rows InnoDB reports reading. I believe this is because InnoDB read an extra row, the one past the end of the date range, to determine where to stop scanning.
 
-Finally, here are the Last\_query\_cost variables again. As before, the query optimizer thinks the clustered index scan is more expensive, but it's wrong.
+Finally, here are the `Last_query_cost` variables again. As before, the query optimizer thinks the clustered index scan is more expensive, but it's wrong.
 
-<table class="borders collapsed compact">
-  <caption>Query Cost</caption> <tr>
-    <th scope="col">
-      Before Redesign
-    </th>
-
-    <th scope="col">
-      After Redesign
-    </th>
-
-    <th scope="col">
-      Redesign, <code>FORCE INDEX</code>
-    </th>
-  </tr>
-
-  <tr>
-    <td>
-      21247.5
-    </td>
-
-    <td>
-      10526.9
-    </td>
-
-    <td>
-      86457.133551
-    </td>
-  </tr>
-</table>
+| Before Redesign | After Redesign | Redesign, `FORCE INDEX` |
+|----------------:|---------------:|------------------------:|
+|         21247.5 |        10526.9 |            86457.133551 |
 
 ### Conclusion
 

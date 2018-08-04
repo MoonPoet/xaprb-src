@@ -15,18 +15,21 @@ Most of the time when I do this, I write a test, it fails because I haven't writ
 
 This time I wanted to write a pure-Perl implementation of CRC32, and embed it in mk-table-checksum. We try really hard never to rely on external modules, even modules that ought to be distributed with Perl itself. That keeps Maatkit as portable as possible and makes sure there is no installation hell. You can generally just get and run the Maatkit tools with no installation. So I referred to an existing CRC32 implementation, in [Digest::Crc32](http://search.cpan.org/~fays/Digest-Crc32-0.01/Crc32.pm). I wrote a test by referring to the value I got from MySQL's built-in CRC32:
 
-<pre>mysql> select crc32('hello world');
+```
+mysql> select crc32('hello world');
 +----------------------+
 | crc32('hello world') |
 +----------------------+
 |            222957957 | 
 +----------------------+
 1 row in set (0.00 sec)
-</pre>
+```
 
 Here's the test:
 
-<pre>is($c-&gt;crc32('hello world'), 222957957, 'CRC32 of hello world');</pre>
+```
+is($c-&gt;crc32('hello world'), 222957957, 'CRC32 of hello world');
+```
 
 CRC32 is CRC32, so my code better agree with a working implementation. And then I wrote the code, which is a refactoring of the math in the module I linked to above. And then I ran the test, and it Just Passed with no further ado. w00t! This is pretty much a historic first for me! I thought at first that I'd screwed something up with the test, but I checked again. This is like getting a hole-in-one for me :-) So I just thought I'd share it with you. It feels **awesome**.
 

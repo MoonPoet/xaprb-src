@@ -29,11 +29,14 @@ The next fun thing: the server runs GNU/Linux and has SSH enabled by default. Ye
 
 Next, open up a terminal and SSH right in:
   
-<pre>ssh root@hpmediavault</pre>
+```
+ssh root@hpmediavault
+```
   
 Type the password you chose in the previous step. You should see the following:
   
-<pre>baron@kanga:~$ ssh root@hpmediavault
+```
+baron@kanga:~$ ssh root@hpmediavault
 root@hpmediavault's password: 
 
 
@@ -42,7 +45,7 @@ Enter 'help' for a list of built-in commands.
 
 -sh: can't access tty; job control turned off
 # 
-</pre>
+```
   
 As you can see, the server runs with a stripped-down set of command-line tools called BusyBox. You're golden. Let's get working on installing OGG and FLAC support. This will not be hard at all if you can use a command-line editor.
   
@@ -52,13 +55,16 @@ Behind the scenes, the Media Vault's media streaming is provided by <a href="htt
 
 The package management system is <a href="http://handhelds.org/moin/moin.cgi/Ipkg">ipkg, the Itsy Package Management System</a>. It's really easy to install. First, let's see where your hard drives are mounted:
   
-<pre># mount
+```
+# mount
 /dev/md6 on /share/1000 type ext3 (data=writeback)
-</pre>
+```
   
 If yours isn't /share/1000, use a different value in the following commands. Now you want to make an installation directory and change to that directory:
   
-<pre># mkdir -p /share/1000/tmp &#038;&#038; cd /share/1000/tmp</pre>
+```
+# mkdir -p /share/1000/tmp &#038;&#038; cd /share/1000/tmp
+```
   
 Now let's find the installation image to download. Go look here for the latest version of the image:
   
@@ -66,24 +72,29 @@ Now let's find the installation image to download. Go look here for the latest v
   
 Search for "hpmv2-bootstrap" on that page. You should find a file something like this: hpmv2-bootstrap_1.2-4_arm.xsh. Copy the link location for that, and go back to your command prompt. Now download the file to the Media Vault, substituting the correct URL into the command below:
   
-<pre>
+```
 # wget http://ipkg.nslu2-linux.org/feeds/optware/cs05q3armel/cross/unstable/hpmv2-bootstrap_1.2-4_arm.xsh
-</pre>
+```
   
 And now, just execute it:
   
-<pre># sh ./hpmv2-bootstrap_1.2-4_arm.xsh</pre>
+```
+# sh ./hpmv2-bootstrap_1.2-4_arm.xsh
+```
   
 You should see "Setup complete" when it's done. That's it. It installs itself and mounts the installation directory as /opt, which is where all your software will appear in the future. This will persist after a reboot. You can see the changes with the mount command:
   
-<pre># mount
+```
+# mount
 /dev/md6 on /share/1000 type ext3 (data=writeback)
 /share/1000/.optware on /opt type ext3 (rw)
-</pre>
+```
   
 Before you move on, update its cache of available software:
   
-<pre># ipkg update</pre>
+```
+# ipkg update
+```
   
 I got this installation procedure from <a href="http://tech.groups.yahoo.com/group/hackingthemediavault/message/259">the Yahoo group on hacking the Media Vault</a>.
   
@@ -91,21 +102,25 @@ I got this installation procedure from <a href="http://tech.groups.yahoo.com/gro
   
 I wasn't able to determine whether the latest stable Firefly release has OGG streaming enabled, so I installed the latest nightly release. At some point in the future I'm sure a stable release will have it, but I breathed a prayer to Saint Hewlett and installed the nightly, following <a href="http://tech.groups.yahoo.com/group/hackingthemediavault/message/338">instructions I also found on Hacking the Media Vault</a>. Fortunately it seems to work fine for me. Here's how I did it:
   
-<pre># ipkg install mt-daapd-svn</pre>
+```
+# ipkg install mt-daapd-svn
+```
   
 Pretty easy. After you do this, it will download a bunch of things and install them until it says "Successfully terminated." Now you need to configure it.
 
 You probably noticed that the installation said "To complete this installation, make any necessary changes to the config file in /opt/etc/mt-daapd/mt-daapd.conf, and start the daemon by running /opt/etc/init.d/S60mt-daapd". Here's how to do that.
   
-<pre># vi /opt/etc/mt-daapd/mt-daapd.conf</pre>
+```
+# vi /opt/etc/mt-daapd/mt-daapd.conf
+```
   
 If you like a different editor, feel free to use it. I like vi. Here are the lines that you need to change:
   
-<pre>
+```
 mp3_dir = /share/1000/Music                                            
 servername = HPMediaVault                                              
 extensions = .mp3,.m4a,.m4p,.ogg,.flac                                 
-</pre>
+```
   
 I'm assuming you are keeping the defaults, as I did on mine. All my music is in the Music share, I want to keep the same server name (what shows up in iTunes/Rhythmbox), and I want to add .ogg and .flac to the extensions Firefly will index and stream.
 
@@ -113,27 +128,33 @@ I'm assuming you are keeping the defaults, as I did on mine. All my music is in 
 
 Next you need to stop the built-in media server and start the one you just installed. Here's how to see what's running:
   
-<pre># ps -eaf | grep daap
+```
+# ps -eaf | grep daap
 32530 nobody     1096 S &lt; /usr/sbin/mt-daapd 
 32531 nobody     1984 S &lt; /usr/sbin/mt-daapd 
 32160 root        488 S   grep daap 
-</pre>
+```
   
 There are two processes running. This is normal. Let's stop them:
 
-<pre># killall mt-daapd</pre>
+```
+# killall mt-daapd
+```
 
 If you now run the ps command above, you shouldn't see anything running. You can start the new server:
 
-<pre># /opt/etc/init.d/S60mt-daapd</pre>
+```
+# /opt/etc/init.d/S60mt-daapd
+```
 
 Now you should be able to see the daemon running:
   
-<pre># ps -eaf | grep daap
+```
+# ps -eaf | grep daap
 32681 nobody     3796 S   /opt/sbin/mt-daapd -c /opt/etc/mt-daapd/mt-daapd.conf
 32682 nobody     4512 D   /opt/sbin/mt-daapd -c /opt/etc/mt-daapd/mt-daapd.conf
 32703 root        488 S   grep daap 
-</pre>
+```
   
 Notice that it's a different binary running -- not the one in /usr/sbin.
 
@@ -145,20 +166,20 @@ There's one last little detail. If you shut down your Media Vault and restart it
 
 After a bit of poking, I found that the /etc/inc/func_daapd.inc script has the start and stop commands. The startup process for the Media Vault is written in PHP, oddly enough. Here are the relevant lines:
   
-<pre>
+```
    144         $ret=mwexec("/usr/sbin/mt-daapd -k");
    147         killbyname("mt-daapd","");
    162         $ret=mwexec("/usr/sbin/mt-daapd");
-</pre>
+```
   
 I commented them out and changed them to
   
-<pre>
+```
    143          $ret=mwexec("/opt/etc/init.d/S60mt-daapd -k");
    144  #       $ret=mwexec("/usr/sbin/mt-daapd -k");
    161          $ret=mwexec("/opt/etc/init.d/S60mt-daapd");
    162  #        $ret=mwexec("/usr/sbin/mt-daapd");
-</pre>
+```
   
 Notice I didn't change the killbyname command, since once it is started the binary has the same command name as the old one did. I tested restarting the Media Vault and after restart, it was working OK again. I do not know whether the built-in command to reset the media server will work with these changes; I suspect not. But if you want to do that, you can log in and do it from the command line.
 

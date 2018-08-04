@@ -23,7 +23,8 @@ The Application-Level Optimization chapter is a little shorter. It's mostly abou
 
 For the curious, here's the current outline for these two chapters:
 
-<pre>Scaling and High Availability
+```
+Scaling and High Availability
   Terminology
   Scaling MySQL
     Planning for Scalability
@@ -72,11 +73,12 @@ For the curious, here's the current outline for these two chapters:
       MySQL Master-Master Replication Manager
       Middleman Solutions
       Handling Failover in the Application
-</pre>
+```
 
 And here's the outline for the Application-Level Optimization chapter:
 
-<pre>Application-Level Optimization
+```
+Application-Level Optimization
   Application Performance Overview
     Find the Source of the Problem
     Look for Common Problems
@@ -90,7 +92,8 @@ And here's the outline for the Application-Level Optimization chapter:
     Cache Object Hierarchies
     Pre-Generating Content
   Extending MySQL
-  Alternatives to MySQL</pre>
+  Alternatives to MySQL
+```
 
 The thing that makes me the happiest right now is that we're clearly going to make it. For a while, there was just so much work left to do that it was impossible to estimate how much. (Ask my wife: I was wrong many times when she asked how long it would take me to finish a chapter). I also didn't know how much revision would be necessary, which is very scary; revising takes about four times as long as writing a first draft, by my reckoning. At this point, the remaining work is much smaller, and much easier to estimate. And now I no longer flip-flop daily between "I think we can, I think we can" and "please don't ask, because I don't know and I want a vacation."
 

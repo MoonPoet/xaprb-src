@@ -13,42 +13,51 @@ The following are only my opinions.
 
 I use indentation as with any other programming language. I prefer to indent the beginning of each clause in a statement equally, because I consider them all equally important; in other words, I don't consider the `ORDER BY` clause somehow "inferior to" the `WHERE` clause. The result looks like this:
 
-<pre>select column ...
+```
+select column ...
 from ...
 where ...
 group by ...
-order by ...</pre>
+order by ...
+```
 
 Some programmers prefer to indent each part of the statement in turn, which leads to code that looks like this:
 
-<pre>select column ...
+```
+select column ...
     from ...
         where ...
             group by ...
-                order by ...</pre>
+                order by ...
+```
 
 I find this visually confusing, and it is unmaneagable in larger queries. Another indentation style I really dislike is right-left-justification, thusly:
 
-<pre>select column ...
+```
+select column ...
     from table ...
    where criterion ...
 group by groupingclause ...
   having havingclause ...
-order by orderingclause ...</pre>
+order by orderingclause ...
+```
 
 I think it's very hard to read, but more importantly, it's beastly to maintain. I have better things to do than spend a bunch of time placing my cursor at the beginning of the line, adding spaces to right-justify something, then deleting internal whitespace in the line to left-justify whatever is on the right-hand side of the justification boundary. And as soon as I delete or add another part to the query, I probably have to adjust everything all over again. The following style is almost as hard to maintain:
 
-<pre>select      column,
+```
+select      column,
             column2,
             column3
 from        table ...
-where       criterion ...</pre>
+where       criterion ...
+```
 
 It looks great until you need to join tables or have subqueries. Then it's a disaster. Sometimes it's not only hard to maintain, it's hard to read, too. Take a look at this blog entry about [modelling hierarchies in SQL](http://rpbouman.blogspot.com/2005/08/yet-another-way-to-model-hierarchies.html), and notice how hard it is to figure out which tables are joined to which others, where the join criteria are, and so forth.
 
 When I need to break lines, I indent one level, like so:
 
-<pre>select
+```
+select
     column1,
     column2,
     column3,
@@ -56,22 +65,26 @@ When I need to break lines, I indent one level, like so:
 from ...
 where ...
 group by ...
-order by ...</pre>
+order by ...
+```
 
 When I write a clause that is part of another clause, I indent it as well. For example, `JOIN`s are part of the `FROM` clause, so they should be indented after the first line:
 
-<pre>select column ...
+```
+select column ...
 from ...
     inner join ...
     inner join ...
     left outer join ...
 where ...
 group by ...
-order by ...</pre>
+order by ...
+```
 
 When I write subqueries, I treat the opening and closing parentheses just as opening and closing braces in C, which I do **not** place on a line by themselves:
 
-<pre>select column ...
+```
+select column ...
 from ...
     inner join (
         select column ...
@@ -81,12 +94,15 @@ from ...
     left outer join ...
 where ...
 group by ...
-order by ...</pre>
+order by ...
+```
 
 When I write `INSERT ... SELECT` statements, I indent everything but the first clause:
 
-<pre>insert into ...
-    select ...</pre>
+```
+insert into ...
+    select ...
+```
 
 ### Keep lines short
 
@@ -94,10 +110,12 @@ I try to keep lines short enough that I don't have to scroll horizontally in a n
 
 Commas are not operators, and in my opinion belong at the end of the line. I think the following is very hard to read and maintain:
 
-<pre>select
+```
+select
      col1
     ,col2
-    ,col3 ...</pre>
+    ,col3 ...
+```
 
 The reasons why operators, but not commas, should go at the beginning of the line are well-discussed in the literature of other programming languages. The goals are immediate comprehension when reading code, and ease of maintenance.
 
@@ -131,8 +149,10 @@ It's much clearer to write the full syntax of the language than to use shortcuts
 
 Likewise, I always use the `AS` keyword in aliases. Including it draws attention to the fact that something is being renamed, and omitting it can cause some subtle bugs. If it's omitted, the difference between an alias and the next element in a list is a comma -- a small, easy-to-miss character. For instance,
 
-<pre>select a b, c, d, e
-from table1 table2</pre>
+```
+select a b, c, d, e
+from table1 table2
+```
 
 That's just hard to read. Look again -- it's not doing what you might think. Did you find both bugs?
 
@@ -142,11 +162,15 @@ You'll see me do it in this blog for brevity, but in the real world I never do b
 
 This is an anonymous insert:
 
-<pre>insert into t1 values (1, 5);</pre>
+```
+insert into t1 values (1, 5);
+```
 
 This is better, because it uses named columns:
 
-<pre>insert into t1(c2, c5) values (1, 5)</pre>
+```
+insert into t1(c2, c5) values (1, 5)
+```
 
 ### Joins
 
@@ -156,19 +180,23 @@ I never use `RIGHT OUTER` joins. They can always be rewritten as `LEFT OUTER` jo
 
 It really helps improve readability if the order of the `ON` statements in join clauses is consistent. For example,
 
-<pre>...
+```
+...
 from table1
     inner join table2 on <strong>table1</strong>.a = table2.a
     inner join table3 on <strong>table1</strong>.b = table3.b
-...</pre>
+...
+```
 
 This is a lot easier to understand than
 
-<pre>...
+```
+...
 from table1
     inner join table2 on <strong>table1</strong>.a = table2.a
     inner join table3 on table3.b = <strong>table1</strong>.b
-...</pre>
+...
+```
 
 I think it's important to fully qualify tables in joins too, even if the columns aren't ambiguous. It lets me know where the data is coming from without forcing me to go back and forth from the query to the table structure. I try to qualify *everywhere* I refer to a column, not just in one section of a query, when more than one table is involved in the query.
 
@@ -180,17 +208,21 @@ Fully qualifying also future-proofs the join. If a column name is unambiguous be
 
 SQL allows referring to columns by number, but then you have to do a bunch of mental cross-references between the `GROUP BY` and `ORDER BY` clauses to figure out how the data is sorted and ordered:
 
-<pre>select c1, c2, sum(c3), max(c4)
+```
+select c1, c2, sum(c3), max(c4)
 from t1
 group by 1, 2
-order by 2, 4</pre>
+order by 2, 4
+```
 
 is much less readable and maintainable than
 
-<pre>select c1, c2, sum(c3), max(c4)
+```
+select c1, c2, sum(c3), max(c4)
 from t1
 group by c1, c2
-order by c2, max(c4)</pre>
+order by c2, max(c4)
+```
 
 I continue to refer people to this post on [how to group data correctly in SQL](http://weblogs.sqlteam.com/jeffs/archive/2005/12/14/8546.aspx). It is a weak point for many programmers.
 

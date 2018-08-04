@@ -11,7 +11,8 @@ One of my colleagues recently redesigned a system for scheduling work, and neede
 
 Without revealing too much about my employer's internal systems, I want to give a little bit of context. First, we have a table that holds work to be done:
 
-<pre>create table work_to_do (
+```
+create table work_to_do (
    client int not null,
    work_unit int not null,
    priority float not null,
@@ -19,7 +20,8 @@ Without revealing too much about my employer's internal systems, I want to give 
    primary key(client, work_unit),
    key(priority),
    key(processor, priority)
-) engine=InnoDB;</pre>
+) engine=InnoDB;
+```
 
 Each row in this table represents a job for a client. The actual work is defined elsewhere, as rows in another table that can be looked up from `work_unit`. When there's some work to be done, the row is inserted with `processor` = 0 and `priority` set to some number calculated by another process. The idea is to do the highest-priority jobs first.
 
@@ -39,14 +41,16 @@ The query to claim a set of rows for a process needs to update the ten highest-p
 
 However, a [standard searched `UPDATE` statement](/blog/2006/03/11/many-to-one-problems-in-sql/) with a subquery doesn't count as a multi-table update, so you can do it like this:
 
-<pre>-- @process_id is actually passed in as a parameter
+```
+-- @process_id is actually passed in as a parameter
 -- set @process_id = 17603;
 update work_to_do
    set processor = @process_id
    where processor = 0
       and client in (select client from eligible_client)
    order by priority desc
-   limit 10</pre>
+   limit 10
+```
 
 There's only one problem: performance sucks. You are probably aware that `IN()` subqueries are converted by the `in_optimizer` to correlated subqueries, [sometimes with severe performance penalties](/blog/2006/04/30/how-to-optimize-subqueries-and-joins-in-mysql/).
 
@@ -55,7 +59,8 @@ I created the tables on my home computer, and ran the above query with 5,000 row
 ### The query after optimizing
 
 To eliminate the badly optimized subquery, you need to rewrite the subquery as a join, but how can you do that and retain the `LIMIT` and `ORDER BY`? One way is to find the rows to be updated in a subquery in the `FROM` clause, so the `LIMIT` and `ORDER BY` can be nested inside the subquery. In this way `work_to_do` is joined against the ten highest-priority unclaimed rows of itself. Normally [you can't self-join the update target](/blog/2006/06/23/how-to-select-from-an-update-target-in-mysql/) in a multi-table `UPDATE`, but since it's within a subquery in the `FROM` clause, it works in this case. 
-<pre>update work_to_do as target
+```
+update work_to_do as target
    inner join (
       select w. client, work_unit
       from work_to_do as w
@@ -65,7 +70,8 @@ To eliminate the badly optimized subquery, you need to rewrite the subquery as a
       limit 10
    ) as source on source.client = target.client
       and source.work_unit = target.work_unit
-   set processor = @process_id;</pre>
+   set processor = @process_id;
+```
 
 Now the query runs in 0.04 seconds. That's a factor of 250 speedup, and it's even several times faster than the un-optimized query when there were only 50 rows in the `eligible_client` table.
 

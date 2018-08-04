@@ -11,19 +11,23 @@ SQL blind inserts are a common mistake, but they're easily avoided. This article
 
 A blind insert is when an `INSERT` query doesn't specify which columns receive the inserted data. For instance, this query is a blind insert:
 
-<pre>insert into apples
+```
+insert into apples
    select color, price, variety
    from fruits
-   where type = 'apple';</pre>
+   where type = 'apple';
+```
 
 Notice the query doesn't say what columns are targeted by the `INSERT`. In fact, it's impossible to tell just by looking at this query. The only thing I know from this query is that the first three columns of the `apples` table, whatever those may be, will receive the values from the `SELECT`.
 
 This query needs to specify the target columns by name, all of them:
 
-<pre>insert into apples (color, price, type)
+```
+insert into apples (color, price, type)
    select color, price, variety
    from fruits
-   where type = 'apple';</pre>
+   where type = 'apple';
+```
 
 ### Why is this a bad thing?
 
@@ -43,8 +47,10 @@ The solution is really easy, of course. Just name the inserts. But it goes beyon
 
 Sometimes I've seen people get confused about the distinction between naming the target columns and naming the select columns. For example, sometimes people think this is equivalent to naming the target columns:
 
-<pre>insert into apples
-   select 5 as price, ...</pre>
+```
+insert into apples
+   select 5 as price, ...
+```
 
 The above syntax does *not* put 5 into the `price` column. The source columns can be named anything; it's just a name, and it doesn't influence where the data goes. In fact, giving anonymous columns in the source a name is completely superfluous. Even if you're in the habit of doing it as "documentation" of where the source should go, it's a bad idea, simply because it can become wrong when someone changes the query. It's like [a comment that repeats what the code already says](/blog/2005/12/10/tell-me-why-not-what/): it's redundant, and therefore a liability.
 

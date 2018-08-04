@@ -21,7 +21,9 @@ The add-on is available through SourceForge and the [OOoMacros](http://www.oooma
 
 This is the part I found confusing. The difference between macros and add-ons in OpenOffice.org isn't very clear to me, and the tools to manage them aren't either. I went down the wrong path with macros until I realized this isn't a macro, it's an add-on. Then I tried to learn how to install an add-on. I found lots of references to something called `unopkg`, but nothing about where it's installed. It wasn't in my `PATH`. I searched my filesystem and found it in `/usr/lib/openoffice/program/unopkg`. Then I ran it:
 
-<pre>xaprb $ /usr/lib/openoffice/program/unopkg gui</pre>
+```
+xaprb $ /usr/lib/openoffice/program/unopkg gui
+```
 
 <img src="/media/2006/06/open-office-org-package-manager.png" width="487" height="351" alt="OpenOffice.org Package Manager" />
 

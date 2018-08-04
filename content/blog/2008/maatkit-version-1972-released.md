@@ -15,7 +15,8 @@ This release is a bugfix and maintenance release. Many of the changes are minor 
 
 Here's the change log:
 
-<pre>Changelog for mk-archiver:
+```
+Changelog for mk-archiver:
 
 2008-06-02: version 1.0.9
 
@@ -132,6 +133,6 @@ Changelog for mk-visual-explain:
 2008-06-02: version 1.0.8
 
    * Updated common code.
-</pre>
+```
 
 

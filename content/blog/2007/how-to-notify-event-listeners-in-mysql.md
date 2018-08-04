@@ -11,21 +11,25 @@ This post was prompted by a message to the MySQL general emailing list some time
 
 Here's the set-up:
 
-<pre>create table test.messages (
+```
+create table test.messages (
    id int not null auto_increment primary key,
    message varchar(50) not null
-);</pre>
+);
+```
 
 ### The producer
 
 The producer's job is to insert rows into the table. In pseudo-code,
 
-<pre>while (true ) {
+```
+while (true ) {
    get_lock();
    // time passes...
    query("insert into messages(message) values ('hi')");
    release_lock();
-}</pre>
+}
+```
 
 Releasing the lock immediately after inserting will "wake up" the consumer, which must be blocked, waiting for the lock. Locking again as soon as possible will make the producer wait until the consumer is done processing, then the consumer will wait again.
 
@@ -33,7 +37,8 @@ Releasing the lock immediately after inserting will "wake up" the consumer, whic
 
 Since the consumer is waiting for the lock, that means it has tried to exclusively lock the same resource the producer has locked. Once the producer releases it, the consumer can go ahead and process the rows just inserted. In pseudo-code:
 
-<pre>$last_row = 0;
+```
+$last_row = 0;
 while ( true ) {
    get_lock();
    $rows = query("SELECT * FROM messages WHERE id &gt; $last_row");
@@ -43,7 +48,7 @@ while ( true ) {
    }
    release_lock();
 }
-</pre>
+```
 
 ### Locking
 
@@ -57,7 +62,8 @@ Fortunately, MySQL has application locks, implemented with [GET\_LOCK() and RELE
 
 Here's the code:
 
-<pre>// Producer:
+```
+// Producer:
 $timeout = 1000000;
 while (true) {
    query("SELECT GET_LOCK('messages', $timeout)");
@@ -77,7 +83,7 @@ while ( true ) {
    }
    query("SELECT RELEASE_LOCK('messages')");
 }
-</pre>
+```
 
 This works because the producer and consumer are really notifying *each other* -- it's not one-way, it's symmetric. Inside MySQL, there's a queue of threads waiting for locks. As soon as one releases the lock, the other gets it, and immediately goes back onto the queue waiting for it again.
 

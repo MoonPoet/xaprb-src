@@ -8,10 +8,11 @@ categories:
 ---
 This is really cool. I just learned this: you can treat a Perl variable just like a filehandle (read, write, etc).
 
-<pre>my $buffer = "";
+```
+my $buffer = "";
 open my $fh, ">", \$buffer or die $OS_ERROR;
 print $fh "hello, world\n";
-</pre>
+```
 
 Now `$buffer` contains "hello, world\n". You can do the same kinds of things when reading from a variable.
 

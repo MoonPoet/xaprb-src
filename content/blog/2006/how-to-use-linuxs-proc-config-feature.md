@@ -15,15 +15,19 @@ Linux can store a gzip-compressed kernel configuration file in the kernel itself
 
 There are two steps to making the kernel config available in the kernel when the system is booted. First, select the option to store the configuration file; second, select the option to make it available as the file `/proc/config.gz`. 
 When using the menuconfig system to edit a kernel configuration file, say yes to 
-<pre>File systems  ---&gt;
+```
+File systems  ---&gt;
    Pseudo filesystems  ---&gt;
-   [*] /proc file system support</pre>
+   [*] /proc file system support
+```
 
 That enables the `/proc` virtual filesystem; read the help file for more on that. Then enable the following:
 
-<pre>General setup  ---&gt;
+```
+General setup  ---&gt;
    [*] Kernel .config support
-   [*]   Enable access to .config through /proc/config.gz</pre>
+   [*]   Enable access to .config through /proc/config.gz
+```
 
 When editing the file by hand, say Y to `CONFIG_PROC_FS`, `CONFIG_IKCONFIG`, and `CONFIG_IKCONFIG_PROC`.
 
@@ -31,7 +35,9 @@ When editing the file by hand, say Y to `CONFIG_PROC_FS`, `CONFIG_IKCONFIG`, and
 
 If I have a working kernel but lost the config file I used to build it, I can boot the kernel and uncompress `/proc/config.gz`:
 
-<pre>zcat /proc/config.gz &gt; somefile</pre>
+```
+zcat /proc/config.gz &gt; somefile
+```
 
 One place I've found this helpful is when building a kernel on a system I don't know well. I can boot a live CD, for example the Gentoo live CD, and steal its configuration as a starting point. This doesn't always work perfectly, but it's easier than starting from scratch, in my opinion.
 

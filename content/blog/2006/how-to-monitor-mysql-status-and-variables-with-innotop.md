@@ -23,7 +23,9 @@ The most basic method of getting at these variables is to issue a `SHOW` command
 
 The classic tool for this is MySQL's own `mysqladmin`. You can run it with the `-i` and `-r` arguments to tell it to keep printing values every so often, and print the difference from the last set of values when it does so. A basic command to watch status variables might be the following:
 
-<pre>mysqladmin extended -i10 -r</pre>
+```
+mysqladmin extended -i10 -r
+```
 
 You can pipe that through `grep` to filter the results a little too.
 
