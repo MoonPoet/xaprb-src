@@ -2,6 +2,8 @@
 title: A lightweight MySQL sandbox script
 date: "2012-08-20"
 url: /blog/2012/08/20/a-lightweight-mysql-sandbox-script/
+credit: "https://unsplash.com/photos/mQ6PPlOeH5A"
+image: "/media/2012/08/unsplash-photos-mQ6PPlOeH5A.jpg"
 categories:
   - Databases
 ---
@@ -17,7 +19,7 @@ To connect to it and execute commands, I use the mc command. This will find a ru
 
 To sum up: unpack and trim down the server versions, naming them according to a naming convention, set up a data directory, set up $HOME/.my.cnf, and then create two programs in the $PATH. Here is the `ms` script:
 
-```
+```sh
 #!/bin/bash
 
 which="$1"; shift
@@ -82,7 +84,7 @@ rm "/tmp/mysql-$PORT"
 
 And here is the `mc` command, which I've tweaked a little to run on Mac OSX as well as Linux:
 
-```
+```sh
 #!/bin/sh
 # Discover which server is currently running, and use it
 case $(uname) in
