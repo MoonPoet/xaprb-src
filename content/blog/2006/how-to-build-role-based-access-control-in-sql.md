@@ -138,7 +138,7 @@ create table t_foo (
 
 You need these columns in every table. I'll introduce the columns here, and explain them in more detail as I go.
 
-1.  `c_uid` is the primary or surrogate key for each row (it doesn't have to be meaningless auto_increment, as long as it's an integer).
+1.  `c_uid` is the primary or surrogate key for each row (it doesn't have to be meaningless `auto_increment`, as long as it's an integer).
 2.  `c_owner` is the ID of the row's owner. This corresponds to `c_uid` in the `t_user` table.
 3.  `c_group` defines which group owns the object. As I mentioned above, this is frequently a source of confusion, because people tend to think this defines a user's group memberships. That's a special case I'll cover later.
 4.  `c_unixperms` defines the object's UNIX-style read/write/delete permissions.
@@ -228,15 +228,15 @@ That's a complete set of data, so now you can start asking questions about wheth
 I'll start by asking questions the way a traditional ACL does: can user X do Y to object Z? For example, let's see if user 'xaprb' has the right to read the 'MySQL Camp' event:
 
 1.  xaprb's user ID is 2 and `c_group_memberships` is 4.
-2.  The event's `c_unixperms` column is 500, which grants owner\_read, owner\_write, owner\_delete, group\_read, group\_write, and other\_read.
+2.  The event's `c_unixperms` column is 500, which grants `owner_read`, `owner_write`, `owner_delete`, `group_read`, `group_write`, and `other_read`.
 3.  The event's `c_owner` column is 1, so xaprb is not the object's owner, and none of the owner read/write/delete privileges applies.
 4.  The event's `c_group` column is 1, and xaprb is not in the group that owns the object. None of the group privileges applies.
-5.  xaprb is in the 'other' role (everyone always is). So the other_read privilege applies.
+5.  xaprb is in the 'other' role (everyone always is). So the `other_read` privilege applies.
 
 Therefore, xaprb can read the event. Can user 'sakila' update (write) the 'Microsoft Keynote' event? Let's see:
 
 1.  sakila isn't the event's owner, so none of the owner privileges applies.
-2.  sakila is in group 1 and 4, and the event's group owner is 1, so group\_read and group\_write apply.
+2.  sakila is in group 1 and 4, and the event's group owner is 1, so `group_read` and `group_write` apply.
 
 So sakila can update the event.
 

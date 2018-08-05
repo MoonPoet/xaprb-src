@@ -6,21 +6,11 @@ categories:
   - Web
 ---
 
-<p style="border:solid red 1px; background:yellow">
-  If you have questions or comments or bugs report, or a change to make, be sure to use the project's new homepage: <a href="http://code.google.com/p/flexible-js-formatting/">Flexible JS Formatting Libraries</a>
-</p>
-
-<p style="border: 1px solid red; background: yellow">
-  Note that this is not compatible with all browsers, has known problems and limitations, and I am not maintaining it or replying to requests for help. Thanks! (But also note that you are free to change and redistribute under the license terms, which you should read after downloading)
-</p>
-
 Have you ever wanted to apply an input mask to an HTML form field? Input masks are common in traditional GUI applications, but HTML has no such feature. This article introduces a library that adds input masks to form fields with unobtrusive JavaScript.
 
 ### What's an input mask?
 
-<p class="demo">
-  <a href="/html-input-mask/">View the Demo</a>
-</p>
+[Demo](/html-input-mask)
 
 Input masks are guides to help users enter data in the correct format. They typically do *not* actually validate data; they just ensure the right types of characters are entered in the right places. Typical uses are for dates, times, social security numbers, phone numbers, and credit card numbers. The user enters un-formatted input, and the mask takes care of adding dashes and other separators in appropriate places.
 
@@ -49,7 +39,7 @@ To add masks to form fields, reference my library, then make the page's load eve
 
 By the way, this library depends on the [Prototype library](http://prototype.conio.net/), so you will also need to reference that in your page. If you don't, you won't get an error, but nothing will happen.
 
-The setup function iterates over the elements and connects a callback to the `onkeypress` event. The callback is created by another function. To decide which mask to apply, it does a regular expression match against the element's `className`. If the element's `class` is "input\_mask mask\_**date_us**", the regular expression captures "date_us," and looks up the `date_us` mask. Here's how that is defined:
+The setup function iterates over the elements and connects a callback to the `onkeypress` event. The callback is created by another function. To decide which mask to apply, it does a regular expression match against the element's `className`. If the element's `class` is `input_mask mask_date_us`, the regular expression captures `date_us`, and looks up the `date_us` mask. Here's how that is defined:
 
 ```
 date_us: {

@@ -94,11 +94,11 @@ from fruit;
 +----------------------------------+
 ```
 
-*Et voila*, I got the last value in the group. By the way, this will work with ONLY\_FULL\_GROUP_BY in the server's [SQL mode](http://dev.mysql.com/doc/refman/5.0/en/server-sql-mode.html).
+*Et voila*, I got the last value in the group. By the way, this will work with `ONLY_FULL_GROUP_BY` in the server's [SQL mode](http://dev.mysql.com/doc/refman/5.0/en/server-sql-mode.html).
 
 ### Other methods
 
-My solution relies on a MySQL user variable to do the counting, but there are many ways to number rows in SQL: you could [simulate the ROW_NUMBER() function](/blog/2005/09/27/simulating-the-sql-row_number-function/), for instance, or use techniques mentioned in the comments on [how to number rows in MySQL](/blog/2006/12/02/how-to-number-rows-in-mysql/) (one of the comments shows a particularly clever solution with subqueries, but I didn't want to use it because MySQL doesn't support subqueries in older versions). Any of these should work one way or another. Of course, if you are using a product such as Microsoft SQL server 2005, which actually has the ROW_NUMBER() function, you can use that!
+My solution relies on a MySQL user variable to do the counting, but there are many ways to number rows in SQL: you could [simulate the `ROW_NUMBER()` function](/blog/2005/09/27/simulating-the-sql-row_number-function/), for instance, or use techniques mentioned in the comments on [how to number rows in MySQL](/blog/2006/12/02/how-to-number-rows-in-mysql/) (one of the comments shows a particularly clever solution with subqueries, but I didn't want to use it because MySQL doesn't support subqueries in older versions). Any of these should work one way or another. Of course, if you are using a product such as Microsoft SQL server 2005, which actually has the `ROW_NUMBER()` function, you can use that!
 
 ### Conclusion
 

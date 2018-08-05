@@ -49,6 +49,6 @@ The code includes a couple of other small but important bits of data about the E
 Here are some more examples so you can practice reading the results:
 
 *   **TF>cRn** is a three-table join: the first table is treated as a constant, the next table is accessed by 'ref' with a covering index, and the final table is accessed by an index range scan. There is a temp table and filesort on the first or second table. (We actually know that it's the second table, because the first table is treated as a constant.)
-*   **aeeeE** is something like a star-schema join in a data warehousing query. The first table is accessed via a full table scan. It's probably the fact table. The second, third, and fourth tables are accessed through an eq\_ref method; they are probably dimension tables. The last table is also an eq\_ref, but it uses a covering index.
+*   **aeeeE** is something like a star-schema join in a data warehousing query. The first table is accessed via a full table scan. It's probably the fact table. The second, third, and fourth tables are accessed through an `eq_ref` method; they are probably dimension tables. The last table is also an `eq_ref`, but it uses a covering index.
 
 

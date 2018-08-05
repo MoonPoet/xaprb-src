@@ -34,7 +34,7 @@ Bugs fixed:
 *   &#8211;askpass did not print a newline after reading password.
 *   Different TIMESTAMP display formatting could cause spurious checksum differences.
 *   Checksumming by chunks did not work when the chunk column contained NULL.
-*   &#8211;replicate did not always work correctly with binlog\_do\_db.
+*   &#8211;replicate did not always work correctly with `binlog_do_db`.
 
 ### About MySQL Toolkit
 

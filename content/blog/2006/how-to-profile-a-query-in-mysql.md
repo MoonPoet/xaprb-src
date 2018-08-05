@@ -50,22 +50,22 @@ Since it's the least discussed and understood, I'll devote the rest of this arti
 
 The [MySQL manual's section on server status variables](http://dev.mysql.com/doc/refman/5.0/en/server-status-variables.html) explains all the various status variables. Many of them are version-dependent, but the following important ones are related to the work a query really did. I'll explain them below:
 
-*   Bytes_received
-*   Bytes_sent
-*   Created\_tmp\_disk_tables
-*   Created\_tmp\_files
-*   Created\_tmp\_tables
-*   Handler_
-*   Innodb_
-*   Key\_read\_requests
-*   Key_reads
-*   Key\_write\_requests
-*   Key_writes
-*   Last\_query\_cost
-*   Select_
-*   Sort_
-*   Table\_locks\_immediate
-*   Table\_locks\_waited
+*   `Bytes_received`
+*   `Bytes_sent`
+*   `Created_tmp_disk_tables`
+*   `Created_tmp_files`
+*   `Created_tmp_tables`
+*   `Handler_`
+*   `Innodb_`
+*   `Key_read_requests`
+*   `Key_reads`
+*   `Key_write_requests`
+*   `Key_writes`
+*   `Last_query_cost`
+*   `Select_`
+*   `Sort_`
+*   `Table_locks_immediate`
+*   `Table_locks_waited`
 
 Some of these are pretty self-explanatory, and others are covered well in the manual, but here's a quick overview of the less-obvious ones. The `Handler_` variables track what the MySQL server does internally. For instance, every time MySQL reads the first row in an index, it increments `Handler_read_first`; this usually indicates it is doing something like beginning an index scan, or satisfying a `MIN()` query. You can get a good idea of what the query really did by watching these variables. In particular, you should try to get the `Handler_read` statistics as low as possible (some kinds of reads are more desirable than others, and you should prefer those).
 

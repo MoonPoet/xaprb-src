@@ -47,13 +47,13 @@ A lot of weird things happened here:
 Believe it or not, these are features, not bugs. No, really!
 
 1.  MySQL inserted a 1 into the column because by default, inserting either a zero or nothing (e.g. omitting the column or explicitly inserting NULL) into an auto-increment column tells MySQL to generate the next value in the auto-increment sequence. In newer MySQL versions, you can set the [Server SQL Mode](http://dev.mysql.com/doc/refman/5.0/en/server-sql-mode.html) to disable this behavior.
-2.  MySQL returned the last inserted row for compatibility with some brain-dead systems. (Does this make MySQL brain-dead? Well, maybe this particular behavior is a little brain-dead). This is controlled by the [SQL\_AUTO\_IS_NULL server variable](http://dev.mysql.com/doc/refman/5.0/en/set-option.html), which according to the manual,
+2.  MySQL returned the last inserted row for compatibility with some brain-dead systems. (Does this make MySQL brain-dead? Well, maybe this particular behavior is a little brain-dead). This is controlled by the [`SQL_AUTO_IS_NULL` server variable](http://dev.mysql.com/doc/refman/5.0/en/set-option.html), which according to the manual,
     
-    > If set to 1 (the default), you can find the last inserted row for a table that contains an AUTO_INCREMENT column by using the following construct:
-    > 
-    > `WHERE auto_increment_column IS NULL`
-    > 
-    > This behavior is used by some ODBC programs, such as Access.
+> If set to 1 (the default), you can find the last inserted row for a table that contains an `AUTO_INCREMENT` column by using the following construct:
+> 
+> `WHERE auto_increment_column IS NULL`
+> 
+> This behavior is used by some ODBC programs, such as Access.
 
 3.  MySQL only returns the last inserted row once; the next statement will return a sane result (`LAST_INSERT_ID()` does not have this limitation).
 

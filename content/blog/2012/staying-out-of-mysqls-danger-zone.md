@@ -9,7 +9,7 @@ MySQL is a great database server. It has lots of flaws, but if you work with its
 
 A couple of its riskiest weak points relate to unavailability of an expected resource, particularly disk space and memory. For example, Stewart Smith has blogged about the interesting results you can get if you intentionally make malloc() fail. I think many of us probably have some experience with filling up the disk and causing the server to hang, breaking replication, or crashing something.
 
-I'm managing a couple of servers that have taught me some interesting new lessons along these lines. They use innodb\_file\_per_table, but their main (shared) tablespace is fixed-size, and not very big. The tablespace tends to fill up when there are long-running transactions and purge can't do its work. Most of the time, the error message is fairly straightforward: a query is interrupted with "table is full."
+I'm managing a couple of servers that have taught me some interesting new lessons along these lines. They use `innodb_file_per_table`, but their main (shared) tablespace is fixed-size, and not very big. The tablespace tends to fill up when there are long-running transactions and purge can't do its work. Most of the time, the error message is fairly straightforward: a query is interrupted with "table is full."
 
 The application sometimes tends to run queries that I consider well outside of MySQL's core competencies. Many of these build summary tables from large sets of data, sometimes joining several large tables in a GROUP BY query and inserting the results into another one. These can run for seconds (OK), minutes (not great), or hours (highly undesirable, very likely to get killed by an auto-query-killer).
 

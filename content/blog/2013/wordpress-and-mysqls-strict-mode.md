@@ -7,11 +7,13 @@ categories:
 credit: "https://unsplash.com/photos/Dm974WDaErc/download"
 image: "/media/2013/03/unsplash-photos-Dm974WDaErc.jpg"
 ---
-I really don't like [running my database in "I Love Garbage" mode](/blog/2012/12/23/handling-mysqls-warnings-in-go-code/), so I set the following SQL_MODE:
+I really don't like [running my database in "I Love Garbage" mode](/blog/2012/12/23/handling-mysqls-warnings-in-go-code/), so I set the following `SQL_MODE`:
 
-> STRICT\_TRANS\_TABLES,ERROR\_FOR\_DIVISION\_BY\_ZERO, NO\_AUTO\_CREATE\_USER,NO\_AUTO\_VALUE\_ON\_ZERO, NO\_ENGINE\_SUBSTITUTION,NO\_ZERO\_DATE, NO\_ZERO\_IN\_DATE,ONLY\_FULL\_GROUP_BY
+```
+STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO, NO_AUTO_CREATE_USER,NO_AUTO_VALUE_ON_ZERO, NO_ENGINE_SUBSTITUTION,NO_ZERO_DATE, NO_ZERO_IN_DATE,ONLY_FULL_GROUP_BY
+```
 
-Guess what WordPress does with that? It doesn't install. If you set the SQL\_MODE to empty and install WordPress, then restore the SQL\_MODE, WordPress will run, but if you try to create a post you'll see an error page that says "You are not allowed to edit this post."
+Guess what WordPress does with that? It doesn't install. If you set the `SQL_MODE` to empty and install WordPress, then restore the `SQL_MODE`, WordPress will run, but if you try to create a post you'll see an error page that says "You are not allowed to edit this post."
 
 This problem was [reported to WordPress at least 7 years ago](http://wordpress.org/support/topic/posts-not-saving-to-database). Lessons learned:
 

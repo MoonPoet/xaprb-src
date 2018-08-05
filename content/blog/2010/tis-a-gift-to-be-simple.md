@@ -8,7 +8,7 @@ categories:
 ---
 I was just reading up on the [syntax for index hints in MySQL](http://dev.mysql.com/doc/refman/5.0/en/index-hints.html), and noticed this:
 
-> An index\_name value need not be a full index name. It can be an unambiguous prefix of an index name. If a prefix is ambiguous, an error occurs.
+> An `index_name` value need not be a full index name. It can be an unambiguous prefix of an index name. If a prefix is ambiguous, an error occurs.
 
 I actually prefer not to have extra "syntactic sugar" features such as this. It helps avoid bugs and unexpected behavior. Even if I don't use it intentionally, I can get bitten by it, if someone adds another index whose name has the same prefix as one that I already use:
 

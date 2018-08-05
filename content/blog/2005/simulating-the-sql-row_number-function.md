@@ -5,7 +5,7 @@ url: /blog/2005/09/27/simulating-the-sql-row_number-function/
 categories:
   - Databases
 ---
-If your RDBMS does not support the ROW\_NUMBER function, it is still possible to write some queries without it. ROW\_NUMBER operates over a partition of the result set, and returns a number for each row in a partition (it is possible to specify numbering schemes besides consecutive integers).
+If your RDBMS does not support the `ROW_NUMBER` function, it is still possible to write some queries without it. `ROW_NUMBER` operates over a partition of the result set, and returns a number for each row in a partition (it is possible to specify numbering schemes besides consecutive integers).
 
 Ranking and windowing functions are available in Microsoft SQL Server 2005, and are part of the newer SQL standards. I expect it will be some time before MySQL implements them. I don't know about other systems such as PostgreSQL and Firebird. It has been a long time since I worked with Oracle, so I'm unsure about it, and viewing the Oracle documentation requires an account I'm unwilling to create.
 

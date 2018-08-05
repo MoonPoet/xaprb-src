@@ -7,9 +7,9 @@ categories:
 ---
 Is your MySQL server doing an extra index scan on queries that need to check a key for matches or NULL? It's easy for this to happen accidentally, but it's also easy to fix, especially in MySQL 5.0 and up. Here's how.
 
-If you read the [manual page for EXPLAIN](http://dev.mysql.com/doc/refman/5.0/en/explain.html), you'll see the ref\_or\_null "join type" (I think "access type" is really a better term) mentioned. If you see this in EXPLAIN, it means MySQL has to search the index for matches, then search again for NULLs. If there are no NULLs in that column, and MySQL knew that, it could avoid the extra search.
+If you read the [manual page for EXPLAIN](http://dev.mysql.com/doc/refman/5.0/en/explain.html), you'll see the `ref_or_null` "join type" (I think "access type" is really a better term) mentioned. If you see this in EXPLAIN, it means MySQL has to search the index for matches, then search again for NULLs. If there are no NULLs in that column, and MySQL knew that, it could avoid the extra search.
 
-You might see this in subqueries or when you use elaborate JOIN clauses, or even when you use a simple WHERE clause. For example, here's a query that will do a ref\_or\_null access plan on the [Sakila sample database](http://dev.mysql.com/doc/):
+You might see this in subqueries or when you use elaborate JOIN clauses, or even when you use a simple WHERE clause. For example, here's a query that will do a `ref_or_null` access plan on the [Sakila sample database](http://dev.mysql.com/doc/):
 
 ```
 explain select * from sakila.film
@@ -42,6 +42,6 @@ where c.table_schema = 'sakila' and c.is_nullable = 'yes';
 +--------------+------------+----------------------+
 ```
 
-If the column shouldn't be allowed to be NULL, make sure you specify that in the column's options! In fact, the original\_language\_id column probably *should* be defined as NULLable, but I commonly see columns defined as NULLable when they shouldn't be. The performance penalty isn't the end of the world, but it's still worth fixing.
+If the column shouldn't be allowed to be NULL, make sure you specify that in the column's options! In fact, the `original_language_id` column probably *should* be defined as NULLable, but I commonly see columns defined as NULLable when they shouldn't be. The performance penalty isn't the end of the world, but it's still worth fixing.
 
 

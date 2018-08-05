@@ -9,7 +9,8 @@ tags:
 ---
 Someone recently posted this to an email list as a sample of an interesting SHOW INNODB STATUS output:
 
-<pre title="use mariadb? use drizzle? drop database oracle?">mysql> SHOW ENGINE INNODB STATUS\G
+```
+mysql> SHOW ENGINE INNODB STATUS\G
           _______  _______
 |\     /|(  ____ \(  ____ \
 | )   ( || (    \/| (    \/

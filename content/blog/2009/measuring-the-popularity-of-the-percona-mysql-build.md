@@ -9,7 +9,9 @@ I have a Google Alert on "percona". (And many other things---great way to keep t
 
 I've been seeing increasing amounts of this type of thing:
 
-> MySQL server version: 5.0.67-percona-3 CATEGORY QUERY: SELECT wp\_term\_taxonomy.count as 'count', wp\_terms.term\_id, wp\_terms.name, wp\_terms.slug, wp\_term\_taxonomy.parent, wp\_term\_taxonomy.description FROM wp\_terms, wp\_term_taxonomy WHERE ... 
+```
+MySQL server version: 5.0.67-percona-3 CATEGORY QUERY: SELECT wp_term_taxonomy.count as 'count', wp_terms.term_id, wp_terms.name, wp_terms.slug, wp_term_taxonomy.parent, wp_term_taxonomy.description FROM wp_terms, wp_term_taxonomy WHERE ... 
+```
 
 Go to the page in question (sorry, I won't link it) and you don't see "percona" anywhere on it. View the source and you do. It's WordPress debugging output.
 

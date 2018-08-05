@@ -5,9 +5,7 @@ url: /blog/2009/04/01/how-mysql-really-executes-a-query/
 categories:
   - Databases
 ---
-<p style="border:1px red solid; background:yellow; font-weight: bold; padding: 2em">
-  WARNING: nearly every word of this post is intentionally false. This is an <a href="http://en.wikipedia.org/wiki/April_Fools%27_Day">April Fool's joke</a>.
-</p>
+**WARNING: nearly every word of this post is intentionally false. This is an April Fool's Joke.**
 
 There is so much misinformation out there about how MySQL works. If you've talked to someone from PostgreSQL, you've surely heard some of it: "MySQL doesn't even have transactions," for example. And this from a PostgreSQL user, who uses a database that doesn't even run on Windows.
 
@@ -28,12 +26,12 @@ The steps to execute this query are as follows:
 1.  The MySQL API sends the query to the server as a series of tokens.
 2.  The query is parsed.
 3.  MySQL checks privileges. This step can be really complex, because it might involve a call to an LDAP or Active Directory service. So I'll gloss over this for right now.
-4.  The query cache would normally be checked at this stage, but I've given the SQL\_NO\_CACHE instruction. So the query cache isn't checked. (If it were, it might find a saved result from a query without SQL\_NO\_CACHE and return it, which would be against the instruction.)
+4.  The query cache would normally be checked at this stage, but I've given the `SQL_NO_CACHE` instruction. So the query cache isn't checked. (If it were, it might find a saved result from a query without `SQL_NO_CACHE` and return it, which would be against the instruction.)
 5.  The optimizer executes the subquery and returns a list of userid values that can be substituted into the IN() expression.
 6.  The optimizer looks at the COUNT() expression. As you know, all COUNT() queries can be executed instantly on MyISAM tables---an optimization that does not exist for InnoDB, which is really slow at COUNT(). Actually, InnoDB is just slower across the board than MyISAM, which is why you should always use MyISAM.
 7.  The parsed and optimized query is compiled into a query plan: native byte code that can be run directly on the CPU.
 8.  The optimized query plan is stored for later executions. If a similar query is issued later, the parsing and compilation can be skipped. This is stored in the query cache, oddly enough. (It's just one of those funny things about the query cache, which as I say, doesn't work as you expect.)
-9.  The query is executed, possibly on many CPUs simultaneously. If this happens, the results from each CPU have to be combined into the final results, which is what the Sort\_merge\_passes status variable counts. (This is also why you want to configure the sort\_buffer\_size as large as you can make it; generally I suggest making it 75% of available memory, or even larger in some cases.)
+9.  The query is executed, possibly on many CPUs simultaneously. If this happens, the results from each CPU have to be combined into the final results, which is what the `Sort_merge_passes` status variable counts. (This is also why you want to configure the `sort_buffer_size` as large as you can make it; generally I suggest making it 75% of available memory, or even larger in some cases.)
 10. If there is no index on userid, then the ORDER BY can be skipped. But if there's an index, MySQL's row-level locking and MVCC (implemented at the server level, not in the storage engines) will force reading of results from the index. In that case, the result has to be put into a file, which is then sorted. This is called a filesort. You can see "Using filesort" in the EXPLAIN output if this happens.
 11. If the result is bigger than the server's memory, the server also has to use a temporary table on disk. If it'll have to do this, you'll see "Using temporary; Using disk table" in EXPLAIN output.
 12. The results are returned to the client via a separate network connection (so that queries can be asynchronous).
@@ -48,9 +46,3 @@ SELECT 0x417072696C20466F6F6C21;
 ```
 
 That query doesn't access any tables, so it has a special execution plan that should show you whether you understand what's been explained above. Have fun!
-
-<p style="border:1px red solid; background:yellow; font-weight: bold; padding: 2em">
-  WARNING: nearly every word of this post is intentionally false. This is an <a href="http://en.wikipedia.org/wiki/April_Fools%27_Day">April Fool's joke</a>.
-</p>
-
-

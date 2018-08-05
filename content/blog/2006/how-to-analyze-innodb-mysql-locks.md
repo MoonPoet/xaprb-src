@@ -110,7 +110,7 @@ Fortunately, there's a tool to do that for you: `innotop`. This tool formats the
 
 Start innotop and use the "T" key to enter InnoDB Transaction mode, if it's not already in that mode. You will see a list of transactions. Next, make the "Locks," "Tbl Used," and "Tbl Lck" columns visible. Press the "c" key to activate the "choose columns" dialog.
 
-Now sort transactions with locks to the top by pressing the "s" key and choosing "lock\_structs" as the sort column. You may need to press the "r" key afterwards to reverse the sort order if they go to the bottom instead. Alternatively, you can use the "w" key to add a filter on the "lock\_structs" column, such as "[1-9]" to match only rows where the column isn't zero (this is a handy filter to add in general, just so you can see how many transactions have locks).
+Now sort transactions with locks to the top by pressing the "s" key and choosing `lock_structs` as the sort column. You may need to press the "r" key afterwards to reverse the sort order if they go to the bottom instead. Alternatively, you can use the "w" key to add a filter on the `lock_structs` column, such as "[1-9]" to match only rows where the column isn't zero (this is a handy filter to add in general, just so you can see how many transactions have locks).
 
 When you have a very busy server it can really help to hide all the transactions without locks.
 

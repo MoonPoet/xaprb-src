@@ -6,7 +6,7 @@ categories:
   - Databases
   - Open Source
 ---
-After I wrote about [things you need to know about MySQL backups](http://www.mysqlperformanceblog.com/2009/03/03/10-things-you-need-to-know-about-backup-solutions-for-mysql/), a customer contacted me and asked me what I know about [SecoBackup](http://www.secobackup.com/) for MySQL. I see it has a very low cost and Percona has Amazon accounts for testing purposes, so I quickly downloaded s3sql\_2.2.0.1-2.01\_i386.deb, installed it, configured it, and gave it a whirl.
+After I wrote about [things you need to know about MySQL backups](http://www.mysqlperformanceblog.com/2009/03/03/10-things-you-need-to-know-about-backup-solutions-for-mysql/), a customer contacted me and asked me what I know about [SecoBackup](http://www.secobackup.com/) for MySQL. I see it has a very low cost and Percona has Amazon accounts for testing purposes, so I quickly downloaded the Debian package, installed it, configured it, and gave it a whirl.
 
 Since I just want to see what it does to take a backup, I started up a sandbox running from /tmp/12345 and configured it to backup msandbox:msandbox@127.0.0.1 (I shut down my main mysqld on my laptop to make sure it can't connect to the default instance).
 

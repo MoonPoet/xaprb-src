@@ -58,7 +58,7 @@ Both the producer and the consumer will have to get an exclusive lock on the que
 
 Why not? Since the producer and/or the consumer might need to access data in more than one table, they'll have to lock all the tables they need. This will block other parts of the system from functioning, assuming there's more than just a queue in the database. Other queries might then need to use `LOCK TABLES` too, and this just has a way of spreading out of control until the entire database becomes serial, mutual-exclusive access. This is terrible for any serious application.
 
-Fortunately, MySQL has application locks, implemented with [GET\_LOCK() and RELEASE\_LOCK()](http://dev.mysql.com/doc/refman/5.0/en/miscellaneous-functions.html). They're advisory, so you can ignore them if you want, but they are handy for things like this, where the producer and consumer just need to lock the same thing. They're also relatively cheap. You're really just locking a string, which you can pick. I'll use the name of the table.
+Fortunately, MySQL has application locks, implemented with [`GET_LOCK()` and `RELEASE_LOCK()`](http://dev.mysql.com/doc/refman/5.0/en/miscellaneous-functions.html). They're advisory, so you can ignore them if you want, but they are handy for things like this, where the producer and consumer just need to lock the same thing. They're also relatively cheap. You're really just locking a string, which you can pick. I'll use the name of the table.
 
 Here's the code:
 

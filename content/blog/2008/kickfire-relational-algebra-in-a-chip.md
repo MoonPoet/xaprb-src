@@ -82,7 +82,7 @@ Here are some other tidbits I thought I'd share with you:
 *   The standard types of indexes don't really apply. Instead, the indexes are "hardware-friendly" (the other term they used was that the indexes are "impedance-matched to the hardware"). There are special features for indexing ranges of dates and indexing words inside a string (but this is not a full-text index; I'm unclear on how it really works, but it helps accelerate LIKE queries, which is important for the TPC-H benchmarks)
 *   The deadlock detection is via cycle detection in the waits-for graph, not timeout-based. As a result, it should be fast.
 *   The system I saw was running in debug mode, and wrote its optimized query plan to a file for every query. I talked with them about making this available via SQL. The plan is much more detailed and informative than MySQL's EXPLAIN. They asked me whether it would be a good idea to wedge this information into EXPLAIN, and I told them I wouldn't do that; <a href="http://en.oreilly.com/mysql2008/public/schedule/detail/300">EXPLAIN is a tabular output that doesn't make much sense unless you really know how to read it</a>. When you're trying to understand a query plan, which is generally a tree of relational operators, you need a <a href="/blog/2007/07/29/introducing-mysql-visual-explain/">hierarchical view of it</a>.
-*   They told me that they use the INFORMATION_SCHEMA extensively, but I did not get a chance to look at it myself.
+*   They told me that they use the `INFORMATION_SCHEMA` extensively, but I did not get a chance to look at it myself.
 *   They also told me that they use UDFs extensively for system management, but again I can't confirm.
 
 ### Licensing

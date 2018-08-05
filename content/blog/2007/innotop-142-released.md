@@ -48,28 +48,28 @@ This release of the innotop MySQL and InnoDB monitor is a major upgrade in terms
 *   Bind 'n' key globally to choose the 'next' server connection
 *   Bind '%' key globally to filter displayed tables
 *   Allow aligning columns on the decimal place for easy readability
-*   Add hide_hdr config variable to hide column headers in tables
+*   Add `hide_hdr` config variable to hide column headers in tables
 *   Add a feature to smartly run PURGE MASTER LOGS in Replication mode
 *   Enable debug mode as a globally configurable variable
 *   Improve error messages when an expression or filter doesn't compile or has a run-time error; die on error when debug is enabled
 *   Allow user-configurable delays after executing SQL (to let the server settle down before taking another measurement)
 *   Add an expression to show how long until a transaction is finished
-*   Add skip_innodb as a global config variable
+*   Add `skip_innodb` as a global config variable
 *   Add '%' after percentages to help disambiguate (user-configurable)
 *   Add column to M mode to help see how fast replica is catching up to master
 ### Bug fixes
 
-*   T and W modes had wrong value for wait_status column
+*   T and W modes had wrong value for `wait_status` column
 *   Error tracking on connections didn't reset when the connection recovered
-*   wait_timeout on connections couldn't be set before MySQL 4.0.3
+*   `wait_timeout` on connections couldn't be set before MySQL 4.0.3
 *   There was a crash on 3.23 when wiping deadlocks
 *   Lettercase changes in some result sets (SHOW MASTER/SLAVE STATUS) between MySQL versions crashed innotop
 *   Inactive connections crashed innotop upon access to DBD driver
-*   set_precision did not respect user defaults for number of digits
+*   `set_precision` did not respect user defaults for number of digits
 *   &#8211;inc command-line option could not be negated
 *   InnoDB status parsing was not always parsing all needed information
 *   S mode (formerly G mode) could crash trying to divide non-numeric data
-*   M table didn't show Replica\_open\_temp_tables variable; incorrect lettercase
+*   M table didn't show `Replica_open_temp_tables` variable; incorrect lettercase
 *   DBD drivers with broken AutoCommit would crash innotop
 *   Some key bindings had incorrect labels
 *   Some config-file loading routines could load data for things that didn't exist

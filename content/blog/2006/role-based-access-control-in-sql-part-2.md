@@ -24,7 +24,7 @@ The trick to making roles work well is finding the right level of granularity. T
 
 As I said, groups are subsets of roles, which is why they are often a convenient way to implement a role. To carry the example a bit farther, you can implement the "supervisor" role by looking at data to determine if the user is in a supervisory relationship to the object, **or** you can just add all supervisors to the "supervisor" group. The latter approach is a bit coarser, because it would allow a user to act as a supervisor on a user she doesn't actually supervise, but you gain simplicity and speed. The "self" role is similar, but in this case you obviously want the fine-grained control of saying "a user is *only* allowed to act in the self role upon herself." Adding everyone to the "self" group would accomplish nothing.
 
-I've already used roles in the previous article, though I didn't encourage you to think of them that way yet. The roles I demonstrated are "owner," "owner_group," and "other." These are implicit in UNIX privileges. Later I'll show you how privileges are assigned to roles explicitly.
+I've already used roles in the previous article, though I didn't encourage you to think of them that way yet. The roles I demonstrated are `owner`, `owner_group`, and `other.` These are implicit in UNIX privileges. Later I'll show you how privileges are assigned to roles explicitly.
 
 ### Actions
 
@@ -33,7 +33,7 @@ Another topic I put aside, but used implicitly, was actions. Actions are importa
 I've already introduced the "event" data type. What actions can a user take on an event, besides the basic three? I can think of "join" and "withdraw." Since actions are verbs, chances are your application already defines a lot of actions as class methods, and you may even maintain a list of actions as part of your design process.
 
 Actions are the first place where type matters. I've mentioned that objects in my system are both typed and identified; that is, you need to know both the table and the ID of a row to apply privileges to it (you didn't need to know the table in the last article). Certain actions will apply to all types, such as read/write/delete, but others will only apply to specific types---a natural concept in object-oriented programming, which I assume you're doing if you're using an ORM (Object-Relational Mapping) system.
-I find it useful to define a generic set of semi-UNIX-ish actions, which can be applied uniformly to *every* type by common code. These let me build "property pages" automatically, which are important when I need to administer the properties of different types of objects. Some examples are "stat", "chmod", "chgrp", "chown", "chmeta", "view\_acl", and "add\_privilege." Other actions apply only to specific types.
+I find it useful to define a generic set of semi-UNIX-ish actions, which can be applied uniformly to *every* type by common code. These let me build "property pages" automatically, which are important when I need to administer the properties of different types of objects. Some examples are `stat`, `chmod`, `chgrp`, `chown`, `chmeta`, `view_acl`, and `add_privilege`. Other actions apply only to specific types.
 
 Actions are stored in the database, because they need to be involved in some of the queries I'll show you later. This means they could theoretically be subject to ACL privileges like other objects, but in practice I find this is needless complexity (what good would it do to define a new action in the database, unless there is application code to implement it? Perhaps in an application with plug-in functionality this would be useful, but I'm not doing that.) For that reason I don't give them extra columns like other tables, and I exclude them from my ORM system. Here's the basic schema:
 
@@ -142,7 +142,7 @@ create table t_privilege (
 
 From top to bottom, these columns mean the following:
 
-*   `c_role` specifies whether the privilege is granted to a user, a group, or in the case of an "object" privilege, the object's owner or owner_group. A further special case, in my system, is "self."
+*   `c_role` specifies whether the privilege is granted to a user, a group, or in the case of an "object" privilege, the object's owner or `owner_group`. A further special case, in my system, is "self."
 *   `c_who` is needed if `c_role` is user or group, and holds the user or group ID to which the privilege is granted.
 *   `c_action` is the action the privilege grants. This is always required.
 *   `c_type` specifies whether the privilege is "object", "table", or "global."
@@ -271,14 +271,14 @@ How about seeing if 'xaprb' can join the 'MySQL Camp' event:
 
 1.  The UNIX-style permissions don't specify anything about the "join" action, so I'll skip them.
 2.  The "join" action is valid for objects.
-3.  The object's type is "t_event," and the "join" action is defined for that type, but not in status 2---only in status 4.
+3.  The object's type is `t_event`, and the "join" action is defined for that type, but not in status 2---only in status 4.
 
 xaprb cannot join the event. Can he join the 'Microsoft Keynote' event?
 
 1.  The first two steps are the same, and this time the event's status matches, so we can go to the next step.
 2.  We need to look in the `t_privilege` table for a row that matches any of the following:
-    *   c\_role is 'user', c\_who is 2, c\_action is 'join', c\_type is 'object', c\_related\_table is 't\_event', and c\_related_uid is 2,
-    *   or, c\_role is 'user', c\_who is 2, c\_action is 'join', c\_type is 'global', and c\_related\_table is 't_event',
+    *   `c_role` is `user`, `c_who` is 2, `c_action` is `join`, `c_type` is `object`, `c_related_table` is `t_event`, and `c_related_uid` is 2,
+    *   or, `c_role` is `user`, `c_who` is 2, `c_action` is `join`, `c_type` is `global`, and `c_related_table` is `t_event`,
     *   ... this goes on for a long time.
 
 I'm not going to type all the possible combinations of columns and values. This is exactly why my old privilege system was buggy and bloated. Fortunately, it's really not bad to express this in SQL.

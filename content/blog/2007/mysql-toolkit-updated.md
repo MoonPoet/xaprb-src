@@ -56,7 +56,7 @@ I continue to be very conservative about this tool. It's complicated and I haven
 
 *   Rewrite the GetOpt::Long code and rely on DBD to read MySQL option files.
 *   Change some parsing of DSNs.
-*   Handle UPDATE statements correctly in handle\_data\_change.
+*   Handle UPDATE statements correctly in `handle_data_change`.
 *   Handle some special cases in locking for consistency.
 
 ### The future

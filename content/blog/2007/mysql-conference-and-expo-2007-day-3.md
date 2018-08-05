@@ -85,13 +85,9 @@ I went with Martin Friebe for supper at a Thai restaurant. On the way there we g
 
 I stumped the judges and picked up a spare copy of *Programming Perl*. You can never have enough, eh?
 
-Okay, I didn't really stump the judges; someone asked a question nobody knew the answer to, and I proposed an answer nobody could refute. Let's see, what does the NDB option [ndb\_report\_thresh\_binlog\_epoch_slip](http://dev.mysql.com/doc/connector/j/en/server-system-variables.html#optvar_ndb_report_thresh_binlog_epoch_slip) mean? Is it really the amount of clock skew NDB will permit between the data nodes?
+Okay, I didn't really stump the judges; someone asked a question nobody knew the answer to, and I proposed an answer nobody could refute. Let's see, what does the NDB option [`ndb_report_thresh_binlog_epoch_slip`](http://dev.mysql.com/doc/connector/j/en/server-system-variables.html#optvar_ndb_report_thresh_binlog_epoch_slip) mean? Is it really the amount of clock skew NDB will permit between the data nodes?
 
-<blockquote cite="http://dev.mysql.com/doc/connector/j/en/server-system-variables.html#optvar_ndb_report_thresh_binlog_epoch_slip">
-  <p>
-    This is a threshold on the number of epochs to be behind before reporting binlog status. For example, a value of 3 (the default) means that if the difference between which epoch has been received from the storage nodes and which epoch has been applied to the binlog is 3 or more, a status message will be sent to the cluster log.
-  </p>
-</blockquote>
+> This is a threshold on the number of epochs to be behind before reporting binlog status. For example, a value of 3 (the default) means that if the difference between which epoch has been received from the storage nodes and which epoch has been applied to the binlog is 3 or more, a status message will be sent to the cluster log.
 
 Nope. But I got the book anyway.
 
