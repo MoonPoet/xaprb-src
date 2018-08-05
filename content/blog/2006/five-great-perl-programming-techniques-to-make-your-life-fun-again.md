@@ -97,12 +97,12 @@ In this example, getting something from the database is really expensive, so you
 
 ### Trick 3: hash and array slices
 
-Have you ever passed around hashes and arrays and wanted to extract only certain elements from them? Let's say you have a subroutine that accepts a hash reference. Its job is to reverse the query-string parsing I showed you above. In many languages, you'd have to loop through the hash's keys, concatenating the key and value with `&amp;`, then concatenating these together with `=`. You can use `map()` and `join()` to do this much more simply in Perl, like so:
+Have you ever passed around hashes and arrays and wanted to extract only certain elements from them? Let's say you have a subroutine that accepts a hash reference. Its job is to reverse the query-string parsing I showed you above. In many languages, you'd have to loop through the hash's keys, concatenating the key and value with `&`, then concatenating these together with `=`. You can use `map()` and `join()` to do this much more simply in Perl, like so:
 
 ```
 sub make_query_string {
    my ( $vals ) = @_;
-   return join("&amp;", map { "$_=$vals->{$_}" } keys %$vals);
+   return join("&", map { "$_=$vals->{$_}" } keys %$vals);
 }
 my %query_params = (
    a => 1,
