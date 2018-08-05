@@ -38,5 +38,3 @@ I tried to draw a timeline of MySQL's release history, in some detail in the 5.0
 ![MySQL release timeline](/media/2008/05/mysql-timeline.png)
 
 The [inmates](http://www.mysql.com/about/contact/sales.html) are running the [asylum](http://www.mysql.com/). This gets more and more amusing as time goes on.
-
-<p>The <a href="http://www.mysql.com/about/contact/sales.html">inmates</a> are running the <a href="http://www.mysql.com/">asylum</a>.  This gets more and more amusing as time goes on.</p>

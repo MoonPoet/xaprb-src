@@ -13,11 +13,7 @@ MySQL is [Free Software](http://www.fsf.org/licensing/essays/free-sw.html), lice
 
 Open Source is much more of a development methodology than a philosophical standpoint. The first thing on the [Open Source Initiative's website](http://www.opensource.org/) is this introduction:
 
-<blockquote cite="http://www.opensource.org/">
-  <p>
-    Open source is a development method for software that harnesses the power of distributed peer review and transparency of process. The promise of open source is better quality, higher reliability, more flexibility, lower cost, and an end to predatory vendor lock-in.
-  </p>
-</blockquote>
+> Open source is a development method for software that harnesses the power of distributed peer review and transparency of process. The promise of open source is better quality, higher reliability, more flexibility, lower cost, and an end to predatory vendor lock-in.
 
 In contrast, Free Software is not about development practices at all. You can develop Free Software any way you like; what makes it Free is the license. Free Software is about protection of rights and freedoms. It is a moral and ethical platform. The promise of Free Software is quite different from "better quality, higher reliability..." Free Software is not about quality or reliability.
 
@@ -33,11 +29,7 @@ This matters because both Freedom and an open development model are necessary to
 
 I'm not the only one who notices this. Here's [another quote](http://blogs.the451group.com/opensource/2008/04/24/finding-the-right-balance-mysql%e2%80%99s-changing-development-model/):
 
-<blockquote cite="http://blogs.the451group.com/opensource/2008/04/24/finding-the-right-balance-mysql%e2%80%99s-changing-development-model/">
-  <p>
-    With all due respect to Marten, there is a significant difference between the captive open source development model for MySQL and the community open source development model for PostgreSQL.
-  </p>
-</blockquote>
+> With all due respect to Marten, there is a significant difference between the captive open source development model for MySQL and the community open source development model for PostgreSQL.
 
 If this interests you, perhaps you would like to join the discussion on the [oursql-sources](http://groups.google.com/group/oursql-sources) Google group.
 
