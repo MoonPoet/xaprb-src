@@ -85,7 +85,7 @@ select apples.Variety
 from apples
     inner join oranges
         on apples.Price = oranges.Price
-where apples.Price &lt;&gt; oranges.Price
+where apples.Price <> oranges.Price
 ```
 
 In fact, this query will return nothing, because the join condition contradicts the `WHERE` clause. This query is not the same thing either:
@@ -94,7 +94,7 @@ In fact, this query will return nothing, because the join condition contradicts 
 select apples.Variety
 from apples
     inner join oranges on
-        apples.Price &lt;&gt; oranges.Price
+        apples.Price <> oranges.Price
 ```
 
 Why? Because if there are no rows in oranges, nothing will get returned. It is simply not possible to write this query with an `INNER` join or an old-style join, no matter what technique is used. Don't be fooled by analyzing the two data sets presented in this article; for some cases you may be able to get the same behavior, but not for all possible data sets. There is a way to write this query using subqueries, though:

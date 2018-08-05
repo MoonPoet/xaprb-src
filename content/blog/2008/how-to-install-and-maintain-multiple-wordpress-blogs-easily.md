@@ -33,7 +33,7 @@ RewriteRule (dogs|cats) /blog/$1/index.php [L]
 This is basically the same thing WordPress usually does, but I've made it tolerate either dogs or cats and figure out which installation should get the request. The .htaccess file lives in /blog/, not inside /dogs/ or /cats/ where it would be hard to maintain (it would get wiped out with upgrades). I can see different ways of doing this, but this is the way I chose. So here's the whole file:
 
 ```
-&lt;IfModule mod_rewrite.c>
+<IfModule mod_rewrite.c>
 RewriteEngine On
 
 # Anything to the old address (e.g. /blog/foo/bar) goes to the new address
@@ -48,7 +48,7 @@ RewriteCond %{REQUEST_URI} dogs|cats
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (dogs|cats) /blog/$1/index.php [L]
-&lt;/IfModule>
+</IfModule>
 ```
 
 Are there any better ways of doing this? I'm curious. Leave a comment if you know of one.
@@ -88,12 +88,12 @@ $ ln -s ../wp-content wp-content
 The directory hierarchy now looks like this: 
 ```
 blog/
-   cats/ -&gt; wordpress/
-   dogs/ -&gt; wordpress/
+   cats/ -> wordpress/
+   dogs/ -> wordpress/
    wordpress/
       2.3.2/
          [The usual WP files are here]
-         wp-content/ -&gt; ../wp-content
+         wp-content/ -> ../wp-content
       wp_content/
          plugins/
          uploads/

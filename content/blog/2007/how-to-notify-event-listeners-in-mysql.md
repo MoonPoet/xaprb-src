@@ -41,7 +41,7 @@ Since the consumer is waiting for the lock, that means it has tried to exclusive
 $last_row = 0;
 while ( true ) {
    get_lock();
-   $rows = query("SELECT * FROM messages WHERE id &gt; $last_row");
+   $rows = query("SELECT * FROM messages WHERE id > $last_row");
    for each $row ( $rows ) {
       // Process
       $last_row = $row[id];
@@ -76,7 +76,7 @@ while (true) {
 $last_row = 0;
 while ( true ) {
    query("SELECT GET_LOCK('messages', $timeout)");
-   $rows = query("SELECT * FROM messages WHERE id &gt; $last_row");
+   $rows = query("SELECT * FROM messages WHERE id > $last_row");
    for each $row ( $rows ) {
       // Process
       $last_row = $row[id];

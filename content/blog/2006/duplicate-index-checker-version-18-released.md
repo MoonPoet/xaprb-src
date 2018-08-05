@@ -12,7 +12,7 @@ Several people pointed out that FULLTEXT indexes shouldn't be considered duplica
 Roland pointed out that the order of columns in a foreign key doesn't matter, so a foreign key from (a,b) to (a,b) is functionally the same as one from (b,a) to (b,a). This is where my simplistic string-comparison algorithm is too low-fidelity; it won't catch duplicate foreign keys unless the columns are in the same order. Fortunately, it's easy to solve and still use string matching: I can just sort the columns in the foreign key definition. Assuming your column names don't have any commas in them, the following Perl code will find the columns inside parentheses, split them into an array, sort the array, and join them back together again:
 
 ```
-$fk =~ s#(?&lt;=\()([^\)]+)(?=\))#join(', ', sort(split(/, /, $1)))#ge;
+$fk =~ s#(?<=\()([^\)]+)(?=\))#join(', ', sort(split(/, /, $1)))#ge;
 ```
 
 It's possible because of the magic of Perl substitutions. The final `ge;` says to do the search globally, and then execute the results (the part between the rightmost two `#` characters) as Perl code. Nasty, but it does the job quickly. Now 

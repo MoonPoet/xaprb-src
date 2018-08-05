@@ -27,11 +27,11 @@ But that query actually accessed 25 rows. What if I want to say "return up to 5 
 Right now I've got the following:
 
 ```
-mysql&gt; select actor_id, @rows
-    -&gt; from actor, (select @rows := 0) as x where
-    -&gt;    ((@rows := @rows + 1) &lt;= 20)
-    -&gt;    and actor_id % 5 = 0 
-    -&gt; limit 5;
+mysql> select actor_id, @rows
+    -> from actor, (select @rows := 0) as x where
+    ->    ((@rows := @rows + 1) <= 20)
+    ->    and actor_id % 5 = 0 
+    -> limit 5;
 +----------+-------+
 | actor_id | @rows |
 +----------+-------+

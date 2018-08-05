@@ -102,13 +102,13 @@ Have you ever passed around hashes and arrays and wanted to extract only certain
 ```
 sub make_query_string {
    my ( $vals ) = @_;
-   return join("&amp;", map { "$_=$vals-&gt;{$_}" } keys %$vals);
+   return join("&amp;", map { "$_=$vals->{$_}" } keys %$vals);
 }
 my %query_params = (
-   a =&gt; 1,
-   b =&gt; 2,
-   c =&gt; 3,
-   d =&gt; 4,
+   a => 1,
+   b => 2,
+   c => 3,
+   d => 4,
 );
 my $query_string = make_query_string(\%query_params);
 ```
@@ -129,7 +129,7 @@ my $query_string = make_query_string(\%new_params);
 Ooooh, that's ugly. We can at least use `map` to get rid of the loop while building the new hash:
 
 ```
-my %new_params = map { $_ =&gt; $query_params{$_} } @desired;
+my %new_params = map { $_ => $query_params{$_} } @desired;
 ```
 
 A hash slice is still better, though. It essentially does what that `map` does, but it's easier and clearer:
@@ -144,13 +144,13 @@ I just read a slice of the values from `%query_params` on the right, and assigne
 ```
 sub make_query_string {
    my ( $vals ) = @_;
-   return join("&", map { "$_=$vals-&gt;{$_}" } keys %$vals);
+   return join("&", map { "$_=$vals->{$_}" } keys %$vals);
 }
 my %query_params = (
-   a =&gt; 1,
-   b =&gt; 2,
-   c =&gt; 3,
-   d =&gt; 4,
+   a => 1,
+   b => 2,
+   c => 3,
+   d => 4,
 );
 my @desired = qw(a c);
 my %new_params;
@@ -180,7 +180,7 @@ One example is the ability to execute the result of a match as code, with the `/
 
 ```
 my $fk = "FOREIGN KEY (`seq`, `name`) REFERENCES `tbl` (`seq`, `name`)";
-$fk =~ s#(?&lt;=\()([^\)]+)(?=\))#join(', ', sort(split(/, /, $1)))#ge;
+$fk =~ s#(?<=\()([^\)]+)(?=\))#join(', ', sort(split(/, /, $1)))#ge;
 # $fk is now "FOREIGN KEY (`name`, `seq`) REFERENCES `tbl` (`name`, `seq`)";
 ```
 
@@ -212,7 +212,7 @@ sub split_sort_join {
    return join( ', ', sort( split( /, /, $text ) ) );
 }
 $fk =~ s/
-        (?&lt;=\()               # Find an opening paren
+        (?<=\()               # Find an opening paren
         ([^\)]+)              # Find everything inside parens
         (?=\))                # Find a closing paren
         /split_sort_join($1)  # Call split_sort_join on the match
@@ -225,10 +225,10 @@ You can imagine how useful this is if your desired substition is not hard-coded 
 sub process_column_names {
    my ( $fk, $callback ) = @_;
    $fk =~ s/
-           (?&lt;=\()           # Find an opening paren
+           (?<=\()           # Find an opening paren
            ([^\)]+)          # Find everything inside parens
            (?=\))            # Find a closing paren
-           /$callback-&gt;($1)  # Call $callback on the match
+           /$callback->($1)  # Call $callback on the match
            /gex;
    return $fk;
 }
@@ -266,7 +266,7 @@ What exactly is a dispatch table? It's a hash of references to executable code. 
 #!/usr/bin/perl
 
 use strict;
-use warnings FATAL =&gt; 'all';
+use warnings FATAL => 'all';
 
 use Term::ReadKey;
 
@@ -279,16 +279,16 @@ sub display_b {
 }
 
 my $dispatch_for = {
-   a =&gt; \&display_a,
-   b =&gt; \&display_b,
-   q =&gt; sub { ReadMode('normal'); exit(0) },
+   a => \&display_a,
+   b => \&display_b,
+   q => sub { ReadMode('normal'); exit(0) },
 };
 
 while ( 1 ) {
    print "Press a key!\n";
    ReadMode('cbreak');
    my $char = ReadKey(10);
-   defined $dispatch_for-&gt;{$char} && $dispatch_for-&gt;{$char}-&gt;();
+   defined $dispatch_for->{$char} && $dispatch_for->{$char}->();
 }
 ```
       
@@ -296,15 +296,15 @@ Innotop has tons of such dispatch tables. They're so simple to use; you just loo
       
 ```
 my $dispatch_for = {
-   a =&gt; \&display_a,
-   b =&gt; \&display_b,
-   q =&gt; sub { ReadMode('normal'); exit(0) },
-   DEFAULT =&gt; sub { print "That key does nothing\n"; },
+   a => \&display_a,
+   b => \&display_b,
+   q => sub { ReadMode('normal'); exit(0) },
+   DEFAULT => sub { print "That key does nothing\n"; },
 };
 
 # Later
-   my $func = $dispatch_for-&gt;{$char} || $dispatch_for-&gt;{DEFAULT};
-   $func-&gt;();
+   my $func = $dispatch_for->{$char} || $dispatch_for->{DEFAULT};
+   $func->();
 ```
       
 

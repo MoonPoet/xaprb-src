@@ -31,7 +31,7 @@ The second instance of this "worst practice" is an internal ASP article editor. 
 
 ```
 sBrowserType = request.ServerVariables("HTTP_USER_AGENT")
-if instr(sBrowserType, "MSIE") &gt; 0 and instr(sBrowserType, "Mac") &gt; 0 then
+if instr(sBrowserType, "MSIE") > 0 and instr(sBrowserType, "Mac") > 0 then
     response.Write "You can not edit the body text of this article with Mac IE - please use a different browser"
     ' some code to prevent further use of the page
 end if

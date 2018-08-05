@@ -39,11 +39,11 @@ Server version: 5.0.45-log MySQL Community Server (GPL)
 
 Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
 
-replica1 [localhost] {msandbox} ((none)) &gt; update sakila.film set title='academy dinosaur2' limit 12;
+replica1 [localhost] {msandbox} ((none)) > update sakila.film set title='academy dinosaur2' limit 12;
 Query OK, 12 rows affected, 12 warnings (0.07 sec)
 Rows matched: 12  Changed: 12  Warnings: 0
 
-replica1 [localhost] {msandbox} ((none)) &gt; Bye
+replica1 [localhost] {msandbox} ((none)) > Bye
 baron@kanga:~/rsandbox_5_0_45$ ./s2
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 6
@@ -51,11 +51,11 @@ Server version: 5.0.45-log MySQL Community Server (GPL)
 
 Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
 
-replica2 [localhost] {msandbox} ((none)) &gt; update sakila.film set title='academy dinosaur2' limit 1;
+replica2 [localhost] {msandbox} ((none)) > update sakila.film set title='academy dinosaur2' limit 1;
 Query OK, 1 row affected, 1 warning (0.05 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
-replica2 [localhost] {msandbox} ((none)) &gt; Bye
+replica2 [localhost] {msandbox} ((none)) > Bye
 ```
 
 OK, now I've messed up the first 12 films on one replica, and the first 1 on another. I could just go ahead and sync them right away, but first I'll do a table checksum to demonstrate that functionality:

@@ -28,7 +28,7 @@ mysql> select crc32('hello world');
 Here's the test:
 
 ```
-is($c-&gt;crc32('hello world'), 222957957, 'CRC32 of hello world');
+is($c->crc32('hello world'), 222957957, 'CRC32 of hello world');
 ```
 
 CRC32 is CRC32, so my code better agree with a working implementation. And then I wrote the code, which is a refactoring of the math in the module I linked to above. And then I ran the test, and it Just Passed with no further ado. w00t! This is pretty much a historic first for me! I thought at first that I'd screwed something up with the test, but I checked again. This is like getting a hole-in-one for me :-) So I just thought I'd share it with you. It feels **awesome**.

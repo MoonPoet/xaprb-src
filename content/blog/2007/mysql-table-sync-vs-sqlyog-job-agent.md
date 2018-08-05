@@ -40,7 +40,7 @@ I also mentioned some other minor things I saw in the query log output, such as 
 I would never reverse engineer a closed-source application, but peeking in the query log is fair game! I found most queries fairly straightforward. SJA finds differences with checksum queries, which appear to be inspired by [Giuseppe Maxia's work on remote database comparison in 2004](http://www.perlmonks.org/?node_id=381053). Here's a typical query, abbreviated to fit on the page:
 
 ```sql
-select  left(concat(IF(`col1`&lt;0,'-','+'), lpad(abs(`col1`),9,'0')),4),
+select  left(concat(IF(`col1`<0,'-','+'), lpad(abs(`col1`),9,'0')),4),
    concat(
       sum(conv(substring(md5(concat_ws(",",[all columns])),1,8),16,10)),
       sum(conv(substring(md5(concat_ws(",",[all columns])),9,8),16,10)),
@@ -69,7 +69,7 @@ Here are the first few rows resulting from that query on my test data set:
 As SJA finds differences between the tables, it adds `WHERE` clauses to the checksum query, narrowing the range of rows by limiting the upper and lower boundaries of the rows that are being checksummed. Here's a typical `WHERE` clause:
 
 ```sql
-where   `col1` >= 219000000 and `col1` &lt; 220000000
+where   `col1` >= 219000000 and `col1` < 220000000
 ```
 
 In subsequent queries SJA also increases the size of the substring it takes on the first column, from 4 to 7 to 10 leftmost characters. If you ignore the sign digit, this means it is narrowing the grouping by \\(10^3\\) rows each time, or in other words grouping the current working set into a maximum of 1000 groups. This is very similar to [the algorithm I proposed in my first article](/blog/2007/03/05/an-algorithm-to-find-and-resolve-data-differences-between-mysql-tables/), as a fallback mechanism when the DBA cannot use an index to design a grouping strategy.

@@ -150,7 +150,7 @@ Record lock, heap no 7 PHYSICAL RECORD: n_fields 7; compact format; info bits 0
 *** (2) WAITING FOR THIS LOCK TO BE GRANTED:
 RECORD LOCKS space id 0 page no 45 n bits 80 index `PRIMARY` of table `test/ad_data` trx id 0 94731 lock_mode X locks gap before rec insert intention waiting
 Record lock, heap no 6 PHYSICAL RECORD: n_fields 7; compact format; info bits 0
- 0: len 3; hex 8fad01; asc    ;; 1: len 4; hex 80000006; asc     ;; 2: len 6; hex 00000001720a; asc     r ;; 3: len 7; hex 80000000320154; asc     2 T;; 4: len 4; hex 80000001; asc     ;; 5: len 4; hex 8000003c; asc    &lt;;; 6: len 4; hex 80000258; asc    X;;
+ 0: len 3; hex 8fad01; asc    ;; 1: len 4; hex 80000006; asc     ;; 2: len 6; hex 00000001720a; asc     r ;; 3: len 7; hex 80000000320154; asc     2 T;; 4: len 4; hex 80000001; asc     ;; 5: len 4; hex 8000003c; asc    <;; 6: len 4; hex 80000258; asc    X;;
 
 *** WE ROLL BACK TRANSACTION (1)
 ```

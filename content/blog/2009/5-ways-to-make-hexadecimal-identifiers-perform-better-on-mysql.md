@@ -18,7 +18,7 @@ I'll speak mostly about MySQL here, but the same techniques apply almost univers
 Take a look at the following EXPLAIN plan:
 
 ```
-mysql&gt; explain select * from t where id = '0cc175b9c0f1b6a831c399e269772661'\G
+mysql> explain select * from t where id = '0cc175b9c0f1b6a831c399e269772661'\G
 *************************** 1. row ***************************
            id: 1
   select_type: SIMPLE
@@ -53,7 +53,7 @@ You don't actually need to store characters. The characters are just a way of re
 
 The problem is, these long values aren't representable in commonly available integer storage sizes. They're much bigger than a BIGINT. However, MySQL does permit you to store them in a BINARY column, which is just a string of bytes with no character set semantics. It's more compactand it's a lot faster to do comparisons (and hence index lookups). You can use the HEX() and UNHEX() functions to transform between the representations, or just use hexadecimal literal syntax: 
 ```
-mysql&gt; select x'7861707262';
+mysql> select x'7861707262';
 +---------------+
 | x'7861707262' |
 +---------------+
@@ -99,7 +99,7 @@ In many but not all cases, you don't need to index the full length of the value.
 Figuring out how much of the value to index can be complex when there is skew (more on this later). In the simplest cases you can just run a query like this:
 
 ```
-mysql&gt; select count(distinct id), count(distinct left(id, 8)), count(distinct left(id, 9)) from t\G
+mysql> select count(distinct id), count(distinct left(id, 8)), count(distinct left(id, 9)) from t\G
 *************************** 1. row ***************************
          count(distinct id): 2
 count(distinct left(id, 8)): 2
@@ -117,7 +117,7 @@ This does two things. One, it makes keys really, really really long. Two, it mak
 When there's skew like this, you need to compare the average cardinality to the worst-case, which you can find with queries such as
 
 ```
-mysql&gt; select left(id, 10) as left_10, count(*) as cnt from t
+mysql> select left(id, 10) as left_10, count(*) as cnt from t
 group by left_10 order by cnt desc limit 10;
 +------------+-----+
 | left_10    | cnt |
@@ -131,9 +131,9 @@ Of course here you see again my trivial test case, but you might see very bad re
 
 What you can do is generate a checksum of the values and index that. That's right, a hash-of-a-hash. For most cases, CRC32() works pretty well (if not, you can use a [64-bit hash function](/blog/2008/03/09/a-very-fast-fnv-hash-function-for-mysql/)). Create another column: 
 ```
-mysql&gt; alter table t add crc int unsigned not null, add key(crc);
-mysql&gt; update t set crc=crc32(id);
-mysql&gt; explain select * from t use index(crc) where id = '0cc175b9c0f1b6a831c399e269772661' and crc=crc32('0cc175b9c0f1b6a831c399e269772661')\G
+mysql> alter table t add crc int unsigned not null, add key(crc);
+mysql> update t set crc=crc32(id);
+mysql> explain select * from t use index(crc) where id = '0cc175b9c0f1b6a831c399e269772661' and crc=crc32('0cc175b9c0f1b6a831c399e269772661')\G
 *************************** 1. row ***************************
            id: 1
   select_type: SIMPLE

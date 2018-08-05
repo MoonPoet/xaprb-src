@@ -29,7 +29,7 @@ TRANSACTION 0 93698, ACTIVE 2 sec, process no 12767, OS thread id 1141946720 sta
 mysql tables in use 1, locked 1
 LOCK WAIT 4 lock struct(s), heap size 1216
 MySQL thread id 3, query id 19 localhost root Updating
-update test.innodb_deadlock_maker set a = 0 where a &lt;&gt; 0
+update test.innodb_deadlock_maker set a = 0 where a <> 0
 *** (1) WAITING FOR THIS LOCK TO BE GRANTED:
 RECORD LOCKS space id 0 page no 131120 n bits 72 index `GEN_CLUST_INDEX` of table `test/innodb_deadlock_maker` trx id 0 93698 lock_mode X waiting
 Record lock, heap no 2 PHYSICAL RECORD: n_fields 4; compact format; info bits 0
@@ -40,7 +40,7 @@ TRANSACTION 0 93699, ACTIVE 2 sec, process no 12767, OS thread id 1142212960 sta
 mysql tables in use 1, locked 1
 4 lock struct(s), heap size 1216
 MySQL thread id 4, query id 20 localhost root Updating
-update test.innodb_deadlock_maker set a = 1 where a &lt;&gt; 1
+update test.innodb_deadlock_maker set a = 1 where a <> 1
 *** (2) HOLDS THE LOCK(S):
 RECORD LOCKS space id 0 page no 131120 n bits 72 index `GEN_CLUST_INDEX` of table `test/innodb_deadlock_maker` trx id 0 93699 lock mode S
 Record lock, heap no 1 PHYSICAL RECORD: n_fields 1; compact format; info bits 0
@@ -79,7 +79,7 @@ update test.test set col1 = 4
 ------- TRX HAS BEEN WAITING 20 SEC FOR THIS LOCK TO BE GRANTED:
 RECORD LOCKS space id 0 page no 299998 n bits 200 index `PRIMARY` of table `test/test` trx id 0 93789797 lock_mode X locks rec but not gap waiting
 Record lock, heap no 77 PHYSICAL RECORD: n_fields 15; compact format; info bits 0 
- 0: len 4; hex 80474fd6; asc  GO ;; 1: len 6; hex 000005970680; asc       ;; 2: len 7; hex 000017c02b176c; asc     + l;; 3: len 4; hex 80000003; asc     ;; 4: len 8; hex 800000000da0c93a; asc        :;; 5: len 8; hex 800000000eb2ea7e; asc        ~;; 6: len 4; hex c771fe44; asc  q D;; 7: len 4; hex 8000003e; asc    &gt;;; 8: len 8; hex 8000123eb9e5dfd5; asc    &gt;    ;; 9: len 4; hex 8000003a; asc    :;; 10: len 8; hex 8000123eb9e43603; asc    &gt;  6 ;; 11: len 4; hex 80000035; asc    5;; 12: len 8; hex 8000123eb9d6c130; asc    &gt;   0;; 13: len 4; hex 80000033; asc    3;; 14: len 8; hex 8000123eb9c7c853; asc    &gt;   S;;
+ 0: len 4; hex 80474fd6; asc  GO ;; 1: len 6; hex 000005970680; asc       ;; 2: len 7; hex 000017c02b176c; asc     + l;; 3: len 4; hex 80000003; asc     ;; 4: len 8; hex 800000000da0c93a; asc        :;; 5: len 8; hex 800000000eb2ea7e; asc        ~;; 6: len 4; hex c771fe44; asc  q D;; 7: len 4; hex 8000003e; asc    >;; 8: len 8; hex 8000123eb9e5dfd5; asc    >    ;; 9: len 4; hex 8000003a; asc    :;; 10: len 8; hex 8000123eb9e43603; asc    >  6 ;; 11: len 4; hex 80000035; asc    5;; 12: len 8; hex 8000123eb9d6c130; asc    >   0;; 13: len 4; hex 80000033; asc    3;; 14: len 8; hex 8000123eb9c7c853; asc    >   S;;
  
 ---------------------
 ---TRANSACTION 0 93789679, ACTIVE 31082 sec, process no 9535, OS thread id 388972583 starting index read, thread declared inside InnoDB 6

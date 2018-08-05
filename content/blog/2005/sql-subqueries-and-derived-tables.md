@@ -16,7 +16,7 @@ The official standard defines a derived table as follows:[^1]
 Here is the actual production from the SQL grammar:
 
 > ```
-&lt;derived table&gt; ::= &lt;table subquery&gt;
+<derived table> ::= <table subquery>
 ```
 
 This makes it clear that "derived table" is a much more general term than is commonly used by many, especially those familiar with Microsoft SQL Server. Those folks typically mean a subquery in the FROM clause. The real meaning is "the result of a table subquery."
@@ -32,10 +32,10 @@ There are actually three types of subquery: scalar, row, and table. Here is the 
 > ### Format
 > 
 > ```
-&lt;scalar subquery&gt; ::= &lt;subquery&gt;
-&lt;row subquery&gt; ::= &lt;subquery&gt;
-&lt;table subquery&gt; ::= &lt;subquery&gt;
-&lt;subquery&gt; ::= &lt;left paren&gt; &lt;query expression&gt; &lt;right paren&gt;
+<scalar subquery> ::= <subquery>
+<row subquery> ::= <subquery>
+<table subquery> ::= <subquery>
+<subquery> ::= <left paren> <query expression> <right paren>
 ```
 
 There are other common terms for various types of subqueries. Most people use different terms depending on how subqueries are used. For example, a subquery with *outer references* is often called a *correlated subquery*. Here is an example:

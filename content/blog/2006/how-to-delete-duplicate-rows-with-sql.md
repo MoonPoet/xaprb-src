@@ -31,7 +31,7 @@ First, familiarize yourself with the basic techniques I explained for [finding t
 select day, MIN(id)
 from test
 group by day
-having count(*) &gt; 1
+having count(*) > 1
 ```
 
 You cannot delete from that result set, but you can delete by joining against it or using it in a subquery. First, I'll show you how to self-join against the grouped query.
@@ -47,9 +47,9 @@ from test as bad_rows
       select day, MIN(id) as min_id
       from test
       group by day
-      having count(*) &gt; 1
+      having count(*) > 1
    ) as good_rows on good_rows.day = bad_rows.day
-      and good_rows.min_id &lt;&gt; bad_rows.id;
+      and good_rows.min_id <> bad_rows.id;
 ```
 
 Notice I'm joining on days that match **and excluding the row I want to keep, the one with the minimum value for `id`.** If that query returns the rows you don't want, you're good to go. All you have to do is put the `DELETE` in front of it:
@@ -61,9 +61,9 @@ from test as bad_rows
       select day, MIN(id) as min_id
       from test
       group by day
-      having count(*) &gt; 1
+      having count(*) > 1
    ) as good_rows on good_rows.day = bad_rows.day
-      and good_rows.min_id &lt;&gt; bad_rows.id;
+      and good_rows.min_id <> bad_rows.id;
 ```
 
 The syntax will vary slightly depending on your RDBMS. I've written this for MySQL (MySQL users might also need to be careful about [cross-database deletes](/blog/2006/08/07/how-to-write-multi-table-cross-database-deletes-with-aliases-in-mysql/)). This will also only work on versions of MySQL where subqueries are implemented.
@@ -80,8 +80,8 @@ where exists(
    from test as test_inner
    where test_inner.day = test_outer.day
    group by day
-   having count(*) &gt; 1
-      and min(test_inner.id) &lt;&gt; test_outer.id
+   having count(*) > 1
+      and min(test_inner.id) <> test_outer.id
 );
 ```
 
@@ -99,7 +99,7 @@ If most groups have duplicates, but there are not many duplicate rows within eac
 delete bad_rows.*
 from test as good_rows
    inner join test as bad_rows on bad_rows.day = good_rows.day
-      and bad_rows.id &gt; good_rows.id;
+      and bad_rows.id > good_rows.id;
 ```
 
 This works because I decided I wanted to keep the row with the smallest `id` in each group. That means I can do a self-join that matches rows with a strict greater-than. Greater than what? The minimum value of `id` for that value of `day`, of course.

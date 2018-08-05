@@ -34,9 +34,9 @@ Now the query updates 4 to 5, then 3 to 4, and so on, avoiding any conflicts.
 There are cases where the workaround can't be as simple as the above:
 
 ```
-update t set i = case when i &gt; 2 then i + 1 else i - 1 end;
+update t set i = case when i > 2 then i + 1 else i - 1 end;
 -- ERROR 1062 (23000): Duplicate entry '4' for key 1
-update t set i = case when i &gt; 2 then i + 1 else i - 1 end order by i desc;
+update t set i = case when i > 2 then i + 1 else i - 1 end order by i desc;
 -- ERROR 1062 (23000): Duplicate entry '1' for key 1
 ```
 
@@ -44,8 +44,8 @@ I can't find a foolproof way to work around this. Here's one statement that work
 
 ```
 update t
-   set i = case when i &gt; 2 then i + 1 else i - 1 end
-   order by case when i &gt; 2 then 1000 - i else i end
+   set i = case when i > 2 then i + 1 else i - 1 end
+   order by case when i > 2 then 1000 - i else i end
 ```
 
 Depending on the data, it might not be that easy. There are cases where no ordering can work at all, such as when swapping numbers:

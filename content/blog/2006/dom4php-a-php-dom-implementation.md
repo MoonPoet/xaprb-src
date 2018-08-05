@@ -22,30 +22,30 @@ If you do want to hack the source, I encourage you to be ready to use a debugger
 I never wrote much documentation for this library, but I might attempt to remedy that at some point (I probably don't have time though -- sorry). In the meantime, here's a synopsis to get you started:
 
 ```
-&lt;?php
+<?php
 
 # Create a parser and parse a simple document.
 include_once("XmlParser.php");
 $parser   = new XmlParser($encoding = 'ISO-8859-1'); # encoding is optional
-$document = $parser-&gt;parse('&lt;p class="test"&gt;&lt;strong&gt;this is a document&lt;/strong&gt;&lt;/p&gt;');
+$document = $parser->parse('<p class="test"><strong>this is a document</strong></p>');
 
 # Add a text node.
-$text =& $document-&gt;createTextNode('foozle');
-$document-&gt;childNodes[0]-&gt;appendChild($text);
+$text =& $document->createTextNode('foozle');
+$document->childNodes[0]->appendChild($text);
 
 # Navigate around the document a bit, starting at the new node we just added.
-$strong =& $text-&gt;previousSibling;
-echo "The content of the node is '" . $strong-&gt;childNodes[0]-&gt;data . "'\n";
+$strong =& $text->previousSibling;
+echo "The content of the node is '" . $strong->childNodes[0]->data . "'\n";
 
 # Serialize the XML document to a string.  Do NOT use print_r() as the cyclic
 # data structures will cause problems.  Instead, create an instance of the
 # XmlSerializer class.
 include_once("XmlSerializer.php");
 $serializer = new XmlSerializer("XML");
-echo $serializer-&gt;serializeNode($document);
+echo $serializer->serializeNode($document);
 echo "\n";
 
-?&gt;
+?>
 ```
 
 The real documentation is the [DOM core specification](http://www.w3.org/TR/DOM-Level-2-Core/core.html), as I said. The object you get back from calling `parse()` is a `Document`, and you just use the DOM as normal after that.

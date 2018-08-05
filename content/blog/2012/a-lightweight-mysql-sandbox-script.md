@@ -51,7 +51,7 @@ if [[ "$BASEDIR" = *rel* ]]; then
 fi
 
 # write out the my.cnf
-cat &gt; my.cnf &lt;&lt;EOF
+cat > my.cnf <<EOF
 [client]
 user     = root
 port     = $PORT

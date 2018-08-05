@@ -41,9 +41,9 @@ When it's all done, you check the replica:
 
 ```
 SELECT db, tbl, this_cnt-master_cnt AS cnt_diff,
-     this_crc &lt;&gt; master_crc AS crc_diff
+     this_crc <> master_crc AS crc_diff
 FROM checksum
-WHERE master_cnt &lt;&gt; this_cnt OR master_crc &lt;&gt; this_crc;
+WHERE master_cnt <> this_cnt OR master_crc <> this_crc;
 ```
 
 That's it! Is that easy to throw into Nagios, or what?

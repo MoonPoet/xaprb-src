@@ -42,7 +42,7 @@ insert into aggregate(day, ad)
     select date_add('2006-01-01', interval a.i - 1 day), b.i
     from number as a
         cross join number as b 
-    where a.i &lt;= 10 and b.i &lt;= 50;
+    where a.i <= 10 and b.i <= 50;
 
 insert into tracking(day, ad, clicktype, clicks)
     select date_add('2003-04-07', interval a.i - 1 day),
@@ -56,7 +56,7 @@ insert into tracking(day, ad, clicktype, clicks)
             union all select 'fraud'
             union all select 'unknown'
         ) as c
-    where a.i &lt;= 1000 and b.i &lt;= 1000;
+    where a.i <= 1000 and b.i <= 1000;
 ```
 
 Now that the tables are set up, I'll move on to the queries. Since MySQL doesn't provide really good tools to profile queries, I ran these queries several times, disregarding the first run because it may not have been cached the same way as subsequent runs. The first query is the "bad, evil" way to do it. The second is the official, standards-compliant way.
@@ -118,7 +118,7 @@ I'll fill the tables with some sample data again:
 ```
 insert into subcategory(id, category)
     select i, i/100 from number
-    where i &lt;= 300000;
+    where i <= 300000;
 
 insert into item(subcategory)
     select id
@@ -126,7 +126,7 @@ insert into item(subcategory)
         select id, rand() * 20 as num_rows from subcategory
     ) as x
         cross join number
-    where i &lt;= num_rows;
+    where i <= num_rows;
 
 create temporary table t as
     select subcategory from item
@@ -138,7 +138,7 @@ insert into item (subcategory)
     select subcategory
     from t
         cross join number
-    where i &lt; 2000;
+    where i < 2000;
 ```
 
 Again, these queries may take a while to complete, and are not suitable for a production machine. The idea is to insert pseudo-random numbers of rows into `item`, so each subcategory has between 1 and 2018 items. It's not a completely realistic distribution, but it'll do.
@@ -150,7 +150,7 @@ select c.id
 from subcategory as c
     inner join item as i on i.subcategory = c.id
 group by c.id
-having count(*) &gt; 2000;
+having count(*) > 2000;
 
 -- choose one of the results, then
 select * from subcategory where id = ????
@@ -165,7 +165,7 @@ from subcategory as c
     inner join item as i on i.subcategory = c.id
 where c.category = 14
 group by c.id
-having count(*) &gt; 2000;
+having count(*) > 2000;
 ```
 
 In my specific data, there are 10 rows in the results, and the query finishes in a couple of seconds. `EXPLAIN` shows good index usage; it's not a bad query at all, considering the table size. The query plan is to just run through ranges on some indexes and count the entries. So far, so good.
@@ -180,7 +180,7 @@ where id in (
         inner join item as i on i.subcategory = c.id
     where c.category = 14
     group by c.id
-    having count(*) &gt; 2000
+    having count(*) > 2000
 );
 ```
 
@@ -230,15 +230,15 @@ For each row in the outer query, it's performing the inner query, even though th
 
 ```
 select * from subcategory as s
-where &lt;in_optimizer&gt;(
-   s.id,&lt;exists&gt;(
+where <in_optimizer>(
+   s.id,<exists>(
    select c.id
    from subcategory as c
       join item as i
    where ((i.subcategory = c.id) and (c.category = 14))
    group by c.id
    having ((count(0) > 2000)
-      and (&lt;cache&gt;(s.id) = &lt;ref_null_helper&gt;(c.id))))
+      and (<cache>(s.id) = <ref_null_helper>(c.id))))
 )
 ```
 
@@ -263,7 +263,7 @@ where id in (
             inner join item as i on i.subcategory = c.id
         where c.category = 14
         group by c.id
-        having count(*) &gt; 2000
+        having count(*) > 2000
     ) as x
 );
 ```

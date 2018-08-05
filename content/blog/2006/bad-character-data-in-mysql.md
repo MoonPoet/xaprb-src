@@ -14,8 +14,8 @@ Tangent: on some UNIX systems, the command `sleep with me` returns the error `ba
 Jokes aside, there are two types of bad characters: good characters in the wrong place, and characters that aren't valid data. The most common case I've seen of the first type is line endings. UNIX, Windows and Mac systems all use different combinations of control characters as line endings. In UNIX, a newline terminates a line; in Mac it's carriage-return, and in Windows it's a carriage return followed by a newline. MySQL usually ignores trailing spaces when comparing character data (depending on the collation in use, among other things), but not if the trailing spaces are followed by a line ending. For example,
 
 ```
-mysql&gt; select "a" = "a  "; -- returns 1
-mysql&gt; select "a" = "a  \n"; -- returns 0
+mysql> select "a" = "a  "; -- returns 1
+mysql> select "a" = "a  \n"; -- returns 0
 ```
 
 The other type of bad character is a character that truly isn't valid data. For example, Microsoft uses some [proprietary extensions](http://www.cs.tut.fi/~jkorpela/www/windows-chars.html) to standard ASCII character codes, especially in the Office suite -- characters such as "smart quotes," em-dashes, and so forth. This is discussed extensively elsewhere, so I won't go into it too much. Some of the offenders are the curly quotes (characters 145-148) and the em-dash (character 151).
@@ -92,7 +92,7 @@ select
    ascii(substring(col1, i, 1)) as charcode
 from test
    cross join integers
-where col1 &lt;&gt; "Xaprbs" and i between 1 and length(col1);
+where col1 <> "Xaprbs" and i between 1 and length(col1);
 
 +---------+---+----------+
 | char_i  | i | charcode |

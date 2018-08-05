@@ -10,7 +10,7 @@ I remember being confused for a very long time about the trailing garbage in com
 Here's an example command:
 
 ```
-wibble &gt; /dev/null 2&gt;&1
+wibble > /dev/null 2>&1
 ```
 
 ### Output redirection

@@ -25,13 +25,13 @@ Now the table and its data are set up. Next, execute the following on two differ
 set transaction isolation level serializable;
 start transaction;
 select * from test.innodb_deadlock_maker where a = 0;
-update test.innodb_deadlock_maker set a = 0 where a &lt;&gt; 0;
+update test.innodb_deadlock_maker set a = 0 where a <> 0;
 
 -- connection 1
 set transaction isolation level serializable;
 start transaction;
 select * from test.innodb_deadlock_maker where a = 1;
-update test.innodb_deadlock_maker set a = 1 where a &lt;&gt; 1;
+update test.innodb_deadlock_maker set a = 1 where a <> 1;
 ```
 
 *Voila*, you have a deadlock. Notice how connection 0 and connection 1 run the same statements, except they use a different value in their `WHERE` and `SET` clauses. This makes it easy to write a program to run these statements, and just pass in a value each connection should use.

@@ -18,10 +18,10 @@ categories:
 ```
 baron@kanga:~$ dig www.toggl.com
 
-; &lt;&lt;&gt;&gt; DiG 9.4.1-P1 &lt;&lt;&gt;&gt; www.toggl.com
+; <<>> DiG 9.4.1-P1 <<>> www.toggl.com
 ;; global options:  printcmd
 ;; Got answer:
-;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 27795
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 27795
 ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
 
 ;; QUESTION SECTION:

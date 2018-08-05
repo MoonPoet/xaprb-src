@@ -24,11 +24,11 @@ Plus, it makes authoring content *much* easier. Let's see how.
 Here's typical code you might see to create a "captioned" image:
 
 ```
-&lt;div style="width:100px"&gt;
-   &lt;img src="treefrog.png" alt="A tree frog"
-      width="100" height="100" /&gt;
-   &lt;p&gt;A tree frog&lt;/p&gt;
-&lt;/div&gt;
+<div style="width:100px">
+   <img src="treefrog.png" alt="A tree frog"
+      width="100" height="100" />
+   <p>A tree frog</p>
+</div>
 ```
 
 You may also see inline styles, a `table` instead of a `div`, and other ugliness.
@@ -40,9 +40,9 @@ The better way to do this is simply eliminate all that redundant typing. What's 
 Let's strip things down to the bare minimum:
 
 ```
-&lt;img src="treefrog.png" alt="A tree frog"
+<img src="treefrog.png" alt="A tree frog"
       title="A tree frog" class="figure"
-      width="100" height="100" /&gt;
+      width="100" height="100" />
 ```
 
 Does that look minimal to you? If you're thinking the `alt` attribute and the `title` attribute are redundant, I disagree. The `alt` attribute is never to be presented to the user when the image can be presented. It is an alternate representation of the content when the image isn't available. It is not a title for the image. That's why there is a `title` attribute for images! If it were redundant to the `alt` attribute, it wouldn't be there.
@@ -87,7 +87,7 @@ else if(typeof window.attachEvent != 'undefined') {
 
 function wrapImagesInDiv( className, attributes, styles ) {
    var images = document.getElementsByClassName(className);
-   for ( var i = 0; i &lt; images.length; ++i ) {
+   for ( var i = 0; i < images.length; ++i ) {
       var img = images[i];
       // Lift the image out of the page and insert a div under it.
       var parent = img.parentNode;
@@ -103,10 +103,10 @@ function wrapImagesInDiv( className, attributes, styles ) {
       frame.className = img.className;
       // Copy specified attributes and style properties from the image to the
       // div.
-      for ( var j = 0; j &lt; attributes.length; ++j ) {
+      for ( var j = 0; j < attributes.length; ++j ) {
          frame.setAttribute(attributes[j], img.getAttribute(attributes[j]));
       }
-      for ( var j = 0; j &lt; styles.length; ++j ) {
+      for ( var j = 0; j < styles.length; ++j ) {
          frame.style[styles[j]] = img.style[styles[j]];
       }
    }

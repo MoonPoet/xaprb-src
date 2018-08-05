@@ -29,7 +29,7 @@ sudo /usr/sbin/brctl addif br0 eth0
 sudo /sbin/dhclient br0
 sudo /usr/sbin/brctl addif br0 tap0
 sudo ifconfig tap0 192.168.1.51 up
-sudo bash -c 'echo 1 &gt; /proc/sys/net/ipv4/conf/tap0/proxy_arp'
+sudo bash -c 'echo 1 > /proc/sys/net/ipv4/conf/tap0/proxy_arp'
 IP=`ifconfig | grep 192 | head -n 1 | awk '{print $2}' | cut -d: -f2`
 sudo route add -host $IP dev tap0
 sudo arp -Ds $IP eth0 pub

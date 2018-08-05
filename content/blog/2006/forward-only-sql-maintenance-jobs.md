@@ -49,7 +49,7 @@ create temporary table snapshot as
    select distinct c.id from core_table as c
       inner join client_patterns as p on c.client = p.client
          and c.phrase rlike p.pattern
-      where c.id &gt; (
+      where c.id > (
          select coalesce(min(last_row), 0)
          from last_processed_row
          where job = 'update core_table'

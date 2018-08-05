@@ -16,7 +16,7 @@ One of the most common complaints I've heard from DBAs used to other database se
 TRANSACTIONS
 ------------
 Trx id counter 0 4874
-Purge done for trx's n:o &lt; 0 4869 undo n:o &lt; 0 0
+Purge done for trx's n:o < 0 4869 undo n:o < 0 0
 History list length 21
 Total number of lock structs in row lock hash table 2
 LIST OF TRANSACTIONS FOR EACH SESSION:

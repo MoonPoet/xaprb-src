@@ -12,7 +12,7 @@ Bitwise arithmetic can be very useful, and not just for C and graphics programme
 Remember numbers can be signed or unsigned. Know the difference, and know the arithmetic for both. For example, when checking to see if a certain bit is set:
 
 ```
-if (number & mask &gt; 0) // wrong!  It could be &lt; 0
+if (number & mask > 0) // wrong!  It could be < 0
 if (number & mask != 0) // confusing.  Bad practice!
 if (number & mask == mask) // good!
 ```
@@ -28,7 +28,7 @@ bitset = (number & bit) / bit;
 Why is this optimal? The compiler is smart enough to recognize you are dividing by a constant multiple of two, and can emit a `shift` instruction, so your actual instruction ends up being very cheap indeed, with no need for branching. If you're writing it in SQL, this is also much better than using a CASE statement:
 
 ```
-set @bitset = case when @number & @bit &lt;> 0 then 1 else 0 end; -- bad!
+set @bitset = case when @number & @bit <> 0 then 1 else 0 end; -- bad!
 set @bitset = (@number & @bit) / @bit; -- good!
 ```
 

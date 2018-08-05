@@ -41,7 +41,7 @@ as begin
     set @DoubleDelim = replicate(@Delim, 2)
 
     -- Prepare the data
-    while charindex(@DoubleDelim, @Words) &gt; 0
+    while charindex(@DoubleDelim, @Words) > 0
         set @Words = replace(@Words, @DoubleDelim, @Delim)
     -- Left-trim it
     if left(@Words, 1) = @Delim
@@ -55,14 +55,14 @@ as begin
                 len(@Words) - patindex('%[^' + @Delim + ']%', @Words) + 1)
     end
     -- Right-pad it
-    if right(@Words, 1) &lt;&gt; @Delim
+    if right(@Words, 1) <> @Delim
         set @Words = @Words + @Delim
 
-    while @Wordstart &gt; 0
+    while @Wordstart > 0
     begin
         -- Extract the next word
         set @WordEnd = charindex(@Delim, @Words, @Wordstart)
-        if @WordEnd &gt; @WordStart
+        if @WordEnd > @WordStart
         begin
             insert into @Words_table select substring(@Words, @Wordstart, @WordEnd - @Wordstart)
             set @Wordstart = @WordEnd + 1

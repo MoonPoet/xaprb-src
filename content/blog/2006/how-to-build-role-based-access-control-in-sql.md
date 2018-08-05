@@ -55,14 +55,14 @@ Most of the privilege systems I've seen -- for example, those that control photo
 The application code often looks like this:
 
 ```
-if ( $user-&gt;is_in_group("admin") ) {
-   $message-&gt;delete();
+if ( $user->is_in_group("admin") ) {
+   $message->delete();
 }
 else {
    print_error("Sorry, you can't delete messages.");
 }
 
-if ( $user-&gt;is_in_group("users" || $user-&gt;is_in_group("officers") ) {
+if ( $user->is_in_group("users" || $user->is_in_group("officers") ) {
    // display some link here... ad nauseum
 }
 ```
@@ -149,10 +149,10 @@ Groups could be defined in the database, but in practice I find them so static t
 
 ```
 $groups = array(
-   "root"          =&gt; 1,
-   "officer"       =&gt; 2,
-   "user"          =&gt; 4,
-   "wheel"         =&gt; 8
+   "root"          => 1,
+   "officer"       => 2,
+   "user"          => 4,
+   "wheel"         => 8
 );
 ```
 
@@ -172,15 +172,15 @@ The UNIX-style read, write, and delete permissions are defined in another array 
 
 ```
 $permissions = array(
-   "owner_read"   =&gt; 256,
-   "owner_write"  =&gt; 128,
-   "owner_delete" =&gt; 64,
-   "group_read"   =&gt; 32,
-   "group_write"  =&gt; 16,
-   "group_delete" =&gt; 8,
-   "other_read"   =&gt; 4,
-   "other_write"  =&gt; 2,
-   "other_delete" =&gt; 1
+   "owner_read"   => 256,
+   "owner_write"  => 128,
+   "owner_delete" => 64,
+   "group_read"   => 32,
+   "group_write"  => 16,
+   "group_delete" => 8,
+   "other_read"   => 4,
+   "other_write"  => 2,
+   "other_delete" => 1
 );
 ```
 

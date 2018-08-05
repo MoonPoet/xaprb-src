@@ -38,7 +38,7 @@ begin
     delete from table where id = @id
     commit transaction
     -- Find the next greater minimum value
-    select min(id) from table where id &gt; @id and [conditions]
+    select min(id) from table where id > @id and [conditions]
 end
 ```
 
@@ -72,7 +72,7 @@ While the queries seem to do OK archiving rows from the middle of the table, the
 ```
 select min(id)
 from table
-where id &lt; ?
+where id < ?
 ```
 
 This is very efficient indeed. `EXPLAIN` says "Select tables optimized away," which means the table is completely optimized out of the query. You can't get any better than that.

@@ -19,7 +19,7 @@ create table date_test(d date primary key);
 insert into date_test(d)
    select date_sub(current_date, interval i day)
    from number
-   where i &lt;= 60;
+   where i <= 60;
 
 select d from date_test
    where d between left(current_date, 7) and last_day(current_date);
@@ -33,7 +33,7 @@ What does this query do? You might think it selects every row where `d` is in th
 
 ```
 select d from date_test
-   where d &gt;= left(current_date, 7) and d &lt;= last_day(current_date);
+   where d >= left(current_date, 7) and d <= last_day(current_date);
 ```
 
 That query does what I wanted -- it selects rows where `d` is in the current month. It behaves differently from `BETWEEN`. What's the difference?
@@ -82,8 +82,8 @@ My new query, which I feel very confident about, is
 
 ```
 select d from date_test
-   where d &gt;= date_sub(current_date, interval (day(current_date) - 1) day)
-      and d &lt;= last_day(current_date);
+   where d >= date_sub(current_date, interval (day(current_date) - 1) day)
+      and d <= last_day(current_date);
 ```
 
 I think you can agree there's no ambiguity there! Everything is explicitly `DATE` types from start to finish.

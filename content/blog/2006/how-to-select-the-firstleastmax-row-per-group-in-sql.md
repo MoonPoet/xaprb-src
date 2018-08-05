@@ -105,7 +105,7 @@ select type, variety, price
 from fruits
 where price = (select min(price) from fruits as f where f.type = fruits.type)
    or price = (select min(price) from fruits as f where f.type = fruits.type
-      and price &gt; (select min(price) from fruits as f2 where f2.type = fruits.type));
+      and price > (select min(price) from fruits as f2 where f2.type = fruits.type));
 +--------+----------+-------+
 | type   | variety  | price |
 +--------+----------+-------+
@@ -129,8 +129,8 @@ select type, variety, price
 from fruits
 where (
    select count(*) from fruits as f
-   where f.type = fruits.type and f.price &lt;= fruits.price
-) &lt;= 2;
+   where f.type = fruits.type and f.price <= fruits.price
+) <= 2;
 ```
 
 This is elegant, and lets you vary N without rewriting your query (a very good thing!), but it's functionally the same as the previous query. Both are essentially a quadratic algorithm relative to the number of varieties in each type. And again, some query optimizers may not do well with this and make it quadratic with respect to the number of rows in the table overall (especially if no useful index is defined), and the server might get clobbered. Are there better ways? Can it be done with one pass through the data, instead of the many passes required by a correlated subquery? You know it can, or I wouldn't be writing this, now would I?
@@ -167,7 +167,7 @@ from (
       @type := type as dummy
   from fruits
   order by type, price
-) as x where x.row_number &lt;= 2;
+) as x where x.row_number <= 2;
 ```
 
 This isn't one pass through the table, by the way. The subquery is implemented as a temporary table behind the scenes, so filling it with data is one pass; then selecting every row from it and applying the `WHERE` clause is another. However, twice through is still O(n) with respect to the table size. That's a lot better than correlated subqueries, which are \\(O(n^2)\\) with respect to the group size -- even moderate group sizes cause bad performance (say there are five varieties of each fruit. That's on the order of 25 passes through the table, all told).
@@ -184,7 +184,7 @@ select type, variety, price,
       @type := type as dummy
 from fruits
 group by type, price, variety
-having row_number &lt;= 2;
+having row_number <= 2;
 ```
 
 This theoretically ought to work if MySQL orders by the `GROUP BY` criteria, which it sometimes does for efficiency and to produce the expected results. Does it work? Here's what it returns on MySQL 5.0.27 on Windows:
@@ -240,7 +240,7 @@ select type, variety, price,
       @type := type as dummy
 from fruits <strong>force index(type)</strong>
 group by type, price, variety
-having row_number &lt;= 2;
+having row_number <= 2;
 ```
 
 Let's see if that works:

@@ -130,8 +130,8 @@ Next you need to stop the built-in media server and start the one you just insta
   
 ```
 # ps -eaf | grep daap
-32530 nobody     1096 S &lt; /usr/sbin/mt-daapd 
-32531 nobody     1984 S &lt; /usr/sbin/mt-daapd 
+32530 nobody     1096 S < /usr/sbin/mt-daapd 
+32531 nobody     1984 S < /usr/sbin/mt-daapd 
 32160 root        488 S   grep daap 
 ```
   

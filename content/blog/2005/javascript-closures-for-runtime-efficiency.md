@@ -24,7 +24,7 @@ I used to use the hard-coded, slow method on my [JavaScript date chooser](/blog/
 ```
 Date.prototype.dateFormat = function(format) {
     var result = "";
-    for (var i = 0; i &lt; format.length; ++i) {
+    for (var i = 0; i < format.length; ++i) {
         result += this.dateToString(format.charAt(i));
     }
     return result;

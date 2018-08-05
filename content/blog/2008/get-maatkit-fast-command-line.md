@@ -23,18 +23,18 @@ Because there's some Perl magic behind it, I made it even easier -- it does patt
 ```
 baron@kanga:~$ wget http://www.maatkit.org/get/sync
 --21:38:50--  http://www.maatkit.org/get/sync
-           =&gt; `sync'
+           => `sync'
 Resolving www.maatkit.org... 64.130.10.15
 Connecting to www.maatkit.org|64.130.10.15|:80... connected.
 HTTP request sent, awaiting response... 302 Moved
 Location: http://www.maatkit.org/get/mk-table-sync [following]
 --21:38:50--  http://www.maatkit.org/get/mk-table-sync
-           =&gt; `mk-table-sync'
+           => `mk-table-sync'
 Connecting to www.maatkit.org|64.130.10.15|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [application/x-perl]
 
-    [      &lt;=&gt;                            ] 163,259      136.51K/s             
+    [      <=>                            ] 163,259      136.51K/s             
 
 21:38:51 (136.13 KB/s) - `mk-table-sync' saved [163259]
 ```

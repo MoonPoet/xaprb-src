@@ -8,7 +8,7 @@ categories:
 Have you prepared yourself?
 
 ```
-mysql&gt; select 1234567890 - unix_timestamp();
+mysql> select 1234567890 - unix_timestamp();
 +-------------------------------+
 | 1234567890 - unix_timestamp() |
 +-------------------------------+

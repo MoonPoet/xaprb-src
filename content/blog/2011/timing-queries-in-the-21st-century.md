@@ -8,7 +8,7 @@ categories:
 What is wrong with the following?
 
 ```
-mysql&gt; select 'hello world';
+mysql> select 'hello world';
 +-------------+
 | hello world |
 +-------------+
@@ -22,7 +22,7 @@ Centisecond resolution for query times belongs to the last century. I want at le
 **Edit**: I thought that maybe I could fix this by changing the printf format specifier with sed, but it looks like I was wrong:
 
 ```
-$ sed -e 's/%\.2f sec/%.6f sec/' bin/mysql &gt; bin/mysql-precision
+$ sed -e 's/%\.2f sec/%.6f sec/' bin/mysql > bin/mysql-precision
 ```
 
 Now when I enter commands, I actually do see 6 digits after the decimal point, but it looks like I still get only 2 digits of precision:

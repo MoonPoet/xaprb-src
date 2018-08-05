@@ -38,7 +38,7 @@ select l.type, l.variety, count(*) as num
 from fruits as l
 left outer join fruits as r
     on l.type = r.type
-    and l.variety &gt;= r.variety
+    and l.variety >= r.variety
 group by l.type, l.variety;
 
 +--------+------------+-----+

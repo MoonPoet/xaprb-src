@@ -13,7 +13,7 @@ Here's a productivity tip that has saved me countless work while typing. Swap yo
 An easy way to do it on Ubuntu with Gnome: step one, create a .xmodmaprc file. You can run the following command to create the file and put the correct contents into it:
 
 ```
-echo &gt; ~/.xmodmaprc '! Swap caps lock and escape
+echo > ~/.xmodmaprc '! Swap caps lock and escape
 remove Lock = Caps_Lock
 keysym Escape = Caps_Lock
 keysym Caps_Lock = Escape

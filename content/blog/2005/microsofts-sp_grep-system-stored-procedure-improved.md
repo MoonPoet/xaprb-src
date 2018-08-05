@@ -9,14 +9,14 @@ Here is a quick patch to Microsoft's `sp_grep` system stored procedure, for SQL 
 
 ```
 34a32,36
-&gt; insert into #tset
-&gt;   select distinct '', j.name, 'JB' from msdb..sysjobs as j(nolock)
-&gt;     inner join msdb..sysjobsteps as js(nolock) on j.job_id = js.job_id
-&gt;   where js.command like @str or j.name like @str
-&gt; 
+> insert into #tset
+>   select distinct '', j.name, 'JB' from msdb..sysjobs as j(nolock)
+>     inner join msdb..sysjobsteps as js(nolock) on j.job_id = js.job_id
+>   where js.command like @str or j.name like @str
+> 
 40a43,44
-&gt;   when type = 'FN' then 'Function'
-&gt;   when type = 'JB' then 'Job'
+>   when type = 'FN' then 'Function'
+>   when type = 'JB' then 'Job'
 ```
 
 I have seen variations in this sproc to prevent grepping where the user has no access to the database, viz:

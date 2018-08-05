@@ -27,7 +27,7 @@ Here's the single pass over the values. I'm using a user-defined variable `@c` t
 insert into buckets(id, max_zeroes, rowcount)
 select
    (@c := crc32(sess_id)) &amp; 1023,
-   if(@c &lt; 1024, 22, instr(reverse(bin(@c >> 10)), '1') -1),
+   if(@c < 1024, 22, instr(reverse(bin(@c >> 10)), '1') -1),
    1
 from tbl1
 on duplicate key update

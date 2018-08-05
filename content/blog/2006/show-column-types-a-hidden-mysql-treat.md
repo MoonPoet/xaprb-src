@@ -12,7 +12,7 @@ The command is undocumented, but does work. It returns just two rows, which give
 It's clearly unfinished ([here's a bug report about it](http://bugs.mysql.com/bug.php?id=5299)), and I think I can guess why: it's just duplicate information that, like code comments, can get out of date and be a pain to maintain. If it were me, I'd yank it out of the source, and fix up the online help instead, which on version 5.0.24a-log says pretty much nothing helpful:
 
 ```
-mysql&gt; help column types;
+mysql> help column types;
 Name: 'Column Types'
 Description:
 AUTO_INCREMENTExamples:

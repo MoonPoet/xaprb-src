@@ -23,8 +23,8 @@ Finally I resorted to [kill-dash-nine](http://www.youtube.com/watch?v=Fow7iUaKrq
 And why couldn't I get any information about this?  Why did I have to kill the server?  Well... here's the messages from /var/log/messages:
 
 ```
-SELinux is preventing strace (mysqld_t) "signal" to &lt;Unknown&gt; (unconfined_t).
-SELinux is preventing gdb (mysqld_t) "signal" to &lt;Unknown&gt; (unconfined_t).
+SELinux is preventing strace (mysqld_t) "signal" to <Unknown> (unconfined_t).
+SELinux is preventing gdb (mysqld_t) "signal" to <Unknown> (unconfined_t).
 ```
 
 Sigh. I'm root on this machine, but I can't do anything with mysqld -- not because I'm restricted, but because mysqld is restricted.

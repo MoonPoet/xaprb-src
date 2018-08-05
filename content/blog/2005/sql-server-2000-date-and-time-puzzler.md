@@ -60,8 +60,8 @@ The moral of the story is **use matching data types**. Implicit conversions can 
 Something else is wrong with the query. The `ISNULL` function will defeat the query optimizer's ability to use any indexes that might exist on the date columns, causing a table scan. It is less human-readable, but better for the query optimizer, to write the `WHERE` clause as a compound boolean statement:
 
 ```
-... where (startdate is null or startdate &lt;= @now)
-    and (enddate is null or enddate &gt;= @now)
+... where (startdate is null or startdate <= @now)
+    and (enddate is null or enddate >= @now)
 ```
 
 

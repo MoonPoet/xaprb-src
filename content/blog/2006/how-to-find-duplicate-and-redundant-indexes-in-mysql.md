@@ -14,7 +14,7 @@ Why use `SHOW CREATE TABLE`'s output? Why not query `SHOW INDEXES FROM ____` and
 OK, on to my "advanced, patented algorithm." Here's a sample `SHOW CREATE` statement (I'm using a table from my recent article on role-based access control for an example):
 
 ```
-mysql &gt; show create table t_privilege\G
+mysql > show create table t_privilege\G
 *************************** 1. row ***************************
        Table: t_privilege
 Create Table: CREATE TABLE `t_privilege` (
@@ -33,10 +33,10 @@ You'll notice I added a key on `(c_role, c_who)` which is a leftmost prefix of t
 
 ```
 foreach my $table ( @tables ) {
-   my $ddl = $dbh-&gt;selectall_arrayref("show create table $table")
+   my $ddl = $dbh->selectall_arrayref("show create table $table")
       ->[0]->[1];
 
-   my @indexes = $ddl =~ m/(?&lt;!FOREIGN) KEY .*?\((.*?)\)[^\)]*$/mg;
+   my @indexes = $ddl =~ m/(?<!FOREIGN) KEY .*?\((.*?)\)[^\)]*$/mg;
 
    my $has_dupes = 0;
    foreach my $i ( 0..$#indexes ) {

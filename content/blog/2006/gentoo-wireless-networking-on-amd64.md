@@ -38,10 +38,10 @@ After some banging of the head against the wall, I returned the card and got one
 I built the 2.6.15-gentoo-r4 kernel with SMP support and built in the encryption routines used by the card:
 
 ```
-Processor type and features ---&gt;
+Processor type and features --->
     [*] Symmetric multi-processing support
 
-Cryptographic options ---&gt; (I enabled them all)
+Cryptographic options ---> (I enabled them all)
 ```
 
 then did `emerge madwifi-driver` (version 0.1443.20060207) and followed the instructions for setting up the `ath0` interface via `udev` (version 079-r1). These are well documented at many websites, including the Gentoo forums, but the output of `emerge` is really all you need. I didn't need to create the interface via a command as the instructions say; I was able to just let `udev` create it at boot.

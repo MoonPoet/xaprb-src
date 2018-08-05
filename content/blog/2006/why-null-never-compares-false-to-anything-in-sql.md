@@ -16,7 +16,7 @@ Here are two common queries that just don't work:
 ```
 select * from table where column = null;
 
-select * from table where column &lt;&gt; null;
+select * from table where column <> null;
 ```
 
 They both return **no** rows! Countless SQL veterans have tried to explain this one to beginners. The beginner usually thinks the first row should return rows where `c1` is `NULL`. The veteran then points out that `NULL` is never equal to anything. The beginner then thinks, "if `NULL` isn't equal to anything, then '`WHERE COLUMN IS NOT EQUAL TO NULL`' is always true, so the second query should return all results!" The second `WHERE` clause is the logical opposite of the first, right? Right? Sadly, no it's not.
@@ -112,7 +112,7 @@ On the other hand, the result of the expression `color = 'green' OR NULL` is eit
 You can see this in action with the following queries:
 
 ```
-mysql&gt; select true or null;
+mysql> select true or null;
 +--------------+
 | true or null |
 +--------------+
@@ -120,7 +120,7 @@ mysql&gt; select true or null;
 +--------------+
 1 row in set (0.00 sec)
 
-mysql&gt; select false or null;
+mysql> select false or null;
 +---------------+
 | false or null |
 +---------------+

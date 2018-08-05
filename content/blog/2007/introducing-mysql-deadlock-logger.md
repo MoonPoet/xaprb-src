@@ -41,7 +41,7 @@ If it weren't reading from my .my.cnf file, I'd have to be more specific: `mysql
 Here's what ends up in the table:
 
 ```
-mysql&gt; select ts, user, hostname, db, tbl, idx from deadlocks;
+mysql> select ts, user, hostname, db, tbl, idx from deadlocks;
 +---------------------+-------+-----------+------+-----+-----------------+
 | ts                  | user  | hostname  | db   | tbl | idx             |
 +---------------------+-------+-----------+------+-----+-----------------+

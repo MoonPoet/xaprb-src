@@ -16,7 +16,7 @@ This isn't actually new -- it has been out for a few releases. The [mk-query-dig
 #    2 0x620B8CAB2B1C76EC  2029.4730 12.3% 14415 0.1408 1.00  0.21 SELECT [redacted]
 #    3 0xB90978440CC11CC7  1345.3445  8.1%  3520 0.3822 1.00  0.00 SHOW STATUS
 #    4 0xCB73D6B5B031B4CF  1341.6432  8.1%  3509 0.3823 1.00  0.00 SHOW STATUS
-# MISC 0xMISC               560.7556  3.4% 23930 0.0234   NS   0.0 &lt;17 ITEMS&gt;
+# MISC 0xMISC               560.7556  3.4% 23930 0.0234   NS   0.0 <17 ITEMS>
 ```
 
 The variance-to-mean ratio is placed in the V/M column. It is the ratio of the query response time's variance to the mean, for that class of queries. It also appears in the detailed output for the queries in the rest of the report.

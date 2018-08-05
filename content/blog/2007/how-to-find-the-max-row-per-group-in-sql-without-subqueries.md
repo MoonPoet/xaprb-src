@@ -42,7 +42,7 @@ Here are the first two bullet points in SQL:
 select young.*, younger.age
 from person as young
    left outer join person as younger on younger.gender = young.gender
-      and younger.age &lt; young.age
+      and younger.age < young.age
 
 +------+-------+--------+------+
 | age  | name  | gender | age  |
@@ -65,7 +65,7 @@ Look at the rightmost column. There are `NULL`s only in rows where there's **no 
 select young.*
 from person as young
    left outer join person as younger on younger.gender = young.gender
-      and younger.age &lt; young.age
+      and younger.age < young.age
 where younger.age is null;
 
 +------+-------+--------+------+

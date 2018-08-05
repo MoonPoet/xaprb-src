@@ -205,8 +205,8 @@ select * from fed_local where i in(1, 2);
 -- Remote:
 
 19 Query       SHOW TABLE STATUS LIKE 'fed_remote'
-19 Query       SELECT `i`, `j` FROM `fed_remote` WHERE  ( (`i` = 1) ) AND ( (`i` &lt;= 1) )
-19 Query       SELECT `i`, `j` FROM `fed_remote` WHERE  ( (`i` = 2) ) AND ( (`i` &lt;= 2) )
+19 Query       SELECT `i`, `j` FROM `fed_remote` WHERE  ( (`i` = 1) ) AND ( (`i` <= 1) )
+19 Query       SELECT `i`, `j` FROM `fed_remote` WHERE  ( (`i` = 2) ) AND ( (`i` <= 2) )
 ```
 
 That's a little weird. There's nothing incorrect about it, but the `WHERE` clause is sort of strange.
@@ -223,7 +223,7 @@ select * from fed_local where i between 1 and 3;
 -- Remote:
 
 19 Query       SHOW TABLE STATUS LIKE 'fed_remote'
-19 Query       SELECT `i`, `j` FROM `fed_remote` WHERE  ( (`i` >= 1) ) AND ( (`i` &lt;= 3) )
+19 Query       SELECT `i`, `j` FROM `fed_remote` WHERE  ( (`i` >= 1) ) AND ( (`i` <= 3) )
 ```
 
 I don't really understand why that query's `WHERE` clause made it through okay, but the `IN()` query got split into two. I suppose it has to do with the optimizer rewriting the `IN()` list on the local machine.
@@ -438,7 +438,7 @@ delete from fed_local where i = 2;
 -- Remote:
 
 29 Query       SHOW TABLE STATUS LIKE 'fed_remote'
-29 Query       SELECT `i`, `j` FROM `fed_remote` WHERE  ( (`i` = 2) ) AND ( (`i` &lt;= 2) )
+29 Query       SELECT `i`, `j` FROM `fed_remote` WHERE  ( (`i` = 2) ) AND ( (`i` <= 2) )
 29 Query       DELETE  FROM `fed_remote` WHERE i = 2 AND j = 5 LIMIT 1
 ```
 

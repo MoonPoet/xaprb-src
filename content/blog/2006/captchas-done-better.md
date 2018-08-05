@@ -12,42 +12,42 @@ I've started getting a lot of spam comments, so I decided the time has come to p
 Create a new file, say `captchas.php`. Fill it with an array of entries, one per question:
 
 ```
-&lt;?php
+<?php
 $captchas = Array();
 
 # Create a single entry
 $captchas[] = array(
-    "question" =&gt; "What color is the sky?",
-    "answer" =&gt; "blue",
-    "options" =&gt; array("blue", "red", "orange"));
+    "question" => "What color is the sky?",
+    "answer" => "blue",
+    "options" => array("blue", "red", "orange"));
 
 # Create as many as desired by copy-and-paste...
-?&gt;
+?>
 ```
 
 Modify the comment form. Include the above file in `wp-content/themes/default/comments.php`, and change a few lines where the form is displayed. At the top of the file:
 
 ```
-&lt;?php require_once("captchas.php"); ?&gt;
+<?php require_once("captchas.php"); ?>
 ```
 
 Then, just before the SUBMIT button for the form, 
     
 ```
-&lt;?php
+<?php
 $tabindex = 5;
 $captcha_index = rand(0, count($captchas) - 1);
-?&gt;
-&lt;input type="hidden"
-    name="captcha_index" value="&lt;?php echo $captcha_index; ?&gt;" /&gt;
-&lt;p&gt;&lt;?php echo $captchas[$captcha_index]["question"]; ?&gt;
-&lt;?php foreach ($captchas[$captcha_index]["options"] as $captcha_answer) { ?&gt;
-&lt;br /&gt;&lt;label for="captcha_&lt;?php echo $captcha_answer; ?&gt;"&gt;
-&lt;input tabindex="&lt;?php echo $tabindex++; ?&gt;"
-    id="captcha_&lt;?php echo $captcha_answer; ?&gt;" type="radio"
-    name="captcha" value="&lt;?php echo $captcha_answer; ?&gt;"
-    /&gt;&lt;?php echo $captcha_answer; ?&gt;&lt;/label&gt;
-&lt;?php } ?&gt;&lt;/p&gt;
+?>
+<input type="hidden"
+    name="captcha_index" value="<?php echo $captcha_index; ?>" />
+<p><?php echo $captchas[$captcha_index]["question"]; ?>
+<?php foreach ($captchas[$captcha_index]["options"] as $captcha_answer) { ?>
+<br /><label for="captcha_<?php echo $captcha_answer; ?>">
+<input tabindex="<?php echo $tabindex++; ?>"
+    id="captcha_<?php echo $captcha_answer; ?>" type="radio"
+    name="captcha" value="<?php echo $captcha_answer; ?>"
+    /><?php echo $captcha_answer; ?></label>
+<?php } ?></p>
 ```
 
 Now the randomly chosen question's ID and the user's answer are submitted along with the form.

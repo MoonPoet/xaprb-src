@@ -53,7 +53,7 @@ select '/blog/'
 from mutex
     left outer join urls
         on urls.url = '/blog/'
-where mutex.i &lt; 5 and urls.url is null;
+where mutex.i < 5 and urls.url is null;
 ```
 
 Now suppose the requirements specify up to three duplicate entries in the table, and each insert should add a single row. It is possible to insert a row at a time while enforcing the requirement with the following query:
@@ -66,7 +66,7 @@ from mutex
         on urls.url = '/blog/'
 where mutex.i = 1
 group by urls.url
-having count(*) &lt; 3;
+having count(*) < 3;
 ```
 
 This query shows the input to the `INSERT` statement:

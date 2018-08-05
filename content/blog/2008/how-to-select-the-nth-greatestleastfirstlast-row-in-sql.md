@@ -76,8 +76,8 @@ select type, variety, price
 from fruits
 where (
    select count(*) from fruits as f
-   where f.type = fruits.type and f.price &lt; fruits.price
-) &lt;= 1;
+   where f.type = fruits.type and f.price < fruits.price
+) <= 1;
 +--------+----------+-------+
 | type   | variety  | price |
 +--------+----------+-------+
@@ -101,8 +101,8 @@ from (
    from fruits
    where (
       select count(*) from fruits as f
-      where f.type = fruits.type and f.price &lt; fruits.price
-   ) &lt;= 1
+      where f.type = fruits.type and f.price < fruits.price
+   ) <= 1
 ) as x
 group by type;
 +--------+-----------------+
@@ -129,8 +129,8 @@ select sum(second_cheapest) from (
       from fruits
       where (
          select count(*) from fruits as f
-         where f.type = fruits.type and f.price &lt; fruits.price
-      ) &lt;= 1
+         where f.type = fruits.type and f.price < fruits.price
+      ) <= 1
    ) as x
    group by type
 ) as y;

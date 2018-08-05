@@ -40,10 +40,10 @@ from account as a
         select transaction, sum(amount) as amount, max(account) as account
         from split
         group by transaction
-        having sum(amount) &lt;&gt; 0
+        having sum(amount) <> 0
     ) as s on s.account = a.id
     inner join transaction as t on t.id = s.transaction
-where a.type &lt;&gt; 'EQUITY'
+where a.type <> 'EQUITY'
 ```
 
 This query sums all expenses for 2005 by month and account:
@@ -66,13 +66,13 @@ This query finds average monthly expenditures by account since January 2005:
 ```
 select @num_months := count(distinct date_format(posted, '%Y-%m'))
     from transaction
-    where posted &gt;= '2005-01-01';
+    where posted >= '2005-01-01';
 
 select cast(sum(amount) / @num_months as decimal(8,2)) as 'Average monthly amount',
     concat(coalesce(grandparent_name, ''),
-        if(grandparent_name is null, '', ' &gt; '),
+        if(grandparent_name is null, '', ' > '),
         coalesce(parent_name, ''),
-        if(parent_name is null, '', ' &gt; '),
+        if(parent_name is null, '', ' > '),
         name) as name
 from (
     select date_format(posted, '%Y-%m') as month,
@@ -88,7 +88,7 @@ from (
         ) as a on a.id = s.account
         left outer join account as aa on aa.id = a.parent
         left outer join account as aaa on aaa.id = aa.parent
-    where posted &gt;= '2005-01-01'
+    where posted >= '2005-01-01'
     group by date_format(posted, '%Y-%m'), a.name
 ) as x
 group by name

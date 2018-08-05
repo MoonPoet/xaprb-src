@@ -16,9 +16,9 @@ Just for the record, I'm not a *huge* fan of it for a variety of reasons, but I 
 `Ima::DBI` allows defining sql statements as subroutines, like this:
 
 ```
-__PACKAGE__-&gt;set_sql('foo', 'select * from foo', 'conn');
+__PACKAGE__->set_sql('foo', 'select * from foo', 'conn');
 # elsewhere:
-$statements-&gt;sql_foo-&gt;execute();
+$statements->sql_foo->execute();
 ```
 
 That's code for "create a subroutine named `sql_foo`, which will execute the `SELECT` against a connection named `conn`". Later, the code executes that subroutine.
@@ -28,7 +28,7 @@ There's a lot more that can be done with this. `?` placeholders can go in the SQ
 ```
 ...'select * from foo where bar = ?'...
 # elsewhere:
-$statements-&gt;sql_foo-&gt;execute(5);
+$statements->sql_foo->execute(5);
 ```
 
 That's standard DBI prepared-statement syntax for inserting a '5&#8242; where the question mark is, but look at this:
@@ -40,8 +40,8 @@ That's standard DBI prepared-statement syntax for inserting a '5&#8242; where th
 That's a string substitution parameter, `sprintf` style, which gets used at runtime to alter the statement before executing it, like so:
 
 ```
-$sth = $statements-&gt;sql_foo("?, ?, ?");
-$sth-&gt;execute(5, 6, 7);
+$sth = $statements->sql_foo("?, ?, ?");
+$sth->execute(5, 6, 7);
 ```
 
 This last usage results in the statement
@@ -82,8 +82,8 @@ Performance may or may not be a real problem, but maintainability definitely is.
 ```
 @params = $something_from_arguments;
 $placeholders = join(',', '?' x scalar(@params));
-$sth = $statements-&gt;sql_foo1($placeholders);
-$sth-&gt;execute(@params);
+$sth = $statements->sql_foo1($placeholders);
+$sth->execute(@params);
 # ... do that 15 times
 ```
 

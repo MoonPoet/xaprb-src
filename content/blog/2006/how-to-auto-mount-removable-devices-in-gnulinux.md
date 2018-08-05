@@ -44,7 +44,7 @@ tigger ~ # rc-update add hald default
 Now all the software I need is installed, and `hald` and `dbus` will start when the computer boots. All that remains is to give myself the proper permissions, and start `ivman`. As root, I can run `vigr` or use `usermod` to make myself a member of the `plugdev` group. I need to log out and back in for this to take effect. To start `ivman` automatically, I can add it to the end of my `.bashrc` file:
 
 ```
-ivman --nofork &gt; /dev/null 2&gt;&1 &
+ivman --nofork > /dev/null 2>&1 &
 ```
 
 Now I'm done. When I plug a device in, `ivman` finds it and mounts it (actually, it can do a lot more than just mount it; read the man page). I have the permissions I need to change files on the device and unmount it again. It appears under `/media`. If I'm running a file manager such as Nautilus, it shows up on the desktop and in the left-hand pane of the browser view, and I can unmount it with a right-click.

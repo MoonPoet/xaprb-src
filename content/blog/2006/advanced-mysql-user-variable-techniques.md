@@ -105,7 +105,7 @@ select type, variety, price,
        @num := if(@type = type, @num + 1, 1) as row_number,
        @type := type as dummy
 from fruits
-where @num &lt;= 2;
+where @num <= 2;
 
 +-------+------------+-------+------------+-------+
 | type  | variety    | price | row_number | dummy |
@@ -138,7 +138,7 @@ from (
        @type := type as dummy
    from fruits
 ) as x
-where row_number &lt;= 2;
+where row_number <= 2;
 
 +--------+----------+-------+------------+
 | type   | variety  | price | row_number |
@@ -201,7 +201,7 @@ select type, variety, price,
    (select n from (select @num := if(@type = type, @num + 1, 1) as n) as x) as row_number,
    (select t from (select @type := type as t) as x) as dummy
 from fruits
-where @num &lt;= 2;
+where @num <= 2;
 ```
 
 That won't work either, as it turns out. The subqueries are correlated -- they refer to columns from the outer table. That isn't allowed because of the intermediate step, which insulates the inner queries from the outer. This is a limitation of correlated subqueries: you can't nest a subquery in the `FROM` clause inside them.
@@ -218,7 +218,7 @@ set @num := 0, @type := '';
 select type, variety, price, @num
 from fruits
 where
-   2 &gt;= @num := if(@type = type, @num + 1, 1)
+   2 >= @num := if(@type = type, @num + 1, 1)
    and @type := type;
 
 +--------+------------+-------+------+
@@ -244,7 +244,7 @@ set @num := 0, @type := '';
 select type, variety, price, @num
 from fruits
 where
-   2 &gt;= @num := greatest(0, if(@type = type, @num + 1, 1))
+   2 >= @num := greatest(0, if(@type = type, @num + 1, 1))
    and @type := type;
 ```
 
@@ -256,7 +256,7 @@ set @num := 0, @type := '';
 select * from fruits
 where @num := if(type = @type, @num + 1, 1)
    and @type := type
-   and @num &lt;= 2;
+   and @num <= 2;
 Empty set (0.00 sec)
 
 select @num, @type;
@@ -273,7 +273,7 @@ That didn't work either. How did `@type` get assigned an integer? It should be a
 where @num := (
    if(type = @type, @num + 1, 1)
       and (@type := (
-         type and @num &lt;= 2)));
+         type and @num <= 2)));
 ```
 
 If I use parentheses right, maybe I can get it to do what I want:
@@ -282,7 +282,7 @@ If I use parentheses right, maybe I can get it to do what I want:
 select * from fruits
 where (@num := if(type = @type, @num + 1, 1))
       and (@type := type)
-      and (@num &lt;= 2);
+      and (@num <= 2);
 Empty set (0.00 sec)
 
 select @num, @type;
@@ -304,7 +304,7 @@ set @num := 0, @type := '';
 
 select type, variety, price, @num
 from fruits
-where 2 &gt;= greatest(
+where 2 >= greatest(
    @num := if(@type = type, @num + 1, 1),
    least(0, length(@type := type)));
 ```
@@ -334,7 +334,7 @@ from fruits
 where
    (@num := if(type = @type, @num + 1, 1)) is not null
    and (@type := type) is not null
-   and (@num &lt;= 2);
+   and (@num <= 2);
 ```
 
 I confess, I don't fully understand this. I figured it out through trial and error. If the user manual explains it well enough for me to have gotten there by reason, I don't know where. Can someone make it make sense please? I don't want to have to read the source...
@@ -356,7 +356,7 @@ set @num := 0, @type := '';
 
 select type, variety, price, @num
 from fruits
-where 2 &gt;= greatest(
+where 2 >= greatest(
    @num := if(@type = type, @num + 1, 1),
    least(0, length(@type := type)))
 order by type, price;

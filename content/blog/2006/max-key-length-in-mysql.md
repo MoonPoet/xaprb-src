@@ -37,9 +37,9 @@ While most characters will fit in one or two bytes, the `utf8` encoding of [Unic
 Here's a fun bug ([bug #18927](http://bugs.mysql.com/18927)):
 
 ```
-mysql&gt; create table test(c varchar(250), d varchar(250),primary key(c,d));
+mysql> create table test(c varchar(250), d varchar(250),primary key(c,d));
 ERROR 1071 (42000): Specified key was too long; max key length is 1000 bytes
-mysql&gt; create table test(c varchar(334), d varchar(334), primary key(c,d));
+mysql> create table test(c varchar(334), d varchar(334), primary key(c,d));
 ERROR 1071 (42000): Specified key was too long; max key length is 999 bytes
 ```
 

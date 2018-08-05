@@ -12,7 +12,7 @@ My example is in MySQL, but it applies to some other systems too. Suppose you ha
 ```
 select day, num from counter
 where counter = 'aliens sighted'
-   and day &gt;= current_date - 15;
+   and day >= current_date - 15;
 ```
 
 It doesn't return the last 15 days, if that's what you expected:
@@ -61,7 +61,7 @@ It's an invalid date. It is better to use the date-manipulation functions and a)
 ```
 select day, num from counter
 where counter = 'aliens sighted'
-   and day &gt;= date_sub(current_date, interval 15 day);
+   and day >= date_sub(current_date, interval 15 day);
 +------------+-----+
 | day        | num |
 +------------+-----+

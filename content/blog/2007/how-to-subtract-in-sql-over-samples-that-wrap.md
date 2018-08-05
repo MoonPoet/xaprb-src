@@ -88,9 +88,9 @@ from samples as o
       select cur.num, count(prev.num) as wraps
       from samples as cur
          left outer join samples as prev on cur.num = prev.num + 1
-            and cur.bytes &lt; prev.bytes
+            and cur.bytes < prev.bytes
       group by cur.num
-   ) as t1 on t1.num &lt;= o.num
+   ) as t1 on t1.num <= o.num
    cross join (
       select bytes as start from samples order by num limit 1
    ) as t2
@@ -107,9 +107,9 @@ from samples as o
       select cur.num, count(prev.num) as wraps
       from samples as cur
          left outer join samples as prev on cur.num = prev.num + 1
-            and cur.bytes &lt; prev.bytes
+            and cur.bytes < prev.bytes
       group by cur.num
-   ) as t1 on t1.num &lt;= o.num
+   ) as t1 on t1.num <= o.num
    cross join (
       select bytes as start from samples order by num limit 1
    ) as t2
@@ -133,8 +133,8 @@ You can also write it as a correlated subquery, instead of a subquery in the `FR
 select 1000 * (
       select count(*) from samples as cur
          inner join samples as prev on cur.num = prev.num + 1
-            and cur.bytes &lt; prev.bytes
-      where cur.num &lt;= samples.num
+            and cur.bytes < prev.bytes
+      where cur.num <= samples.num
    )
    - (select bytes from samples order by num limit 1)
    + samples.bytes as total
@@ -151,12 +151,12 @@ from samples as o
       select cur.num, count(prev.num) as wraps
       from samples as cur
          left outer join samples as prev on cur.num = prev.num + 1
-            and cur.bytes &lt; prev.bytes
-      where cur.num &gt; 3
+            and cur.bytes < prev.bytes
+      where cur.num > 3
       group by cur.num
-   ) as t1 on t1.num &lt;= o.num
+   ) as t1 on t1.num <= o.num
    cross join (
-      select bytes as start from samples where num &gt;= 3 order by num limit 1
+      select bytes as start from samples where num >= 3 order by num limit 1
    ) as t2
 where o.num = 6
 group by o.num
@@ -170,23 +170,23 @@ The second method I showed above is more complex for humans, but it's actually s
 
 ```
 select sum(
-   if (cur.bytes &gt;= prev.bytes,
+   if (cur.bytes >= prev.bytes,
       cur.bytes - prev.bytes,
       cur.bytes - prev.bytes + 1000)) as total
 from samples as cur
    inner join samples as prev on cur.num = prev.num + 1
 -- optional WHERE clause for choosing start/end:
--- where cur.num &gt; 3 and cur.num &lt;= 6
+-- where cur.num > 3 and cur.num <= 6
 ```
 
 A slightly more compact way to write this is
 
 ```
 select sum(
-   cur.bytes - prev.bytes + if(cur.bytes &gt;= prev.bytes, 0, 1000)) as total
+   cur.bytes - prev.bytes + if(cur.bytes >= prev.bytes, 0, 1000)) as total
 from samples as cur
    inner join samples as prev on cur.num = prev.num + 1
--- where cur.num &gt; 3 and cur.num &lt;= 6
+-- where cur.num > 3 and cur.num <= 6
 ```
 
 This query is both simpler and more efficient than the first method I showed. If your platform doesn't support `IF()`, use a `CASE` statement.
@@ -199,7 +199,7 @@ It's possible to do even better than the simple join technique on MySQL. Using s
 set @last_bytes := null;
 
 select sum(greatest(
-      if(bytes &gt;= @last_bytes,
+      if(bytes >= @last_bytes,
          bytes - @last_bytes,
          coalesce(bytes + 1000 - @last_bytes, 0)),
       least(0, @last_bytes := bytes)

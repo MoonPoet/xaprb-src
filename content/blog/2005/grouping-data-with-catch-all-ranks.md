@@ -49,17 +49,17 @@ Here's a query for Microsoft SQL Server:
 
 ```sql
 select
-    case when rank &lt;= 5 then rank
+    case when rank <= 5 then rank
         else 6
     end as rank,
     count(*) as num
 from #ad
 group by
-    case when rank &lt;= 5 then rank
+    case when rank <= 5 then rank
         else 6
     end
 order by
-    case when rank &lt;= 5 then rank
+    case when rank <= 5 then rank
         else 6
     end;
 ```
@@ -68,17 +68,17 @@ And for MySQL:
 
 ```sql
 select
-    case when rank &lt;= 5 then rank
+    case when rank <= 5 then rank
         else 6
     end as rank,
     count(*) as num
 from ad
 group by
-    case when rank &lt;= 5 then rank
+    case when rank <= 5 then rank
         else 6
     end
 order by
-    case when rank &lt;= 5 then rank
+    case when rank <= 5 then rank
         else 6
     end;
 ```
@@ -102,7 +102,7 @@ In MySQL, it's possible to make the query a bit shorter by referring to the resu
 
 ```sql
 select
-    case when rank &lt;= 5 then rank
+    case when rank <= 5 then rank
         else 6
     end as bucket,
     count(*) as num
@@ -115,7 +115,7 @@ This, however, doesn't:
 
 ```sql
 select
-    case when rank &lt;= 5 then rank
+    case when rank <= 5 then rank
         else 6
     end as rank,
     count(*) as num

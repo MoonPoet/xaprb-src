@@ -14,19 +14,19 @@ Before I launch into this article, I challenge you to read the [list of HTML 4 e
 LABEL elements work in concert with a form input. You already know what they are, because they are used in almost all user interfaces in traditional GUI software. The label "targets" an input by ID. For example, if a website has a login form like so,
 
 ```
-&lt;form action="login.cgi"&gt;
-&lt;input type="text" name="username" id="username" /&gt;
+<form action="login.cgi">
+<input type="text" name="username" id="username" />
 Username
-&lt;/form&gt;
+</form>
 ```
 
 You might surround `Username` with a LABEL, thusly:
 
 ```
-&lt;form action="login.cgi"&gt;
-&lt;input type="text" name="username" id="username" /&gt;
-&lt;label for="username"&gt;Username&lt;/label&gt;
-&lt;/form&gt;
+<form action="login.cgi">
+<input type="text" name="username" id="username" />
+<label for="username">Username</label>
+</form>
 ```
 
 The browser will then activate the username field when the user selects the LABEL. LABELs are particularly useful for accessibility, but they make forms more usable, too. Consider how you are accustomed to interacting with a list of radio buttons, each with text beside it. In a typical GUI application, the radio button is NOT used to select which option is the active one. Instead, it merely serves as a visual indicator of which option the user chose. Most users (you can verify this for yourself) will select the text, not the radio button, because they know it is "clickable." Many users will also try clicking on the text in web pages, before they realize they have to click on the radio button itself. Even users who are used to surfing the web will first automatically try clicking on the text, then click on the button! Providing LABELs makes the text "clickable" and meets the user's expectations. It also makes the form easier to use, because it is not necessary to use the mouse as carefully; there is more clickable area.

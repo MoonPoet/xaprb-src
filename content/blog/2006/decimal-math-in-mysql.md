@@ -21,7 +21,7 @@ I first encountered this problem while building a system to import my financial 
 select transaction, sum(amount) as amount
 from split
 group by transaction
-having sum(amount) &lt;&gt; 0;
+having sum(amount) <> 0;
 ```
 
 Here's the result:
