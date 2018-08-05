@@ -41,7 +41,7 @@ Here are detailed changes on each of the packages.
 #### mysql-show-grants 1.0.0
 
 *   Rewrite the GetOpt::Long code and rely on DBD to read MySQL option files.
-*   Fix the &#8211;revoke and &#8211;separate options so revokes are not separate unless specified. Add REVOKE GRANT OPTION when the user has it.
+*   Fix the `--revoke` and `--separate` options so revokes are not separate unless specified. Add REVOKE GRANT OPTION when the user has it.
 
 #### mysql-table-checksum 1.0.3
 

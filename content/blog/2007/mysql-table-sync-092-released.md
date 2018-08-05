@@ -14,7 +14,7 @@ What's new in version 0.9.2?
 
 *   Documentation (added OPTIONS section to perldoc).
 *   Bug fix: get a row at a time from the server by default. I didn't notice that the default behavior for the DBD driver is to fetch the entire result set into memory! This is a terrible idea on really large tables. This fix causes MySQL Table Sync to fetch a single row at a time from the server, so it never uses much memory and runs faster now.
-*   Bug fix: when the user specifies &#8211;columns, ignore other columns. You can sync common columns in otherwise different tables now, and you can compare and sync only specified columns.
+*   Bug fix: when the user specifies `--columns,` ignore other columns. You can sync common columns in otherwise different tables now, and you can compare and sync only specified columns.
 *   Bug fix: make sure fetch handle is active before trying to fetch a row. This isn't an issue in my development environment, but apparently some versions of Perl (?) or DBI (?) or DBD (?) have different behavior when the end of the resultset is hit. This fix makes more versions of whatever-is-the-problem happy.
 
 More goodies will be forthcoming after the conference and whatever I end up doing to innotop in the next few weeks. There are many un-implemented or partially implemented features, and I intend to fix that.

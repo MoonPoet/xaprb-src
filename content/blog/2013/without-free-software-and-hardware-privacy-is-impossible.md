@@ -25,7 +25,8 @@ This is why I continue to be a Free Software Foundation member. Vote with your w
 
 I'll end this post with the Fourth Amendment of the United States Constitution:
 
-> The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized. &#8211; Fourth Amendment, US Constitution
+> The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized. --- Fourth Amendment, US Constitution
+
 That amendment was written for damn good reasons based on horrific abuses of power by governments through the ages. Think about it.
 
 

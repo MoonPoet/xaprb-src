@@ -16,7 +16,7 @@ On Tuesday:
 
 On Wednesday:
 
-*   [MySQL Plugins &#8211; why should I bother?](http://www.percona.com/live/mysql-conference-2012/sessions/mysql-plugins-why-should-i-bother) Sergei is the co-author of a book on plugins. Their power is not to be underestimated.
+*   [MySQL Plugins---why should I bother?](http://www.percona.com/live/mysql-conference-2012/sessions/mysql-plugins-why-should-i-bother) Sergei is the co-author of a book on plugins. Their power is not to be underestimated.
 *   [Getting InnoDB Compression Ready for Facebook Scale](http://www.percona.com/live/mysql-conference-2012/sessions/getting-innodb-compression-ready-facebook-scale). Compression is very powerful---if we can just get the implementation to work better. Facebook, apparently, has done that.
 *   [The 5 minute DBA: MySQL DBA 101 for Non DBA's](http://www.percona.com/live/mysql-conference-2012/sessions/5-minute-dba-mysql-dba-101-non-dbas). Get started fast with Matt Yonkovit's friendly, engaging and relevant talk. Spoiler: it's longer than five minutes.
 *   [MySQL Optimizer Standoff MySQL 5.6 and MariaDB 5.3](http://www.percona.com/live/mysql-conference-2012/sessions/mysql-optimizer-standoff-mysql-56-and-mariadb-53). Peter at it again, this time digging into the advances in newer releases of the server, which make a huge difference on some common and important workloads.

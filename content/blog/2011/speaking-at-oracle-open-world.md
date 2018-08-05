@@ -12,7 +12,7 @@ The agenda at OOW is mind-bogglingly huge ([see Dave Stokes's blog post](http://
 
 *   Session ID: 09304
 *   Session Title: What Causes Downtime in MySQL, and How Can You Prevent It?
-*   Venue / Room: Marriott Marquis &#8211; Golden Gate C2
+*   Venue / Room: Marriott Marquis---Golden Gate C2
 *   Date and Time: 10/6/11, 9:00
 
 

@@ -72,7 +72,7 @@ There are also implications for fulltext indexes and so on. Of course there are 
 
 ### It sure is handy
 
-I wrote this tool because one of my employer's replicated InnoDB clusters was looking a little fragmented, probably because of archiving. It took a couple evenings to write the tool, but yesterday I connected to the office and ran it with the &#8211;checkoptimize option. We got great results. As I suspected, the tables were fragmented, and the heavily archived tables shrunk by 25% or more. As a bonus, we now have a lot more free space in that InnoDB tablespace.
+I wrote this tool because one of my employer's replicated InnoDB clusters was looking a little fragmented, probably because of archiving. It took a couple evenings to write the tool, but yesterday I connected to the office and ran it with the `--checkoptimize` option. We got great results. As I suspected, the tables were fragmented, and the heavily archived tables shrunk by 25% or more. As a bonus, we now have a lot more free space in that InnoDB tablespace.
 
 ### About MySQL Toolkit
 

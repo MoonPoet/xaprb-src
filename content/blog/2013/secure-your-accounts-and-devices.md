@@ -105,7 +105,7 @@ All of this is easily preventable. Given that one or more of your devices will s
 *   Encrypt your backup hard drives. Backups are one of the most common ways that data is stolen. *(You have backups, right? I could write a book on backups. Three things are inevitable: death, taxes, and loss of data that you really care about.)*
 *   Use a service such as [Prey Project](http://preyproject.com/) to let you have at least some basic control over your device if it's lost or stolen.  Android phones now have the [Android Device Manager](https://www.google.com/android/devicemanager) and [Google Location History](https://maps.google.com/locationhistory/), but you have to enable these.
 *   Keep records of your devices' make, model, serial number, and so on. Prey Project makes this easy.
-*   On your phone or tablet, customize the lockscreen with a message such as "user@email.com &#8211; reward if found" and on your laptops, stick a small label inside the lid with your name and phone number. You never know if a nice person will return something to you. I know I would do it for you.
+*   On your phone or tablet, customize the lockscreen with a message such as "user@email.com---reward if found" and on your laptops, stick a small label inside the lid with your name and phone number. You never know if a nice person will return something to you. I know I would do it for you.
 
 ### More On Passwords
 

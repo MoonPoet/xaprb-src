@@ -49,7 +49,7 @@ Some of the best biographies are the shortest ones. Not to pick favorites, but h
 
 <blockquote cite="http://conferences.oreillynet.com/cs/mysqluc2007/view/e_spkr/3190">
   <p>
-    Petr Chardin authored MySQL server log tables. While working for MySQL he also authored MySQL Instance Manager &#8211; cross-platform server, which serves for remote configuration and management of database server nodes. Petr lives in Moscow and works for Google.
+    Petr Chardin authored MySQL server log tables. While working for MySQL he also authored MySQL Instance Manager cross-platform server, which serves for remote configuration and management of database server nodes. Petr lives in Moscow and works for Google.
   </p>
 </blockquote>
 

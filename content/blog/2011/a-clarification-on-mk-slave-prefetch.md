@@ -14,7 +14,7 @@ Keeping caches warmed up for production traffic requires that the *read* workloa
 
 Perhaps an example will clarify. Suppose that a master database has a bunch of writes to WritableTable, and lots and lots of reads to ReadableTable. On the replica, the only queries in the relay log will be on WritableTable. And what will mk-slave-prefetch be doing? Executing SELECT queries against WritableTable. No traffic on ReadableTable at all. If you switch to use the replica as the primary server, ReadableTable's data won't be in the caches.
 
-To actually warm up the replica, you need to replay the queries against the ReadableTable. You can only find those by looking at the master. You can read its query logs, or watch its processlist, or capture TCP traffic, or any other method of capturing read traffic. There is a feature built into mk-query-digest to help you capture and replay these against the replica: [&#8211;execute](http://www.maatkit.org/doc/mk-query-digest.html#execute).
+To actually warm up the replica, you need to replay the queries against the ReadableTable. You can only find those by looking at the master. You can read its query logs, or watch its processlist, or capture TCP traffic, or any other method of capturing read traffic. There is a feature built into mk-query-digest to help you capture and replay these against the replica: [`--execute`](http://www.maatkit.org/doc/mk-query-digest.html#execute).
 
 A parting note: mk-slave-prefetch is an extremely niche tool that generally doesn't help replicas keep up with their masters. Only in very special cases is the hardware, data, and workload suitable for what it does.
 

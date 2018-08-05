@@ -5,7 +5,7 @@ url: /blog/2006/12/20/why-i-use-explicit-date-math-in-sql/
 categories:
   - Databases
 ---
-I sometimes see advice to do SQL date operations with the + and &#8211; operators on platforms where they are overloaded for date types. I try to avoid that, because it can give unexpected results. I prefer to explicitly use the built-in date/time functions. I'll show you an example where the operators cause problems, but the functions do the right thing.
+I sometimes see advice to do SQL date operations with the `+` and `-` operators on platforms where they are overloaded for date types. I try to avoid that, because it can give unexpected results. I prefer to explicitly use the built-in date/time functions. I'll show you an example where the operators cause problems, but the functions do the right thing.
 
 My example is in MySQL, but it applies to some other systems too. Suppose you have a table with something keyed on date, such as a count of alien sightings per day. Now you want to see how the count has changed over time. Today is 11th December 2006. What does this query return?
 

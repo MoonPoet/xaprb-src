@@ -12,7 +12,7 @@ Like the rest of the tools in the toolkit, tried to to make this tool follow the
 
 ### How to view the latest deadlock
 
-Because I have my database connection parameters in my .my.cnf file, I can run the deadlock logger with just the &#8211;print option and see a compact summary of the latest deadlock:
+Because I have my database connection parameters in my .my.cnf file, I can run the deadlock logger with just the `--print` option and see a compact summary of the latest deadlock:
 
 ```
 $ mysql-deadlock-logger --print
@@ -34,7 +34,7 @@ If you've spent much time poring over the output of `SHOW INNODB STATUS`, you no
 
 ### How to save the data in a table
 
-It's easy to save the data into a table for analysis. Once you've created the table with the query included in the documentation, you just specify the &#8211;dest option, like this: `mysql-deadlock-logger --dest deadlocks`.
+It's easy to save the data into a table for analysis. Once you've created the table with the query included in the documentation, you just specify the `--dest` option, like this: `mysql-deadlock-logger --dest deadlocks`.
 
 If it weren't reading from my .my.cnf file, I'd have to be more specific: `mysql-deadlock-logger --dest baron:password@localhost/test.deadlocks`. That's really easy to run from a cron job.
 

@@ -46,7 +46,7 @@ Type 2 software does much the same as Type 1, but it abstracts away the guts of 
 
 <blockquote cite="http://jeremy.zawodny.com/blog/archives/002194.html">
   <p>
-    I use a revolutionary new programming technique. Instead of littering my code with those calls, I put my core data access layer into a library&#8211;a separate piece of reusable code that I can include in various parts of my application and... reuse!
+    I use a revolutionary new programming technique. Instead of littering my code with those calls, I put my core data access layer into a library---a separate piece of reusable code that I can include in various parts of my application and... reuse!
   </p>
 </blockquote>
 

@@ -19,7 +19,7 @@ The tool can now profile external programs. There are several ways you can do th
 2.  Run the tool and pipe commands into it via standard input. It executes them, taking status snapshots after every one.
 3.  Run the tool and give it a file of commands to execute and profile. These are shell commands, not SQL queries.
 
-I also enhanced the command-line behavior so it acts just like you'd expect any pipe-and-filter program to work. You can shove input into its STDIN, give it multiple files to read and profile, give it the &#8211; file so it reads from STDIN, and so on. The normal UNIX-ish behavior.
+I also enhanced the command-line behavior so it acts just like you'd expect any pipe-and-filter program to work. You can shove input into its STDIN, give it multiple files to read and profile, give it the `--file` so it reads from STDIN, and so on. The normal UNIX-ish behavior.
 
 I also wrote a helper script that can extract and line up bits of the output so you can compare profiling results side-by-side. This is a major usability boost in my opinion. Say you want to profile your application's queries individually, but there are a thousand of them and you only want to see every tenth one. That's now easy to do, and they're lined up so you can just look across the rows and see the differences.
 

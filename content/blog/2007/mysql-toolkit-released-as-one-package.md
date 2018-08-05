@@ -18,30 +18,30 @@ It's gotten to the point that packaging and releasing these tools takes a good b
 Here's a unified changelog:
 
 *   mysql-show-grants 2007-06-10: version 1.0.1 
-    *   Added &#8211;defaults-file option. 
-    *   Added standard &#8211;version command-line option. 
-    *   Added &#8211;defaults-file option. 
+    *   Added `--defaults-file` option. 
+    *   Added standard `--version` command-line option. 
+    *   Added `--defaults-file` option. 
 *   mysql-find 2007-06-10: version 0.9.2 
-    *   &#8211;pid had a race condition. 
-    *   Unrecognized &#8211;sprintf directives could cause crashes. 
-    *   Added &#8211;defaults-file option. 
-    *   Added standard &#8211;version command-line option. 
+    *   `--pid` had a race condition. 
+    *   Unrecognized `--sprintf` directives could cause crashes. 
+    *   Added `--defaults-file` option. 
+    *   Added standard `--version` command-line option. 
 *   mysql-table-sync 2007-06-10: version 0.9.4 
-    *   Added &#8211;defaults-file option. 
-    *   Added standard &#8211;version command-line option. 
+    *   Added `--defaults-file` option. 
+    *   Added standard `--version` command-line option. 
 *   mysql-duplicate-key-checker 2007-06-10: version 1.0.3 
-    *   Added &#8211;defaults-file option. 
-    *   Added standard &#8211;version command-line option. 
+    *   Added `--defaults-file` option. 
+    *   Added standard `--version` command-line option. 
 *   mysql-deadlock-logger 2007-06-10: version 1.0.1 
     *   MySQL 5.1 shows tables in db.tbl format, not db/tbl 
-    *   Added &#8211;defaults-file option. 
-    *   Added standard &#8211;version command-line option. 
+    *   Added `--defaults-file` option. 
+    *   Added standard `--version` command-line option. 
 *   mysql-query-profiler 2007-06-10: version 1.1.1 
-    *   Added &#8211;defaults-file option. 
-    *   Added standard &#8211;version command-line option. 
-    *   Added &#8211;defaults-file option. 
+    *   Added `--defaults-file` option. 
+    *   Added standard `--version` command-line option. 
+    *   Added `--defaults-file` option. 
 *   mysql-table-checksum 2007-06-10: version 1.1.7 
-    *   Added &#8211;defaults-file option.
-    *   Added standard &#8211;version command-line option.
+    *   Added `--defaults-file` option.
+    *   Added standard `--version` command-line option.
 
 

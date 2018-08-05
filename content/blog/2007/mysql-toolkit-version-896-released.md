@@ -29,7 +29,7 @@ The most common way to use it is to run one process to update a heartbeat on the
 
 (of course, I couldn't resist making that configurable, so you can specify your own time windows).
 
-You can also run it as a daemon. Running the update process as a daemon is intuitive. Running the monitoring process isn't quite as obvious, because a daemon should re-open STDOUT to /dev/null. What you can do is give it the &#8211;file argument and it'll keep a file current with the most recent line of output, which you can check anytime you want to see how your replica has been doing over the last X time windows.
+You can also run it as a daemon. Running the update process as a daemon is intuitive. Running the monitoring process isn't quite as obvious, because a daemon should re-open STDOUT to /dev/null. What you can do is give it the `--file` argument and it'll keep a file current with the most recent line of output, which you can check anytime you want to see how your replica has been doing over the last X time windows.
 
 ### Changelog
 

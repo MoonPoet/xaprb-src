@@ -21,11 +21,11 @@ Changes
 
 *   Added more hooks for plugins before and after archiving.
 *   Documentation.
-*   Made &#8211;time suffix optional.
+*   Made `--time` suffix optional.
 
 Bugs fixed
 
-*   MySQL Archiver could crash on a lock wait timeout when &#8211;txnsize was not set
+*   MySQL Archiver could crash on a lock wait timeout when `--txnsize` was not set
 
 ### mysql-deadlock-logger
 
@@ -33,7 +33,7 @@ Version 1.0.2
 
 Incompatible changes
 
-*   Changed the format of the &#8211;source and &#8211;dest options.
+*   Changed the format of the `--source` and `--dest` options.
 
 Changes
 
@@ -81,13 +81,13 @@ Changes
 
 *   Documentation.
 *   Support complex host definitions.
-*   Added &#8211;explainhosts option to debug host definitions.
-*   Added &#8211;explain option.
+*   Added `--explainhosts` option to debug host definitions.
+*   Added `--explain` option.
 *   When exact chunking is impossible, mysql-table-checksum will use approximate.
 
 Incompatible changes
 
-*   Added required 'boundaries' column to checksum table for &#8211;replicate.
+*   Added required 'boundaries' column to checksum table for `--replicate.`
 
 Bugs fixed
 

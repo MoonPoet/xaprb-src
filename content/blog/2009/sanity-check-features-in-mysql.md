@@ -8,9 +8,9 @@ categories:
 MySQL has a couple of sanity-check features to help keep you from doing dumb things.
 
 *   [`max_join_size`](http://dev.mysql.com/doc/refman/5.1/en/server-system-variables.html#sysvar_max_join_size) is a configuration option for the mysqld server program. It throws an error if you write a query that the optimizer estimates will examine more than this number of rows.
-*   [&#8211;safe-updates](http://mysql.openmirrors.org/doc/refman/5.1/en/safe-updates.html) is a command-line option to the mysql client program. It throws an error if you write an UPDATE or DELETE without a) a WHERE clause that refers to an indexed column or b) a LIMIT clause. It also sets the `max_join_size` and `select_limit` variables.
+*   [`--safe-updates`](http://mysql.openmirrors.org/doc/refman/5.1/en/safe-updates.html) is a command-line option to the mysql client program. It throws an error if you write an UPDATE or DELETE without a) a WHERE clause that refers to an indexed column or b) a LIMIT clause. It also sets the `max_join_size` and `select_limit` variables.
 
-The &#8211;safe-updates mysql client option actually sets three variables server-side. Let's see the effects. First, the defaults:
+The `--safe-updates` mysql client option actually sets three variables server-side. Let's see the effects. First, the defaults:
 
 ```
 $ mysql -e 'select @@sql_safe_updates, @@sql_select_limit, @@sql_max_join_size\G'
@@ -20,7 +20,7 @@ $ mysql -e 'select @@sql_safe_updates, @@sql_select_limit, @@sql_max_join_size\G
 @@sql_max_join_size: -1
 ```
 
-With &#8211;safe-updates we get different results:
+With `--safe-updates` we get different results:
 
 ```
 $ mysql --safe-updates -e 'select @@sql_safe_updates, @@sql_select_limit, @@sql_max_join_size\G'

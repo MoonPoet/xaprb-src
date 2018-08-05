@@ -20,7 +20,7 @@ $ wget http://www.maatkit.org/get/mk-find
 $ perl mk-find test --engine MyISAM --exec 'ALTER TABLE %D.%N ENGINE=InnoDB'
 ```
 
-If you want to print out the commands instead of executing them, you can just use &#8211;printf instead of &#8211;exec.
+If you want to print out the commands instead of executing them, you can just use `--printf` instead of `--exec.`
 
 Why would you do it this way instead of through the `INFORMATION_SCHEMA` database? I don't think this can be said too often: querying the `INFORMATION_SCHEMA` database on MySQL can completely lock a busy server for a long time. It can even crash it. It is very dangerous. So whenever I mention it, I mention the dangers of using it. I use it too sometimes, but only when I know the server I'm working on.
 

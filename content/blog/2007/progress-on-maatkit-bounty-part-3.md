@@ -16,7 +16,7 @@ This is the last day I'm taking off work to hack on mk-table-sync, and I thought
 *   The tool now syncs entire servers. That is, you don't have to specify a table. It'll find all the tables and just sync them.
 *   The tool can sync many servers. You give it five servers, it will treat the first as the source, and sync every table in the source to each of the four remaining servers in turn.
 *   It can work via replication. It can discover a master's replicas via SHOW SLAVE HOSTS and sync each replica to the master. You can also point it at a replica and it'll discover the master, connect to it, and sync the replica to the master.
-*   It integrates with mk-table-checksum's results. If you've given the &#8211;replicate option to mk-table-checksum, the replica's results are stored in a table. It can read that table and sync anything marked as different. This can be combined with sync-to-master and auto-discover-slaves functionality.
+*   It integrates with mk-table-checksum's results. If you've given the `--replicate` option to mk-table-checksum, the replica's results are stored in a table. It can read that table and sync anything marked as different. This can be combined with sync-to-master and auto-discover-slaves functionality.
 *   Lots of other bugs and problems are gone simply because I'm using the modules I wrote for other tools. This includes issues with table parsing, identifier quoting, etc etc. As an aside, I have to roll my own for almost everything, because I can't rely on things like DBI's `quote_identifier()` function---it does not work in earlier versions, which are amazingly common in the real world.
 
 Whew! So what isn't done yet?

@@ -21,7 +21,7 @@ I can't explain all of the technology in this post, partially because of NDA, bu
 
 ### How your computer currently works
 
-To understand how Kickfire's chip works, you need to understand something you probably take for granted: how most chips work. Most computers today use the same architecture they always have: there's data that is held in the CPU, and data that is not. The CPU has registers, which hold a miniscule bit of data &#8211; the data it is currently working with. When the CPU processes an instruction that asks for some more data it doesn't have, the CPU has to go fetch it. In the meantime, the instruction can't complete.
+To understand how Kickfire's chip works, you need to understand something you probably take for granted: how most chips work. Most computers today use the same architecture they always have: there's data that is held in the CPU, and data that is not. The CPU has registers, which hold a miniscule bit of data---the data it is currently working with. When the CPU processes an instruction that asks for some more data it doesn't have, the CPU has to go fetch it. In the meantime, the instruction can't complete.
 
 As you might imagine, this is not terribly efficient. Fetching data that's not in the CPU can take hundreds of CPU cycles (or more). To work around this, computer architects have developed a hierarchy of caches: the on-chip cache, the main memory, and the hard drive, to name a few. The caches make it faster to get data when it's not already on hand. And modern chips have a pipeline, too. The pipeline looks at the instructions as they flow towards the CPU, tries to predict which data they're going to need, then pre-fetches it.
 

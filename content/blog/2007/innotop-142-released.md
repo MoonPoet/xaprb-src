@@ -21,7 +21,7 @@ This release of the innotop MySQL and InnoDB monitor is a major upgrade in terms
 *   Compile SQL-like expressions into Perl subroutines; eliminate need to know Perl 
 *   Do not save all config data to config file, only save user's customizations
 *   Rewritten and improved command-line option handling
-*   Added &#8211;count, &#8211;delay, and other command-line options to support run-and-exit operation 
+*   Added `--count,` `--delay,` and other command-line options to support run-and-exit operation 
 *   Improve built-in variable sets
 *   Improve help screen with three-part balanced-column layout
 *   Simplify table-editor and improve hotkey support
@@ -66,7 +66,7 @@ This release of the innotop MySQL and InnoDB monitor is a major upgrade in terms
 *   Lettercase changes in some result sets (SHOW MASTER/SLAVE STATUS) between MySQL versions crashed innotop
 *   Inactive connections crashed innotop upon access to DBD driver
 *   `set_precision` did not respect user defaults for number of digits
-*   &#8211;inc command-line option could not be negated
+*   `--inc` command-line option could not be negated
 *   InnoDB status parsing was not always parsing all needed information
 *   S mode (formerly G mode) could crash trying to divide non-numeric data
 *   M table didn't show `Replica_open_temp_tables` variable; incorrect lettercase

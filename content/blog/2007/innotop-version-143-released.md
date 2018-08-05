@@ -13,7 +13,7 @@ Version 1.4.3 of the innotop MySQL and InnoDB monitor is out. This release fixes
 
 Here's what's new:
 
-*   Added standard &#8211;version command-line option
+*   Added standard `--version` command-line option
 *   Changed colors to cyan instead of blue; more visible on dark terminals.
 *   Added information to the filter-choosing dialog.
 *   Added column auto-completion when entering a filter expression.

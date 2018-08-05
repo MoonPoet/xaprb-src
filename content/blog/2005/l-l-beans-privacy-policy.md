@@ -21,7 +21,7 @@ I abhor this "opt-out" policy and firmly believe it should be unequivocally bann
 
 On the other hand, there are some **awesome** companies out there that really make me happy. Dear [CDBaby](http://cdbaby.com), I salute your integrity:
 
-> We NEVER give or sell your personal info to any other company &#8211; EVER! (No not even your email address!)
+> We NEVER give or sell your personal info to any other company---EVER! (No not even your email address!)
 
 And [ThinkGeek](http://www.thinkgeek.com), I love you:
 

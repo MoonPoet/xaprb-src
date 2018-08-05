@@ -19,7 +19,7 @@ Here is an example of the profile report:
 #    2 0x8305A7D4195D2096     0.0011  6.7%     6   0.0002 1.00  0.00 aa      SELECT test.t
 ```
 
-The EXPLAIN column appears if you add the *&#8211;explain* option to mk-query-digest. **Note: while writing this post I discovered a bug in the new functionality, which is now fixed in trunk, so if you want to use this you'll need to 'wget maatkit.org/trunk/mk-query-digest' to get a version that doesn't have the bug.**
+The EXPLAIN column appears if you add the *`--explain*` option to mk-query-digest. **Note: while writing this post I discovered a bug in the new functionality, which is now fixed in trunk, so if you want to use this you'll need to 'wget maatkit.org/trunk/mk-query-digest' to get a version that doesn't have the bug.**
 
 In this case, both queries are shown as **aa**. What is that? It's our geek code, one character per table in the EXPLAIN plan. And if we look at the documentation, 'a' is the shorthand for Type=ALL:
 

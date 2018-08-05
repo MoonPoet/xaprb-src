@@ -11,6 +11,6 @@ There are a number of bug reports related to this: [15101](http://bugs.mysql.com
 
 I am not an Oracle expert. Does NOW() return a constant result within an Oracle query, like NOW() in MySQL does? Or is there no NOW() in Oracle, and you use SYSDATE() instead? Why is Oracle's SYSDATE() functionality worth emulating? It looks to me like some people use SYSDATE() as a sort of cross-platform compatible NOW() function, but the saner behavior for me would be to have it be deterministic by default, for all the normal reasons that deterministic behavior is a Good Thing.
 
-All of this is related to another topic I've been considering: should &#8211;sysdate-is-now be enabled in a "sane" default MySQL configuration, or is that just breaking something a lot of people rely on working the way it does? (It seems far more likely to me that it will unbreak things.)
+All of this is related to another topic I've been considering: should `--sysdate-is-now` be enabled in a "sane" default MySQL configuration, or is that just breaking something a lot of people rely on working the way it does? (It seems far more likely to me that it will unbreak things.)
 
 

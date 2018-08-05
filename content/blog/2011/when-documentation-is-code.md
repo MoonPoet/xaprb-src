@@ -5,14 +5,14 @@ url: /blog/2011/11/07/when-documentation-is-code/
 categories:
   - Databases
 ---
-One of the things I think we did right with Maatkit (and now with Percona Toolkit) is making the documentation part of the code itself. So much redundancy and wrong documentation has been eliminated by making the tool actually read its own documentation when it starts up. As an example, the default value of the &#8211;shorten option is defined in the documentation (it's Perldoc) like this:
+One of the things I think we did right with Maatkit (and now with Percona Toolkit) is making the documentation part of the code itself. So much redundancy and wrong documentation has been eliminated by making the tool actually read its own documentation when it starts up. As an example, the default value of the `--shorten` option is defined in the documentation (it's Perldoc) like this:
 
     =item --shorten
     
     type: int; default: 1024
     
 
-Not only is the documentation part of the code, but the tool's &#8211;help output is generated from it too. The existence, type, defaults, and even the behavior of the command-line options is defined in the documentation. If I execute the tool with the &#8211;help option, you can see that default value:
+Not only is the documentation part of the code, but the tool's `--help` output is generated from it too. The existence, type, defaults, and even the behavior of the command-line options is defined in the documentation. If I execute the tool with the `--help` option, you can see that default value:
 
     
     [baron@ginger bin]$ ./pt-query-digest --help | grep  -- --shorten

@@ -14,16 +14,16 @@ Thanks to everyone who has been helping me chase down bugs, including one user w
 
 Incompatible changes:
 
-*   The chunking functionality no longer guarantees chunks will be no larger than the specified size. Use &#8211;chunksize-exact for that. Note that the chunking functionality is still experimental and likely to change further.
+*   The chunking functionality no longer guarantees chunks will be no larger than the specified size. Use `--chunksize-exact` for that. Note that the chunking functionality is still experimental and likely to change further.
 
 Changes:
 
 *   Chunking now works with multiple-column indexes.
-*   Added &#8211;quiet option, useful for cron jobs with &#8211;replicate.
-*   Added &#8211;float-precision option; works around different floating-point formats.
-*   Added &#8211;sleep-coef option; sleeps a multiple of the time the last checksum took.
+*   Added `--quiet` option, useful for cron jobs with `--replicate.`
+*   Added `--float-precision` option; works around different floating-point formats.
+*   Added `--sleep-coef` option; sleeps a multiple of the time the last checksum took.
 *   Added error handling for tables that are dropped during checksumming.
-*   Added documentation on the finer points of &#8211;replicate-do and &#8211;binlog-do.
+*   Added documentation on the finer points of `--replicate-do` and `--binlog-do.`
 
 Bugs fixed:
 
@@ -31,10 +31,10 @@ Bugs fixed:
 *   Perl's auto-vivify hashes could cause all tables to be skipped after the first VIEW.
 *   Some DBIs did not consider ? inside a comment to be a placeholder.
 *   Systems that return nothing from CHECKSUM TABLE crashed mysql-table-checksum.
-*   &#8211;askpass did not print a newline after reading password.
+*   `--askpass` did not print a newline after reading password.
 *   Different TIMESTAMP display formatting could cause spurious checksum differences.
 *   Checksumming by chunks did not work when the chunk column contained NULL.
-*   &#8211;replicate did not always work correctly with `binlog_do_db`.
+*   `--replicate` did not always work correctly with `binlog_do_db`.
 
 ### About MySQL Toolkit
 

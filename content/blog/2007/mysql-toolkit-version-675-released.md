@@ -11,15 +11,15 @@ I've just released changes to two of the tools in MySQL Toolkit. MySQL Table Che
 
 Changes in MySQL Archiver:
 
-*   Made &#8211;time suffix optional.
-*   Added &#8211;statistics option to gather and print timing statistics.
+*   Made `--time` suffix optional.
+*   Added `--statistics` option to gather and print timing statistics.
 *   Added signal handling so mysql-archiver exits cleanly when it can.
-*   Changed exit status to 0 when &#8211;help is given.
+*   Changed exit status to 0 when `--help` is given.
 *   Out-of-column-order primary keys were not ascended correctly.
 
 Changes in MySQL Table Checksum:
 
-*   Added &#8211;replcheck option to check &#8211;replicate results on replicas.
-*   Added &#8211;recursecheck option to do &#8211;replcheck recursively.
+*   Added `--replcheck` option to check `--replicate` results on replicas.
+*   Added `--recursecheck` option to do `--replcheck` recursively.
 
 
