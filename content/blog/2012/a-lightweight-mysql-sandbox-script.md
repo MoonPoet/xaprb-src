@@ -7,17 +7,17 @@ image: "/media/2012/08/unsplash-photos-mQ6PPlOeH5A.jpg"
 categories:
   - Databases
 ---
-For a long time I've been maintaining a set of scripts inspired by [Giuseppe Maxia's MySQL Sandbox](http://mysqlsandbox.net/), which is a Swiss Army Knife for starting and stopping server instances for jobs such as testing, development, trying out a new version, and so on. My scripts are unpublished, until now. I've just kept them in my Dropbox's `bin` folder, which I add to my $PATH.
+For a long time I've been maintaining a set of scripts inspired by [Giuseppe Maxia's MySQL Sandbox](http://mysqlsandbox.net/), which is a Swiss Army Knife for starting and stopping server instances for jobs such as testing, development, trying out a new version, and so on. My scripts are unpublished, until now. I've just kept them in my Dropbox's `bin` folder, which I add to my `$PATH`.
 
 It's not worth explaining why I use my own scripts, except for saying that I keep dozens or even more MySQL versions unpacked in my home directory at any given time, and I find it a little easier to use these lightweight scripts than the more fully-featured MySQL Sandbox tools.
 
-Usage assumes some conventions are followed. I "install" each version of the server by downloading the generic tarball. Then I unpack it and move it to $HOME/mysql/servers/VERSION, where VERSION is something like 5.5.27. If it is a Percona Server or MariaDB version, I make VERSION include the '-rel' suffix. Then I clean out all of the extra directories and files, so that the bin directory basically includes only the mysqld executable, the share directory has little more than the English message files, and so on. I usually don't need things like the test files, and tools such as the `mysql` command-line client vary little between server versions in most cases, so I just use the system's installed versions or place a single copy of these into my $PATH. With this many versions of the server unpacked, I want to save disk space. I use the mysql\_install\_db script to create a data directory inside the unpacked server directory, and I'm ready to go.
+Usage assumes some conventions are followed. I "install" each version of the server by downloading the generic tarball. Then I unpack it and move it to `$HOME/mysql/servers/VERSION`, where VERSION is something like 5.5.27. If it is a Percona Server or MariaDB version, I make VERSION include the '-rel' suffix. Then I clean out all of the extra directories and files, so that the bin directory basically includes only the mysqld executable, the share directory has little more than the English message files, and so on. I usually don't need things like the test files, and tools such as the `mysql` command-line client vary little between server versions in most cases, so I just use the system's installed versions or place a single copy of these into my `$PATH`. With this many versions of the server unpacked, I want to save disk space. I use the `mysql_install_db` script to create a data directory inside the unpacked server directory, and I'm ready to go.
 
 To start a server, all I have to do is say `ms VERSION` and it boots directly in my terminal. To stop it, I simply send it a kill signal.
 
 To connect to it and execute commands, I use the mc command. This will find a running server and then pass along the command-line arguments; to connect to a specific server I use the -P option with a port number. The scripts choose a port based on the server's version number, such as 5527 for version 5.5.27. Socket files are a hassle in a scenario like this; ports are easier for me to use. Therefore I connect over TCP only, and I put `protocol=tcp` in the `client` section in my `$HOME/.my.cnf` file.
 
-To sum up: unpack and trim down the server versions, naming them according to a naming convention, set up a data directory, set up $HOME/.my.cnf, and then create two programs in the $PATH. Here is the `ms` script:
+To sum up: unpack and trim down the server versions, naming them according to a naming convention, set up a data directory, set up `$HOME/.my.cnf`, and then create two programs in the `$PATH`. Here is the `ms` script:
 
 ```sh
 #!/bin/bash
