@@ -7,7 +7,7 @@ author: "Baron Schwartz"
 description: "It always frustrated me when people misjudged my team, until I traded places with them."
 credit: https://unsplash.com/photos/j2cDm-kTFxk
 image: "/media/2018/04/justyn-warner-551351-unsplash.jpg"
-thumbnail: /media/2018/04/justyn-warner-551351-unsplash.tn-256x256.jpg
+thumbnail: /media/2018/04/justyn-warner-551351-unsplash.tn-500x500.jpg
 ---
 
 Many people such as venture capitalists have met and judged me and my team over

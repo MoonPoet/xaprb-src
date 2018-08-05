@@ -5,7 +5,7 @@ url: "/blog/lisa-2018-call-for-papers"
 description: "The LISA18 Call for Participation is open; submit your story!"
 credit: "https://unsplash.com/photos/VfZOC3kV6sM"
 image: "/media/2018/05/unsplash-photos-VfZOC3kV6sM.jpg"
-thumbnail: /media/2018/05/unsplash-photos-VfZOC3kV6sM.tn-256x256.jpg
+thumbnail: /media/2018/05/unsplash-photos-VfZOC3kV6sM.tn-500x500.jpg
 categories:
 - Conferences
 ---

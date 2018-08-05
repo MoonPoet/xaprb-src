@@ -5,7 +5,7 @@ url: "/blog/personality-assessments-hiring"
 description: "Using personality assessments in recruiting has helped me develop better judgment about people."
 credit: "https://pixabay.com/en/vernier-caliper-measuring-instrument-452987/"
 image: "/media/2018/05/pixabay-en-vernier-caliper-measuring-instrument-452987.jpg"
-thumbnail: /media/2018/05/pixabay-en-vernier-caliper-measuring-instrument-452987.tn-256x256.jpg
+thumbnail: /media/2018/05/pixabay-en-vernier-caliper-measuring-instrument-452987.tn-500x500.jpg
 categories:
 - Entrepreneurship
 - Recruiting

@@ -4,7 +4,7 @@ date: "2018-07-07T12:42:30-04:00"
 url: "/blog/my-travel-gear"
 description: "Here's how I travel light and with everything I need for all the circumstances that come up."
 image: "/media/2018/07/unsplash-M0AWNxnLaMw.jpg"
-thumbnail: /media/2018/07/unsplash-M0AWNxnLaMw.tn-256x256.jpg
+thumbnail: /media/2018/07/unsplash-M0AWNxnLaMw.tn-500x500.jpg
 credit: "https://unsplash.com/photos/M0AWNxnLaMw"
 categories:
 - Gear

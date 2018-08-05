@@ -4,8 +4,8 @@ date: "2018-04-18T19:06:16-04:00"
 url: "/blog/simple-sinister-kettlebell-workout"
 description: "This remarkably simple and effective workout is a favorite of mine."
 image: "/media/2018/04/jesper-aggergaard-539147-unsplash.jpg"
+thumbnail: /media/2018/04/jesper-aggergaard-539147-unsplash.tn-500x500.jpg
 credit: https://unsplash.com/photos/A97SnfANLeY
-thumbnail: /media/2018/04/jesper-aggergaard-539147-unsplash.tn-256x256.jpg
 categories:
 - Fitness
 ---

@@ -5,7 +5,7 @@ url: "/blog/google-doc-shortcuts"
 description: "Here's a pair of quick-start URLs to open a tab with a new Google Doc or Google Sheet."
 credit: "https://unsplash.com/photos/MzdoJwjayOs"
 image: "/media/2018/04/unsplash-photos-MzdoJwjayOs.jpg"
-thumbnail: /media/2018/04/unsplash-photos-MzdoJwjayOs.tn-256x256.jpg
+thumbnail: /media/2018/04/unsplash-photos-MzdoJwjayOs.tn-500x500.jpg
 categories:
 - Productivity
 ---

@@ -6,7 +6,7 @@ url: "/blog/intrinsic-motivation-reward-punishment"
 description: "I've gained understanding about management and motivation by reflecting on my father's parenting."
 credit: "https://unsplash.com/photos/EcVGogpC1G4"
 image: "/media/2018/07/unsplash-photos-EcVGogpC1G4.jpg"
-thumbnail: /media/2018/07/unsplash-photos-EcVGogpC1G4.tn-256x256.jpg
+thumbnail: /media/2018/07/unsplash-photos-EcVGogpC1G4.tn-500x500.jpg
 categories:
 - Leadership
 ---
