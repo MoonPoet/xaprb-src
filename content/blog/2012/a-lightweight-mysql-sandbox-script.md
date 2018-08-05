@@ -45,7 +45,7 @@ if [ "$PLUG" ]; then
 fi
 BASEDIR=$(pwd);
 
-PORT=$(pwd | awk -F/ &#39;{print $NF}&#39; | sed -e &#39;s/\.\([1-9]\)$/.0\1/&#39; | cut -d- -f1 | tr -d .);
+PORT=$(pwd | awk -F/ "{print $NF}" | sed -e "s/\.\([1-9]\)$/.0\1/" | cut -d- -f1 | tr -d .);
 if [[ "$BASEDIR" = *rel* ]]; then
    PORT=$((PORT + 10000));
 fi
@@ -87,7 +87,7 @@ And here is the `mc` command, which I've tweaked a little to run on Mac OSX as w
 # Discover which server is currently running, and use it
 case $(uname) in
 Linux)
-   port="$(netstat -antp 2>/dev/null | awk &#39;/mysqld/{print $4}&#39; | cut -d: -f2 | head -n1)"
+   port="$(netstat -antp 2>/dev/null | awk "/mysqld/{print $4}" | cut -d: -f2 | head -n1)"
    mysql --port=$port "$@"
    ;;
 Darwin)

@@ -3,6 +3,7 @@ title: "How To Read Linux Iostat's Output And Interpret System Performance"
 date: "2010-01-09"
 url: /blog/2010/01/09/how-linux-iostat-computes-its-results/
 image: "media/2010/01/layers.jpg"
+credit: https://www.flickr.com/photos/doug88888/3139395660
 description: "How to really understand the Linux iostat output, and how it computes metrics such as await, queue size, and utilization."
 categories:
   - Databases
@@ -118,5 +119,4 @@ which exposes additional insight into disk device behavior and performance;
 iostat computes a lot of valuable metrics, but there's more that it doesn't
 compute.
 
-Image by [doug88888](https://www.flickr.com/photos/doug88888/3139395660).
 

@@ -9,7 +9,7 @@ categories:
 Dear reader, this is a challenge. How's your MySQL prowess? You know about LIMIT: it cuts off the results at the specified number.
 
 ```
-mysql&gts; select actor_id from sakila.actor where actor_id % 5 = 0 limit 5;
+mysql> select actor_id from sakila.actor where actor_id % 5 = 0 limit 5;
 +----------+
 | actor_id |
 +----------+
