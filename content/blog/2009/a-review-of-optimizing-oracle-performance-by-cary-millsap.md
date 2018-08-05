@@ -6,13 +6,9 @@ categories:
   - Databases
   - Reviews
 ---
-<div id="attachment_1416" class="wp-caption alignleft" style="width: 238px">
-  <a href="{{< amz 059600527 >}}"><img src="/media/2009/11/optimizing_oracle_performance-228x300.jpg" alt="Optimizing Oracle Performance" title="Optimizing Oracle Performance" width="228" height="300" class="size-medium wp-image-1416" /></a><p class="wp-caption-text">
-    Optimizing Oracle Performance
-  </p>
-</div>
-
 [Optimizing Oracle Performance]({{< amz 059600527X >}}). By [Cary Millsap](http://www.method-r.com/), O'Reilly 2003. Page count: about 375 pages with appendices. (Here's [a link to the publisher's site](http://oreilly.com/catalog/9780596005276).)
+
+[![Optimizing Oracle Performance](/media/2009/11/optimizing_oracle_performance-228x300.jpg "fr pa1")]({{< amz 059600527 >}})
 
 This is easily one of the best books I've ever read on performance optimization. I've just finished reading it for the second-and-a-half time in two weeks, and I very rarely read a book more than once. I've been telling a lot of people about it.
 

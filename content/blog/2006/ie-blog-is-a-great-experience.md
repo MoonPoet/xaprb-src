@@ -11,13 +11,9 @@ First, it looks to me as though Microsoft have carefully chosen a message, purpo
 
 Next, it seems to be edited by professionals. Most of the articles are by programmers, team leaders, and other geek types. I don't want to disparage these folks. They may be excellent writers; I'm not assuming their geek status means they're not. But you don't just take a bunch of excellent writers and end up with the same tone and style, no matter how good they are---and that's exactly what I see on the IE blog. I think you need professional editors to achieve that, so I can't believe they're not using them. This is an excellent move, in my opinion.
 
-Just one example: the consistent focus on how IE6 is not a "great experience" and IE7 is a "great experience." Here are some quotes:
+Just one example: the consistent focus on how IE6 is not a "great experience" and IE7 is a "great experience." Here is a [quote](http://blogs.msdn.com/ie/archive/2006/02/06/525992.aspx):
 
-<blockquote cite="http://blogs.msdn.com/ie/archive/2006/02/06/525992.aspx">
-  <p>
-    The IE6 experience for managing your Favorites and History is fairly disjoint and inconsistent. In IE7 we wanted to address these issues as well as make sure that we had a great experience between Tabs and Favorites.
-  </p>
-</blockquote>
+> The IE6 experience for managing your Favorites and History is fairly disjoint and inconsistent. In IE7 we wanted to address these issues as well as make sure that we had a great experience between Tabs and Favorites.
 
 > ### IE7 Printing: An Experience You Won't Want To Miss
 > 

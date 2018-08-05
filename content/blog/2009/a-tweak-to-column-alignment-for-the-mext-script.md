@@ -8,7 +8,3 @@ categories:
   - Programming
 ---
 I tweaked the [mext](/blog/2009/04/11/formatting-mysqladmin-extended-status-nicely/) script so it auto-detects the necessary column widths for each sample.
-
-[Get mext here](/mext).</p>
-
-

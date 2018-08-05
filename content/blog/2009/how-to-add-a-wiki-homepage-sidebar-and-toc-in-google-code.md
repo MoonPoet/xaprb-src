@@ -8,19 +8,11 @@ categories:
 ---
 I just adore Google Code. But the default wiki view (a list of pages, sorted by last-modified) is lacking something. Fortunately, it's fixable. Here's the before:
 
-<div id="attachment_1167" class="wp-caption alignnone" style="width: 642px">
-  <img src="/media/2009/07/Screenshot-Wiki-Pages-maatkit-Google-Code-Mozilla-Firefox.png" alt="Default wiki list" title="Default wiki list" width="632" height="342" class="size-full wp-image-1167" /><p class="wp-caption-text">
-    Default wiki list
-  </p>
-</div>
+![Default wiki list](/media/2009/07/Screenshot-Wiki-Pages-maatkit-Google-Code-Mozilla-Firefox.png)
 
 And here's the after:
 
-<div id="attachment_1168" class="wp-caption alignnone" style="width: 642px">
-  <img src="/media/2009/07/Screenshot-Wiki-Pages-maatkit-Google-Code-Mozilla-Firefox1.png" alt="Wiki with sidebar and default page" title="Wiki with sidebar and default page" width="632" height="342" class="size-full wp-image-1168" /><p class="wp-caption-text">
-    Wiki with sidebar and default page
-  </p>
-</div>
+![Wiki with sidebar and default page](/media/2009/07/Screenshot-Wiki-Pages-maatkit-Google-Code-Mozilla-Firefox1.png)
 
 Here's how:
 

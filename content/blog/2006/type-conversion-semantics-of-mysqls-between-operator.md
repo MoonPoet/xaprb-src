@@ -40,13 +40,9 @@ That query does what I wanted---it selects rows where `d` is in the current mont
 
 I have read through the manual to try to understand [MySQL's type conversion rules](http://dev.mysql.com/doc/refman/5.0/en/type-conversion.html) for these queries. The manual isn't crystal clear, and I can't figure out what conversion is really happening. Are things getting converted to strings? Dates? Dates are actually stored as 3-byte numbers; are they converted to numbers here? I can't tell.
 
-I'm guessing, though I'm not sure, that `BETWEEN` must convert all three operands to the same type, whereas two `WHERE` comparisons don't have to be of the same type. So, for example, the non-`BETWEEN` query is probably converting both operands to strings in the `>=`, and both operands are already `DATE` in the `<=`. From the manual again:
+I'm guessing, though I'm not sure, that `BETWEEN` must convert all three operands to the same type, whereas two `WHERE` comparisons don't have to be of the same type. So, for example, the non-`BETWEEN` query is probably converting both operands to strings in the `>=`, and both operands are already `DATE` in the `<=`. From the [manual](http://dev.mysql.com/doc/refman/5.0/en/comparison-operators.html) again:
 
-<blockquote cite="http://dev.mysql.com/doc/refman/5.0/en/comparison-operators.html">
-  <p>
-    If expr is greater than or equal to min and expr is less than or equal to max, BETWEEN returns 1, otherwise it returns 0. This is equivalent to the expression (min <= expr AND expr <= max) if all the arguments are of the same type. Otherwise type conversion takes place according to the rules described in Section 12.1.2, 'Type Conversion in Expression Evaluation', but applied to all the three arguments.
-  </p>
-</blockquote>
+> If expr is greater than or equal to min and expr is less than or equal to max, BETWEEN returns 1, otherwise it returns 0. This is equivalent to the expression (min <= expr AND expr <= max) if all the arguments are of the same type. Otherwise type conversion takes place according to the rules described in Section 12.1.2, 'Type Conversion in Expression Evaluation', but applied to all the three arguments.
 
 That really doesn't clarify things for me. I still don't know whether they all get converted to the same type for `BETWEEN`, and I'm not sure how the rules of type conversion are applied to dates (are they numbers, strings...?)
 

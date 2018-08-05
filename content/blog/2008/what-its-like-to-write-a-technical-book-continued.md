@@ -47,7 +47,7 @@ Several people asked me to say more about my heuristics for improving the qualit
 * `whether`
     I found quite a few places where the phrase "whether or not" was used. This can be shortened: "to see whether or not the disk is the problem" can become "to see whether the disk is the problem." But better yet, the phrase often glues together poorly written phrases into an awkward sentence, just as "in order to" does. Can "whether" be replaced by "if?" Or does the sentence or paragraph just need to be reworked completely?
 * `allow`
-    This word can usually be replaced by "let." "The remaining settings allow MySQL to allocate more RAM" can become "The remaining settings let MySQL allocate more RAM." Occasionally, it is part of a larger phrase or thought needs to be shortened and clarified. "When nobody is writing, readers obtain read locks that allow other readers to do the same" became "When nobody is writing, readers can obtain read locks, which don't conflict with other read locks."</p> 
+    This word can usually be replaced by "let." "The remaining settings allow MySQL to allocate more RAM" can become "The remaining settings let MySQL allocate more RAM." Occasionally, it is part of a larger phrase or thought needs to be shortened and clarified. "When nobody is writing, readers obtain read locks that allow other readers to do the same" became "When nobody is writing, readers can obtain read locks, which don't conflict with other read locks."
 * `ensure`
     I found that this word is often subtly misused. It really means "guarantee" but is often used as "double-check" or "make sure." I don't want to be too dogmatic about this word: its usage in modern English is complex ([see the usage note on assure here](http://dictionary.reference.com/browse/assure); that in itself might be a reason to avoid it). But I found many places where I wanted to remove it in favor of an explicit instruction that tells the reader to take action. "Ensure" as an instruction is kind of a politically correct way to tell someone to do something, and I'm not afraid to just tell you to do it if I think you need to. I don't want you to miss my meaning.
 * `only`
@@ -64,8 +64,8 @@ Anyway, my point is that we expanded the first edition's actual coverage many ti
 Here's how I analyzed each chapter:
 
 *   I used OpenOffice's export feature to export the file to MediaWiki format. This is a plain-text markup format. I forget now why I didn't just export to text, but there was something about MediaWiki format that made it easier to munge with Perl.
-*   I ran my clean_text.pl program against the exported file to convert the format to a simpler one without special characters and markup. Some of the markup (footnotes, for example) stayed in the text and confused the metrics, but that's life.
-*   I ran my analyze_text.pl program against this to find the "worst" places.
+*   I ran my `clean_text.pl` program against the exported file to convert the format to a simpler one without special characters and markup. Some of the markup (footnotes, for example) stayed in the text and confused the metrics, but that's life.
+*   I ran my `analyze_text.pl` program against this to find the "worst" places.
 
 As I wrote in my previous post, the analyzer uses a combination of readability metrics and "other stuff" to measure the badness of each sentence and paragraph. It aggregates sentences and paragraphs by the metrics. I calculated the number of words, percent of complex words, syllables per word, number of sentences, words per sentence, and a bunch of other things, as well as the standard readability metrics. Each sentence and paragraph got scored on these. Then I printed overall metrics, and sorted the sentences and paragraphs worst-first and printed out a snippet of the offending text.
 

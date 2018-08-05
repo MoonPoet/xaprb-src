@@ -311,11 +311,9 @@ On the whole, I think Glom is a well-balanced compromise between simplicity and 
 
 ### Other similar programs
 
-I'm actually surprised about this, but there don't seem to be many other similar products for the Free Software world. The only other one I found is [Bond](http://www.treshna.com/bond/): <blockquote cite="http://www.treshna.com/bond/">
-  <p>
-    Bond is a rapid application development framework for building applications for the linux desktop and the web. Using bond you can quickly build database forms for Gnome Linux, or the web via standard HTML and AJAX or for windows using our win32 version.
-  </p>
-</blockquote>
+I'm actually surprised about this, but there don't seem to be many other similar products for the Free Software world. The only other one I found is [Bond](http://www.treshna.com/bond/):
+
+>   Bond is a rapid application development framework for building applications for the linux desktop and the web. Using bond you can quickly build database forms for Gnome Linux, or the web via standard HTML and AJAX or for windows using our win32 version.
 
 I haven't used Bond, so I really can't comment on it other than to say it looks like it's more complex and has more features than Glom.
 

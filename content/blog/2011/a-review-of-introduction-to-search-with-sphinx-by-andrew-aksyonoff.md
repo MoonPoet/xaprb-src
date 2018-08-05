@@ -5,13 +5,9 @@ url: /blog/2011/08/28/a-review-of-introduction-to-search-with-sphinx-by-andrew-a
 categories:
   - Databases
 ---
-<div id="attachment_2459" class="wp-caption alignleft" style="width: 190px">
-  <a href="{{< amz 0596809557 >}}"><img src="/media/2011/08/sphinx.jpg" alt="Introduction to Search with Sphinx" title="Introduction to Search with Sphinx" width="180" height="236" class="size-full wp-image-2459" /></a><p class="wp-caption-text">
-    Introduction to Search with Sphinx
-  </p>
-</div>
-
 [Introduction to Search with Sphinx]({{< amz 0596809557 >}}) by Andrew Aksyonoff, O'Reilly Media 2011. About 146 pages. ([Here's a link to the publisher's page.](http://oreilly.com/catalog/9780596809539))
+
+[![Introduction to Search with Sphinx](/media/2011/08/sphinx.jpg "fr pa1")]({{< amz 0596809557 >}})
 
 This is an engaging short introduction to Sphinx. At 146 pages, you shouldn't expect it to go into every detail, and it doesn't. There are major topics that it omits entirely or mentions only tangentially, such as distributed searching across a cluster of machines, real-time updating of indexes and attributes, and so on. But although the book doesn't boil the ocean, it does a great job at covering an introductory subset of Sphinx. It's just the book you need to get rid of MyISAM full-text indexes and return MySQL to proper performance again.
 

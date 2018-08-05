@@ -29,24 +29,11 @@ The reasons I'd buy a MySQL Enterprise subscription would be as follows, in orde
 
 The [official list of benefits in an Enterprise subscription](http://www.mysql.com/products/enterprise/subscription_benefits.html) looks like it matches my list, doesn't it?
 
-<blockquote cite="http://www.mysql.com/products/enterprise/subscription_benefits.html">
-  <p>
-    MySQL Enterprise subscriptions include the following benefits:
-  </p>
-  
-  <ol>
-    <li>
-      MySQL Enterprise Server: The MySQL Enterprise Server is the most reliable, secure and up-to-date version of MySQL in source and binary format.
-    </li>
-    <li>
-      Extensive Reliability Testing...
-    </li>
-  </ol>
-  
-  <p>
-    ... etc ...
-  </p>
-</blockquote>
+> MySQL Enterprise subscriptions include the following benefits:
+> 
+> 1. MySQL Enterprise Server: The MySQL Enterprise Server is the most reliable, secure and up-to-date version of MySQL in source and binary format.
+> 1. Extensive Reliability Testing...
+> 1. ... etc ...
 
 The thing is, those first two bullets are **blatantly untrue**. Want proof? Look at the [change list for MySQL 5.0.48](http://dev.mysql.com/doc/refman/5.0/en/releasenotes-es-5-0-48.html), which will be the next Monthly Rapid Update. Here are just a few of the changes near the top of the list, with my comments:
 
@@ -70,16 +57,8 @@ Here are some things that would *not* attract me to Enterprise:
 
 Take a look at bullet points number three and four in the list of Enterprise benefits:
 
-<blockquote cite="http://www.mysql.com/products/enterprise/subscription_benefits.html">
-  <ol>
-    <li value="3">
-      Updates and Upgrades with New Features: You receive the newest versions of MySQL Enterprise Server released during your active subscription term.
-    </li>
-    <li>
-      Predicable Releases with Bug Fixes and Updates: Predictable and scheduled service packs ensure that a new, fully up-to-date version of the MySQL Enterprise Server is always available with the latest updates and bug fixes. Customers of MySQL Enterprise receive Monthly Rapid Updates &#038; Quarterly Service Packs
-    </li>
-  </ol>
-</blockquote>
+> 1.      Updates and Upgrades with New Features: You receive the newest versions of MySQL Enterprise Server released during your active subscription term.
+> 1.      Predictable Releases with Bug Fixes and Updates: Predictable and scheduled service packs ensure that a new, fully up-to-date version of the MySQL Enterprise Server is always available with the latest updates and bug fixes. Customers of MySQL Enterprise receive Monthly Rapid Updates &#038; Quarterly Service Packs
 
 These are exactly the things I don't want in my Enterprise source code. These two "benefits" directly conflict with the first two benefits. They cannot coexist, period.
 

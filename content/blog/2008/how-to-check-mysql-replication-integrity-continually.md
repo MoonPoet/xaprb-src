@@ -102,9 +102,3 @@ So that's a quick overview of the new features, which open up a range of new pos
 The features are still evolving, and the newest code in the Subversion trunk is what you should probably look at if you're interested in using them. (Some of them aren't completed in the last release.) If you have suggestions or find bugs, please use the [Maatkit Google Code project](http://code.google.com/p/maatkit/) to communicate them to the dev team.
 
 But most of all, enjoy and profit from this work, and spread the word about Maatkit!
-
-<p style="border:1px solid red; padding:2em; margin: 2em; background: yellow">
-  Note: In the spring of 2009, there was a major effort to clean up and standardize Maatkit command-line options, so the specific command-line options and column names mentioned in this blog post are no longer valid. Thanks to Sheeri for pointing these out. For example, use chunk-size instead of C, because the -C option went away and `--chunk-size` took its place.
-</p>
-
-

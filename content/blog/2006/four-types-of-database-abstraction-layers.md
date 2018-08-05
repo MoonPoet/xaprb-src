@@ -42,21 +42,13 @@ Type 1 software doesn't really have a goal, except enabling access from the prog
 
 ### Type 2: Libraries that present a common interface to different server software
 
-Type 2 software does much the same as Type 1, but it abstracts away the guts of Type 1 software so every database system can be accessed with the same functions. This is what Jeremy means when he says
+Type 2 software does much the same as Type 1, but it abstracts away the guts of Type 1 software so every database system can be accessed with the same functions. This is what Jeremy means when he [says](http://jeremy.zawodny.com/blog/archives/002194.html)
 
-<blockquote cite="http://jeremy.zawodny.com/blog/archives/002194.html">
-  <p>
-    I use a revolutionary new programming technique. Instead of littering my code with those calls, I put my core data access layer into a library---a separate piece of reusable code that I can include in various parts of my application and... reuse!
-  </p>
-</blockquote>
+> I use a revolutionary new programming technique. Instead of littering my code with those calls, I put my core data access layer into a library---a separate piece of reusable code that I can include in various parts of my application and... reuse!
 
 Perl's [DBI](http://dbi.perl.org/) is a good example of Type 2 software. What is DBI, and what are its goals? From the homepage:
 
-<blockquote cite="http://dbi.perl.org/">
-  <p>
-    The DBI is the standard database interface module for Perl. It defines a set of methods, variables and conventions that provide a consistent database interface independent of the actual database being used.
-  </p>
-</blockquote>
+> The DBI is the standard database interface module for Perl. It defines a set of methods, variables and conventions that provide a consistent database interface independent of the actual database being used.
 
 In other words, you don't have to look at documentation to know "what function fetches a row from my results if I'm connected to Firebird instead of MySQL?" You learn DBI, and that's it. PHP's [PDO](http://www.php.net/pdo) is similar too. I think this is what Jeremy means when he talks about a "Neutral API," though his article doesn't really make that very clear.
 
@@ -78,25 +70,11 @@ insert into table set col = val, col = val, col = val
 
 Type 3 software wants to help you avoid writing SQL so you can express in your code what you want the SQL to do, and let the abstraction layer sort out how to tell the database server to do it. This is typically accomplished with a non-SQL interface, such as in PHP's [PEAR::MDB2](http://pear.php.net/manual/en/package.database.mdb2.php) package. From the documentation:
 
-<blockquote cite="http://pear.php.net/manual/en/package.database.mdb2.intro.php">
-  <p>
-    It provides a common API for all support RDBMS. The main difference to most other database abstraction packages is that <strong>MDB2 goes much further to ensure portability</strong>. Among other things MDB2 features:
-  </p>
+> It provides a common API for all support RDBMS. The main difference to most other database abstraction packages is that **MDB2 goes much further to ensure portability**. Among other things MDB2 features...  An OO-style query API...
 
-  <ul>
-    <li>
-      An <strong>OO-style query API</strong>
-    </li>
-  </ul>
-</blockquote>
+The emphasis is mine. Type 3 software writes the queries for you behind the scenes. You don't write SQL. Programmers who [advocate](http://www.sitepoint.com/forums/showpost.php?p=498687) Type 3 software consider this a Good Thing, because they believe portable SQL will prevent vendor lock-in:
 
-The emphasis is mine. Type 3 software writes the queries for you behind the scenes. You don't write SQL. Programmers who advocate Type 3 software consider this a Good Thing, because they believe portable SQL will prevent vendor lock-in:
-
-<blockquote cite="http://www.sitepoint.com/forums/showpost.php?p=498687">
-  <p>
-    ... and when they decide to use another DBMS instead of MySQL (and they undoubtedly will at some point), the conversion will be painless.
-  </p>
-</blockquote>
+> ... and when they decide to use another DBMS instead of MySQL (and they undoubtedly will at some point), the conversion will be painless.
 
 Again, Type 2 hides API differences, but Type 3 goes further and hides SQL differences as well.
 

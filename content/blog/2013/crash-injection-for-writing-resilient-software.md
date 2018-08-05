@@ -15,6 +15,6 @@ In the first iteration, it turned out that I hadn't actually solved the problem,
 
 The fix was simple, but the lesson was well learned. I don't remember doing this before, but I've studied and admired other pieces of software that are built to be resilient. For example, CouchDB has a [crash-only](http://en.wikipedia.org/wiki/Crash-only_software) design. If you're not familiar with that phrase, it's well worth reading more about that. Stewart Smith has also written software that helps reveal wrong assumptions, such as [libeatmydata](http://flamingspork.com/projects/libeatmydata/), and I think he also wrote something that randomly broke `malloc()`, but I can't find that easily. Assumptions like "allocating memory will always succeed" are great places to end up with horrible bugs.
 
-In the MySQL world, it would be great if we had more crash-injection testing of InnoDB as well. If you agree, you might consider subscribing to <http://bugs.mysql.com/bug.php> to keep up to date with effort on that front.
+In the MySQL world, it would be great if we had more crash-injection testing of InnoDB as well. If you agree, you might consider subscribing to http://bugs.mysql.com/bug.php to keep up to date with effort on that front.
 
 

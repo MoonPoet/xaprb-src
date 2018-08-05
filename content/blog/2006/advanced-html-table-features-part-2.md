@@ -27,11 +27,7 @@ Any seemingly simple data actually has tons and tons of information in it, all a
 
 The `axis` attribute allows me to [specify to which dimensions each cell belongs](http://www.w3.org/TR/html4/struct/tables.html#multi-dimension):
 
-<blockquote cite="http://www.w3.org/TR/html4/struct/tables.html#adef-axis">
-  <p>
-    This attribute may be used to place a cell into conceptual categories that can be considered to form axes in an n-dimensional space... The value of this attribute is a comma-separated list of category names.
-  </p>
-</blockquote>
+> This attribute may be used to place a cell into conceptual categories that can be considered to form axes in an n-dimensional space... The value of this attribute is a comma-separated list of category names.
 
 I know of no user agent which currently does the kinds of gymnastics mentioned in the spec (it sounds like the authors of the spec envision user agents as SQL databases, and users themselves as data analysts), but the capability is there in the data. I can encode rich semantic information into table cells with `axis`, basically categorizing each little bit of data. And I can do it on a cell-by-cell basis---the finest granularity possible in a table.
 

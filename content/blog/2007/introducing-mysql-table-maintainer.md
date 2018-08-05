@@ -56,17 +56,11 @@ test     smallhist2              InnoDB   32.0k  89.0  check    status     1    
 
 ### How this is different from myisamchk
 
-This tool is different from myisamchk, and is therefore needed (I hate writing tools that have already been written!) because it does the job online, without taking your server offline or locking tables. You have to be careful with myisamchk. From the manual:
+This tool is different from myisamchk, and is therefore needed (I hate writing tools that have already been written!) because it does the job online, without taking your server offline or locking tables. You have to be careful with myisamchk. From the [manual](http://dev.mysql.com/doc/refman/5.0/en/myisamchk.html):
 
-<blockquote cite="http://dev.mysql.com/doc/refman/5.0/en/myisamchk.html">
-  <p>
-    <strong>Important</strong>
-  </p>
-  
-  <p>
-    You must ensure that no other program is using the tables while you are running myisamchk. The most effective means of doing so is to shut down the MySQL server while running myisamchk, or to lock all tables that myisamchk is being used on... However, the easiest way to avoid this problem is to use CHECK TABLE instead of myisamchk to check tables.
-  </p>
-</blockquote>
+> **Important:**
+>
+>  You must ensure that no other program is using the tables while you are running myisamchk. The most effective means of doing so is to shut down the MySQL server while running myisamchk, or to lock all tables that myisamchk is being used on... However, the easiest way to avoid this problem is to use CHECK TABLE instead of myisamchk to check tables.
 
 There are also implications for fulltext indexes and so on. Of course there are times when you need to use myisamchk, especially when you are repairing corrupted tables, but this tool will probably be more convenient for many users.
 

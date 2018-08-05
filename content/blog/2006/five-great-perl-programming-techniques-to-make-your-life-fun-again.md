@@ -15,7 +15,7 @@ I'm going to use Perl to demonstrate some techniques to accomplish these goals. 
 
 The `map` built-in function is one of the most useful tools in your toolkit. `map` takes a list and applies a code block to every element, returning the list. You can think of it as stream processing: you push the list in one side and get it back on the other side with some transformation applied. Inside the code block, you refer to the current element with the traditional `$_` variable. Here's a really simple example: uppercase every element in a list.
 
-```
+```perl
 my @lamps = qw(perl php python);
 my @uc_lamps = map { uc($_) } @lamps;
 # Result: PERL PHP PYTHON
@@ -23,7 +23,7 @@ my @uc_lamps = map { uc($_) } @lamps;
 
 I just shoved the list in the right side, and it travelled right to left until finally it popped out on the left side and got assigned into `@uc_lamps`. You can do a lot more with `map`, though. In fact, it's pretty much infinitely powerful when it comes to transforming lists. It's really just a glorified loop, but if you think of it as a transformation from input to output, you can really make some elegant code with it. Here's another example---make a key-value hash out of a delimited string:
 
-```
+```perl
 my $input = "a:1,b:2,d:3";
 my %output = map { split(/:/, $_) } split(/,/, $input);
 ```
@@ -32,14 +32,14 @@ Do you see how that works? As before, start at the right. The `split` function s
 
 It's also unsafe code. Here's why: it doesn't check for an odd number of elements in the resulting list, which could happen with input that's not delimited as expected, like this:
 
-```
+```perl
 my $input = "a1,b:2,d:3,e:f:g";
 my %output = map { split(/:/, $_) } split(/,/, $input);
 ```
 
 Assigning an odd number of list elements to a hash breaks the association between keys and values. You should always be saying "use warnings FATAL => 'all'" to catch this, but it's better to fix the broken code than to make it throw an error. This is a perfect opportunity for another list-oriented construct, `grep`, which takes a list on the right-hand-side and outputs every element that passes a certain test. Let's add a test for splittability, split only into two elements, and re-align the code for readability:
 
-```
+```perl
 my $input = "a1,b:2,d:3";
 my %output =
    map  { split(/:/, $_, 2) }
@@ -53,7 +53,7 @@ Now only the valid elements make it into the hash.
 
 One of the most annoying and tedious things you have to do as a programmer is check your inputs. Let's just say you're doing really basic checking to make sure you even *have* the input you're expecting, and if you don't, you're going to fill it in with defaults. How do you do this? In most languages, you do it with the equivalent of this Perl code:
 
-```
+```perl
 sub some_func {
    my ( $a, $b, $c ) = @_;
    if ( !$a ) {
@@ -67,13 +67,13 @@ Any experienced programmer knows these one-line `if` statements tend to take up 
 
 In Perl, you can use the `||=` operator. Its precedence rules are such that it'll only do an assignment if the value is false ('false' generally means zero, undefined, or the empty string):
 
-```
+```perl
 $a ||= 5;
 ```
 
 "But wait just a dang minute!" you say. There are a bunch of other ways to do this, such as these:
 
-```
+```perl
 $a = $a || 5;
 $a = 5 unless $a;
 ```
@@ -82,7 +82,7 @@ $a = 5 unless $a;
 
 So what's so great about the `||=` stuff, if there are so many other good ways to do things? Well, I've only shown you one place you can put `||=` to work. There are a million. Like `map`, once you start using it, you can't stop. You can use it for caches, for example:
 
-```
+```perl
 my %cache;
 sub expensive_operation {
    my ( $key ) = @_;
@@ -99,7 +99,7 @@ In this example, getting something from the database is really expensive, so you
 
 Have you ever passed around hashes and arrays and wanted to extract only certain elements from them? Let's say you have a subroutine that accepts a hash reference. Its job is to reverse the query-string parsing I showed you above. In many languages, you'd have to loop through the hash's keys, concatenating the key and value with `&`, then concatenating these together with `=`. You can use `map()` and `join()` to do this much more simply in Perl, like so:
 
-```
+```perl
 sub make_query_string {
    my ( $vals ) = @_;
    return join("&", map { "$_=$vals->{$_}" } keys %$vals);
@@ -117,7 +117,7 @@ That's already a great improvement over looping, especially since doing it with 
 
 The most obvious thing to do is build a new hash with only the keys you want, and send that hash to the subroutine:
 
-```
+```perl
 my @desired = qw(a c);
 my %new_params;
 foreach my $key ( @desired ) {
@@ -128,20 +128,20 @@ my $query_string = make_query_string(\%new_params);
 
 Ooooh, that's ugly. We can at least use `map` to get rid of the loop while building the new hash:
 
-```
+```perl
 my %new_params = map { $_ => $query_params{$_} } @desired;
 ```
 
 A hash slice is still better, though. It essentially does what that `map` does, but it's easier and clearer:
 
-```
+```perl
 my %new_params;
 @new_params{@desired} = @query_params{@desired};
 ```
 
 I just read a slice of the values from `%query_params` on the right, and assigned them into another slice with the same keys on the left. Here's the whole thing, rewritten:
 
-```
+```perl
 sub make_query_string {
    my ( $vals ) = @_;
    return join("&", map { "$_=$vals->{$_}" } keys %$vals);
@@ -164,7 +164,7 @@ Though this is a somewhat contrived example in this article, in real life it's t
 
 Array slices are a related concept. You access a subset of the array elements as an entire list by simply defining the indexes you want:
 
-```
+```perl
 my @letters = qw(a b c d e f);
 my @slice = @letters[1, 4, 3];
 # @slice is now b, e, d
@@ -178,7 +178,7 @@ If you've programmed in Perl, you've used regular expressions. Perl's regular ex
 
 One example is the ability to execute the result of a match as code, with the `/e` modifier at the end of a substitution. Here's a real-world example. Let's search a MySQL foreign key definition for column names and reorder them alphabetically, all in place:
 
-```
+```perl
 my $fk = "FOREIGN KEY (`seq`, `name`) REFERENCES `tbl` (`seq`, `name`)";
 $fk =~ s#(?<=\()([^\)]+)(?=\))#join(', ', sort(split(/, /, $1)))#ge;
 # $fk is now "FOREIGN KEY (`name`, `seq`) REFERENCES `tbl` (`name`, `seq`)";
@@ -190,11 +190,11 @@ If you're like me five years ago, you might think that's scary as hell at first.
 
 Wait a minute, though. Is it really insecure to match some text and execute it? No, it's not. In fact, text you've matched with a regular expression is likely to be far better checked, just by the fact that you've specified what it has to look like, than most other input to your program. This is much more true than you think. In fact, one of the very safest ways to check *any* input to your program is by pattern matching. This is such a powerful way to validate input, it's the main way to untaint data when you're running in taint mode. This is from the [perlsec](http://search.cpan.org/dist/perl/pod/perlsec.pod) man page:
 
->    Values may be untainted by using them as keys in a hash; otherwise the only way to bypass the tainting mechanism is by referencing subpatterns from a regular expression match. Perl presumes that if you reference a substring using $1, $2, etc., that you knew what you were doing when you wrote the pattern.<p>
+>    Values may be untainted by using them as keys in a hash; otherwise the only way to bypass the tainting mechanism is by referencing subpatterns from a regular expression match. Perl presumes that if you reference a substring using $1, $2, etc., that you knew what you were doing when you wrote the pattern.
 
 I won't go any further into why it's inherently safe to use the executable-regular-expression feature, but if you're not convinced, talk to an experienced programmer about it. I *do* want to convince you this is incredibly powerful. My example above implements this pseudo-code:
       
-      ```
+```perl
 search text for a string of column names
 for each string,
    split it around the delimiters
@@ -206,7 +206,7 @@ done
 
 You can write any valid Perl code on the right-hand side. Probably the clearest thing to do is just call a subroutine with the captured text, and do the work there, instead of inlining it all. Here's my example rewritten with a subroutine, and reformatted with the `/x` modifier:
       
-```
+```perl
 sub split_sort_join {
    my ($text) = @_;
    return join( ', ', sort( split( /, /, $text ) ) );
@@ -221,7 +221,7 @@ $fk =~ s/
 
 You can imagine how useful this is if your desired substition is not hard-coded into the right-hand-side of the substitution, too. For example, you could pass a callback function to a subroutine, and use that instead:
       
-```
+```perl
 sub process_column_names {
    my ( $fk, $callback ) = @_;
    $fk =~ s/
@@ -262,7 +262,7 @@ Can you imagine? There's no way I'd have added so many features to innotop if it
 
 What exactly is a dispatch table? It's a hash of references to executable code. Let's make a simple example: a program that has just two modes, `display_a` and `display_b`. Each of these is handled by a subroutine of the same name. Here is a complete program that'll loop forever until you press `'q'`:
       
-```
+```perl
 #!/usr/bin/perl
 
 use strict;
@@ -294,7 +294,7 @@ while ( 1 ) {
       
 Innotop has tons of such dispatch tables. They're so simple to use; you just look to see if there's an entry for whatever your input is, and if so, you call that to do the work. It can be an anonymous subroutine, such as the anonymous 'quit' subroutine in the example, or it can be a reference to a named subroutine. If you want a 'default' entry, you can do that easily, too:
       
-```
+```perl
 my $dispatch_for = {
    a => \&display_a,
    b => \&display_b,

@@ -20,13 +20,10 @@ This will happen if the following are true:
 1.  No database is selected or one of the tables is not in the current database
 2.  The tables are aliased
 
-According the the MySQL documentation,
+According to [the MySQL
+documentation](http://dev.mysql.com/doc/refman/5.1/en/delete.html),
 
-<blockquote cite="http://dev.mysql.com/doc/refman/5.1/en/delete.html">
-  <p>
-    Cross-database deletes are supported for multiple-table deletes, but in this case, you must refer to the tables without using aliases.
-  </p>
-</blockquote>
+> Cross-database deletes are supported for multiple-table deletes, but in this case, you must refer to the tables without using aliases.
 
 That's correct, but it might not seem right. If the tables are fully qualified by database and table name, but are in the current database, it works. If I switch to another database and run the same statement, it won't work.
 

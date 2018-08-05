@@ -7,6 +7,7 @@ categories:
 author: Baron Schwartz
 description: Let's get the truth about how dangerous it is to be alone with a woman.
 image: /media/2017/10/scared-man.jpg
+credit: "https://upload.wikimedia.org/wikipedia/commons/6/60/A_barber_shaving_a_man_who_looks_extremely_fearful._Lithogra_Wellcome_V0019694.jpg"
 
 ---
 
@@ -31,22 +32,15 @@ quoted in this surreal [New York
 Times](https://www.nytimes.com/2017/10/09/upshot/as-sexual-harassment-scandals-spook-men-it-can-backfire-for-women.html)
 article:
 
-<blockquote>
-<p>Some tech investors have taken similar steps. "A big chill came across Silicon
-Valley in the wake of all these stories, and people are hyperaware and scared
-of behaving wrongly, so I think they’re drawing all kinds of parameters," said
-a venture capitalist who spoke anonymously for the same reason.</p>
-<p>Some are avoiding solo meetings with female entrepreneurs, potential recruits
-and those who ask for an informational or networking meeting.</p>
-<p>"Before, you might have said, 'Of course I would do that, and I will especially
-do it for minorities, including women in Silicon Valley,'" the investor said.
-"Now you cancel it because you have huge reputational risk all of a sudden."</p>
-</blockquote>
+> Some tech investors have taken similar steps. "A big chill came across Silicon Valley in the wake of all these stories, and people are hyperaware and scared of behaving wrongly, so I think they’re drawing all kinds of parameters," said a venture capitalist who spoke anonymously for the same reason.
+> 
+> Some are avoiding solo meetings with female entrepreneurs, potential recruits and those who ask for an informational or networking meeting.
+> 
+> "Before, you might have said, 'Of course I would do that, and I will especially do it for minorities, including women in Silicon Valley,'" the investor said.  "Now you cancel it because you have huge reputational risk all of a sudden."
 
 Is there really *huge risk* in meeting women without a witness to keep you safe? No. That's irrational. Here's an illustration:
 
 1. If you're a man: have you, yourself, been falsely accused? Odds are overwhelmingly no.
-
 1. If you're a woman: have you been abused? Odds are 1:4 that you have been.
 
 I haven't been falsely accused. I don't know of a single man who's been falsely accused. I am not even aware of any
@@ -59,7 +53,6 @@ do is believe them.
 Now for the easy part: how to avoid being falsely accused. There are two steps:
 
 1. Don't worry, it basically doesn't happen.
-
 1. Live your life being decent to others. Just be a normal human being.
 
 Here, listen to Jon:
@@ -135,5 +128,3 @@ Hot takes by other people:
 
 - Venture capitalists who won't meet with women are either trying to punish them, or bad at their jobs---[link](https://www.inc.com/jeff-bercovici/anonymous-vc-harassment.html)
 - Every part of the false accusation narrative is wrong in ways that help real rapists escape justice and make it harder to detect false accusers---[link](https://qz.com/980766/the-truth-about-false-rape-accusations/)
-
-[Pic Credit](https://upload.wikimedia.org/wikipedia/commons/6/60/A_barber_shaving_a_man_who_looks_extremely_fearful._Lithogra_Wellcome_V0019694.jpg)

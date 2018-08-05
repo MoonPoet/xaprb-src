@@ -6,13 +6,9 @@ categories:
   - Databases
   - Reviews
 ---
-<div id="attachment_1629" class="wp-caption alignleft" style="width: 190px">
-  <a href="{{< amz 0596009577 >}}"><img src="/media/2010/02/understanding-mysql-internals.gif" alt="Understanding MySQL Internals" title="Understanding MySQL Internals" width="180" height="236" class="size-full wp-image-1629" /></a><p class="wp-caption-text">
-    Understanding MySQL Internals
-  </p>
-</div>
-
 [Understanding MySQL Internals]({{< amz 0596009577 >}}). By Sasha Pachev, O'Reilly 2007. Page count: about 227 pages. (Here's [a link to the publisher's site](http://oreilly.com/catalog/9780596009571)).
+
+[![Understanding MySQL Internals](/media/2010/02/understanding-mysql-internals.gif "fr pa1")]({{< amz 0596009577 >}})
 
 I should have read this book a long time ago, and it's my loss that I didn't. Although the title makes it sound like it should only benefit those who'll be changing the MySQL server's own code, that's not true. To the contrary, at least parts of this book should be required reading for DBAs and developers who use MySQL, after they gain a moderate level of familiarity with how to use the server.
 
@@ -22,7 +18,7 @@ The next couple of chapters are on the client/server API, configuration variable
 
 The following chapters cover the storage engine interface, the server-level lock manager and how it interacts with the storage-engine locking, and the parser and optimizer. These are absolutely core knowledge for DBAs and developers in my opinion. The server/storage-engine division is one of the things that makes MySQL different from other databases, and is mandatory to understand deeply. This applies equally well to the rest of the chapters, which cover the parser, optimizer, various storage engines (as opposed to just the server's interface to them), transactions, and replication. Mandatory, every one.
 
-What's missing? I found that the book is kind of funny in one major way. It doesn't talk much about MySQL 5.0. Instead, it delves into 4.x and 5.1. Most of the new features in 5.0 are not mentioned at all. Stored procedures, the INFORMATION_SCHEMA, triggers, and so on are absent, as are most discussions of changes to the optimizer and so forth. Some 5.0 topics are covered: index merge, for example. But by and large, there's not a lot of coverage here. The 5.1-specific topics are those such as the new storage engine API and row-based binary logging. Events are not covered, nor are changes to other types of logging. Honestly, I feel this is appropriate in a book this size; the stuff that hasn't changed since 4.x days is more important to understand.
+What's missing? I found that the book is kind of funny in one major way. It doesn't talk much about MySQL 5.0. Instead, it delves into 4.x and 5.1. Most of the new features in 5.0 are not mentioned at all. Stored procedures, the `INFORMATION_SCHEMA`, triggers, and so on are absent, as are most discussions of changes to the optimizer and so forth. Some 5.0 topics are covered: index merge, for example. But by and large, there's not a lot of coverage here. The 5.1-specific topics are those such as the new storage engine API and row-based binary logging. Events are not covered, nor are changes to other types of logging. Honestly, I feel this is appropriate in a book this size; the stuff that hasn't changed since 4.x days is more important to understand.
 
 There's little discussion of exactly how certain features work, such as the different sorting algorithms. But that's OK. These are covered pretty well by the MySQL manual, and even by my own book *High Performance MySQL 2nd Edition*. I think some other major topics might be missing, but I can't quite think of them now.
 

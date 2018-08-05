@@ -58,13 +58,7 @@ That would be great! But, since the format specifier is passed in at runtime, ho
 
 ### Programs that write programs
 
-It's not possible to hard-code the more efficient method, because I don't know what it's going to do at runtime, but I *can* code it at runtime, since JavaScript has interesting features common to many languages that allow code to be treated as data and vice versa: JavaScript can write functions dynamically.
-
-<blockquote cite="Andrew Hume">
-  <p>
-    Programs that write programs are the happiest programs in the world.
-  </p>
-</blockquote>
+It's not possible to hard-code the more efficient method, because I don't know what it's going to do at runtime, but I *can* code it at runtime, since JavaScript has interesting features common to many languages that allow code to be treated as data and vice versa: JavaScript can write functions dynamically.  As Andrew Hume said, "Programs that write programs are the happiest programs in the world."
 
 Lots of programming languages can do this. Perl and LISP in particular are great for it, and it's "what you do" in Artificial Intelligence work. In JavaScript, it's not too hard either: all I need to do is parse the format string and build a definition of the function that will implement it. Assuming I want to name the function `format0`, I would get something like this:
 

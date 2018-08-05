@@ -5,15 +5,15 @@ url: /blog/2007/11/23/why-is-embarq-hijacking-my-dns/
 categories:
   - Commentary
 ---
-<p>Isn't this the same thing that happened a few years ago with ICANN or Verisign or one of those big names?  (strangely, I can't find relevant search results about this!).</p>
+Isn't this the same thing that happened a few years ago with ICANN or Verisign or one of those big names?  (strangely, I can't find relevant search results about this!).
 
-<p>I clicked on my toolbar shortcut for <a href="http://www.toggl.com/">Toggl</a> and my Embarq DSL service redirected me to a search-results page instead of telling my browser the truth.  This makes me <em>mad</em>.  The core layers of the Internet are designed the way they are <strong>for a reason</strong> and I don't want to "opt out" of a stupid DNS hijacking stunt I never opted into.</p>
+I clicked on my toolbar shortcut for [Toggl](http://www.toggl.com/) and my Embarq DSL service redirected me to a search-results page instead of telling my browser the truth.  This makes me *mad*.  The core layers of the Internet are designed the way they are **for a reason** and I don't want to "opt out" of a stupid DNS hijacking stunt I never opted into.
 
-<p>Here's a screenshot of what happens when I type in any old non-existent (or, in Toggl's case, timing-out) domain name.</p>
+Here's a screenshot of what happens when I type in any old non-existent (or, in Toggl's case, timing-out) domain name.
 
-<p><a href='/media/2007/11/embarq-sysbench.png' title='Embarq screwing with my DNS'><img src='/media/2007/11/embarq-sysbench.thumbnail.png' alt='Embarq screwing with my DNS' /></a></p>
+![Embarq screwing with my DNS](/media/2007/11/embarq-sysbench.png)
 
-<p>And here's what happens when I do a DNS lookup:</p>
+And here's what happens when I do a DNS lookup:
 
 ```
 baron@kanga:~$ dig www.toggl.com
@@ -40,8 +40,6 @@ PING www.toggl.com (66.199.249.106) 56(84) bytes of data.
 64 bytes from 66-199-249-106.reverse.ezzi.net (66.199.249.106): icmp_seq=1 ttl=53 time=79.2 ms
 ```
 
-<p>Did I mention that this makes me mad?  Time to get on the phone.</p>
+Did I mention that this makes me mad?  Time to get on the phone.
 
-<p>PS: it looks like <a href="http://www.consumeraffairs.com/news04/2007/11/verizon_search.html">Verizon</a> is doing it too.</p>
-
-
+PS: it looks like [Verizon](http://www.consumeraffairs.com/news04/2007/11/verizon_search.html) is doing it too.

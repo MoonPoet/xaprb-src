@@ -15,8 +15,8 @@ Key facts:
 *   It's a combination conference and hackathon.
 *   It's free.
 *   It is Friday night Nov 14, 18:00 through Sun the 16th at 18:00 in Charlottesville, Virginia USA in a very cool location.
-*   The website, where all details will be posted: <http://opensqlcamp.pbwiki.com/>
-*   The mailing group, where details will be discussed, decided and arranged: <http://groups.google.com/group/opensqlcamp>
+*   The website, where all details will be posted: http://opensqlcamp.pbwiki.com/
+*   The mailing group, where details will be discussed, decided and arranged: http://groups.google.com/group/opensqlcamp
 *   Date, time and place are **confirmed** and will not change. You can make your travel plans now. There's travel information on the wiki.
 *   We already have some great speakers who have offered to give great talks. These and other details will show up on the wiki as they're finalized.
 *   Sponsors are needed. See the wiki.

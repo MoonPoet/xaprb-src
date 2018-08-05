@@ -31,13 +31,9 @@ There's another table that defines which clients are eligible for processing, wh
 
 ### The first attempt
 
-The query to claim a set of rows for a process needs to update the ten highest-priority unclaimed rows for eligible clients. Since it needs to access more than one table, and needs to order and limit the results, at first it seems you can't do this query at all, because `ORDER BY` and `LIMIT` aren't allowed for multi-table updates:
+The query to claim a set of rows for a process needs to update the ten highest-priority unclaimed rows for eligible clients. Since it needs to access more than one table, and needs to order and limit the results, at first it seems you can't do this query at all, because as [the manual says](http://dev.mysql.com/doc/refman/5.0/en/update.html), `ORDER BY` and `LIMIT` aren't allowed for multi-table updates:
 
-<blockquote cite="http://dev.mysql.com/doc/refman/5.0/en/update.html">
-  <p>
-    For the multiple-table syntax, UPDATE updates rows in each table named in table_references that satisfy the conditions. In this case, ORDER BY and LIMIT cannot be used.
-  </p>
-</blockquote>
+> For the multiple-table syntax, UPDATE updates rows in each table named in `table_references` that satisfy the conditions. In this case, ORDER BY and LIMIT cannot be used.
 
 However, a [standard searched `UPDATE` statement](/blog/2006/03/11/many-to-one-problems-in-sql/) with a subquery doesn't count as a multi-table update, so you can do it like this:
 

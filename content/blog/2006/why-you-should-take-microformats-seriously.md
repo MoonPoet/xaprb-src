@@ -45,23 +45,15 @@ You cannot do this without a doctype.
 
 ### Isn't that too complicated?
 
-That's a good question. I just said I'm a purist, and many W3C specs are written by purists too, but I'll be the first to say [SOAP](http://www.w3.org/TR/soap/) is way over-engineered (and [don't even mention all the WS-* specs](http://www.tbray.org/ongoing/When/200x/2004/09/18/WS-Oppo)). On the other hand, the microformats folks are actually creating [highly complex specs](http://microformats.org/wiki/hcard), so maybe they're not really trying to avoid complex specs like SOAP and WS-*. In that case, the lack of a doctype could be seen as a serious imbalance---all that complexity, and no doctype to show for it?
+That's a good question. I just said I'm a purist, and many W3C specs are written by purists too, but I'll be the first to say [SOAP](http://www.w3.org/TR/soap/) is way over-engineered (and [don't even mention all the WS specs](http://www.tbray.org/ongoing/When/200x/2004/09/18/WS-Oppo)). On the other hand, the microformats folks are actually creating [highly complex specs](http://microformats.org/wiki/hcard), so maybe they're not really trying to avoid complex specs like SOAP and WS. In that case, the lack of a doctype could be seen as a serious imbalance---all that complexity, and no doctype to show for it?
 
-In my opinion, the microformat work is going in the right direction---it just isn't at the stage where uber-formalism has set in, partly because microformats are not ubiquitously used yet. To create microformats, then [create uses for them and demonstrate their effectiveness and usefulness](http://ylocalblog.com/blog/2006/06/21/we-now-support-microformats/), is a very good idea, even if it can't all be as automated as I said above. I do *not* think microformat work should start with a committee, and produce a standard before anything else happens. That is an approach some have taken in the past, and it's flawed. Tim Bray says it well:
+In my opinion, the microformat work is going in the right direction---it just isn't at the stage where uber-formalism has set in, partly because microformats are not ubiquitously used yet. To create microformats, then [create uses for them and demonstrate their effectiveness and usefulness](http://ylocalblog.com/blog/2006/06/21/we-now-support-microformats/), is a very good idea, even if it can't all be as automated as I said above. I do *not* think microformat work should start with a committee, and produce a standard before anything else happens. That is an approach some have taken in the past, and it's flawed. [Tim Bray says it well](http://www.tbray.org/ongoing/When/200x/2004/09/18/WS-Oppo):
 
-<blockquote cite="http://www.tbray.org/ongoing/When/200x/2004/09/18/WS-Oppo">
-  <p>
-    I'm deeply suspicious of 'standards' built by committees in advance of industry experience...
-  </p>
-</blockquote>
+> I'm deeply suspicious of 'standards' built by committees in advance of industry experience...
 
-And Bruce Eckel:
+And [Bruce Eckel](http://www.artima.com/weblogs/viewpost.jsp?thread=165293):
 
-<blockquote cite="http://www.artima.com/weblogs/viewpost.jsp?thread=165293">
-  <p>
-    A standards body should formalize existing practice, rather than inventing new practice without experience.
-  </p>
-</blockquote>
+> A standards body should formalize existing practice, rather than inventing new practice without experience.
 
 In any case, you could easily argue that doctypes for microformats are not the right thing to do, at least not yet. And I'd agree with you, but I'd also point out that many things doctypes enable are already possible with microformats---you just have to do them a bit differently than you'd think, depending on your background.
 

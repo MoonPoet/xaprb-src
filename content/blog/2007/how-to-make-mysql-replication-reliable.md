@@ -101,13 +101,9 @@ If you're here looking for a solution to this problem and this is the first time
 
 #### 3.3 Be careful replicating only some databases
 
-If you want to replicate only certain databases and not others, you need to be very careful. It is possible to make a change to a database that should be replicated to the replica, but will not be because of how you executed the query. Take a look at this introductory paragraph from the manual:
+If you want to replicate only certain databases and not others, you need to be very careful. It is possible to make a change to a database that should be replicated to the replica, but will not be because of how you executed the query. Take a look at this introductory paragraph from the [manual](http://dev.mysql.com/doc/refman/5.0/en/replication-rules.html):
 
-<blockquote cite="http://dev.mysql.com/doc/refman/5.0/en/replication-rules.html">
-  <p>
-    If a master server does not write a statement to its binary log, the statement is not replicated. If the server does log the statement, the statement is sent to all replicas and each replica determines whether to execute it or ignore it.
-  </p>
-</blockquote>
+> If a master server does not write a statement to its binary log, the statement is not replicated. If the server does log the statement, the statement is sent to all replicas and each replica determines whether to execute it or ignore it.
 
 Notice, you need to pay attention to *both master and replica* configuration. Read more about [replication rules](http://dev.mysql.com/doc/refman/5.0/en/replication-rules.html)---I won't duplicate the manual here. In general, if you are replicating everything except the mysql database, and you never make that your default database, you will probably be okay.
 

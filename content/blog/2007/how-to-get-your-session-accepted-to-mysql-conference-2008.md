@@ -47,11 +47,7 @@ Your biography is displayed right below your proposal. I look at it when I rank 
 
 Some of the best biographies are the shortest ones. Not to pick favorites, but here's a good example from last year:
 
-<blockquote cite="http://conferences.oreillynet.com/cs/mysqluc2007/view/e_spkr/3190">
-  <p>
-    Petr Chardin authored MySQL server log tables. While working for MySQL he also authored MySQL Instance Manager cross-platform server, which serves for remote configuration and management of database server nodes. Petr lives in Moscow and works for Google.
-  </p>
-</blockquote>
+> Petr Chardin authored MySQL server log tables. While working for MySQL he also authored MySQL Instance Manager cross-platform server, which serves for remote configuration and management of database server nodes. Petr lives in Moscow and works for Google.
 
 That is a good bio, but not because Petr used to work for MySQL and now works for Google---it's good because it gets to the point right away and has zero fluff.
 

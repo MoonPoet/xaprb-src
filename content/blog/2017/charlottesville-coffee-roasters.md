@@ -5,7 +5,9 @@ categories:
 - Craft
 date: 2017-02-26T10:17:09-05:00
 description: "Here's a sampling of Charlottesville's vibrant coffee scene."
-image: "/media/2017/02/coffee.jpg"
+credit: "https://unsplash.com/photos/XOhI_kW_TaM"
+image: "/media/2017/02/unsplash-photos-XOhI_kW_TaM.jpg"
+thumbnail: /media/2017/02/unsplash-photos-XOhI_kW_TaM.tn-500x500.jpg
 title: Charlottesville Coffee Roasters
 ---
 

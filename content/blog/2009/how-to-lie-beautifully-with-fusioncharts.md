@@ -8,11 +8,8 @@ categories:
 ---
 Gotta love those three-dimensional charts. They sure are shiny! Look at this:
 
-<div id="attachment_1311" class="wp-caption aligncenter" style="width: 474px">
-  <img src="/media/2009/09/graphs.png" alt="FusionCharts graphs" title="FusionCharts graphs" width="464" height="195" class="size-full wp-image-1311" /><p class="wp-caption-text">
-    FusionCharts graphs
-  </p>
-</div>
+
+![FusionCharts graphs](/media/2009/09/graphs.png)
 
 This is a screenshot of [FusionCharts graphs](http://www.fusioncharts.com/). But wait, on closer inspection: 5 and 7 are the same height? 6 is exactly twice as tall as 2?
 

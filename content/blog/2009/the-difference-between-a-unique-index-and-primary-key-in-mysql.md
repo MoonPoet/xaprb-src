@@ -32,11 +32,7 @@ select * from t;
 
 Wrong. Our arch-enemy `NULL` [messes things up](http://dev.mysql.com/doc/en/create-index.html) again:
 
-<blockquote cite="http://dev.mysql.com/doc/en/create-index.html">
-  <p>
-    A UNIQUE index creates a constraint such that all values in the index must be distinct. An error occurs if you try to add a new row with a key value that matches an existing row. This constraint does not apply to NULL values except for the BDB storage engine. For other engines, a UNIQUE index allows multiple NULL values for columns that can contain NULL
-  </p>
-</blockquote>
+> A UNIQUE index creates a constraint such that all values in the index must be distinct. An error occurs if you try to add a new row with a key value that matches an existing row. This constraint does not apply to NULL values except for the BDB storage engine. For other engines, a UNIQUE index allows multiple NULL values for columns that can contain NULL
 
 MySQL doesn't let you define a primary key over nullable columns, for this reason. This is as of version 4.0, I believe---I recall that in version 3.23 there was nothing special about a primary key; it was just a unique non-nullable index named PRIMARY.
 

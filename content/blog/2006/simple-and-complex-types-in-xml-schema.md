@@ -31,13 +31,9 @@ WSDL is written with [XML Schema](http://www.w3.org/XML/Schema), so I'm looking 
 
 ### The simple answer
 
-The most succinct answer is as follows:
+The most succinct [answer](http://www.w3.org/TR/xmlschema-0/#DefnDeclars) is as follows:
 
-<blockquote cite="http://www.w3.org/TR/xmlschema-0/#DefnDeclars">
-  <p>
-    In XML Schema, there is a basic difference between complex types which allow elements in their content and may carry attributes, and simple types which cannot have element content and cannot carry attributes.
-  </p>
-</blockquote>
+> In XML Schema, there is a basic difference between complex types which allow elements in their content and may carry attributes, and simple types which cannot have element content and cannot carry attributes.
 
 That's from the [XML Schema Primer](http://www.w3.org/TR/xmlschema-0/), which I *highly* recommend. I think it's probably the best introduction to XML Schema.
 
@@ -70,6 +66,4 @@ This is pretty simple. Why do I have to refresh my memory whenever I haven't wor
 
 Just to clarify: elements have an element type, and their content has a content type. By the way, attributes can only have simple types, because they cannot themselves have attributes or children.
 
-For further reading, I again heartily recommend the Primer linked above. Another good resource is Priscilla Walmsley's <span class="title">Definitive XML Schema</span>. She not only knows her stuff (she's part of the W3C XML Schema Working Group), but she writes very well.
-
-
+For further reading, I again heartily recommend the Primer linked above. Another good resource is Priscilla Walmsley's Definitive XML Schema. She not only knows her stuff (she's part of the W3C XML Schema Working Group), but she writes very well.

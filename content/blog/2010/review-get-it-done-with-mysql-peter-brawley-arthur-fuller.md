@@ -6,13 +6,9 @@ categories:
   - Databases
   - Reviews
 ---
-<div id="attachment_1585" class="wp-caption alignleft" style="width: 160px">
-  <a href="http://www.artfulsoftware.com/"><img src="/media/2010/01/get_it_done_with_mysql-150x150.png" alt="Get it Done with MySQL 5&6" title="Get it Done with MySQL 5&6" width="150" height="150" class="size-thumbnail wp-image-1585" /></a><p class="wp-caption-text">
-    Get it Done with MySQL 5&#038;6
-  </p>
-</div>
-
 [Get it Done with MySQL 5&6](http://www.artfulsoftware.com/). By Peter Brawley and Arthur Fuller. Self-published, 2009. Page count: about 615 pages. I asked the authors for a print edition to review, but it is also available as an e-book.
+
+[![Get it Done with MySQL 5 & 6](/media/2010/01/get_it_done_with_mysql-150x150.png "fr pa1")](http://www.artfulsoftware.com/)
 
 The right word to describe this book falls somewhere between "tome" and "lunker." You could beat back an unwelcome salesperson with it. You could also beat back any number of stubborn database problems. It's kind of like a MySQL Manual plus a ton of practical how-to-use-MySQL information.
 

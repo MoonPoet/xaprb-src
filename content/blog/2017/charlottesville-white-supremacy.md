@@ -109,7 +109,7 @@ And this compilation of video from News2Share provides a good overview as well:
 
 {{< youtube Thhd-VM6mW4 >}}
 
-<br>You can also browse [Getty's photos of the event](http://www.gettyimages.com/search/events/775021132).
+You can also browse [Getty's photos of the event](http://www.gettyimages.com/search/events/775021132).
 
 I have many more thoughts about what happened in Charlottesville on August 11 and 12 and the days that followed. I will stop at this for now, but I will leave you with this closing thought:
 

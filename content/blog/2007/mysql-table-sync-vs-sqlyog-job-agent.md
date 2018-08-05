@@ -19,11 +19,7 @@ There is no changelog for SJA alone, but Rohit pointed me to the [FAQ entry for 
 
 I downloaded version 5.27 of SJA on April 2, noticed some potential issues with it, and contacted Rohit to discuss those. I saw it was issuing the statements to resolve differences in a sequence that would cause problems---`DELETE`, `INSERT`, `UPDATE`. Indeed, I browsed the help forums and saw this order of operations was an attempt to fix problems caused by syncing in the order `INSERT`, `UPDATE`, `DELETE`:
 
-<blockquote cite="http://www.webyog.com/forums/index.phpshowtopic=3135">
-  <p>
-    We recently changed the order of operation for DATASYNC from INSERT -> DELETE -> UPDATE to DELETE -> INSERT -> UPDATE. That can be confusing (rows will be deleted and next inserted), but in the end data should come there.
-  </p>
-</blockquote>
+> We recently changed the order of operation for DATASYNC from INSERT -> DELETE -> UPDATE to DELETE -> INSERT -> UPDATE. That can be confusing (rows will be deleted and next inserted), but in the end data should come there.
 
 There can still be problems even with the new order of operations, and I saw strange behavior in the sync jobs I ran. For example, to sync a table that was merely missing 500 rows, it was deleting 103 rows and then inserting 603, instead of just inserting 500. I asked Rohit about this, and he confirmed it was a bug that was fixed in version 5.28:
 

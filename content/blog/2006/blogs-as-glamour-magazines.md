@@ -31,13 +31,9 @@ Glamour magazines are often similarly unoriginal. At first glance, many articles
 
 ### How glamour magazines are better
 
-I wish it weren't true, but glamour magazines are often written better than blogs. For example, let me pick on one particular blog which claims to be well written, and is therefore a fair target for criticism: [Good Copywriting](http://www.goodcopywriting.com). The second post contained this text urging people to clean up their spelling:
+I wish it weren't true, but glamour magazines are often written better than blogs. For example, let me pick on one particular blog which claims to be well written, and is therefore a fair target for criticism: Good Copywriting[^1]. The second post contained this text urging people to clean up their spelling:
 
-<blockquote cite="http://goodcopywriting.com/general-copywriting/the-state-of-copywriting-and-the-web/">
-  <p>
-    Spelling, grammar, what? This is an all too common mistake I find on the web. Web sites, even professional ones, are riddled with simple spelling and gramatical mistakes... Run your site through a spell checker and grammar checker...
-  </p>
-</blockquote>
+> Spelling, grammar, what? This is an all too common mistake I find on the web. Web sites, even professional ones, are riddled with simple spelling and gramatical mistakes... Run your site through a spell checker and grammar checker...
 
 Amusingly, the author misspelled "definitely" as "definately" a few paragraphs later. I corrected this in a comment, which never got approved by the moderator---but minutes later, the spelling was fixed. Subsequent posts have been just as bad, with jewels like "truely" (twice in a couple of sentences!), "guarenteed," "an equal's sign," "brining" (should be "bringing"), "effected" (instead of "affected"---there is a difference), run-on sentences, and so forth. Glamour magazines, for all their faults, generally seem to be proofread!
 
@@ -47,4 +43,4 @@ I don't have a crystal ball, but I have a feeling people will tire of repetitive
 
 One final note: please feel free to leave comments telling me how I can improve my own writing, too!
 
-
+[^1] Good Copywriting is now defunct.

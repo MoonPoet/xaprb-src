@@ -5,10 +5,6 @@ url: /blog/2005/12/20/javascript-date-parsing/
 categories:
   - Web
 ---
-<p style="border:solid red 1px; background:yellow">
-  If you have questions or comments or bugs report, or a change to make, be sure to use the project's new homepage: <a href="http://code.google.com/p/flexible-js-formatting/">Flexible JS Formatting Libraries</a>
-</p>
-
 In this post I'll explain how I built on my runtime [date-formatting functionality](/blog/2005/12/12/javascript-closures-for-runtime-efficiency/) into the date-parsing realm. The result is a date-parsing library that literally creates itself at runtime.
 
 ### The demo

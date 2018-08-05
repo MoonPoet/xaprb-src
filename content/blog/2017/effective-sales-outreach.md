@@ -6,6 +6,7 @@ categories:
 date: 2017-10-03 00:00:00 -0400
 description: The best sales outreach is simple, direct, and polite.
 image: /media/2017/10/turbine.jpg
+credit: https://pixabay.com/en/turbine-aircraft-motor-rotor-590354/
 title: Effective Sales Outreach
 
 ---
@@ -35,26 +36,21 @@ The best sales outreach emails optimize for simplicity and directness. They make
 
 Here's a pretty good email I got recently.
 
-<blockquote>
-<p>Subject: Work Together<br>
-Hi Baron,<br>
-I wanted to find out if you have any design needs at VividCortex (redesign, landing pages, UX, etc) ? We can increase sales, engagement, and conversions through our design and UX strategies. Interested?  Email me back, I’d love to chat. :)</p>
-</blockquote>
+> Subject: Work Together \
+> Hi Baron, \
+> I wanted to find out if you have any design needs at VividCortex (redesign, landing pages, UX, etc) ? We can increase sales, engagement, and conversions through our design and UX strategies. Interested?  Email me back, I’d love to chat. :)
 
 It's not perfect. The subject line could have been better (try "Design/UX Help") and the first sentence could have been even shorter "Do you need any design help..." but otherwise it's great. It's concise and to the point.
 
 One that never works on me is the fake CEO referral.
 
-<blockquote>
-<p>Subject: FW: Reach out to Baron<br>
-Hey Baron, my CEO asked me to reach out to you, blah blah
-Thanks, John Smith</p>
-<blockquote>
-<p>From: Joe Englewood<br>
-Subject: Reach out to Baron<br>
-Hey John, I've been hearing a lot about Baron Schwartz at VividCortex lately. What they're doing is super interesting and impressive. We were just talking with the group about it. Would you please reach out to him and set something up?</p>
-</blockquote>
-</blockquote>
+> Subject: FW: Reach out to Baron \
+> Hey Baron, my CEO asked me to reach out to you, blah blah \
+> Thanks, John Smith
+>
+>> From: Joe Englewood \
+>> Subject: Reach out to Baron \
+>> Hey John, I've been hearing a lot about Baron Schwartz at VividCortex lately. What they're doing is super interesting and impressive. We were just talking with the group about it. Would you please reach out to him and set something up?
 
 That's just a gimmick. Those kinds of things don't work. They're a turnoff.
 
