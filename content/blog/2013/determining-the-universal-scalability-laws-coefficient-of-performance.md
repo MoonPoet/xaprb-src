@@ -3,7 +3,7 @@ title: "Determining the Universal Scalability Law's coefficient of performance"
 url: /blog/2013/01/02/determining-the-universal-scalability-laws-coefficient-of-performance/
 date: "2013-01-02"
 description: "The Universal Scalability Law has a hidden coefficient."
-image: "media/2013/01/coeff-of-performance.png"
+image: "/media/2013/01/coeff-of-performance.png"
 categories:
   - Scalability
   - Math

@@ -2,7 +2,7 @@
 title: Dirty pages, fast shutdown, and write combining
 date: "2010-05-25"
 url: /blog/2010/05/25/dirty-pages-fast-shutdown-and-write-combining/
-image: "media/2010/05/ligatures.jpg"
+image: "/media/2010/05/ligatures.jpg"
 description: "The question of how much data to write, and how fast, is a difficult one."
 categories:
   - Databases

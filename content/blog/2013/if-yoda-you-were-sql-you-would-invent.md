@@ -2,7 +2,7 @@
 title: If yoda you were, SQL you would invent
 date: "2013-02-01"
 url: /blog/2013/02/01/if-yoda-you-were-sql-you-would-invent/
-image: "media/2013/02/34182677.jpg"
+image: "/media/2013/02/34182677.jpg"
 description: "Make sense, SQL does not."
 categories:
   - Databases

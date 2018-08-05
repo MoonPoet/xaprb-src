@@ -3,7 +3,7 @@ title: How To Prevent Database Deadlocks In InnoDB
 date: "2006-08-03"
 url: /blog/2006/08/03/a-little-known-way-to-cause-a-database-deadlock/
 description: "What causes MySQL and InnoDB database deadlocks and how to avoid them."
-image: media/2006/03/wrestlers.jpg
+image: "/media/2006/03/wrestlers.jpg"
 categories:
   - Databases
 ---

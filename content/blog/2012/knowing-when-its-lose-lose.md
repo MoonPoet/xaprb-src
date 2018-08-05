@@ -2,7 +2,7 @@
 title: "Knowing when it's lose-lose"
 date: "2012-04-03"
 url: /blog/2012/04/03/knowing-when-its-lose-lose/
-image: "media/2012/04/defeat.jpg"
+image: "/media/2012/04/defeat.jpg"
 description: "Choose your battles."
 categories:
   - Databases

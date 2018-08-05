@@ -2,7 +2,7 @@
 title: Model-view-controller considered harmful
 date: "2013-04-17"
 url: /blog/2013/04/17/model-view-controller-considered-harmful/
-image: media/2013/04/rectabular-excrusion-bracket.png
+image: "/media/2013/04/rectabular-excrusion-bracket.png"
 description: "Maintainable designs and MVC don't necessarily mean the same thing."
 categories:
   - Commentary
