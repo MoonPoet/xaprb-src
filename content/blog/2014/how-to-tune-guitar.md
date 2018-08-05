@@ -7,6 +7,7 @@ categories:
   - Music
   - Best Of
 image: /media/2014/01/guitar-tuning.jpg
+credit: http://www.flickr.com/photos/angelocesare/249168890/
 ---
 Do you know how to tune a guitar? I mean, do you *really* know how to tune a
 guitar?
@@ -34,9 +35,7 @@ version," you won't find it here, because I find the math, physics, and theory
 of tuning to be fascinating, and I want to share that and not just the quick
 how-to.
 
-<!--more-->
-
-If you practice and train yourself to hear in the correct way, with a little time you'll be able to tune a guitar by just striking the open strings, without using harmonics or frets. You'll be able to do this quickly, and the result will be a guitar that sounds truly active, alive, energetic, amazing --- much better results than you'll get with a digital tuner. As a bonus, you'll impress all of your friends.
+If you practice and train yourself to hear in the correct way, with a little time you'll be able to tune a guitar by just striking the open strings, without using harmonics or frets. You'll be able to do this quickly, and the result will be a guitar that sounds truly active, alive, energetic, amazing---much better results than you'll get with a digital tuner. As a bonus, you'll impress all of your friends.
 
 ### My Personal History With Tuning
 
@@ -108,23 +107,21 @@ octave, the frequency increase from one note to the next is the twelfth root of
 Staying with Western music, where we define the A above middle C to have the
 frequency of 440Hz, the scale from A220 to A440 is as follows:
 
-```
-Note     Frequency
-=======  =========
-A220     220.0000
-A-sharp  233.0819
-B        246.9417
-C        261.6256
-C-sharp  277.1826
-D        293.6648
-D-sharp  311.1270
-E        329.6276
-F        349.2282
-F-sharp  369.9944
-G        391.9954
-G-sharp  415.3047
-A440     440.0000
-```
+|Note   | Frequency|
+|-------| --------:|
+|A220    |220.0000|
+|A&sharp;|233.0819|
+|B       |246.9417|
+|C       |261.6256|
+|C&sharp;|277.1826|
+|D       |293.6648|
+|D&sharp;|311.1270|
+|E       |329.6276|
+|F       |349.2282|
+|F&sharp;|369.9944|
+|G       |391.9954|
+|G&sharp;|415.3047|
+|A440    |440.0000|
 
 We'll refer back to this later.
 
@@ -139,18 +136,16 @@ count upwards five notes on a major scale, you'll reach the second note in the
 interval. Here's the C scale, with the intervals between the lowest C and the
 given note listed at the right:
 
-```
-Note  Name  Interval from C
-====  ====  ===============
-C     Do    Unison
-D     Re    Major 2nd
-E     Mi    Major 3rd
-F     Fa    4th (sometimes called Perfect 4th)
-G     So    5th (a.k.a. Perfect 5th)
-A     La    Major 6th
-B     Ti    Major 7th
-C     Do    Octave (8th)
-```
+| Note | Name | Interval from C                   |
+| ---- | ---- |:---------------                   |
+| C    | Do   | Unison                            |
+| D    | Re   | Major 2nd                         |
+| E    | Mi   | Major 3rd                         |
+| F    | Fa   | 4th (sometimes called Perfect 4th)|
+| G    | So   | 5th (a.k.a. Perfect 5th)          |
+| A    | La   | Major 6th                         |
+| B    | Ti   | Major 7th                         |
+| C    | Do   | Octave (8th)                      |
 
 On the guitar, adjacent strings form intervals of fourths, except for the
 interval between the G and B strings, which is a major third.
@@ -236,7 +231,7 @@ this more than a couple of times a day initially.
 
 The fatigue is real, by the way. As I mentioned previously, being able to
 hear beats and ignore the richness of the sound to pick out weak overtones is
-a complex physical, mental, and neurological skill --- and there
+a complex physical, mental, and neurological skill---and there
 are probably other factors too. I'd be interested in seeing brain scans of an
 accomplished tuner at work. Lee Flory was not young, and he told me that his
 audiologist said his hearing had not decayed with age. This surprised the
@@ -274,9 +269,9 @@ Oh no! Was it all a lie? Without these relationships, does tuning fall apart?
 Not really. In the equal-tempered tuning, in fact, **there is only one perfect
 interval: the octave**. All other intervals are imperfect, or "tempered."
 
-* The 5th is a little "narrow" -- the higher note in the interval is slightly
+* The 5th is a little "narrow"---the higher note in the interval is slightly
   flat
-* The 4th is a little "wide" -- the higher note is sharp
+* The 4th is a little "wide"---the higher note is sharp
 * The major 3rd is even wider than the 4th
 
 Other intervals are wide or narrow, just depending on where their frequencies fall
@@ -437,7 +432,7 @@ You're almost done! Strike the open B and E strings, and listen for the same ove
 
 Run a couple of quick checks to see whether you got things right. First, check your high E against your low E. They are two octaves apart, so listen to the beating of the high E string. It should be very slow or nonexistent. If there's a little beating, don't worry about it. You'll get better with time, and it'll never be perfect anyway, for reasons we'll discuss later.
 
-You can also check the low E against the open B string, and listen for beating at the B note, which is the 3rd overtone of the E string. The B should be very slightly narrow (flat) --- theoretically, you should hear about 1/4th of a beat.
+You can also check the low E against the open B string, and listen for beating at the B note, which is the 3rd overtone of the E string. The B should be very slightly narrow (flat)---theoretically, you should hear about 1/4th of a beat.
 
 Also theoretically, you could tune the high B and E strings against the low open E using the same overtones. However, due to imperfections in strings and the slowness of the beating, this is usually much harder to do. As a result, you'll end up with high strings that don't sound good together. A general rule of thumb is that it's easier to hear out-of-tune-ness in notes that are a) closer in pitch and b) higher pitched, so you should generally "tune locally" rather than "tuning at a distance." If you don't get the high strings tuned well together, you'll get really ugly-sounding intervals such as the following:
 
@@ -501,7 +496,7 @@ If you do the math on higher overtones, you'll notice a few other interesting in
 
 * **Open A String to Open B String.** The 9th overtone of the open A string is a high B note at 990Hz, and the 4th overtone of the open B is a high B at 987.77HZ. If you can hear this high note, you should hear it beating just over twice per second. The interval between the A and B strings is a minor 7th, which should be slightly narrow. Thus, if you tune the B until the beating disappears, you should then flatten it two beats.
 * **Open D String to Open E String.** This is also a minor 7th interval. You're listening for a very high E note, at 1321.5Hz on the D string, and 1318.5 on the E string, which is 3 beats narrow.
-* **Open D String to Open B String.** The 5th overtone of the D string is similar to the 3rd overtone of the B string. This interval is about 6 and 2/3 beats wide. This is a bit hard to hear at first, but you're listening for a high F-sharp.
+* **Open D String to Open B String.** The 5th overtone of the D string is similar to the 3rd overtone of the B string. This interval is about 6 and 2/3 beats wide. This is a bit hard to hear at first, but you're listening for a high F&sharp;.
 
 ### Systems for Tuning Arbitrary Instruments
 
