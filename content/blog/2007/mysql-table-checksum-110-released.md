@@ -16,7 +16,7 @@ While I was at last week's conference, Martin Friebe and I went to supper and he
 
 The technique is implemented in two ways: with a variable accumulator (a modified version of the original checksum queries I wrote about in previous articles), and with a BIT_XOR checksum similar to the checksum queries used by [MySQL Table Sync](http://code.google.com/p/maatkit). Each method has strengths and weaknesses.
 
-It's now practical -- nay, easy -- to run MySQL Table Checksum from a cron job, and just as easy to check whether a replica is out of sync with the master. First, you create a table to hold the checksums:
+It's now practical---nay, easy---to run MySQL Table Checksum from a cron job, and just as easy to check whether a replica is out of sync with the master. First, you create a table to hold the checksums:
 
 ```
 CREATE TABLE test.checksum (

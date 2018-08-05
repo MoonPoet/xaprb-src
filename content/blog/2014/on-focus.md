@@ -51,15 +51,15 @@ The benefit of focusing is simple: efficiency. The more concentrated your effort
 If you examine some of the effects of distraction, the benefits of focus should become clear. I won't belabor this point, but I'll note that every new activity or idea has a compound effect. We tend to be biased to see the potential benefits much more than the likely drawbacks, which is part of why new ideas are so alluring. We see, for example, that a new product feature will enrich and enable and empower. But do we see that to do it right, we're obligated to integrate it smoothly with all existing and future product features, to maintain it, to test it, to train, to document, to support? [Usually not][cost]. We usually see compound benefits, but neglect to see compounded costs and risks, especially those that come from failure to execute fully and excellently.
 
 >  Focus is putting what’s most important first and protecting its right to be there.
-(typically by saying "No" to everything else) --- [Vanessa Hurst](http://vanessahurst.com/post/83405785577/focus-is-putting-whats-most-important-first-and)
+(typically by saying "No" to everything else)---[Vanessa Hurst](http://vanessahurst.com/post/83405785577/focus-is-putting-whats-most-important-first-and)
 
 Many people I admire achieve amazing things precisely because they complete one thing and then build something new on top of it, rather than always having everything in a glorious state of perfect incompletion. The "secret" to their success is the willpower to patiently bring things to completion.
 
 In fact, I often think about focus in terms of WIP (work-in-progress), a term you'll hear in Lean, Agile, Kanban, and other circles. Focus and WIP are inversely related. Focus is the ability to say "not yet," to finish work in progress before starting new things.
 
-The danger of not doing this --- the danger of saying yes to opportunity --- is that you'll load so much gold into the boat that you sink the whole thing. I find it helpful to consider each new opportunity or idea from this perspective.
+The danger of not doing this---the danger of saying yes to opportunity---is that you'll load so much gold into the boat that you sink the whole thing. I find it helpful to consider each new opportunity or idea from this perspective.
 
-Can you have too much focus? Certainly, but it's not focus. It's perfectionism, which is another type of fear. In my experience, individuals can be perfectionists, but organizations --- I've never seen that. And even perfectionist individuals suffer from a perverse lack of focus, because they focus on the perfection of the thing they want to achieve, rather than the benefits they want to achieve. Focusing on the benefits you want is an antidote to perfectionism. I write from deep personal experience on this topic.
+Can you have too much focus? Certainly, but it's not focus. It's perfectionism, which is another type of fear. In my experience, individuals can be perfectionists, but organizations---I've never seen that. And even perfectionist individuals suffer from a perverse lack of focus, because they focus on the perfection of the thing they want to achieve, rather than the benefits they want to achieve. Focusing on the benefits you want is an antidote to perfectionism. I write from deep personal experience on this topic.
 
 I also want to point out that the type of execution-to-completion I'm discussing is emphatically not anti-Agile. Shipping early and often is part of getting something to completion as soon as possible, achieving the best final product, and lowering waste. Completion and excellence in execution are often conflated with perfectionism and reluctance to release partial work. They're not the same, and treating them as synonymous is a huge mistake.
 
@@ -67,7 +67,7 @@ I also want to point out that the type of execution-to-completion I'm discussing
 
 If you're a manager, it can be difficult to help your team stay focused, because you need to coach them through their natural impatience and discouragement without demotivating them. This is no easy thing, but nobody said management is easy.
 
-Although it's true that [focus starts with saying no](http://www.paperplanes.de/2014/6/2/focus-starts-by-saying-no.html), say it carefully. Someone who has a good idea that is struck down can easily take it personally, especially if the idea was rejected ingraciously. It helps to put the emphasis on the idea and not the person. It also helps to take the emphasis *away* from the idea and draw it back towards the work in progress, and the outcome you're working for --- to redirect the conversation into a "yes" for something else, instead of saying "no" to the idea itself.
+Although it's true that [focus starts with saying no](http://www.paperplanes.de/2014/6/2/focus-starts-by-saying-no.html), say it carefully. Someone who has a good idea that is struck down can easily take it personally, especially if the idea was rejected ingraciously. It helps to put the emphasis on the idea and not the person. It also helps to take the emphasis *away* from the idea and draw it back towards the work in progress, and the outcome you're working for---to redirect the conversation into a "yes" for something else, instead of saying "no" to the idea itself.
 
 Another suggestion is to avoid saying "no" and to say "yes, later" instead. This is itself a way of focusing.
 
@@ -99,7 +99,7 @@ Focused organizations are made of focused people. It's that simple. If your peop
 
 Speaking personally, my patience and ability to continue working on things that are in progress, and my reluctance to admit distraction, is not something I was born with. Remaining serene and keeping an eye on the goal is a skill that I believe anyone can nurture and grow.
 
-For me, it's now part of my underlying worldview. I believe, and my experience has been, that whatever I focus on, whatever I give my attention to, will gradually become my reality. I believe that mindfulness --- the ability to observe choose my thoughts, and by proxy to direct my thoughts intentionally --- is the source of my ability to direct my life.
+For me, it's now part of my underlying worldview. I believe, and my experience has been, that whatever I focus on, whatever I give my attention to, will gradually become my reality. I believe that mindfulness---the ability to observe choose my thoughts, and by proxy to direct my thoughts intentionally---is the source of my ability to direct my life.
 
 ![Cityscape][cityscape]
 
@@ -117,7 +117,7 @@ One way to avoid effort is to become interested in what you want. The ability to
 
 Rather than fighting or working for focus, I suggest that you become a focused person through a daily practice of your choosing.
 
-Everyone's practice will be different. The key is to find something that works for you, and is so rewarding that you find it indispensable --- something you "couldn't live without." If you don't know where to start, ask advice from people you admire. If you want what they have gotten, consider doing what they have done. Look at anyone else in your life and assess them the same way.
+Everyone's practice will be different. The key is to find something that works for you, and is so rewarding that you find it indispensable---something you "couldn't live without." If you don't know where to start, ask advice from people you admire. If you want what they have gotten, consider doing what they have done. Look at anyone else in your life and assess them the same way.
 
 I'll give a couple of examples. One is mindfulness and meditation. For an example, see [Brad Feld's blog][bradfeldmeditation]. He has written a great deal about the benefits he's seen since beginning to practice meditation. His personal practice is based on the [Headspace Project](http://www.getsomeheadspace.com/), which I can also say has worked well for me.
 

@@ -6,6 +6,6 @@ categories:
   - Conferences
   - Databases
 ---
-I am speaking at [Enterprise LAMP](http://enterpriselamp.org/) [Summit 2009](http://enterpriselamp.org/summit/) (and also should be speaking at the [Camp](http://enterpriselamp.org/camp/) the next day, but I see the schedule isn't quite updated yet). My talk at the Summit will *not* be on the future landscape of MySQL -- that's a mistake. My talk's title isn't finalized yet.
+I am speaking at [Enterprise LAMP](http://enterpriselamp.org/) [Summit 2009](http://enterpriselamp.org/summit/) (and also should be speaking at the [Camp](http://enterpriselamp.org/camp/) the next day, but I see the schedule isn't quite updated yet). My talk at the Summit will *not* be on the future landscape of MySQL---that's a mistake. My talk's title isn't finalized yet.
 
 This conference is the first weekend in November, in the Nashville area. I hope to see you there!

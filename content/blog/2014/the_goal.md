@@ -18,7 +18,7 @@ Cary Millsap, about whom I have written quite a bit elsewhere on this blog, sugg
 
 <!--more-->
 
-*The Goal* helped me relate what I had learned about performance in the computer context --- queueing theory, system optimization, computer architecture, and so on --- to organizations. It taught me that, at least in some senses, humans and their interactions form systems that obey fundamentally the same laws as computer components. This is not to dehumanize people and treat them as components. Far from it: *The Goal* helped me to organize my thoughts and knowledge about computers by giving me human analogies. It helped me deepen and strengthen my intuition about how things work.
+*The Goal* helped me relate what I had learned about performance in the computer context---queueing theory, system optimization, computer architecture, and so on---to organizations. It taught me that, at least in some senses, humans and their interactions form systems that obey fundamentally the same laws as computer components. This is not to dehumanize people and treat them as components. Far from it: *The Goal* helped me to organize my thoughts and knowledge about computers by giving me human analogies. It helped me deepen and strengthen my intuition about how things work.
 
 I will summarize some of the main points of *The Goal* in this article, but I encourage you to read the book. It is a parable in the form of a novel, similar in some ways to Daniel Quinn's [*Ishmael*]({{< amz 0553375407 >}}) or Dan Millman's [*Way Of The Peaceful Warrior*]({{< amz 1932073205 >}}).
 
@@ -115,7 +115,7 @@ Another major theme that jumped out at me was the ways in which the lack of proc
 
 ### Conclusion
 
-*The Goal* helped me reduce the complexity of a large consulting group and its attendant business processes and pains to simplest possible terms --- things I could understand and relate clearly to myself and to others. The principles and concepts that weave through *The Goal* are easy to grasp and easy to work with, but at the same time there's little danger of over-simplification.
+*The Goal* helped me reduce the complexity of a large consulting group and its attendant business processes and pains to simplest possible terms---things I could understand and relate clearly to myself and to others. The principles and concepts that weave through *The Goal* are easy to grasp and easy to work with, but at the same time there's little danger of over-simplification.
 
 As an aside, *The Goal* contributed directly to the thought processes that led to my founding VividCortex, and to crucial breakthroughs such as defining a [system fault](https://vividcortex.com/blog/2014/04/24/fault-anomaly-detection/) in terms of throughput, inventory, and operating expense. You can read more about this in a [blog post][perfmgmt] explaining how and why VividCortex is different from a monitoring system.
 

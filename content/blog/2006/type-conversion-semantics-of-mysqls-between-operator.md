@@ -36,7 +36,7 @@ select d from date_test
    where d >= left(current_date, 7) and d <= last_day(current_date);
 ```
 
-That query does what I wanted -- it selects rows where `d` is in the current month. It behaves differently from `BETWEEN`. What's the difference?
+That query does what I wanted---it selects rows where `d` is in the current month. It behaves differently from `BETWEEN`. What's the difference?
 
 I have read through the manual to try to understand [MySQL's type conversion rules](http://dev.mysql.com/doc/refman/5.0/en/type-conversion.html) for these queries. The manual isn't crystal clear, and I can't figure out what conversion is really happening. Are things getting converted to strings? Dates? Dates are actually stored as 3-byte numbers; are they converted to numbers here? I can't tell.
 
@@ -76,7 +76,7 @@ Whatever '2006-09' is converted to is less than any legal date value, as far as 
 
 ### Conclusion
 
-The moral of this story is that it's always better to be explicit, and avoid queries that don't have an obvious type conversion. Especially with `BETWEEN`, it seems to be better to only use it when all three operands are the same type to begin with. I'm sure if I ran MySQL in a debugger, or read a lot of source code, I could figure it out, but that would be a disaster waiting to bite the next developer. Another good reason to avoid such ambiguities is to prevent changes in semantics from causing problems when we upgrade MySQL. Like every product, it has been known to break backwards compatibility, so I would never want to rely on implicit conversions (this bit me once before -- I had a similar [date puzzler on SQL Server](/blog/2005/12/04/sql-server-2000-date-and-time-puzzler/) too).
+The moral of this story is that it's always better to be explicit, and avoid queries that don't have an obvious type conversion. Especially with `BETWEEN`, it seems to be better to only use it when all three operands are the same type to begin with. I'm sure if I ran MySQL in a debugger, or read a lot of source code, I could figure it out, but that would be a disaster waiting to bite the next developer. Another good reason to avoid such ambiguities is to prevent changes in semantics from causing problems when we upgrade MySQL. Like every product, it has been known to break backwards compatibility, so I would never want to rely on implicit conversions (this bit me once before---I had a similar [date puzzler on SQL Server](/blog/2005/12/04/sql-server-2000-date-and-time-puzzler/) too).
 
 My new query, which I feel very confident about, is
 

@@ -24,7 +24,7 @@ similar):
 
 I've seen alerts like this before, but they were alerts about severe weather
 events, such as tornado watches. This one, frankly, looked like someone hacked
-into the Verizon network and sent out spam alarms. Seriously --- what the hell,
+into the Verizon network and sent out spam alarms. Seriously---what the hell,
 a license plate? What?
 
 Besides, it says **AMBER**, which is a cautionary color. It's not a red alert,
@@ -61,7 +61,7 @@ could have dreamed up something so stupid...
 But then I remember: oh, yeah. Pingdom alerts (we'll email you that your site is
 down, but we won't tell you an HTTP status code or anything else remotely
 useful.) Nagios alerts (we'll tell you `DISK CRITICAL` and follow that with
-`(44% inode=97%)` -- anyone know what that means?). And so on.
+`(44% inode=97%)`---anyone know what that means?). And so on.
 
 Perhaps the amber alert system was designed by a system administrator, not a
 politician.

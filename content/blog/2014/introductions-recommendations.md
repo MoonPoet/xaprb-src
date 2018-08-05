@@ -300,7 +300,7 @@ knows my work very well and has great stature in the industry. He could make a
 strong representation that we were interesting to investors.  His introductions
 were very helpful.
 
-Later I hired one of his employees -- someone who lived practically next door to
+Later I hired one of his employees---someone who lived practically next door to
 me, whose wife had a close relationship with my wife.  The last thing I wanted
 to do was burn any bridges for him; what if he got a better counter-offer, or
 decided at the last minute not to join? So although I normally would have said

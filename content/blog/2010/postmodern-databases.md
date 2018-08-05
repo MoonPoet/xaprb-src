@@ -12,6 +12,6 @@ categories:
 *   The absence of objective truth
 *   Queries return opinions, not facts
 
-I thought this was the best proposal I've heard for an alternative to the NoSQL moniker. And this is not bashing -- the absence of objective truth can actually be an enabling quality, not necessarily a drawback. There's a lot to compliment about the new databases, and calling them NoSQL is really a disservice -- like calling a car a horseless carriage.
+I thought this was the best proposal I've heard for an alternative to the NoSQL moniker. And this is not bashing---the absence of objective truth can actually be an enabling quality, not necessarily a drawback. There's a lot to compliment about the new databases, and calling them NoSQL is really a disservice---like calling a car a horseless carriage.
 
 

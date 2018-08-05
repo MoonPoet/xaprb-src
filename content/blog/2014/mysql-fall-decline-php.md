@@ -76,7 +76,7 @@ What do I believe? I think we all have so much more in common than we're aware
 of. I think we encounter substantially the same problems, solve them with
 the same solutions, and experience both success and failure in similar ways. I
 think we can learn much more from each other than we'd guess. And I think many
-of our beliefs about each other are simultaneously right and wrong -- the truth
+of our beliefs about each other are simultaneously right and wrong---the truth
 is much more nuanced and depends a lot more on perspective than on facts.
 
 [Photo credit](http://www.flickr.com/photos/haniamir/1455076844/)

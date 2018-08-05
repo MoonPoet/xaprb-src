@@ -21,7 +21,7 @@ my @uc_lamps = map { uc($_) } @lamps;
 # Result: PERL PHP PYTHON
 ```
 
-I just shoved the list in the right side, and it travelled right to left until finally it popped out on the left side and got assigned into `@uc_lamps`. You can do a lot more with `map`, though. In fact, it's pretty much infinitely powerful when it comes to transforming lists. It's really just a glorified loop, but if you think of it as a transformation from input to output, you can really make some elegant code with it. Here's another example -- make a key-value hash out of a delimited string:
+I just shoved the list in the right side, and it travelled right to left until finally it popped out on the left side and got assigned into `@uc_lamps`. You can do a lot more with `map`, though. In fact, it's pretty much infinitely powerful when it comes to transforming lists. It's really just a glorified loop, but if you think of it as a transformation from input to output, you can really make some elegant code with it. Here's another example---make a key-value hash out of a delimited string:
 
 ```
 my $input = "a:1,b:2,d:3";
@@ -248,7 +248,7 @@ If you're not a Perl wizard, your head is probably spinning at this point, so I'
 Newcomers to Perl often wonder where the `switch` statement is. If you really, really want to write something that looks like a `case` or `switch` block, you're a lost soul, but okay, `man perlfaq7`. And before you go there, since I know you're a lost soul, I'll give you this ticket to get a slightly cooler room in you-know-where: basically anything you'll ever want to do is explained in the Perl manual pages. Start with `man perlfaq` and go from there. Even if I can't convert you away from `switch`, perhaps I've made a difference by pointing you towards these man pages. Fare thee well! I hardly knew ye, gentle reader...
 
 
-If you're still reading, you're one of the ones walking the narrow path that leads to victory. Good! Let's talk about how to execute some code branch depending on the value of a variable. My favorite technique for this is to use a dispatch table of coderefs -- references to subroutines. This is a succinct way to dispatch execution to somewhere or other in your program, without the mess and tedious coding you get with `switch` statements. Believe me, if you've ever tried to maintain someone else's `switch` of any size, you're going to appreciate this.
+If you're still reading, you're one of the ones walking the narrow path that leads to victory. Good! Let's talk about how to execute some code branch depending on the value of a variable. My favorite technique for this is to use a dispatch table of coderefs---references to subroutines. This is a succinct way to dispatch execution to somewhere or other in your program, without the mess and tedious coding you get with `switch` statements. Believe me, if you've ever tried to maintain someone else's `switch` of any size, you're going to appreciate this.
 
 
 Let's say we have a hypothetical interactive program that waits for you to press a key and then does some function.
@@ -257,7 +257,7 @@ Let's say we have a hypothetical interactive program that waits for you to press
 Okay, I lied. It's not hypothetical. I use this technique extensively in innotop. Innotop has many dozens of key mappings, and they are mapped to different things depending on what mode you're in. "You pressed `c`? Oh wait, let me scroll through my big honkin' `switch` statement and see what that does... hang on, I'm getting there... can't find it... oh, you were in *that* mode! No wonder. Well, let me look at the `switch` statement for that mode, then..."
 
 
-Can you imagine? There's no way I'd have added so many features to innotop if it were this much of a pain to write, debug and understand. It doesn't really matter that I wrote it -- six months from now, I won't have a clue what all that code is doing. But I *will* be able to figure out what a keypress does, because I used a dispatch table.
+Can you imagine? There's no way I'd have added so many features to innotop if it were this much of a pain to write, debug and understand. It doesn't really matter that I wrote it---six months from now, I won't have a clue what all that code is doing. But I *will* be able to figure out what a keypress does, because I used a dispatch table.
 
 
 What exactly is a dispatch table? It's a hash of references to executable code. Let's make a simple example: a program that has just two modes, `display_a` and `display_b`. Each of these is handled by a subroutine of the same name. Here is a complete program that'll loop forever until you press `'q'`:
@@ -324,7 +324,7 @@ Because repetition kills brain cells. When you're typing nearly the same loop or
 
 By the same token, when you're reading code, you have to follow the program's logic to understand it. When most programmers study a `for` loop, I'd bet money they mentally "execute the loop," starting at the beginning and ending at the end, to understand the start, middle and end of the loop. Every careful coder I've known does this, at least sometimes, because it's how you understand what the computer is doing. Mentally executing loops is incredibly draining. It's just as bad as typing loops!
 
-The reality is probably even worse, because you're doing both at the same time. As soon as you type a loop, you're immediately reading it. Reading it. Reading it. As soon as you type -- Reading it. As -- Reading it. As soon as you -- as soon as you type -- type -- Reading it.
+The reality is probably even worse, because you're doing both at the same time. As soon as you type a loop, you're immediately reading it. Reading it. Reading it. As soon as you type---Reading it. As---Reading it. As soon as you---as soon as you type---type---Reading it.
 
 I'm not making this up. Studies show this is how people read any type of written material, on screen or off. In fact, one of the most important and difficult techniques to master in speed reading is to stop re-reading things you've just read. I'm doing it right now as I write this, backtracking and editing my writing (sometimes I type with my eyes closed so I can escape this trap more easily).
 

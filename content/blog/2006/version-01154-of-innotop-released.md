@@ -24,7 +24,7 @@ O'Reilly just published my article on [Open Tools for MySQL Administrators](http
 
 I am also watching the comments with interest. Someone has already mentioned a tool I didn't know existed, [moodss](http://jfontain.free.fr/mysql/). It is a modular system for monitoring lots of things, with what looks like very nice MySQL monitoring functionality. I haven't tried it, but I'm strongly considering installing it at work next week. I'll let you know what I think.
 
-I also got to work with chromatic -- he edited the article. It's a pleasure to be supported by someone so knowledgeable. In case you don't know, chromatic is a great Perl programmer and has written a book on Extreme Programming.
+I also got to work with chromatic---he edited the article. It's a pleasure to be supported by someone so knowledgeable. In case you don't know, chromatic is a great Perl programmer and has written a book on Extreme Programming.
 
 ### Miscellaneous
 

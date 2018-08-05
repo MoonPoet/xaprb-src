@@ -8,7 +8,7 @@ categories:
 ---
 <p>I've made the 1.0 release I promised yesterday, and it is available for download on the <a href="http://code.google.com/p/innotop/">innotop project homepage</a>.  I'm now working on version 1.3, which will become 1.4, which is on the road to version 2.0.  I've added a project roadmap for versions 1.4, 1.6, 1.8 and 2.0.</p>
 
-<p>Thanks to Sebastien Estienne, who is maintaining the Debian/Ubuntu innotop packages, for helping me decide how to arrange the source repository, branching and tagging practices, and more.  He's right -- once I have things set up right, it's not hard.  Go me!</p>
+<p>Thanks to Sebastien Estienne, who is maintaining the Debian/Ubuntu innotop packages, for helping me decide how to arrange the source repository, branching and tagging practices, and more.  He's right---once I have things set up right, it's not hard.  Go me!</p>
 
 <p>Lenz Grimmer contributed an RPM spec file, which users can use to build an installable RPM directly from the tarball on RPM-based systems.  As soon as I verify that I've gotten it right, I'll make an unstable 1.3 release.  I'll write more about it then.  I hope at least some people will begin using 1.3 so I get feedback on the (many) changes I've made.</p>
 
@@ -39,7 +39,7 @@ there for others to see on the command line, etc etc.  Lots of ideas.
 Send me yours :-)
 ```
 
-<p>I no longer have the code from that try -- it was little more than a shell script at that time.  But the first version of innotop I committed to my CVS repository is 444 lines, <em>including a sample of the InnoDB monitor output I pasted in for my reference</em>, and InnoDBParser.pm was 394 lines total.  It looked like this when I ran it from `watch`:</p>
+<p>I no longer have the code from that try---it was little more than a shell script at that time.  But the first version of innotop I committed to my CVS repository is 444 lines, <em>including a sample of the InnoDB monitor output I pasted in for my reference</em>, and InnoDBParser.pm was 394 lines total.  It looked like this when I ran it from `watch`:</p>
 
 <p><a href="/media/2007/01/innotop-blast-from-past.png"><img src="/media/2007/01/innotop-blast-from-past-thumb.png" alt="screenshot of innotop, CVS revision 1.1" /></a></p>
 

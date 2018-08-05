@@ -73,7 +73,7 @@ It ended up helping me avoid re-snapshotting a replica with a ton of data, so it
 
 This version fixes some badly optimized chunking queries. As I have mentioned in the past, the chunking behavior is preliminary and subject to change. This is still true, but this release is much smarter than the previous release! I have also fleshed out some methods of doing chunking on real-valued columns (float, decimal, and even character). I don't know when I'll get a chance to code, test, and release that.
 
-Even though much remains to be done, MySQL Table Checksum is still a great way to check that your replicas have the same data as the master. (In fact, it's the only way I know of -- and [MySQL employees themselves recommend MySQL Table Checksum](http://mysqlmusings.blogspot.com/2007/06/replication-poll-and-our-plans-for.html)).
+Even though much remains to be done, MySQL Table Checksum is still a great way to check that your replicas have the same data as the master. (In fact, it's the only way I know of---and [MySQL employees themselves recommend MySQL Table Checksum](http://mysqlmusings.blogspot.com/2007/06/replication-poll-and-our-plans-for.html)).
 
 Version 1.1.8
 

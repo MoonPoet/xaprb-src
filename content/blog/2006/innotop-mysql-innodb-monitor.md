@@ -26,7 +26,7 @@ I said innotop has lots of features and is really flexible.  Here's just a small
 
 
 * 11 different modes to show lots of information in very useful ways
-* completely configurable -- for example, you can choose which columns to see in every tabular display, in what order, what column to sort by, what direction to sort, add perl regex filters to any column, and on and on.
+* completely configurable---for example, you can choose which columns to see in every tabular display, in what order, what column to sort by, what direction to sort, add perl regex filters to any column, and on and on.
 * offers features no other tool gives you, period.  What was the date, time, and query (plus lots of other info!) of each transaction involved in the last deadlock?  No other tool can give you that.  And that's just one of its dozens of unique features.
 * it parses and displays InnoDB information, which is packed full of information.  No other tool even tries to do this.  Parsing the output of the InnoDB monitor is not for the faint of heart!
 * its interactive help and configuration make it very easy to learn and highly productive to use.  What keys are mapped in the current mode?  Press '?' and find out.  What configuration variables can you change?  Press a key and find out.  Every function has context-sensitive help to keep you productive.

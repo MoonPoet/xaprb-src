@@ -12,19 +12,19 @@ categories:
 [The Docker Book](http://www.dockerbook.com/) is a newly published book from
 James Turnbull, whose name you will recognize if you're at all familiar with
 DevOps, Puppet, or Docker itself. It's a nice introduction to what Docker is and
-how to get started using it. It's like Goldilocks --- not too detailed, not too
+how to get started using it. It's like Goldilocks---not too detailed, not too
 superficial, just right.
 
 The book starts from the basics, assuming no prior knowledge with Docker, or
 even most of the core concepts of virtualization, but moves quickly through
 these topics into installing Docker and getting started with it. The important
-and useful tasks --- starting, stopping, interacting with containers, running
-containers as daemons, and so on --- are all covered in the right amount of
+and useful tasks---starting, stopping, interacting with containers, running
+containers as daemons, and so on---are all covered in the right amount of
 detail.
 
 After this, the book switches into building your own images and using them for
 real things. There's a couple chapters dedicated to some sample applications.
-These aren't silly hello-world applications, either --- we're talking about
+These aren't silly hello-world applications, either---we're talking about
 real, useful apps, like your own continuous integration system running Jenkins CI.
 
 The final two chapters are about using the Docker API, getting help, and

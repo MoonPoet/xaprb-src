@@ -62,7 +62,7 @@ This reminded me a lot of a [recent keynote Jacek Becla gave at another conferen
 
 ### High Availability Linux
 
-This one started off with more from Josh Malone, who demoed [Nagios](http://www.nagios.org/) briefly and then talked about his storage and backup systems. He uses [BackupPC](http://backuppc.sourceforge.net/), which sounds pretty neat and very smart. We then talked about some of the things he's looking into doing, with audience suggestions to look into shared storage or [DRBD](http://www.drbd.org/). We also looked at [UltraMonkey](http://www.ultramonkey.org/) briefly -- it looks like it's stagnating, though. And the [Linux HA](http://linux-ha.org/) project.
+This one started off with more from Josh Malone, who demoed [Nagios](http://www.nagios.org/) briefly and then talked about his storage and backup systems. He uses [BackupPC](http://backuppc.sourceforge.net/), which sounds pretty neat and very smart. We then talked about some of the things he's looking into doing, with audience suggestions to look into shared storage or [DRBD](http://www.drbd.org/). We also looked at [UltraMonkey](http://www.ultramonkey.org/) briefly---it looks like it's stagnating, though. And the [Linux HA](http://linux-ha.org/) project.
 
 ### Google App Engine
 

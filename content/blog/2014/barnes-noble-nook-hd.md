@@ -51,7 +51,7 @@ Nook versions of some apps. These are fine too. Some of the games are even fun.
 Some of the apps have upgraded themselves with newer versions from the Google
 Play store, and it always notifies me about this.  I would also like to be able
 to [enable full-device encryption](/blog/2013/12/18/secure-your-accounts-and-devices/), but I can't (so I don't take it out of
-the house). Whatever -- these are minor things. Mostly, it's just fine.
+the house). Whatever---these are minor things. Mostly, it's just fine.
 
 The size, weight, and battery life are excellent. It is on the large end of the
 scale but it's nice and light, and lasts a long time on battery power. I

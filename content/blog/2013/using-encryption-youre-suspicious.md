@@ -6,7 +6,7 @@ categories:
   - Commentary
   - Web
 ---
-Yesterday more details on the NSA's secret and illegal monitoring activities were [revealed](http://www.theguardian.com/world/2013/jul/31/nsa-top-secret-program-online-data). (Yes, the NSA revealed some things themselves, but as far as I can tell, that was only a conciliatory effort and didn't actually reveal more details -- just more talk.)
+Yesterday more details on the NSA's secret and illegal monitoring activities were [revealed](http://www.theguardian.com/world/2013/jul/31/nsa-top-secret-program-online-data). (Yes, the NSA revealed some things themselves, but as far as I can tell, that was only a conciliatory effort and didn't actually reveal more details---just more talk.)
 
 Remember my recent series of blog posts, where I claimed that privacy in today's world is impossible without [trustworthy hardware/software](/blog/2013/07/05/without-free-software-and-hardware-privacy-is-impossible/ "Without free software and hardware, privacy is impossible"), privacy is impossible unless it's [default](/blog/2013/07/06/privacy-is-impossible-unless-its-the-default/ "Privacy is impossible unless it’s the default"), and privacy is [essentially unachievable](/blog/2013/07/17/email-snooping-is-a-small-fraction-of-the-story/ "Email snooping is a small fraction of the story") because of the scope of the problem, and the way we've built our society and technologies? 
 

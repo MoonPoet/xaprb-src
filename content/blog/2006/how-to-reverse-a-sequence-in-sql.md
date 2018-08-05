@@ -20,7 +20,7 @@ create table t (
 insert into t(i) values (1), (2), (3), (4), (5);
 ```
 
-The `pk` column is so there's something to compare the original ordering against, and I will not use it in any query other than to show the original order. I don't assume the sequence is composed of adjacent numbers -- there could be gaps, and they don't have to be strictly increasing.
+The `pk` column is so there's something to compare the original ordering against, and I will not use it in any query other than to show the original order. I don't assume the sequence is composed of adjacent numbers---there could be gaps, and they don't have to be strictly increasing.
 
 ### Method 1: in-place, one statement
 

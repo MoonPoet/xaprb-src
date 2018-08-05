@@ -170,7 +170,7 @@ from (
 ) as x where x.row_number <= 2;
 ```
 
-This isn't one pass through the table, by the way. The subquery is implemented as a temporary table behind the scenes, so filling it with data is one pass; then selecting every row from it and applying the `WHERE` clause is another. However, twice through is still O(n) with respect to the table size. That's a lot better than correlated subqueries, which are \\(O(n^2)\\) with respect to the group size -- even moderate group sizes cause bad performance (say there are five varieties of each fruit. That's on the order of 25 passes through the table, all told).
+This isn't one pass through the table, by the way. The subquery is implemented as a temporary table behind the scenes, so filling it with data is one pass; then selecting every row from it and applying the `WHERE` clause is another. However, twice through is still O(n) with respect to the table size. That's a lot better than correlated subqueries, which are \\(O(n^2)\\) with respect to the group size---even moderate group sizes cause bad performance (say there are five varieties of each fruit. That's on the order of 25 passes through the table, all told).
 
 ### One-pass technique on MySQL... maybe?
 
@@ -224,7 +224,7 @@ Look closely... it's returning rows one and three from each group, and they're n
 
 Look, this time everything is numbered 1 and every row is returned. Wonky. This is exactly what the [MySQL manual page on user variables](http://dev.mysql.com/doc/refman/5.0/en/user-variables.html) warns about.
 
-This technique is pretty much non-deterministic, because it relies on things that you and I don't get to control directly, such as which indexes MySQL decides to use for grouping. However, if you need to use it -- and I know there are some folks out there who do, because I've consulted for them -- you can still tweak it. We're getting into the realm of really bastardizing SQL, but the results above came from a table without indexes other than the primary key on (`type, variety`). What happens if I add an index MySQL can use for grouping?
+This technique is pretty much non-deterministic, because it relies on things that you and I don't get to control directly, such as which indexes MySQL decides to use for grouping. However, if you need to use it---and I know there are some folks out there who do, because I've consulted for them---you can still tweak it. We're getting into the realm of really bastardizing SQL, but the results above came from a table without indexes other than the primary key on (`type, variety`). What happens if I add an index MySQL can use for grouping?
 
 ```
 alter table fruits add key(type, price);

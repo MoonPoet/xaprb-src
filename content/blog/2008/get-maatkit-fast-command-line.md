@@ -6,7 +6,7 @@ categories:
   - Databases
   - Open Source
 ---
-I have been using Maatkit in a different way since I joined [Percona](http://www.percona.com/) as a consultant. When I'm working on a system now, it's a new, unfamiliar system -- not one where I have already installed my favorite programs. And that means I want to grab my favorite productivity tools fast.
+I have been using Maatkit in a different way since I joined [Percona](http://www.percona.com/) as a consultant. When I'm working on a system now, it's a new, unfamiliar system---not one where I have already installed my favorite programs. And that means I want to grab my favorite productivity tools fast.
 
 I intentionally wrote the [Maatkit](http://www.maatkit.org) tools so they don't need to be "installed." You just run them, that's all. But I never made them easy to download.
 
@@ -18,7 +18,7 @@ wget http://www.maatkit.org/get/mk-table-sync
 
 Now it's ready to run. Behind the scenes are some Apache mod_rewrite rules, a Perl script or two, and Subversion. When you do this, you're getting the latest code from Subversion's trunk.\[1][2\] (I like to run on the bleeding edge. Releases are for people who want to install stuff.)
 
-Because there's some Perl magic behind it, I made it even easier -- it does pattern-matching on partial names and Does The Right Thing:
+Because there's some Perl magic behind it, I made it even easier---it does pattern-matching on partial names and Does The Right Thing:
 
 ```
 baron@kanga:~$ wget http://www.maatkit.org/get/sync

@@ -251,7 +251,7 @@ Section-By-Section Detailed Outline:
 - Multi-Version Concurrency Control (MVCC)
   - ensures isolation with minimal locking
     - isolation means that while transactions are changing data, other transactions
-      see only a legal state of the database -- either as of the start of the txn
+      see only a legal state of the database---either as of the start of the txn
       that is changing stuff, or at the end after it commits, but not midway
   - readers can read without being blocked by writers, and vice versa
     - writers block each other
@@ -262,8 +262,8 @@ Section-By-Section Detailed Outline:
     - updates write a new version, move the old one to the undo space, even before commit
       - short rows are faster to update
       - whole rows are versioned, except for BLOBs
-    - deletes update the txn ids, leave it in place -- special-case of update
-    - inserts have a txn id in the future -- but they still write to undo space and it is
+    - deletes update the txn ids, leave it in place---special-case of update
+    - inserts have a txn id in the future---but they still write to undo space and it is
       discarded after commit
     - mvcc causes index bloat for deletions, but not for updates; updates cause undo space bloat
     - what the oldest view is used for, in srv0srv.c
@@ -287,7 +287,7 @@ Section-By-Section Detailed Outline:
         "transaction isolation level question from a student in class" thread Mar 2011
         "Re: REPEATABLE READ doesn't work correctly in InnoDB tables?" ditto
     - READ-COMMITED
-      - Read commited data as it was at start of statement -- "up to date"
+      - Read commited data as it was at start of statement---"up to date"
       - each select uses its own snapshot; internally consistent, but not over whole txn
       - in 5.1, most gap-locking removed; requires row-based logging.
       - unique key checks in 2nd indexes, and some FK checks, still need to set gap locks
@@ -311,7 +311,7 @@ Section-By-Section Detailed Outline:
       - different modes of locks are allowed to coexist, because of gap merging via purge
       - holding a gap lock prevents others from inserting, but doesn't permit me to insert;
         I must wait for conflicting locks to be released (many txns can hold the same gap lock)
-      - supremum can be gap-locked, infimum can't -- why not?
+      - supremum can be gap-locked, infimum can't---why not?
       - which isolation levels use them?
       - types: next-key (locks key and gap before it), gap lock (just the gap before the key),
         record-only (just the key), insert-intention gap lock (held while waiting to insert
@@ -429,7 +429,7 @@ Section-By-Section Detailed Outline:
       - same allocation rules as for any extent: page by page, then extent at a time
       - this can waste a lot of space; it makes sense to combine blobs if possible
     - Barracuda format lets us store the whole thing out-of-page, without the 768-byte prefix
-    - no need to move blobs to their own table -- innodb won't read them unless needed
+    - no need to move blobs to their own table---innodb won't read them unless needed
     - but the 768-byte prefix can make rows larger anyway
     - blob I/O is always "pessimistic"
   - how are BLOBs handled with MVCC and old row versions?
@@ -485,7 +485,7 @@ Section-By-Section Detailed Outline:
     - in the background, when there is time.  This is why STOP SLAVE can trigger a huge flood of IO.
       - the rate is controlled by innodb_io_capacity, innodb_ibuf_accel_rate
       - done by main thread (?)
-      - might not be fast enough -- dedicated thread in xtradb
+      - might not be fast enough---dedicated thread in xtradb
     - also (transparently) in the foreground, when the page that has un-applied changes is read from disk for some other reason.
     - if a lot of changes need to be merged, it can slow down page reads.
   - it is changed to "change buffer" in recent plugin
@@ -594,7 +594,7 @@ Section-By-Section Detailed Outline:
     - larger logs = longer recovery, but it also depends on row sizes, database size, workload
     - are there cases when recovery is impossible? during DDL, .FRM file is not atomic
   - how innodb checks and uses the binary log during recovery
-  - the recovery threads -- transactions are replayed w/o mysql threads, so they
+  - the recovery threads---transactions are replayed w/o mysql threads, so they
     look different
 
 - InnoDB's I/O Behavior and File Management
@@ -698,7 +698,7 @@ Section-By-Section Detailed Outline:
   - how table and row locks are communicated between engine and server
     - innodb_table_locks=1 means that innodb knows about server table locks; what does it do
       with them?
-    - the server knows about row locks -- and it can tell innodb to release non-matched rows?
+    - the server knows about row locks---and it can tell innodb to release non-matched rows?
   - Exercises
 
 - Index Implementation
@@ -750,7 +750,7 @@ Section-By-Section Detailed Outline:
   - checkpoint behavior
   - flush_logs_at_trx_commit
   - dirty page pct in buffer pool
-    - setting it lower doesn't smooth IO by causing constant writing -- it causes much more
+    - setting it lower doesn't smooth IO by causing constant writing---it causes much more
       IO and doesn't give a buffer to absorb spikes.
   - o_direct
   - all configuration variables

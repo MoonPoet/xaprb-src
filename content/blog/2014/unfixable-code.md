@@ -20,7 +20,7 @@ again.
 
 The scenario arises when a specific set of conditions exists:
 
-* the code is difficult to work with for some reason --- inherent complexity, badly written code, whatever
+* the code is difficult to work with for some reason---inherent complexity, badly written code, whatever
 * the code is not tested and is not written to be testable
 * bugs are high-stakes, so changes are extremely risky
 * the code needs to be changed for some reason (it's buggy or doesn't fulfill its requirements)

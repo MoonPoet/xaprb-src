@@ -64,7 +64,7 @@ Perhaps you simply can't do either of the above. Maybe your table is too large, 
 
 ### Two examples for MySQL
 
-Here's a quick technique that uses [advanced user-variable techniques on MySQL](/blog/2006/12/15/advanced-mysql-user-variable-techniques/) to delete the rows. MySQL's server-side cursors are read-only, so some other technique has to be used. User-variables can do the trick, if you write the statement just right -- it's very touchy.
+Here's a quick technique that uses [advanced user-variable techniques on MySQL](/blog/2006/12/15/advanced-mysql-user-variable-techniques/) to delete the rows. MySQL's server-side cursors are read-only, so some other technique has to be used. User-variables can do the trick, if you write the statement just right---it's very touchy.
 
 ```sql
 set @num := 0, @type := '';

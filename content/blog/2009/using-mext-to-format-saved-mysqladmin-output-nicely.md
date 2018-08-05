@@ -5,7 +5,7 @@ url: /blog/2009/10/13/using-mext-to-format-saved-mysqladmin-output-nicely/
 categories:
   - Databases
 ---
-I wrote a while ago about how [mext](/blog/2009/04/11/formatting-mysqladmin-extended-status-nicely/) works -- it runs "mysqladmin extended-status" and formats it nicely. But what if you want to use it to format *saved* output that you've put into a file? It's actually very easy. You can tell it what command-line to run to generate its input. By default you are probably going to tell it to run "mysqladmin ext -ri10&#8243; or something like that, but you can just as easily make it run "cat my-saved-output".
+I wrote a while ago about how [mext](/blog/2009/04/11/formatting-mysqladmin-extended-status-nicely/) works---it runs "mysqladmin extended-status" and formats it nicely. But what if you want to use it to format *saved* output that you've put into a file? It's actually very easy. You can tell it what command-line to run to generate its input. By default you are probably going to tell it to run "mysqladmin ext -ri10&#8243; or something like that, but you can just as easily make it run "cat my-saved-output".
 
 Let's see how this can be useful. Imagine I have a server that stalls every now and then, and I've set up mk-loadavg to watch for this and capture information about system activity with a script that contains
 
@@ -17,7 +17,7 @@ That'll gather 30 samples one second apart. Now I'll format it:
 
 ```
 $ wget -q http://www.maatkit.org/mext
-$ sh mext -r -- cat mysqladmin-output.txt | less -S
+$ sh mext -r --cat mysqladmin-output.txt | less -S
 ```
 
 I'm piping the output into less -S so that I can see unwrapped output. 30 samples of mysql status variables are going to be aligned in columns next to each other, so without the -S flag I'll probably see something unhelpful.

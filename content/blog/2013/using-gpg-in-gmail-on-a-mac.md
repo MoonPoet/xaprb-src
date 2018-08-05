@@ -10,7 +10,7 @@ categories:
   - Security
 ---
 
-I used to use the FireGPG extension to encrypt and decrypt text in a browser -- including wikis, for example, where sensitive client information could be stored. It's been a while since I had that need, but recently I wanted to send a GPG-encrypted message to a coworker, and FireGPG has been discontinued for years.
+I used to use the FireGPG extension to encrypt and decrypt text in a browser---including wikis, for example, where sensitive client information could be stored. It's been a while since I had that need, but recently I wanted to send a GPG-encrypted message to a coworker, and FireGPG has been discontinued for years.
 
 <!--more-->
 

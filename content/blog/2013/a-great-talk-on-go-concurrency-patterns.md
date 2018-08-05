@@ -7,7 +7,7 @@ categories:
   - Databases
   - Programming
 ---
-This [35-minute video](https://developers.google.com/events/io/sessions/332768653) from the recent Google I/O conference explains how to use Go's concurrency primitives -- goroutines, channels, and the `select` statement -- to do things elegantly, correctly, and safely in a few lines of Go, which would otherwise turn your brain into a pretzel in most programming languages.
+This [35-minute video](https://developers.google.com/events/io/sessions/332768653) from the recent Google I/O conference explains how to use Go's concurrency primitives---goroutines, channels, and the `select` statement---to do things elegantly, correctly, and safely in a few lines of Go, which would otherwise turn your brain into a pretzel in most programming languages.
 
 <!--more-->
 

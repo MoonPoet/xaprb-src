@@ -186,6 +186,6 @@ Sometimes a proprietary extension to standards provides something unavailable by
 
 If this article was useful to you, you should [subscribe](/index.xml) to stay current with my upcoming articles. It's free and convenient.
 
-**Edit 2006-02-26** I forgot to cross-reference [INSERT IF NOT EXISTS queries in MySQL](/blog/2005/09/25/insert-if-not-exists-queries-in-mysql/), a related post where I explain some variations on a particular scenario -- for example, where there is no unique index on the column you want to avoid duplicating, or you want to allow only *n* duplicates.
+**Edit 2006-02-26** I forgot to cross-reference [INSERT IF NOT EXISTS queries in MySQL](/blog/2005/09/25/insert-if-not-exists-queries-in-mysql/), a related post where I explain some variations on a particular scenario---for example, where there is no unique index on the column you want to avoid duplicating, or you want to allow only *n* duplicates.
 
 

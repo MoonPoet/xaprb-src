@@ -13,7 +13,7 @@ Rails makes database interaction so simple that it's easy to forget that the dat
 
 ### 1. Using IN() subqueries
 
-MySQL supports a few different types of subqueries. Unfortunately, one of them is a performance disaster. Even more unfortunately, that particular type is the most natural and intuitive way to write a few common query patterns. We're referring to IN() and NOT IN() subqueries. Note that IN(list,of,values) is just fine -- the problem is IN(SELECT...) queries, and its evil twin the NOT IN(SELECT...) subquery. These should be written as JOIN and LEFT OUTER JOIN, respectively, to avoid serious performance problems when the tables grow.
+MySQL supports a few different types of subqueries. Unfortunately, one of them is a performance disaster. Even more unfortunately, that particular type is the most natural and intuitive way to write a few common query patterns. We're referring to IN() and NOT IN() subqueries. Note that IN(list,of,values) is just fine---the problem is IN(SELECT...) queries, and its evil twin the NOT IN(SELECT...) subquery. These should be written as JOIN and LEFT OUTER JOIN, respectively, to avoid serious performance problems when the tables grow.
 
 ### 2. Using SELECT FOR UPDATE
 

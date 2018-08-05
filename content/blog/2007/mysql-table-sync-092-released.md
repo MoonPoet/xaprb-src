@@ -8,7 +8,7 @@ categories:
 
 MySQL Table Sync 0.9.2 is a bug-fix release. Since the last release users have reported several bugs. I am still postponing new features until after the [MySQL Conference and Expo](http://www.mysqlconf.com/), because I am focusing on [the innotop session](http://www.mysqlconf.com/cs/mysqluc2007/view/e_sess/13213) I'll be presenting at the conference.
 
-I have also created a new mailing list on [sourceforge](http://code.google.com/p/maatkit) for discussing all things MySQL Toolkit. Thanks to a user for suggesting the mailing list -- I needed a nudge.
+I have also created a new mailing list on [sourceforge](http://code.google.com/p/maatkit) for discussing all things MySQL Toolkit. Thanks to a user for suggesting the mailing list---I needed a nudge.
 
 What's new in version 0.9.2?
 

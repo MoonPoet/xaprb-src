@@ -56,7 +56,7 @@ The SQL standard contains a time-series extension. I looked through it
 a bit but wasn't impressed. It's also unimplemented. Vertica does offer some
 [time-series extensions in their VSQL language](https://my.vertica.com/docs/CE/6.0.1/HTML/index.htm#13389.htm) but it's essentially "a table is a
 series" and I need to be able to express series as keys, not object names. I
-also need to deal with arbitrarily large numbers of series -- millions,
+also need to deal with arbitrarily large numbers of series---millions,
 currently.
 
 "Native" time-series databases do exist, but I'm not happy with what's out
@@ -113,7 +113,7 @@ language *per se*, but it's not too hard to create the JSON that expresses its
 queries. This is relatively friendly for machines to work with, too.
 
 Two others that I don't know much about are the [Sky behavioral database](http://skydb.io/) and
-[SciDB](http://scidb.org/). The latter has a strange "feel" to me, sort of like the R language -- it
+[SciDB](http://scidb.org/). The latter has a strange "feel" to me, sort of like the R language---it
 feels like it was built by people who don't know how a database should feel,
 just as R was apparently designed by people who aren't programmers.
 

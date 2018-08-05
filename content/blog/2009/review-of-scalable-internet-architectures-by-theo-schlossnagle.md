@@ -27,7 +27,7 @@ The topics are as follows:
 *   Juggling Logs *and Other Circus Tricks*
 *   The Right Tool for the Job
 
-These subjects may not seem to add up to a holistic worldview of scalability, but trust me, it works out that way. Theo uses specific scenarios -- in complete detail -- to illustrate larger concepts. You have to work to follow him, but the payoff is big. Here's a sample of the conclusion to one excursion into the woods:
+These subjects may not seem to add up to a holistic worldview of scalability, but trust me, it works out that way. Theo uses specific scenarios---in complete detail---to illustrate larger concepts. You have to work to follow him, but the payoff is big. Here's a sample of the conclusion to one excursion into the woods:
 
 > Where are we going with this? ... Each request we passed through the server during our contrived test required 743ms of attention. Of that time, 87ms was *not* horizontally scalable... we were simply attempting to show that some portion of the interaction was dependent on shared, nonscalable resources. We succeeded; now how do we fix it?
 

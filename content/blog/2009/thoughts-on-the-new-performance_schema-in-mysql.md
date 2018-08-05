@@ -5,11 +5,11 @@ url: /blog/2009/02/08/thoughts-on-the-new-performance_schema-in-mysql/
 categories:
   - Databases
 ---
-[Peter Gulutzan](http://blogs.mysql.com/peterg/2009/02/05/mysql-performance-schema/) and [Mark Leith](http://www.markleith.co.uk/?p=112) have both written about [the new PERFORMANCE_SCHEMA in MySQL](http://forge.mysql.com/worklog/task.php?id=2360). I've read through the worklog, or most of it -- there were some spots where Firefox seemed to start overlaying parts with other parts, quite weird. But anyway I've read as much as I can.
+[Peter Gulutzan](http://blogs.mysql.com/peterg/2009/02/05/mysql-performance-schema/) and [Mark Leith](http://www.markleith.co.uk/?p=112) have both written about [the new PERFORMANCE_SCHEMA in MySQL](http://forge.mysql.com/worklog/task.php?id=2360). I've read through the worklog, or most of it---there were some spots where Firefox seemed to start overlaying parts with other parts, quite weird. But anyway I've read as much as I can.
 
 Obviously many people have been putting a ton of thought into this for years, and I can't pretend to judge their work in a single sitting. But I have opinions nevertheless.
 
-If the implementation turns out to be as good as the initial swing at it looks, this is a great development. This is the way things should be done -- this is, finally, the level of detail of instrumentation other databases have. There's a lot of complexity; it is a *large* worklog and I can't say whether it's complete or something is put in the wrong place or will turn out to be not quite what's needed; that's where I stop trying to form an opinion. But overall, this is just a great development.
+If the implementation turns out to be as good as the initial swing at it looks, this is a great development. This is the way things should be done---this is, finally, the level of detail of instrumentation other databases have. There's a lot of complexity; it is a *large* worklog and I can't say whether it's complete or something is put in the wrong place or will turn out to be not quite what's needed; that's where I stop trying to form an opinion. But overall, this is just a great development.
 
 A few questions and comments, though.
 

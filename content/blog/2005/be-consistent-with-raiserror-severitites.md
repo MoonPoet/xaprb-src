@@ -12,6 +12,6 @@ categories:
 *   above 16 are system errors
 *   there is no behavioral difference among 11-16
 
-The best thing to do is just get everyone to use the same value and reduce confusion. It may be useful to use different values, to signal a desired behavior to the code that catches the error. In this case, a company standard or policy is in order. Also, keep in mind even though you may not use severities this way now, you very well might someday -- in which case, you'll be happy you started using them consistently now.
+The best thing to do is just get everyone to use the same value and reduce confusion. It may be useful to use different values, to signal a desired behavior to the code that catches the error. In this case, a company standard or policy is in order. Also, keep in mind even though you may not use severities this way now, you very well might someday---in which case, you'll be happy you started using them consistently now.
 
 

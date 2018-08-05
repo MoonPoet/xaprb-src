@@ -21,6 +21,6 @@ Create that as a shell script, `chmod +x` it, put it in your PATH, and invoke it
 $ mergedir /some/directory /other/directory
 ```
 
-When it finds files that differ, it will open vimdiff on them, and you can use the standard vimdiff commands to merge them (commands such as `dp`, `do`, `:w`, `:qa`, `]c` and so forth -- look in the Vim manual for more information).
+When it finds files that differ, it will open vimdiff on them, and you can use the standard vimdiff commands to merge them (commands such as `dp`, `do`, `:w`, `:qa`, `]c` and so forth---look in the Vim manual for more information).
 
 

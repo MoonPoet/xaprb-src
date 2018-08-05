@@ -18,7 +18,7 @@ mysql> select "a" = "a  "; -- returns 1
 mysql> select "a" = "a  \n"; -- returns 0
 ```
 
-The other type of bad character is a character that truly isn't valid data. For example, Microsoft uses some [proprietary extensions](http://www.cs.tut.fi/~jkorpela/www/windows-chars.html) to standard ASCII character codes, especially in the Office suite -- characters such as "smart quotes," em-dashes, and so forth. This is discussed extensively elsewhere, so I won't go into it too much. Some of the offenders are the curly quotes (characters 145-148) and the em-dash (character 151).
+The other type of bad character is a character that truly isn't valid data. For example, Microsoft uses some [proprietary extensions](http://www.cs.tut.fi/~jkorpela/www/windows-chars.html) to standard ASCII character codes, especially in the Office suite---characters such as "smart quotes," em-dashes, and so forth. This is discussed extensively elsewhere, so I won't go into it too much. Some of the offenders are the curly quotes (characters 145-148) and the em-dash (character 151).
 
 ### Vectors of infection
 
@@ -41,7 +41,7 @@ It's easy to see the special characters in the file, such as the newlines and ta
 
 ### Detection
 
-Supposing I've already loaded the bad data into the database, how can I detect it? For example, suppose a join between tables is failing because of a trailing carriage return, or a column looks like it has the same data as another column -- while actually having different data -- because my terminal refuses to display some of the characters.
+Supposing I've already loaded the bad data into the database, how can I detect it? For example, suppose a join between tables is failing because of a trailing carriage return, or a column looks like it has the same data as another column---while actually having different data---because my terminal refuses to display some of the characters.
 
 The first case actually isn't too hard from the MySQL command-line client. The presence of trailing carriage returns will misalign the display:
 

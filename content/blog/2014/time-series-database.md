@@ -49,7 +49,7 @@ The caveat to "writes arrive in sequential order" is that measurements typically
 
 A time-series database should be:
 
-* Distributed by design --- no bolt-on clustering or sharding. Automatic data distribution, automatic query distribution. Fault-tolerant and highly available, with built-in replication and automatic failover. I think by this point we should all understand what it means for a database to be natively distributed. There are several good examples of databases that do it sensibly, and little of this should need to be novel.
+* Distributed by design---no bolt-on clustering or sharding. Automatic data distribution, automatic query distribution. Fault-tolerant and highly available, with built-in replication and automatic failover. I think by this point we should all understand what it means for a database to be natively distributed. There are several good examples of databases that do it sensibly, and little of this should need to be novel.
 * Send the query to the data, don't bring the data to the query. This is a restatement of "automatic query distribution." Queries may touch many gigabytes or terabytes of data, so moving it across the network is not scalable.
 * Efficient per-node so it is capable of running at large scale without requiring thousands of servers.
 * Able to take advantage of powerful hardware: PCIe flash storage, lots of RAM, many CPU cores. This rules out single-writer systems.
@@ -89,7 +89,7 @@ There should be an efficient binary protocol that supports bulk inserts.
 
 I'd like a database that does one thing well. I do not think I need any of the following, and I regard them as neutral, or in some cases even as drawbacks:
 
-* Access control --- authentication and authorization.
+* Access control---authentication and authorization.
 * Ability to visualize data, draw graphs, etc.
 * Support for multiple measurements at the same timestamp. The measurement's primary key is `series,timestamp` and it does not make sense to allow multiple values with the same timestamp.
 * Multi-dimensionality. Multiple dimensions for a series can be stored as multiple series, and multiple series can be combined in expressions with the query language I specified, so the atom of "series" already provides for the use case of multi-dimensionality.

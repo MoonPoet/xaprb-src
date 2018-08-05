@@ -15,7 +15,7 @@ please loan me one?
 
 <!--more-->
 
-It doesn't need to be anything special -- any old classical or acoustic 6-string
+It doesn't need to be anything special---any old classical or acoustic 6-string
 standard guitar will do. All I'm going to do is tune it.  
 If you can bring a guitar to loan me, please post in the comments or give me a
 shout on [Twitter](https://twitter.com/xaprb).

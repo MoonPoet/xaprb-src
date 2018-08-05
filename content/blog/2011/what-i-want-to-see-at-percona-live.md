@@ -18,6 +18,6 @@ Perceptive readers will note that I left some slots empty. I haven't decided yet
 
 I will be presenting two things next week: a 3-hour [tutorial](http://www.percona.com/live/london-2011/tutorial/expert-troubleshooting/) on how to diagnose problems (part one: method; part two: tools), and a session on [black-box performance analysis](http://www.percona.com/live/london-2011/session/measuring-scalability-and-performance-with-tcp/) and scalability modeling with TCP packet headers.
 
-See you there -- I hope!
+See you there---I hope!
 
 

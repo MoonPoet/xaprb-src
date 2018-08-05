@@ -31,7 +31,7 @@ And here's the sample in [Jive](http://www.youtube.com/watch?v=TVJPB3W54Tc):
 
 There may be some rough edges, of course. This is only an early draft.
 
-In addition, we are translating the technical examples and code samples into additional computer languages, including popular ones like LOLCATS, ALGOL (sorry, not the latest release -- that will come soon), and even obscure languages like Node.JS and Commodore 64. We're also extending the book with compatibility plugins -- sort of "skins" or "personalities" if you will -- that will let you apply all the knowledge in the book to irrelevant, obscure database servers like Oracle, PostgreSQL (a.k.a. "Postgre"), Riak, and FAT32.
+In addition, we are translating the technical examples and code samples into additional computer languages, including popular ones like LOLCATS, ALGOL (sorry, not the latest release---that will come soon), and even obscure languages like Node.JS and Commodore 64. We're also extending the book with compatibility plugins---sort of "skins" or "personalities" if you will---that will let you apply all the knowledge in the book to irrelevant, obscure database servers like Oracle, PostgreSQL (a.k.a. "Postgre"), Riak, and FAT32.
 
 Your feedback and suggestions are welcome. Let me know if there's anything I can do to help make your High Performance MySQL experience more enjoyable. Or, if you prefer: *Slide your jib, brother sky, don't be sayin' no off-time jive, lay it on, you dig? Mash me a fin.*
 

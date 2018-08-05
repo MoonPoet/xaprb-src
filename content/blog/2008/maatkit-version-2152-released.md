@@ -7,19 +7,19 @@ categories:
   - Open Source
 ---
 
-[Maatkit](http://www.maatkit.org/) version 2152 is ready for download. This release is also known as the "is this project really alive?" release. We thought we should delay until [MySQL released a new Community Server version](http://www.mysqlperformanceblog.com/2008/08/08/new-mysql-community-release-great-job-mysql/). Just kidding -- it has nothing to do with that.
+[Maatkit](http://www.maatkit.org/) version 2152 is ready for download. This release is also known as the "is this project really alive?" release. We thought we should delay until [MySQL released a new Community Server version](http://www.mysqlperformanceblog.com/2008/08/08/new-mysql-community-release-great-job-mysql/). Just kidding---it has nothing to do with that.
 
 <!--more-->
 
 This release is also very significant in that it's the first one that has large code contributions by someone other than myself. As you may know, [Percona](http://www.percona.com/) (my employer) has hired the [very talented Daniel Nichter, author of mysqlreport and other goodies](http://hackmysql.com/), to help with Maatkit. So far it is a match made in heaven, and Daniel did most of the coding for this release.
 
-This is also our first release since [Ask](http://develooper.com/) helped me move the project (thank you Ask!) to Google Code. That means you finally get a decent interface for entering issues, etc, etc. The only thing remaining on Sourceforge at this point is the online documentation, which I will probably move to maatkit.org soon. But more importantly, it means the developers have a decent interface for issues, etc etc. [Sourceforge is just a bloody nightmare -- their site keeps getting harder and harder to use](http://sourceforge.net/tracker/?func=detail&#038;aid=1855476&#038;group_id=1&#038;atid=350001), both as a developer and as a user. It had gotten to the point where simply adding the files to the site for download would take me hours. I tried to automate it, in true Perl fashion, but their make-a-release forms resisted my every effort. I cannot say what a relief it is to have usable project hosting that gets out of my way and lets me work. A double thanks to Ask for pushing me over the edge on this -- it had been on my mind a long time. And thanks to Google, too, for a great project management interface.
+This is also our first release since [Ask](http://develooper.com/) helped me move the project (thank you Ask!) to Google Code. That means you finally get a decent interface for entering issues, etc, etc. The only thing remaining on Sourceforge at this point is the online documentation, which I will probably move to maatkit.org soon. But more importantly, it means the developers have a decent interface for issues, etc etc. [Sourceforge is just a bloody nightmare---their site keeps getting harder and harder to use](http://sourceforge.net/tracker/?func=detail&#038;aid=1855476&#038;group_id=1&#038;atid=350001), both as a developer and as a user. It had gotten to the point where simply adding the files to the site for download would take me hours. I tried to automate it, in true Perl fashion, but their make-a-release forms resisted my every effort. I cannot say what a relief it is to have usable project hosting that gets out of my way and lets me work. A double thanks to Ask for pushing me over the edge on this---it had been on my mind a long time. And thanks to Google, too, for a great project management interface.
 
 Also note that the Sourceforge forums and mailing lists are dead. Google Groups is the preferred replacement.
 
 Keep reporting those bugs and feature requests!
 
-As you might expect, the changelog for such a long release cycle is, er, large. There's a lot of new stuff here. I'd like to highlight the new features in mk-parallel-dump and mk-parallel-restore -- which I just used to reduce a job that would have taken weeks down to mere days -- and a lot of new code in mk-table-sync, as well as the up-and-coming mk-audit, which is in release-early/often mode.
+As you might expect, the changelog for such a long release cycle is, er, large. There's a lot of new stuff here. I'd like to highlight the new features in mk-parallel-dump and mk-parallel-restore---which I just used to reduce a job that would have taken weeks down to mere days---and a lot of new code in mk-table-sync, as well as the up-and-coming mk-audit, which is in release-early/often mode.
 
 ```
 Changelog for mk-archiver:

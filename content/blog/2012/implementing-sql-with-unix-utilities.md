@@ -24,7 +24,7 @@ To give an idea, here are some of the relational operations (in SQL speak) you c
 2.  **JOIN** can be implemented with the... wait for it... `join` utility.
 	 You'll need to `sort` its input first, though.
 3.  Many **GROUP BY** operations can be performed with combinations of `grep
-	 -c`, `sort` with or without the `-urnk` options (look at the man page -- you
+	 -c`, `sort` with or without the `-urnk` options (look at the man page---you
 	 can apply options to individual sort keys), and `uniq` with or without the
 	 `-c` option. Many more can be done with 20 or 30 characters of `awk`. 
 4. Output formatting is easy with `column`, especially with the `-t` option.
@@ -35,7 +35,7 @@ you can do it like this:
 
     $ join <(sort file1) <(sort file2)
 
-That's kind of an overview -- I end up hacking together a bunch of things, and
+That's kind of an overview---I end up hacking together a bunch of things, and
 I'm sure I'm forgetting something. But pipe-and-filter programming with
 whitespace-delimited files is generally a much more powerful (and performant)
 paradigm than I realized a few years ago, and that's the point I wanted to share
@@ -44,7 +44,7 @@ overall.
 As a concrete example, I remember a mailing list thread that began with "I have
 a 500GB file of 600 billion strings, max length 2000 characters, unsorted,
 non-unique, and I need a list of the unique strings." Suggestions included
-Hadoop, custom programs, Gearman, more Hadoop, and so on -- and the ultimate
+Hadoop, custom programs, Gearman, more Hadoop, and so on---and the ultimate
 solution was `sort -u` and `sort --merge`, trivially parallelized with Bash. (By
 the way, an easy way to parallelize things is [`xargs
 -P`](/blog/2009/05/01/an-easy-way-to-run-many-tasks-in-parallel/).) 

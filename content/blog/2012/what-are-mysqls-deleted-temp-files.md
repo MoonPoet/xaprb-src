@@ -20,9 +20,9 @@ What are those? It's not hard to find out, actually. Just open them and look at 
 
 I'm not sure if the file descriptor numbers are always guaranteed to be the same for the `ib*` files, but on the server I'm looking at right now, they are as follows:
 
-6 = InnoDB's status monitor -- the same thing you see in `SHOW ENGINE INNODB STATUS`.
+6 = InnoDB's status monitor---the same thing you see in `SHOW ENGINE INNODB STATUS`.
 
-7 =  What appears to be an InnoDB cache file for some foreign key definition statements -- perhaps the most recent foreign keys that InnoDB has parsed and created? That's just a guess.
+7 =  What appears to be an InnoDB cache file for some foreign key definition statements---perhaps the most recent foreign keys that InnoDB has parsed and created? That's just a guess.
 
 8 = An empty file.
 

@@ -11,7 +11,7 @@ I've written before about how to get accepted to the [conference](http://en.orei
 > In this tutorial, \___\___ will teach a condensed version of his standard commercial training workshop, a $1,500 value.
 > THIS IS A MUST ATTEND FOR THOSE WHO WISH TO BECOME \___\___ EXPERTS.
 Sometimes being a committee member is fun. My all-time personal favorite, from the 2010 conference: 
-> NETWORKING FOR TECHIES -- BUILDING BUSINESS CONTACTS AT IT CONFERENCES... \___ \___ will guide you step-by-step through the networking process using demonstrations, exercises, role plays, and personal coaching that focus on networking between sessions, in workshops and at receptions.
+> NETWORKING FOR TECHIES---BUILDING BUSINESS CONTACTS AT IT CONFERENCES... \___ \___ will guide you step-by-step through the networking process using demonstrations, exercises, role plays, and personal coaching that focus on networking between sessions, in workshops and at receptions.
 
 And then, in the additional notes area, which reviewers see but attendees don't, the submitter included this little gem: "This fee-based session (TBA)..." Oops! I almost didn't notice that you thought you could make the conference's business decisions for them!
 

@@ -63,7 +63,7 @@ $comment_captcha_idx  = trim($_POST['captcha_index']);
 $comment_captcha      = trim($_POST['captcha']);
 ```
 
-Only the last two lines are changed in that code sample -- I included the first lines for context. I use the input a bit later, where the input checking occurs:
+Only the last two lines are changed in that code sample---I included the first lines for context. I use the input a bit later, where the input checking occurs:
     
 ```
 if ( !is_numeric($comment_captcha_idx) || !$comment_captcha

@@ -17,7 +17,7 @@ mysql> select 'hello world';
 1 row in set (0.00 sec)
 ```
 
-Centisecond resolution for query times belongs to the last century. I want at least millisecond resolution -- microsecond is better. Fortunately, this is as simple as changing a printf format specifier in the mysql client program.
+Centisecond resolution for query times belongs to the last century. I want at least millisecond resolution---microsecond is better. Fortunately, this is as simple as changing a printf format specifier in the mysql client program.
 
 **Edit**: I thought that maybe I could fix this by changing the printf format specifier with sed, but it looks like I was wrong:
 
@@ -44,6 +44,6 @@ mysql> select sleep(.0001);
 1 row in set (0.000000 sec)
 ```
 
-Alas, elsewhere in the code I now see that times() is used for timing, rather than a higher-resolution mechanism such as gettimeofday(). Bummer -- I thought the sed trick could be such a neat hack.
+Alas, elsewhere in the code I now see that times() is used for timing, rather than a higher-resolution mechanism such as gettimeofday(). Bummer---I thought the sed trick could be such a neat hack.
 
 

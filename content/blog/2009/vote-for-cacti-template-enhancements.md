@@ -9,7 +9,7 @@ categories:
 tags:
   - PostgreSQL
 ---
-If you'd like some improvements to the Cacti templates (MySQL, Apache, Memcached, and more) I've been maintaining, please make your voice heard -- either write to the [mailing list](http://groups.google.com/group/better-cacti-templates), or post a new issue (or comment on an existing one) on the [issue list](http://code.google.com/p/mysql-cacti-templates/issues/list). I've got a bunch of work underway, including a test suite for ss\_get\_by_ssh.php.
+If you'd like some improvements to the Cacti templates (MySQL, Apache, Memcached, and more) I've been maintaining, please make your voice heard---either write to the [mailing list](http://groups.google.com/group/better-cacti-templates), or post a new issue (or comment on an existing one) on the [issue list](http://code.google.com/p/mysql-cacti-templates/issues/list). I've got a bunch of work underway, including a test suite for ss\_get\_by_ssh.php.
 
 > [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
 > your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance

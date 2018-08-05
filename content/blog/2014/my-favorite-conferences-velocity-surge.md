@@ -43,7 +43,7 @@ Here's an affiliate link that has a 20% discount code embedded in it:
 ### Surge
 
 I've often said that [Surge](http://surge.omniti.com/) is Velocity without the grandiosity and with more
-emphasis on hardcore software and systems engineering --- and a much smaller
+emphasis on hardcore software and systems engineering---and a much smaller
 price tag.
 
 ![Surge](/media/2014/06/surge.png)

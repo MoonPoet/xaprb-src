@@ -32,9 +32,9 @@ Let's say you have a table of people, and you want to find the youngest of each 
 
 The problem is easy if I rephrase it as "find all people where **there is no younger person** of the same gender." That's easy to write as a join and translate into an [exclusion join](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/):
 
-*   Find all people -- easy.
-*   And for each person, find all younger people of the same gender -- okay, join on gender and "age less than."
-*   Discard each row where there is a younger person -- change the join to an exclusion join.
+*   Find all people---easy.
+*   And for each person, find all younger people of the same gender---okay, join on gender and "age less than."
+*   Discard each row where there is a younger person---change the join to an exclusion join.
 
 Here are the first two bullet points in SQL:
 

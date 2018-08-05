@@ -45,9 +45,9 @@ from apples as tbl1
 
 `USING` matches the specified columns from each table, eliminating the need to write them out twice explicitly with aliases. In MySQL 5, you can see how the statement gets rewritten by the optimizer with `EXPLAIN EXTENDED` followed by `SHOW WARNINGS`. The result shows that it gets rewritten as an old-style join with the column-matching done in the `WHERE` clause.
 
-`USING` isn't a drop-in replacement for the `ON` clause in normal join syntax. There are some differences, especially on different platforms (and in MySQL's case, even differences between versions of the product -- see [MySQL JOIN Syntax](http://dev.mysql.com/doc/refman/4.1/en/join.html)). This probably makes relational purists hot under the collar. Of course, everything about SQL makes relational purists mad, because SQL isn't relational, and database products are even less relational than the SQL standard... oh well.
+`USING` isn't a drop-in replacement for the `ON` clause in normal join syntax. There are some differences, especially on different platforms (and in MySQL's case, even differences between versions of the product---see [MySQL JOIN Syntax](http://dev.mysql.com/doc/refman/4.1/en/join.html)). This probably makes relational purists hot under the collar. Of course, everything about SQL makes relational purists mad, because SQL isn't relational, and database products are even less relational than the SQL standard... oh well.
 
-In my opinion, use it if it makes your life easier. Programming is hard -- use whatever your tools give you to ease the burden.
+In my opinion, use it if it makes your life easier. Programming is hard---use whatever your tools give you to ease the burden.
 
 One more note: there's also a `NATURAL JOIN` syntax that automatically discovers columns with the same names in both tables and matches them in the join. I don't use this in programs, because if someone adds more columns to one of the tables involved in such a join, the join criteria will silently change. I think [join criteria should always be explicit](/blog/2006/04/26/sql-coding-standards/), for the same reason [I avoid blind inserts](/blog/2006/07/07/what-is-a-sql-blind-insert/). However, this syntax can be convenient for writing one-off queries at the command line.
 

@@ -24,7 +24,7 @@ Finding the desired rows is the hard part. In my previous articles I focused on 
 *   The single biggest/smallest/extremest row in each group. (Pretty easy.)
 *   The N most extreme rows in each group. (Doable, but harder.)
 
-In this article, we're going to see how to get not the most extreme row, not the N most extreme rows, but -- hold your breath -- the single Nth most extreme row per group. (In a future article I might talk about how to get the Nth through Mth most extreme rows.)
+In this article, we're going to see how to get not the most extreme row, not the N most extreme rows, but---hold your breath---the single Nth most extreme row per group. (In a future article I might talk about how to get the Nth through Mth most extreme rows.)
 
 ### The setup
 
@@ -54,7 +54,7 @@ insert into fruits values
 
 For convenience so it's easier to see how they are ordered, I've just ordered the fruits alphabetically and given them unique prices.
 
-The desired results -- second-cheapest prices for each fruit -- are as follows:
+The desired results---second-cheapest prices for each fruit---are as follows:
 
 ```
 +--------+-----------------+
@@ -92,7 +92,7 @@ where (
 +--------+----------+-------+
 ```
 
-The result is the 2 cheapest fruits from each type. (Notice that all we really did was eliminate one row -- the most expensive apple.) Now let's get the second cheapest -- and what is that? It's simply the most expensive of the fruits we found in that query. And that's just a MAX().
+The result is the 2 cheapest fruits from each type. (Notice that all we really did was eliminate one row---the most expensive apple.) Now let's get the second cheapest---and what is that? It's simply the most expensive of the fruits we found in that query. And that's just a MAX().
 
 ```
 select type, max(price) as second_cheapest
@@ -143,6 +143,6 @@ select sum(second_cheapest) from (
 
 ### Conclusion
 
-In this post I showed you how to decompose the problem into simpler and simpler pieces. Often what's hardest about a complex query is trying to do it all at once. I have lots of tips elsewhere on this blog about how to make things faster -- this is not a particularly fast query -- but here I just wanted to show how to get the correct answer.
+In this post I showed you how to decompose the problem into simpler and simpler pieces. Often what's hardest about a complex query is trying to do it all at once. I have lots of tips elsewhere on this blog about how to make things faster---this is not a particularly fast query---but here I just wanted to show how to get the correct answer.
 
 

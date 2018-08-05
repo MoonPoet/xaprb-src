@@ -52,7 +52,7 @@ of milliseconds spent doing I/O operations, is special because it includes
 operations currently in-flight; it is basically the sum of the time spent for
 every operation, plus those not yet completed:
 
-> Field 11 -- weighted # of milliseconds spent doing I/Os This field is incremented at each I/O start, I/O completion, I/O merge, or read of these stats by the number of I/Os in progress (field 9) times the number of milliseconds spent doing I/O since the last update of this field. This can provide an easy measure of both I/O completion time and the backlog that may be accumulating. 
+> Field 11---weighted # of milliseconds spent doing I/Os This field is incremented at each I/O start, I/O completion, I/O merge, or read of these stats by the number of I/Os in progress (field 9) times the number of milliseconds spent doing I/O since the last update of this field. This can provide an easy measure of both I/O completion time and the backlog that may be accumulating. 
 
 To interpret the output of iostat, you need to know a little performance
 terminology:

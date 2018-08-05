@@ -11,7 +11,7 @@ There are several ways to log out without stopping the command. Let's take a loo
 
 ### Method 1: Job Control
 
-When I learned about job control in the [bash](http://linux.die.net/man/1/bash) shell, I was in the middle of an AI project on my [computer science department's](http://www.cs.virginia.edu/) servers. I had written a [LISP](http://clisp.cons.org/) program that simulated a little robot going from place to place delivering parts to an assembly line. The challenge was that he had to figure out the optimal route to do so, all the while never running out of fuel. (As it turns out, he was cursed by my professor with a small fuel tank.) The experiment was going to take at least 3 days -- he had a lot of learning to do and a lot of parts to deliver. But I didn't realize this until I checked the next morning and saw his progress. What to do?
+When I learned about job control in the [bash](http://linux.die.net/man/1/bash) shell, I was in the middle of an AI project on my [computer science department's](http://www.cs.virginia.edu/) servers. I had written a [LISP](http://clisp.cons.org/) program that simulated a little robot going from place to place delivering parts to an assembly line. The challenge was that he had to figure out the optimal route to do so, all the while never running out of fuel. (As it turns out, he was cursed by my professor with a small fuel tank.) The experiment was going to take at least 3 days---he had a lot of learning to do and a lot of parts to deliver. But I didn't realize this until I checked the next morning and saw his progress. What to do?
 
 After reading on the web, I learned that I could press Control-Z to suspend the job, and then 'bg' to make it run in the background! Success! Then I logged out. And my job died. FAIL. Moral: test first.
 
@@ -57,11 +57,11 @@ I consider both of these really crude, though. For example, after you log back i
 
 > Screen is a full-screen window manager that multiplexes a physical terminal between several processes (typically interactive shells). Each virtual terminal provides the functions of a DEC VT100 terminal and, in addition, several control functions from the ISO 6429 (ECMA 48, ANSI X3.64) and ISO 2022 standards (e.g. insert/delete line and support for multiple character sets). There is a scrollback history buffer for each virtual terminal and a copy-and-paste mechanism that allows moving text regions between windows. 
 
-If that sounds intimidating, it ought to -- screen has a really absurd amount of functionality and can take a long time to learn. I confess that I am not familiar with about 90% of what it can do. Every so often someone shows me something new and I feel humble. It's a lot like [vim](http://www.vim.org/): ten years on, and I still know only a little about it. I do know I can't live without it.
+If that sounds intimidating, it ought to---screen has a really absurd amount of functionality and can take a long time to learn. I confess that I am not familiar with about 90% of what it can do. Every so often someone shows me something new and I feel humble. It's a lot like [vim](http://www.vim.org/): ten years on, and I still know only a little about it. I do know I can't live without it.
 
 Enough about that: how can it run commands after you log out?
 
-Simple. Just type "screen -R -D" and then start working as you normally would. When you're ready to quit, you can detach with "Control-A D". Screen keeps running. When you log in again later, you can type "screen -R -D" and re-attach to the screen session. I would show you a screenshot of this, but it's hard to do -- you'll see why if you type the commands yourself. A screencast would be the only way to do a decent demo, and I'm too lazy.
+Simple. Just type "screen -R -D" and then start working as you normally would. When you're ready to quit, you can detach with "Control-A D". Screen keeps running. When you log in again later, you can type "screen -R -D" and re-attach to the screen session. I would show you a screenshot of this, but it's hard to do---you'll see why if you type the commands yourself. A screencast would be the only way to do a decent demo, and I'm too lazy.
 
 That's not all screen can do: if your network connection goes down, screen doesn't die. You only detached, you didn't kill it. It keeps running in the background and you can re-attach to it after your network connection resumes. When I'm working on a client's systems, I start screen by default! That way if something happens, I can get back to where I was. I can also log everything in my session to a file with "Control-A H" and other people can log in and share the connection to watch me or help me with "screen -xx".
 
@@ -69,6 +69,6 @@ That's not all screen can do: if your network connection goes down, screen doesn
 
 So there you have it: good, better, best. I still use the first two methods sometimes when I run a command and then realize I should have started a screen session (or when screen isn't installed, heaven forbid) but in general, screen is the arrow I'm always pulling out of the quiver.
 
-By the way I'm intentionally leaving out some more shell features, such as starting a program in the background from the get-go with &. If you want to fill that in, leave a comment -- I just wanted to keep this article on topic.
+By the way I'm intentionally leaving out some more shell features, such as starting a program in the background from the get-go with &. If you want to fill that in, leave a comment---I just wanted to keep this article on topic.
 
 

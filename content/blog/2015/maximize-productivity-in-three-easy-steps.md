@@ -44,7 +44,7 @@ always worth reading, says this about getting a good night's sleep:
 > here. "The only thing I would add to the first tip is to at least
 > attempt to forgive others as well. It may take time, but I try to let others'
 > transgressions go as soon as my heart/mind will allow. And always be kind to
-> all in all ways." Thanks, Rob -- these are such wise words.]
+> all in all ways." Thanks, Rob---these are such wise words.]
 
 With that in mind, here are the three simple steps that have made a world of
 difference for me.

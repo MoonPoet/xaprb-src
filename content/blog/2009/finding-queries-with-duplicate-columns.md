@@ -32,6 +32,6 @@ The exact query that we were seeing on our client was a little bit more subtle, 
 
     select a.*, [other stuff], a.column1 from ...
 
-This type of query should be catchable by [mk-query-audit](http://www.maatkit.org/doc/mk-query-advisor.html), when we write it. Oooh -- another flashlight to find hairy things with wobbly eyes under your fridge!
+This type of query should be catchable by [mk-query-audit](http://www.maatkit.org/doc/mk-query-advisor.html), when we write it. Oooh---another flashlight to find hairy things with wobbly eyes under your fridge!
 
 

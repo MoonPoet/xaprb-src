@@ -24,6 +24,6 @@ I'm on the [MySQL conference](http://en.oreilly.com/mysql2010/public/content/hom
 My suggestions from the 2008 year still stand, too:
 
 *   I will not give you a favorable vote because you or your employer are famous. Your session proposal has to carry its own weight.
-*   You need to write a detailed enough proposal to convince me that you've put some effort into it. I won't vote for "accept this talk, and then I'll fill in the details." Do the work and take the risk that you won't get accepted -- protecting yourself against rejection is a good way to get a low vote from me.
+*   You need to write a detailed enough proposal to convince me that you've put some effort into it. I won't vote for "accept this talk, and then I'll fill in the details." Do the work and take the risk that you won't get accepted---protecting yourself against rejection is a good way to get a low vote from me.
 
 

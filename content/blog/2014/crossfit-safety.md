@@ -210,7 +210,7 @@ have taken the matter into his own hands and asked for more active coaching.
 
 But that doesn't excuse the coach either.
 
-The gym I go to --- that nonsense does not happen. And I've been to a few gyms
+The gym I go to---that nonsense does not happen. And I've been to a few gyms
 over the years and found them to be good. I'm glad I learned in a safe
 environment, but not all gyms and coaches are that good.
 
@@ -278,7 +278,7 @@ credentials in physical fitness coaching, but this doesn't get as much attention
 And there's a lot of great writing about what's good about CrossFit, much of it
 from the good-hearted, honest, knowledgeable coaches and gym owners who soldier
 on despite the ongoing soap operas and media hype wars. They're bringing fitness
-and health --- and fun --- to people who otherwise don't get enough of it.
+and health---and fun---to people who otherwise don't get enough of it.
 
 ### Summary
 
@@ -294,7 +294,7 @@ costs in your gym, or if your coaches aren't actually experts at what they do
 right for any other reason, go elsewhere.
 
 Stay healthy and have fun, and do constantly varied, functional movements at high
-intensity in the company of your peers -- and do it safely.
+intensity in the company of your peers---and do it safely.
 
 Photo credits:
 

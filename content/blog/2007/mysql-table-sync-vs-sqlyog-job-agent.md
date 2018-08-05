@@ -17,7 +17,7 @@ There is no changelog for SJA alone, but Rohit pointed me to the [FAQ entry for 
 
 ### My experience using SJA
 
-I downloaded version 5.27 of SJA on April 2, noticed some potential issues with it, and contacted Rohit to discuss those. I saw it was issuing the statements to resolve differences in a sequence that would cause problems -- `DELETE`, `INSERT`, `UPDATE`. Indeed, I browsed the help forums and saw this order of operations was an attempt to fix problems caused by syncing in the order `INSERT`, `UPDATE`, `DELETE`:
+I downloaded version 5.27 of SJA on April 2, noticed some potential issues with it, and contacted Rohit to discuss those. I saw it was issuing the statements to resolve differences in a sequence that would cause problems---`DELETE`, `INSERT`, `UPDATE`. Indeed, I browsed the help forums and saw this order of operations was an attempt to fix problems caused by syncing in the order `INSERT`, `UPDATE`, `DELETE`:
 
 <blockquote cite="http://www.webyog.com/forums/index.phpshowtopic=3135">
   <p>
@@ -31,7 +31,7 @@ There can still be problems even with the new order of operations, and I saw str
 >
 > The extra phase for update is required only if you choose to delete "Extra rows from the target". Consider this situation: After updating the target in Phase-I, we want to find out extra rows in the target. During this period, a source row changes. The target assumes that this data is "extra" and delete it from itself. So you might land up with an "non-synced" dataset most of the times in a live database.
 
-I must have downloaded 5.27 only a few hours before 5.28 was available. In any case, I re-downloaded (it's just over 1MB -- not large) and as Rohit promised, the issues I saw were gone.
+I must have downloaded 5.27 only a few hours before 5.28 was available. In any case, I re-downloaded (it's just over 1MB---not large) and as Rohit promised, the issues I saw were gone.
 
 I also mentioned some other minor things I saw in the query log output, such as possibly redundant queries, and Rohit indicated those would be fixed in the next version.
 
@@ -84,7 +84,7 @@ SJA slices the base-16 checksum into four strings 8 characters long, converts th
 
 There are a couple theoretical weaknesses with in this approach. `SUM()` is commutative, so the order of the rows in a group is immaterial, which is a good thing. However, it might be possible to overflow a `BIGINT` with the `SUM()` over a large group. This seems unlikely, but 8 hex digits is 32 bits, and since `BIGINT` math is signed for aggregate functions in MySQL (except for the bitwise functions), that leaves 31 bits of headroom, which is just over 2 billion. Lots of people have tables with more than 2 billion rows. Granted, you still wouldn't overflow unless every value in the set was FFFFFFFF, but who knows what might happen, especially if you have many more rows.
 
-The next potential problem is the law of large numbers. Using `SUM()` increases the likelihood of a collision. It changes the distribution of numbers from pseudo-random over the range to a normal distribution -- the familiar bell curve. Certain numbers will be more likely to occur than others, and this likelihood increases as the set grows.
+The next potential problem is the law of large numbers. Using `SUM()` increases the likelihood of a collision. It changes the distribution of numbers from pseudo-random over the range to a normal distribution---the familiar bell curve. Certain numbers will be more likely to occur than others, and this likelihood increases as the set grows.
 
 Finally, string concatenation of base-ten digits discards the most significant digits. If you convert the four sliced hex strings to base ten and they end up being 1, 2, 3, and 4, and then you concatenate them, you get 1234. But the sum of the checksum is not 1234; it is \\(1 \times 16^{24} + 2\times16^{16} + 3\times16^8 + 4\times16\\). This truncates the full 128-bit range of `MD5()`.
 
@@ -462,7 +462,7 @@ You can see MySQL Table Sync performs somewhat better overall on this data set, 
 
 ### Miscellaneous thoughts
 
-SJA and MySQL Table Sync are not really designed for the same purposes. Though both can sync data between remote tables, MySQL Table Sync is explicitly designed for network efficiency and guaranteed consistency when syncing, even while the server is being used. I'm not done with it yet, but it already has a variety of options a smart DBA can use to sync tables -- especially on replication replicas that have become corrupt -- more efficiently than a generic algorithm that applies to all table structures. As far as I know, SJA doesn't offer these features. On the other hand, it can do a lot of things MySQL Table Sync cannot, such as sync schema differences as well as data differences. To some extent then, this comparison is apples to oranges.
+SJA and MySQL Table Sync are not really designed for the same purposes. Though both can sync data between remote tables, MySQL Table Sync is explicitly designed for network efficiency and guaranteed consistency when syncing, even while the server is being used. I'm not done with it yet, but it already has a variety of options a smart DBA can use to sync tables---especially on replication replicas that have become corrupt---more efficiently than a generic algorithm that applies to all table structures. As far as I know, SJA doesn't offer these features. On the other hand, it can do a lot of things MySQL Table Sync cannot, such as sync schema differences as well as data differences. To some extent then, this comparison is apples to oranges.
 
 For example, I'm not sure exactly how the SJA does its deletes, inserts and updates, but I believe the only order of operations that's correct in every case is DELETE, UPDATE, INSERT. But perhaps there are other considerations when you are doing more complicated types of syncing, such as two-way syncs. I don't know any way to guarantee a point-in-time consistent two-way sync on tables that are being written to on both servers. I suspect SJA cannot guarantee this level of consistency either. My goals are a little different; I'd prefer to do a simpler task with a guarantee of consistency than a two-way sync with potential for inconsistency (you can always run MySQL Table Sync twice to do a two-way sync).
 

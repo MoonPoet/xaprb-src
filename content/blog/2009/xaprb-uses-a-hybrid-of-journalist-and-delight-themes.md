@@ -6,7 +6,7 @@ categories:
   - About
   - Web
 ---
-A while ago I switched my theme to Journalist (link at the very bottom of the page) because I thought it was well laid out and solidly designed -- I mean it uses sensible CSS and XHTML etc. The only thing I didn't care for was that it was a little too minimal, if anything. There are lots of themes out there that look gorgeous, but when I tested them they don't render right.
+A while ago I switched my theme to Journalist (link at the very bottom of the page) because I thought it was well laid out and solidly designed---I mean it uses sensible CSS and XHTML etc. The only thing I didn't care for was that it was a little too minimal, if anything. There are lots of themes out there that look gorgeous, but when I tested them they don't render right.
 
 So I have made a hybrid. Just a few edits to CSS and borrowing a few images from the [deLight](http://webdemar.com/wordpress/wordpress-theme-delight-1-2/) theme later, and now I have something that pleases me visually too.
 

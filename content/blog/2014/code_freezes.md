@@ -74,7 +74,7 @@ Freezes never, but *never*, work. You can declare a freeze, but you can't make i
 
 This follows naturally from the inability to actually stop the systems from changing. Systems that change are going to break, and you have to respond to this.
 
-There are other effects, too. Requirements change, for example. The catalog merchants went to the marketers and decided to offer a special promo. Buy a tablet and a case in combination with a warranty, and get a bluetooth keyboard free! Sounds great; we'll make a bundle -- let's print and ship those catalogs. Just in time for the holidays! Whoops, nobody told IT about this. Catalogs are printed already. We've got two weeks and there's no going back; we need the order-entry system and the website to support this promo. Bingo; forced change.
+There are other effects, too. Requirements change, for example. The catalog merchants went to the marketers and decided to offer a special promo. Buy a tablet and a case in combination with a warranty, and get a bluetooth keyboard free! Sounds great; we'll make a bundle---let's print and ship those catalogs. Just in time for the holidays! Whoops, nobody told IT about this. Catalogs are printed already. We've got two weeks and there's no going back; we need the order-entry system and the website to support this promo. Bingo; forced change.
 
 Whether it's a promo or a bugfix, something always has to be changed. So we always have to break the rule. This is why the rule inevitably ends up being *no deployments except for emergency changes.*
 
@@ -99,7 +99,7 @@ We've seen that the tip of the codebase is where the least risk has accumulated.
 
 Infrastructure is code, too. Frozen systems also become incompatible with the current tip of environment configuration and infrastructure automation code. The result is that emergency deployments are often done outside of normal change control procedures, and the usual automation and deployment code can't be used.
 
-To illustrate this problem, consider that app code and automation code are usually separate, although there is a dependency. This dependency is not properly versioned most of the time. Is your Puppet code version-controlled in lockstep with your application code, such that if you want to deploy a stale version of the app code, the deployment process will check out and use the older Puppet code? Would this even work, if it were possible -- can you just run old Puppet code on systems that have been advanced forward? The answer to both of these questions is likely no.
+To illustrate this problem, consider that app code and automation code are usually separate, although there is a dependency. This dependency is not properly versioned most of the time. Is your Puppet code version-controlled in lockstep with your application code, such that if you want to deploy a stale version of the app code, the deployment process will check out and use the older Puppet code? Would this even work, if it were possible---can you just run old Puppet code on systems that have been advanced forward? The answer to both of these questions is likely no.
 
 Imagine trying to drive your car without all the usual help you get from it: no mirrors, no gauges, no power steering, no power brakes. A car with all these things disabled is largely inoperable for most people.
 

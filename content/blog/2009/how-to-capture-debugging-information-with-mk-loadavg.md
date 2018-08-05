@@ -51,7 +51,7 @@ If the CPU goes over 40%, you'll get a bunch of files in the `collected` directo
 3.  From `Select_full_scan` and `Handler_read_rnd_next` I isolated table scans as a problem.
 4.  From the saved `SHOW PROCESSLIST` I found problem queries and optimized them.
 
-You would be right if you said there are much better tools for finding problem queries -- but remember two things: 1) sometimes clients ask for the lightweight, short-term solution that can be set up in about 5 minutes and checked the next day; and 2) when it is unclear that queries are the problem, setting up only a query monitor is stabbing in the dark and will not get results.
+You would be right if you said there are much better tools for finding problem queries---but remember two things: 1) sometimes clients ask for the lightweight, short-term solution that can be set up in about 5 minutes and checked the next day; and 2) when it is unclear that queries are the problem, setting up only a query monitor is stabbing in the dark and will not get results.
 
 In addition to watching `vmstat` to measure system CPU usage, `mk-loadavg` can watch many other things, such as the MySQL server's `SHOW PROCESSLIST`, parsing values from `SHOW INNODB STATUS`, and so on.
 

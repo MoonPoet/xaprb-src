@@ -30,7 +30,7 @@ Work on this remains, however.
 
 ### The tool's present and future
 
-The documentation is incomplete as of yet, and there are some things I still want to implement, but I wanted to get it out (release early, release often). I have used the tool in lots of tests, and have not found anything incorrect yet, but that doesn't mean there are no bugs. I have also used it -- cautiously -- in production. I re-synced a table that had drifted out of sync on a replica.
+The documentation is incomplete as of yet, and there are some things I still want to implement, but I wanted to get it out (release early, release often). I have used the tool in lots of tests, and have not found anything incorrect yet, but that doesn't mean there are no bugs. I have also used it---cautiously---in production. I re-synced a table that had drifted out of sync on a replica.
 
 If you want to try it, I encourage you to run it in `--print` mode to begin with, and examine carefully the queries it emits. Its output is valid SQL, so you can actually execute the output to sync the destination table.
 

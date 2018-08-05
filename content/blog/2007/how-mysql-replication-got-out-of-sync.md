@@ -55,7 +55,7 @@ So if that's not the problem, what is?
 
 ### The bug
 
-I already showed you the bug. If you didn't see it, well, neither did I -- for a year.
+I already showed you the bug. If you didn't see it, well, neither did I---for a year.
 
 If you still don't see it, here's a hint: the replicas get out of sync in totally different ways. In other words, the replicas don't even match each other after a little while.
 

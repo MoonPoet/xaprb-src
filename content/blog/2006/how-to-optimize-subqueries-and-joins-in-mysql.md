@@ -5,7 +5,7 @@ url: /blog/2006/04/30/how-to-optimize-subqueries-and-joins-in-mysql/
 categories:
   - Databases
 ---
-I have written before about using joins instead of subqueries, especially for `NOT IN` queries, which can usually be rewritten as [exclusion joins](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/) -- sometimes with huge efficiency gains. In this article I'll look more closely at the performance characteristics of a few queries I've optimized in MySQL 5.0.3. I'll also show you some tricks you can use to get MySQL to optimize queries better when you know it's being inefficient.
+I have written before about using joins instead of subqueries, especially for `NOT IN` queries, which can usually be rewritten as [exclusion joins](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/)---sometimes with huge efficiency gains. In this article I'll look more closely at the performance characteristics of a few queries I've optimized in MySQL 5.0.3. I'll also show you some tricks you can use to get MySQL to optimize queries better when you know it's being inefficient.
 
 ### Updates in a join
 
@@ -91,7 +91,7 @@ The queries also perform differently depending on whether the values in `aggrega
 
 If I were being really scientific, I'd run `vmstat` and `iostat` and count I/O and other statistics too, to see how the queries access the tables differently, but I leave that as an exercise for the reader.
 
-In the query at work, I ended up using the join. It's more efficient on that specific data. I was actually surprised when I wrote the test queries for this article and found the subquery performing so much better. The difference could be due to any number of things -- data, indexes, the fact we haven't optimized the tables at work because they're too big to touch, different architecture (Xeon vs. my AMD64), server configuration, memory, disk speed... who knows.
+In the query at work, I ended up using the join. It's more efficient on that specific data. I was actually surprised when I wrote the test queries for this article and found the subquery performing so much better. The difference could be due to any number of things---data, indexes, the fact we haven't optimized the tables at work because they're too big to touch, different architecture (Xeon vs. my AMD64), server configuration, memory, disk speed... who knows.
 
 Moral of the story: try different ways of doing the same thing!
 
@@ -244,7 +244,7 @@ where <in_optimizer>(
 
 You can get the optimized query from `EXPLAIN EXTENDED` followed by `SHOW WARNINGS`. Notice the reference to the outer scope in the `HAVING` clause.
 
-I'm not bringing this up to bash MySQL's optimization strategy. It's pretty common knowledge that [MySQL doesn't yet optimize subqueries very well](http://dev.mysql.com/doc/refman/5.0/en/subquery-restrictions.html) in some cases, and this particular problem is widely reported. I'm just pointing out that it is up to the programmer to check queries and make sure they aren't badly optimized. In most cases, it's safer just to stay away from subqueries if they're not needed -- *especially* `WHERE... IN()` or `WHERE... NOT IN()` queries.
+I'm not bringing this up to bash MySQL's optimization strategy. It's pretty common knowledge that [MySQL doesn't yet optimize subqueries very well](http://dev.mysql.com/doc/refman/5.0/en/subquery-restrictions.html) in some cases, and this particular problem is widely reported. I'm just pointing out that it is up to the programmer to check queries and make sure they aren't badly optimized. In most cases, it's safer just to stay away from subqueries if they're not needed---*especially* `WHERE... IN()` or `WHERE... NOT IN()` queries.
 
 My new rule for myself is "when in doubt, `EXPLAIN` the query." If it's a big table, I'm automatically doubtful.
 

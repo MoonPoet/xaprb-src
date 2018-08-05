@@ -5,7 +5,7 @@ url: /blog/2007/08/06/how-to-create-stepping-slides-in-openofficeorg-impress/
 categories:
   - Desktop
 ---
-If you've used Microsoft Powerpoint to create "stepping" slides -- slides that appear one bullet point at a time -- and can't figure out how to do it with OpenOffice.org Impress, this article is for you.
+If you've used Microsoft Powerpoint to create "stepping" slides---slides that appear one bullet point at a time---and can't figure out how to do it with OpenOffice.org Impress, this article is for you.
 
 ### What are stepping slides?
 
@@ -17,7 +17,7 @@ Seriously: stepping slides one bullet point at a time is helpful.  It lets me pa
 
 ### How do you do it with OpenOffice.org Impress?
 
-Don't search the Help files for "stepping" -- I went that route and crashed OpenOffice.org.  Strangely, at the moment the search function crashed, I was writing a presentation about search and indexing algorithms!
+Don't search the Help files for "stepping"---I went that route and crashed OpenOffice.org.  Strangely, at the moment the search function crashed, I was writing a presentation about search and indexing algorithms!
 
 You have to do it as an animation.  One step at a time (no pun intended):
 

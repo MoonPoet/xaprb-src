@@ -5,7 +5,7 @@ url: /blog/2007/10/03/how-to-check-and-optimize-mysql-tables-in-parallel/
 categories:
   - Databases
 ---
-I wanted to point out something that might not be obvious from the name: MySQL Parallel Dump can be used as a generic wrapper to discover tables and databases, and fork off worker processes to do something to them in parallel. That "something" can easily be invoking `mysqlcheck` -- or any other program. This makes it really easy for you to do multi-threaded whatever-you-need-to-do on MySQL tables. Here's how:
+I wanted to point out something that might not be obvious from the name: MySQL Parallel Dump can be used as a generic wrapper to discover tables and databases, and fork off worker processes to do something to them in parallel. That "something" can easily be invoking `mysqlcheck`---or any other program. This makes it really easy for you to do multi-threaded whatever-you-need-to-do on MySQL tables. Here's how:
 
 ```
 mysql-parallel-dump [options] -- 'mysqlcheck --optimize %D %N'
@@ -13,10 +13,10 @@ mysql-parallel-dump [options] -- 'mysqlcheck --optimize %D %N'
 
 There are several things going on here:
 
-1.  You're running `mysql-parallel-dump` with all the ordinary options. Some of them are really specific to dumping data, but not all that many -- most of the options are about choosing which databases to include and exclude, and so on.
+1.  You're running `mysql-parallel-dump` with all the ordinary options. Some of them are really specific to dumping data, but not all that many---most of the options are about choosing which databases to include and exclude, and so on.
 2.  You're adding a double dash `--` to make it stop processing any further options.
 3.  The rest of the arguments are being treated as a system command, but... 
-4.  Not before interpolating the database and table name into them. The %D and %N are a little macro language. There are some other macros too -- see the documentation.
+4.  Not before interpolating the database and table name into them. The %D and %N are a little macro language. There are some other macros too---see the documentation.
 
 The net effect is to loop through all the tables and run `OPTIMIZE TABLE` on them.
 

@@ -73,7 +73,7 @@ blog/
             my_custom_theme/
 ```
 
-What I've done is separate the custom bits -- the parts that don't ship with WordPress -- away from the files I want to upgrade when I upgrade WordPress. How will this work, though?
+What I've done is separate the custom bits---the parts that don't ship with WordPress---away from the files I want to upgrade when I upgrade WordPress. How will this work, though?
 
 I'll make symbolic links from the dogs/ and cats/ directories to the currently installed version of WordPress. So, from the root directory of the website, I type the following at the command line:
 

@@ -161,7 +161,7 @@ will have a good experience?*
 
 There are also things I try *not* to do, as a reviewer.
 
-1.	I do not judge you, personally. Oh, okay, I'm biased -- everyone is biased.
+1.	I do not judge you, personally. Oh, okay, I'm biased---everyone is biased.
 	It's true. But I try not to think about "John is a good speaker and he's
 	really smart and knows a lot about this." Not usually, anyway. Some speakers
 	are engaging and I know that. Their audience is going to have a great time

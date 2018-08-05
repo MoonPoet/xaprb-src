@@ -14,6 +14,6 @@ The first of this year's events just ended last weekend in Germany, and I'm real
 
 The other is [upcoming in November](http://opensqlcamp.org/Events/Portland2009/) in Portland, Oregon USA. I am going to try to attend this one. I encourage you to not only attend, but to participate in planning this event. Thus far in its short life, the OpenSQL Camp conference series has been entirely a grassroots effort. You can be part of that.
 
-I also see that the call for proposals for [PostgreSQL West 2009](http://www.postgresqlconference.org/2009/west) is still open for a few more days. I just wish I could attend all these conferences. Especially if you're near the west coast of the USA, I encourage you to attend this event -- I went to East 2008 and East 2009, and they were really worth it.
+I also see that the call for proposals for [PostgreSQL West 2009](http://www.postgresqlconference.org/2009/west) is still open for a few more days. I just wish I could attend all these conferences. Especially if you're near the west coast of the USA, I encourage you to attend this event---I went to East 2008 and East 2009, and they were really worth it.
 
 

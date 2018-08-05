@@ -150,7 +150,7 @@ queries from replicating.
 
 In the best case, all other things being equal, it will require the server to
 read about as many rows as the bottom-up approach, but it will exploit
-locality -- a client at a time, a day at a time, and so on. This is a huge
+locality---a client at a time, a day at a time, and so on. This is a huge
 help, in my opinion; reducing random I/O is a high priority for me.
 
 Given all this, I think top-down is better if there are not many changes to
@@ -166,7 +166,7 @@ ought to.
 
 Finally, and this could be either a strength or weakness, this approach lets
 every level of the recursion have a different branching factor, which might be
-appropriate or not -- the DBA needs to decide.
+appropriate or not---the DBA needs to decide.
 
 ### Smart grouping and recursion
 
@@ -221,7 +221,7 @@ tool, so the DBA can decide what to use. The tool will, like the rest of the
 scripts in the [MySQL
 Toolkit](http://sourceforge.net/projects/mysqltoolkit), be
 command-line friendly (there are lots of proprietary "visual tools" to compare
-and sync tables, but they don't interest me -- plus, why would I ever trust
+and sync tables, but they don't interest me---plus, why would I ever trust
 customer data to something I can't see source code for?). I also understand
 that not everyone has the same narrowly-defined use case of re-syncing a
 slave, so of course I'll make the tool more generic.

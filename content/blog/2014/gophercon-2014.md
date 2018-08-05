@@ -26,7 +26,7 @@ In no particular order, here are some of the many highlights for me:
   taught me so much over the last couple of years.
 * Learning a lot about Go's internals and design. For example, although it seems
   obvious in hindsight, I had never really thought about the `select` statement
-  as the heart of Go's concurrency model -- but it is. Everything else in Go
+  as the heart of Go's concurrency model---but it is. Everything else in Go
   seems to get the attention (channels, goroutines, etc), and is copied in
   various languages, but `select` is really the crowning jewels and is unique as
   far as I know.

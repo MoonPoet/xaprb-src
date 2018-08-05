@@ -93,7 +93,7 @@ Datomic seems to have all of these problems too, up to and including stop-the-wo
 
 There is a class of database systems that has long been aware of the challenges with the database designs I've mentioned so far. Oracle, SQL Server, MySQL (InnoDB), and PostgreSQL all have arrived at designs that share some properties in common. These characteristics go some ways towards satisfying the needs of general-purpose database storage and retrieval in wide ranges of use cases, with excellent performance under mixed workloads. Depending on your workload, they arguably have relatively few and rare worst-case behaviors.
 
-The properties are ACID transactions with multi-version concurrency control (MVCC). The relational aspect is ancillary. You could build these properties in a variety of non-SQL, non-relational databases. It just happens that the databases that have been around longer than most, and are more mature and sophisticated, are mostly relational. That's why these design choices and characteristics show up in relational databases -- no other reason as far as I know. 
+The properties are ACID transactions with multi-version concurrency control (MVCC). The relational aspect is ancillary. You could build these properties in a variety of non-SQL, non-relational databases. It just happens that the databases that have been around longer than most, and are more mature and sophisticated, are mostly relational. That's why these design choices and characteristics show up in relational databases---no other reason as far as I know. 
 
 Multi-version concurrency control lets database users see a consistent state of the database at a point in time, even as the database accepts changes from other users concurrently. 
 

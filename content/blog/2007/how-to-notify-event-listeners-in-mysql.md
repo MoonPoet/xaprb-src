@@ -85,7 +85,7 @@ while ( true ) {
 }
 ```
 
-This works because the producer and consumer are really notifying *each other* -- it's not one-way, it's symmetric. Inside MySQL, there's a queue of threads waiting for locks. As soon as one releases the lock, the other gets it, and immediately goes back onto the queue waiting for it again.
+This works because the producer and consumer are really notifying *each other*---it's not one-way, it's symmetric. Inside MySQL, there's a queue of threads waiting for locks. As soon as one releases the lock, the other gets it, and immediately goes back onto the queue waiting for it again.
 
 ### Complications
 

@@ -7,7 +7,7 @@ categories:
   - Open Source
 ---
 
-It's finally ready -- the new stable version of the innotop MySQL and InnoDB monitor. Version 1.4.0 brings you new features and enhancements I think you'll really enjoy:
+It's finally ready---the new stable version of the innotop MySQL and InnoDB monitor. Version 1.4.0 brings you new features and enhancements I think you'll really enjoy:
 
 *   Manage many servers at once conveniently.
 *   Powerful filters, expressions, colorizing rules, and sorting.

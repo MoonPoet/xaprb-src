@@ -5,7 +5,7 @@ url: /blog/2008/03/09/a-very-fast-fnv-hash-function-for-mysql/
 categories:
   - Databases
 ---
-I wrote a User-Defined Function that implements the [FNV (Fowler-Voll-No)](http://isthe.com/chongo/tech/comp/fnv/) hash function for MySQL. I'm [not the first person to do this](http://www.radwin.org/michael/blog/2007/03/mysql_user_defined_functio.html) -- in fact, I was inspired by the [Google patches for MySQL](http://code.google.com/p/google-mysql-tools/). But my implementation is a little bit different from most, in a very important way that leads directly to much higher performance, especially suited for the Maatkit tools.
+I wrote a User-Defined Function that implements the [FNV (Fowler-Voll-No)](http://isthe.com/chongo/tech/comp/fnv/) hash function for MySQL. I'm [not the first person to do this](http://www.radwin.org/michael/blog/2007/03/mysql_user_defined_functio.html)---in fact, I was inspired by the [Google patches for MySQL](http://code.google.com/p/google-mysql-tools/). But my implementation is a little bit different from most, in a very important way that leads directly to much higher performance, especially suited for the Maatkit tools.
 
 A bit of background: FNV hashing is a very fast hash algorithm that operates in fixed memory. It is widely used in lots of important areas in computer science. My implementation requires absolutely no `malloc()` calls, which is a darn good thing because I am not to be trusted with `malloc()`, having spent too many years programming in managed languages. I made it return a 64-bit integer, which matches the size MySQL uses internally for most integer arithmetic.
 

@@ -13,7 +13,7 @@ There were three keynotes this morning. Two I won't comment on, but I want to me
 
 ### [Building Scalable OLAP Applications with Mondrian and MySQL](http://www.mysqlconf.com/cs/mysqluc2007/view/e_sess/10631)
 
-This session introduced the [Mondrian](http://mondrian.pentaho.org/) component of the Pentaho business intelligence suite. Mondrian connects to a SQL backend and **converts the flat SQL view of the data into a navigable hierarchical view**. The point is to **make OLAP scalable on top of MySQL**. As such, it touched on tactics for tuning both MySQL and Mondrian -- especially aggregation, caching, and cache control in Mondrian. Also on the agenda were near-real-time OLAP (aka "active data warehousing"), and how to cache and invalidate in that scenario. There's a high cost for doing this, but there can be great benefits as well.
+This session introduced the [Mondrian](http://mondrian.pentaho.org/) component of the Pentaho business intelligence suite. Mondrian connects to a SQL backend and **converts the flat SQL view of the data into a navigable hierarchical view**. The point is to **make OLAP scalable on top of MySQL**. As such, it touched on tactics for tuning both MySQL and Mondrian---especially aggregation, caching, and cache control in Mondrian. Also on the agenda were near-real-time OLAP (aka "active data warehousing"), and how to cache and invalidate in that scenario. There's a high cost for doing this, but there can be great benefits as well.
 
 ### [Technology at Digg.com](http://www.mysqlconf.com/cs/mysqluc2007/view/e_sess/12204)
 

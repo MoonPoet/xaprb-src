@@ -37,14 +37,14 @@ his PC. It was addictive. Any relationship?"
 "Oh," I said. "Well, that's basically the last game I've ever played.
 But please go on."
 
-> Ultima Online was early in the Internet age -- late nineties, I think. They
+> Ultima Online was early in the Internet age---late nineties, I think. They
 > knew they were going to have a lot more traffic than they could handle with
 > one server, no matter how big it was. The only solution that presented itself
 > was to run lots of small instances of the game. But that would impact the game
 > play itself. What to do?
 >
 > The answer was to work it into the storyline of the game itself. The world in
-> the game was said to have been broken into shards. Not the database -- the
+> the game was said to have been broken into shards. Not the database---the
 > world itself. That was part and parcel of the game. Some gemstone had been
 > broken into shards and reality was broken along with it.
 

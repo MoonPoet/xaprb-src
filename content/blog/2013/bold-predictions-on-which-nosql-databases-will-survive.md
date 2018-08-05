@@ -7,11 +7,11 @@ categories:
 tags:
   - MongoDB
 ---
-In case you've been [living under a rock](http://www.youtube.com/watch?v=cvXqm0RdJms) for the last 5 years, the NoSQL movement has changed. There was a time when everyone -- EVERYONE -- was dumping on relational databases, and MySQL in particular. Nonsense like "SQL itself is inherently unscalable" routinely came out of the mouths of otherwise usually sensible people. But that's cooled off a little bit, thank heavens.
+In case you've been [living under a rock](http://www.youtube.com/watch?v=cvXqm0RdJms) for the last 5 years, the NoSQL movement has changed. There was a time when everyone---EVERYONE---was dumping on relational databases, and MySQL in particular. Nonsense like "SQL itself is inherently unscalable" routinely came out of the mouths of otherwise usually sensible people. But that's cooled off a little bit, thank heavens.
 
-And what's the new hotness? Well, Big Data, of course! But I digress. In the world of databases, it's move over NoSQL, heeeeeere's NewSQL. I'm talkin' NuoDB, Clustrix, MySQL Cluster (NDB), and so forth. A lot of people now recognize that it wasn't SQL or the relational model that was a problem -- it was the implementations that had some issues. The pendulum has swung a little away from vilifying SQL, and we don't talk about NoSQL as much as we talk about document-oriented or key-value or whatever.
+And what's the new hotness? Well, Big Data, of course! But I digress. In the world of databases, it's move over NoSQL, heeeeeere's NewSQL. I'm talkin' NuoDB, Clustrix, MySQL Cluster (NDB), and so forth. A lot of people now recognize that it wasn't SQL or the relational model that was a problem---it was the implementations that had some issues. The pendulum has swung a little away from vilifying SQL, and we don't talk about NoSQL as much as we talk about document-oriented or key-value or whatever.
 
-Does that spell death for NoSQL databases? Not in my opinion. But I am just in the mood to stick my neck out a bit today, so I'm going to do something I don't normally do -- predict the future. Here's my prediction: **there may be many NoSQL databases that live long and healthy lives, but among them will probably be MongoDB, Redis, and Riak**.
+Does that spell death for NoSQL databases? Not in my opinion. But I am just in the mood to stick my neck out a bit today, so I'm going to do something I don't normally do---predict the future. Here's my prediction: **there may be many NoSQL databases that live long and healthy lives, but among them will probably be MongoDB, Redis, and Riak**.
 
 Discuss!
 

@@ -57,7 +57,7 @@ SUBQUERY
    rows           200
 ```
 
-You should read this as a depth-first tree traversal. In other words, the root of the tree is the output node -- the last thing that happens in query execution.
+You should read this as a depth-first tree traversal. In other words, the root of the tree is the output node---the last thing that happens in query execution.
 
 As I said, this is a simple example. When your queries have many subqueries and/or UNIONs, you quickly get much more complicated EXPLAIN output, which is very hard to understand. It's much easier to read the tree representation for complex queries. Here are thumbnails of the query execution plans of some real queries from a project I've worked on:
 
@@ -71,7 +71,7 @@ MySQL Visual Explain tries to reverse-engineer [EXPLAIN](http://dev.mysql.com/do
 
 The crucial bridge between that and understanding EXPLAIN was a slide that showed the nodes of the tree mapped to rows in EXPLAIN. This made me see how to approach the problem. After spending hours reading the MySQL manual and source code, and studying many examples, I slowly understood how to go backwards from EXPLAIN to a tree.
 
-It is not as simple as it sounds! There are many details, such as how to decide which nodes should be children of which other nodes (when there are no subqueries or UNIONs, of course it's trivial). EXPLAIN's output can be quite complex, and a moderately complicated query takes me a few minutes to reverse-engineer by hand -- and most of the time I get it wrong. Maybe I can write the details in another blog post, or contribute them to MySQL's documentation or the [MySQL Forge wiki](http://forge.mysql.com/wiki/).
+It is not as simple as it sounds! There are many details, such as how to decide which nodes should be children of which other nodes (when there are no subqueries or UNIONs, of course it's trivial). EXPLAIN's output can be quite complex, and a moderately complicated query takes me a few minutes to reverse-engineer by hand---and most of the time I get it wrong. Maybe I can write the details in another blog post, or contribute them to MySQL's documentation or the [MySQL Forge wiki](http://forge.mysql.com/wiki/).
 
 ### Download it
 

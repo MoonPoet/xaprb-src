@@ -11,7 +11,7 @@ tags:
 
 *This post originally appeared on [the Engine Yard blog](https://blog.engineyard.com/2011/5-subtle-ways-youre-using-mysql-as-a-queue-and-why-itll-bite-you/).*
 
-I work for Percona, a MySQL consulting company. To augment my memory, I keep a quick-reference text file with notes on interesting issues that customers ask us to solve. One of the categories of frequent problems is attempts to build a job queue in MySQL. I have so many URLs under this bullet point that I stopped keeping track anymore. Customers have endless problems with job queues in their databases. By "job queue" I simply mean some list of things they've inserted, which usually need to be processed and marked as completed. I've seen scores -- maybe hundreds -- of cases like this.
+I work for Percona, a MySQL consulting company. To augment my memory, I keep a quick-reference text file with notes on interesting issues that customers ask us to solve. One of the categories of frequent problems is attempts to build a job queue in MySQL. I have so many URLs under this bullet point that I stopped keeping track anymore. Customers have endless problems with job queues in their databases. By "job queue" I simply mean some list of things they've inserted, which usually need to be processed and marked as completed. I've seen scores---maybe hundreds---of cases like this.
 
 Many people realize the difficulties in building a good job queue or batch processing system, and try not to create one inside MySQL. Although the job queue is a great design pattern from the developer's point of view, they know it's often hard to implement well in a relational database. However, experience shows me that job queues sneak up in unexpected ways, even if you're a seasoned developer.
 

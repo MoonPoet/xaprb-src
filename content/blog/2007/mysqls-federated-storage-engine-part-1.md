@@ -26,7 +26,7 @@ insert into fed_remote(i, j)
 
 ### Creating the federated tables on the local server
 
-According the the manual, the local table has to be created exactly the same as the remote table. However, this turns out not to be quite true. Indexes don't need to match. `NULL`ability doesn't need to match. Data types don't need to match. Umm... column order doesn't need to match! Wait a second, you don't even have to have the same columns -- and you can mis-name the columns! You can even create a local table with one column *based on a remote table with two columns*. For that matter, you can give the local table three columns, and when you `SELECT` from the table, the columns which have no data on the remote server simply get filled in with default values!
+According the the manual, the local table has to be created exactly the same as the remote table. However, this turns out not to be quite true. Indexes don't need to match. `NULL`ability doesn't need to match. Data types don't need to match. Umm... column order doesn't need to match! Wait a second, you don't even have to have the same columns---and you can mis-name the columns! You can even create a local table with one column *based on a remote table with two columns*. For that matter, you can give the local table three columns, and when you `SELECT` from the table, the columns which have no data on the remote server simply get filled in with default values!
 
 As I experimented with different options to the `CREATE TABLE`, I began to suspect that the columns are strictly positional. For example, if I create a table with only the `j` column and then select the data from it, I get the data from the `i` column on the remote server.
 
@@ -297,7 +297,7 @@ possible_keys: NULL
 21 Query       SHOW TABLE STATUS LIKE 'fed_remote'
 ```
 
-Interesting -- from the local index definitions (or lack thereof), it decided nothing better than a table scan is possible, and didn't do anything on the remote server but check for table existence. (Notice that I used `i = 5`, which will return no rows). If I re-add the primary key as it exists on the remote server, it's a little different:
+Interesting---from the local index definitions (or lack thereof), it decided nothing better than a table scan is possible, and didn't do anything on the remote server but check for table existence. (Notice that I used `i = 5`, which will return no rows). If I re-add the primary key as it exists on the remote server, it's a little different:
 
 ```
 -- Local:
@@ -482,7 +482,7 @@ update fed_local set j = 5;
 
 No real surprises there; I'm getting accustomed to that. I was sort of expecting to see a `LIMIT` on each query, though.
 
-There's a special case for `UPDATE`s, though: `TIMESTAMP` columns. What happens to them -- do they auto-update to `CURRENT_TIMESTAMP` as expected? To find out, I added the column on the remote table, then dropped and re-created the local table with the new column definition added. The `UPDATE` statement sets them to their present value, so they don't auto-update:
+There's a special case for `UPDATE`s, though: `TIMESTAMP` columns. What happens to them---do they auto-update to `CURRENT_TIMESTAMP` as expected? To find out, I added the column on the remote table, then dropped and re-created the local table with the new column definition added. The `UPDATE` statement sets them to their present value, so they don't auto-update:
 
 ```
 -- Local:

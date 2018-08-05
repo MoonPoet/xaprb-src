@@ -11,7 +11,7 @@ Anyway, my wife and I have a bunch of computers (desktops and laptops) and we ha
 
 <a href="{{< amz B0015313O8 >}}"><img border="0" src="/media/2008/08/HPMediaVault.jpg" width="160" height="160" alt="HP Media Vault" /></a>
 
-After a long time I decided to buy an <a href="{{< amz B0015313O8 >}}">HP Media Vault</a> and install ultra-low-power, oversized disks in it -- I did that, and will write about it elsewhere. And then I discovered that it has a media server in it. And not being a gadget guy, I had honestly never heard about these things before. Really. I read up on it a little bit and decided hell, sharing files is nice, but I have about a thousand CDs that could go on this thing, and my wife has hundreds too. That's even better than file sharing! I copied the music from her iTunes library to the shared Music folder on the server and boom, Rhythmbox magically saw it all. I couldn't believe I'd never heard about this before. Best thing since sliced bread.
+After a long time I decided to buy an <a href="{{< amz B0015313O8 >}}">HP Media Vault</a> and install ultra-low-power, oversized disks in it---I did that, and will write about it elsewhere. And then I discovered that it has a media server in it. And not being a gadget guy, I had honestly never heard about these things before. Really. I read up on it a little bit and decided hell, sharing files is nice, but I have about a thousand CDs that could go on this thing, and my wife has hundreds too. That's even better than file sharing! I copied the music from her iTunes library to the shared Music folder on the server and boom, Rhythmbox magically saw it all. I couldn't believe I'd never heard about this before. Best thing since sliced bread.
   
 I even had all my music ripped already to my <a href="/blog/2005/10/05/review-of-the-iriver-hd340/">iRiver HD340</a>. In OGG format. And then I found out the HP Media Vault doesn't support OGG format. <a href="http://www.imdb.com/title/tt0093779/">Boo! Boo! Rubbish! Filth! Slime!</a>
 
@@ -156,7 +156,7 @@ Now you should be able to see the daemon running:
 32703 root        488 S   grep daap 
 ```
   
-Notice that it's a different binary running -- not the one in /usr/sbin.
+Notice that it's a different binary running---not the one in /usr/sbin.
 
 At this point you ought to be able to start up your favorite music player (iTunes, Rhythmbox) and stream OGG and FLAC files from the media server. Test that before you go on to the next little bit.
 

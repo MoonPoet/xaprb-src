@@ -122,7 +122,7 @@ This notebook is designed for notes, but I'll use it as a journal. I wonder if I
 
 ![Quo Vadis Habana](/media/2013/07/quo-vadis-habana.jpg)
 
-This notebook is a big step down in size and bulk from the previous two. It's a much more practical size to carry around, and it has the best cover of all of them, in my opinion. The cover isn't quite rigid; it's flexible enough not to be annoying and uncomfortable in a thin bag with other things crammed in. The paper is top-notch quality -- silky smooth and creamy.
+This notebook is a big step down in size and bulk from the previous two. It's a much more practical size to carry around, and it has the best cover of all of them, in my opinion. The cover isn't quite rigid; it's flexible enough not to be annoying and uncomfortable in a thin bag with other things crammed in. The paper is top-notch quality---silky smooth and creamy.
 
 ![Quo Vadis Habana](/media/2013/07/quo-vadis-small.jpg)
 
@@ -170,7 +170,7 @@ This notebook is a great find, in my opinion. It's a good size, is thin and flex
 
 As you can see, I've chosen a variant that has an extra column on the right for notes to be set aside. I'm going to give this a try because I often find myself going back and cramming cross-references or additional information into the margins. There is a variant without this extra column, however.
 
-The ruling is a nice width -- just right for me. The color might be a little too dark, though. It could be lighter, or even use light dots, like a signature line, and it'd be nicer in my opinion.
+The ruling is a nice width---just right for me. The color might be a little too dark, though. It could be lighter, or even use light dots, like a signature line, and it'd be nicer in my opinion.
 
 The downsides: the binding doesn't quite open flat, though it comes very close, and I'm not sure if it's going to be all that durable, though the notepad is thin enough that it shouldn't have a long heavy-duty life to wear it out. The ruling doesn't have any margin in the center of the binding. This might seem like a nitpick, but without that guide I find myself cramming my pen into the crevice when writing on the left page, and having trouble with an even left-margin when writing on the right page.
 
@@ -280,7 +280,7 @@ This is just the smaller version of the above Chameleon Like notebook. Way too s
 
 ### teNues CoolNotes notebook
 
-Ditto -- this notebook is another mini-Moleskine-lookalike.
+Ditto---this notebook is another mini-Moleskine-lookalike.
 
 ### The Spark Notebook
 
@@ -349,11 +349,11 @@ Do you want a Moleskine? Then buy one. Do you want something like it but better 
 
 Do you want a big, bulky, analytical notebook? That's the Semikolon Il Creativo for you again. Organize thyself!
 
-But if you're like me and you really want a compact, flexible, practical notebook that slips easily into a messenger bag, opens flat, has nice paper, is slim and inexpensive -- then I'm leaning towards recommending the [Quo Vadis Habana]({{< amz B0066NVC02 >}}) or the Mead Cambridge Premium Notebook, depending on your taste. Note that I can't find the Cambridge online, but if you're near a Target it's probably easy to find. I might go back and buy a half dozen or so, just in case that turns out not to be true!
+But if you're like me and you really want a compact, flexible, practical notebook that slips easily into a messenger bag, opens flat, has nice paper, is slim and inexpensive---then I'm leaning towards recommending the [Quo Vadis Habana]({{< amz B0066NVC02 >}}) or the Mead Cambridge Premium Notebook, depending on your taste. Note that I can't find the Cambridge online, but if you're near a Target it's probably easy to find. I might go back and buy a half dozen or so, just in case that turns out not to be true!
 
 > Update: alas, I can no longer find the Cambridge anywhere. So sad. I've been using the Quo Vadis exclusively for the last several books I've bought. I've switched from lined to blank and bought them in bulk from [Writers Bloc](http://www.shopwritersbloc.com/habana-journal-large-blank-raspberry.html).
 
-In general, the ultimate notebook for me is 80-100 sheets of paper or 160-200 pages (I've listed pages above, to make everything consistent), an A5 size, and has pretty minimal features -- no need for a ribbon or an elastic strap -- just nice-quality paper, a slim and flexible design, and the right ruling and margins.
+In general, the ultimate notebook for me is 80-100 sheets of paper or 160-200 pages (I've listed pages above, to make everything consistent), an A5 size, and has pretty minimal features---no need for a ribbon or an elastic strap---just nice-quality paper, a slim and flexible design, and the right ruling and margins.
 
 You might also like:
 

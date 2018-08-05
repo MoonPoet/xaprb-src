@@ -155,7 +155,7 @@ Record lock, heap no 6 PHYSICAL RECORD: n_fields 7; compact format; info bits 0
 *** WE ROLL BACK TRANSACTION (1)
 ```
 
-That's fairly verbose, because it prints information about the locks it was waiting for and holding, but that's exactly what you need to figure out what was really going on. Notice how you can see Transaction 1 waiting for exactly the same lock Transaction 2 holds. Notice also Transaction 2 locks the "rec but not gap" on that lock. That means it locks the record, as opposed to the [gap before the record](http://dev.mysql.com/doc/refman/5.0/en/innodb-next-key-locking.html). You can read more about this in the MySQL manual -- the entire section on InnoDB transactional model is recommended reading.
+That's fairly verbose, because it prints information about the locks it was waiting for and holding, but that's exactly what you need to figure out what was really going on. Notice how you can see Transaction 1 waiting for exactly the same lock Transaction 2 holds. Notice also Transaction 2 locks the "rec but not gap" on that lock. That means it locks the record, as opposed to the [gap before the record](http://dev.mysql.com/doc/refman/5.0/en/innodb-next-key-locking.html). You can read more about this in the MySQL manual---the entire section on InnoDB transactional model is recommended reading.
 
 Finally, notice how Transaction 2's waited-for lock is trying to lock the gap before the record, with intention to insert. That's what finally caused the deadlock.
 
