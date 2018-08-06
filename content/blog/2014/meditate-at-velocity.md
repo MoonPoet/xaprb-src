@@ -21,7 +21,7 @@ This practice is easy and nonjudgmental. Your mileage may vary, but I find that 
 
 We'll begin at 3pm sharp, so please arrive a few minutes early. I haven't yet finalized the meeting location. [Follow me on Twitter](https://twitter.com/xaprb) and when I settle on a good location, I'll announce it. Retweet my announcement if you plan to join us, so I have a sense of how much room we'll need.
 
-If you want to add this to your Google Calendar, here's a <a target="_blank" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=djBmbGRuM2RhZm5rMjBwazc4Yml2b2RjOTAgYmFyb25Adml2aWRjb3J0ZXguY29t&tmsrc=baron%40vividcortex.com">link to an event</a>.
+If you want to add this to your Google Calendar, here's a <a href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=djBmbGRuM2RhZm5rMjBwazc4Yml2b2RjOTAgYmFyb25Adml2aWRjb3J0ZXguY29t&tmsrc=baron%40vividcortex.com">link to an event</a>.
 
 [Pic Credit](https://www.flickr.com/photos/villamon/4468869725/)
 
