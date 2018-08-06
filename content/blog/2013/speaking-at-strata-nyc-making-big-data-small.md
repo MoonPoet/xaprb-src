@@ -12,8 +12,7 @@ I'm off to my first [Strata](http://strataconf.com/stratany2013/) conference, an
 
 My session will be about [ways to make big data small](http://strataconf.com/stratany2013/public/schedule/detail/31435), in both the storage and processing dimensions, without losing much of the value. 
 
-<img src="/media/2013/08/4985831624_fc6cc446c9-300x156.jpg" alt="4985831624_fc6cc446c9" width="300" height="156" class="aligncenter size-medium wp-image-3248" />
-
+![4985831624_fc6cc446c9](/media/2013/08/4985831624_fc6cc446c9.jpg)
 
 
 If you're familiar with Bloom Filters, this is an example. Bloom Filters let you answer the question, 

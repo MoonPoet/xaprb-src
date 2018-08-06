@@ -29,7 +29,8 @@ I had to increase the script timeout so Firefox wouldn't interrupt the tests. I 
 
 Here's a graph of the times. The algorithms are in alphabetical order:
 
-<img src="/media/2006/05/date-formatting-benchmark.png" alt="JavaScript date-formatting benchmark" height="311" width="463" />
+![JavaScript date-formatting benchmark](/media/2006/05/date-formatting-benchmark.png)
+
 Obviously, the method I use is much faster---between 3.15 and 4.89 times faster. Here are the results as numbers in a table. **WARNING**: If you click on the links to the benchmarks, your browser will probably freeze for the better part of a minute on a fast machine---maybe longer on a slow machine.
 
 | Algorithm | Time (sec) | Relative Time | Link to benchmark |

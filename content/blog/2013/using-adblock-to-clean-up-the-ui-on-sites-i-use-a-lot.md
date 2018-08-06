@@ -15,7 +15,7 @@ I'm assuming you use one of the many excellent AdBlock extensions for whatever b
 
 LinkedIn has a new endorsement feature. They show me a big banner at the top of the page every time I view a connection's profile page.
 
-[<img src="/media/2013/04/linked-in-endorsements.png" alt="linked-in-endorsements" width="655" height="207" class="aligncenter size-full wp-image-3133" />](/media/2013/04/linked-in-endorsements.png)
+![linked-in-endorsements](/media/2013/04/linked-in-endorsements.png)
 
 I don't care. I don't know enough about most of my connections to endorse them publicly, and I don't want to see that nonsense. So I AdBlock it. This is easy to do---just right-click and select the context menu item to block that whole banner.
 
@@ -27,11 +27,11 @@ Somewhere I read that Google+ has quietly become a significantly large social ne
 
 What's my business is whether I let them annoy me with notifications. You know that irritating notification bar at the top of the page in all of the pages on Google's domains? This one?
 
-[<img src="/media/2013/04/google-plus-notification1.png" alt="google-plus-notification" width="283" height="167" class="aligncenter size-full wp-image-3137" />](/media/2013/04/google-plus-notification1.png)
+![google-plus-notification](/media/2013/04/google-plus-notification1.png)
 
 As far as I can tell, Google doesn't allow you to disable notifications. The only way I know to get rid of that irritating red animated 1 button is to click on it so it turns back into a faint gray 0:
 
-[<img src="/media/2013/04/google-plus-notification-22.png" alt="google-plus-notification-2" width="444" height="118" class="aligncenter size-full wp-image-3138" />](/media/2013/04/google-plus-notification-22.png)
+![google-plus-notification-2](/media/2013/04/google-plus-notification-22.png)
 
 No offense, guys, I do consider you friends, but I don't care that you added me to your circles :-\ I don't use Google+, regardless of what Google tries to make you believe. I bet you were probably bullied into adding me, just to make some annoying suggestion box go away.
 

@@ -15,11 +15,11 @@ categories:
 
 Yahoo! Mail recently presented me with CAPTCHAs before they'd even let me send an email. The messaging on the page said it was to prevent spam. Their software may have decided I was likely a spammer based on the message, because I've never gotten CAPTCHAs before or since from them. Another possibility is that I was randomly selected for a test. In any case the images were almost completely unreadable. It took me three tries to get through, and I'm a computer programmer---I'd think I would be better able to pass a CAPTCHA than an average user. Here are the images, in the order I saw them:
 
-<img src="/media/2005/11/captcha1.jpg" height="80" width="290" alt="CAPTCHA 1 from Yahoo! Mail" />
+![CAPTCHA 1 from Yahoo! Mail](/media/2005/11/captcha1.jpg)
 
-<img src="/media/2005/11/captcha2.jpg" height="80" width="290" alt="CAPTCHA 2 from Yahoo! Mail" />
+![CAPTCHA 2 from Yahoo! Mail](/media/2005/11/captcha2.jpg)
 
-<img src="/media/2005/11/captcha3.jpg" height="80" width="290" alt="CAPTCHA 3 from Yahoo! Mail" />
+![CAPTCHA 3 from Yahoo! Mail](/media/2005/11/captcha3.jpg)
 
 I still have no idea what the first two are. Please, if you are considering using a CAPTCHA on your website, think again.
 

@@ -4,12 +4,12 @@ date: "2006-08-03"
 url: /blog/2006/08/03/a-little-known-way-to-cause-a-database-deadlock/
 description: "What causes MySQL and InnoDB database deadlocks and how to avoid them."
 image: "/media/2006/03/wrestlers.jpg"
+credit: https://pixabay.com/en/men-wrestling-sports-grappling-mat-83501/
 categories:
   - Databases
 ---
 
 In this article I'll introduce deadlocks, analyze and explain a real example, and show how to cause and avoid deadlocks. 
-![Wrestlers](/media/2006/03/wrestlers.jpg)
 
 <!--more-->
 
@@ -57,7 +57,7 @@ Transaction 1&#8242;s locks cannot allow Transaction 2 to insert the new row. If
 
 Here's a picture of the situation. Start reading at the bottom right, then go to the top left, then to the top right:
 
-<img src="/media/2006/08/deadlock.png" width="400" height="102" alt="deadlock" />
+![deadlock](/media/2006/08/deadlock.png)
 
 A key point is that those transactions are working in opposite directions. Transaction 1 is working downwards through the table. Transaction 2 is working upwards. If you think about it, that's sort of cyclical, right? That's one way to cause a deadlock: get two transactions working in opposite directions.
 
@@ -159,4 +159,3 @@ That's fairly verbose, because it prints information about the locks it was wait
 
 Finally, notice how Transaction 2's waited-for lock is trying to lock the gap before the record, with intention to insert. That's what finally caused the deadlock.
 
-[Picture Credit](https://pixabay.com/en/men-wrestling-sports-grappling-mat-83501/)

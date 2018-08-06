@@ -7,7 +7,7 @@ categories:
 ---
 I have created a web page that matches regular expressions against arbitrary input text and displays the results graphically, so you can take some sample text and build regular expressions the easy way, with immediate feedback about what matches and where, where you have errors, and more.
 
-<img src="/media/2006/01/rx-toolkit.png" alt="Regular Expression Toolkit Screenshot" width="449" height="225" />
+![Regular Expression Toolkit Screenshot](/media/2006/01/rx-toolkit.png)
 
 I've been working on this for a couple of weeks, a minute here and there as I get time. A few days ago I saw someone created a very nifty similar app over at [Rex V](http://www.rexv.org/). Apparently the pundits are right---never assume you're the only one with an idea.
 

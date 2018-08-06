@@ -7,7 +7,7 @@ categories:
 ---
 If you have to prioritize projects (and you do), you are sacrificing one thing for another. What happens when that starts to work against itself? What happens when you can't just put the highest priority project on top? Can you imagine your priorities looking like this?
 
-<img src="/media/2006/02/cards.jpg" alt="Playing cards demonstrating circular priorities" width="158" height="156" />
+![Playing cards demonstrating circular priorities](/media/2006/02/cards.jpg)
 
 I see this happen all the time. That's not to say priorities are evil in and of themselves. I'm just pointing out that at some point priorities will conflict. This affects many things, but most importantly it affects everyone's morale, including the customer's. This is a project risk like any other.
 

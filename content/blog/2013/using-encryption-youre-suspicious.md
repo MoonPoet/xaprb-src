@@ -16,7 +16,7 @@ I also said that those who use privacy, which is non-default, are making themsel
 
 Yesterday, yet another [ugly NSA slideshow](http://www.theguardian.com/world/interactive/2013/jul/31/nsa-xkeyscore-program-full-presentation) was made public. Take a look at slide 15:
 
-[<img src="/media/2013/08/nsa-finding-targets-300x219.png" alt="nsa-finding-targets" width="300" height="219" class="aligncenter size-medium wp-image-3242" />](/media/2013/08/nsa-finding-targets.png) 
+![nsa-finding-targets](/media/2013/08/nsa-finding-targets.png) 
 
 Look at the following slides, too: they discuss decrypting people's encrypted activities to inspect. Refer to the closing sentence of my quoted paragraph above. Read the full article, linked at the top of this blog post. The amount and specificity of surveillance being performed is stunning. 
 

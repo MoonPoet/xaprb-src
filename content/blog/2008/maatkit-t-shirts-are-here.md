@@ -6,8 +6,6 @@ categories:
   - Databases
   - Open Source
 ---
-[<img style="float:right" src='/media/2008/04/maatkit.jpg' alt='Maatkit' />](http://www.maatkit.org/)
-
 I'm at the [MySQL Conference](http://www.mysqlconf.com/) and the t-shirts I created for [Maatkit](http://www.maatkit.org/) have arrived. Come get yours! They are high-quality, attractive shirts you'll be proud to wear, and they are a nice rich wine-red color.
 
 [Harrison Fisk (co-author of MySQL Clustering)]({{< amz 0672328550 >}}) got the first one, because he told me that he recommends Maatkit to MySQL Support customers about twice a week. I made sure to save one for [Jay Pipes](http://jpipes.com/) too, because his luggage got lost so he has nothing to wear. Unfortunately, I didn't make any Maatkit underwear, sorry Jay. Now I know what to do for next year...

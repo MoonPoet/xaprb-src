@@ -6,7 +6,7 @@ categories:
   - Databases
   - Writing
 ---
-[<img style="float:right" src='/media/2008/05/high_performance_mysql.jpg' alt='High Performance MySQL' />]({{< amz 0596101716 >}})
+[![High Performance MySQL](/media/2008/05/high_performance_mysql.jpg "fr pa1")]({{< amz 0596101716 >}})
 
 If you're waiting for [High Performance MySQL Second Edition]({{< amz 0596101716 >}}) to hit the shelf, you're not the only one. I am too! I can't wait to actually hold it in my hands.
 

@@ -139,7 +139,7 @@ root@tigger ~ # emerge libgda
 
 This solved the connection issues. Now I could log in as the `glom` user I created before, and I was able to create a new database, but I couldn't switch Glom from Operator mode to Developer mode. I could create an empty database, but pretty much nothing else. I couldn't create tables, and many menus and menu entries were grayed out. When I tried to use the User Level menu to switch from Operator to Developer mode, Glom displayed an error dialog saying "Developer mode not available. Developer mode is not available. Check that you have sufficient database access rights and that the glom file is not read-only." Here's a screenshot:
 
-[<img src="/media/2006/09/thumb-glom-developer-mode-not-available.png" width="200" height="66" alt=""Developer mode is not available. Check that you have sufficient database access rights and that the glom file is not read-only />](/media/2006/09/glom-developer-mode-not-available.png)
+![](/media/2006/09/glom-developer-mode-not-available.png)
 
 This also turned out to be a minor configuration issue, but Glom's documentation is a bit thin at the time of writing, so it took me a while to understand what was wrong. Fortunately, because I'd started Glom from a terminal, I was also able to see some debugging output, which gave me a hint:
 
@@ -178,49 +178,49 @@ This is for PostgreSQL prior to version 8.1, which has a significantly different
 
 Finally, I was really ready to create a simple database project. I decided to create a database that would keep track of servers and software in a corporate network. I wanted to store information about servers, software, and which software is installed on which servers. When Glom showed me the initial screen, I chose "New," typed the name of the XML file defining the database ("servertest"), and accepted the default database title ("Servertest"). Glom next presented me with a login dialog, asking me to connect to PostgreSQL:
 
-[<img src="/media/2006/09/thumb-glom-connect.png" width="200" height="127" alt="Glom screenshot: connecting to the database" />](/media/2006/09/glom-connect.png)
+![Glom screenshot: connecting to the database](/media/2006/09/glom-connect.png)
 
 It filled the username field with my Unix username, not "glom," so I changed that to "glom" and typed the PostgreSQL password. The next screen I saw was the "Tables in database" dialog, which showed no tables. I created three tables: Server, Program, and Installation. This screen doesn't allow you to define columns for tables; all you can do is create named tables:
 
-[<img src="/media/2006/09/thumb-glom-tables-in-database.png" width="142" height="142" alt="Glom screenshot: tables in database" />](/media/2006/09/glom-tables-in-database.png)
+![Glom screenshot: tables in database](/media/2006/09/glom-tables-in-database.png)
 
 After I closed this dialog, Glom displayed the Installation table in list view, I guess because it's the first table in alphabetical order:
 
-[<img src="/media/2006/09/thumb-glom-list-mode.png" width="200" height="145" alt="Glom screenshot: table contents in list mode" />](/media/2006/09/glom-list-mode.png)
+![Glom screenshot: table contents in list mode](/media/2006/09/glom-list-mode.png)
 
 Glom creates three columns for every table by default: description, comments, and an auto-incrementing integer ID field. I decided not to change the `Server` and `Program` tables, and just accepted the defaults, but I needed to record which machine and program an installation represents. I chose the Developer->Fields menu to edit the `Installation` table, and added columns called `server` and `program`:
 
-[<img src="/media/2006/09/thumb-glom-define-fields.png" width="200" height="118" alt="Glom screenshot: defining fields in a table" />](/media/2006/09/glom-define-fields.png)
+![Glom screenshot: defining fields in a table](/media/2006/09/glom-define-fields.png)
 
 Then I switched to the Details view of the Installation table, which will eventually allow me to enter information about where a program is installed:
 
-[<img src="/media/2006/09/thumb-glom-details-mode.png" width="200" height="145" alt="Glom screenshot: table contents in details mode" />](/media/2006/09/glom-details-mode.png)
+![Glom screenshot: table contents in details mode](/media/2006/09/glom-details-mode.png)
 
 This isn't very useful for entering data as it is. I want a pull-down menu of servers and programs, and I want those fields first in the display, before the `Description` and `Comments` fields. To create the pull-down menus, I first defined relationships between the tables. I selected the "Developer->Relationships for this table" menu entry, which showed the Relationships dialog. I added relationships from my newly added columns to the ID columns of the `Program` and `Server` tables:
 
-[<img src="/media/2006/09/thumb-glom-relationships.png" width="200" height="75" alt="Glom screenshot: defining relationships" />](/media/2006/09/glom-relationships.png)
+![Glom screenshot: defining relationships](/media/2006/09/glom-relationships.png)
 
 Next I chose the Developer->Layout menu, which shows the fields and some controls for formatting and editing them:
 
-[<img src="/media/2006/09/thumb-glom-layout.png" width="200" height="129" alt="Glom screenshot: layout mode" />](/media/2006/09/glom-layout.png)
+![Glom screenshot: layout mode](/media/2006/09/glom-layout.png)
 
 I selected the `server` field and clicked the Formatting button to control how it's presented. I chose "Use custom formatting" and selected "Choices from Related Records," then chose the `Installation_To_Server` relationship. I also chose to restrict the data to these choices, so a user can't enter a server that doesn't exist:
 
-[<img src="/media/2006/09/thumb-glom-formatting.png" width="105" height="200" alt="Glom screenshot: defining field formatting" />](/media/2006/09/glom-formatting.png)
+![Glom screenshot: defining field formatting](/media/2006/09/glom-formatting.png)
 
 I repeated the process for the `program` field. Next, I brought those fields up to the front of the display, by selecting them in the Layout dialog and using the Up buttons. After I accepted these changes, the Details view looks much more usable:
 
-[<img src="/media/2006/09/thumb-glom-details-mode-improved.png" width="200" height="145" alt="Glom screenshot: details mode after changing field formatting" />](/media/2006/09/glom-details-mode-improved.png)
+![Glom screenshot: details mode after changing field formatting](/media/2006/09/glom-details-mode-improved.png)
 
 If I had not restricted the data to the choices in the related records, the pull-down menus would have been combo boxes, and if I had selected the checkbox in the Relationships dialog to allow editing related records, changes made by typing in the combo boxes could be propagated through to the related records. I chose not to use these more advanced features for this simple demo, though. I also chose not to use a wealth of other advanced features, such as date fields, which automatically generate a GTK+ date chooser, etc etc.
 
 In order to create entries in the `Installation` table, I need to create some entries in `Server` and `Program`. I did this easily from the list views of those tables, but first, I edited the tables so their ID columns are auto-incrementing. If I'm going to have a surrogate key, it might as well auto-increment! Once I created those entries, my pull-down menus were nicely populated:
 
-[<img src="/media/2006/09/thumb-glom-details-editing.png" width="200" height="125" alt="Glom screenshot: details mode, editing a record" />](/media/2006/09/glom-details-editing.png)
+![Glom screenshot: details mode, editing a record](/media/2006/09/glom-details-editing.png)
 
 And the resulting data, in list mode:
 
-[<img src="/media/2006/09/thumb-glom-list-mode-with-data.png" width="200" height="125" alt="Glom screenshot: list mode, showing the newly entered data" />](/media/2006/09/glom-list-mode-with-data.png)
+![Glom screenshot: list mode, showing the newly entered data](/media/2006/09/glom-list-mode-with-data.png)
 
 That's as far as I'll go with this basic intro to designing and using databases with Glom. If you are interested in the more advanced features, you should take a look at the sample applications that come with it.
 

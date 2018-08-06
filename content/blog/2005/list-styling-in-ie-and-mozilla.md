@@ -11,15 +11,15 @@ The [example list](/media/2005/10/list-styling-example.html) is the same as the 
 
 With default styling, the colored borders made it clear that the left borders of the list were in different places in the two browsers, even though the content was in the same position. In Mozilla, the list's box extended all the way left to the content area. There was about 40px of space between the list's left edge and the list item's left edge. It was not obvious whether this was created by the UL's padding or the LI's margin. In IE, the left edges of the UL and LI were next to each other, so I guessed the indentation was created by the UL's left margin. In both cases, it was clear the LI had no padding, but there was no way to know if it had a margin in Mozilla.
 
-<img src="/media/2005/10/list-styling-default.png" alt="default styling" width="440" height="75" />
+![default styling](/media/2005/10/list-styling-default.png)
 
 To understand whether Mozilla adds padding to the UL or margin to the LI, I removed the padding and margin from the elements and watched the results. First, I removed the margin from the UL:
 
-<img src="/media/2005/10/list-styling-no-margin.png" alt="margin-left: 0" width="440" height="75" /> 
+![margin-left: 0](/media/2005/10/list-styling-no-margin.png) 
 
 There was no change in Mozilla, so that wasn't it. Based on that, I decided there was probably padding on the UL. IE collapsed the list all the way to the left edge, so as expected, IE must use the margin on the UL to indent the bullets. Next, I removed the padding from the UL and reset the margin to the default:
 
-<img src="/media/2005/10/list-styling-no-padding.png" alt="padding-left: 0" width="440" height="75" /> 
+![padding-left: 0](/media/2005/10/list-styling-no-padding.png) 
 
 This time IE was unchanged from the default, and Mozilla collapsed to the left edge, so I guessed right.
 
@@ -29,15 +29,15 @@ So far so good, but I also have also noticed strange behavior with text-indent a
 
 To figure out how the text-indent was implemented, I first set the marker-position to outside. I saw no change in the rendering at all, so I set it to inside, and the results looked very much like the CSS spec's example:
 
-<img src="/media/2005/10/list-styling-inside.png" alt="marker-position: inside" width="440" height="75" /> 
+![marker-position: inside](/media/2005/10/list-styling-inside.png) 
 
 The CSS spec says when marker-position is inside, the marker should become the *first inline box* in the LI. Given that, I expect the marker to be indented with the text when it is inside the LI, and to remain independent when it is outside the LI. I experimented with this, adding text-indent with marker-position outside:
 
-<img src="/media/2005/10/list-styling-outside-indent.png" alt="text-indent: 40px" width="440" height="75" /> 
+![text-indent: 40px](/media/2005/10/list-styling-outside-indent.png) 
 
 Mozilla did as expected, indenting the content but not the marker. IE indented the marker too though, indicating the marker is not rendered independently from the content. Next I added text-indent with the marker inside:
 
-<img src="/media/2005/10/list-styling-inside-indent.png" alt="marker-position: inside; text-indent: 40px" width="440" height="75" /> 
+![marker-position: inside; text-indent: 40px](/media/2005/10/list-styling-inside-indent.png) 
 
 This time both browsers rendered the text the same, as per the spec. In this regard it seems IE doesn't follow the spec. To be fair though, the spec is deliberately vague on markers to be backwards-compatible with the ambiguity in CSS1 on markers.
 

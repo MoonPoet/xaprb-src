@@ -9,7 +9,7 @@ categories:
 ---
 [Last time](/blog/2013/01/03/determining-the-usls-coefficient-of-performance-part-2/ "Determining the USL’s coefficient of performance, part 2") I said that you can set a starting value for the USL's coefficient of performance and let your modeling software (R, gnuplot, etc) manipulate this as part of the regression to find the best fit. However, there is a subtlety in the USL model that you need to be aware of. Here is a picture of the low-end of the curve:
 
-<img src="/media/2013/01/usl1.png" alt="usl" width="490" height="486" class="aligncenter size-full wp-image-3008" />
+![usl](/media/2013/01/usl1.png)
 
 The graph shows the USL model as the blue curve and linear scalability as the black line. Notice that at concurrencies less than 1, the value of the USL function is actually greater than the linear scalability function. This deserves some thought and explanation, because it can cause problems.
 
