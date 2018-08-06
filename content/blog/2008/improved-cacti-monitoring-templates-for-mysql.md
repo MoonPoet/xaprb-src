@@ -35,6 +35,6 @@ This has taken a lot of time. In particular, I spent a lot of time working on it
 
 **Please enter issue reports for bugs, feature requests, etc at the [Google project homepage](http://code.google.com/p/mysql-cacti-templates/issues/list), *not* in the comments of this blog post**. I do not look through comments on my blog when I'm trying to remember what I should be working on for a software project.
 
-<small>PS: You may also be interested in <a href="http://blog.kovyrin.net/2007/10/06/useful-cacti-templates-to-monitor-your-servers/">Alexey Kovyrin's list of templates for monitoring servers</a>.</small>
+<small>PS: You may also be interested in [Alexey Kovyrin's list of templates for monitoring servers](http://blog.kovyrin.net/2007/10/06/useful-cacti-templates-to-monitor-your-servers/).</small>
 
 

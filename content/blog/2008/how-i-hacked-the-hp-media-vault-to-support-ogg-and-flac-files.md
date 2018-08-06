@@ -11,9 +11,9 @@ Anyway, my wife and I have a bunch of computers (desktops and laptops) and we ha
 
 <a href="{{< amz B0015313O8 >}}"><img border="0" src="/media/2008/08/HPMediaVault.jpg" width="160" height="160" alt="HP Media Vault" /></a>
 
-After a long time I decided to buy an <a href="{{< amz B0015313O8 >}}">HP Media Vault</a> and install ultra-low-power, oversized disks in it---I did that, and will write about it elsewhere. And then I discovered that it has a media server in it. And not being a gadget guy, I had honestly never heard about these things before. Really. I read up on it a little bit and decided hell, sharing files is nice, but I have about a thousand CDs that could go on this thing, and my wife has hundreds too. That's even better than file sharing! I copied the music from her iTunes library to the shared Music folder on the server and boom, Rhythmbox magically saw it all. I couldn't believe I'd never heard about this before. Best thing since sliced bread.
+After a long time I decided to buy an [HP Media Vault]({{< amz B0015313O8 >}}) and install ultra-low-power, oversized disks in it---I did that, and will write about it elsewhere. And then I discovered that it has a media server in it. And not being a gadget guy, I had honestly never heard about these things before. Really. I read up on it a little bit and decided hell, sharing files is nice, but I have about a thousand CDs that could go on this thing, and my wife has hundreds too. That's even better than file sharing! I copied the music from her iTunes library to the shared Music folder on the server and boom, Rhythmbox magically saw it all. I couldn't believe I'd never heard about this before. Best thing since sliced bread.
   
-I even had all my music ripped already to my <a href="/blog/2005/10/05/review-of-the-iriver-hd340/">iRiver HD340</a>. In OGG format. And then I found out the HP Media Vault doesn't support OGG format. <a href="http://www.imdb.com/title/tt0093779/">Boo! Boo! Rubbish! Filth! Slime!</a>
+I even had all my music ripped already to my [iRiver HD340](/blog/2005/10/05/review-of-the-iriver-hd340/). In OGG format. And then I found out the HP Media Vault doesn't support OGG format. [Boo! Boo! Rubbish! Filth! Slime!](http://www.imdb.com/title/tt0093779/)
 
 So I fixed that. Now I'll show you how.
   
@@ -23,7 +23,7 @@ If you try what's on this page and something breaks, it is your fault, not mine.
   
 ### The basics: log into the server
   
-The HP documentation for the Media Vault is totally incomplete and assumes you want to install their GUI program and control the thing from your Windows desktop. There's a much better way. The Media Vault has a full-featured web interface. Log into the web console. I'm going to assume that your HP Media Vault's DNS name is hpmediavault, so you can <a href="http://hpmediavault/">log into it with this URL</a>. Once you do, set the admin password to secure the server. Remember it.
+The HP documentation for the Media Vault is totally incomplete and assumes you want to install their GUI program and control the thing from your Windows desktop. There's a much better way. The Media Vault has a full-featured web interface. Log into the web console. I'm going to assume that your HP Media Vault's DNS name is hpmediavault, so you can [log into it with this URL](http://hpmediavault/). Once you do, set the admin password to secure the server. Remember it.
 
 The next fun thing: the server runs GNU/Linux and has SSH enabled by default. Yes, that's right: you can just SSH into the thing! The password you set in the previous step is now your SSH password. Your SSH username is root, no matter what you set the admin username to.
 
@@ -51,9 +51,9 @@ As you can see, the server runs with a stripped-down set of command-line tools c
   
 ### Step 1: install ipkg
   
-Behind the scenes, the Media Vault's media streaming is provided by <a href="http://fireflymediaserver.org/">Firefly</a>, formerly known as mt-daapd (<a href="http://en.wikipedia.org/wiki/Digital_Audio_Access_Protocol">DAAP</a> is the iTunes server protocol). This is a Free Software media server, and it's highly capable. But the version that ships on the device is old and doesn't support OGG. You're going to fix that by installing a newer version. But first, you have to install a package management system that will install the newest Firefly software for you.
+Behind the scenes, the Media Vault's media streaming is provided by [Firefly](http://fireflymediaserver.org/), formerly known as mt-daapd ([DAAP](http://en.wikipedia.org/wiki/Digital_Audio_Access_Protocol) is the iTunes server protocol). This is a Free Software media server, and it's highly capable. But the version that ships on the device is old and doesn't support OGG. You're going to fix that by installing a newer version. But first, you have to install a package management system that will install the newest Firefly software for you.
 
-The package management system is <a href="http://handhelds.org/moin/moin.cgi/Ipkg">ipkg, the Itsy Package Management System</a>. It's really easy to install. First, let's see where your hard drives are mounted:
+The package management system is [ipkg, the Itsy Package Management System](http://handhelds.org/moin/moin.cgi/Ipkg). It's really easy to install. First, let's see where your hard drives are mounted:
   
 ```
 # mount
@@ -68,7 +68,7 @@ If yours isn't /share/1000, use a different value in the following commands. Now
   
 Now let's find the installation image to download. Go look here for the latest version of the image:
   
-<a href="http://ipkg.nslu2-linux.org/feeds/optware/cs05q3armel/cross/unstable/">http://ipkg.nslu2-linux.org/feeds/optware/cs05q3armel/cross/unstable/</a>
+[http://ipkg.nslu2-linux.org/feeds/optware/cs05q3armel/cross/unstable/](http://ipkg.nslu2-linux.org/feeds/optware/cs05q3armel/cross/unstable/)
   
 Search for "hpmv2-bootstrap" on that page. You should find a file something like this: hpmv2-bootstrap_1.2-4_arm.xsh. Copy the link location for that, and go back to your command prompt. Now download the file to the Media Vault, substituting the correct URL into the command below:
   
@@ -96,11 +96,11 @@ Before you move on, update its cache of available software:
 # ipkg update
 ```
   
-I got this installation procedure from <a href="http://tech.groups.yahoo.com/group/hackingthemediavault/message/259">the Yahoo group on hacking the Media Vault</a>.
+I got this installation procedure from [the Yahoo group on hacking the Media Vault](http://tech.groups.yahoo.com/group/hackingthemediavault/message/259).
   
 ### Step 2: Install Firefly Nightly
   
-I wasn't able to determine whether the latest stable Firefly release has OGG streaming enabled, so I installed the latest nightly release. At some point in the future I'm sure a stable release will have it, but I breathed a prayer to Saint Hewlett and installed the nightly, following <a href="http://tech.groups.yahoo.com/group/hackingthemediavault/message/338">instructions I also found on Hacking the Media Vault</a>. Fortunately it seems to work fine for me. Here's how I did it:
+I wasn't able to determine whether the latest stable Firefly release has OGG streaming enabled, so I installed the latest nightly release. At some point in the future I'm sure a stable release will have it, but I breathed a prayer to Saint Hewlett and installed the nightly, following [instructions I also found on Hacking the Media Vault](http://tech.groups.yahoo.com/group/hackingthemediavault/message/338). Fortunately it seems to work fine for me. Here's how I did it:
   
 ```
 # ipkg install mt-daapd-svn

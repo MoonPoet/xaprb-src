@@ -45,7 +45,7 @@ There were quite a few people in the room, but it wasn't packed (packed would ha
 
 The best part of the session was the feedback and suggestions I got.
 
-I also spent a few moments at the end of the talk to mention <a href="http://code.google.com/p/maatkit">MySQL Table Checksum and MySQL Table Sync</a>, which can be useful for efficiently detecting and repairing when a replica server is out of sync with its master. As far as I know I'm the only person who's written good tools for this purpose.
+I also spent a few moments at the end of the talk to mention [MySQL Table Checksum and MySQL Table Sync](http://code.google.com/p/maatkit), which can be useful for efficiently detecting and repairing when a replica server is out of sync with its master. As far as I know I'm the only person who's written good tools for this purpose.
 
 The new version of innotop will be in theaters near you as release 1.4.2 in a few days.
 

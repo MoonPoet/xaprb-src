@@ -27,7 +27,7 @@ As you might imagine, this is not terribly efficient. Fetching data that's not i
 
 In the best case, this works okay. Not always---for example, the Pentium 4 has a very long pipeline, so the cost of a wrong branch prediction is very high. Another case is when you simply need a lot of data, such as tens of gigabytes. Suppose for your 10GB operation, you're only going to look at each byte once (a common occurrence in data warehousing queries). This renders your caches useless, because caches work on the principle that you're likely to look at recently accessed data again soon.
 
-In these cases, the speed of the computation is constrained by the <a href="http://en.wikipedia.org/wiki/Von\_Neumann\_architecture">Von Neumann bottleneck</a>: the inefficient fetch-compute-wait cycle of constantly going to the memory (or disk) for more data, a teeny bit at a time. Remember, even in-memory data is very slow compared to data that's in the registers. Having a lot of fast memory is not a **solution** to the Von Neumann bottleneck. It's a **workaround** to reduce the cost.
+In these cases, the speed of the computation is constrained by the [Von Neumann bottleneck](http://en.wikipedia.org/wiki/Von\_Neumann\_architecture): the inefficient fetch-compute-wait cycle of constantly going to the memory (or disk) for more data, a teeny bit at a time. Remember, even in-memory data is very slow compared to data that's in the registers. Having a lot of fast memory is not a **solution** to the Von Neumann bottleneck. It's a **workaround** to reduce the cost.
 
 ### Kickfire's architecture
 
@@ -43,7 +43,7 @@ Conventional processing is like trying to fill your bathtub from the sink with a
 
 I'm taking some liberties here, to illustrate the differences. As I said, I haven't seen the wiring diagrams of the Kickfire chip. But hopefully you get the concept.
 
-This is not a new idea. If you've worked with modern graphics cards, you've seen this in action. Programming languages like <a href="http://en.wikipedia.org/wiki/Cg\_%28programming\_language%29">Cg</a> express the stream-processing concepts elegantly. If you've ever been in a classroom full of C++ programmers trying to learn Cg, you've seen how hard it is to grasp this different approach. Essentially, graphics programming on one of these chips is a series of transformations, not a series of instructions. You input some vertexes at one end of the processor, and you tell the chip to do some matrix multiplies and so on. Out pops the result at the other end.
+This is not a new idea. If you've worked with modern graphics cards, you've seen this in action. Programming languages like [Cg](http://en.wikipedia.org/wiki/Cg\_%28programming\_language%29) express the stream-processing concepts elegantly. If you've ever been in a classroom full of C++ programmers trying to learn Cg, you've seen how hard it is to grasp this different approach. Essentially, graphics programming on one of these chips is a series of transformations, not a series of instructions. You input some vertexes at one end of the processor, and you tell the chip to do some matrix multiplies and so on. Out pops the result at the other end.
 
 If this doesn't sound much different from instructions... well, meditate on it. It's like an assembly line, but nobody leaves their station along the conveyor belt. In a traditional CPU, the "person" at the conveyor *constantly* leaves to go get the materials he needs.
 
@@ -51,7 +51,7 @@ Kickfire runs in commodity hardware, and it is just one or two servers, not rack
 
 ### What took so long?
 
-Stream processing is the obvious way to run SQL queries. Some readers may never have thought about it this way, but my guess is that a lot of you already think of SQL in a stream-processing way, even though you might know that computers today really implement it in conventional ways. I have always tried to think of it this way, and I <a href="/blog/2005/10/03/understanding-sql-joins/">always try to explain SQL as a stream</a>, too.
+Stream processing is the obvious way to run SQL queries. Some readers may never have thought about it this way, but my guess is that a lot of you already think of SQL in a stream-processing way, even though you might know that computers today really implement it in conventional ways. I have always tried to think of it this way, and I [always try to explain SQL as a stream](/blog/2005/10/03/understanding-sql-joins/), too.
 
 So when I was on a call with the Kickfire engineers and it finally sunk in, I felt really silly. Why didn't I think of that? It's so obvious.
 
@@ -67,7 +67,7 @@ One thing I'm interested in is how well the system performs for general-purpose 
 
 They are still in stealth mode and my NDA prevents me from being able to tell you a lot or answer all your questions yet. But someday they will no longer be in stealth mode, and you'll find out everything you want to then.
 
-Hint: they are going to be giving a <a href="http://en.oreilly.com/mysql2008/public/schedule/detail/3286">keynote address</a> on their technology, but there's not much detail in the description. Come to the keynote and find out.
+Hint: they are going to be giving a [keynote address](http://en.oreilly.com/mysql2008/public/schedule/detail/3286) on their technology, but there's not much detail in the description. Come to the keynote and find out.
 
 ### Why am I writing this?
 

@@ -34,7 +34,7 @@ That's fine, but who holds the lock? I thought there was no way to find that out
 
 ### InnoDB Lock Monitor
 
-Until I learned about the <a href="http://dev.mysql.com/doc/en/innodb-monitor.html">InnoDB Lock Monitor</a>, that is. You enable it by running the following command:
+Until I learned about the [InnoDB Lock Monitor](http://dev.mysql.com/doc/en/innodb-monitor.html), that is. You enable it by running the following command:
 
 ```
 CREATE TABLE innodb_lock_monitor(a int) ENGINE=INNODB;

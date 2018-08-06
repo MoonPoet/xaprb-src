@@ -50,7 +50,7 @@ All of these tools are very flexible and customizable. The user can choose what 
 
 `top` is one of the programs in the `procps` package, along with `ps`, `vmstat`, `w`, `kill`, `free`, `slabtop`, and `skill`. All these tools are in a default installation on most distributions.
 
-`<a href="http://htop.sourceforge.net/">htop</a>` is similar to `top`, except it is mouse-aware, has a color display, and displays little charts to help see statistics at a glance. It also has some features `top` doesn't have.
+[`htop`](http://htop.sourceforge.net/) is similar to `top`, except it is mouse-aware, has a color display, and displays little charts to help see statistics at a glance. It also has some features `top` doesn't have.
 
 On a somwhat-related note, [mytop](http://jeremy.zawodny.com/mysql/mytop/) is a handy monitor for MySQL servers. Take a look at [Jeremy Zawodny's website](http://jeremy.zawodny.com/blog/) while you're there. He is a smart cookie.
 

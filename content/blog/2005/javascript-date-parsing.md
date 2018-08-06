@@ -33,6 +33,6 @@ I'm wrapping the [date-formatting and date-parsing code](https://gist.github.com
 
 ### What it's not
 
-This code is **not** a JavaScript implementation of <a href="http://www.php.net/manual/en/function.strtotime.php">strtotime</a>. That's too difficult and not that useful in my opinion. (For those not familiar with it, `strtotime` can understand input like "two weeks ago next Sunday"). It's also **not internationalized**. It only works for my little slice of the universe: the English language---though international date-formatting standards (ISO 8601, highly recommended) make that a moot point anyway.
+This code is **not** a JavaScript implementation of [strtotime](http://www.php.net/manual/en/function.strtotime.php). That's too difficult and not that useful in my opinion. (For those not familiar with it, `strtotime` can understand input like "two weeks ago next Sunday"). It's also **not internationalized**. It only works for my little slice of the universe: the English language---though international date-formatting standards (ISO 8601, highly recommended) make that a moot point anyway.
 
 

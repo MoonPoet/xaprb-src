@@ -22,7 +22,7 @@ Last week I read two books on Nagios. I found one easy to use and the other diff
 
 <a href="{{< amz 1590596099 >}}"><img src="/media/2007/02/pro-nagios.gif" alt="Cover of Pro Nagios 2.0" width="125" height="168" /></a>
 
-<a href="{{< amz 1590596099 >}}">Pro Nagios 2.0 (James Turnbull, Apress, 2006)</a> is hard for me to read, understand and use. Mr. Turnbull is clearly an expert on Nagios, but the book doesn't communicate his knowledge effectively. I give it two stars.
+[Pro Nagios 2.0 (James Turnbull, Apress, 2006)]({{< amz 1590596099 >}}) is hard for me to read, understand and use. Mr. Turnbull is clearly an expert on Nagios, but the book doesn't communicate his knowledge effectively. I give it two stars.
 
 Despite the differences, the books are identical in many ways. Both have chapters on the same topics. They cover exactly the same subject matter in the same level of detail, have the same target audiences, were written about the same time, are about the same size, and so on. The differences are in organization and writing style.
 

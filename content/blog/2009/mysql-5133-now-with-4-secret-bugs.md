@@ -24,13 +24,13 @@ So after seeing that Arjen's report was private, I just clicked through all the 
 
 ```
 * The MD5 algorithm now uses the Xfree implementation.
-   (Bug#42434: <a href="http://bugs.mysql.com/42434">http://bugs.mysql.com/42434</a>)
+   (Bug#42434: [http://bugs.mysql.com/42434](http://bugs.mysql.com/42434))
  * Use of USE INDEX hints could cause EXPLAIN EXTENDED to crash.
-   (Bug#43354: <a href="http://bugs.mysql.com/43354">http://bugs.mysql.com/43354</a>)
+   (Bug#43354: [http://bugs.mysql.com/43354](http://bugs.mysql.com/43354))
  * MySQL 5.1 crashed with index merge algorithm and merge tables.
    A query in the MyISAM merge table caused a crash if the index
    merge algorithm was being used.
-   (Bug#40675: <a href="http://bugs.mysql.com/40675">http://bugs.mysql.com/40675</a>)
+   (Bug#40675: [http://bugs.mysql.com/40675](http://bugs.mysql.com/40675))
 ```
 
 What reason can there be to make those private? I would like to encourage MySQL to discontinue this practice except when vitally necessary to protect client data. In my opinion, when someone submits a private bug to a software project that wants to be open-source, there should be a strong push-back. Private client data can go into a private comment; the whole bug report doesn't have to be sealed off. Consider the harm caused by private bug reports: it's now much harder for me to see what changeset fixed the bug. I can't see any of the discussion about it. I can't make any decisions about whether it affects me or clients.
