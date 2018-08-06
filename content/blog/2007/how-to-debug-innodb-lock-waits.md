@@ -22,10 +22,10 @@ Total number of lock structs in row lock hash table 2
 LIST OF TRANSACTIONS FOR EACH SESSION:
 ---TRANSACTION 0 4873, ACTIVE 6 sec, process no 7142, OS thread id 1141152064 starting index read
 mysql tables in use 1, locked 1
-<strong>LOCK WAIT</strong> 2 lock struct(s), heap size 368
+LOCK WAIT 2 lock struct(s), heap size 368
 MySQL thread id 9, query id 173 localhost root Sending data
 select * from t1 for update
-------- <strong>TRX HAS BEEN WAITING 6 SEC FOR THIS LOCK TO BE GRANTED</strong>:
+------- TRX HAS BEEN WAITING 6 SEC FOR THIS LOCK TO BE GRANTED:
 RECORD LOCKS space id 9 page no 3 n bits 72 index `PRIMARY` of table `test/t1` trx id 0 4873 lock_mode X waiting
 ...
 ```
@@ -48,8 +48,8 @@ This little-noticed feature makes InnoDB print out a slightly modified version o
 ---TRANSACTION 0 4872, ACTIVE 32 sec, process no 7142, OS thread id 1141287232
 2 lock struct(s), heap size 368
 MySQL thread id 8, query id 164 localhost root
-<strong>TABLE LOCK table `test/t1` trx id 0 4872 lock mode IX
-RECORD LOCKS space id 9 page no 3 n bits 72 index `PRIMARY` of table `test/t1` trx id 0 4872 lock_mode X</strong>
+TABLE LOCK table `test/t1` trx id 0 4872 lock mode IX
+RECORD LOCKS space id 9 page no 3 n bits 72 index `PRIMARY` of table `test/t1` trx id 0 4872 lock_mode X
 Record lock, heap no 1 PHYSICAL RECORD: n_fields 1; compact format; info bits 0
  0: len 8; hex 73757072656d756d; asc supremum;;
 

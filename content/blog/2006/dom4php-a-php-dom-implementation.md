@@ -27,7 +27,7 @@ I never wrote much documentation for this library, but I might attempt to remedy
 # Create a parser and parse a simple document.
 include_once("XmlParser.php");
 $parser   = new XmlParser($encoding = 'ISO-8859-1'); # encoding is optional
-$document = $parser->parse('<p class="test"><strong>this is a document</strong></p>');
+$document = $parser->parse('<p class="test">this is a document</p>');
 
 # Add a text node.
 $text =& $document->createTextNode('foozle');

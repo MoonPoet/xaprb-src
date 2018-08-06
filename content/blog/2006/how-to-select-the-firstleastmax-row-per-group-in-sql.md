@@ -238,7 +238,7 @@ set @num := 0, @type := '';
 select type, variety, price,
       @num := if(@type = type, @num + 1, 1) as row_number,
       @type := type as dummy
-from fruits <strong>force index(type)</strong>
+from fruits force index(type)
 group by type, price, variety
 having row_number <= 2;
 ```

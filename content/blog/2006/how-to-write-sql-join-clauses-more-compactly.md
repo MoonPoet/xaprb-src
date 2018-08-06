@@ -20,7 +20,7 @@ May be written as follows:
 ```
 select a.col1, b.col2
 from a
-   inner join b <strong>using(col3)</strong>
+   inner join b using(col3)
 ```
 
 That may not look like much of an improvement, but it is a big help in larger joins where many tables have columns with the same names. In these cases, not only is it tedious to write out every pair of columns that must match in the join, you often have to refer to the tables with aliases too. And it's tough to read such a join and understand it, or debug it. For example, what's wrong with this join?
@@ -38,9 +38,9 @@ The statement is valid and will execute, but it won't give the results you proba
 ```
 select tbl1.col1, tbl2.col2, tbl3.col2, tbl4.col1
 from apples as tbl1
-   inner join oranges as tbl2 <strong>using(col3)</strong>
-   inner join grapes as tbl3 <strong>using(col3)</strong>
-   inner join peaches as tbl4 <strong>using(col3)</strong>
+   inner join oranges as tbl2 using(col3)
+   inner join grapes as tbl3 using(col3)
+   inner join peaches as tbl4 using(col3)
 ```
 
 `USING` matches the specified columns from each table, eliminating the need to write them out twice explicitly with aliases. In MySQL 5, you can see how the statement gets rewritten by the optimizer with `EXPLAIN EXTENDED` followed by `SHOW WARNINGS`. The result shows that it gets rewritten as an old-style join with the column-matching done in the `WHERE` clause.

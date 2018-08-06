@@ -36,7 +36,7 @@ There are three basic ways to install the themes:
 2.  System-wide in the local directory
 3.  For one user only
 
-System-wide installations place the cursors in subdirectories of `/usr/share/cursors/xorg-x11`. System-wide in the local directory means placing them in `/usr/<strong>local</strong>/share/cursors/xorg-x11`. The difference is `/usr/share/` installations will get cleaned out by installation and package management systems, so unless you install them through your distribution's package management system, you may lose them when upgrading X11. `/usr/local/share` installations won't get wiped out when upgrading your system.
+System-wide installations place the cursors in subdirectories of `/usr/share/cursors/xorg-x11`. System-wide in the local directory means placing them in `/usr/local/share/cursors/xorg-x11`. The difference is `/usr/share/` installations will get cleaned out by installation and package management systems, so unless you install them through your distribution's package management system, you may lose them when upgrading X11. `/usr/local/share` installations won't get wiped out when upgrading your system.
 
 Single-user installations require no access to system directories, so a non-root user can alter his or her own theme easily, and even take it from computer to computer. In this case, the themes are placed in subdirectories in `~/.icons/`.
 

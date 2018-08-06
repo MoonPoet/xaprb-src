@@ -61,8 +61,8 @@ The ability to use the `USING` keyword in a join is one way to test whether your
 
 ```
 from actor
-   inner join film_actor on <strong>actor.id = film_actor.actor_id</strong>
-   inner join film on <strong>film.id = film_actor.film_id</strong>;
+   inner join film_actor on actor.id = film_actor.actor_id
+   inner join film on film.id = film_actor.film_id;
 ```
 
 This is not nearly as elegant. So Sakila's naming convention is pretty nice already.
@@ -73,23 +73,23 @@ If I had designed Sakila, I'd have done this:
 
 ```
 CREATE TABLE actor (
-  <strong>actor</strong> smallint unsigned NOT NULL auto_increment,
+  actor smallint unsigned NOT NULL auto_increment,
   first_name varchar(45) NOT NULL,
   last_name varchar(45) NOT NULL,
   PRIMARY KEY  (actor)
 );
 
 CREATE TABLE film (
-  <strong>film</strong> smallint unsigned NOT NULL auto_increment,
+  film smallint unsigned NOT NULL auto_increment,
   title varchar(255) NOT NULL,
   description text,
   ... other columns ...
   PRIMARY KEY(film)
 );
 
-CREATE TABLE <strong>cast</strong> (
-  <strong>actor</strong> smallint unsigned NOT NULL,
-  <strong>film</strong> smallint unsigned NOT NULL,
+CREATE TABLE cast (
+  actor smallint unsigned NOT NULL,
+  film smallint unsigned NOT NULL,
   PRIMARY KEY  (actor, film)
 );
 ```

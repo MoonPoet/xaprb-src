@@ -29,7 +29,7 @@ If you don't see a problem, you've just discovered why this is an expensive quer
 select tweedle, dee, dum
 from table1
    left join table2 on table1.foo = table2.foo
-where <strong>table2.bar</strong> = 5;
+where table2.bar = 5;
 ```
 
 Consider what happens when there is no matching row in table2. SQL fills in the "missing" row with NULL. And what happens then? table2.bar = 5 is unknown (it's neither true nor false), so that entire row is eliminated from the result.
@@ -56,7 +56,7 @@ What's happening in that query? There are a few possibilities I see. The most ob
 I said it counts the number of emails each user has, but it really doesn't. It actually counts the number of times there is a value in email.subject (e.g. it is NOT NULL). If the column is defined to allow NULL, there *might* be a difference between the number of values in email.subject and the number of emails! So, if the query's author really wanted to know the number of emails, the query should be this:
 
 ```
-select user.userid, <strong>count(*)</strong>
+select user.userid, count(*)
 from user
    inner join email on user.userid = email.userid
 group by user.userid;

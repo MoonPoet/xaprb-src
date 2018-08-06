@@ -11,10 +11,10 @@ Here's a quick productivity tip: when optimizing queries by rewriting them to di
 Just set your pager to `md5sum`:
 
 ```
-mysql> <strong>pager md5sum -</strong>
+mysql> pager md5sum -
 PAGER set to 'md5sum -'
 mysql> select * from test;
-<strong>a09bc56ac9aa0cbcc659c3d566c2c7e4  -</strong>
+a09bc56ac9aa0cbcc659c3d566c2c7e4  -
 4096 rows in set (0.00 sec)
 ```
 

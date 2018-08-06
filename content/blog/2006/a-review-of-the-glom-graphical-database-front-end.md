@@ -102,7 +102,7 @@ FATAL:  unrecognized configuration parameter "listen_address"
 FATAL:  unrecognized configuration parameter "listen_address"
 ```
 
-I needed to say `listen_address<strong>es</strong>` in postgresql.conf. Unfortunately Gentoo thought PostgreSQL was already started, so trying to start or stop it failed; I had to "zap" it to proceed:
+I needed to say `listen_addresses` in postgresql.conf. Unfortunately Gentoo thought PostgreSQL was already started, so trying to start or stop it failed; I had to "zap" it to proceed:
 
 ```
 /etc/init.d/postgresql zap

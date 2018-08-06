@@ -47,7 +47,7 @@ Good enough for me. When I did this, mk-query-digest printed the following:
 
 ```
 $VAR1 = {
-<strong>  Error_no => '#1064',</strong>
+  Error_no => '#1064',
   No_good_index_used => 'No',
   No_index_used => 'No',
   Query_time => '0.000316',

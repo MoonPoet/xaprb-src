@@ -193,6 +193,6 @@ After doing this, I have to say I think this piece of equipment is pretty darned
 
 A few miscellaneous things I've learned:
 
-The default mt-daapd configuration file doesn't have a defined rescan_interval. This means it'll never notice when you add music to your filesystem. But you can poke it via the web interface (http://hpmediavault:3689/index.html; the username is empty, the password is defined in your config file) to make it update. Also, and I'm not sure how well this works, there's an option to gzip the list of songs, which might make startup quite a bit faster when your iTunes/Rhythmbox connects and gets the song list. This is documented in the config file too. <strong>Update: I've been running my server this way for a while and it seems to run fine.</strong>
+The default mt-daapd configuration file doesn't have a defined rescan_interval. This means it'll never notice when you add music to your filesystem. But you can poke it via the web interface (http://hpmediavault:3689/index.html; the username is empty, the password is defined in your config file) to make it update. Also, and I'm not sure how well this works, there's an option to gzip the list of songs, which might make startup quite a bit faster when your iTunes/Rhythmbox connects and gets the song list. This is documented in the config file too. *Update: I've been running my server this way for a while and it seems to run fine.*
 
 

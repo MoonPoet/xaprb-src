@@ -15,7 +15,7 @@ create table test (
   b int,
   c int,
   primary key(a),
-  key(b) <strong>plus(c)</strong>
+  key(b) plus(c)
 );
 ```
 

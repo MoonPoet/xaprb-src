@@ -183,8 +183,8 @@ It really helps improve readability if the order of the `ON` statements in join 
 ```
 ...
 from table1
-    inner join table2 on <strong>table1</strong>.a = table2.a
-    inner join table3 on <strong>table1</strong>.b = table3.b
+    inner join table2 on table1.a = table2.a
+    inner join table3 on table1.b = table3.b
 ...
 ```
 
@@ -193,8 +193,8 @@ This is a lot easier to understand than
 ```
 ...
 from table1
-    inner join table2 on <strong>table1</strong>.a = table2.a
-    inner join table3 on table3.b = <strong>table1</strong>.b
+    inner join table2 on table1.a = table2.a
+    inner join table3 on table3.b = table1.b
 ...
 ```
 

@@ -26,8 +26,8 @@ Now give it the above input, and it'll print out something useful (emphasis mine
 ```
 Mutex spin waits 0, rounds 143359179688, OS waits 634106844
 RW-shared spins 1224152309, OS waits 38278807; RW-excl spins 2432166425, OS waits 35264871
-Mutex spin waits 0, rounds <strong>27123751</strong>, OS waits <strong>185249</strong>
-RW-shared spins <strong>44739</strong>, OS waits <strong>2616</strong>; RW-excl spins <strong>181511</strong>, OS waits <strong>6552</strong>
+Mutex spin waits 0, rounds 27123751, OS waits 185249
+RW-shared spins 44739, OS waits 2616; RW-excl spins 181511, OS waits 6552
 ```
 
 My lazy brain likes that much better.

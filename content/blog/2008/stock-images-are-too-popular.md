@@ -16,7 +16,7 @@ There are many reasons not to use images like this.  I guess it's okay in some s
 
 However, one great reason to eschew stock: other people will re-use the same image.  A famous example from a few years ago: the cover image of [Head First Design Patterns](http://www.oreilly.com/catalog/hfdesignpat/) was a stock photo that [also appeared in a commercial for a feminine hygiene product](http://fishbowl.pastiche.org/2005/08/12/the_head_first_girls_double_life).
 
-This incident was actually pretty widely linked on the Internet at that time.  So no one will ever make <strong>that</strong> mistake again!
+This incident was actually pretty widely linked on the Internet at that time.  So no one will ever make *that* mistake again!
 
 Or will they?  Witness: the cover of the [MySQL 5.1 Cluster DBA Certification Guide](http://www.lulu.com/content/1297960), the [xTuple Home Page](http://www.xtuple.com/), and the cover of the [MegaRAID Management Suite](http://www.lsi.com/storage_home/products_home/internal_raid/megaraid_sas/megaraid_sas_8408e/index.html?remote=1) documentation.
 

@@ -14,7 +14,7 @@ I've been trying to learn more about MySQL locks and deadlocks, and have written
 The two most common lock hints I used on queries at my former employer were `nolock` and `updlock holdlock`. The first hint tells the server not to acquire any locks at all on a query:
 
 ```
-select col1, col2 from tbl1(<strong>nolock</strong>)
+select col1, col2 from tbl1(nolock)
 ```
 
 That's a big efficiency win, because locks are extra overhead. The side effect is you could be reading another transaction's uncommitted data.
@@ -24,7 +24,7 @@ The second method was useful for avoiding lock escalation deadlocks. Suppose I r
 ```
 create table #temp ...
 insert into #temp... select col1, col2
-   from tbl1(<strong>updlock holdlock</strong>)
+   from tbl1(updlock holdlock)
 ```
 
 ### Transaction isolation levels
