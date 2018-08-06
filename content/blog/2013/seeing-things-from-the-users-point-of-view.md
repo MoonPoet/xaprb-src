@@ -15,8 +15,8 @@ I was discussing how to avoid surprising users and someone pointed out that what
 Similar syntax errors such as "`select 1e0from dual`" were also accepted as valid SQL. Much soul-searching later, the official reply from MySQL's development team:
 
 > The server behaves properly here:  
-> - "1&#8243; alone can not be an identifier, because it's followed by a "."  
-> - therefore, the lexer parses "1&#8243; as the beginning of a number, and ends up with "1.0&#8243; as one token.  
+> - "1" alone can not be an identifier, because it's followed by a "."  
+> - therefore, the lexer parses "1" as the beginning of a number, and ends up with "1.0" as one token.  
 > The next token will be "order", a keyword.
 > 
 > There is nothing special to document here either. What was reported is not a bug in the server, and is not a documentation bug.

@@ -110,7 +110,7 @@ Here you can see I have a trivial 2-row test case so it's not a good example. In
 
 ### Five: build hash indexes
 
-I've been working with one application that likes to combine such hex identifiers into "paths" similarly to a filesystem. So if you want to look up some row or other, you ask the database for "92eb5ffee6ae2fec3ad71c777531578f/0cc175b9c0f1b6a831c399e269772661&#8243; or even longer combinations of values.
+I've been working with one application that likes to combine such hex identifiers into "paths" similarly to a filesystem. So if you want to look up some row or other, you ask the database for "92eb5ffee6ae2fec3ad71c777531578f/0cc175b9c0f1b6a831c399e269772661" or even longer combinations of values.
 
 This does two things. One, it makes keys really, really really long. Two, it makes a lot of duplicate prefixes, so prefix indexing simply doesn't work. The prefixes have skewed cardinalities so there are values for which a lot of rows will match.
 

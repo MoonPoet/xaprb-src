@@ -14,7 +14,7 @@ If you find bugs, please send me test cases I can use to reproduce and add to th
 -1, "#,#.00", "-1.00"
 ```
 
-I can plug that directly into the unit test suite, run it, and if it gives back "-01.00&#8243; it will fail the test. This makes it much easier and more convenient for me to fix bugs.
+I can plug that directly into the unit test suite, run it, and if it gives back "-01.00" it will fail the test. This makes it much easier and more convenient for me to fix bugs.
 
 [Sponsoring](/blog/donate/) bug fixes wouldn't hurt either ;-)
 

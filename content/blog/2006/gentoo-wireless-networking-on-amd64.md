@@ -17,7 +17,7 @@ Here's my hardware:
 *   ECS KV2 Extreme Socket 939 VIA K8T800 Pro ATX AMD Motherboard
 *   ASUS V9520-X/TD/64 Geforce FX5200 64MB DDR AGP 4X/8X Low Profile Video Card
 *   Sunbeam PSU-CGMI450-US-SV ATX 450W Silver Tri Mirrored X-Plug Modular Power Supply
-*   VANTEC Clear 18&#8243; ATA 66/100/133 IDE Round Cable, 2-Connector Model CBL-100IDE18-CS
+*   VANTEC Clear 18" ATA 66/100/133 IDE Round Cable, 2-Connector Model CBL-100IDE18-CS
 *   AMD Athlon 64 3700+ San Diego 1GHz FSB Socket 939 Processor Model ADA3700BNBOX (*dual core, 2.2GHz*)
 *   Patriot Signature 2GB (2 x 1GB) 184-Pin DDR SDRAM DDR 400 (PC 3200) Unbuffered System Memory Model PSD2G400KH
 *   Western Digital Raptor WD360GD 36.7GB 10,000 RPM Serial ATA150 Hard Drive

@@ -29,7 +29,7 @@ The truth is, saying anything with the words "equal" or "not equal" is a trap wh
 
 ### The right way to think about `NULL`
 
-The correct way to understand `NULL` is that it is not a value. Not "this is a `NULL` value" but "this `NULL` is not a value." Everything either is a value, or it isn't. When something is a value, it is "1," or "hello," or "green," or "$5.00&#8243; etc---but when something isn't a value, **it just isn't anything at all**. SQL represents "this has no value" by the special non-value `NULL`. When someone says "the `NULL` value," one should mentally disagree, because there's **no such thing**. `NULL` is the complete, total absence of any value whatsoever.
+The correct way to understand `NULL` is that it is not a value. Not "this is a `NULL` value" but "this `NULL` is not a value." Everything either is a value, or it isn't. When something is a value, it is "1," or "hello," or "green," or "$5.00" etc---but when something isn't a value, **it just isn't anything at all**. SQL represents "this has no value" by the special non-value `NULL`. When someone says "the `NULL` value," one should mentally disagree, because there's **no such thing**. `NULL` is the complete, total absence of any value whatsoever.
 
 ### What do you get when you compare a value to `NULL`?
 

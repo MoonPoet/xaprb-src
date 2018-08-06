@@ -48,7 +48,7 @@ There are a couple things to notice about this display:
 
 It's a pretty compact way to look at 8 minutes of history for the server, wouldn't you agree? You can easily get a lot more information from this display than with the other methods I've discussed. But there's more!
 
-*   I include several preset choices of values to display with innotop. You can toggle back and forth between them with the keys "0&#8243; through "9&#8243;. There are presets for the query cache, table and index scans, InnoDB variables, transaction statements, and more. All in all, there's room for ten sets of values.
+*   I include several preset choices of values to display with innotop. You can toggle back and forth between them with the keys "0" through "9". There are presets for the query cache, table and index scans, InnoDB variables, transaction statements, and more. All in all, there's room for ten sets of values.
 *   You can customize each set with the "c" key. Pick and choose from any value in STATUS and VARIABLES, as I said. This gets saved in your configuration file, so it's there when you quit and restart innotop.
 *   You can choose the number of snapshots you want to display, from 2 to 9, so you can decide how much history you want to look at on one screen.
 
