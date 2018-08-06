@@ -55,7 +55,7 @@ This positions MySQL extremely well to compete in a market that has bloated serv
 *   [PrimeBase XT (PBXT)](http://www.primebase.com/xt/): a new transactional database engine for MySQL. It has been designed for modern, web-based, high concurrency environments.
 *   [NitroEDB](http://www.nitrosecurity.com/): an extreme performance and highly scalable relational database technology.
 *   Filesystem: will allow you to access your filesystem through SQL, doing such things as querying and updating attributes of image files.
-*   [memcache](http://tangent.org/index.pl?lastnode_id=478&#038;node_id=506): access memcache via SQL.
+*   [memcache](http://tangent.org/index.pl?lastnode_id=478&node_id=506): access memcache via SQL.
 *   [ScaleDB](http://scaledb.com/): "currently in stealth mode. Of course, the name itself speaks volumes."
 *   I've heard discussion of a storage engine whose physical storage is on
 	 Amazon S3.

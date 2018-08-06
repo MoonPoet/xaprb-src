@@ -24,7 +24,7 @@ And another:
 
 > We have recently started testing MMM for MySQL and when using it under write load we have been experiencing 'Duplicate entry' (1062) errors.
 
-In short, MMM causes more downtime than it prevents. It's a Low-Availability tool, not a High-Availability tool. It only takes one really good serious system-wide mess to take you down for a couple of days, working 24&#215;7 trying to scrape your data off the walls and put it back into the server. MMM brings new meaning to the term "cluster-f__k".
+In short, MMM causes more downtime than it prevents. It's a Low-Availability tool, not a High-Availability tool. It only takes one really good serious system-wide mess to take you down for a couple of days, working 24x7 trying to scrape your data off the walls and put it back into the server. MMM brings new meaning to the term "cluster-f__k".
 
 Now, why isn't it possible to fix it? One simple reason: MMM is completely untested and untestable. Change one line of code in Agent.pm's master control flow and tell me that you're confident that you know what it has just done to the whole system? You can't do it. If you don't have tests, you can't change the code with confidence, period. And as I said before, HA and backup tools are where we need a zero-tolerance policy. "I think this fixed the bug" or "I think it's safe to change this code" are not acceptable. I have seen a lot of bug fixes that cause new and interesting bugs. I appreciate the variety---life is boring if all we're doing is seeing the same old bugs---but this isn't what we need in an HA tool.
 

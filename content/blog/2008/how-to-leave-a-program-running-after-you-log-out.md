@@ -24,7 +24,7 @@ baron@kanga:~$ run_forrest_run
 CTRL-Z
 [1]+  Stopped                 run_forrest_run
 baron@kanga:~$ bg
-[1]+ run_forrest_run &#038;
+[1]+ run_forrest_run &
 baron@kanga:~$ disown %1
 baron@kanga:~$
 ```
@@ -45,7 +45,7 @@ nohup: ignoring input and appending output to `nohup.out'
 CTRL-Z
 [1]+  Stopped                 nohup run_forrest_run
 baron@kanga:~$ bg
-[1]+ nohup run_forrest_run &#038;
+[1]+ nohup run_forrest_run &
 baron@kanga:~$ 
 ```
 

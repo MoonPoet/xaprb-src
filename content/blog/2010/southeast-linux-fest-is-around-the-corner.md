@@ -8,6 +8,6 @@ categories:
 tags:
   - PostgreSQL
 ---
-If you're near South Carolina next weekend, consider attending [Southeast Linux Fest](http://southeastlinuxfest.org/)! There's a list of illustrious speakers including several well-known in the database world: Joshua Drake and Andrew Dunstan (PostgreSQL), D. Richard Hipp (SQLite), and yes, yours truly (MySQL), plus a MySQL name that's new to me: Brandon Checketts. There are a ton of non-database sessions too! Check out the [full speaker &#038; session list](http://www.southeastlinuxfest.org/node/62). This was a great show last year; I highly encourage everyone to attend.
+If you're near South Carolina next weekend, consider attending [Southeast Linux Fest](http://southeastlinuxfest.org/)! There's a list of illustrious speakers including several well-known in the database world: Joshua Drake and Andrew Dunstan (PostgreSQL), D. Richard Hipp (SQLite), and yes, yours truly (MySQL), plus a MySQL name that's new to me: Brandon Checketts. There are a ton of non-database sessions too! Check out the [full speaker & session list](http://www.southeastlinuxfest.org/node/62). This was a great show last year; I highly encourage everyone to attend.
 
 

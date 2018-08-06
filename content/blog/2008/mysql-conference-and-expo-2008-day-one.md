@@ -15,7 +15,7 @@ By Sergey Petrunia. This was a similar session to one I went to last year. MySQL
 
 This was just great. Among many other things, Beat Vontobel showed how a Su Doku can be solved entirely with declarative queries: a very large self-join query against a table of digits and a table of the board's initial state. I had been promoting this session because last year's was so very good. I can't wait to see what he comes up with for next year. Can he find another creative idea? Time will tell.
 
-He wasn't able to solve a 9&#215;9 puzzle with MySQL because of the limitation on the number of joins, but PostgreSQL had no trouble doing it.
+He wasn't able to solve a 9x9 puzzle with MySQL because of the limitation on the number of joins, but PostgreSQL had no trouble doing it.
 
 ### EXPLAIN Demystified
 

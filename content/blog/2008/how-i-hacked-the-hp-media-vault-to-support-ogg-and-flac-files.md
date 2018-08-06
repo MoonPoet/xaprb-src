@@ -63,7 +63,7 @@ The package management system is [ipkg, the Itsy Package Management System](http
 If yours isn't /share/1000, use a different value in the following commands. Now you want to make an installation directory and change to that directory:
   
 ```
-# mkdir -p /share/1000/tmp &#038;&#038; cd /share/1000/tmp
+# mkdir -p /share/1000/tmp && cd /share/1000/tmp
 ```
   
 Now let's find the installation image to download. Go look here for the latest version of the image:

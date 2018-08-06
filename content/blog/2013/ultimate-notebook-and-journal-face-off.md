@@ -152,7 +152,7 @@ The paper isn't quite as nice as I'd want in a notebook, but it's great for jour
 
 I wouldn't use these for note-taking. They're a little too bulky, the ruling is a little too wide, and the covers are too rigid.
 
-288 pages, 9 x 7 x .875 inches. Rule width: .318 inches. Bought at Barnes &#038; Noble for $18.95.
+288 pages, 9 x 7 x .875 inches. Rule width: .318 inches. Bought at Barnes & Noble for $18.95.
 
 ### Peter Pauper Press journal
 

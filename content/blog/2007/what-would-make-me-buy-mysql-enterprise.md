@@ -58,7 +58,7 @@ Here are some things that would *not* attract me to Enterprise:
 Take a look at bullet points number three and four in the list of Enterprise benefits:
 
 > 1.      Updates and Upgrades with New Features: You receive the newest versions of MySQL Enterprise Server released during your active subscription term.
-> 1.      Predictable Releases with Bug Fixes and Updates: Predictable and scheduled service packs ensure that a new, fully up-to-date version of the MySQL Enterprise Server is always available with the latest updates and bug fixes. Customers of MySQL Enterprise receive Monthly Rapid Updates &#038; Quarterly Service Packs
+> 1.      Predictable Releases with Bug Fixes and Updates: Predictable and scheduled service packs ensure that a new, fully up-to-date version of the MySQL Enterprise Server is always available with the latest updates and bug fixes. Customers of MySQL Enterprise receive Monthly Rapid Updates & Quarterly Service Packs
 
 These are exactly the things I don't want in my Enterprise source code. These two "benefits" directly conflict with the first two benefits. They cannot coexist, period.
 

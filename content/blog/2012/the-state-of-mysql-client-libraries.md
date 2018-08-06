@@ -25,7 +25,7 @@ The first thing I wanted to check was the allegation that MariaDB's drivers were
 
 The next question is about MariaDB's code versus MySQL's code. The MariaDB library's source looks and feels very similar to MySQL's source. This is no surprise to me. If Monty sat alone in a room and coded a library from scratch, based only on the MySQL protocol documents and his memory, I'd expect the result to look a lot like MySQL's source code anyway. But when I opened some of the files, things got less clear to me. For example, the copyright header in include/my_list.h begins with this:
 
-    /* Copyright (C) 2000 MySQL AB &#038; MySQL Finland AB &#038; TCX DataKonsult AB
+    /* Copyright (C) 2000 MySQL AB & MySQL Finland AB & TCX DataKonsult AB
        
        This library is free software; you can redistribute it and/or
        modify it under the terms of the GNU Library General Public

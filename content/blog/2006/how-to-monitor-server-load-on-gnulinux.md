@@ -58,7 +58,7 @@ On a somwhat-related note, [mytop](http://jeremy.zawodny.com/mysql/mytop/) is a 
 
 `tload` runs in a terminal and displays a text-only "graph" of current system load averages, garnered from `/proc/loadavg`. It is part of the base installation on most GNU/Linux systems. I find it extremely useful for watching a system's performance over SSH, often within a [GNU Screen](http://www.gnu.org/software/screen/) session.
 
-My favorite technique is to start a terminal, connect over SSH, resize the terminal to 150&#215;80 or so, then start `tload` and shrink the window by CTRL-right-clicking and selecting "Unreadable" as the font size. The result looks like the following:
+My favorite technique is to start a terminal, connect over SSH, resize the terminal to 150x80 or so, then start `tload` and shrink the window by CTRL-right-clicking and selecting "Unreadable" as the font size. The result looks like the following:
 
 ![Server load diagram](/media/2006/08/tload.png)
 
@@ -66,7 +66,7 @@ I then set the terminal window as always-on-top and move it to a corner of my sc
 
 The only trouble is, it's not really obvious what the graph means. The man page isn't terribly helpful; it just says `tload` gets its numbers from the `/proc/loadavg` file, and there's no man page for that file. I looked in the kernel source for the answer.
 
-`Documentation/filesystems/proc.txt` says loadavg is "Load average of last 1, 5 &#038; 15 minutes," but not how it's calculated. Poking around in `source/fs/proc/proc_misc.c` and `kernel/timer.c` reveals the origin of the numbers: the number of running and uninterruptible processes (see <http://lxr.linux.no/source/kernel/timer.c#L832>).
+`Documentation/filesystems/proc.txt` says loadavg is "Load average of last 1, 5 & 15 minutes," but not how it's calculated. Poking around in `source/fs/proc/proc_misc.c` and `kernel/timer.c` reveals the origin of the numbers: the number of running and uninterruptible processes (see <http://lxr.linux.no/source/kernel/timer.c#L832>).
 
 ### watch
 

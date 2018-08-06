@@ -15,7 +15,7 @@ Here is something I've noticed under GNU/Linux since writing this article: if I'
 
 ### Getting the add-on
 
-The add-on is available through SourceForge and the [OOoMacros](http://www.ooomacros.org/) site, which is both a source of add-ons and help and examples for those wishing to make their own add-ons. You can [download text to columns for Calc here](http://sourceforge.net/project/showfiles.php?group_id=87718&#038;package_id=104183). There are actually two add-ons, but apparently the "Text2Columns fixed width" one is redundant, since the "Text to Columns" one does that too.
+The add-on is available through SourceForge and the [OOoMacros](http://www.ooomacros.org/) site, which is both a source of add-ons and help and examples for those wishing to make their own add-ons. You can [download text to columns for Calc here](http://sourceforge.net/project/showfiles.php?group_id=87718&package_id=104183). There are actually two add-ons, but apparently the "Text2Columns fixed width" one is redundant, since the "Text to Columns" one does that too.
 
 ### How to install an add-on in OpenOffice.org
 

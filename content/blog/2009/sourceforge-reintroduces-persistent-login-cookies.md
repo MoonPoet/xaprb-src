@@ -6,7 +6,7 @@ categories:
   - Commentary
   - Web
 ---
-Sourceforge has reintroduced persistent login cookies. Here's [the bug request](http://sourceforge.net/tracker/?func=detail&#038;atid=350001&#038;aid=1855476&#038;group_id=1) I submitted about this, a long time ago.
+Sourceforge has reintroduced persistent login cookies. Here's [the bug request](http://sourceforge.net/tracker/?func=detail&atid=350001&aid=1855476&group_id=1) I submitted about this, a long time ago.
 
 The thing is, I don't really care much anymore. I've moved my open-source projects off Sourceforge onto Google Code. I am about 10x more productive there.
 

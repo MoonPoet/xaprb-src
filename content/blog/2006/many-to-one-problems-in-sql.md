@@ -93,7 +93,7 @@ I can think of a few ways to avoid this situation.
 
 #### Method 1: Avoid non-standard syntax
 
-Neither syntax above is standard, and neither makes any sense from a true relational standpoint, which is why they have undefined, vendor-specific behavior. A standard `UPDATE` statement does **not** have a `FROM` clause. Joe Celko has [written](http://groups.google.com/group/microsoft.public.sqlserver.programming/browse_thread/thread/c7bff2f93c2a90e0/e9cb0f92a9361619%23e9cb0f92a9361619?sa=X&#038;oi=groupsr&#038;start=1&#038;num=3) extensively about this, saying that "the correct syntax for a searched update statement is [the below]... The `UPDATE` clause simply gives the name of the base table or updatable view to be changed."
+Neither syntax above is standard, and neither makes any sense from a true relational standpoint, which is why they have undefined, vendor-specific behavior. A standard `UPDATE` statement does **not** have a `FROM` clause. Joe Celko has [written](http://groups.google.com/group/microsoft.public.sqlserver.programming/browse_thread/thread/c7bff2f93c2a90e0/e9cb0f92a9361619%23e9cb0f92a9361619?sa=X&oi=groupsr&start=1&num=3) extensively about this, saying that "the correct syntax for a searched update statement is [the below]... The `UPDATE` clause simply gives the name of the base table or updatable view to be changed."
 
 
 ```sql

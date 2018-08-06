@@ -235,7 +235,7 @@ sub process_column_names {
 
 print process_column_names(
    "FOREIGN KEY (`seq`, `name`) REFERENCES `tbl` (`seq`, `name`)",
-   \&#038;split_sort_join
+   \&split_sort_join
 ), "\n";
 ```
       

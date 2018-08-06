@@ -23,7 +23,7 @@ I'm presenting a session on [how to use Maatkit](http://www.mysqlconf.com/mysql2
     *   Solving Common SQL Problems with the SeqEngine. It's Beat Vontobel---he always amazes and delights the audience.
     *   MySQL Proxy Meets: Binlogs. Hmm, I think there's a lot going on behind the scenes here. I think Jan is being shy and has something really nifty to unwrap.
     *   Understanding and Control of MySQL Query Optimizer: Traditional and Novel Tools and Techniques. Sergey's talks are always interesting for true propeller heads.
-    *   Faster Data Reduction and Smoothing for Analysis &#038; Archival in MySQL. I think a lot of my clients could benefit from this!
+    *   Faster Data Reduction and Smoothing for Analysis & Archival in MySQL. I think a lot of my clients could benefit from this!
 *   Wednesday 
     *   The [Percona Performance Conference](http://conferences.percona.com/). From 8:30 AM to 10:30 PM, and I think every single session is a must-see. But I'm biased, because I helped pick sessions.
     *   Using Q4M: A Message Queue Storage Engine for MySQL. Queues are one of the hardest design patterns to scale with traditional techniques. Anyone who has a queue (jobs to process, comments to moderate, articles to approve, clicks to aggregate, "stuff to do and then mark as done") should get something from this.

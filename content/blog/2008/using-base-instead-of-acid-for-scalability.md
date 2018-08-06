@@ -6,7 +6,7 @@ categories:
   - Scalability
   - Databases
 ---
-My editor [Andy Oram](http://www.oreillynet.com/pub/au/36) recently sent me an [ACM article on BASE, a technique for improving scalability](http://acmqueue.com/modules.php?name=Content&#038;pa=showpage&#038;pid=540) by being willing to give up some other properties of traditional transactional systems.
+My editor [Andy Oram](http://www.oreillynet.com/pub/au/36) recently sent me an [ACM article on BASE, a technique for improving scalability](http://acmqueue.com/modules.php?name=Content&pa=showpage&pid=540) by being willing to give up some other properties of traditional transactional systems.
 
 It's a really good read. In many ways it is the same religion everyone who's successfully scaled a system Really Really Big has advocated. But this is different: it's a very clear article, with a great writing style that really cuts out the fat and teaches the principles without being specific to any environment or sounding egotistical.
 
