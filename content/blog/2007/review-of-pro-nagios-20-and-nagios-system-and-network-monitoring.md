@@ -32,7 +32,7 @@ Mr. Barth's book lets me do a breadth-first search of the subject matter, and Mr
 
 I read James Turnbull's Pro Nagios 2.0 first. I brought it home for the weekend, and read past page 200---more than half the book---but I did not learn much about Nagios. Here's why I found it hard to use:
 
-*   It explains difficult concepts abstractly. Here are some of the first sentences from Chapter 2&#8242;s introductory paragraph:
+*   It explains difficult concepts abstractly. Here are some of the first sentences from Chapter 2's introductory paragraph:
     
     > You do this by defining a series of objects that represent the characteristics of the environment being monitored. You begin by defining your assets to the Nagios server. Nagios calls them *hosts*. Then you define the attributes and functions of these assets...
     

@@ -11,7 +11,7 @@ Therefore, I was not sure Ubuntu would support all the hardware. It's the same s
 
 One is that the Fn+arrow keys won't change my screen brightness, at least under XFCE. Strangely, my ancient Dell laptop had no trouble with that. I assume the old one was a hardware-controlled feature and this one needs some software support, but I could be wrong.
 
-The other thing is the built-in wireless card, which isn't supported with Ubuntu 7.04&#8242;s drivers out of the box. However, I quickly found a set of [drivers for the Broadcom Corporation Dell Wireless 1390](http://www.linux-geek.org/index.php/2007/04/22/dell-1390-native-linux-driver-how-to-updated) card, and was up and running shortly thereafter. The only thing I had to do after installing the drivers was press the Fn+F2 key, which turns the card on.
+The other thing is the built-in wireless card, which isn't supported with Ubuntu 7.04's drivers out of the box. However, I quickly found a set of [drivers for the Broadcom Corporation Dell Wireless 1390](http://www.linux-geek.org/index.php/2007/04/22/dell-1390-native-linux-driver-how-to-updated) card, and was up and running shortly thereafter. The only thing I had to do after installing the drivers was press the Fn+F2 key, which turns the card on.
 
 Otherwise everything works brilliantly.
 

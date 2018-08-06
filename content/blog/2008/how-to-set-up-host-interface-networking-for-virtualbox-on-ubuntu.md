@@ -41,7 +41,7 @@ The script assumes that your machine's primary network device is named eth0. For
 sudo apt-get install uml-utilities bridge-utils
 ```
 
-Specify 'tap0&#8242; as the network device in the VirtualBox machine's settings.
+Specify 'tap0' as the network device in the VirtualBox machine's settings.
 
 One of the biggest reasons I like this more than the methods in the manual is that it doesn't mess with my networking config in a permanent way. There are no surprises after a reboot, for example.
 

@@ -96,9 +96,9 @@ The common criteria should be---at a minimum---speed/efficiency, correctness, go
 
 Beyond that, each type will have different criteria:
 
-1.  Type 1&#8242;s criteria should be just the basics I named above.
-2.  Type 2&#8242;s criteria should be an interface that presents an adequate set of functionality for every database server, in a way that is "intuitive" or "elegant," whatever that means in the given language. It should be a thin wrapper around Type 1 software. It also needs to allow invoking database-specific operations. In other words, common functionality ought to be presented in a common form, but database-specific operations should never be taken away from the programmer.
-3.  Type 3&#8242;s criteria should be that the auto-generated code is truly portable among databases, and it should result in writing much less code in your application. It, like Type 2, should also allow the programmer to invoke database-specific operations when needed. Since it is designed as a high-level abstraction away from the underlying SQL, it should also be "elegant."
+1.  Type 1's criteria should be just the basics I named above.
+2.  Type 2's criteria should be an interface that presents an adequate set of functionality for every database server, in a way that is "intuitive" or "elegant," whatever that means in the given language. It should be a thin wrapper around Type 1 software. It also needs to allow invoking database-specific operations. In other words, common functionality ought to be presented in a common form, but database-specific operations should never be taken away from the programmer.
+3.  Type 3's criteria should be that the auto-generated code is truly portable among databases, and it should result in writing much less code in your application. It, like Type 2, should also allow the programmer to invoke database-specific operations when needed. Since it is designed as a high-level abstraction away from the underlying SQL, it should also be "elegant."
 4.  Type 4 software should hide the fact that an object is really a row in the database. The SQL it generates to hide this should be completely database-independent. Since it, like Type 3, is a convenience for the programmer, it ought to be very "elegant," and should provide **lots** of conveniences, such as knowing when a column is a foreign key and allowing navigation between a row and its related rows in the foreign key table in an object-oriented fashion.
 
 ### My opinions

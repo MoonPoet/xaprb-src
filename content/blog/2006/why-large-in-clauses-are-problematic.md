@@ -31,7 +31,7 @@ There's a lot more that can be done with this. `?` placeholders can go in the SQ
 $statements->sql_foo->execute(5);
 ```
 
-That's standard DBI prepared-statement syntax for inserting a '5&#8242; where the question mark is, but look at this:
+That's standard DBI prepared-statement syntax for inserting a '5' where the question mark is, but look at this:
 
 ```
 'select * from foo where bar in (%s)

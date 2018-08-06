@@ -49,7 +49,7 @@ I dropped in on the end of this session briefly. One community member suggested 
 
 ### [Exploiting MySQL 5.1 for Advanced Business Intelligence Applications](http://www.mysqlconf.com/cs/mysqluc2007/view/e_sess/10633)
 
-Pentaho's Matt Casters spoke on **how to extract data from many disparate sources and store it in a Pentaho data warehouse**, and **how to use Pentaho and MySQL 5.1&#8242;s advanced features to make OLAP queries fast** (there are two Big Ideas because the talk was double-length). The first part of the talk focused a lot on Spoon, a user interface for telling Pentaho what to do with data (not how). Next he spoke on MySQL 5.1&#8242;s table partitions, followed by data partitioning across databases or servers. The idea here is to retrieve and process data in parallel for greater speed.
+Pentaho's Matt Casters spoke on **how to extract data from many disparate sources and store it in a Pentaho data warehouse**, and **how to use Pentaho and MySQL 5.1's advanced features to make OLAP queries fast** (there are two Big Ideas because the talk was double-length). The first part of the talk focused a lot on Spoon, a user interface for telling Pentaho what to do with data (not how). Next he spoke on MySQL 5.1's table partitions, followed by data partitioning across databases or servers. The idea here is to retrieve and process data in parallel for greater speed.
 
 Have you been reading Matt's blog? Do you remember his understated post on [processing a large volume of data in parallel with near-linear scalability](http://www.ibridge.be/?p=42)? I've been eagerly reading his articles for a while and it was great to hear him speak and see him demo these things.
 

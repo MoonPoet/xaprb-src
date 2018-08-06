@@ -5,7 +5,7 @@ url: /blog/2012/09/18/dump-and-reload-innodb-buffer-pool-in-mysql-5-6/
 categories:
   - Databases
 ---
-After [Gavin Towey's recent blog post](http://gtowey.blogspot.com/2012/09/how-to-shoot-yourself-in-foot-with.html) about Percona Server's buffer pool dump locking the server for the duration of the operation, I thought I should re-examine MySQL 5.6&#8242;s implementation of a similar feature. When InnoDB engineers first announced the feature, I didn't think it was complete enough to serve a DBA's needs fully.
+After [Gavin Towey's recent blog post](http://gtowey.blogspot.com/2012/09/how-to-shoot-yourself-in-foot-with.html) about Percona Server's buffer pool dump locking the server for the duration of the operation, I thought I should re-examine MySQL 5.6's implementation of a similar feature. When InnoDB engineers first announced the feature, I didn't think it was complete enough to serve a DBA's needs fully.
 
 If you're not familiar with this topic, MySQL 5.6 will allow the DBA to save the IDs of the database pages that are in the buffer pool, and reload the pages later. This technique can help a server to warm up in minutes instead of hours after a restart or failover.
 

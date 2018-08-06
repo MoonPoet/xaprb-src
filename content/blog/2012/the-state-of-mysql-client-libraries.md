@@ -32,7 +32,7 @@ The next question is about MariaDB's code versus MySQL's code. The MariaDB libra
        License as published by the Free Software Foundation; either
        version 2 of the License, or (at your option) any later version.
 
-I was surprised. I thought I'd see a "clean-room" reimplementation of the protocol, with no relationship to MySQL's source code. But this file appears to be the same code as MySQL's, although the header says that the file is licensed under the LGPL. I compared that with the same header file in MySQL 5.6&#8242;s source code, and here's the result:
+I was surprised. I thought I'd see a "clean-room" reimplementation of the protocol, with no relationship to MySQL's source code. But this file appears to be the same code as MySQL's, although the header says that the file is licensed under the LGPL. I compared that with the same header file in MySQL 5.6's source code, and here's the result:
 
     /* Copyright (c) 2000, 2010, Oracle and/or its affiliates. All rights reserved.
     

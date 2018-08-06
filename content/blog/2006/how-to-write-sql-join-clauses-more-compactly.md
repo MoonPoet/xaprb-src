@@ -33,7 +33,7 @@ from apples as tbl1
    inner join peaches as tbl4 on tbl3.col3 = tbl2.col3
 ```
 
-The statement is valid and will execute, but it won't give the results you probably wanted (tbl4&#8242;s join clause doesn't refer to any columns from tbl4). The bug is even harder to find if the statement isn't [neatly indented and consistently organized](/blog/2006/04/26/sql-coding-standards/). That statement is better written with `USING` clauses:
+The statement is valid and will execute, but it won't give the results you probably wanted (tbl4's join clause doesn't refer to any columns from tbl4). The bug is even harder to find if the statement isn't [neatly indented and consistently organized](/blog/2006/04/26/sql-coding-standards/). That statement is better written with `USING` clauses:
 
 ```
 select tbl1.col1, tbl2.col2, tbl3.col2, tbl4.col1

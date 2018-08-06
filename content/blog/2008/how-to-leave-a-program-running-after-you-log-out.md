@@ -17,7 +17,7 @@ After reading on the web, I learned that I could press Control-Z to suspend the 
 
 Why did it die? Because when I logged out, the shell sent the SIGHUP signal to all of its jobs.
 
-There's a way to do this, though: press Control-Z, type 'bg', and then type 'disown %1&#8242;. Now the job won't get the SIGHUP signal. Here's a demo:
+There's a way to do this, though: press Control-Z, type 'bg', and then type 'disown %1'. Now the job won't get the SIGHUP signal. Here's a demo:
 
 ```
 baron@kanga:~$ run_forrest_run 

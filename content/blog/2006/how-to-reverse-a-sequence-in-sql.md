@@ -44,7 +44,7 @@ select @max := max(i) from t;
 update t set i = @min + @max - i;
 ```
 
-Now you get the [unique index violation](/blog/2006/06/16/how-to-avoid-unique-index-violations-on-updates-in-mysql/): "ERROR 1062 (23000): Duplicate entry '5&#8242; for key 1." There's just no way around this in MySQL. You must turn to more devious methods!
+Now you get the [unique index violation](/blog/2006/06/16/how-to-avoid-unique-index-violations-on-updates-in-mysql/): "ERROR 1062 (23000): Duplicate entry '5' for key 1." There's just no way around this in MySQL. You must turn to more devious methods!
 
 ### Method 2: bitwise XOR
 

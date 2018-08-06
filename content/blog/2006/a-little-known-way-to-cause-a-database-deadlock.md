@@ -53,7 +53,7 @@ By contrast, Transaction 2 was *probing into the index* with a new row, trying t
 
 Here's the deadlock: Transaction 1 had already *scanned past that point*, locking every row along the way. If it hadn't, Transaction 2 would have been able to insert the new row, and there'd be no deadlock. Additionally, we can deduce that Transaction 1 had scanned all the way to the (newly inserted) row for `ad_id` 7, and stopped there. If it hadn't, it wouldn't be waiting for anything, and again there would be no deadlock.
 
-Transaction 1&#8242;s locks cannot allow Transaction 2 to insert the new row. If that row were inserted, Transaction 1&#8242;s sum of the data would be wrong. That's where the deadlock really comes from.
+Transaction 1's locks cannot allow Transaction 2 to insert the new row. If that row were inserted, Transaction 1's sum of the data would be wrong. That's where the deadlock really comes from.
 
 Here's a picture of the situation. Start reading at the bottom right, then go to the top left, then to the top right:
 

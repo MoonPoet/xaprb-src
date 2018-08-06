@@ -7,7 +7,7 @@ categories:
   - Programming
 ---
 
-Several years ago I wrote a pure PHP library for manipulating [XML](http://www.w3.org/XML/) documents with the Document Object Model ([DOM](http://www.w3.org/DOM/)) in [PHP](http://www.php.net/) 4, without external libraries such as libxml. This is often useful on shared hosting providers, where you can't get C extensions installed. The library uses [PHP4&#8242;s built-in SAX ](http://php.net/xml)functions, which are enabled by default. Today I'm re-releasing this library under the LGPL (EDIT: later re-released under MIT). You can find it [here](https://github.com/xaprb/dom4php)
+Several years ago I wrote a pure PHP library for manipulating [XML](http://www.w3.org/XML/) documents with the Document Object Model ([DOM](http://www.w3.org/DOM/)) in [PHP](http://www.php.net/) 4, without external libraries such as libxml. This is often useful on shared hosting providers, where you can't get C extensions installed. The library uses [PHP4's built-in SAX ](http://php.net/xml)functions, which are enabled by default. Today I'm re-releasing this library under the LGPL (EDIT: later re-released under MIT). You can find it [here](https://github.com/xaprb/dom4php)
 
 ### Introduction
 
