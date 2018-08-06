@@ -9,18 +9,17 @@ categories:
 tags:
   - PostgreSQL
 ---
+[![Cacti Network Monitoring](/media/2010/01/cacti-network-monitoring.jpg "fr pa1")]({{< amz 1847195962 >}})
 
-<a href="{{< amz 1847195962 >}}"><img src="/media/2010/01/cacti-network-monitoring.jpg" alt="Cacti Network Monitoring" title="Cacti Network Monitoring" width="240" height="240" class="size-full wp-image-1531" /></a>
+[Cacti 0.8 Network Monitoring]({{< amz 1847195962 >}}), Dinangkur Kundu and S. M. Ibrahim Lavlu, Packt, 2009. Page count: 110 pages.
+
+This is a quite short book that covers some of the breadth but very little of the depth of Cacti. For example, it focuses on Cacti as an SNMP tool for graphing network data, but SNMP is only one of the many ways Cacti can collect data, and of course it graphs anything, not just networks. Each chapter takes the reader through the most important topics, with some code listings and screenshots. On the plus side, this makes it very easy to read quickly, because it doesn't go off on many tangents about special cases and errors.
 
 > [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
 > your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
 > monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
 > performance management](https://vividcortex.com/monitoring/postgres/) among many
 > other features.
-
-[Cacti 0.8 Network Monitoring]({{< amz 1847195962 >}}), Dinangkur Kundu and S. M. Ibrahim Lavlu, Packt, 2009. Page count: 110 pages.
-
-This is a quite short book that covers some of the breadth but very little of the depth of Cacti. For example, it focuses on Cacti as an SNMP tool for graphing network data, but SNMP is only one of the many ways Cacti can collect data, and of course it graphs anything, not just networks. Each chapter takes the reader through the most important topics, with some code listings and screenshots. On the plus side, this makes it very easy to read quickly, because it doesn't go off on many tangents about special cases and errors.
 
 I don't want to criticize too much, but I think I should give a summary of the major shortcomings. First, the book is just too small, especially for the price. It is also not very well edited; it seems to have been edited by non-English speakers. Finally, it constantly refers to Cacti as a monitoring tool, even talking about the need to find out about crashed equipment and so on---but it doesn't clearly say that Cacti is only for performance graphing, not for monitoring and alerting. I wish they had not flung the word "monitoring" around so casually.
 

@@ -16,11 +16,11 @@ Last week I read two books on Nagios. I found one easy to use and the other diff
 
 ### The books
 
-[<img src="/media/2007/02/nagios_cov.jpg" width="125" height="165" alt="Cover of Nagios System and Network Monitoring">]({{< amz 1593270704 >}})
+[![Cover of Nagios System and Network Monitoring](/media/2007/02/nagios_cov.jpg "fr pa1")]({{< amz 1593270704 >}})
 
 [Nagios System and Network Monitoring (Wolfgang Barth, No Starch Press, 2006)]({{< amz 1593270704 >}}) is a delight. It explained Nagios briefly and clearly, showed me how to get it running, and continues to be a useful reference. I rate it 4 out of 5 stars.
 
-<a href="{{< amz 1590596099 >}}"><img src="/media/2007/02/pro-nagios.gif" alt="Cover of Pro Nagios 2.0" width="125" height="168" /></a>
+[![Cover of Pro Nagios 2.0](/media/2007/02/pro-nagios.gif "fl pa1")]({{< amz 1590596099 >}})
 
 [Pro Nagios 2.0 (James Turnbull, Apress, 2006)]({{< amz 1590596099 >}}) is hard for me to read, understand and use. Mr. Turnbull is clearly an expert on Nagios, but the book doesn't communicate his knowledge effectively. I give it two stars.
 
@@ -62,8 +62,10 @@ I read James Turnbull's Pro Nagios 2.0 first. I brought it home for the weekend,
     > 
     > **Example 2-8.** The nagios.cfg Freshness Items
     > 
-    > `check_host_freshness=0<br />
-host_freshness_check_interval=60`
+	 > ```
+    > check_host_freshness=0
+    > host_freshness_check_interval=60
+	 > ```
     
     This talks about *enabling* freshness checks and then shows the configuration setting that *disables* them. It makes me backtrack to be sure I read it right. This happens fairly often.
 

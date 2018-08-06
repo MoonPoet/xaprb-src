@@ -21,17 +21,24 @@ Don't search the Help files for "stepping"---I went that route and crashed OpenO
 
 You have to do it as an animation.  One step at a time (no pun intended):
 
-<ol>
-<li>First, create a slideshow and add a bulleted list:
-<a href='/media/2007/08/openofficeorg-stepping-1.png' title='OpenOffice.org Impress Stepping Slides, Part 1'><img src='/media/2007/08/openofficeorg-stepping-1.thumbnail.png' alt='OpenOffice.org Impress Stepping Slides, Part 1' /></a></li>
-<li>Next, select the list text and choose the "Custom Animation" sub-pane in the right-hand side:
-<a href='/media/2007/08/openofficeorg-stepping-2.png' title='OpenOffice.org Impress Stepping Slides, Part 2'><img src='/media/2007/08/openofficeorg-stepping-2.thumbnail.png' alt='OpenOffice.org Impress Stepping Slides, Part 2' /></a></li>
-<li>Click the Add... button in the Custom Animation pane and select Appear, then OK to dismiss the dialog box:
-<a href='/media/2007/08/openofficeorg-stepping-3.png' title='OpenOffice.org Impress Stepping Slides, Part 3'><img src='/media/2007/08/openofficeorg-stepping-3.thumbnail.png' alt='OpenOffice.org Impress Stepping Slides, Part 3' /></a></li>
-<li>If your Custom Animation pane is large enough, you'll see a small preview of the bullet points at the bottom.  Notice there's a mouse-click icon next to the first one, and the "Start" pull-down menu is blank (no selection).  At this point, all the bullet points are going to be animated as a unit:
-<a href='/media/2007/08/openofficeorg-stepping-4.png' title='OpenOffice.org Impress Stepping Slides, Part 4'><img src='/media/2007/08/openofficeorg-stepping-4.thumbnail.png' alt='OpenOffice.org Impress Stepping Slides, Part 4' /></a></li>
-<li>The last step is to make the animation start upon clicking, and make that apply to each bullet point.  Pull down the "Start" drop-down and select "On click".  You should now see a little mouse-click icon next to each bullet point:
-<a href='/media/2007/08/openofficeorg-stepping-5.png' title='OpenOffice.org Impress Stepping Slides, Part 5'><img src='/media/2007/08/openofficeorg-stepping-5.thumbnail.png' alt='OpenOffice.org Impress Stepping Slides, Part 5' /></a></li>
-</ol>
+First, create a slideshow and add a bulleted list:
+
+![OpenOffice.org Impress Stepping Slides, Part 1](/media/2007/08/openofficeorg-stepping-1.png)
+
+Next, select the list text and choose the "Custom Animation" sub-pane in the right-hand side:
+
+![OpenOffice.org Impress Stepping Slides, Part 2](/media/2007/08/openofficeorg-stepping-2.png)
+
+Click the Add... button in the Custom Animation pane and select Appear, then OK to dismiss the dialog box:
+
+![OpenOffice.org Impress Stepping Slides, Part 3](/media/2007/08/openofficeorg-stepping-3.png)
+
+If your Custom Animation pane is large enough, you'll see a small preview of the bullet points at the bottom.  Notice there's a mouse-click icon next to the first one, and the "Start" pull-down menu is blank (no selection).  At this point, all the bullet points are going to be animated as a unit:
+
+![OpenOffice.org Impress Stepping Slides, Part 4](/media/2007/08/openofficeorg-stepping-4.png)
+
+The last step is to make the animation start upon clicking, and make that apply to each bullet point.  Pull down the "Start" drop-down and select "On click".  You should now see a little mouse-click icon next to each bullet point:
+
+![OpenOffice.org Impress Stepping Slides, Part 5](/media/2007/08/openofficeorg-stepping-5.png)
 
 You're done!  Test your slideshow just to be sure.

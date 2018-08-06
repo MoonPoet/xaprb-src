@@ -9,7 +9,7 @@ Let me begin by saying "I am so not a gadget guy." I don't have an iPhone. Heck,
 
 Anyway, my wife and I have a bunch of computers (desktops and laptops) and we had been feeling the pain for a long time: the files were only on one computer, and we wanted them available. I built a file server and then realized that it was going to be really expensive in terms of power alone, so I went back to USB drives for backups, and kept thinking about it.
 
-<a href="{{< amz B0015313O8 >}}"><img border="0" src="/media/2008/08/HPMediaVault.jpg" width="160" height="160" alt="HP Media Vault" /></a>
+[![HP Media Vault](/media/2008/08/HPMediaVault.jpg)]({{< amz B0015313O8 >}})
 
 After a long time I decided to buy an [HP Media Vault]({{< amz B0015313O8 >}}) and install ultra-low-power, oversized disks in it---I did that, and will write about it elsewhere. And then I discovered that it has a media server in it. And not being a gadget guy, I had honestly never heard about these things before. Really. I read up on it a little bit and decided hell, sharing files is nice, but I have about a thousand CDs that could go on this thing, and my wife has hundreds too. That's even better than file sharing! I copied the music from her iTunes library to the shared Music folder on the server and boom, Rhythmbox magically saw it all. I couldn't believe I'd never heard about this before. Best thing since sliced bread.
   
