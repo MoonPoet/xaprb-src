@@ -22,7 +22,7 @@ Both techniques have their drawbacks. Both require a warm-up period, for example
 
 Here's a plot of some real data and the two techniques. Click through to see a larger image. The blue line is the sampled data, the red line is an exponential moving average with an average 60-second "memory," and the yellow line is a 60-second moving average.
 
-[<img src="/media/2012/10/moving-averages.png" title="moving-averages" />](/media/2012/10/moving-averages.png) 
+![Moving Averages](/media/2012/10/moving-averages.png) 
 
 Notice how the red line tends to course-correct more quickly and stay more true to the current behavior of the blue line. This is one advantage of the exponential moving average---if that is what you desire.
 
