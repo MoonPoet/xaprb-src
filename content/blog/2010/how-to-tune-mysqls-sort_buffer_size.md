@@ -12,8 +12,10 @@ I continually see consulting engagements like the following:
 
 > My server load is high and my queries are slow and my server crashes. Can you help me tune my server? Here is the my.cnf:
 > 
-> `[mysqld]`<br>
-> `sort_buffer_size = 100M`
+> ```
+> [mysqld]
+> sort_buffer_size = 100M
+> ```
 
 Such a large `sort_buffer_size` is a serious problem, but unfortunately there
 is a lot of cargo cult advice on the Internet, in books, and in "tuning scripts,"

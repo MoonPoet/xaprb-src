@@ -40,7 +40,7 @@ Messaging and positioning are vital when you’re trying to promote something, b
 
 This is not a statement of facts, it’s a statement of how you want a target audience to perceive you. You can probably fill in the template quickly for any number of products, trends, and audiences: the iPad, texting, Breaking Bad, Spotify. Now try replacing the parenthesized phrases for DevOps. If you are like me, you’ll find it difficult, especially when you get to the last line.
 
-<span class="pullquote-full">DevOps can be forgotten as quickly as it arose</span>
+DevOps can be forgotten as quickly as it arose
 
 ### What’s unique about DevOps?
 

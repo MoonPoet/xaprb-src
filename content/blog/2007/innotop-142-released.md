@@ -28,7 +28,8 @@ This release of the innotop MySQL and InnoDB monitor is a major upgrade in terms
 *   Require Perl to have high-resolution time support (Time::HiRes)
 *   Help the user choose a query to analyze or kill
 *   Enable EXPLAIN, show-full-query in T mode just like Q mode
-*   Let data-extraction access current, previous and incremental data sets all at once </ul> 
+*   Let data-extraction access current, previous and incremental data sets all at once
+
 ### Minor changes
 
 *   Column stabilizing for Q mode

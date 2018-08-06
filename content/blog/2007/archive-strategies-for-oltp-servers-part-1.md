@@ -20,11 +20,12 @@ Archiving is actually a very large topic! My goal is to at least mention many of
 
 ### Archiving: why do it?
 
-Archiving is about scaling. There are several different views on how to scale systems with MySQL in particular, and any given system in general. Opinions vary on the best way for any given usage, but popular strategies are<ul 
+Archiving is about scaling. There are several different views on how to scale systems with MySQL in particular, and any given system in general. Opinions vary on the best way for any given usage, but popular strategies are
 
 *   Buy bigger, more expensive, faster hardware (vertical scaling)
 *   Split data into logical partitions or shards, and distribute these among many machines (horizontal scaling)
-*   Use federated views, clusters, or other distributed technologies that pretend there's one server, but underneath there are actually many (federation)</ul> 
+*   Use federated views, clusters, or other distributed technologies that pretend there's one server, but underneath there are actually many (federation)
+
 Each strategy has its place, but each focuses on **how to handle the same or more data** while providing redundancy or high availability, improved performance, and so on. Sometimes the elephant in the room is the obvious but easy to overlook strategy of **don't scale up or out, scale back**. This may not be possible, but when it is, it's often preferable.
 
 How do you know if you can do this? Just ask whether you need all the data. Most of the time you don't. Think about how true this is throughout computing as a whole. Caching is everywhere in computing, and it works precisely because you don't need all the data, or at least you don't need all of it all the time. Most data has some spatial or temporal hot spots, and often there's a pretty large chunk of it that's never accessed at all. If you don't need all the data all the time, you might be able to move some of it away to bigger, cheaper, slower storage. That's archiving.
