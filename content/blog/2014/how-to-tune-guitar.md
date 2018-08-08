@@ -319,37 +319,49 @@ the next-simplest interval, the fifth? A fifth is a 3:2 relationship, and there
 are 12 fifths---the "cycle of fifths"---in the evenly tempered scale. If you
 keep increasing by fifths you'll end up at the same note after 12 iterations.
 
-That means the frequency is 1.5 to the 12th power, right? What is that multiple?
+That means the frequency is {{< math >}}1.5^{12}{{< /math >}}; what is that multiple?
 
-    1.5^12 = 129.74633789
+{{< math >}}
+1.5^{12} = 129.74633789
+{{< /math >}}
 
 That's pretty close to 128, but slightly "wide," meaning if you tune perfect
 fifths 12 times in a row you'll end up overshooting, with a frequency that's
-1.36% too high. What's the relationship between 3:2 and the 12th root of 2 to
-the 7th power (there are 7 semitones in a 5th)?
+1.36% too high. There are 7 semitones in a 5th, so what's the relationship between 3:2 and {{< math >}}\sqrt[12]{2}{{< /math >}} to the 7th power?
 
-    3/2      = 1.5          # perfect fifth
-    2^(7/12) = 1.498307077  # fifth as tuned in equal temperaments
+{{< math >}}
+\begin{array}{c}
+\frac{3}{2} = 1.5 \\
+2^{\frac{7}{12}} = 1.498307077
+\end{array}
+{{< /math >}}
 
-A single (perfect) fifth is 0.1129% too high in frequency. Multiply that by 12
-and 12 perfect fifths will become 1.36% too high in frequency. Boom.
+
+A single (perfect) fifth is 0.1129% too high in frequency. Repeat that 12 times,
+and that cycle of perfect fifths will end 1.36% too high in frequency.
 
 What about fourths? They're just the complement of fifths. Thirds? A perfect
 major third is a 5:4 frequency ratio. Unlike fifths, the cycle of thirds returns
 to the same note after only three steps (for example, C - E - G# - C), so the
-number of steps to multiply is different. What is 5/4ths to the 3rd power?
+number of steps to multiply is only 3; how far off from 2 is the result?
 
-    (5/4)^3 = 1.953125
+{{< math >}}
+\frac{5}{4}^3 = 1.953125
+{{< /math >}}
 
-Close, but not exactly, 2; it's only 97.65625% of a perfect octave. What's the
-relationship between 5/4ths and the 12th root of 2 to the 4th power?
+It's close to 2, but not exactly; it's only 97.65625% of a perfect octave.
+What's the relationship between a perfect major third and 4 semitones in the evenly tempered scale?
 
-    5/4      = 1.25
-    2^(4/12) = 1.25992105
+{{< math >}}
+\begin{array}{c}
+\frac{5}{4} = 1.25 \\
+2^{\frac{4}{12}} = 1.25992105
+\end{array}
+{{< /math >}}
 
-A single (perfect) major third is too low in frequency; it's only 99.2% of the
+A perfect major third is too narrow; it's only 99.2% of the
 frequency it needs to be to align with the evenly tempered scale. If you cube
-that, you get 97.65625% again.
+that to get an octave, the result is 97.65625% again.
 
 Hopefully that explains how fifths and thirds are close to, but not exactly,
 perfectly coincident with the frequencies. Again, I think a mathematician who
