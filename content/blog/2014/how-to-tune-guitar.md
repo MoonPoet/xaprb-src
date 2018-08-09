@@ -6,28 +6,26 @@ url: /blog/2014/01/18/how-to-tune-guitar/
 categories:
   - Music
   - Best Of
-image: /media/2014/01/guitar-tuning.jpg
-credit: http://www.flickr.com/photos/angelocesare/249168890/
+credit: "https://unsplash.com/photos/59wBmsbP1lM"
+image: "/media/2014/01/unsplash-photos-59wBmsbP1lM.jpg"
 ---
-Do you know how to tune a guitar? I mean, do you *really* know how to tune a
-guitar?
+Do you know how to tune a guitar?
+I mean, do you *really* know how to tune a guitar?
+There's a secret to tuning an instrument.
+Very few people seem to know it.
 
 <!--more-->
 
-I've met very few people who do. Most people pick some notes, crank the tuners,
+Most people pick some notes, crank the tuners,
 play some chords, and endlessly fidget back and forth until they either get
 something that doesn't sound awful to their ears, or they give up. I can't
 recall ever seeing a professional musician look like a tuning pro on stage,
-either. This really ought to be embarrassing to someone who makes music for a
-career.
+either.
 
-There's a secret to tuning an instrument. Very few people seem to know it. It's
-surprisingly simple, it isn't at all what you might expect, and it makes it easy
-and quick to tune an instrument *accurately* without guesswork. However, even
-though it's simple and logical, it is difficult and subtle at first, and
-requires training your ear. This is a neurological, physical, and mental process
-that takes some time and practice. It does *not* require "perfect pitch,"
-however.
+The secret is surprisingly simple, it isn't at all what you might expect, and it makes it easy and quick to tune an instrument *accurately* without guesswork.
+However, even though it's simple and logical, it is difficult and subtle at first, and requires training your ear.
+This is a neurological, physical, and mental process that takes some time and practice.
+It does not require "perfect pitch," however.
 
 In this blog post I'll explain how it works. There's a surprising amount of
 depth to it, which appeals to the nerd in me. If you're looking for "the short
@@ -162,9 +160,9 @@ we have:
 
 * Unison: two notes of the same frequency.
 * Octave: the higher note is double the frequency.
-* Fifth: the higher note is 3/2s the frequency.
-* Fourth: the higher note is 4/3rds the frequency.
-* Third: the higher note is 5/4ths the frequency.
+* Fifth: the higher note is 3/2 the frequency.
+* Fourth: the higher note is 4/3 the frequency.
+* Third: the higher note is 5/4 the frequency.
 * Further intervals (minor thirds, sixths, etc) have various relationships, but
   the pattern of N/(N-1) doesn't hold beyond the third.
 
@@ -192,8 +190,8 @@ example, is twice the frequency of the open string. Touching the string at the
 12th fret is touching it at its halfway point. This essentially divides the
 string into two strings of half the length. The frequency of the note is
 inversely dependent on the string's length, so half the length makes a note
-that's twice the frequency. The seventh fret is at 1/3rd the length of the
-string, so the note is three times the frequency; the 5th fret is 1/4th the
+that's twice the frequency. The seventh fret is at 1/3 the length of the
+string, so the note is three times the frequency; the 5th fret is 1/4 the
 length, so you hear a note two octaves higher, and so on.
 
 The overtones give the instrument its characteristic sound. How many of them
@@ -306,12 +304,8 @@ interesting coincidence and nothing more. Look at it this way:
 - Octave-based scales are based on powers of two
 - Intervals are based on powers of something other than two
 - There are subdivisions of the octave-based scales that coincide nearly, but
-  not exactly, with the non-power-of-two intervals
+  not exactly, with the non-power-of-two intervals[^53tet]
 - Isn't that cool? How unlikely is that?
-
-I vaguely remember reading once when I was a child about an avant-garde composer
-who created a scale with something like 51 divisions, which had nearly perfect
-intervals and very small gradations between adjacent notes.
 
 In any case, powers of two are easy to compute: 2, 4, 8, 16, 32, 64, 128, 256.
 Those are the multiples of frequencies. How do those multiples compare versus
@@ -365,7 +359,7 @@ that to get an octave, the result is 97.65625% again.
 
 Hopefully that explains how fifths and thirds are close to, but not exactly,
 perfectly coincident with the frequencies. Again, I think a mathematician who
-likes to think in base 2, base 1/12th, base 1.5 and base 1.25 would have fun
+likes to think in base 2, base 1/12, base 1.5 and base 1.25 would have fun
 with this. Or maybe I'm just overthinking it.
 
 ### Tuning The Guitar
@@ -374,31 +368,27 @@ With all that theory behind us, we can move on to a tuning system for the guitar
 
 Let's list the strings, their frequencies, and some of their overtones.
 
-```
-String  Freq    Overtone_2  Overtone_3  Overtone_4  Overtone_5
-======  ======  ======      ======      =======     =======
-E       82.41   164.81      247.22      329.63      412.03
-A       110.00  220.00      330.00      440.00      550.00
-D       146.83  293.66      440.50      587.33      734.16
-G       196.00  392.00      587.99      783.99      979.99
-B       246.94  493.88      740.82      987.77      1234.71
-E       329.63  659.26      988.88      1318.51     1648.14
-```
+String | Freq | Overtone 2 | Overtone 3 | Overtone 4 | Overtone 5
+------ | ------: | ------: | ------: | -------: | -------:
+E | 82.41 | 164.81 | 247.22 | 329.63 | 412.03
+A | 110.00 | 220.00 | 330.00 | 440.00 | 550.00
+D | 146.83 | 293.66 | 440.50 | 587.33 | 734.16
+G | 196.00 | 392.00 | 587.99 | 783.99 | 979.99
+B | 246.94 | 493.88 | 740.82 | 987.77 | 1234.71
+E | 329.63 | 659.26 | 988.88 | 1318.51 | 1648.14
 
 Because the open strings of the guitar form 4ths and one 3rd, you can tune the guitar's strings open, without any frets, using just those intervals. There's also a double octave from the lowest E to the highest E, but you don't strictly need to use that except as a check after you're done.
 
 For convenience, here's the same table with only the overtones we'll use.
 
-```
-String  Freq    Overtone_2  Overtone_3  Overtone_4  Overtone_5
-======  ======  ==========  ==========  ==========  ==========
-E       82.41               247.22      329.63 
-A       110.00              330.00      440.00
-D       146.83              440.50      587.33      734.16
-G       196.00              587.99                  979.99
-B       246.94              740.82      987.77
-E       329.63              988.88      
-```
+| String | Freq   | Overtone 2 | Overtone 3 | Overtone 4 | Overtone 5
+| ------ | -----: | ---------: | ---------: | ---------: | ---------:
+| E      | 82.41  |            | 247.22     | 329.63     |
+| A      | 110.00 |            | 330.00     | 440.00     |
+| D      | 146.83 |            | 440.50     | 587.33     | 734.16
+| G      | 196.00 |            | 587.99     |            | 979.99
+| B      | 246.94 |            | 740.82     | 987.77     |
+| E      | 329.63 |            | 988.88     |            |
 
 #### Tuning the A String
 
@@ -416,7 +406,7 @@ If you don't have a tuning fork, you can use any other reference pitch, such as 
 
 Strike the open low E and A strings together, and tune the E string. Listen to the beating of the overtones at the frequency of the E two octaves higher. If you have trouble hearing it, silence all the strings, then pluck a harmonic on the E string at the 5th fret. Keep that tone in your memory and then sound the two strings together. It's important to play the notes *together, open, simultaneously* so that you don't get confused by pitches. Remember, you're trying to ignore pitch completely, and get your ear to isolate the sound of the overtone, ignoring everything but its beating.
 
-When correctly tuned, the A string's overtone will be at 330Hz and the E string's will be at 329.63Hz, so the interval is **1/3rd of a beat per second wide**. That is, you can tune the E string until the beats disappear, and then **flatten the low E string very slightly** until you hear one beat every three seconds. The result will be a very slow "wwwoooooowww, wwwwoooooowww" beating.
+When correctly tuned, the A string's overtone will be at 330Hz and the E string's will be at 329.63Hz, so the interval is **1/3 of a beat per second wide**. That is, you can tune the E string until the beats disappear, and then **flatten the low E string very slightly** until you hear one beat every three seconds. The result will be a very slow "wwwoooooowww, wwwwoooooowww" beating.
 
 #### Tuning the D String
 
@@ -424,7 +414,7 @@ Now that the low E and A strings are tuned, strike the open A and D strings toge
 
 #### Tuning the G String
 
-Continue by striking the open D and G strings, and listen for the high D overtone's beating. Again, if you have trouble "finding the note" with your ear, silence everything and strike the D string's harmonic at the 5th fret. You're listening for a high D overtone, two octaves higher than the open D string. The overtones will be at 587.33Hz and 587.99Hz, so the interval needs to be **2/3rds of a beat wide.** Counting two beats every three seconds is a little harder than the other intervals we've used thus far, but it will come with practice. In the beginning, feel free to just give it your best wild guess. As we'll discuss a little later, striving for perfection is futile anyway.
+Continue by striking the open D and G strings, and listen for the high D overtone's beating. Again, if you have trouble "finding the note" with your ear, silence everything and strike the D string's harmonic at the 5th fret. You're listening for a high D overtone, two octaves higher than the open D string. The overtones will be at 587.33Hz and 587.99Hz, so the interval needs to be **2/3 of a beat wide.** Counting two beats every three seconds is a little harder than the other intervals we've used thus far, but it will come with practice. In the beginning, feel free to just give it your best wild guess. As we'll discuss a little later, striving for perfection is futile anyway.
 
 #### Tuning the B String
 
@@ -571,7 +561,7 @@ Starting at G, for example, you have a C major scale up to the next G, centered
 around middle C. But the next B is B-flat instead of B-natural, so there's an F
 major scale overlapping with the top of the C major, and so on:
 
-    G A B C D E F G A B-flat C D...
+> G, A, B, C, D, E, F, G, A, B&flat;, C, D...
 
 It's easy to tune this instrument in fourths and fifths because of the way its
 scales are laid out. If I do that, however, I find that I have ugly-sounding
@@ -579,7 +569,7 @@ thirds more often than not. So I'll tune by combinations of fifths, fourths, and
 thirds:
 
 ```
-G A B C D E F G A B-flat C D...
+G A B C D E F G A B♭ C D...
 ^-------------^                 (up an octave)
       ^-------^                 (down a fifth)
       ^---^                     (up a third)
@@ -822,3 +812,4 @@ Suggested links from various sources:
 * http://www.flickr.com/photos/keela84/8075445/
 
 
+[^53tet]: I remember reading once when I was a child about an avant-garde composer who created a scale with 53 divisions, which had nearly perfect intervals and very small gradations between adjacent notes. This is the [53 equal temperament](https://en.wikipedia.org/wiki/53_equal_temperament) scale.  See also [equal temperaments](https://en.wikipedia.org/wiki/Equal_temperament#Other_equal_temperaments).
