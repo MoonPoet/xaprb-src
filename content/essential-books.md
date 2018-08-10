@@ -42,7 +42,7 @@ The focus is on a scientific method to design indexes that will produce the best
 
 <a href="{{< amz 0596009577 >}}"><img src="/media/2010/02/understanding-mysql-internals-150x150.gif" alt="Understanding MySQL Internals" title="Understanding MySQL Internals" width="150" height="150" class="size-thumbnail wp-image-1629" /></a>
 
-This book complements [High Performance MySQL]({{< amz 0596101716 >}}) extremely well. I believe it should be mandatory reading for MySQL DBAs and developers once they have a working knowledge of how to use the server. I [reviewed it here](/blog/2010/02/19/a-review-of-understanding-mysql-internals-by-sasha-pachev/).
+This book complements [High Performance MySQL]({{< amz 1449314287 >}}) extremely well. I believe it should be mandatory reading for MySQL DBAs and developers once they have a working knowledge of how to use the server. I [reviewed it here](/blog/2010/02/19/a-review-of-understanding-mysql-internals-by-sasha-pachev/).
 
 ### [The Art of Capacity Planning]({{< amz 0596518579 >}})
 

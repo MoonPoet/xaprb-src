@@ -15,6 +15,6 @@ I have just signed the contract for High Performance MySQL, Third Edition. The t
 *   Improvements in replication.
 *   New material on profiling MySQL, benchmarking, and tools and techniques to help you measure, monitor, and manage your MySQL installations.
 
-The book will be available for purchase early next year. It's been a great three years since the [second edition]({{< amz 0596101716 >}}) was published, and although it's selling strongly and is still referred to as "the" book for MySQL performance, it's outdated and needs to be revised. And frankly I've learned a lot since 2008. The third edition will again be our best effort to give away everything we know, and help you help yourself as much as you can.
+The book will be available for purchase early next year. It's been a great three years since the [second edition]({{< amz 1449314287 >}}) was published, and although it's selling strongly and is still referred to as "the" book for MySQL performance, it's outdated and needs to be revised. And frankly I've learned a lot since 2008. The third edition will again be our best effort to give away everything we know, and help you help yourself as much as you can.
 
 

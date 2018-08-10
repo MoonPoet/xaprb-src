@@ -6,7 +6,7 @@ categories:
   - Databases
   - Writing
 ---
-[O'Reilly](http://www.oreilly.com/) tells me that translation rights for our book, [High Performance MySQL Second Edition]({{< amz 0596101716 >}}) have been purchased in the following languages:
+[O'Reilly](http://www.oreilly.com/) tells me that translation rights for our book, [High Performance MySQL Second Edition]({{< amz 1449314287 >}}) have been purchased in the following languages:
 
 *   Korean
 *   Russian

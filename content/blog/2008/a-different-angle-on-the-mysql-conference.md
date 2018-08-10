@@ -15,7 +15,7 @@ There are quite a few business angles you might see only if you're here at the c
 *   Webyog's flyer has one side for SQLyog, and one for MONyog. Each side takes the sparse but visually appealing approach of shiny icons to present a feature list. My favorite is the "Find slow SQL" turtle.
 *   JasperSoft's flyer has soothing, professional blues and rich reds. It makes them look very trustworthy. (I'm not being snarky.) And they have lots of nice whitespace. It's a little bit of a different look.
 *   Kickfire's marketing department is really on the ball. I've seen a large number of flyers and other materials from them (online and offline) and they just changed their name and created a new logo and look-and-feel a short time ago. How do they do it so fast?
-*   O'Reilly has a bunch of half-sized flyers for their conferences. We should have asked them to throw in one about our upcoming book, the second edition of [High Performance MySQL]({{< amz 0596101716 >}}). Alas, opportunity lost. By the way, stop by the bookstore and grab a copy of the sample chapter.
+*   O'Reilly has a bunch of half-sized flyers for their conferences. We should have asked them to throw in one about our upcoming book, the second edition of [High Performance MySQL]({{< amz 1449314287 >}}). Alas, opportunity lost. By the way, stop by the bookstore and grab a copy of the sample chapter.
 *   Zmanda, not content with stamping the outside of the bag, has a half-flyer inside it too, plus a chance to win a Digital Rebel to lure you to their booth. If you're doing backups the way a lot of people seem to, you might want to stop by their booth anyway...
 *   There's a CD for a free trial of WinSQL. But the CD case doesn't say what the
 
