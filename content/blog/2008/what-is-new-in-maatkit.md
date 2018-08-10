@@ -68,7 +68,7 @@ One interesting thing I did was divide up the functionality so the tool can use 
 
 What I haven't told you about is a lot of unreleased code and new tools. There's some good stuff in the works. Also stay tuned---a third party might be about to contribute another tool to Maatkit, which will also be a very neat addition.
 
-## Conclusion
+### Conclusion
 
 As [Dana Carvey says](http://snltranscripts.jt.org/88/88adebate.phtml), "If I had more time... the programs we have in place are getting the job done, so let's stay on course, a thousand points of light. Well, unfortunately, I guess my time is up." Maatkit is getting better all the time, just wait and see.
 
