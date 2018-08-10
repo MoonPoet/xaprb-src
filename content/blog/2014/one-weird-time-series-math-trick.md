@@ -24,4 +24,4 @@ My slides are embedded below. Enjoy. I've also uploaded an [Excel spreadsheet](/
 can use to tinker with the math and reproduce my results. Let me know if I did
 anything wrong, please!
 
-{{< box o60h3cxbp5fa1u5jw1pu >}}
+{{< googledrive "https://drive.google.com/open?id=15Ow3Jo-FmYdIHReBhttoUz191KCitaMW" >}}

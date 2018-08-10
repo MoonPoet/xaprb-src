@@ -34,6 +34,6 @@ The topic is, roughly, databases. Officially,
 I am excited and a bit nervous. A Google Tech Talk! Wow! Thanks for inviting me,
 Google!
 
-**Update**: Slides are embedded below.
+*Update: Slides are embedded below.*
 
-{{< box ko7s90gvgiix >}}
+{{< googledrive "https://drive.google.com/open?id=1aPewl3Q2rMgi6_tDzocVY0N-B9iteIje" >}}

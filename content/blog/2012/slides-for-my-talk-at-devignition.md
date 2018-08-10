@@ -7,4 +7,4 @@ categories:
 ---
 I spoke last Friday at [DevIgnition](http://www.devignition.com/) about what's coming in the MySQL 5.6 release. My slides are embedded below.
 
-{{< box 58wulnie4vwtk8rqvrp9 >}}
+{{< googledrive "https://drive.google.com/open?id=1NRtFl1tPtelou9BzsS5-dMjH4xv0yXR3" >}}

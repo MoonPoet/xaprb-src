@@ -10,4 +10,4 @@ Last night at the [Golang-DC meetup](http://www.meetup.com/Golang-DC/events/1068
 
 Afterwards the discussion ranged to a lot of related topics. This was the best part of the evening for me. There were really great questions on a variety of topics, and insightful answers from everyone.
 
-{{< box e1thdgj9x6w6f92jqjtl >}}
+{{< googledrive 1giYjIRXROTnkyZPoCJseqkYhemtSWIRW >}}
