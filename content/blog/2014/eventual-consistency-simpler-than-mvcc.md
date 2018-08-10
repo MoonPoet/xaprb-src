@@ -10,6 +10,7 @@ categories:
 tags:
   - PostgreSQL
 image: /media/2014/12/puzzle.jpg
+credit: https://www.flickr.com/photos/digitalmums/6310508350/
 ---
 
 This should sound familiar:
@@ -386,7 +387,6 @@ Notes:
 
 Pic credits:
 
-* [Puzzle](https://www.flickr.com/photos/digitalmums/6310508350/)
 * [Alice](http://www.writerightwords.com/down-the-rabbit-hole/)
 * [Schroedinger's Cat](https://www.flickr.com/photos/t_zero/7762560470/)
 * [Spiral Watch](https://www.flickr.com/photos/stuartncook/4613088809/)

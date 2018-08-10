@@ -7,6 +7,7 @@ categories:
 date: 2017-02-25T14:43:17-05:00
 description: "Here are some practices I've found to help keep spreadsheets manageable over the years."
 image: "/media/2017/02/ledger.jpg"
+credit: https://pixabay.com/en/ledger-accounting-business-money-1428230/
 title: Simple Guidelines For Maintainable Spreadsheets
 ---
 
@@ -145,5 +146,3 @@ periods of time, I've found that spreadsheets can become a lot more work in the
 long run than I thought they would initially. I've slowly adopted these
 practices to help with that problem. I'm sure there are spreadsheet experts with
 more extensive guidelines, but this is what's worked for me so far.
-
-[Pic Credit](https://pixabay.com/en/ledger-accounting-business-money-1428230/)

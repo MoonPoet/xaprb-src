@@ -8,6 +8,7 @@ categories:
 author: Baron Schwartz
 description: Adding LunrJS search to my website was incredibly easy.
 image: /media/2018/02/magnifying-glass.jpg
+credit: https://pixabay.com/en/philatelist-stamp-collection-stamp-1844080/
 
 ---
 I was shocked how easy it was to add a browser-based search engine to this
@@ -27,7 +28,6 @@ search engine, which I have now removed. I've used it for years and always loved
 their service. I still use it, and will continue doing so, for cases that
 require more robust capabilities.
 
-[Pic Credit](https://pixabay.com/en/philatelist-stamp-collection-stamp-1844080/)
 
 [search]: /search/
 [swiftype]: https://swiftype.com/
@@ -39,4 +39,3 @@ require more robust capabilities.
 [github2]: https://github.com/xaprb/xaprb-src/commit/64b235469f669871749d720a8ab796d1404b01f1
 [github3]: https://github.com/xaprb/xaprb-src/commit/4dc8ba4d5e5c6982f25dca08595a25b0acbc19e0
 [^broken]: I broke my RSS feeds with the commit, and needed [two][github2] [more][github3] to fix them.
-

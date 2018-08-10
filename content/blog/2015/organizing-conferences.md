@@ -6,6 +6,7 @@ date: 2015-10-06T10:53:36-04:00
 title: How to Organize a Tech Conference
 description: "Some suggestions to help conference organizers avoid serious non-obvious mistakes"
 image: /media/2015/10/audience.jpg
+credit: https://www.flickr.com/photos/presta/104538840/
 ---
 
 Running a conference is hard work, and lots of things need to come together in
@@ -271,4 +272,3 @@ repeatedly because they're non-obvious mistakes.
 
 Feedback is welcome!
 
-[pic credit](https://www.flickr.com/photos/presta/104538840/)

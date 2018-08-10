@@ -8,7 +8,7 @@ categories:
 - Best Of
 description: What I used to call product/market fit was really service/user fit.
 image: /media/2016/12/whiskey-stones.jpg
-draft: false
+credit: https://www.flickr.com/photos/srslyguys/5817645686
 
 ---
 I've built the right thing to do the right thing in the right way. Obviously product/market fit, right?
@@ -79,4 +79,3 @@ the winter to chill their drinks, which is the origin of whisky stones. And the
 term "on the rocks." So apparently I'm wrong about the stones! He told me he is
 careful not to smash his lips with them, though. Caveat emptor.*
 
-[Pic Credit](https://www.flickr.com/photos/srslyguys/5817645686)

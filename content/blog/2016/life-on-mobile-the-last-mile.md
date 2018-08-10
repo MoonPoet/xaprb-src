@@ -7,6 +7,7 @@ categories:
 date: 2016-10-28T18:27:12-04:00
 description: "What keeps me using a laptop, if mobile devices are so great?"
 image: "/media/2016/10/jet-engine.jpg"
+credit: "https://en.wikipedia.org/wiki/Jet_engine#/media/File:F100_F-15_engine.JPG"
 title: "Life on Mobile: The Last Mile on iPad"
 ---
 
@@ -170,4 +171,3 @@ be useful for me. Hopefully they help you too!
 
 
 
-[Pic Credit](https://en.wikipedia.org/wiki/Jet_engine#/media/File:F100_F-15_engine.JPG)

@@ -6,6 +6,7 @@ categories:
 date: 2017-05-28T14:06:26-04:00
 description: "The secret of being a bore is to tell everything. - Voltaire"
 image: "/media/2017/05/crocodiles.jpg"
+credit: https://pixabay.com/en/crocodiles-rest-sleepy-carnivore-573744/
 title: How To Write Exciting Conference Proposals
 ---
 
@@ -143,5 +144,3 @@ seemed exceptional. They're not bad, they're just ordinary, and many of them
 will be great talks even if the proposals are hard to read. My point is simply
 that when you read 350 ordinary proposals in a row, a non-ordinary one leaps out
 and screams for a high rating._
-
-[Pic Credit](https://pixabay.com/en/crocodiles-rest-sleepy-carnivore-573744/)

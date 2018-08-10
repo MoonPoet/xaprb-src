@@ -8,6 +8,7 @@ categories:
 description: Every leader has a unique style you can use to help reflect what's right
   for you.
 image: /media/2016/12/dartboard.jpg
+credit: https://www.pexels.com/photo/dart-pin-in-the-middle-of-dartboard-226568/
 
 ---
 Leadership is, by definition, a process of transition. None of us is born to be a leader. Those who are leaders have become leaders through change, and it is a very [difficult](/blog/2015/11/10/what-its-like/) and unnatural process. A lot of this process involves learning, through repeatedly asking and answering the question, "what does a leader do?"
@@ -110,5 +111,3 @@ Tom's blog is among those that have been most valuable to me. This blog is not s
 > The cornerstone of great leadership is authenticity. Leaders ask us to believe, to give more, to sacrifice. To trust a leader, his or her leadership must be genuine, a true reflection of their strengths, values and culture. Leaders can engender that trust in many different ways, leading from the front or the back, provided their authenticity is apparent.
 
 [Read the whole post](http://tomtunguz.com/authenticity_in_leadership/).
-
-[Pic Credit](https://www.pexels.com/photo/dart-pin-in-the-middle-of-dartboard-226568/)

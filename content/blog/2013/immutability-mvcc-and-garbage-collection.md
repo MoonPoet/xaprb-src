@@ -127,5 +127,3 @@ References/links that might be useful:
 *Note: I've incorporated feedback into this blog post. It was needlessly
 inflammatory. You can see the history on my GitHub account. Please point out
 further areas I can improve it.*
-
-[Pic Credit](https://www.flickr.com/photos/eedh/5993544190/)

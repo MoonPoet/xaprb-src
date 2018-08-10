@@ -4,6 +4,7 @@ description: "And chocolate, please?"
 date: "2014-11-03"
 url: /blog/2014/11/03/bring-guitar-velocity/
 image: /media/2014/01/4542297929_49286da35a.jpg
+credit: http://www.flickr.com/photos/doug88888/4542297929/
 categories:
   - Conferences
 ---
@@ -20,6 +21,5 @@ standard guitar will do. All I'm going to do is tune it.
 
 Thank you in advance!
 
-[Pic Credit](http://www.flickr.com/photos/doug88888/4542297929/)
 
 

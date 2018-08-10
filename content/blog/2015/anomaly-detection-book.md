@@ -11,6 +11,7 @@ date: 2015-08-03T20:21:39-04:00
 title: "New O'Reilly Book, Anomaly Detection For Monitoring"
 description: "Your help is appreciated."
 image: /media/2015/08/outlier.jpg
+credit: https://www.flickr.com/photos/mjfonseca/8392780221/
 author: "Baron Schwartz"
 ---
 
@@ -20,9 +21,3 @@ Monitoring](http://www.oreilly.com/webops-perf/free/anomaly-detection-monitoring
 
 The book contains great examples of anomaly detection used for monitoring. It's
 practical and simple, and contains no hype.
-
-<!--more-->
-
-![Outlier](/media/2015/08/outlier.jpg)
-
-[Pic Credit](https://www.flickr.com/photos/mjfonseca/8392780221/)

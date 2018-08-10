@@ -7,6 +7,7 @@ categories:
 author: "Baron Schwartz"
 description: "Here's the settings I configure to keep my browser from accumulating a lot of history and tracking cookies."
 image: "/media/2018/03/pocket-watch-3156771_1280.jpg"
+credit: https://pixabay.com/en/pocket-watch-time-of-sand-time-3156771/
 ---
 
 I've recently set up a new MacBook, which helped remind me of some of the
@@ -67,5 +68,3 @@ With those settings and extensions installed, I find that my history, cookies,
 and similar don't accumulate over time. Restarting my browser a few times a week
 is enough to delete the relatively small amount of tracking content that gets
 past uBlock Origin.
-
-[Pic Credit](https://pixabay.com/en/pocket-watch-time-of-sand-time-3156771/)

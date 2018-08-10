@@ -8,6 +8,7 @@ categories:
 author: Baron Schwartz
 description: Four books that have helped me to know myself more deeply.
 image: /media/2017/10/zen.jpg
+credit: https://pixabay.com/en/zen-garden-meditation-monk-stones-2040340/
 
 ---
 Mindfulness meditation has changed me perhaps more than any other influence in
@@ -69,5 +70,3 @@ to establish a mindfulness meditation practice, I'd start with the Headspace app
 or website, and then read Suzuki or Kabat-Zinn after a little while.
 
 Above all: the advice I'd give myself is to simply practice.
-
-[Pic Credit](https://pixabay.com/en/zen-garden-meditation-monk-stones-2040340/)

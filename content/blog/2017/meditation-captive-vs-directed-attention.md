@@ -5,9 +5,9 @@ date: 2017-08-05 14:07:21 +0000
 author: Baron Schwartz
 categories:
 - Meditation
-description: Meditation practice continues to change my understanding of what meditation
-  is.
+description: Meditation practice continues to change my understanding of what meditation is.
 image: /media/2017/08/mule-deer.jpg
+credit: https://www.flickr.com/photos/drriss/8478863068/
 
 ---
 I wrote previously about [meditation](/blog/2016/03/19/meditation/), and in a subsequent post I wrote about the meditative qualities I found in [writing cursive](/blog/cursive/). As my meditation practice continues, I find myself seeing these experiences differently than I did before.
@@ -52,5 +52,3 @@ I've learned meditation by doing it, but I've also benefited from reading many b
 2. [Zen Mind, Beginner's Mind: Informal Talks on Zen Meditation and Practice, by Shunryu Suzuki]({{< amz 1590308492 >}}).
 
 I hope these thoughts are helpful to you.
-
-[Pic Credit](https://www.flickr.com/photos/drriss/8478863068/)

@@ -7,6 +7,7 @@ categories:
   - Math
   - Programming
 image: /media/2014/06/anomaly.jpg
+credit: https://www.flickr.com/photos/matthileo/3888057995/
 ---
 
 Anomaly detection is all the buzz these days in the "#monitoringlove" community.
@@ -22,7 +23,6 @@ The conversation usually goes something like the following:
 
 I'm going to give a [webinar about the science of statistical anomaly detection on June 17th][webinar]. Sorry, no spoilers will be given here. You'll have to attend the webinar to find out what I think on the above topics.
 
-[Pic Credit](https://www.flickr.com/photos/matthileo/3888057995/)
 
 
 [webinar]: https://vividcortex.com/anomaly-detection-webinar/

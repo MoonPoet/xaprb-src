@@ -7,6 +7,7 @@ categories:
   - Databases
   - Best Of
 image: /media/2014/06/timeseries.jpg
+credit: https://www.flickr.com/photos/hugovk/6798051186/
 ---
 
 I've had conversations about time-series databases with many people over the last couple of years. I [wrote previously](/blog/2014/03/02/time-series-databases-influxdb/) about some of the open-source technologies that people commonly use for time-series storage.
@@ -127,9 +128,6 @@ Updates and related reading:
 
 Pic credits:
 
-* [Seasons](https://www.flickr.com/photos/hugovk/6798051186/)
 * [Theater](https://www.flickr.com/photos/sprengben/4976954312/)
 
 [theater]: /media/2014/06/theater.jpg
-
-

@@ -10,8 +10,7 @@ categories:
 description: Here are two alternatives to straightforward spreadsheet syntax when
   annoying errors seem to make things more difficult than needed.
 image: /media/2016/11/min-error.png
-draft: false
-
+credit: https://www.pexels.com/photo/green-and-lime-bird-on-gray-wood-log-191757/
 ---
 I've done quite a bit of work with Excel over the last few years, and I've found a couple of recurring problems when there's missing or error data in ranges. I've had to work around this enough times that I thought it was worth sharing the solutions I've used.
 
@@ -51,4 +50,3 @@ The caveat with `OFFSET()` is that, unlike explictly setting a range with cell i
 
 Both of these workarounds introduce their own complexities: with `AGGREGATE()` you're adding a more obscure syntax, and with `OFFSET()` you're circumventing some of Excel's features to help maintain and adapt your spreadsheet. In both cases, though, I've found that in some circumstances the net outcome is a simpler, more comprehensible spreadsheet overall.
 
-[Pic Credit (which has nothing to do with anything, but it's pretty)](https://www.pexels.com/photo/green-and-lime-bird-on-gray-wood-log-191757/)

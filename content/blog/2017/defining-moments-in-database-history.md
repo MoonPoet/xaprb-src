@@ -8,6 +8,7 @@ categories:
 keywords: "NoSQL, RDBMS, Technology, MongoDB, MySQL, SQL, Redis, Riak, XML, JavaScript, Cassandra, Neo4J, Time, Series, InfluxDB, ElasticSearch, Kafka, Entrepreneurship"
 description: 'NoSQL was just the beginning.'
 image: '/media/2017/03/crossroads-1580168_1280.jpg'
+credit: https://pixabay.com/en/crossroads-confusion-dilemma-1580168/
 
 ---
 
@@ -82,4 +83,3 @@ Lots of technologies such as Spark are emerging around these areas. But in my vi
 
 If anyone thought that NoSQL was just a flare-up and it's died down now, they were wrong. NoSQL did flare up, and we did see a lot of bad technology emerge for a time. But the pains and many of the solutions are real. A key determinant of what'll survive and what'll be lost to history is going to be [product-market fit](/blog/product-market-fit/). In my opinion, three important areas where markets aren't being satisfied by relational technologies are relational and SQL backwardness, time series, and streaming data. Time will tell if I'm right.
 
-[Pic Credit](https://pixabay.com/en/crossroads-confusion-dilemma-1580168/)

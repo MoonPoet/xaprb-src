@@ -8,6 +8,7 @@ categories:
 - Life Hacking
 description: "Some of my rash writing has taught me better, more effective ways to say things."
 image: '/media/2017/03/bird-in-hand.jpg'
+credit: https://pixabay.com/en/bird-hand-holding-chicks-gentle-1081980/
 
 ---
 
@@ -80,5 +81,3 @@ know that makes X thing kind of annoying, but it's for reasons.* Would my
 criticism of the MySQL marketing team have been better if I'd written it
 differently? Perhaps. I know I wasn't the only one who felt irritated, but you
 know what? Maybe some things *just don't need to be written at all*.
-
-[Pic Credit](https://pixabay.com/en/bird-hand-holding-chicks-gentle-1081980/)
