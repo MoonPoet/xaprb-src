@@ -3,14 +3,12 @@ title: "Under-Provisioning: The Curse Of The Cloud"
 date: "2010-06-01"
 url: /blog/2010/06/01/under-provisioning-the-curse-of-the-cloud/
 description: When you are accustomed to getting more than you pay for, you might assume that you deserve it.
-image: "/media/2010/06/chinchilla.png"
+image: "/media/2010/06/chinchilla.jpg"
 categories:
   - Best Of
   - Databases
 ---
 A common problem I see people running into when using a cloud computing service is the trap of under-provisioning. 
-
-![Chinchilla](/media/2010/06/chinchilla.png)
 
 <!--more-->
 
