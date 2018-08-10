@@ -25,6 +25,6 @@ But there are many more reasons, in fact.
 
 There's another element Brian didn't mention: selling these tools would put me in a totally different frame of mind, one I don't think I would enjoy. I can't say for sure, but I think it would become a chore and I'd get burned out and resent it. Sometimes that happens anyway---but when it does I can take a break. I do spend quite a bit of free time on these things, as Brian says. Evenings, weekends, and so on. If you're not willing to do that, I suggest you do it for a business.
 
-Speaking of all this, just today I got an email offering me a bounty for fixing a bug in my [Javascript number-formatting library](/blog/2006/01/05/javascript-number-formatting/). This is the first time this has ever happened, I think. If you want to support me too, how about you send me something from my [wish list](/blog/donate/)?
+Speaking of all this, just today I got an email offering me a bounty for fixing a bug in my [Javascript number-formatting library](/blog/2006/01/05/javascript-number-formatting/). This is the first time this has ever happened, I think. 
 
 

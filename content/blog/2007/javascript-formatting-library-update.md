@@ -15,6 +15,6 @@ Tangent: I suppose it's less important for people who aren't still running 500MH
 
 Now I'm involved with quite different things, since I'm working more in programming and less in the Internet space. The good news is others keep reading and using all of my work---not just the recent work---which makes me happy. Just the other day Liran Tal wrote to tell me he's using my Javascript libraries in the [Daloradius](http://sourceforge.net/projects/daloradius) project (check it out, it's pretty cool). The date-parsing library found its way into some [ExtJS tools that extend the YUI libraries](http://extjs.com/), too.
 
-And a few days ago someone [sponsored](/donate/) an improvement to the [number-formatting libraries](/blog/2007/06/19/javascript-number-formatting-library-updated/).
+And a few days ago someone sponsored an improvement to the [number-formatting libraries](/blog/2007/06/19/javascript-number-formatting-library-updated/).
 
 Who knows---someday I may end up building some browser GUI systems again and use these. In the meantime it's encouraging that they remain useful to people.

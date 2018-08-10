@@ -38,8 +38,3 @@ If you use it to filter the output I showed above, you'll see nothing by default
 
 [MySQL Toolkit](http://code.google.com/p/maatkit/) is a new project I started on SourceForge to contain many of the MySQL utilities I've written and am writing (yes, there are more goodies in progress). Eventually these and other tools will all be bundled together so you can get them in one package.
 
-### About me
-
-I like making you happy. Make me happy in return: [donate](/blog/donate/).
-
-
