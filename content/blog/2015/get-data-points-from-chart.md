@@ -72,10 +72,12 @@ It's quite clear from the chart's context that the X-values should actually be
 1, 5, 10 and 20 so those are easy corrections to make.
 Using this technique I estimate the points as follows:
 
-     1   36250
-     5  110000
-    10  195000
-    20  313750
+|  X |      Y |
+|---:|-------:|
+|  1 |  36250 |
+|  5 | 110000 |
+| 10 | 195000 |
+| 20 | 313750 |
 
 A similar technique is to use [Desmos](https://www.desmos.com). You can insert
 an image, set its dimensions equal to its pixel count, then create a table and
@@ -102,16 +104,18 @@ where the points would fall if the skew were corrected.
 That said, there are a few tools that are easier to use and produce good
 results. While searching online I found
 [engauge](http://digitizer.sourceforge.net/), [Data
-Thief](http://www.datathief.org/), and [http://di8itapp.com/](di8itapp). But the
+Thief](http://www.datathief.org/), and [di8itapp](http://di8itapp.com/). But the
 best one I've found so far is the free online [web plot
 digitizer](http://arohatgi.info/WebPlotDigitizer/app/), which runs in the
 browser and produced quite good results for me. It allows very fine control over
 the placement of the points. The extracted points are:
 
-     0.995104673   32858.00211
-     5.070422535  108307.8542
-    10.07535128   196097.94
-    20.17810302   312738.7098
+| X           |           Y |
+|------------:|------------:|
+| 0.995104673 | 32858.00211 |
+| 5.070422535 | 108307.8542 |
+| 10.07535128 |   196097.94 |
+| 20.17810302 | 312738.7098 |
 
 Of course, the X-points should be set to 1, 5, 10, and 20 as before.
 

@@ -25,7 +25,7 @@ In short, I doubt it can be sped up. Just count on it taking time.
 ### Set up the equipment
 
 
-![](ion_usb_turntable.jpg)
+![](/media/2008/08/ion_usb_turntable.jpg)
  Aside from your computer, you really need nothing else than a USB turntable. The most popular ones seem to be those made by Ion, aka Numark. I've pasted an Amazon product link to the right for one of the ones I am currently using. The other I'm using is a slightly different model from the same company.
 
 There are other ways---you don't have to use a USB turntable. You can use a higher-quality turntable and put the input into your sound card, and so on and so on. But this is how I'm doing it.

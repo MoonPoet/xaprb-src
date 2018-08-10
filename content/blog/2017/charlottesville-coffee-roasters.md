@@ -77,7 +77,7 @@ In addition to what's physically close by, we get a lot of coffee from places
 that have "trade routes" to Charlottesville, including the following:
 
 - [Cafe Kreyol](http://www.coffeehunterproject.com/shop/defense-against-the-dark-arts)
-- [Damn Fine Coffee](www.damnfinechicago.com/)
+- [Damn Fine Coffee](http://www.damnfinechicago.com/)
 - [Intelligentsia](https://www.intelligentsiacoffee.com/)
 - [Counter Culture](https://counterculturecoffee.com/)
 - [Bucklyn Coffee](http://bucklyncoffee.com/)

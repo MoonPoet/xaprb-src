@@ -30,4 +30,4 @@ My wife can tell you how much I agonized over this. Should I buy a new laptop? E
 
 I bought mine from [Amazon]({{< amz B002P3KMVC >}}), which was actually the best deal on the web, even after researching [dealnews](http://www.dealnews.com/) and other sites. None of the stores I visited had it in stock; they only had the AMD model.
 
-It has no internal optical disk drive, which is actually a good thing for me---I probably pop a disc in once every two months, if that. So I bought an [external DVD burner]({{ amz B002C1BBU8 }}), which is also quite nice. It works great to boot from it. I promptly booted from it to a Fedora CD and wiped the whole drive to install a real operating system.
+It has no internal optical disk drive, which is actually a good thing for me---I probably pop a disc in once every two months, if that. So I bought an [external DVD burner]({{< amz B002C1BBU8 >}}), which is also quite nice. It works great to boot from it. I promptly booted from it to a Fedora CD and wiped the whole drive to install a real operating system.

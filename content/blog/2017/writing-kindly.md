@@ -48,7 +48,7 @@ weren't allowed.) Things fell into place and I started to see the patterns.
 others.* Awareness of this has helped me improve more rapidly.
 
 But---still not perfect! One of the most popular posts I've written recently was
-about [product-market fit](/product-market-fit/). That post today
+about [product-market fit](/blog/product-market-fit/). That post today
 is enormously different from what I first
 published. I wrote it because I kept trying to figure out what
 product/market fit was, and I had this sense that a lot of the advice I was
