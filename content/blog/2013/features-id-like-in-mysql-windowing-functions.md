@@ -14,7 +14,7 @@ And yeah, PostgreSQL and SQL Server have windowing functions too, and once you'v
 
 Windowing functions extend the uses of SQL (sometimes awkwardly, sometimes elegantly), into areas you can't really go without them. Time-series data, for example, or more powerful graph processing. These things must be done externally to SQL otherwise, in ugly procedural logic. 
 
-Windowing functions together with CTEs ([my previous post)](/blog/2013/09/09/features-id-like-to-see-in-mysql-ctes/ "Features I’d like to see in MySQL: CTEs") are particularly powerful. 
+Windowing functions together with CTEs ([my previous post)](/blog/2013/09/09/features-id-like-to-see-in-mysql-ctes/ "Features I'd like to see in MySQL: CTEs") are particularly powerful. 
 
 Anyone want to guess what my next wish will be?
 

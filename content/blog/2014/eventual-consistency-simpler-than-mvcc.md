@@ -41,7 +41,7 @@ I suppose the [Dynamo
 paper](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) is
 the best source to cite:
 
-> Dynamo targets the design space of an “always writeable” data store... 
+> Dynamo targets the design space of an "always writeable" data store... 
 > This requirement forces us to push the complexity of conflict resolution to
 > the reads in order to ensure that writes are never rejected... The next design
 > choice is who performs the process of conflict resolution. This can be done by

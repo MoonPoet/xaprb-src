@@ -15,11 +15,11 @@ The new languages will include Australian, l337 ("Leet"), Jive, Ebonics, Elmer F
 
 > ### Isolating the Column
 > 
-> We commonly see queries that defeat indexes or prevent MySQL from using the available indexes. MySQL generally can’t use indexes on columns unless the columns are isolated in the query. “Isolating” the column means it should not be part of an expression or be inside a function in the query.
+> We commonly see queries that defeat indexes or prevent MySQL from using the available indexes. MySQL generally can't use indexes on columns unless the columns are isolated in the query. "Isolating" the column means it should not be part of an expression or be inside a function in the query.
 
 Here's the same passage, translated to Australian:
 
-> &#729;&#654;&#633;&#477;nb &#477;&#613;&#647; u&#305; uo&#305;&#647;&#596;un&#607; &#592; &#477;p&#305;su&#305; &#477;q &#633;o uo&#305;ss&#477;&#633;dx&#477; u&#592; &#607;o &#647;&#633;&#592;d &#477;q &#647;ou plno&#613;s &#647;&#305; su&#592;&#477;&#623; u&#623;nlo&#596; &#477;&#613;&#647; ”&#387;u&#305;&#647;&#592;losI“ &#729;&#654;&#633;&#477;nb &#477;&#613;&#647; u&#305; p&#477;&#647;&#592;los&#305; &#477;&#633;&#592; su&#623;nlo&#596; &#477;&#613;&#647; ss&#477;lun su&#623;nlo&#596; uo s&#477;x&#477;pu&#305; &#477;sn &#647;’u&#592;&#596; &#654;ll&#592;&#633;&#477;u&#477;&#387; &#741;QS&#654;W &#729;s&#477;x&#477;pu&#305; &#477;lq&#592;l&#305;&#592;&#652;&#592; &#477;&#613;&#647; &#387;u&#305;sn &#623;o&#633;&#607; &#741;QS&#654;W &#647;u&#477;&#652;&#477;&#633;d &#633;o s&#477;x&#477;pu&#305; &#647;&#592;&#477;&#607;&#477;p &#647;&#592;&#613;&#647; s&#477;&#305;&#633;&#477;nb &#477;&#477;s &#654;luo&#623;&#623;o&#596; &#477;M
+> &#729;&#654;&#633;&#477;nb &#477;&#613;&#647; u&#305; uo&#305;&#647;&#596;un&#607; &#592; &#477;p&#305;su&#305; &#477;q &#633;o uo&#305;ss&#477;&#633;dx&#477; u&#592; &#607;o &#647;&#633;&#592;d &#477;q &#647;ou plno&#613;s &#647;&#305; su&#592;&#477;&#623; u&#623;nlo&#596; &#477;&#613;&#647; "&#387;u&#305;&#647;&#592;losI" &#729;&#654;&#633;&#477;nb &#477;&#613;&#647; u&#305; p&#477;&#647;&#592;los&#305; &#477;&#633;&#592; su&#623;nlo&#596; &#477;&#613;&#647; ss&#477;lun su&#623;nlo&#596; uo s&#477;x&#477;pu&#305; &#477;sn &#647;'u&#592;&#596; &#654;ll&#592;&#633;&#477;u&#477;&#387; &#741;QS&#654;W &#729;s&#477;x&#477;pu&#305; &#477;lq&#592;l&#305;&#592;&#652;&#592; &#477;&#613;&#647; &#387;u&#305;sn &#623;o&#633;&#607; &#741;QS&#654;W &#647;u&#477;&#652;&#477;&#633;d &#633;o s&#477;x&#477;pu&#305; &#647;&#592;&#477;&#607;&#477;p &#647;&#592;&#613;&#647; s&#477;&#305;&#633;&#477;nb &#477;&#477;s &#654;luo&#623;&#623;o&#596; &#477;M
 > 
 > ### u&#623;nlo&#390; &#477;&#613;&#647; &#387;u&#305;&#647;&#592;losI
 

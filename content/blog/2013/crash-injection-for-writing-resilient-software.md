@@ -7,7 +7,7 @@ categories:
 ---
 I am currently finishing some features to make a program highly resilient to occasional crashing bugs. A particular function was found to crash on queries of the form `WHERE x IN(NULL)`, and that crashed the entire program. Now we have a framework for intelligently recovering from arbitrary crashes. I will write more on this in the future, because I think it's a very interesting thing to share.
 
-In this episode, I want to focus on a related topic: how do you test a program that is supposed to be resilient to bugs you can't predict? Many new problems are caused by writing [clever code that is supposed to detect, avoid, or recover from problems](/blog/2011/05/04/whats-wrong-with-mmm/ "What’s wrong with MMM?"), even known problems. Unknown problems are even riskier.
+In this episode, I want to focus on a related topic: how do you test a program that is supposed to be resilient to bugs you can't predict? Many new problems are caused by writing [clever code that is supposed to detect, avoid, or recover from problems](/blog/2011/05/04/whats-wrong-with-mmm/ "What's wrong with MMM?"), even known problems. Unknown problems are even riskier.
 
 The approach that has given me a great deal of confidence in the "resilience framework" is to write a "crash injection framework." (If it's not a framework, it can't be any good, right?) Crash injection can be activated at runtime to cause crashes in arbitrary source code locations. A fairly simple analysis of the source code showed me some places I'm particularly interested in crashing to see how the program reacts.
 

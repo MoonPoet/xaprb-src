@@ -181,9 +181,9 @@ Then, another email from Max G:
 > [investor] and [name-drop] recently backed a high-profile entrepreneur
 > who most recently [...]
 >
-> It is super early (pre-product), but we’re eager to connect with some of the
-> best people in demand gen to run the concept by. [...]’s name came up at
-> [...]. Could you run this by [...] to see if he’s open for an intro? Would
+> It is super early (pre-product), but we're eager to connect with some of the
+> best people in demand gen to run the concept by. [...]'s name came up at
+> [...]. Could you run this by [...] to see if he's open for an intro? Would
 > love to make the connection with him.
 
 I never replied. Max G already had a negative account balance with me and I

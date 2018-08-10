@@ -179,7 +179,7 @@ combination to reproduce.)
 
 Next I disabled Bluetooth, turned the power off completely, and connected the
 'phones via a cable to my MacBook Pro, and listened to *Dansons La Gigue* from
-Patricia Barber’s *Verse*. Turning off Bose’s circuitry altogether helped
+Patricia Barber's *Verse*. Turning off Bose's circuitry altogether helped
 highlight that it, too, has a resonant peak in the midrange. Although it's not
 as bad as the Sennheiser, it nonetheless made clear that my very first
 impression was accurate: Bose is adding some sound processing even when the

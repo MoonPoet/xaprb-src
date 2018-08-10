@@ -18,13 +18,13 @@ I wrote previously about [meditation](/blog/2016/03/19/meditation/), and in a su
 
 If I miss a day of practice, I notice that my mind wanders more.
 
-It helps me to remember that there’s no “wrong” way to “do” meditation. The mind’s job is to think. In meditation, my goal is not to get “better at it” or to silence my mind. My goal is not to suppress thoughts. It is solely to notice and release thoughts, ideally without getting involved in them.
+It helps me to remember that there's no "wrong" way to "do" meditation. The mind's job is to think. In meditation, my goal is not to get "better at it" or to silence my mind. My goal is not to suppress thoughts. It is solely to notice and release thoughts, ideally without getting involved in them.
 
-Noticing that my mind is getting distracted and thinking about things is actually the point of meditation. *It’s working. Just release it and return to the breath.*
+Noticing that my mind is getting distracted and thinking about things is actually the point of meditation. *It's working. Just release it and return to the breath.*
 
 ### Positive Thinking and Affirmations
 
-I have not found positive thinking or affirmations to work for me. Meditation has helped me see that positive thinking is like trying to put good thoughts into a cup that’s already filled. I must empty my cup before I can fill it again.
+I have not found positive thinking or affirmations to work for me. Meditation has helped me see that positive thinking is like trying to put good thoughts into a cup that's already filled. I must empty my cup before I can fill it again.
 
 In turning to meditation to allow my cup to empty (more through evaporation than pouring out), I discovered that when the cup empties, positive thoughts are not necessary. The underlying state of the mind is already good. Underneath the ripples, I am already the person I thought I wanted to be.
 

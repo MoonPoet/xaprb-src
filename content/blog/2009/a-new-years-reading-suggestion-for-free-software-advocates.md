@@ -11,7 +11,7 @@ I first read this essay at my father's suggestion, long before I was involved wi
 
 Here's a quote I think is particularly interesting to think about in the context of software:
 
-> The above is what I meant when writing, "If you can become aware of the miraculousness which I symbolize, you can help save the freedom mankind is so unhappily losing." For, if one is aware that these know-hows will naturally, yes, automatically, arrange themselves into creative and productive patterns in response to human necessity and demandâ€”that is, in the absence of governmental or any other coercive mastermindingâ€”then one will possess an absolutely essential ingredient for freedom: *a faith in free people*. Freedom is impossible without this faith.
+> The above is what I meant when writing, "If you can become aware of the miraculousness which I symbolize, you can help save the freedom mankind is so unhappily losing." For, if one is aware that these know-hows will naturally, yes, automatically, arrange themselves into creative and productive patterns in response to human necessity and demandâ€"that is, in the absence of governmental or any other coercive mastermindingâ€"then one will possess an absolutely essential ingredient for freedom: *a faith in free people*. Freedom is impossible without this faith.
 
 Among all the ancestors the pencil lists, it would today be obliged to list an incredible diversity of Free Software programmers and the software they write, which controls everything from the ship navigation systems to the telephone switches to the fuel injection systems in the diesel engines. And even more interesting, any given piece of Free Software should list a simple pencil amongst its ancestors. I know I used a lot of pencils in my studies.
 

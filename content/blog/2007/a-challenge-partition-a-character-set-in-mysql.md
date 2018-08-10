@@ -30,7 +30,7 @@ One idea is a binary search, or trial and error, to find endpoints. I could use 
 The above paragraphs should give you an idea what I've been considering for this problem. It might make it easier for people to help me if I give a specific example and ask for a solution. Here we go:
 
 *   You have a single table in MySQL with a `varchar(50)` primary key.
-*   The minimum value in the primary key is 'aardvark' and the maximum is 'Ð‘ÑŠÐ»Ð³Ð°Ñ€ÑÐºÐ¸.' I intentionally won't say any more about the data; your solution must be able to figure out what to do based on limited knowledge, such as using EXPLAIN to access index statistics.
+*   The minimum value in the primary key is 'aardvark' and the maximum is 'Ð'ÑŠÐ»Ð³Ð°Ñ€ÑÐºÐ¸.' I intentionally won't say any more about the data; your solution must be able to figure out what to do based on limited knowledge, such as using EXPLAIN to access index statistics.
 *   The charset is utf8 and the collation is case-insensitive.
 *   There are 18 million rows, more or less, in the table.
 *   You want to select the data in chunks of approximately a million rows, as explained above.

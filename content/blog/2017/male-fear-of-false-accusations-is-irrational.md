@@ -32,7 +32,7 @@ quoted in this surreal [New York
 Times](https://www.nytimes.com/2017/10/09/upshot/as-sexual-harassment-scandals-spook-men-it-can-backfire-for-women.html)
 article:
 
-> Some tech investors have taken similar steps. "A big chill came across Silicon Valley in the wake of all these stories, and people are hyperaware and scared of behaving wrongly, so I think they’re drawing all kinds of parameters," said a venture capitalist who spoke anonymously for the same reason.
+> Some tech investors have taken similar steps. "A big chill came across Silicon Valley in the wake of all these stories, and people are hyperaware and scared of behaving wrongly, so I think they're drawing all kinds of parameters," said a venture capitalist who spoke anonymously for the same reason.
 > 
 > Some are avoiding solo meetings with female entrepreneurs, potential recruits and those who ask for an informational or networking meeting.
 > 

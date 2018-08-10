@@ -32,7 +32,7 @@ one by [Paul Graham](http://www.paulgraham.com/love.html). They are both worth
 considering deeply. What does Glenn
 mean when he writes this?
 
-> Often now, I meet young people who want to  be  something more than they want to  do something. What they really want, not unreasonably, is to progress in their career.  What they don’t realize is that this progression will end, but their career won’t.
+> Often now, I meet young people who want to  be  something more than they want to  do something. What they really want, not unreasonably, is to progress in their career.  What they don't realize is that this progression will end, but their career won't.
 
 The company I founded, [VividCortex](https://www.vividcortex.com), has four Core Values: growth, empathy, pragmatism, and inclusiveness. Hopefully it's obvious how the three attributes of a great career, and how I use those to attract the best and keep out the rest, align with these four Core Values. If you're interested, [we're hiring](https://www.vividcortex.com/company/careers).
 

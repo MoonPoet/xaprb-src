@@ -6,7 +6,7 @@ categories:
   - Conferences
   - Databases
 ---
-In case you [live under a rock](http://www.youtube.com/watch?v=cvXqm0RdJms), the [MySQL conference](http://www.percona.com/live/mysql-conference-2012/) starts on Tuesday. There are 8 concurrent tracks of content. Aside from [my own](/blog/2012/02/08/im-speaking-at-the-mysql-conference-in-april/ "I’m speaking at the MySQL conference in April") talks, here are the sessions I would most like to see.
+In case you [live under a rock](http://www.youtube.com/watch?v=cvXqm0RdJms), the [MySQL conference](http://www.percona.com/live/mysql-conference-2012/) starts on Tuesday. There are 8 concurrent tracks of content. Aside from [my own](/blog/2012/02/08/im-speaking-at-the-mysql-conference-in-april/ "I'm speaking at the MySQL conference in April") talks, here are the sessions I would most like to see.
 
 On Tuesday:
 

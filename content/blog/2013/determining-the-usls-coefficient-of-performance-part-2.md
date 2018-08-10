@@ -7,7 +7,7 @@ categories:
   - Performance
   - Scalability
 ---
-[Last time](/blog/2013/01/02/determining-the-universal-scalability-laws-coefficient-of-performance/ "Determining the Universal Scalability Law’s coefficient of performance") I said that the USL has a forgotten third coefficient, the coefficient of performance. This is the same thing as the system's throughput at concurrency=1, or C(1). How do you determine this coefficient? There are at least three ways.
+[Last time](/blog/2013/01/02/determining-the-universal-scalability-laws-coefficient-of-performance/ "Determining the Universal Scalability Law's coefficient of performance") I said that the USL has a forgotten third coefficient, the coefficient of performance. This is the same thing as the system's throughput at concurrency=1, or C(1). How do you determine this coefficient? There are at least three ways.
 
 Neil Gunther's writings, or at least those that I've read and remember, say that you should set it equal to your measurement of C(1). Most of his writing discusses a handful of measurements of the system: one at concurrency 1, and at least 4 to 6 at higher concurrencies. I can't remember a time when he's discussed taking more than one measurement of throughput at each level of concurrency, so I think the assumption is that you're going to take a single measurement at various concurrencies (or, in the case of hardware scalability, units of hardware), and you're done.
 

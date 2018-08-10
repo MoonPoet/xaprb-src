@@ -6,7 +6,7 @@ categories:
   - Scalability
   - Math
 ---
-I have often seen people fitting curves to sets of data without first understanding whether that is appropriate. I once even [used this blog](/blog/2011/01/15/sleep-while-you-can-because-it-wont-last-long/ "Sleep while you can, because it won’t last long") to criticize someone for doing that.
+I have often seen people fitting curves to sets of data without first understanding whether that is appropriate. I once even [used this blog](/blog/2011/01/15/sleep-while-you-can-because-it-wont-last-long/ "Sleep while you can, because it won't last long") to criticize someone for doing that.
 
 I was trying to explain that it's wrong to fit a model to a set of measurements, unless the model actually describes the process that produced the measurements.
 

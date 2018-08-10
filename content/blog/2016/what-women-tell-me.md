@@ -35,7 +35,7 @@ positions. Emphasis mine:
 > Gov. Terry McAuliffe on Monday named four new members to the University of Virginia Board of Visitors and reappointed another.  The new members include two major donors to a McAuliffe PAC, **the wife of** the former chairman of the Virginia Democratic Party and an ophthalmologist.  These are the new members:
 > ...
 >
-> * Elizabeth M. Cranwell, of Roanoke, a public relations professional. Cranwell is married to former state Democratic Party Chairman Richard "Dickie" Cranwell.  Cranwell graduated from UVa’s College and Graduate School of Arts & Sciences in 1986.
+> * Elizabeth M. Cranwell, of Roanoke, a public relations professional. Cranwell is married to former state Democratic Party Chairman Richard "Dickie" Cranwell.  Cranwell graduated from UVa's College and Graduate School of Arts & Sciences in 1986.
 
 Why is Elizabeth M. Cranwell's biography all about her husband?  I
 understand that there's an argument that the significance of her appointment is
@@ -78,7 +78,7 @@ that statement).
 Why aren't there more women in leadership positions? This [study](https://hbr.org/2016/07/to-seem-confident-women-have-to-be-seen-as-warm) indicates that it could be because we judge women's competence and ability differently than men's.
 
 > Our study, which has been accepted for presentation at the Academy of
-> Management’s conference in August, shows that men are seen as confident if
+> Management's conference in August, shows that men are seen as confident if
 > they are seen as competent, but women are seen as confident only if they come
 > across as both competent and warm. Women must be seen as warm in order to
 > capitalize on their competence and be seen as confident and influential at
@@ -123,21 +123,21 @@ exclusively women's achievements. It's a thinly veiled leftover from the
 Post](http://www.huffingtonpost.com/entry/serena-williams-greatest-athletes_us_577e884ee4b0344d514e3d7d)
 article about Serena Williams:
 
-> “There will be talk about you going down as one of the greatest female
-> athletes of all time. What do you think when you hear someone talk like that?”
+> "There will be talk about you going down as one of the greatest female
+> athletes of all time. What do you think when you hear someone talk like that?"
 > the reporter asked.
 > 
 > When she opened her mouth, her answer was short and quick, but decisive and
 > telling. 
 > 
-> “I prefer the word ‘one of the greatest athletes of all time,’” she said. 
+> "I prefer the word 'one of the greatest athletes of all time,'" she said. 
 > 
 > In a sentence, Williams politely made clear everything wrong with the way the
 > question was phrased. For almost her entire life, the 34-year-old has been
 > exacting her punishment on her opponents. Few have done what she has done, and
-> by the time she’s ready to retire, likely no one will have. To box her into
-> the category of “female athletes” ― to say she is great, but just great “for a
-> girl” ― is a dig, accidental or not, that she has every right to call out. And
+> by the time she's ready to retire, likely no one will have. To box her into
+> the category of "female athletes" ― to say she is great, but just great "for a
+> girl" ― is a dig, accidental or not, that she has every right to call out. And
 > more so, that she should. 
 
 ### A Woman's Historic Achievement Celebrated by Pictures of Husband
@@ -231,7 +231,7 @@ unambiguously sexist.
 Here's how [a female writer (of course!) at
 Vox](http://www.vox.com/2016/8/4/12377900/hillary-clinton-sexist-interview-questions) summed it up:
 
-> Pundit after pundit, in decade after decade, asks why voters don’t like
+> Pundit after pundit, in decade after decade, asks why voters don't like
 > Clinton. And pundit after pundit answers their own questions without realizing
 > it. Is it possible that people could like a woman who is independent and
 > opinionated?

@@ -7,7 +7,7 @@ categories:
   - Open Source
   - Reviews
 ---
-I’ve been digitizing my LP collection recently and thought I’d share a quick howto, since I haven’t seen a good complete tutorial on the whole process online. Hopefully this will show up on Google and people can find it.
+I've been digitizing my LP collection recently and thought I'd share a quick howto, since I haven't seen a good complete tutorial on the whole process online. Hopefully this will show up on Google and people can find it.
 
 <!--more-->
 

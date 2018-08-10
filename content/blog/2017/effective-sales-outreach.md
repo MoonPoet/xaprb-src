@@ -38,7 +38,7 @@ Here's a pretty good email I got recently.
 
 > Subject: Work Together \
 > Hi Baron, \
-> I wanted to find out if you have any design needs at VividCortex (redesign, landing pages, UX, etc) ? We can increase sales, engagement, and conversions through our design and UX strategies. Interested?  Email me back, I’d love to chat. :)
+> I wanted to find out if you have any design needs at VividCortex (redesign, landing pages, UX, etc) ? We can increase sales, engagement, and conversions through our design and UX strategies. Interested?  Email me back, I'd love to chat. :)
 
 It's not perfect. The subject line could have been better (try "Design/UX Help") and the first sentence could have been even shorter "Do you need any design help..." but otherwise it's great. It's concise and to the point.
 

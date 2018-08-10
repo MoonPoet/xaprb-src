@@ -25,7 +25,7 @@ A common misunderstanding is to believe that the MACD shows the trend at the poi
 
 So a MACD doesn't show that the metric is trending upwards or downwards *now*. It shows the trend from the longer average's centerpoint to the shorter average's centerpoint.
 
-Here's a picture of how that works, using EWMAs. EWMAs give greater weight to more recent measurements, and exponentially less weight to past measurements. If you chart these weights, you'll see a picture like the below. The average influence of these curves is some length of time, whose value and derivation I'll skip here, but conceptually they have a “center of gravity” which is some distance in the past. The MACD effectively calculates the slope between averages centered around those points in the past.
+Here's a picture of how that works, using EWMAs. EWMAs give greater weight to more recent measurements, and exponentially less weight to past measurements. If you chart these weights, you'll see a picture like the below. The average influence of these curves is some length of time, whose value and derivation I'll skip here, but conceptually they have a "center of gravity" which is some distance in the past. The MACD effectively calculates the slope between averages centered around those points in the past.
 
 ![EWMA](/media/2017/10/ewmas.png)
 

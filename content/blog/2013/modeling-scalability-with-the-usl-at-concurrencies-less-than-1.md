@@ -7,7 +7,7 @@ categories:
   - Performance
   - Scalability
 ---
-[Last time](/blog/2013/01/03/determining-the-usls-coefficient-of-performance-part-2/ "Determining the USL’s coefficient of performance, part 2") I said that you can set a starting value for the USL's coefficient of performance and let your modeling software (R, gnuplot, etc) manipulate this as part of the regression to find the best fit. However, there is a subtlety in the USL model that you need to be aware of. Here is a picture of the low-end of the curve:
+[Last time](/blog/2013/01/03/determining-the-usls-coefficient-of-performance-part-2/ "Determining the USL's coefficient of performance, part 2") I said that you can set a starting value for the USL's coefficient of performance and let your modeling software (R, gnuplot, etc) manipulate this as part of the regression to find the best fit. However, there is a subtlety in the USL model that you need to be aware of. Here is a picture of the low-end of the curve:
 
 ![usl](/media/2013/01/usl1.png)
 

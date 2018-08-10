@@ -103,7 +103,7 @@ And it works: I no longer lack control over what I read. (Or at least I have the
 illusion of control). Put another way: I completely empathize with this tweet
 from Asya:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Dear <a href="https://twitter.com/Twitter?ref_src=twsrc%5Etfw">@Twitter</a>  I follow more than 700 people.  That means I want to see what _they_ share in my timeline and not what some people I don’t follow (but they happen to follow) share. If what those people share is so cool, my friends will retweet it and I’ll see it then. Thx.</p>— Asya (@asya999) <a href="https://twitter.com/asya999/status/982939664964378624?ref_src=twsrc%5Etfw">April 8, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Dear <a href="https://twitter.com/Twitter?ref_src=twsrc%5Etfw">@Twitter</a>  I follow more than 700 people.  That means I want to see what _they_ share in my timeline and not what some people I don't follow (but they happen to follow) share. If what those people share is so cool, my friends will retweet it and I'll see it then. Thx.</p>— Asya (@asya999) <a href="https://twitter.com/asya999/status/982939664964378624?ref_src=twsrc%5Etfw">April 8, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The solution I found to that problem is purely technical, because the problem is

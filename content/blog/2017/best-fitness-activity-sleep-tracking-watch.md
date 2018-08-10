@@ -207,7 +207,7 @@ If I were to use something else instead, it might be one of the following:
     * 7 day battery
     * Fitness and HR tracking
     * Notifications are said to be hard to read
-    * Versus the Charge 2: it’s smaller and lacks stopwatch and manually tracking workouts
+    * Versus the Charge 2: it's smaller and lacks stopwatch and manually tracking workouts
 
 It's worth noting that the space is fast-moving. While I was biding my
 time, trying to decide what I wanted, at least three watch and wearable

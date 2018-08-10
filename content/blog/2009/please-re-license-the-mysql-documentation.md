@@ -11,7 +11,7 @@ The arguments I've heard in favor of keeping the documentation non-Free do not h
 
 As usual, I don't think I can say it as well as [Richard M. Stallman does](http://www.gnu.org/philosophy/free-doc.html), so I'll just quote:
 
-> But there is a particular reason why the freedom to modify is crucial for documentation for free software. When people exercise their right to modify the software, and add or change its features, if they are conscientious they will change the manual tooâ€”so they can provide accurate and usable documentation with the modified program. A manual which forbids programmers to be conscientious and finish the job, or more precisely requires them to write a new manual from scratch if they change the program, does not fill our community's needs.
+> But there is a particular reason why the freedom to modify is crucial for documentation for free software. When people exercise their right to modify the software, and add or change its features, if they are conscientious they will change the manual tooâ€"so they can provide accurate and usable documentation with the modified program. A manual which forbids programmers to be conscientious and finish the job, or more precisely requires them to write a new manual from scratch if they change the program, does not fill our community's needs.
 
 Free documentation is required for truly Free software. Karen Padir, please keep your implied promise during your keynote, and license the MySQL documentation under a Free Software documentation license.
 

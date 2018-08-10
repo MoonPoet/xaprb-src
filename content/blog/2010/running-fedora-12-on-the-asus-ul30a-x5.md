@@ -5,7 +5,7 @@ url: /blog/2010/03/26/running-fedora-12-on-the-asus-ul30a-x5/
 categories:
   - Reviews
 ---
-I’ve had an [ASUS-UL30A-X5]({{< amz B002P3KMVC >}}) for about two weeks now. This is the nicest laptop I’ve ever owned (and I was a laptop owner before that was cool). I’m absolutely thrilled.
+I've had an [ASUS-UL30A-X5]({{< amz B002P3KMVC >}}) for about two weeks now. This is the nicest laptop I've ever owned (and I was a laptop owner before that was cool). I'm absolutely thrilled.
 
 I used a Dell Inspiron 1501 for the last 4 years, the AMD model. Everything was a pain due to poor Linux compatibility. I blamed some of it on other things. For example, I thought my external monitor was low quality because all the pixels crawled like ants. I got this laptop and immediately everything I'd had a problem with was a non-issue. Skype audio---works great. Suspend and resume---works great. Everything. I didn't know how much pain I was in until I got this laptop.
 

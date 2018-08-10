@@ -84,7 +84,7 @@ Why? Again, encryption needs to become normalized and expected everywhere. Your 
 
 Google has a nice article about [why every site should use HTTPS](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https).
 
-### 6. Don’t Use Fingerprint Unlock
+### 6. Don't Use Fingerprint Unlock
 
 Fingerprint readers on computers, phones, and tablets are useful. But it's risky to unlock the device itself with them. (They are still good for things like unlocking apps that you'd otherwise have to unlock with a long, hard-to-type password.)
 

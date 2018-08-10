@@ -9,12 +9,12 @@ I guest-posted on Fusion-io's blog about the database's working set size and the
 
 The post is gone now, but here's the content rescued from the archives:
 
-As a MySQL consultant with Percona, I’m very happy about the recent advances in
+As a MySQL consultant with Percona, I'm very happy about the recent advances in
 fast storage. Faster storage fundamentally changes things for database
 administrators.
 
 Fusion ioDrives are quite popular in the MySQL world, where they are enabling
-people to run databases much faster than we’re accustomed to.  The reasons are
+people to run databases much faster than we're accustomed to.  The reasons are
 perhaps not well understood.  A common question I hear is "Will Fusion ioDrives
 (or any SSD) make my database faster?"  Answering this question is simple, once
 you know why databases are slow.  Much of it hinges on something called the
@@ -60,7 +60,7 @@ spindle-based disks.  A PCIe interface to flash storage is essentially a form of
 durable memory, with very low latency (orders of magnitude faster than disks)
 and extremely high bandwidth.  This can make I/O bound workloads simply fly.
 
-Now, on to working set size and memory, which I’ve touched but not explored.  If
+Now, on to working set size and memory, which I've touched but not explored.  If
 your database's workload is I/O bound, it really means that it doesn't fit in
 memory (otherwise it'd be bound by latency to memory, CPU usage, or network
 latency).  A lot of people experience great performance initially, and then as

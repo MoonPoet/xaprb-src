@@ -9,7 +9,7 @@ categories:
 
 *This post originally appeared on [O'Reilly's blog](http://archive.oreilly.com/pub/a/mysql/2006/10/19/mysql-tools.html).*
 
-*This post originally appeared on [O’Reilly’s blog](http://archive.oreilly.com/pub/a/mysql/2006/10/19/mysql-tools.html).*
+*This post originally appeared on [O'Reilly's blog](http://archive.oreilly.com/pub/a/mysql/2006/10/19/mysql-tools.html).*
 
 [MySQL](http://www.mysql.com/) provides some tools to monitor and troubleshoot a MySQL server, but they don't always suit a MySQL developer or administrator's common needs, or may not work in some scenarios, such as remote or over-the-web monitoring. Fortunately, the MySQL community has created a variety of free tools to fill the gaps. On the other hand, many of these are hard to find via web searches. In fact, web searches can be frustrating because they uncover abandoned or special-purpose, not ready-to-use projects. You could spend hours trying to find tools for monitoring and troubleshooting your MySQL servers. What's a tool-seeker to do?
 

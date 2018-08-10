@@ -51,7 +51,7 @@ The benefit of focusing is simple: efficiency. The more concentrated your effort
 
 If you examine some of the effects of distraction, the benefits of focus should become clear. I won't belabor this point, but I'll note that every new activity or idea has a compound effect. We tend to be biased to see the potential benefits much more than the likely drawbacks, which is part of why new ideas are so alluring. We see, for example, that a new product feature will enrich and enable and empower. But do we see that to do it right, we're obligated to integrate it smoothly with all existing and future product features, to maintain it, to test it, to train, to document, to support? [Usually not][cost]. We usually see compound benefits, but neglect to see compounded costs and risks, especially those that come from failure to execute fully and excellently.
 
->  Focus is putting what’s most important first and protecting its right to be there.
+>  Focus is putting what's most important first and protecting its right to be there.
 (typically by saying "No" to everything else)---[Vanessa Hurst](http://vanessahurst.com/post/83405785577/focus-is-putting-whats-most-important-first-and)
 
 Many people I admire achieve amazing things precisely because they complete one thing and then build something new on top of it, rather than always having everything in a glorious state of perfect incompletion. The "secret" to their success is the willpower to patiently bring things to completion.

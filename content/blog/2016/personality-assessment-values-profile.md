@@ -21,7 +21,7 @@ As Michael Gorsuch [tweeted](https://twitter.com/michaelgorsuch/status/703998409
 
 All personality assessments express a model of how humans work. Actually, many of them are not about personalities _per se_, but it's convenient to call them all personality assessments. The [DISC](https://en.wikipedia.org/wiki/DISC_assessment) model, for example, is about behaviors, which are pretty easy to observe and validate externally. It's based on William Moulton Marston's psychological theory. There are many other behavioral models, including Myers-Briggs.
 
-Some models measure motivations instead of behaviors; the one I use and am familiar with is based on [Eduard Spranger’s model of human motivation](https://en.wikipedia.org/wiki/Eduard_Spranger). I've seen others that include more recent work by Gordon Allport and others.
+Some models measure motivations instead of behaviors; the one I use and am familiar with is based on [Eduard Spranger's model of human motivation](https://en.wikipedia.org/wiki/Eduard_Spranger). I've seen others that include more recent work by Gordon Allport and others.
 
 Motivations aren't externally visible, so in a sense it's actually a deeper model. If you believe in the model, the assessment, and the results, then understanding someone's motivations can help you be more thoughtful about how you hire, train, coach, and manage them. It can help you be more confident in your expectations of how someone will behave or respond.
 

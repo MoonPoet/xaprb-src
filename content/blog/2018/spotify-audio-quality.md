@@ -70,7 +70,7 @@ Spotify's audio quality to iTunes's AAC and to the original music.
 
 You may know that Spotify uses Ogg Vorbis. According to the [documentation](https://support.spotify.com/us/article/high-quality-streaming/),
 
-> The desktop app’s standard quality is Ogg Vorbis 160kbit/s.  Premium subscribers can choose to switch on High quality streaming, which uses 320kbit/s
+> The desktop app's standard quality is Ogg Vorbis 160kbit/s.  Premium subscribers can choose to switch on High quality streaming, which uses 320kbit/s
 
 I own the *Blood Red Cherry* CD that has that song, so I ripped it to WAV and
 used iTunes to encode it to AAC. Then I used Soundflower to record Spotify, set
