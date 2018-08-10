@@ -26,6 +26,6 @@ What's to criticize? Well, not a lot really. I read every word in this book, I p
 
 A couple other things to nitpick: in Chapter 1, when talking about availability, he writes "[if] even 1 minute of downtime in a year is entirely unacceptable, you almost certainly want to opt for a managed services environment... [if] 99.995% is good enough, you can't beat the cloud." But these numbers are unrealistic and don't have enough context to explain what he means. Finally, in a couple of places he talks about algorithms for generating unique identifiers and dealing with concurrent access, but these don't have a deep enough explanation to prevent novices from shooting themselves in the foot with wrong assumptions such as *a timestamp will always increase between each subsequent access.* But a savvy developer will recognize those problems and won't be bitten.
 
-This book is the first one to go onto [my list of essential books](/blog/essential-books/) in a while. I'll be keeping this one on my own bookshelf.
+This book is the first one to go onto [my list of essential books](/essential-books/) in a while. I'll be keeping this one on my own bookshelf.
 
 

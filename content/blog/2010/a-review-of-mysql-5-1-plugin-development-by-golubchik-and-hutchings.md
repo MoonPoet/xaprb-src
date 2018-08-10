@@ -17,6 +17,6 @@ The examples are full code listings, with paragraphs of text alternating with a 
 
 I enjoyed reading about what's possible in MariaDB. I had not kept up-to-date with the work that's being done there. If I were a storage engine developer, I'm sure I would appreciate what MariaDB has done. I would speculate that many of the people who've written in-house custom storage engines for their own businesses might find MariaDB interesting.
 
-I think that anyone who is planning to modify the MySQL source code should read this book. It could save a lot of work and show easier ways to do things. I learned a lot about the MySQL source code that I have not gotten from other places. This one will go onto my [list of essential books for MySQL users](/blog/essential-books/).
+I think that anyone who is planning to modify the MySQL source code should read this book. It could save a lot of work and show easier ways to do things. I learned a lot about the MySQL source code that I have not gotten from other places. This one will go onto my [list of essential books for MySQL users](/essential-books/).
 
 
