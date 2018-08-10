@@ -15,7 +15,7 @@ The good news is, innotop is very extensible and I know the code because I wrote
     $ ./innotop
     
 
-You can select the new 'A' mode by pressing the capital 'A' key. Here is a screenshot (click for full size version):
+You can select the new 'A' mode by pressing the capital 'A' key. Here is a screenshot.
 
 ![](/media/2012/08/innotop-mode-A.png)
 

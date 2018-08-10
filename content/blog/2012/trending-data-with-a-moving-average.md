@@ -20,7 +20,7 @@ You can read more about that [here](https://www.vividcortex.com/blog/2014/11/25/
 
 Both techniques have their drawbacks. Both require a warm-up period, for example. Obviously, in the case of a 60-sample moving window, you require 60 samples before you can begin. The exponential moving average can be primed from the mean of the first 10 samples, in my experience. Both techniques also lag the trend in the samples to some extent. When there's a dramatic change in the pattern, they take a while to "catch up."
 
-Here's a plot of some real data and the two techniques. Click through to see a larger image. The blue line is the sampled data, the red line is an exponential moving average with an average 60-second "memory," and the yellow line is a 60-second moving average.
+Here's a plot of some real data and the two techniques. The blue line is the sampled data, the red line is an exponential moving average with an average 60-second "memory," and the yellow line is a 60-second moving average.
 
 ![Moving Averages](/media/2012/10/moving-averages.png) 
 

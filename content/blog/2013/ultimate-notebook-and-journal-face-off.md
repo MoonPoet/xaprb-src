@@ -88,7 +88,7 @@ From the left, and roughly in order of size, these are:
 1.   A teNues CoolNotes notebook
 2. You'll notice some new additions to this post, at the end, which are not pictured above.
 
-Whew! That's a lot of reviewing to do. I'll go through them [mostly] in order. I've uploaded hi-resolution photos; click on thumbnails to see the bigger picture. In some cases I've linked through to Amazon, when a product is available there. Some others I never buy online, or can't find online, although you may be able to find them if you search. You can see more photos of the notebooks there. I've focused mostly on the inside of the books, but there are good photos online of the exterior too.
+Whew! That's a lot of reviewing to do. I'll go through them [mostly] in order. In some cases I've linked through to Amazon, when a product is available there. Some others I never buy online, or can't find online, although you may be able to find them if you search. You can see more photos of the notebooks there. I've focused mostly on the inside of the books, but there are good photos online of the exterior too.
 
 ### Italian leatherette journal by Markings
 

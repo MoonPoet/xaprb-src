@@ -16,7 +16,7 @@ I fixed that. Now, at the command line, you can just run this:
 wget http://www.maatkit.org/get/mk-table-sync
 ```
 
-Now it's ready to run. Behind the scenes are some Apache mod_rewrite rules, a Perl script or two, and Subversion. When you do this, you're getting the latest code from Subversion's trunk.\[1][2\] (I like to run on the bleeding edge. Releases are for people who want to install stuff.)
+Now it's ready to run. Behind the scenes are some Apache `mod_rewrite` rules, a Perl script or two, and Subversion. When you do this, you're getting the latest code from Subversion's trunk.
 
 Because there's some Perl magic behind it, I made it even easier---it does pattern-matching on partial names and Does The Right Thing:
 
@@ -44,9 +44,3 @@ The redirection is there because otherwise wget will save the file under the nam
 And if you've forgotten which tools exist, you can just click on over to <http://www.maatkit.org/get/> and see.
 
 A quick poll: instead of getting the latest trunk, should this give you the code from the last release? I can do that, if you want.
-
-[1] OK, it's only refreshed every hour. So you're getting code that's up to an hour old.
-
-[2] **update:** now /get/foo gets the latest release, and /trunk/foo gets the latest trunk code.
-
-

@@ -33,7 +33,7 @@ Lo and behold, it brought up the same dialog I can access through the Tools > Pa
 
 Once I found it, installing the package was as easy as selecting the My Packages entry and pressing Add.. to browse for the file. It installs itself and shows up under the Tools > Add-Ons menu. This is really easy to do, but it took me a while to abandon my misdirected efforts to install it as a macro.
 
-Here's a screenshot of what it looks like (click the screenshot for a full-size look).
+Here's a screenshot of what it looks like.
 
 ![OpenOffice.org text to columns](/media/2006/06/open-office-org-text-to-columns.png)
 
