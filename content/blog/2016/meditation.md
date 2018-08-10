@@ -10,6 +10,7 @@ tags:
 date: 2016-03-19 20:14:50 -0400
 description: Meditation isn't what you think.
 image: /media/2016/03/ripples.jpg
+credit: https://www.flickr.com/photos/aftab/3764032010/
 title: Meditation
 
 ---
@@ -170,4 +171,3 @@ Disclaimer: this post reflects my current understanding. Those who are more
 advanced than I will surely recognize my errors. To those who are less far along
 the path, I hope it is helpful, and leads no one astray.
 
-[Photo credit](https://www.flickr.com/photos/aftab/3764032010/)

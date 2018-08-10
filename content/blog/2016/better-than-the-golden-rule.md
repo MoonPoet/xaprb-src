@@ -7,6 +7,7 @@ categories:
 - Leadership
 description: "It's not enough to treat others as I'd wish them to treat me."
 image: /media/2016/12/aurora-1.jpg
+credit: https://pixabay.com/en/aurora-northen-lights-ice-mountain-1197753/
 draft: false
 
 ---
@@ -32,4 +33,3 @@ This is truly challenging to do. I've found it hard to model this behavior mysel
 
 What are your thoughts on empathy in action?
 
-_[Photo Credit](https://pixabay.com/en/aurora-northen-lights-ice-mountain-1197753/)_

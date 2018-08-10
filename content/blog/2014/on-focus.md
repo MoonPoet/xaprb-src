@@ -8,6 +8,7 @@ categories:
   - Leadership
   - Best Of
 image: /media/2014/05/rainbokeh.jpg
+credit: https://www.flickr.com/photos/jdhancock/5177358991/
 ---
 
 Focus is perhaps the most important attribute in an organization. In fact, my dictionary defines an organization as "an organized body of people with a particular purpose..." A focused organization recognizes and cleaves to its purpose.
@@ -146,7 +147,6 @@ I wish you success in all your endeavours, and hope you've found this article he
 
 Photo credits:
 
-* https://www.flickr.com/photos/jdhancock/5177358991/
 * https://www.flickr.com/photos/jjjohn/2387534678
 * https://www.flickr.com/photos/80901381@N04/7649502498
 * https://www.flickr.com/photos/velvettears/5982590252/

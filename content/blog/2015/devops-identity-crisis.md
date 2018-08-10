@@ -4,6 +4,7 @@ title: "The DevOps Identity Crisis"
 description: "Why DevOps needs a manifesto after all, but may never get one."
 date: "2015-02-07"
 image: /media/2015/02/rplusl_brain.jpg
+credit: http://www.flickr.com/photos/opensourceway/4639590640/in/photostream/
 categories:
   - Operations
   - Best Of
@@ -84,8 +85,6 @@ Is it time to rethink the “no manifestos” mandate? What can it hurt to creat
 For my part, although I have expressed some concerns and reservations here, I enjoy the conversations and company of people who are interested in DevOps of many flavors. I try to adhere to the philosophy of “take what you like and leave the rest.” This works for me, but I do wish for a more tangible wheel to which I can put my shoulder. I hope that this article is a step toward that in some way, and I look forward to many more conversations online, in-person, and at events such as [DevOpsDays](http://www.devopsdays.org/), [Velocity](http://velocityconf.com/), and O’Reilly’s upcoming [Software Architecture Conference](http://softwarearchitecturecon.com/sa2015).
 
 Many thanks to various people at O’Reilly, Dave Zwieback, Nathen Harvey, Bridget Kromhout, Mandi Walls, and Anna Navatsyk for helping with this article directly, and numerous others for helping indirectly.
-
-Photo credit: [Cropped R + L illustration CC BY-SA 2.0 Libby Levi for opensource.com](http://www.flickr.com/photos/opensourceway/4639590640/in/photostream/)
 
 <style type="text/css">
 .pullquote-full {

@@ -7,7 +7,7 @@ categories:
 date: 2015-11-14T11:48:02-05:00
 description: "Please provide feedback on how I can make this blog more accessible"
 image: "/media/2015/11/wilderness.jpg"
-
+credit: https://www.flickr.com/photos/snowpeak/7880603036/
 title: Help Me Make This Blog More Accessible
 ---
 
@@ -39,4 +39,3 @@ done better to make them easier for people-who-are-not-like-me. Here: [article
 
 Thanks.
 
-[Photo Credit](https://www.flickr.com/photos/snowpeak/7880603036/)

@@ -7,6 +7,7 @@ categories:
 date: 2016-10-08T14:07:14-04:00
 description: "A company's most valuable IP goes far beyond code and trade secrets."
 image: "/media/2016/10/blueprint.png"
+credit: https://commons.wikimedia.org/wiki/File:Pocketwatch_cutaway_drawing.jpg
 title: The Four Types of Core Intellectual Property
 ---
 
@@ -154,6 +155,4 @@ Core IP looks like its own thing from the outside, but when you build it (and
 build it you must), you realize it is just a manifestation of complex
 interdependent systems that aren't themselves externally visible. 
 
-Photo credits:
-[Watch](https://commons.wikimedia.org/wiki/File:Pocketwatch_cutaway_drawing.jpg),
-[Blueprint](https://www.flickr.com/photos/wscullin/3770016707/)
+Credit: [Blueprint](https://www.flickr.com/photos/wscullin/3770016707/)

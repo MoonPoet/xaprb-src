@@ -9,6 +9,7 @@ date: 2015-10-16T20:04:28-04:00
 description: "Why would you want tagging functionality in a time series database?"
 title: The Case For Tagging In Time Series Data
 image: /media/2015/10/tagged.jpg
+credit: https://www.flickr.com/photos/jdhancock/3814523970/
 ---
 
 A while ago I wrote a blog post about [time series database
@@ -75,4 +76,3 @@ several different users; we wouldn't want a uniqueness constraint on it.
 capability, a search for all queries that the vividcortex user runs wouldn't
 work as expected.
 
-Photo credits: [tagged](https://www.flickr.com/photos/jdhancock/3814523970/)

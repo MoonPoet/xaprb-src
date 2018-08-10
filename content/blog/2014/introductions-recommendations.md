@@ -4,6 +4,7 @@ description: "Introducing people can be risky and costly. Always do double-opt-i
 date: "2014-02-23"
 url: /blog/2014/02/23/respectful-introductions-recommendations/
 image: "/media/2014/02/elephant.jpg"
+credit: http://www.flickr.com/photos/adriensifre/8006712599/
 categories:
   - Commentary
 ---
@@ -320,7 +321,4 @@ put Humpty Dumpty back together again.
 
 ### Photo Credits
 
-* http://www.flickr.com/photos/adriensifre/8006712599/
 * http://www.flickr.com/photos/ericphoto2/8865468071/
-
-

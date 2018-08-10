@@ -7,6 +7,7 @@ categories:
 date: 2016-05-30T17:24:14-04:00
 description: "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win. - Sun Tzu"
 image: "/media/2016/05/compass.jpg"
+credit: https://www.flickr.com/photos/calsidyrose/4925267732/
 title: Intent
 ---
 
@@ -161,4 +162,3 @@ This blog post might have seemed rambling, perhaps even purposeless. That's not 
 
 It's a letter to myself in the future, because I've repeatedly learned from my old journals and other writing. I'm sharing it publicly with the goal of learning from you.
 
-[Photo Credit](https://www.flickr.com/photos/calsidyrose/4925267732/).

@@ -7,6 +7,7 @@ categories:
 - Meditation
 description: A very simple description of my daily meditation practice.
 image: /media/2018/02/E57194F5-DC62-4519-B4D6-EF131497CCAC.jpeg
+credit: https://pixabay.com/en/lake-water-wave-mirroring-texture-2063957/
 
 ---
 I practice mindfulness meditation every day. This is how I practice.
@@ -51,6 +52,5 @@ What is meditation not? It is not stopping thoughts, it is not being immensely a
 
 With the patience and self-love to choose to practice daily, I have become more alive. I am not yet today fully alive and present in each moment. But I know it is within my reach, and each day that I practice I become more able to exist in every moment.
 
-[Photo Credit](https://pixabay.com/en/lake-water-wave-mirroring-texture-2063957/)
 
 [^zafu]: I sit for stability and alertness, not out of the belief that any posture itself produces an effect. My body is not flexible enough to sit in lotus position, with a foot on top of each thigh. I sit in half-lotus most of the time: one leg on the floor, the other leg on top. "Cross-legged," with a knee resting on each ankle, is not as stable or comfortable for me. When my hips feel tight I sit on a [Zafu]({{< amz B00G9FMY7W >}}): a small, stable cushion filled with buckwheat. I place it on my yoga mat folded in half.

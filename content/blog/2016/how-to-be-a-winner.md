@@ -7,6 +7,7 @@ categories:
 date: 2016-10-13T21:46:24-04:00
 description: "This article is so full of win."
 image: "/media/2016/10/winning.jpg"
+credit: https://www.flickr.com/photos/mans_pic/3077796641/
 title: Five Surprising Secrets of People Who Always Win
 ---
 
@@ -40,5 +41,4 @@ Aren’t you glad you read all the way to the end of this and now you know how t
 
 *Note: this article is a parody of the appealing, but substanceless, "success literature" industry and their marketing. My advice: Don't succumb to their siren song. Be [deliberate](/blog/intent/) and examine your plans, actions, and outcomes in search of continuous self-improvement.*
 
-[Photo Credit](https://www.flickr.com/photos/mans_pic/3077796641/)
 

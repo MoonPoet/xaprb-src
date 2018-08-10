@@ -1,5 +1,6 @@
 ---
 image: /media/2014/07/time-machine.jpg
+credit: https://www.flickr.com/photos/24071429@N08/2309369605/
 title: "Mac's Time Machine and Symlinks"
 description: "A common backup failure turns out to be pretty simple to fix."
 date: "2014-07-07"
@@ -26,6 +27,5 @@ the backup drive.
 
 Hope this helps someone.
 
-[Photo Credit](https://www.flickr.com/photos/24071429@N08/2309369605/)
 
 

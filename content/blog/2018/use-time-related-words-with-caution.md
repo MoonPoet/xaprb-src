@@ -8,6 +8,7 @@ categories:
 description: I avoid using many time-related words in writing, because they can be
   ambiguous and cause problems.
 image: /media/2018/02/confusion.jpg
+credit: https://pixabay.com/en/confused-muddled-illogical-880735/
 
 ---
 I've come to see time-related words as potentially dangerous to use in writing, because they have ambiguities that are difficult to parse. I didn't notice this until I started to work with many people for whom English is a second language. These people taught me that phrases I take for granted can be very confusing and illogical.
@@ -53,4 +54,3 @@ Here's a list of words I try to treat with caution.
 
 The difficulty of explaining why these words and phrases can have tricky usages is exactly the same difficulty that non-English speakers are experiencing when they react in ways that don't seem to make sense. There are no hard-and-fast rules about these words. At least, not as far as I know. I think if you look in the dictionary you'll find that all of them are acceptable to use in these and other ways. But my personal preference is to try to avoid ambiguity, and choose more explicit words that don't have overloaded, vaguely similar, and confusingly different or contradictory meanings.
 
-[Photo Credit](https://pixabay.com/en/confused-muddled-illogical-880735/)

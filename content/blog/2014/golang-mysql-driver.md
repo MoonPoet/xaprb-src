@@ -1,5 +1,6 @@
 ---
 image: /media/2014/04/dolphin.jpg
+credit: https://www.flickr.com/photos/chrismatos/8125817490/
 title: "Go MySQL Drivers"
 description: "There are excellent opensource Go drivers for MySQL"
 date: "2014-04-29"
@@ -37,6 +38,5 @@ through the `database/sql` package with this driver, I recommend
 greatly from the same contributors, as well as a variety of community members
 and experts at VividCortex.
 
-[Photo Credit](https://www.flickr.com/photos/chrismatos/8125817490/)
 
 

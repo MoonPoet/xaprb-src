@@ -49,4 +49,3 @@ In conclusion, I’ve been much happier and much more productive on iPhone, iPad
 
 Next time I’ll write about the apps I use on iPhone and iPad for everything from source-code editing to graphic design. I’ve been able to figure out the boundaries of what works and doesn’t, and therefore which tasks I can perform on mobile, and what remains on laptop/desktop devices. Spoiler: I can’t get rid of my MacBook yet. But I wrote, edited, put into Git, and committed and pushed this blog post entirely from iPad.
 
-[Photo Credit](https://pixabay.com/en/robot-artificial-intelligence-woman-507811/)

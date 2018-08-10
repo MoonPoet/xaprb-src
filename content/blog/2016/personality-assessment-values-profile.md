@@ -10,7 +10,7 @@ tags:
 - Personality
 description: The HVP measures self-view and world-view and is full of surprises.
 image: /media/2016/03/justice.jpg
-draft: false
+credit: https://www.flickr.com/photos/jmtimages/3763196437/
 
 ---
 A few months ago I [wrote](/blog/2015/10/11/personality-assessments/) about the DISC and Driving Forces personality assessments I've been using for the last couple of years, to help me be more intentional about my team interactions and [hiring](https://www.linkedin.com/pulse/article/dance-dances-itself-using-personality-assessments-hiring-schwartz). This post is about another model I use too.
@@ -94,4 +94,3 @@ One sad note: Hartman himself, who fled to the US from persecution in Nazi Germa
 
 Food for thought.
 
-[Photo Credit](https://www.flickr.com/photos/jmtimages/3763196437/)

@@ -1,5 +1,6 @@
 ---
 image: /media/2014/02/kaleidoscope.jpg
+credit: http://www.flickr.com/photos/haniamir/1455076844/
 title: "MySQL falls with the decline of PHP"
 description: "Rumors of MySQL's decline have been greatly exaggerated."
 date: "2014-02-26"
@@ -79,6 +80,5 @@ think we can learn much more from each other than we'd guess. And I think many
 of our beliefs about each other are simultaneously right and wrong---the truth
 is much more nuanced and depends a lot more on perspective than on facts.
 
-[Photo credit](http://www.flickr.com/photos/haniamir/1455076844/)
 
 

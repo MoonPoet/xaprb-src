@@ -6,6 +6,7 @@ date: 2015-03-20T13:51:18-05:00
 title: Nine Great Mac Power User Tips
 description: "You haven't been able to live without this, whether you know it or not."
 image: /media/2015/03/converse.jpg
+credit: https://www.flickr.com/photos/_zack/15048360100/
 ---
 
 If you're a Mac user like me, maybe you'll find the following tips helpful for
@@ -110,5 +111,4 @@ you more productive with a Mac.
 
 Photo credits:
 
-* [Converse](https://www.flickr.com/photos/_zack/15048360100/)
 * [Keyboard](https://www.flickr.com/photos/jakematesdesign/3158842098/)

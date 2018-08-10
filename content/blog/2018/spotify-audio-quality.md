@@ -8,6 +8,7 @@ categories:
 - Reviews
 description: I decided to figure out why Spotify sounds so terrible through a Chromecast Audio, and I was surprised at what I found.
 image: /media/2018/01/mobile-616012_1280.jpg
+credit: https://pixabay.com/en/mobile-phone-iphone-music-616012/
 
 ---
 
@@ -184,4 +185,3 @@ readers:
 3. Why would Google Chromecast Audio support AAC, when [Google Play Music
 	supports only lower-quality MP3](https://support.google.com/googleplay/answer/1100462)?
 
-[Photo Credit](https://pixabay.com/en/mobile-phone-iphone-music-616012/)

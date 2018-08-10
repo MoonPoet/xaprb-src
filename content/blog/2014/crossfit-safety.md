@@ -6,6 +6,7 @@ url: /blog/2014/01/20/crossfit-safety/
 categories:
   - Health
 image: /media/2014/01/9117226687_6e903b5c1b.jpg
+credit: http://www.flickr.com/photos/stoermchen/9117226687/
 ---
 I've been a happy CrossFiter for a few years now. I met my co-founder and many
 friends in [CrossFit Charlottesville](http://crossfitcharlottesville.com/), completely changed my level of fitness
@@ -298,7 +299,6 @@ intensity in the company of your peers---and do it safely.
 
 Photo credits:
 
-* http://www.flickr.com/photos/stoermchen/9117226687/
 * http://www.flickr.com/photos/sumofmarc/7797163562/
 * http://www.abc.net.au/news/2012-08-08/matthias-steiner-is-struck-by-his-falling-weight/4184750
 * http://www.flickr.com/photos/ario/8438758747/

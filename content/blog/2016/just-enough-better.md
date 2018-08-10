@@ -7,6 +7,7 @@ categories:
 date: 2016-06-04T20:36:20-04:00
 description: "What makes people want or need something?"
 image: "/media/2016/06/mousetrap.jpg"
+credit: https://www.flickr.com/photos/hz536n/14237740515/
 title: Just Enough Better
 ---
 
@@ -36,4 +37,3 @@ Who knows? All I know right now is that I don’t hear people telling me en mass
 
 And solving a problem, with something that’s not only *good*, but *better*, seems to be the threshold you have to cross.
 
-[Photo Credit](https://www.flickr.com/photos/hz536n/14237740515/)

@@ -6,6 +6,7 @@ categories:
 date: '2017-05-26T10:42:13-04:00'
 description: There are three major use cases for ML and AI in system monitoring.
 image: /media/2017/05/artificial-intelligence.jpg
+credit: https://pixabay.com/en/brain-cactus-skull-1841528/
 title: Monitoring with Artificial Intelligence and Machine Learning
 
 ---
@@ -81,4 +82,3 @@ is hard and might be useful.
 
 Bonus: prescriptive. (I added this later, after a discussion with someone.) Prescriptive machine learning would produce instructions: _what to do to a system_.
 
-[Photo Credit](https://pixabay.com/en/brain-cactus-skull-1841528/)

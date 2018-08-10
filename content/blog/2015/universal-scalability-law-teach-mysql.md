@@ -8,6 +8,7 @@ tags:
 date: 2015-11-12T21:00:39-05:00
 description: "A formal mathematical analysis of MySQL's scalability yields obvious results."
 image: "/media/2015/11/chicken.jpg"
+credit: https://upload.wikimedia.org/wikipedia/commons/2/20/Chicken_February_2009-1.jpg
 title: What Does The Universal Scalability Law Reveal About MySQL?
 ---
 
@@ -125,4 +126,3 @@ Takeaways:
 	Law](https://www.vividcortex.com/resources/universal-scalability-law/) and
 	innoculate yourself against lots of brain twisters.
 
-[photo credit](https://upload.wikimedia.org/wikipedia/commons/2/20/Chicken_February_2009-1.jpg)

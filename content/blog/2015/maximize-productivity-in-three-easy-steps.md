@@ -4,6 +4,7 @@ title: Boost Your Productivity In Three Easy Steps
 description: "If you feel that you spend your time doing 'stuff' and getting nothing done, maybe it's time for a few simple changes."
 date: 2015-06-05
 image: /media/2015/06/sky.jpg
+credit: https://www.flickr.com/photos/motii/17737301028/
 categories:
   - Life Hacking
 tags:
@@ -198,7 +199,7 @@ If you try my suggestions, let me know how it works for you, and what other sugg
 - [Ben Franklin's daily
   routine](http://goodmenproject.com/featured-content/dtv-benjamin-franklin/)
 
-Photo credits: [sky](https://www.flickr.com/photos/motii/17737301028/),
+Photo credits:
 [tree](https://www.flickr.com/photos/photographyburns/5936921799/),
 [flower](https://www.flickr.com/photos/93277085@N08/15334872208/),
 [snowflake](https://www.flickr.com/photos/chaoticmind75/15376850026/)

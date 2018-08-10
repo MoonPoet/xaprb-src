@@ -7,6 +7,7 @@ categories:
 date: 2016-10-22T21:46:24-04:00
 description: "How I run most of my life and business from iPhone and iPad apps"
 image: "/media/2016/10/torx.jpg"
+credit: https://pixabay.com/en/bit-drill-akkuschrauber-628592/
 title: "Life on Mobile: The iPhone Apps And Services I Use"
 ---
 
@@ -128,4 +129,3 @@ From airline apps to "git commit" I've found that I can run the bulk of my digit
 
 But it's not all ponies and rainbows. Next time I'll talk about the little edge cases that don't quite work, the things that keep me from getting rid of my laptop.
 
-[Photo Credit](https://pixabay.com/en/bit-drill-akkuschrauber-628592/)

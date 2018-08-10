@@ -1,4 +1,6 @@
 ---
+credit: http://www.flickr.com/photos/dwysiu/4985831624/
+image: /media/2013/08/4985831624_fc6cc446c9.jpg
 title: "Speaking at Strata NYC: Making Big Data Small"
 date: "2013-08-18"
 url: /blog/2013/08/18/speaking-at-strata-nyc-making-big-data-small/
@@ -12,8 +14,7 @@ I'm off to my first [Strata](http://strataconf.com/stratany2013/) conference, an
 
 My session will be about [ways to make big data small](http://strataconf.com/stratany2013/public/schedule/detail/31435), in both the storage and processing dimensions, without losing much of the value. 
 
-![4985831624_fc6cc446c9](/media/2013/08/4985831624_fc6cc446c9.jpg)
-
+<!--more-->
 
 If you're familiar with Bloom Filters, this is an example. Bloom Filters let you answer the question, 
 
@@ -27,7 +28,6 @@ You lose a small and quantifiable amount of precision in the "yes," and you gain
 
 That worldview or philosophy is a valuable thing to keep in your pocket when you're working with large amounts of data, and that's the topic of my Strata Conference / Hadoop World NYC 2013 talk. 
 
-[(photo credit)](http://www.flickr.com/photos/dwysiu/4985831624/)
 
 
 

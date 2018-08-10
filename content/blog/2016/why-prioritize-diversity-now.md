@@ -12,6 +12,7 @@ tags:
 date: 2016-04-18T10:09:11-05:00
 description: "Diversity is difficult to add after homogeneity takes root."
 image: "/media/2016/04/board.jpg"
+credit: https://www.flickr.com/photos/aureobcn/8573429757/
 title: "Why I'm Not Waiting To Prioritize Diversity"
 ---
 
@@ -163,7 +164,3 @@ minorities.
 I learned that what I set out to do was so improbable as to be nearly
 impossible. Learning is the point. We'll redouble efforts to make VividCortex a
 welcoming and inclusive place for everyone. It'll be hard but worthwhile.
-
-Photo credit: [circuit
-board](https://www.flickr.com/photos/aureobcn/8573429757/) (yeah, bad pun I
-know).

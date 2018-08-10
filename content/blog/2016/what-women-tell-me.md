@@ -7,6 +7,7 @@ categories:
 date: 2016-08-06T12:43:03-04:00
 description: "Women change my perspective more than anyone else in my life."
 image: "/media/2016/08/gramophone.jpg"
+credit: https://pixabay.com/en/gramophone-1920s-record-megaphone-1028633/
 title: What Women Tell Me
 ---
 
@@ -349,4 +350,3 @@ not mine.
 types of things. In fact, many of the episodes of sexism above came to me
 through a man's Twitter post. BUT WOMEN RETWEETED IT TO ME.*
 
-[Photo Credit](https://pixabay.com/en/gramophone-1920s-record-megaphone-1028633/)
