@@ -53,9 +53,9 @@ this is always the case. Why don't people choose *random* variables to destroy
 their performance? It's not as though there is a shortage to choose from. Why
 does everyone always pick `sort_buffer_size` instead of something else?
 
-<small>*PS: I considered a simpler tuning guide, such as [Domas's guide to
+PS: I considered a simpler tuning guide, such as [Domas's guide to
 tuning the query cache](http://mituzas.lt/2009/07/08/query-cache-tuning/), but I
 am convinced that people need more a complex guide for the `sort_buffer_size`, or
 they will not believe in the validity of the instructions. I base this on
 multiple experiences being paid a lot of money to suggest not setting
-`sort_buffer_size` to 256M, and being told that I must be an idiot.*</small>
+`sort_buffer_size` to 256M, and being told that I must be an idiot.
