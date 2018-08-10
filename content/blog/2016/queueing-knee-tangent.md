@@ -32,38 +32,38 @@ system with 8 service channels. This is analogous to a server with 8 CPUs, for
 example. A line drawn from the origin, tangent to the curve, touches it at
 0.7598, or 76% utilization.
 
-The important thing to note is that this curve is a function of \\(m\\), the
-number of service channels. In this case, \\(m=8\\). As you increase the number
+The important thing to note is that this curve is a function of {{< math >}}m{{< /math >}}, the
+number of service channels. In this case, {{< math >}}m=8{{< /math >}}. As you increase the number
 of service channels in the system, the curve remains flat longer and the "knee,"
 where the curve appears to lift upwards and start to climb steeply, moves towards
-the right---towards higher utilization, signified by \\(\\rho\\).
+the right---towards higher utilization, signified by {{< math >}}\rho{{< /math >}}.
 
 You can experiment interactively with this, using this [Desmos
 calculator](https://www.desmos.com/calculator/cqh81xgspq).[^1]
 Here's the derivation. Using the heuristic approximation,
 
-\\[
-R = \frac{1}{1-\\rho^m}
-\\]
+{{< math >}}
+R = \frac{1}{1-\rho^m}
+{{< /math >}}
 
 The line is tangent to the curve where *response time divided by
-utilization* is at a minimum. The equation for \\(R/\\rho\\) is
+utilization* is at a minimum. The equation for {{< math >}}R/\rho{{< /math >}} is
 
-\\[
-R/\\rho = \frac{1}{\\rho - \\rho^{m+1}}
-\\]
+{{< math >}}
+R/\rho = \frac{1}{\rho - \rho^{m+1}}
+{{< /math >}}
 
 The minimum of this equation is where its derivative is zero; the derivative is
 
-\\[
-\frac{\left(m+1\right)\\rho^m-1}{\\rho^2\left(\\rho^m-1\right)^2}
-\\]
+{{< math >}}
+\frac{\left(m+1\right)\rho^m-1}{\rho^2\left(\rho^m-1\right)^2}
+{{< /math >}}
 
-The root of this expression is a function of \\(m\\) as expected.
+The root of this expression is a function of {{< math >}}m{{< /math >}} as expected.
 
-\\[
+{{< math >}}
 \left(m+1\right)^{-\frac{1}{m}}
-\\]
+{{< /math >}}
 
 Here's how that function looks when plotted.
 

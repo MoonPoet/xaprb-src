@@ -68,7 +68,7 @@ As SJA finds differences between the tables, it adds `WHERE` clauses to the chec
 where   `col1` >= 219000000 and `col1` < 220000000
 ```
 
-In subsequent queries SJA also increases the size of the substring it takes on the first column, from 4 to 7 to 10 leftmost characters. If you ignore the sign digit, this means it is narrowing the grouping by \\(10^3\\) rows each time, or in other words grouping the current working set into a maximum of 1000 groups. This is very similar to [the algorithm I proposed in my first article](/blog/2007/03/05/an-algorithm-to-find-and-resolve-data-differences-between-mysql-tables/), as a fallback mechanism when the DBA cannot use an index to design a grouping strategy.
+In subsequent queries SJA also increases the size of the substring it takes on the first column, from 4 to 7 to 10 leftmost characters. If you ignore the sign digit, this means it is narrowing the grouping by {{< math >}}10^3{{< /math >}} rows each time, or in other words grouping the current working set into a maximum of 1000 groups. This is very similar to [the algorithm I proposed in my first article](/blog/2007/03/05/an-algorithm-to-find-and-resolve-data-differences-between-mysql-tables/), as a fallback mechanism when the DBA cannot use an index to design a grouping strategy.
 
 Beyond this, SJA seems to do the kinds of queries you'd expect a sync tool to issue.
 
@@ -82,13 +82,13 @@ There are a couple theoretical weaknesses with in this approach. `SUM()` is comm
 
 The next potential problem is the law of large numbers. Using `SUM()` increases the likelihood of a collision. It changes the distribution of numbers from pseudo-random over the range to a normal distribution---the familiar bell curve. Certain numbers will be more likely to occur than others, and this likelihood increases as the set grows.
 
-Finally, string concatenation of base-ten digits discards the most significant digits. If you convert the four sliced hex strings to base ten and they end up being 1, 2, 3, and 4, and then you concatenate them, you get 1234. But the sum of the checksum is not 1234; it is \\(1 \times 16^{24} + 2\times16^{16} + 3\times16^8 + 4\times16\\). This truncates the full 128-bit range of `MD5()`.
+Finally, string concatenation of base-ten digits discards the most significant digits. If you convert the four sliced hex strings to base ten and they end up being 1, 2, 3, and 4, and then you concatenate them, you get 1234. But the sum of the checksum is not 1234; it is {{< math >}}1 \times 16^{24} + 2\times16^{16} + 3\times16^8 + 4\times16{{< /math >}}. This truncates the full 128-bit range of `MD5()`.
 
 Rohit responded to my concern:
 
 > Yes, there are chances of collisions. I did the math 3 years back(when I had designed the algo.). I don't remember exact details, but the chances of collision are extremely rare. Of course, it is not as good as a "pure" MD5. In the last 3 years of selling this (a vast majority of our 8000+ paid customers use it), we have not encountered any cases where collisions have been an issue.
 
-I believe collisions would be undetectable, but I don't really know how SJA works inside (tangent: I keep wondering if there's a way to use something like the accounting trick of differences divisible by nine to help see which rows are bad without doing so many grouped queries). Perhaps there is a way to know when there has been a collision. In any case, I checked the tables with [MySQL Table Checksum](http://code.google.com/p/maatkit) after syncing, and they were correctly synced.
+I believe collisions would be undetectable, but I don't really know how SJA works inside.[^nines] Perhaps there is a way to know when there has been a collision. In any case, I checked the tables with [MySQL Table Checksum](http://code.google.com/p/maatkit) after syncing, and they were correctly synced.
 
 For what it's worth, MySQL Table Sync's algorithm doesn't have these theoretical weaknesses.
 
@@ -471,3 +471,5 @@ Both points are well put. I was initially surprised that there's no command-line
 ### Conclusion
 
 I found [SQLyog Job Agent](http://www.webyog.com/en/downloads.php) to be a well-rounded tool for syncing data between MySQL tables. Though not designed purely as a stand-alone tool, once I figured out the XML job file format, it was easy to use. My analysis showed me some areas where there's theoretically a possibility of incorrectly syncing data, but I never observed that happening. I ran some unscientific benchmarks and found that my design for [MySQL Table Sync](http://code.google.com/p/maatkit) is several times more efficient *for my test case* in terms of network I/O, which seems to be the major contributor to the time it takes to sync tables.
+
+[^nines]: I keep wondering if there's a way to use something like the accounting trick of differences divisible by nine to help see which rows are bad without doing so many grouped queries.

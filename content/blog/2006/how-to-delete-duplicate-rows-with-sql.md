@@ -104,7 +104,7 @@ from test as good_rows
 
 This works because I decided I wanted to keep the row with the smallest `id` in each group. That means I can do a self-join that matches rows with a strict greater-than. Greater than what? The minimum value of `id` for that value of `day`, of course.
 
-This is essentially a cross join, which is an \\(O(n^2)\\) algorithm in the pathological worst case, but if there are not many duplicate rows, it's basically the same cost as a regular join.
+This is essentially a cross join, which is an {{< math >}}O(n^2){{< /math >}} algorithm in the pathological worst case, but if there are not many duplicate rows, it's basically the same cost as a regular join.
 
 There are cases where this method is really terrible, too. For instance, you have a hundred million rows and only one duplicate row. You'd be joining a hundred million rows against a hundred million rows, eliminating all but one of them, and deleting it. That would be a very bad idea because it would take forever. It could be much more efficient to find the lone duplicate and delete just it, without doing all the joining.
 

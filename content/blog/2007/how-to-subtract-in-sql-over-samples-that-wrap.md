@@ -162,7 +162,7 @@ where o.num = 6
 group by o.num
 ```
 
-The problem with both queries is the `<=` predicate, which turns them into \\( O(n^2) \\) algorithms. They're essentially a cross-join. Plus, they're hard to understand. It turns out that the simplest method by hand is complicated in SQL.
+The problem with both queries is the `<=` predicate, which turns them into {{< math >}} O(n^2) {{< /math >}} algorithms. They're essentially a cross-join. Plus, they're hard to understand. It turns out that the simplest method by hand is complicated in SQL.
 
 ### Method 2: Adjust when there's a wrap
 

@@ -28,50 +28,50 @@ I'll skip all the derivations and go through only the basics to get to the resul
 ### The Stretch Factor Heuristic and Exact Formula
 
 The equation describing the curve above is derived as follows. When a request
-arrives at the server, it will have to wait time \\(S\\), the service time, to be
+arrives at the server, it will have to wait time {{< math >}}S{{< /math >}}, the service time, to be
 completed. But if the server is busy, which happens with some probability, then
-it will be delayed some additional wait time \\(W\\) for the request in process,
+it will be delayed some additional wait time {{< math >}}W{{< /math >}} for the request in process,
 and potentially for other requests are already waiting, before it enters
-service. The total time is the residence time, \\(R = W + S\\).
+service. The total time is the residence time, {{< math >}}R = W + S{{< /math >}}.
 
-The wait time \\(W\\) is some fraction of the total residence time, which can be
-at most 100%, and if this is denoted by \\(\\rho\\) then \\(W = \\rho R\\).
+The wait time {{< math >}}W{{< /math >}} is some fraction of the total residence time, which can be
+at most 100%, and if this is denoted by {{< math >}}\rho{{< /math >}} then {{< math >}}W = \rho R{{< /math >}}.
 Thus,
 
 $$
-R = W + S = \\rho R + S
+R = W + S = \rho R + S
 $$
 
 Which, when rearranged and divided by service time to make it a relative
 "stretch factor," becomes
 
 $$
-R = \\frac{1}{1- \\rho}
+R = \frac{1}{1- \rho}
 $$
 
 None of this is original; I've basically cribbed this from Neil Gunther's book
 *Analyzing Computer Systems Performance with Perl::PDQ*. Later in that same
 book, Gunther shows the derivation of a related formula for the stretch factor
-in a multiserver queue with \\(m\\) servers,
+in a multiserver queue with {{< math >}}m{{< /math >}} servers,
 
 $$
-R \\approx \frac{1}{1-\\rho^m}
+R \approx \frac{1}{1-\rho^m}
 $$
 
-Where \\(\\rho\\) denotes server utilization. This heuristic approximation does
+Where {{< math >}}\rho{{< /math >}} denotes server utilization. This heuristic approximation does
 arise analytically, but is not exact when there are more than 2 servers. It
 underestimates wait time when utilization is high, especially with large numbers
 of servers (say, 64). The exact solution is given by
 
 $$
-R = \\frac{C(m, \\rho) S}{m(1-\\rho)} + S
+R = \frac{C(m, \rho) S}{m(1-\rho)} + S
 $$
 
-Where the first term is just \\(W\\), and the function \\(C(m,\\rho)\\) is the
+Where the first term is just {{< math >}}W{{< /math >}}, and the function {{< math >}}C(m,\rho){{< /math >}} is the
 Erlang C function. If we put it all together and rearrange into "stretch factor" form, the Erlang equation for stretch factor is
 
 $$
-R(m, \\rho) = 1 + \\frac{ \\frac{(m \\rho)^m}{m!} }{ (1-\\rho) \\sum_{n=0}^{m-1} \\frac{(m \\rho)^n}{n!} + \\frac{(m \\rho)^m}{m!} } \\frac{1}{m(1-\\rho)}
+R(m, \rho) = 1 + \frac{ \frac{(m \rho)^m}{m!} }{ (1-\rho) \sum_{n=0}^{m-1} \frac{(m \rho)^n}{n!} + \frac{(m \rho)^m}{m!} } \frac{1}{m(1-\rho)}
 $$
 
 If you'd like to see how this looks, check out [this Desmos calculator](https://www.desmos.com/calculator/9dr7azq0ot).
@@ -80,17 +80,17 @@ If you'd like to see how this looks, check out [this Desmos calculator](https://
 
 Now here's the part my brain has been trying to connect, almost idly in
 shower-thought time, for a while. If intuition led from one direction to the
-heuristic approximation \\(R=\\frac{1}{1-\\rho^m}\\), and an exact derivation leads to
+heuristic approximation {{< math >}}R=\frac{1}{1-\rho^m}{{< /math >}}, and an exact derivation leads to
 a formula that in the single- and dual-server case is the same as the
 heuristic, then what is the heuristic missing to extend to an exact multiserver
 queueing system? Can it be extended, or is it just a coincidence that it's an
-exact solution for \\(m=1, m=2\\)?
+exact solution for {{< math >}}m=1, m=2{{< /math >}}?
 
 A few trains of thought have sprung into my mind.
 
-First, I observed that the Erlang C formula includes \\(m!\\), and it happens to be the
+First, I observed that the Erlang C formula includes {{< math >}}m!{{< /math >}}, and it happens to be the
 case that 1! = 1, and 2! = 2. A clue, or a distraction? What if I add a term
-to the heuristic, multiplied by \\(m/m!\\) or similar, which would just reduce
+to the heuristic, multiplied by {{< math >}}m/m!{{< /math >}} or similar, which would just reduce
 to the same thing for the single- and dual-server cases? What form would that
 term take?
 
@@ -117,7 +117,7 @@ To gain some intuition about this, I wrote a simple [Desmos
 calculator](https://www.desmos.com/calculator/qo1n4shf1f) to show
 the *value* of the hypothetical "missing term" in the context of the heuristic's
 value. In other words, the heuristic's *error function*.  Here's a graph of
-that for several values of \\(m\\). Red is 1 server, green is 8, purple is 16, orange
+that for several values of {{< math >}}m{{< /math >}}. Red is 1 server, green is 8, purple is 16, orange
 is 64.
 
 {{< desmos qo1n4shf1f >}}
@@ -128,7 +128,7 @@ never be more than 100% utilized. What's interesting, to me anyway, is that the
 error function looks kind of like the PDF of a Gamma distribution. I'll leave that thought
 there.
 
-I'm not sure what form a term including, say, \\(m/m!\\) would take. This is
+I'm not sure what form a term including, say, {{< math >}}m/m!{{< /math >}} would take. This is
 something I haven't explored a lot yet. *TODO*.
 
 ### Reducing Erlang
@@ -139,13 +139,13 @@ something I haven't explored a lot yet. *TODO*.
 
 -->
 
-What does the Erlang formula reduce to in the \\(m=1\\) case? The Erlang C
-formula itself reduces to \\(\\rho\\), and when
+What does the Erlang formula reduce to in the {{< math >}}m=1{{< /math >}} case? The Erlang C
+formula itself reduces to {{< math >}}\rho{{< /math >}}, and when
 decorated with the additional stuff to get it into stretch-factor form, it
 reduces to
 
 $$
-R(1, \\rho) = 1 + \\frac{\\rho}{1-\\rho}
+R(1, \rho) = 1 + \frac{\rho}{1-\rho}
 $$
 
 Which is just a rearrangement of the heuristic function.
@@ -154,26 +154,25 @@ include the Gamma function and list the heuristic as an approximation. Gamma
 again, though Gamma function and Gamma distribution are different. The Gamma
 function is closely related to the factorial function.)
 
-In the \\(m=2\\) case, if I'm doing my algebra right, the Erlang C function
+In the {{< math >}}m=2{{< /math >}} case, if I'm doing my algebra right, the Erlang C function
 simplifies to
 
 $$
-C(2, \\rho) = \\frac{2\\rho^2}{ (1-\\rho) + (1-\\rho)2\\rho + 2\\rho^2}
+C(2, \rho) = \frac{2\rho^2}{ (1-\rho) + (1-\rho)2\rho + 2\rho^2}
 $$
 
-Which further simplifies to \\(\\frac{2\\rho^2}{\\rho+1}\\), which when
+Which further simplifies to {{< math >}}\frac{2\rho^2}{\rho+1}{{< /math >}}, which when
 rewritten into stretch-factor form, becomes
 
 $$
-R(2, \\rho)=1+\\frac{2\\rho^2}{\\rho+1} \\frac{1}{2(1-\\rho)}
+R(2, \rho)=1+\frac{2\rho^2}{\rho+1} \frac{1}{2(1-\rho)}
 $$
 
-Which is exactly \\(\\frac{1}{1-\\rho^2}\\), the heuristic form.
+Which is exactly {{< math >}}\frac{1}{1-\rho^2}{{< /math >}}, the heuristic form.
 
-At \\(m=3\\) and above, the heuristic is only approximate. What does the Erlang
+At {{< math >}}m=3{{< /math >}} and above, the heuristic is only approximate. What does the Erlang
 form reduce to for the first of those cases? Does it result in the missing term
-that will extend to 4 and beyond too? (_Note: I wrote about this in a [followup
-post](/blog/erlang-stretch-factor-three-four/)_).
+that will extend to 4 and beyond too?[^followup]
 
 ### Approximations to Erlang, Based on the Heuristic
 
@@ -197,13 +196,13 @@ arrive at an approximation for the queue length, which in the simplest types of
 queueing systems reduces to:
 
 $$
-L_q \\approx \\frac{ \\rho^{\\sqrt{2(m+1)}} }{ 1-\\rho} 
+L_q \approx \frac{ \rho^{\sqrt{2(m+1)}} }{ 1-\rho} 
 $$
 
 In "stretch factor" form, this becomes
 
 $$
-R(m, \\rho) \\approx 1+\\frac{\\rho^{\\sqrt{2(m+1)}}}{\\rho m(1-\\rho)}
+R(m, \rho) \approx 1+\frac{\rho^{\sqrt{2(m+1)}}}{\rho m(1-\rho)}
 $$
 
 This is such an accurate approximation that it's more than good enough for
@@ -212,7 +211,7 @@ formula into a spreadsheet, because it has iterative computations.)
 
 Given the usefulness and simplicity of approximations, perhaps an approximation
 to the stretch factor can be derived from the heuristic form
-\\(1/(1-\\rho^m)\\). This idea appeals to me because it might lead to insights
+{{< math >}}1/(1-\rho^m){{< /math >}}. This idea appeals to me because it might lead to insights
 about what's disappeared or simplified out of the exact Erlang formula in the
 base case.
 
@@ -223,27 +222,27 @@ multiplying by it, might result in a usable approximation.
 
 Another idea is a sigmoid such as the classic logistic function. In fact, if I
 wanted to approximate the error in the range (0,1) this isn't too bad an
-approximation for \\(m=16\\), for example:
+approximation for {{< math >}}m=16{{< /math >}}, for example:
 
 $$
-\\frac{.5}{1+e^{-10(x-1)}}
+\frac{.5}{1+e^{-10(x-1)}}
 $$
 
 Finally, instead of adding a term or multiplying the heuristic by a term,
-perhaps it's the \\(\\rho^m\\) portion in the denominator that needs to be
+perhaps it's the {{< math >}}\rho^m{{< /math >}} portion in the denominator that needs to be
 tweaked. A little analysis led me to the following conclusions.
 
-The error at \\(m>3\\) could be explained by the exponent \\(m\\) being too large. If so,
-then the correct value for the exponent could be a function of \\(\\rho\\), and
+The error at {{< math >}}m>3{{< /math >}} could be explained by the exponent {{< math >}}m{{< /math >}} being too large. If so,
+then the correct value for the exponent could be a function of {{< math >}}\rho{{< /math >}}, and
 an adjustment to it would need to be of the form
 
 $$
-A_{exp} = \\frac{log\\left( \\frac{E(\\rho)-1}{E(\rho)} \\right)}{log(\\rho)}
+A_{exp} = \frac{log\left( \frac{E(\rho)-1}{E(\rho)} \right)}{log(\rho)}
 $$
 
-Where \\(E(\\rho)\\) is the Erlang formula for the stretch factor. I arrived at
-this by solving the error function for \\(\\rho\\). For convenience, this can be
-divided by \\(m\\) to normalize it relative to the number of servers. I've made
+Where {{< math >}}E(\rho){{< /math >}} is the Erlang formula for the stretch factor. I arrived at
+this by solving the error function for {{< math >}}\rho{{< /math >}}. For convenience, this can be
+divided by {{< math >}}m{{< /math >}} to normalize it relative to the number of servers. I've made
 a [Desmos calculator](https://www.desmos.com/calculator/7ygut81via) illustrating
 the shape of this adjustment term for 1, 4, 8, and 16 servers:
 
@@ -261,16 +260,16 @@ approximation to this error? Or is the missing term a Gamma function, which
 would result in an exact solution? *TODO*.
 
 Another way to nudge the heuristic to approximate the Erlang residence time
-stretch factor would be to examine whether the base, \\(\\rho\\), is too large
+stretch factor would be to examine whether the base, {{< math >}}\rho{{< /math >}}, is too large
 or too small. Following a similar train of thought as before and solving the
 error function for the number of servers, I found that the error would need to be of the
 form
 
 $$
-A_{base} = \\left( \\frac{E(\\rho)-1}{E(\\rho)}\\right)^{1/m}
+A_{base} = \left( \frac{E(\rho)-1}{E(\rho)}\right)^{1/m}
 $$
 
-Normalizing this relative to \\(\\rho\\) by dividing, I got a function that has
+Normalizing this relative to {{< math >}}\rho{{< /math >}} by dividing, I got a function that has
 similar discontinuities as before, and is of the following shape. It looks
 like it might be possible to approximate with something like a quadratic from 0
 to 1, but if you zoom out further, it looks more like... wait for it... part of
@@ -280,14 +279,14 @@ the Gamma function. You can see this on
 {{< desmos hsidkl4og8 >}}
 
 I experimented with this in a different way, by trying to approximate
-\\(A_{base}\\) directly. I just guessed at its shape and came up with the
-following, which isn't too far off for \\(2<m<5\\):
+{{< math >}}A_{base}{{< /math >}} directly. I just guessed at its shape and came up with the
+following, which isn't too far off for {{< math >}}2<m<5{{< /math >}}:
 
 $$
-A_{base} \\approx \\rho - \\frac{2}{15} \\sqrt{m} (\\rho-1)\\rho
+A_{base} \approx \rho - \frac{2}{15} \sqrt{m} (\rho-1)\rho
 $$
 
-You can see this shape, compared with the actual \\(A_{base}\\), at this
+You can see this shape, compared with the actual {{< math >}}A_{base}{{< /math >}}, at this
 [Desmos](https://www.desmos.com/calculator/sgwrqdcnzk).
 
 {{< desmos sgwrqdcnzk >}}
@@ -323,3 +322,5 @@ Besides, I just enjoy exploring math and its shapes; this is a great form of
 relaxation or stress relief for me when I want to concentrate on something so as
 to put other things out of my mind. Hopefully there's a kindred soul out there
 who finds this interesting too. If so, hello, and enjoy!
+
+[^followup]: I wrote about this in a [followup post](/blog/erlang-stretch-factor-three-four/).

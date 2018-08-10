@@ -58,7 +58,7 @@ group by l.type, l.variety;
 
 Here I've partitioned the data by the `type` column, so there are four partitions (apple, cherry, orange, pear). Notice the `num` column starts at 1 for each partition and counts upward.
 
-The drawback to this solution is the LEFT OUTER JOIN with the >= in the join condition. This effectively makes the join a CROSS JOIN, which is inefficient \\( (O(n^2) \\). It may be a good idea to avoid this except on small data sets.
+The drawback to this solution is the LEFT OUTER JOIN with the >= in the join condition. This effectively makes the join a CROSS JOIN, which is inefficient {{< math >}} (O(n^2) {{< /math >}}. It may be a good idea to avoid this except on small data sets.
 
 Another option on MySQL, but only with the MyISAM and BDB storage engines, is to use an `AUTO_INCREMENT` column as the second column in the primary key, which makes MySQL restart the numbering for each group.
 

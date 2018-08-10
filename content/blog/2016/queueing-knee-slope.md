@@ -28,7 +28,7 @@ Here are a few others to consider:
 1. The knee is where the curve has a slope of 1, that is, it's growing as fast
 	upwards as it is rightwards.
 2. The knee is the utilization at which you can expect requests to spend as much
-	time waiting as being serviced, i.e. \\(2S\\).
+	time waiting as being serviced, i.e. {{< math >}}2S{{< /math >}}.
 3. The knee is related to tail latency, for example where the 99th percentile of
 	the latency is double the median.
 4. The knee is where the curve's derivative starts to change quickly, i.e. the
@@ -40,72 +40,72 @@ Let's look at each of these in turn.
 
 The first definition is the point at which the queueing curve has a slope of 1,
 at which point response times are increasing directly proportional to
-utilization \\(\\rho\\). Past this point, response times increase faster than
+utilization {{< math >}}\rho{{< /math >}}. Past this point, response times increase faster than
 utilization, so this is a reasonable point to say the system "becomes
 superlinear" in the sense that linearity is where slope is 1.
 
 Using the heuristic formula for the queueing theory response time curve, which
-again is exact for \\(m=1\\) and \\(m=2\\) service channels, and slightly
-underestimates qeueuing wait time for greater values of \\(m\\) but still serves
+again is exact for {{< math >}}m=1{{< /math >}} and {{< math >}}m=2{{< /math >}} service channels, and slightly
+underestimates qeueuing wait time for greater values of {{< math >}}m{{< /math >}} but still serves
 as a reasonable approximation, we proceed as follows.
 
-\\[
-R = \\frac{1}{1-\\rho^m}
-\\]
+{{< math >}}
+R = \frac{1}{1-\rho^m}
+{{< /math >}}
 
 The derivative of that equation is
 
-\\[
-\\frac{d}{d\\rho} R = \\frac{m \\rho^{m-1}}{(1-\\rho^m)^2}
-\\]
+{{< math >}}
+\frac{d}{d\rho} R = \frac{m \rho^{m-1}}{(1-\rho^m)^2}
+{{< /math >}}
 
-So the solution for \\(\\rho\\) as a function of \\(m\\) is the real root
+So the solution for {{< math >}}\rho{{< /math >}} as a function of {{< math >}}m{{< /math >}} is the real root
 between 0 and 1 of
 
-\\[
-\\frac{m \\rho^{m-1}}{(1-\\rho^m)^2} = 1
-\\]
+{{< math >}}
+\frac{m \rho^{m-1}}{(1-\rho^m)^2} = 1
+{{< /math >}}
 
-Solving this for \\(\\rho\\) turned out to be an interesting challenge which I
+Solving this for {{< math >}}\rho{{< /math >}} turned out to be an interesting challenge which I
 did not complete. Among other things, this equation has very different behavior
-at \\(m=1\\). *In a single-server queueing system, the "knee" where the slope is
+at {{< math >}}m=1{{< /math >}}. *In a single-server queueing system, the "knee" where the slope is
 1 is at utilization of 0*.
 
 If this is a surprise to you, take another look at the queueing
 "hockey stick" curve. You'll usually see it plotted with a stretched
-horizontal axis, because \\(0<\\rho<1\\), and compressed vertical axis. That
+horizontal axis, because {{< math >}}0<\rho<1{{< /math >}}, and compressed vertical axis. That
 fools your eye! But when [plotted](https://www.desmos.com/calculator/fokgr3jcyl)
 without distortion, it's quite clear that the queueing curve is on a diagonal
-right away when \\(m=1\\).  Here's the queuing curve for 1, 2, and 8 servers
+right away when {{< math >}}m=1{{< /math >}}.  Here's the queuing curve for 1, 2, and 8 servers
 (red, blue, and green lines).
 
 {{< desmos fokgr3jcyl >}}
 
-For \\(m=2\\) and greater, the solution is a lot of algebra. I resorted to using
+For {{< math >}}m=2{{< /math >}} and greater, the solution is a lot of algebra. I resorted to using
 Wolfram Alpha. For 2 service channels, the equation reduces to
 
-\\[
-\\frac{2\\rho}{(\\rho^2-1)^2} = 1
-\\]
+{{< math >}}
+\frac{2\rho}{(\rho^2-1)^2} = 1
+{{< /math >}}
 
 The solution of this is
 
-\\[
-\\rho = \\frac{1}{2} \\left( \\sqrt{2} \\sqrt{\\lambda+2} + \\sqrt{2} \\sqrt{ \\frac{ -2 \\lambda - \\lambda^2 + \\sqrt{2} \\sqrt{\\lambda+2}}{\\lambda+2}} \\right)
-\\]
+{{< math >}}
+\rho = \frac{1}{2} \left( \sqrt{2} \sqrt{\lambda+2} + \sqrt{2} \sqrt{ \frac{ -2 \lambda - \lambda^2 + \sqrt{2} \sqrt{\lambda+2}}{\lambda+2}} \right)
+{{< /math >}}
 
 where
 
-\\[
-\\lambda = \\frac{1}{6} \\left( -8 + \\sqrt[3]{118-6\\sqrt{273}} + \\sqrt[3]{2(59+3\\sqrt{273})}\\right)
-\\]
+{{< math >}}
+\lambda = \frac{1}{6} \left( -8 + \sqrt[3]{118-6\sqrt{273}} + \sqrt[3]{2(59+3\sqrt{273})}\right)
+{{< /math >}}
 
-Or \\(\\rho \\approx 0.371507 \\). This gets worse for \\(m=3\\) and above, and
-there's no single solution for all \\(m\\). It's not too bad to plot, though;
+Or {{< math >}}\rho \approx 0.371507 {{< /math >}}. This gets worse for {{< math >}}m=3{{< /math >}} and above, and
+there's no single solution for all {{< math >}}m{{< /math >}}. It's not too bad to plot, though;
 here's an interactive [Desmos
 calculator](https://www.desmos.com/calculator/mblitsyfkg) where you can see the
-queueing curve in blue, and its derivative in orange, as you vary \\(m\\). Where
-the derivative crosses the line \\(y=1\\) is the "knee" by the definition I'm
+queueing curve in blue, and its derivative in orange, as you vary {{< math >}}m{{< /math >}}. Where
+the derivative crosses the line {{< math >}}y=1{{< /math >}} is the "knee" by the definition I'm
 using in this section.
 
 {{< desmos mblitsyfkg >}}
@@ -113,7 +113,7 @@ using in this section.
 The behavior, although I can't plot it with an equation, is not different from
 what you've seen previously: as you increase the number of service channels, the
 knee moves to the right. Notice how the orange line jumps when you set
-\\(m=1\\).
+{{< math >}}m=1{{< /math >}}.
 
 I'd conclude this section by saying that I think this isn't the right direction
 to take this discussion; the "knee" is supposed to be a kind of rule of thumb.
@@ -122,18 +122,18 @@ Clearly, "performance is bad above utilization of 0" isn't useful.
 
 ### Requests Spend As Much Time Waiting As In Service
 
-The second definition is simply the point where \\(R=2S\\), or \\(R/S=1\\); the
+The second definition is simply the point where {{< math >}}R=2S{{< /math >}}, or {{< math >}}R/S=1{{< /math >}}; the
 solution of
 
-\\[
-\\frac{1}{1-\\rho^m} = 2
-\\]
+{{< math >}}
+\frac{1}{1-\rho^m} = 2
+{{< /math >}}
 
-The solution in terms of \\(\\rho\\) turns out to be not too difficult:
+The solution in terms of {{< math >}}\rho{{< /math >}} turns out to be not too difficult:
 
-\\[
-\\rho = 2^{-1/m}
-\\]
+{{< math >}}
+\rho = 2^{-1/m}
+{{< /math >}}
 
 Which is not too different, in fact, than the solution to Cary Millsap's
 definition. Here are both
@@ -158,7 +158,7 @@ time?"
 
 Although this would be possible to do, it would be tedious, because latency
 quantile calculations for M/M/m queueing systems are a bit intricate.  Neil
-Gunther's book delves into that a bit if you're curious. Solving for \\(\\rho\\)
+Gunther's book delves into that a bit if you're curious. Solving for {{< math >}}\rho{{< /math >}}
 when quantile latency equals some multiple of service time, as a function of the
 number of service channels, would probably be harder than solving for the slope
 of the queueing curve.
@@ -175,12 +175,12 @@ very sensitive to changes in utilization. The change in the curve's derivative,
 of course, is its second derivative. When does this become large?
 
 To answer this formally, I'd have to define "large" and I'd also have to solve
-the second derivative of the queueing curve for \\(\\rho\\) as a function of
-\\(m\\) as usual. Here's the second derivative:
+the second derivative of the queueing curve for {{< math >}}\rho{{< /math >}} as a function of
+{{< math >}}m{{< /math >}} as usual. Here's the second derivative:
 
-\\[
--\\frac{m\\rho^{\\left(m-2\\right)}\\left(m\\rho^m+\\rho^m+m-1\\right)}{\\left(\\rho^m-1\\right)^3}
-\\]
+{{< math >}}
+-\frac{m\rho^{\left(m-2\right)}\left(m\rho^m+\rho^m+m-1\right)}{\left(\rho^m-1\right)^3}
+{{< /math >}}
 
 This looks hard to solve, and I'm not sure what value I'd pick for "large;" it
 would necessarily be arbitrary. It turns out it is easy to avoid finding this

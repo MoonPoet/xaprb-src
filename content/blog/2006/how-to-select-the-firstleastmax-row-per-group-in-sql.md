@@ -170,7 +170,7 @@ from (
 ) as x where x.row_number <= 2;
 ```
 
-This isn't one pass through the table, by the way. The subquery is implemented as a temporary table behind the scenes, so filling it with data is one pass; then selecting every row from it and applying the `WHERE` clause is another. However, twice through is still O(n) with respect to the table size. That's a lot better than correlated subqueries, which are \\(O(n^2)\\) with respect to the group size---even moderate group sizes cause bad performance (say there are five varieties of each fruit. That's on the order of 25 passes through the table, all told).
+This isn't one pass through the table, by the way. The subquery is implemented as a temporary table behind the scenes, so filling it with data is one pass; then selecting every row from it and applying the `WHERE` clause is another. However, twice through is still {{< math >}}O(n){{< /math >}} with respect to the table size. That's a lot better than correlated subqueries, which are {{< math >}}O(n^2){{< /math >}} with respect to the group size---even moderate group sizes cause bad performance (say there are five varieties of each fruit. That's on the order of 25 passes through the table, all told).
 
 ### One-pass technique on MySQL... maybe?
 

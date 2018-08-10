@@ -9,21 +9,18 @@ description: "I've used MathJax for LaTeX mathematical typesetting for years; I 
 image: "/media/2018/04/fractal-1405724_1280.jpg"
 ---
 
-For several years, I've used MathJax on this blog to typeset mathematical
-formulae in LaTeX notation. MathJax is fully compatible with LaTeX, and makes it
-simple to create beautifully typeset equations such as the following:
-
-
-\\[
-\\rho = \\frac{1}{2} \\left( \\sqrt{2} \\sqrt{\\lambda+2} + \\sqrt{2} \\sqrt{ \\frac{ -2 \\lambda - \\lambda^2 + \\sqrt{2} \\sqrt{\\lambda+2}}{\\lambda+2}} \\right)
-\\]
-
-[MathJax](https://www.mathjax.org/) is sophisticated, but it's large and has a
-lot of dependencies. It's not slow, but [KaTeX](https://khan.github.io/KaTeX/)
-is a lightweight drop-in replacement that's even faster. I've switched to use
-KaTeX on this blog for speed and simplicity.
+For several years, I've used MathJax on this blog to typeset mathematical formulae in LaTeX notation.
+[MathJax](https://www.mathjax.org/) is sophisticated, but it's large and has a lot of dependencies.
+It's not slow, but [KaTeX](https://khan.github.io/KaTeX/) is a lightweight drop-in replacement that's even faster.
+I've switched to use KaTeX on this blog for speed and simplicity.
 
 <!--more-->
+
+MathJax and KaTeX use LaTeX notation to make it simple to create beautifully typeset equations such as the following:
+
+{{< math >}}
+\rho = \frac{1}{2} \left( \sqrt{2} \sqrt{\lambda+2} + \sqrt{2} \sqrt{ \frac{ -2 \lambda - \lambda^2 + \sqrt{2} \sqrt{\lambda+2}}{\lambda+2}} \right)
+{{< /math >}}
 
 MathJax can be loaded from a CDN, but my website is [hosted on a
 CDN](https://netlify.com) anyway, and I prefer to "vendor" my dependencies and
@@ -34,7 +31,7 @@ so on. KaTeX is *much* smaller.
 
 MathJax is simple to install, despite its size. If you're using it from a CDN,
 it's a one-line `<script>` tag in the web page's header. Then you can just write
-LaTeX---sorry, that's \\(\LaTeX\\)---in your page's source. MathJax makes the
+LaTeX---sorry, that's {{< math >}}\LaTeX{{< /math >}}---in your page's source. MathJax makes the
 rest happen magically.
 
 KaTeX is slightly more involved. You have to include a JavaScript file in the

@@ -9,7 +9,7 @@ Sometimes it is important to know which values in a sequence are missing, either
 
 ### Exclusion joins
 
-Possibly the most efficient technique, depending upon the application, is to use an [exclusion join](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/) against a list of all legal values (for example, an [integers table](/blog/2005/12/07/the-integers-table/)). For instance, at my current employer we assign a unique tracking ID to certain bits of data. For reasons lost in the mist of time, we use three-character combinations of letters and numbers. It's effectively a base-36 number system. It is not the most efficient thing to work with in SQL! Since there is no magical built-in way to get the database to assign the next unused value in the sequence, we keep a table with all \\( 36^3 \\) legal values, and do an exclusion join against the list of legal values. This is an acceptable way to find the next values, but of course it's nowhere near optimal; when transactional consistency is needed, we have to lock tables up and do an expensive query. An identity (`auto_increment`) column would be preferable.
+Possibly the most efficient technique, depending upon the application, is to use an [exclusion join](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/) against a list of all legal values (for example, an [integers table](/blog/2005/12/07/the-integers-table/)). For instance, at my current employer we assign a unique tracking ID to certain bits of data. For reasons lost in the mist of time, we use three-character combinations of letters and numbers. It's effectively a base-36 number system. It is not the most efficient thing to work with in SQL! Since there is no magical built-in way to get the database to assign the next unused value in the sequence, we keep a table with all {{< math >}} 36^3 {{< /math >}} legal values, and do an exclusion join against the list of legal values. This is an acceptable way to find the next values, but of course it's nowhere near optimal; when transactional consistency is needed, we have to lock tables up and do an expensive query. An identity (`auto_increment`) column would be preferable.
 
 Putting three-character codes behind and assuming you want to analyze some existing data for holes without creating lists of legal values, it is possible to find missing values in a sequence by matching it against itself. For example, I am helping someone design a database to store information about gravestones. The original data was hand-entered into a spreadsheet, with a single column to keep track of gravestone numbers. There are duplicate and missing values in the sequence, both of which can indicate data problems, so it's highly desirable to find and fix them. After importing the spreadsheets verbatim into a staging table, I ran a number of analyses to find data problems before transforming the data into the final tables.
 
@@ -125,7 +125,7 @@ It's necessary to change the final `WHERE` clause to `stop <> ''` because `CHAR(
 
 ### Performance analysis: rewriting without subqueries
 
-I don't like correlated subqueries. In fact, I avoid subqueries if at all possible. Correlated subqueries are especially bad because, depending on the query optimizer, they may force the RDBMS to build a temporary table and probe into it for *each value* in the left-most table, which is \\( O(n^2) \\). It dawned on me that the query could be written as [left joins](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/):
+I don't like correlated subqueries. In fact, I avoid subqueries if at all possible. Correlated subqueries are especially bad because, depending on the query optimizer, they may force the RDBMS to build a temporary table and probe into it for *each value* in the left-most table, which is {{< math >}} O(n^2) {{< /math >}}. It dawned on me that the query could be written as [left joins](/blog/2005/09/23/how-to-write-a-sql-exclusion-join/):
 
 ```sql
 select l.id + 1 as start, min(fr.id) - 1 as stop
@@ -136,7 +136,7 @@ where r.id is null and fr.id is not null
 group by l.id, r.id;
 ```
 
-Of course, this is hardly, if at all, better. The `<` in the join condition makes the join essentially a `CROSS JOIN`, which is still an \\( O(n^2) \\) join. Just to see how the query optimizer handles this, I ran it through both MySQL and Microsoft SQL server, and looked at the query plans. I filled the table with values up to 5000 (large enough that the DBMSs would create statistics on the index) and then made holes in the sequence as follows:
+Of course, this is hardly, if at all, better. The `<` in the join condition makes the join essentially a `CROSS JOIN`, which is still an {{< math >}} O(n^2) {{< /math >}} join. Just to see how the query optimizer handles this, I ran it through both MySQL and Microsoft SQL server, and looked at the query plans. I filled the table with values up to 5000 (large enough that the DBMSs would create statistics on the index) and then made holes in the sequence as follows:
 
 | start | stop |
 |------:|-----:|
