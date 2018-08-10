@@ -7,9 +7,10 @@ categories:
 - Watches
 date: 2017-02-21 15:31:44 -0500
 description: I think the Nokia/Withings Steel HR is the best hybrid smart watch with heart rate tracking and notifications.
-image: /media/2017/02/runner.jpg
 title: The Nokia-Withings Steel HR
-
+credit: "https://unsplash.com/photos/dMeEJRE18VI"
+image: "/media/2017/02/unsplash-photos-dMeEJRE18VI.jpg"
+thumbnail: /media/2017/02/unsplash-photos-dMeEJRE18VI.tn-500x500.jpg
 ---
 After thinking about smart watches, activity trackers, and similar devices for a
 while, I bought a Withings Steel HR. My goal was to find a traditional stylish-looking
@@ -230,5 +231,3 @@ As I mentioned above, after a year using the Withings/Nokia watch, I've changed 
 - One of the watches from Fossil, though I kind of doubt it's what I want; perhaps the Q Accomplice
 
 What are your thoughts and experiences using any of these devices?
-
-[Picture Credit](https://www.flickr.com/photos/mkrigsman/8409907884)
