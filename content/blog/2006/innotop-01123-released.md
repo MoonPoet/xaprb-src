@@ -16,6 +16,6 @@ As usual, it's a combination of bug fixes, new features, and enhancements to exi
 *   It handles foreign key error information better.
 *   Read the changelog in the package for the full list of changes.
 
-I hope you find it useful. As always, leave your comments.
+I hope you find it useful.
 
 

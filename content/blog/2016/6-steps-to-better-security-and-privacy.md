@@ -10,6 +10,7 @@ categories:
 description: 'VPN, Keybase, Signal, and more: take these 6 steps to improve your digital
   security.'
 image: /media/2016/11/blue-abstract-glass-balls.jpg
+credit: https://www.pexels.com/photo/blue-abstract-glass-balls-1341/
 draft: false
 
 ---
@@ -55,7 +56,7 @@ Does this attack sound far-fetched? It's not. In the last year I've gotten amazi
 
 One way to avoid this is to agree on a family password or other cue. Many families have passwords for unexpected situations such as [sending a coworker to pick up the kids from school](http://www.homesafetyeducation.com/welcome/index.php?option=com_content&view=article&id=55&Itemid=59) when there's an emergency, for example.
 
-I'm not sure I have the right answer for this yet. Please comment if you have a suggestion. We need a technique that works for humans under stressful situations, but doesn't fall prey to robo calls trying to create those situations and trick the humans into bypassing the system or revealing the secret.
+I'm not sure I have the right answer for this yet. Please let me know if you have a suggestion. We need a technique that works for humans under stressful situations, but doesn't fall prey to robo calls trying to create those situations and trick the humans into bypassing the system or revealing the secret.
 
 ### 3. Use Signal or WhatsApp
 
@@ -111,6 +112,5 @@ software, and remained vulnerable.
 
 ### Conclusions
 
-Please share this post with friends and family. And please post comments below and let me know what you think.
+Please share this post with friends and family. And please let me know what you think.
 
-[Photo Credit](https://www.pexels.com/photo/blue-abstract-glass-balls-1341/)

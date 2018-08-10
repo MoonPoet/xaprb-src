@@ -776,7 +776,7 @@ This technique is also useful in guitars and other stringed instruments, but eac
 
 I tried to find the book from which I studied tuning as a child, but I can't anymore. I thought it was an old Dover edition. The Dover book on tuning that I can find is not the one I remember.
 
-You can find a little bit of information at various places online. One site with interesting information is [Historical Tuning of Keyboard Instruments](http://historicaltuning.com/) by Robert Chuckrow. I looked around on Wikipedia but didn't find much of use. Please suggest further resources in the comments.
+You can find a little bit of information at various places online. One site with interesting information is [Historical Tuning of Keyboard Instruments](http://historicaltuning.com/) by Robert Chuckrow. I looked around on Wikipedia but didn't find much of use.
 
 In this post I discussed the equally-tempered tuning, but there are many others. The study of them and their math, and the cultures and musical histories related to them, is fascinating. Next time you hear bagpipes, or a non-Western instrument, pay attention to the tuning. Is it tempered? Are there perfect intervals other than the octave? Which ones?
 

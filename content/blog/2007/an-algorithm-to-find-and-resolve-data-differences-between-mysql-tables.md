@@ -46,9 +46,9 @@ I've found a number of tools that are either not complete or don't quite
 address the need, but reading the source code has been very productive.
 There's [Giuseppe Maxia's work in remote MySQL table
 comparison](http://www.perlmonks.org/?node_id=381053). I
-based the MySQL Table Checksum tool on some of this work. Read the comments on
+based the MySQL Table Checksum tool on some of this work. Read
 that link, and you'll see some follow-up from Fabien Coelho, who wrote
-[pg_comparator](http://www.coelho.net/pg_comparator/). The
+[`pg_comparator`](http://www.coelho.net/pg_comparator/). The
 documentation for this tool is an excellent read, as it goes into great detail
 on the algorithm used.
 

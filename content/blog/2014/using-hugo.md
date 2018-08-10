@@ -9,8 +9,7 @@ categories:
   - Web
 ---
 I've switched this blog from Wordpress to [Hugo](https://gohugo.io). If you see any broken links or
-other problems, let me know. I'll re-enable comments and other features in the
-coming days.
+other problems, let me know. 
 
 <!--more-->
 

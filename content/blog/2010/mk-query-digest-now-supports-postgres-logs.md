@@ -24,6 +24,3 @@ $ perl mk-query-digest --type pglog /path/to/log/file
 $ perldoc mk-query-digest
 ```
 
-I'm going to close comments on this blog post so I don't get bug reports in the comments. If you have feedback, please post it to the [Maatkit mailing list](http://groups.google.com/group/maatkit-discuss), or the [Maatkit issue tracker](http://code.google.com/p/maatkit/issues/list). Or reply to the thread I just started on the Postgres mailing list.
-
-

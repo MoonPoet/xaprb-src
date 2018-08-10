@@ -12,6 +12,3 @@ Today I finally tried to search and find out more about the problem. Turns out I
 
 Fortunately, there's an extension for this. It's called [Sync On Arrival](https://addons.mozilla.org/en-US/thunderbird/addon/1396). So far, it's working like a charm. The only thing I had to do was edit the install.rdf to increase the version number. It's compatible with Thunderbird 2, even though it says it's not.
 
-**Edit**: see the comments for a way to do this with configuration alone, rather than an extension.
-
-

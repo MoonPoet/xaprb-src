@@ -59,7 +59,7 @@ Did I mention it's probably cheaper to attend the conference if you're a speaker
 
 ### Don't pay attention to me
 
-This is the first time I've ever done this, so I don't know what the heck I'm talking about. Jay Pipes or someone else from MySQL is likely to correct this blog post. Read the comments :)
+This is the first time I've ever done this, so I don't know what the heck I'm talking about. Jay Pipes or someone else from MySQL is likely to correct this blog post.
 
 I look forward to seeing your proposal, receiving chocolate in the mail, and marking your proposal as "Great." Just kidding! I actually look forward to seeing you at the conference. Remember---you only have a few more weeks to submit! Get crackin' *now* so you can plan something great and write up a killer proposal.
 

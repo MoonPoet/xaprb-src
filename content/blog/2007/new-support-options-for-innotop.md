@@ -6,7 +6,7 @@ categories:
   - Databases
   - Open Source
 ---
-Now that I have [innotop](http://code.google.com/p/innotop) hosted on sourceforge, I'd like to use the tools they provide, especially the forums and mailing lists. I've set up an [innotop-discuss mailing list](http://groups.google.com/group/innotop-discuss), which I hope you'll find a better way to get support than posting in the comments on this blog. I think I will close comments on all innotop-related articles I post, because I can't keep track of feedback in so many places.
+Now that I have [innotop](http://code.google.com/p/innotop) hosted on sourceforge, I'd like to use the tools they provide, especially the forums and mailing lists. I've set up an [innotop-discuss mailing list](http://groups.google.com/group/innotop-discuss).
 
 Sourceforge also provides a bug tracker and other tools, which you are welcome to use. Do whatever seems right to you!
 

@@ -12,6 +12,3 @@ The project is called [flexible-js-formatting](http://code.google.com/p/flexible
 
 All you need to do is grab a copy of the Subversion repository and hack to your heart's content. One person has already contributed some work to reorganize the files and add some of his own patches.
 
-If you're looking to make the code better, you can scan the comments on my old posts for user-suggested improvements that never made it into the code.
-
-

@@ -180,9 +180,6 @@ Here is a summary of the most valuable steps you can take to protect yourself:
 *   Write down the location and access instructions (including passwords) for your password safe, computer, backup hard drives, etc and put it in a safe deposit box.
 * Friends try not to let friends get hacked and ruined. Don't stop at upgrading your own security. Please tell your friends and family to do it, too!
 
-Do you have any other suggestions? Please use the comments below to add your thoughts.
-
-
 ### Further Reading
 
 * http://twofactorauth.org

@@ -104,6 +104,6 @@ My solution relies on a MySQL user variable to do the counting, but there are ma
 
 Finding the first or last row is a bit unintuitive, and it's definitely non-relational, but sometimes it's what you need. The technique I demonstrated in this article is easily adaptable to many kinds of queries. I hope it helped you!
 
-If this article didn't solve your problem, please read these before posting questions to the comments: [how to select the first/least/max row per group in SQL](/blog/2006/12/07/how-to-select-the-firstleastmax-row-per-group-in-sql/) and [how to find the maximum row per group in SQL without subqueries](/blog/2007/03/14/how-to-find-the-max-row-per-group-in-sql-without-subqueries/).
+If this article didn't solve your problem, please read these: [how to select the first/least/max row per group in SQL](/blog/2006/12/07/how-to-select-the-firstleastmax-row-per-group-in-sql/) and [how to find the maximum row per group in SQL without subqueries](/blog/2007/03/14/how-to-find-the-max-row-per-group-in-sql-without-subqueries/).
 
 

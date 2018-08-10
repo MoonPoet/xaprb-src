@@ -81,6 +81,3 @@ I'm also interested in seeing them succeed because I anticipate that even if thi
 
 Stay tuned. More details are forthcoming.
 
-PS: if you have questions you'd like me to look into while I'm onsite with the engineers, feel free to post them in the comments. But I probably can't answer them yet.
-
-

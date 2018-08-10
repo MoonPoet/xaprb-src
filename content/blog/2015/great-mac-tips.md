@@ -106,8 +106,7 @@ Internet). I did this and it's been working great.
 ### Conclusion
 
 I hope you've enjoyed this collection of nine (plus or minus) power tips to make
-you more productive with a Mac. Post your own to the comments, I'm eager to
-learn more!
+you more productive with a Mac.
 
 Photo credits:
 

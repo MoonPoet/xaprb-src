@@ -38,4 +38,3 @@ But George Lucas wouldn't like that, and I guess he was on the SQL committee.
 
 ![Yoda](/media/2013/02/34182677.jpg)
 
-Comments, you have? MMmmmmmmmrmrrrrr! Leave them below, you will!

@@ -5,7 +5,7 @@ url: /blog/2007/10/02/progress-on-high-performance-mysql-backup-and-recovery-cha
 categories:
   - Databases
 ---
-I wrote a couple weeks ago about my work on the [Backup and Recovery chapter for High Performance MySQL, 2nd Edition](/blog/2007/09/19/high-performance-mysql-second-edition-backup-and-recovery/). Thanks for your comments and suggestions, and thanks to those of you who helped me over email as well.
+I wrote a couple weeks ago about my work on the [Backup and Recovery chapter for High Performance MySQL, 2nd Edition](/blog/2007/09/19/high-performance-mysql-second-edition-backup-and-recovery/). Thanks for your suggestions, and thanks to those of you who helped me over email as well.
 
 I've had several questions about what is included in the chapter, so I thought I'd post the outline as it stands now:
 

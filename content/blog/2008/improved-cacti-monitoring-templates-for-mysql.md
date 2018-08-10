@@ -33,8 +33,6 @@ Cacti templates are very laborious to create if they're complex at all; it takes
 
 This has taken a lot of time. In particular, I spent a lot of time working on it at my former employer, [The Rimm-Kaufman Group](http://www.rimmkaufman.com) (kudos to them for letting me open-source the work) and I just spent most of my weekend writing the scripts to convert from the compact format to XML templates, so it's possible to maintain these beasts. Plus I had to develop the compact format, too. This took a lot of time because I had to understand the Cacti data model, which is pretty complex.
 
-**Please enter issue reports for bugs, feature requests, etc at the [Google project homepage](http://code.google.com/p/mysql-cacti-templates/issues/list), *not* in the comments of this blog post**. I do not look through comments on my blog when I'm trying to remember what I should be working on for a software project.
-
-<small>PS: You may also be interested in [Alexey Kovyrin's list of templates for monitoring servers](http://blog.kovyrin.net/2007/10/06/useful-cacti-templates-to-monitor-your-servers/).</small>
+PS: You may also be interested in [Alexey Kovyrin's list of templates for monitoring servers](http://blog.kovyrin.net/2007/10/06/useful-cacti-templates-to-monitor-your-servers/).
 
 

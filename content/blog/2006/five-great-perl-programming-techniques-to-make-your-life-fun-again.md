@@ -184,7 +184,7 @@ $fk =~ s#(?<=\()([^\)]+)(?=\))#join(', ', sort(split(/, /, $1)))#ge;
 # $fk is now "FOREIGN KEY (`name`, `seq`) REFERENCES `tbl` (`name`, `seq`)";
 ```
 
-If you want to know how that works, read the comments on my earlier post about a [duplicate index and foreign key checker for MySQL](/blog/2006/09/17/duplicate-index-checker-version-18-released/).
+If you want to know how that works, read my earlier post about a [duplicate index and foreign key checker for MySQL](/blog/2006/09/17/duplicate-index-checker-version-18-released/).
 
 If you're like me five years ago, you might think that's scary as hell at first. "Execute arbitrary text as though it's Perl code!?!? What moron thought up that security exploit waiting to happen and made it part of the language?!?!?"
 

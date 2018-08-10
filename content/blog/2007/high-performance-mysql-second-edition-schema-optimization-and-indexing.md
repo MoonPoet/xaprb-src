@@ -11,7 +11,7 @@ The truth is, it's difficult to separate these topics sensibly. I'd like to do i
 
 All this is a preface to the following sentence: schema, indexing, advanced features, and query optimization are intermingled to some extent in the three chapters, even though we tried to separate the topics sensibly. I haven't yet taken some of the suggestions I got in comments on the last chapter I posted. Like I said, reorganizing is a lot of work :-)
 
-Here's the outline. I have the same kinds of questions as before: what are we forgetting, do you have any questions or topics you'd like us to cover, etc? Comments are welcome.
+Here's the outline. I have the same kinds of questions as before: what are we forgetting, do you have any questions or topics you'd like us to cover, etc?
 
 [**Update**: I forgot to mention the vital statistics. So far it's about 55 pages printed.]
 

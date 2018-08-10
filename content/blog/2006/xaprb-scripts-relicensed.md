@@ -28,6 +28,6 @@ I read Richard Stallman's writing carefully. Though he has a reputation for bein
 
 This is also a forward-looking change. I'm not trying to be grandiose about these little scripts I've written. They're small snippets and they won't change the world. But I've been working on some other things that are more significant, and I want everything I release to be licensed consistently with my beliefs. When I release these other projects, I'll be careful to license them in accordance with what they are, what they do, and how others might find them useful.
 
-I hope you, or the projects you're working on, will find my work useful. Please feel free to contact me if you have any questions, comments, or improvements.
+I hope you, or the projects you're working on, will find my work useful.
 
 

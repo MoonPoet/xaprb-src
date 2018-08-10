@@ -191,8 +191,7 @@ I also have some specific suggestions about integrating exercise and
 physical wellness into your daily rhythm for maximum impact. I will share that
 in a later post.
 
-If you try my suggestions, please use the comments to let me know how it works
-for you, and what other suggestions you have.
+If you try my suggestions, let me know how it works for you, and what other suggestions you have.
 
 ### References
 

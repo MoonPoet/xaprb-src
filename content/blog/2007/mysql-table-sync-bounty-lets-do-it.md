@@ -33,6 +33,5 @@ A little while ago I offered to take time off work and improve [MySQL Table Sync
 I was thinking about using a third party to handle the money, but I decided it's not that much money, and the people I spoke to had no qualms about sending me money directly. Here's how I'm thinking of handling it:
 
 *   I'm just passing the hat, I'm not an official charitable organization or anything :-)
-*   Leave a comment with your email, or send an email to me.
 *   We can work out how to transfer the money, in whatever way is kosher for you. I have a PayPal account, or I can give you my address and you can mail me a check, or we can figure out something else if that doesn't work.
 *   Let me know if there's a particular feature you want.

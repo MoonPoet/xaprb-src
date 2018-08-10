@@ -137,7 +137,6 @@ Code freezes thus make systems more likely to break, while impacting productivit
 
 I believe that a focus on improving the processes by which changes are made, making smaller and more frequent iterations, and finding out and fixing breakage as soon as possible is a better way to the goal. But that's a different article
 
-What have your experiences been? Let me know in the comments.
 
 Image credits: [freeze](http://www.imdb.com/title/tt0118688/), [clock](https://www.flickr.com/photos/jlhopgood/6795353385/), [raccoon](http://memegenerator.net/instance/53212554)
 

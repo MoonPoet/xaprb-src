@@ -5,7 +5,7 @@ url: /blog/2013/02/03/why-does-mysqls-version-comment-change-when-logging-is-ena
 categories:
   - Databases
 ---
-I wonder if the MySQL archaeologists out there would be willing to unearth some (presumably ancient) history for me. Why does the logging configuration merit special mention in the version_comment variable?
+I wonder if the MySQL archaeologists out there would be willing to unearth some (presumably ancient) history for me. Why does the logging configuration merit special mention in the `version_comment` variable?
 
 The more I think about this, the more bizarre it seems. I enabled logging. The version reported by the server changed. No, really, is my server somehow *a different version of MySQL* now?
 

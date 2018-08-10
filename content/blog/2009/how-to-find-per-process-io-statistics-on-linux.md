@@ -50,6 +50,4 @@ firefox              28451          1          1          0          0 sda4
 
 I deliberately generated a bunch of I/O by deleting my Firefox history and cache.
 
-Got any better ideas, warnings, etc? Post them in the comments.
-
 

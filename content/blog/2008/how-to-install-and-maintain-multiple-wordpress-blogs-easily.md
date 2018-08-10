@@ -51,7 +51,7 @@ RewriteRule (dogs|cats) /blog/$1/index.php [L]
 </IfModule>
 ```
 
-Are there any better ways of doing this? I'm curious. Leave a comment if you know of one.
+Are there any better ways of doing this?
 
 ### Fixing the maintenance headache
 

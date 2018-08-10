@@ -39,7 +39,4 @@ What do you think?
 
 PS: I remember seeing claims that if more than a small amount (10% or so, as I
 recall?) of a program's code needs to be modified, a rewrite from scratch will
-be a better outcome in less time. If you can find any sources for that claim,
-please leave them in the comments.
-
-
+be a better outcome in less time.

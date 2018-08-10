@@ -31,4 +31,4 @@ The two monitors are running two different X displays. I'm not crystal-clear on 
 3.  When I click on a link in Thunderbird, if Firefox is running on the other display, it says Firefox is already running but not responding, and refuses to open the link. I can't get Firefox running on both displays at once.
 4. My XFCE panel on the laptop display doesn't show windows on the other display. I tried creating a panel for that display too (XFCE recognizes that there are two displays and lets me place the panel on either one), but I couldn't place it at the bottom of the display. When I chose to place it at the bottom, it seemed to place itself 768 pixels from the top (the external monitor is 1280x1024, but the laptop display is 1280x768). So I placed it at the top of the display, added a taskbar applet to it, and voila I had what I wanted---but when I rebooted, the panel showed up on the laptop display again.
 
-Otherwise I haven't noticed any troubles. Anyone who has suggestions on these issues, feel free to post a comment!
+Otherwise I haven't noticed any troubles. 

@@ -213,6 +213,6 @@ This is a bit trickier to write than some of the other user-variable examples I'
 
 In this article I've shown you three methods to do SQL math on a counter that wraps around to zero when it reaches a limit. I showed them to you in order of increasing efficiency, but the second method is both the simplest and the most platform-independent (and probably the most sane).
 
-Can you think of any other ways to do this, or any other uses for these kinds of techniques? Write into the comments!
+Can you think of any other ways to do this, or any other uses for these kinds of techniques? 
 
 

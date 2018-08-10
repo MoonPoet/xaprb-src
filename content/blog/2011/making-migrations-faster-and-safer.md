@@ -40,7 +40,3 @@ This code ends up running three separate ALTER statements: one for each added co
 	end
 
 Sometimes you might not notice repeated ALTER statements in the Ruby code, so you should review the migration's generated SQL in staging. Look for any ALTER and CREATE INDEX statements that reference the same table, and merge them. This can save a lot of work for the database, and reduce the amount of time that the migration locks the table.
-
-Do you have tips or suggestions of your own to add to mine? Post them in the comments, I look forward to your feedback!
-
-

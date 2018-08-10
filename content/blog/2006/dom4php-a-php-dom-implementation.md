@@ -60,7 +60,7 @@ The DOM spec is pretty heavy-weight, and coding something like this in pure PHP 
 4.  Many of the interfaces in the official spec aren't really necessary for an 80% solution, including `DOMImplementation` and `NamedNodeMap`. I omit those.
 5.  No support for namespaces or namespace methods (e.g. `createAttributeNS`)
 
-There may be other differences too, but I can't think of them right now. Write into the comments if you see anything I missed. By the way, if you need some of the missing pieces such as `NamedNodeMap`, I can provide skeleton classes for you; I originally coded them, but then deleted them.
+There may be other differences too, but I can't think of them right now. Let me know if you see anything I missed. By the way, if you need some of the missing pieces such as `NamedNodeMap`, I can provide skeleton classes for you; I originally coded them, but then deleted them.
 
 ### License
 
@@ -68,7 +68,7 @@ I'm releasing this under the [GNU LGPL](http://www.gnu.org/copyleft/lgpl.html). 
 
 ### Feedback welcome, and thanks for all the fish
 
-Please do leave feedback in the comments. Since I wrote this years ago and haven't really thought about it since then, I have no idea how good it is---I can only say I haven't run into any bugs in a while. Maybe I haven't implemented some things I should have, or maybe there are braindead things I've done, who knows. Regardless, I hope you find it helpful.
+Since I wrote this years ago and haven't really thought about it since then, I have no idea how good it is---I can only say I haven't run into any bugs in a while. Maybe I haven't implemented some things I should have, or maybe there are braindead things I've done, who knows. Regardless, I hope you find it helpful.
 
 See you next time!
 

@@ -41,6 +41,4 @@ Amusingly, the author misspelled "definitely" as "definately" a few paragraphs l
 
 I don't have a crystal ball, but I have a feeling people will tire of repetitive, non-original content. I think the current blogging fad will fade quite a bit, and the folks doing it for the better reasons will probably continue writing quality material. I welcome such a change.
 
-One final note: please feel free to leave comments telling me how I can improve my own writing, too!
-
 [^1] Good Copywriting is now defunct.

@@ -21,6 +21,5 @@ Many of these features require gutting and re-building significant portions of t
 
 If you have specific requests, please be sure to ask! I'll get you started: would it be helpful to [monitor NDB status](http://dev.mysql.com/doc/refman/5.1/en/show-engine.html) on many machines at once, if you run a large NDB cluster? I personally don't monitor any such clusters, so this isn't an itch I've scratched, but it would be very little work for me to transform that ugly semicolon-separated stuff into a nice tabular display.
 
-My current TODO list should be finished up in a month or so, and then I'll release a new version. Right now I'm going to take a little break from programming and blogging, so I'll read and reply to your comments when I return.
-
+My current TODO list should be finished up in a month or so, and then I'll release a new version. 
 

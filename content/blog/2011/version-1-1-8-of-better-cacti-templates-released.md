@@ -19,8 +19,6 @@ I've released version 1.1.8 of the [Better Cacti Templates](http://code.google.c
 > performance management](https://vividcortex.com/monitoring/postgres/) among many
 > other features.
 
-There are [upgrade instructions](http://code.google.com/p/mysql-cacti-templates/wiki/UpgradingTemplates) on the project wiki for this and all releases. There is also a comprehensive tutorial on [how to create your own graphs and templates](http://code.google.com/p/mysql-cacti-templates/wiki/CreatingGraphs) with this project. Use the [project issue tracker](http://code.google.com/p/mysql-cacti-templates/issues/list) (**not the comments on this post!**) to view and report issues, and use the [project mailing list](http://groups.google.com/group/better-cacti-templates) to discuss the templates and scripts.
-
 The full changelog follows.
 
 ```

@@ -15,6 +15,6 @@ The ideal way to debug stored routines would be an API in the server, but that d
 *   [Devart dbForge](http://www.devart.com/dbforge/mysql/studio/demostutorials/debugging.html#debugging)
 *   And, if you want to do it yourself, here's a pretty thorough walk-through from [BlueGecko](http://www.bluegecko.net/mysql/debugging-stored-procedures/)
 
-I haven't used any of the above, and I'm not endorsing them, but I thought it might be helpful to have a list in one place. Did I miss any? Please add more information in the comments.
+I haven't used any of the above, and I'm not endorsing them, but I thought it might be helpful to have a list in one place. Did I miss any? 
 
 

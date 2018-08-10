@@ -43,10 +43,5 @@ It's not the same level of granularity as in SQL Server, because for example you
 
 ### Server version and configuration
 
-Finally, server version and configuration affects how and when locks are acquired. Not only is the default transaction isolation level configurable, but options that affect replication and binary logging come into play. There's some discussion about this in the comments on my [previous article on deadlocks](/blog/2006/08/03/a-little-known-way-to-cause-a-database-deadlock/).
-
-### Is there more?
-
-Are there more ways to control locking than I know about? Please post in the comments.
-
+Finally, server version and configuration affects how and when locks are acquired. Not only is the default transaction isolation level configurable, but options that affect replication and binary logging come into play. See my [previous article on deadlocks](/blog/2006/08/03/a-little-known-way-to-cause-a-database-deadlock/).
 

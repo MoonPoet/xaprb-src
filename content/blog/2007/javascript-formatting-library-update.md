@@ -18,7 +18,3 @@ Now I'm involved with quite different things, since I'm working more in programm
 And a few days ago someone [sponsored](/donate/) an improvement to the [number-formatting libraries](/blog/2007/06/19/javascript-number-formatting-library-updated/).
 
 Who knows---someday I may end up building some browser GUI systems again and use these. In the meantime it's encouraging that they remain useful to people.
-
-*Note:* This episode is pre-recorded. I'm taking a short hiatus from blogging and will respond to your comments when I return.
-
-

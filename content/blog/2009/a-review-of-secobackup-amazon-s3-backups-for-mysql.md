@@ -35,7 +35,7 @@ So having done that, how does SecoBackup stack up against my list of ten things 
 9.  Does the system verify that the backup is restorable, e.g. does it run InnoDB recovery before declaring success? **Answer: It does not verify backups.**
 10. Does anyone stand behind it with support, and guarantee working, recoverable backups? How strong is the legal guarantee of this and how much insurance do they have? **Answer: I'll skip this question.**
 
-And then there's the other question someone asked in the comments on the original article: how long does it take to restore the backup? The answer is, for big databases it's going to take A Very Long Time. This is another reason why mysqldump is unusable for backing up large databases.
+And then there's the other question: how long does it take to restore the backup? The answer is, for big databases it's going to take A Very Long Time. This is another reason why mysqldump is unusable for backing up large databases.
 
 Overall I'm not all that impressed with the quality of the software; I crashed it a number of times trying to set things up and take backups, and it does sort of naive things like print output without a trailing linebreak so the terminal gets messed up. But whether it's a good choice really depends, I think, on your data. (Naturally.) It seems like it's pretty convenient, but even if they fixed the problems and added --master-data to the mysqldump options, it would absolutely not work for a lot of the systems I work on. Even if you could back up some of those servers with mysqldump, it would take way too long to restore.
 

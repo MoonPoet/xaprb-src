@@ -346,4 +346,4 @@ I'm not trying to brag; I just want to share with you how this has been a succes
 
 ### Summary
 
-It's pretty hard to summarize such a complex article, but I'd like to wrap up by saying I'm keen to hear your comments. Suggestions for improvements are especially welcome. I hope this article has been helpful for you.
+Suggestions for improvements are welcome. I hope this article has been helpful for you.

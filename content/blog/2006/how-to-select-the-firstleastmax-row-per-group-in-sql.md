@@ -262,10 +262,6 @@ Let's see if that works:
 
 Ah, now we're cooking! It did what I wanted, without a filesort or temporary table. Another way to do this, by the way, is to take `variety` out of the `GROUP BY` so it uses the index on its own. Because this selects a [non-grouped column from a grouped query](/blog/2006/03/11/many-to-one-problems-in-sql/), this only works if you are running with [`ONLY_FULL_GROUP_BY` mode turned off](http://dev.mysql.com/doc/refman/5.0/en/server-sql-mode.html), which I hope you are not doing without good reason.
 
-### Other methods
-
-Be sure to check the comments for user-contributed methods. There are some really novel approaches. I always learn so much from your comments... thank you!
-
 ### Conclusion
 
 Well, that's it. I've shown you several ways of solving the common "get the extreme row from each group" query, and then moved on to how you can get the top N rows from each group in various ways. Then I dove into MySQL-specific techniques which some (including myself, depending on my mood) would regard as mildly foolish to utterly stupid. But if you need the last bit of speed out of your server, you sometimes have to know when to break the rules. And for those who think this is just MySQL foolishness, it's not; I've seen people desperately do these types of things on other platforms too, such as SQL Server. There are hacks and tweaks on every platform, and people who need to use them.

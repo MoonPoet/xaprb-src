@@ -89,6 +89,3 @@ I continue to find that date math and date operations are confusing, and silentl
 
 Both problems were **very** hard to solve. That's why I'm careful with date operations. I find it's safest to leave nothing to chance.
 
-*Note: I'm taking a break from computers and blogging. This is pre-recorded.* I'll moderate your comments shortly.
-
-

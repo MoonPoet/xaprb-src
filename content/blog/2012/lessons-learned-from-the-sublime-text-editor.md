@@ -25,7 +25,7 @@ In fact, many of these older text editors offer *way* more functionality than Su
 
 And now we come to my point: it appears to me, from the enthusiastic response to Sublime Text, that *a large proportion of the developer population either uses a weak-sauce text editor or is utterly untrained on using a powerful one.* How else can we explain the enthusiasm? I honestly can't think of anything. And this is a really saddening thought, because it means that thousands of programmers have completely neglected one of the most important things they could do: become truly proficient, if not expert, with their text editor. The text editor is to the programmer as the wrench is to the mechanic, as the compass is to the navigator, as the shoe is to the runner. It is arguably the single most important tool you'll use as a programmer.
 
-There's just no excuse. If you aren't using a powerful text editor (and I would count Sublime Text as one), *get one.* And if you aren't at least an advanced user of that editor, *get a move on it.* I'm not the first to say this, but I can't remember or locate the quotation about this topic that I'm trying to recall. Maybe someone can help out in the comments.
+There's just no excuse. If you aren't using a powerful text editor (and I would count Sublime Text as one), *get one.* And if you aren't at least an advanced user of that editor, *get a move on it.* I'm not the first to say this, but I can't remember or locate the quotation about this topic that I'm trying to recall. 
 
 What's your favorite text editor? What's your favorite resource for becoming an amazing wizard with it, so that you regularly do the kinds of tricks that make your friends say "hey, what editor is that?"
 

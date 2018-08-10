@@ -11,6 +11,6 @@ I'm at [Hotsos Symposium](http://www.hotsos.com/sym12.html) this week, and it su
 *   Familiar, comfortable tools and techniques, or capabilities of the Oracle Database, that you miss in MySQL
 *   Equivalents or replacements for the aforementioned
 
-Do you have anything to share with your fellow DBAs going through ODT (Oracle Delerium Tremens)? Do you have any wishes that you haven't satisfied yet? Post in the comments and let's see if we can create a sort of forum for sharing and/or a wishlist in case someone gets an urge to fill in a missing piece!
+Do you have anything to share with your fellow DBAs going through ODT (Oracle Delerium Tremens)? Do you have any wishes that you haven't satisfied yet?
 
 

@@ -14,6 +14,6 @@ I have never been a very big promoter. I prefer to let people promote things the
 
 With that said, I often hear people saying some variant of "Maatkit saved my behind, thanks so much. I use it all the time."
 
-But that's my private email and phone calls. So now is your chance to say so in public. Put your love story in the comments, and let's see if Maatkit is notable or not. Oh, and feel free to bring back the Wikipedia page if you think Wikipedia is notable enough that it's important for Maatkit to be there ;-)
+But that's my private email and phone calls. So now is your chance to say so in public.
 
 

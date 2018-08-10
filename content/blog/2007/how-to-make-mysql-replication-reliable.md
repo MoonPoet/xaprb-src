@@ -7,7 +7,7 @@ categories:
 ---
 MySQL statement-based replication is widely discussed, but I haven't seen much about how to design a replication setup for low downtime and easy administration. Statement-based replication has inherent shortcomings experienced MySQL users know to avoid, but rarely write about. This article explains how to avoid problems, help your replicas stay in sync with the master, and recover from disasters more quickly.
 
-By the way, I'm fairly new to MySQL replication. Less than two months ago I was asking many of you for advice. I've had to come up to speed on it pretty quickly. So, if I miss something or get something wrong, please leave comments and help me out.
+By the way, I'm fairly new to MySQL replication. Less than two months ago I was asking many of you for advice. I've had to come up to speed on it pretty quickly. So, if I miss something or get something wrong, please help me out.
 
 ### Context
 
@@ -171,7 +171,4 @@ Sometimes replication gets very unhappy about new features. I remember the first
 
 In this article I tried to summarize what I've learned about making replication as reliable and recoverable as possible over the last several months. These are tried-and-true techniques for most experienced MySQL users, but I found a paucity of information on the web about it, so I thought it would be helpful to write it down.
 
-I'm sure this is an incomplete list, and maybe I've even gotten some things wrong, but hopefully this will help you avoid a lot of pain if you're new to MySQL replication. If you have other things to add, please write into the comments.
-
-
-
+I'm sure this is an incomplete list, and maybe I've even gotten some things wrong, but hopefully this will help you avoid a lot of pain if you're new to MySQL replication.

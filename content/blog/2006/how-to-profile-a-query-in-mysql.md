@@ -137,7 +137,7 @@ That's a basic overview, but it's all I can offer in this article. You could eas
 
 Regardless of how much homework you have left to do, I hope this article has given you some insight into the level of detailed statistics available to you. Don't limit yourself to `EXPLAIN` and centi-second-granularity execution times in the `mysql` command-line client. That's only the tip of the iceberg.
 
-If you have any comments, please leave them below. I'm especially interested in learning what you know about query optimization and profiling, as I am myself only a self-taught beginner! And if you'd like to stay current with my upcoming articles, especially the upcoming release of the MySQL query profiler I promised, please [subscribe via e-mail or feeds](/index.xml).
+I'm interested in learning what you know about query optimization and profiling, as I am myself only a self-taught beginner! And if you'd like to stay current with my upcoming articles, especially the upcoming release of the MySQL query profiler I promised, please [subscribe via e-mail or feeds](/index.xml).
 
 **Update** Peter has a very good article, which demonstrates some real profiling measurements, on [optimizing loose index scans with `UNION`](http://www.mysqlperformanceblog.com/2006/08/14/mysql-followup-on-union-for-query-optimization-query-profiling/). Well worth a read.
 

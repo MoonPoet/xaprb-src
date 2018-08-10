@@ -7,10 +7,6 @@ categories:
 ---
 In an earlier article I discussed how to [find missing members in a sequence with SQL](/blog/2005/12/06/find-missing-numbers-in-a-sequence-with-sql/). In this article I'll do the reverse: demonstrate how to find the start and end point of each contiguous range.
 
-### Motivation
-
-Someone posted a comment on the article linked above, asking how to do this. At least, that's what I think the question was; I might be misinterpreting it. I considered replying in the comments on that article, but decided it should go in its own article instead.
-
 I'll use the same sample data as in the earlier article: a sequence of integers from 1 to 20, with the numbers 5, 11, 12, 13, and 14 missing. I'll also delete the value 7, so 6 is a range of length 1. The desired answer is
 
 | start | end |

@@ -78,7 +78,7 @@ from category
     on bulk_checkout.cat = category.uid
 ```
 
-It will not work because the joins may cause rows to appear more than once in the result set, which will cause them to be counted too many times in the sums. For instance, if there are two entries in `bulk_checkout` for category 1, every row in `item` for category 1 will be duplicated, and the `qty` will be twice too large. You may think you can divide by `count(*)`, or take averages, or do some other such magic, but I don't think there is a way to do so. Leave a comment if you find a way to do it!
+It will not work because the joins may cause rows to appear more than once in the result set, which will cause them to be counted too many times in the sums. For instance, if there are two entries in `bulk_checkout` for category 1, every row in `item` for category 1 will be duplicated, and the `qty` will be twice too large. You may think you can divide by `count(*)`, or take averages, or do some other such magic, but I don't think there is a way to do so.
 
 Why is this? The subselects need to be independent, so rows in bulk`_checkout` and `item` must not have any effect on each other (via the join) as discussed above.
 

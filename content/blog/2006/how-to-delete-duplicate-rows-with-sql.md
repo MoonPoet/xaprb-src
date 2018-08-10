@@ -5,7 +5,7 @@ url: /blog/2006/10/11/how-to-delete-duplicate-rows-with-sql/
 categories:
   - Databases
 ---
-The comments on my article [how to find duplicate rows with SQL](/blog/2006/10/09/how-to-find-duplicate-rows-with-sql/) made me realize I was simplifying things too much. In particular, I really glossed over the "how to delete duplicate rows" section, which I should have explained in more detail. I hope this article will remedy the omissions.
+My article [how to find duplicate rows with SQL](/blog/2006/10/09/how-to-find-duplicate-rows-with-sql/) was simplifying things too much. In particular, I really glossed over the "how to delete duplicate rows" section, which I should have explained in more detail. I hope this article will remedy the omissions.
 
 Update: I've now written another article on [deleting duplicates when you have no primary key](/blog/2007/02/06/how-to-delete-duplicate-rows-with-sql-part-2/).
 
@@ -87,7 +87,7 @@ where exists(
 
 This won't even work on MySQL because it is trying to [select from the same table it's modifying](/blog/2006/06/23/how-to-select-from-an-update-target-in-mysql/). There are some silly tricks to get around this, which force intermediate materialization of the subquery, but in general you're better off using the `JOIN` technique in MySQL.
 
-[**Edit:** I originally listed an alternate query using a silly trick, which didn't work (my mistake). I've removed that because that kind of query is a Stupid Thing To Do. If you are competent enough to write that query, I don't need to tell you how. See the comments to follow the conversation about this.]
+[**Edit:** I originally listed an alternate query using a silly trick, which didn't work (my mistake). I've removed that because that kind of query is a Stupid Thing To Do. If you are competent enough to write that query, I don't need to tell you how.]
 
 ### Technique 3: be clever about your data
 

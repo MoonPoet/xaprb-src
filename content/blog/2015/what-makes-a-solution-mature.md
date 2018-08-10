@@ -217,8 +217,7 @@ not my problem, and I feel no guilt saying no without explanation. (One of my
 favorite phrases is "no is a complete sentence.") But enough companies have
 asked me, and I have enough friends at these companies, that I thought it would
 be helpful to write this up. Hopefully this serves its intended purpose and
-doesn't hurt any feelings. Please use the comments to let me know if I can
-improve this post.
+doesn't hurt any feelings.
 
 [Bristlecone pine by
 yenchao](https://www.flickr.com/photos/yenchao/9187247776/), [roots by
