@@ -3,13 +3,12 @@ title: "Knowing when it's lose-lose"
 date: "2012-04-03"
 url: /blog/2012/04/03/knowing-when-its-lose-lose/
 image: "/media/2012/04/defeat.jpg"
+credit: https://upload.wikimedia.org/wikipedia/commons/7/79/Defeat_of_Admiral_Linois_by_Commodore_Dance.jpg
 description: "Choose your battles."
 categories:
   - Databases
 ---
 I've been a consultant for over five years now and I'm just beginning to learn some basic things. One of them is how to spot a lose-lose customer relationship. I say I'm just beginning because I continue to find new lose-lose scenarios that I don't see coming.
-
-![Defeat](/media/2012/04/defeat.jpg)
 
 <!--more-->
 
@@ -31,4 +30,3 @@ For example, it's sometimes possible, with great interpersonal skills, to win th
 
 In the end, consulting is a personal relationship. Businesses don't have relationships; people do. And you have to choose your business relationship partners carefully, just as you choose your friends and romantic partner. Developing the ability to spot a person or situation that's stacking the deck against you can be a valuable asset. It's much better never to enter a poisoned relationship than to have to leave one.
 
-[Picture Credit](https://upload.wikimedia.org/wikipedia/commons/7/79/Defeat_of_Admiral_Linois_by_Commodore_Dance.jpg)

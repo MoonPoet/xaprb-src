@@ -1,5 +1,6 @@
 ---
 image: /media/2014/04/loc.jpg
+credit: https://www.flickr.com/photos/glynlowe/8494249683/
 title: "JOIN Versus Key-Value Stores"
 description: "Don't overlook the cost of moving data across the network"
 date: "2014-04-28"
@@ -43,6 +44,5 @@ Of course, the way you'd want to support such a use case in a database like Cass
 
 To sum up: A big advantage (or foot-gun) of a relational database is that ad-hoc queries with complex expressions can be evaluated directly against the data, without moving it across the network. This is possible in some key-value stores, naturally, but not all. So I don't think it's as simple as "if you don't need joins, you aren't doing anything a key-value database can't do too." (That is, again, a paraphrase.)
 
-[Picture Credit](https://www.flickr.com/photos/glynlowe/8494249683/)
 
 

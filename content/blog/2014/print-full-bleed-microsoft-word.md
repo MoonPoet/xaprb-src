@@ -4,6 +4,7 @@ description: "It's simpler than you think."
 date: "2014-11-01"
 url: /blog/2014/11/01/print-full-bleed-microsoft-word/
 image: /media/2014/11/margin.jpg
+credit: https://www.flickr.com/photos/theenmoy/8468001024/
 categories:
   - Desktop
 ---
@@ -29,6 +30,5 @@ Now you're done. Your PDF document will look just as you see it in the visual
 preview, including background colors and other elements that reach the edge of
 the page.
 
-([Picture credit](https://www.flickr.com/photos/theenmoy/8468001024/))
 
 

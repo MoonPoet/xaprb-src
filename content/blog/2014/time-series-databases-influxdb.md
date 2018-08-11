@@ -6,6 +6,7 @@ url: /blog/2014/03/02/time-series-databases-influxdb/
 categories:
   - Databases
 image: /media/2014/03/alice.jpg
+credit: http://www.flickr.com/photos/brandoncwarren/4236278556/
 ---
 
 Time-series databases are of particular interest to me these days. Not only is
@@ -187,6 +188,5 @@ more, I am (through VividCortex) arranging for Paul Dix to visit Charlottesville
 on March 25th to talk about it. The talk is open to the public and free.
 Register [here](http://www.eventbrite.com/e/paul-dix-building-influxdb-an-open-source-time-series-database-company-tickets-10708279753).
 
-[Picture credits](http://www.flickr.com/photos/brandoncwarren/4236278556/)
 
 
