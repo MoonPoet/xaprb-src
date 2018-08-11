@@ -2,6 +2,9 @@
 title: Five great Perl programming techniques to make your life fun again
 date: "2006-10-05"
 url: /blog/2006/10/05/five-great-perl-programming-techniques-to-make-your-life-fun-again/
+credit: "https://unsplash.com/photos/UQJP4eEqRV0"
+image: "/media/2006/10/unsplash-photos-UQJP4eEqRV0.jpg"
+description: "Imagine writing a tenth the code, getting 10x the features, fewer bugs, better performance, and reducing maintenance costs---faster and with more fun!"
 categories:
   - Programming
 ---

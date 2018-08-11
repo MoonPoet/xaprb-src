@@ -46,7 +46,9 @@ going to *trim the black borders off* with ImageMagick's `-trim` command,
 leaving the images perfectly sized and located within the area inside the
 border:
 
-    for img in Screen*; do convert $img -trim $img; done
+```
+for img in Screen*; do convert $img -trim $img; done
+```
 
 And *voila*, the border is gone. The `-trim` command works by deleting the color
 of the corner pixels, shrinking the image perfectly.
