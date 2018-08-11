@@ -2,6 +2,9 @@
 title: The average age of metrics being trended
 date: "2012-10-30"
 url: /blog/2012/10/30/the-average-age-of-metrics-being-trended/
+credit: "https://pixabay.com/en/stock-trading-monitor-business-1863880/"
+image: "/media/2012/10/pixabay-en-stock-trading-monitor-business-1863880.jpg"
+thumbnail: /media/2012/10/pixabay-en-stock-trading-monitor-business-1863880.tn-500x500.jpg
 categories:
   - Databases
 ---

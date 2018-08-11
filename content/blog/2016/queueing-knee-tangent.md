@@ -69,7 +69,7 @@ Here's how that function looks when plotted.
 
 ![Knee as a function of m](/media/2016/11/knee-2.png)
 
-The graph shows that as the number of service channels increases, the
+The graph shows that as the number of service channels increases,
 the knee occurs at increasingly high utilization.
 
 Despite the debate over exactly what the definition of the knee is, this
