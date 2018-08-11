@@ -2,6 +2,8 @@
 title: Crash injection for writing resilient software
 date: "2013-03-14"
 url: /blog/2013/03/14/crash-injection-for-writing-resilient-software/
+credit: "https://unsplash.com/photos/-HPhkZcJQNk"
+image: "/media/2013/03/unsplash-photos--HPhkZcJQNk.jpg"
 categories:
   - Databases
 ---
