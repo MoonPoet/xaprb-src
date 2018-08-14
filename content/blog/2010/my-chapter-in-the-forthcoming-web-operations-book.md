@@ -8,7 +8,7 @@ categories:
 ---
 [Web Operations]({{< amz 1449377440 >}}). By John Allspaw and Jesse Robbins, O'Reilly 2010. (Here's [a link to the publisher's site](http://oreilly.com/catalog/0636920000136)).
 
-[![Web Operations](/media/2010/05/web_operations.gif "fr pa1")]({{< amz 1449377440 >}})
+[![Web Operations](/media/2010/05/web_operations.gif# fr pa1)]({{< amz 1449377440 >}})
 
 This book is due out in about a month. It is part of O'Reilly's Beautiful series, which you might know through [Beautiful Code]({{< amz 0596510047 >}}). This one's about web ops, of course. There are a dozen contributors, including some of my favorites such as Theo Schlossnagle, whose [Scalable Internet Architectures]({{< amz 067232699X >}}) is on my (quite short) list of [essential books](/essential-books). And then there's a chapter from me.
 

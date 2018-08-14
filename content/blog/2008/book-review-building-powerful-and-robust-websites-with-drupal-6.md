@@ -9,7 +9,7 @@ categories:
 
 I just finished reading [Building Powerful and Robust Websites with Drupal 6]({{< amz 1847192971 >}}). I've been working on a website powered by Drupal, and though it was obvious that Drupal is very flexible and capable, I was getting pretty lost in the website. So I wanted to read a book that would explain it to me.
 
-[![Drupal](/media/2008/07/robust_drupal_6.jpg "fr pa1")]({{< amz 1847192971 >}})
+[![Drupal](/media/2008/07/robust_drupal_6.jpg# fr pa1)]({{< amz 1847192971 >}})
 
 Unfortunately, this book didn't help me much. I'd give it 2 out of 5 stars.
 

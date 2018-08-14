@@ -9,7 +9,7 @@ categories:
 
 [MySQL Administrator's Bible]({{< amz 0470416912 >}}) by Sheeri K. Cabral and Keith Murphy, 2009. Page count: 800+ pages. (Here's a [link to the publisher's site](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470416912.html).)
 
-[![MySQL Administrator's Bible](/media/2009/06/mysql-administrators-bible-240x300.jpg "fr pa1")]({{< amz 0470416912 >}})
+[![MySQL Administrator's Bible](/media/2009/06/mysql-administrators-bible-240x300.jpg# fr pa1)]({{< amz 0470416912 >}})
 
 This book is a comprehensive reference guide to MySQL that's accessible to beginning DBAs or DBAs familiar with another database. It has enough detail to be a useful companion throughout a DBA's career. It also covers many related technologies, such as memcached, at a moderate-but-useful level of detail. This isn't exactly a how-to book, and it isn't exactly a reference manual; it's more of a blend of the two.
 

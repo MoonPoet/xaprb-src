@@ -8,7 +8,7 @@ categories:
 ---
 [Forecasting Oracle Performance]({{< amz 1590598024 >}}). By Craig Shallahamer, Apress 2007. Page count: about 250 pages. (Here's [a link to the publisher's site](http://apress.com/book/view/9781590598023)). Short version: buy it and read it, but make sure you don't rely on it alone; deepen your knowledge through other sources.
 
-[![Forecasting Oracle Performance](/media/2010/05/forecasting_oracle_performance.gif "fr pa1")]({{< amz 1590598024 >}})
+[![Forecasting Oracle Performance](/media/2010/05/forecasting_oracle_performance.gif# fr pa1)]({{< amz 1590598024 >}})
 
 I bought and read this book because I'm interested in performance, performance forecasting, and capacity planning. I'm not interested in forecasting Oracle performance per se. However, I have noticed that there is a lot of good literature in the Oracle arena that can apply to other databases (\*cough\* MySQL), and even systems of any type. Oracle and its practitioners are at least a decade ahead of MySQL in terms of treating performance scientifically.
 

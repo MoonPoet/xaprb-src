@@ -12,7 +12,7 @@ tags:
 
 [MongoDB, the Definitive Guide]({{< amz 1449381561 >}}), by Kristina Chodorow and Michael Dirolf, 2010. About 200 pages. (Here's a [link to the publisher's site](http://oreilly.com/catalog/0636920001096).)
 
-[![MongoDB, the Definitive Guide](/media/2010/12/mongodb-definitive-guide.gif "fr pa1")]({{< amz 1449381561 >}})
+[![MongoDB, the Definitive Guide](/media/2010/12/mongodb-definitive-guide.gif# fr pa1)]({{< amz 1449381561 >}})
 
 This is a good introduction to MongoDB, mostly from the application developer's point of view. After reading through this, I felt that I understood the concepts well, although I am not a MongoDB expert, so I can't pretend to be a fact-checker. The topics are clearly and logically presented for the most part; there is a small amount of repetition in one of the appendixes, but I don't mind that. The writing and editing is top-notch, as I've come to expect from O'Reilly.
 

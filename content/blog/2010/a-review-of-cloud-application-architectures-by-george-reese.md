@@ -8,7 +8,7 @@ categories:
 ---
 [Cloud Application Architectures]({{< amz 0596156367 >}}). By George Reese, O'Reilly 2009. (Here's [a link to the publisher's site](http://oreilly.com/catalog/9780596156374)).
 
-[![Cloud Application Architectures](/media/2010/07/cloud_application_architectures.gif "fr pa1")]({{< amz 0596156367 >}})
+[![Cloud Application Architectures](/media/2010/07/cloud_application_architectures.gif# fr pa1)]({{< amz 0596156367 >}})
 
 This is a great book on how to build apps in the cloud! I was happy to see how much depth it went into. It's short---150 pages plus some appendixes---so I was expecting it to be a superficial overview. But it isn't. It is thorough. And it is also obviously built on his own experience building very specific applications that he uses to run his business---he isn't preaching about stuff he doesn't know first-hand. Finally, George Reese is a good writer! It's impressive. This is how he covers so much ground with so much depth in so few pages, and it all makes sense. He takes a side trip every now and then, but it's always in the right place at the right time---how to do a snapshot for backups, for example---and isn't distracting. For a technical book, it has an amazing narrative flow.
 

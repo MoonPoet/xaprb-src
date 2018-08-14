@@ -16,8 +16,8 @@ Last week I read two books on Nagios. I found one easier to use than the other.
 
 ### The books
 
-[![Cover of Nagios System and Network Monitoring](/media/2007/02/nagios_cov.jpg "fr pa1")]({{< amz 1593270704 >}})
-[![Cover of Pro Nagios 2.0](/media/2007/02/pro-nagios.gif "fr pa1")]({{< amz 1590596099 >}})
+[![Cover of Nagios System and Network Monitoring](/media/2007/02/nagios_cov.jpg# fr pa1)]({{< amz 1593270704 >}})
+[![Cover of Pro Nagios 2.0](/media/2007/02/pro-nagios.gif# fr pa1)]({{< amz 1590596099 >}})
 
 [Nagios System and Network Monitoring (Wolfgang Barth, No Starch Press, 2006)]({{< amz 1593270704 >}}) is a delight. It explained Nagios briefly and clearly, showed me how to get it running, and continues to be a useful reference. [Pro Nagios 2.0 (James Turnbull, Apress, 2006)]({{< amz 1590596099 >}}) has a lot of useful information as well, but is harder to read and understand.
 

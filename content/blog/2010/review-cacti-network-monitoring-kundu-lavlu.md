@@ -9,7 +9,7 @@ categories:
 tags:
   - PostgreSQL
 ---
-[![Cacti Network Monitoring](/media/2010/01/cacti-network-monitoring.jpg "fr pa1")]({{< amz 1847195962 >}})
+[![Cacti Network Monitoring](/media/2010/01/cacti-network-monitoring.jpg# fr pa1)]({{< amz 1847195962 >}})
 
 [Cacti 0.8 Network Monitoring]({{< amz 1847195962 >}}), Dinangkur Kundu and S. M. Ibrahim Lavlu, Packt, 2009. Page count: 110 pages.
 

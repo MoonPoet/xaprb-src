@@ -9,7 +9,7 @@ categories:
 ---
 [Web Operations]({{< amz 1449377440 >}}). By John Allspaw and Jesse Robbins, O'Reilly 2010, with a chapter by myself. (Here's [a link to the publisher's site](http://oreilly.com/catalog/0636920000136)).
 
-[![Web Operations](/media/2010/05/web_operations.gif "fr pa1")]({{< amz 1449377440 >}})
+[![Web Operations](/media/2010/05/web_operations.gif# fr pa1)]({{< amz 1449377440 >}})
 
 I wrote a chapter for this book, and it's now on shelves in bookstores near you. I got my dead-tree copy today and read everyone else's contributions to it. It's a good book. A group effort such as this one is necessarily going to have some differences in style and even overlapping content, but overall it works very well. It includes chapters from some really smart people, some of whom I was not previously familiar with. John and Jesse obviously have good connections. A lot of the folks are from Flickr.
 

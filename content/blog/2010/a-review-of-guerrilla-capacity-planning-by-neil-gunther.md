@@ -8,7 +8,7 @@ categories:
 ---
 [Guerrilla Capacity Planning]({{< amz 3540261389 >}}). By Neil J. Gunther, Springer 2007. Page count: about 200 pages, plus appendixes. (Here's [a link to the publisher's site](http://www.springer.com/computer/communication+networks/book/978-3-540-26138-4).)
 
-[![Guerrilla Capacity Planning](/media/2010/07/guerrilla_capacity_planning.jpg "fr pa1")]({{< amz 3540261389 >}})
+[![Guerrilla Capacity Planning](/media/2010/07/guerrilla_capacity_planning.jpg# fr pa1)]({{< amz 3540261389 >}})
 
 Of all the books I've reviewed, this one has taken me the longest to study first. That's because there is a lot of math involved, and Neil Gunther knows a lot more about it than I do. Here's the short version: I'm learning how to use this in the real world, but that's going to take many months, probably years. I've already spent about 10 months studying this book, and have read it all the way through twice---parts of it five times or more. Needless to say, if I didn't think this was a book with value, I wouldn't be doing that. But you'll only get out of this book what you put in. If you want to learn a wholly new way to understand software and hardware scalability, and how to do capacity planning as a result, then buy the book and set aside some study time. But don't think you're going to breeze through this book and end up with a simple N-step method to take capacity forecasts to your boss. If you want that, buy [John Allspaw's book](/blog/2009/10/24/a-review-of-the-art-of-capacity-planning-by-john-allspaw/) instead. (If you're reading this blog post, you need that book.)
 

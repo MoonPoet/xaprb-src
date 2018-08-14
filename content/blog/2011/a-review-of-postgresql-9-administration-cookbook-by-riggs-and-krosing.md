@@ -8,7 +8,7 @@ categories:
 tags:
   - PostgreSQL
 ---
-[![PostgreSQL 9 Administration Cookbook](/media/2011/06/postgreql-administration-cookbook.jpg "pa1 fr")]({{< amz 1849510288 >}})
+[![PostgreSQL 9 Administration Cookbook](/media/2011/06/postgreql-administration-cookbook.jpg# pa1 fr)]({{< amz 1849510288 >}})
 
 [PostgreSQL 9 Administration Cookbook]({{< amz 1849510288 >}}). By Simon Riggs and Hannu Krosing, Packt, 2010. Approximately 330 pages.
 

@@ -8,7 +8,7 @@ categories:
 ---
 Clojure In Action, by Amit Rathore. Manning, 2012. About 400 pages.
 
-[![Clojure In Action](/media/2012/04/clojure-in-action.png "fr pa1")]({{< amz 1935182595 >}})
+[![Clojure In Action](/media/2012/04/clojure-in-action.png# fr pa1)]({{< amz 1935182595 >}})
 
 This is a lucid and interesting introduction to Clojure and the LISP family of programming languages. It's been years since I programmed in LISP and I found myself recalling those days, at the same time as I learned a lot more than I used to know. Indeed, I realized that my knowledge of LISP was only superficial, and that I probably ought to take some time at some point and learn it deeply enough to have the epiphany people talk about. (Can I plead that I've had the epiphany with SQL? No? How about XSLT---it's basically LISP in XML? Drat.)
 
