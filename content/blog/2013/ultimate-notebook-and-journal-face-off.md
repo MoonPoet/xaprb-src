@@ -11,14 +11,14 @@ If you're like me, you spend so much time typing on a computer that a good noteb
 
 TL;DR: The [Apica Premium C.D. Notebook]({{< amz B006ZTHFB2 >}}) is everything. The [Quo Vadis Habana]({{< amz B0066NVC02 >}}) is my previous pick, and I love them both.
 
+<!--more-->
+
 You might also like:
 
 * My [review of the ultimate pen for note-taking](/blog/2015/03/07/ultimate-pen-marker-face-off/)
 * My [rediscovery of the joy of cursive writing](/blog/cursive/)
 
 ![Notebook](/media/2013/07/notebook.jpg)
-
-<!--more-->
 
 For a time, my quest for a notepad was unsatisfying. I tried all the usual things: Moleskine, loose-leaf paper, binders, what have you. But it took a while to find something practical, functional, a joy to write on, and a pleasure to look at and hold.
 
