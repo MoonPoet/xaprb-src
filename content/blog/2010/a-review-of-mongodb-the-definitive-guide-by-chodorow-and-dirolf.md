@@ -16,7 +16,7 @@ categories:
 
 <!--more-->
 
-[![MongoDB, the Definitive Guide](/media/book-covers/mongodb-definitive-guide.jpg# fr pa1 s200x262 3dbook)]({{< amz 1449381561 >}})
+[![MongoDB, the Definitive Guide](/media/book-covers/mongodb-definitive-guide.jpg# s200x262 3dbook)]({{< amz 1449381561 >}})
 
 This is a good introduction to MongoDB, mostly from the application developer's point of view. I am not a MongoDB expert, but after reading this book, I felt that I understood the concepts well. The topics are clearly and logically presented. The writing and editing is top-notch, as I've come to expect from O'Reilly.
 
