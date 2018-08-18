@@ -2,10 +2,14 @@
 title: Essential Books
 date: "2005-01-01"
 url: /essential-books/
+credit: "https://unsplash.com/photos/wWQ760meyWI"
+image: "/media/2005/01/unsplash-photos-wWQ760meyWI.jpg"
+thumbnail: /media/2005/01/unsplash-photos-wWQ760meyWI.tn-500x500.jpg
 classes:
 - h3-cr
 ---
-This page lists the most valuable books on my bookshelf. These books contain knowledge that is so valuable and hard to find that they're worth far more than the cover price.
+This page lists the most valuable books on my bookshelf.
+These books contain knowledge that is worth far more than the price.
 
 ### [High Performance MySQL]({{< amz 1449314287 >}})
 
