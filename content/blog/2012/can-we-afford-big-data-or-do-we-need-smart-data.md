@@ -33,7 +33,7 @@ Smart Data is a recognition of this. I see it as a set of practices that I belie
 
 Here's a diagram that expresses some of these ideas.
 
-![Smart Data Lifecycle](/media/2012/11/smart-data-lifecycle-300x268.png)
+![Smart Data Lifecycle](/media/2012/11/smart-data-lifecycle.png)
 
 I believe that there's an opportunity to keep the most valuable data and throw away the rest, because I've been able to do that in my own work. Much of the research I've done into MySQL performance, for example, is based on ignoring the huge stream of irrelevant data, and focusing on the signal buried in the noise. My work on extracting performance and scalability metrics from TCP traffic is an example, as is my more recent adaptive fault detection work. I've seen alternative implementations of similar ideas that require enormous amounts of data and very expensive computation, yet don't appear to provide any better results than my cheap-and-easy algorithms that operate efficiently on small amounts of data. I believe this approach represents a competitive advantage for businesses in particular.
 

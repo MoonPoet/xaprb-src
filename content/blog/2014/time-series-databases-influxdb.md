@@ -166,7 +166,7 @@ looks a lot like SQL. This is a really big deal; millions of people know SQL and
 can apply large parts of their existing skillset to a dialect of SQL that
 expresses time-series concepts.
 
-![InfluxDB](/media/2014/03/influxdb.png)
+![InfluxDB](/media/2014/03/influxdata-logo.svg)
 
 The query language also has special features that will likely make it possible
 to work with large numbers of series fluidly. By that, I mean a query that wants

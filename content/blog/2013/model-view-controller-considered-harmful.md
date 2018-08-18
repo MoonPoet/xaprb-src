@@ -23,7 +23,7 @@ The design goals make sense. See above. It's just that I find MVC itself---the a
 
 Tell me, without knowing what MVC is, what would you guess the model represents? Controller? View? It would be bad enough if these were abstract terms like "node" or "resource," but they're not abstract. They hint at meaning, and then you discover that MVC doesn't align with the hinted-at meaning. Instead, the M, V, and C represent concepts that are vague and hard to understand, and are kind of a stretch to mentally fit with the terms. This is worse than abstract, it's misleading. It's like bait-and-switch for someone who's trying to grasp what it means.
 
-I don't know where MVC came from and I'm sure I won't change my mind if I find out. I have a hard time believing that I'm the only one who wishes someone had formed a committee[1] to discuss what kind of names to represent the concepts. Especially since there are so many frameworks that abstract things slightly differently, because MVC apparently doesn't suit their designers either, and thus it's necessary to explain the relationship between Framework X's view of the world, and how that loosely maps to the MVC view of the world. It becomes a sloppy comparison to a sloppy analogy.
+I don't know where MVC came from and I'm sure I won't change my mind if I find out. I have a hard time believing that I'm the only one who wishes someone had formed a committee[^1] to discuss what kind of names to represent the concepts. Especially since there are so many frameworks that abstract things slightly differently, because MVC apparently doesn't suit their designers either, and thus it's necessary to explain the relationship between Framework X's view of the world, and how that loosely maps to the MVC view of the world. It becomes a sloppy comparison to a sloppy analogy.
 
 Even more fun: some folks try to invent an MVC framework, like the original ASP.NET, and "get it wrong," to disdainful criticism. Then they have to reinvent it, sometimes several times.
 
@@ -33,6 +33,6 @@ The lesson: great concepts that teach great truths, and could result in great ad
 
 I'm sure my strong opinions on this are a) somewhat ignorant and b) not shared by everyone. Discuss! :-)
 
-[1] Yes, I'm aware that awful things come from committees, like SQL. But I have faith that it would have been better than MVC.
+[^1]: Yes, I'm aware that awful things come from committees, like SQL. But I have faith that it would have been better than MVC.
 
 
