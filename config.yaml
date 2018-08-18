@@ -25,6 +25,7 @@ params:
    Amazon: "xaprb-20"
    Email: "&098;&097;&114;&111;&110;&064;&118;&105;&118;&105;&100;&099;&111;&114;&116;&101;&120;&046;&099;&111;&109;"
    head:
+   foot:
    - '<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>'
    - '<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"6ee277790a99c26a414c9693f","lid":"703c46c578"}) })</script>'
 MetaDataFormat: "yaml"
