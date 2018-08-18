@@ -1,13 +1,14 @@
 ---
+title: "The Queueing Knee, Part 2"
+date: 2016-12-04T20:53:00-05:00
 url: /blog/queueing-knee-slope/
-author: Baron Schwartz
+description: "Part 2: what other definitions of queueing knee are there?"
+image: /media/2016/11/unsplash-photo-SwIQu6xODrI.jpg
+thumbnail: /media/2016/11/unsplash-photo-SwIQu6xODrI.tn-500x500.jpg
+credit: https://unsplash.com/photos/SwIQu6xODrI
 categories:
 - Scalability
 - Math
-date: 2016-12-04T20:53:00-05:00
-description: "Part 2: what other definitions of queueing knee are there?"
-image: "/media/2016/12/knee-2.png"
-title: "The Queueing Knee, Part 2"
 ---
 
 Last week I wrote about the so-called ["knee" in the M/M/m queueing theory
@@ -74,12 +75,12 @@ at {{< math >}}m=1{{< /math >}}. *In a single-server queueing system, the "knee"
 If this is a surprise to you, take another look at the queueing
 "hockey stick" curve. You'll usually see it plotted with a stretched
 horizontal axis, because {{< math >}}0<\rho<1{{< /math >}}, and compressed vertical axis. That
-fools your eye! But when [plotted](https://www.desmos.com/calculator/fokgr3jcyl)
+fools your eye! But when [plotted](https://www.desmos.com/calculator/0y4tillfys)
 without distortion, it's quite clear that the queueing curve is on a diagonal
 right away when {{< math >}}m=1{{< /math >}}.  Here's the queuing curve for 1, 2, and 8 servers
 (red, blue, and green lines).
 
-{{< desmos fokgr3jcyl >}}
+![Queuing Delay Plotted With Square Aspect Ratio](/media/2016/12/knee-1.png)
 
 For {{< math >}}m=2{{< /math >}} and greater, the solution is a lot of algebra. I resorted to using
 Wolfram Alpha. For 2 service channels, the equation reduces to
@@ -103,12 +104,12 @@ where
 Or {{< math >}}\rho \approx 0.371507 {{< /math >}}. This gets worse for {{< math >}}m=3{{< /math >}} and above, and
 there's no single solution for all {{< math >}}m{{< /math >}}. It's not too bad to plot, though;
 here's an interactive [Desmos
-calculator](https://www.desmos.com/calculator/mblitsyfkg) where you can see the
+calculator](https://www.desmos.com/calculator/yqdi14cruv) where you can see the
 queueing curve in blue, and its derivative in orange, as you vary {{< math >}}m{{< /math >}}. Where
 the derivative crosses the line {{< math >}}y=1{{< /math >}} is the "knee" by the definition I'm
 using in this section.
 
-{{< desmos mblitsyfkg >}}
+![Knee Defined As Derivative=1](/media/2016/12/derivative-y-1.png)
 
 The behavior, although I can't plot it with an equation, is not different from
 what you've seen previously: as you increase the number of service channels, the
@@ -137,11 +138,11 @@ The solution in terms of {{< math >}}\rho{{< /math >}} turns out to be not too d
 
 Which is not too different, in fact, than the solution to Cary Millsap's
 definition. Here are both
-[plotted](https://www.desmos.com/calculator/axjk6qjrzj) together, showing
+[plotted](https://www.desmos.com/calculator/dljpiank18) together, showing
 similar behavior. Blue is "wait equals service time" and red is Cary Millsap's
 definition.
 
-{{< desmos axjk6qjrzj >}}
+![Knee Defined As Wait Equals Service Time](/media/2016/12/knee-2.png)
 
 This definition is reasonable, in some sense, if you think "bad performance" is
 roughly equivalent to "my wait is longer than my job, that's a waste." But it's
@@ -212,5 +213,5 @@ channels increases. (The exact shape and rate of that growth varies, but it
 always grows. This follows directly from Erlang's formulas.)
 
 In the end, that principle is the only takeaway from this. There's no knee, but
-the more CPUs or whatever you have, the more fully utilized you should expect to
+the more CPUs (or servers) you have, the more fully utilized you should expect to
 run that system. You're foolish to do otherwise.

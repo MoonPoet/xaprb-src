@@ -1,13 +1,14 @@
 ---
+title: "The Queueing Knee, Part 1"
+date: 2016-11-30T22:02:08-05:00
 url: /blog/queueing-knee-tangent/
-author: Baron Schwartz
+description: "The knee in the queueing response time curve illustrates important truths about queueing theory."
+credit: "https://unsplash.com/photos/K67sBVqLLuw"
+image: "/media/2016/11/unsplash-photos-K67sBVqLLuw.jpg"
+thumbnail: /media/2016/11/unsplash-photos-K67sBVqLLuw.tn-500x500.jpg
 categories:
 - Scalability
 - Math
-date: 2016-11-30T22:02:08-05:00
-description: "The knee in the queueing response time curve illustrates important truths about queueing theory."
-image: "/media/2016/11/knee-1.png"
-title: "The Queueing Knee, Part 1"
 ---
 
 The "knee" in the [M/M/m queueing theory response time
@@ -25,7 +26,7 @@ number of service channels, and although we may argue about the topics in the
 preceding paragraph and whether this is the right definition, it still serves to
 illustrate important concepts.
 
-{{< desmos cqh81xgspq >}}
+![Queueing Delay Knee](/media/2016/11/knee-1.png)
 
 The graph above shows the response time stretch factor curve for a queueing
 system with 8 service channels. This is analogous to a server with 8 CPUs, for
@@ -65,7 +66,8 @@ The root of this expression is a function of {{< math >}}m{{< /math >}} as expec
 \left(m+1\right)^{-\frac{1}{m}}
 {{< /math >}}
 
-Here's how that function looks when plotted.
+Here's how that function looks when
+[plotted](https://www.desmos.com/calculator/lnutkzjitx).
 
 ![Knee as a function of m](/media/2016/11/knee-2.png)
 

@@ -6,24 +6,24 @@ categories:
 - Scalability
 date: 2016-10-30T10:00:39-04:00
 description: "Is there a simple stretch-factor equation that describes M/M/m queueing delay for m>2?"
-image: "/media/2016/10/error-in-heuristic.png"
+credit: "https://unsplash.com/photos/cIcX_aO9LPo"
+image: "/media/2016/10/unsplash-photos-cIcX_aO9LPo.jpg"
+thumbnail: /media/2016/10/unsplash-photos-cIcX_aO9LPo.tn-500x500.jpg
 title: The Response Time Stretch Factor
 ---
 
 Computer systems, and for that matter all types of systems that receive requests
-and process them, have a response time that includes some time waiting in queue
+and process them, have a response time {{< math >}}R{{< /math >}} that includes some time waiting in queue
 if the server is busy when a request arrives. The wait time increases sharply as
-the server gets busier. For simple M/M/m systems there is a simple equation that
+the server utilization {{< math >}}\rho{{< /math >}} increases. For M/M/m queueing systems there is a simple equation that
 describes this exactly, but for more complicated systems this equation is only
 approximate. This has rattled around in my brain for a long time, and rather
-than keeping my notes private I'm sharing them here (although since I'm still
-trying to learn this stuff I may just be putting my ignorance on full display).
+than keeping my notes private I'm sharing them here.
 <!--more-->
 
+Here's the familiar picture of how response time increases as utilization grows:
 
-![Hockey-Stick Curve](/media/2016/10/hockey-stick.png)
-
-I'll skip all the derivations and go through only the basics to get to the results.
+![Hockey-Stick Curve](/media/2016/10/hockey-stick.svg)
 
 ### The Stretch Factor Heuristic and Exact Formula
 
@@ -74,9 +74,9 @@ $$
 R(m, \rho) = 1 + \frac{ \frac{(m \rho)^m}{m!} }{ (1-\rho) \sum_{n=0}^{m-1} \frac{(m \rho)^n}{n!} + \frac{(m \rho)^m}{m!} } \frac{1}{m(1-\rho)}
 $$
 
-If you'd like to see how this looks, check out [this Desmos calculator](https://www.desmos.com/calculator/9dr7azq0ot).
+Here's a picture of the resulting response time curves for various numbers of servers, from 1 to 64. You can explore it on [this Desmos calculator](https://www.desmos.com/calculator/9dr7azq0ot).
 
-{{< desmos 9dr7azq0ot >}}
+![Erlang Curve for 1-64 Servers](/media/2016/10/erlang-1-64.png)
 
 Now here's the part my brain has been trying to connect, almost idly in
 shower-thought time, for a while. If intuition led from one direction to the
@@ -120,7 +120,7 @@ value. In other words, the heuristic's *error function*.  Here's a graph of
 that for several values of {{< math >}}m{{< /math >}}. Red is 1 server, green is 8, purple is 16, orange
 is 64.
 
-{{< desmos qo1n4shf1f >}}
+![Heuristic Error Function](/media/2016/10/heuristic-error.png)
 
 Note that I showed utilization extending out beyond the value 1 because the
 shape of the function is interesting, but that value is impossible---a server can
@@ -246,7 +246,7 @@ divided by {{< math >}}m{{< /math >}} to normalize it relative to the number of 
 a [Desmos calculator](https://www.desmos.com/calculator/7ygut81via) illustrating
 the shape of this adjustment term for 1, 4, 8, and 16 servers:
 
-{{< desmos 7ygut81via >}}
+![Heuristic Error as Function of Utilization](/media/2016/10/heuristic-error-as-f-util.png)
 
 One of the challenges with this is that due to the limitations of floating-point
 math in computers, the heuristic function appears to have no error at low
@@ -276,7 +276,7 @@ to 1, but if you zoom out further, it looks more like... wait for it... part of
 the Gamma function. You can see this on
 [Desmos](https://www.desmos.com/calculator/hsidkl4og8).
 
-{{< desmos hsidkl4og8 >}}
+![Heuristic Error as Function of Servers](/media/2016/10/heuristic-error-as-f-servers.png)
 
 I experimented with this in a different way, by trying to approximate
 {{< math >}}A_{base}{{< /math >}} directly. I just guessed at its shape and came up with the
@@ -289,13 +289,12 @@ $$
 You can see this shape, compared with the actual {{< math >}}A_{base}{{< /math >}}, at this
 [Desmos](https://www.desmos.com/calculator/sgwrqdcnzk).
 
-{{< desmos sgwrqdcnzk >}}
+![Square Root Approximation To Heuristic](/media/2016/10/sqrt-approx-to-heuristic.png)
 
-And [this
-one](https://www.desmos.com/calculator/opa1sfpxfw) shows what this looks like
-when included as a term in the heuristic stretch factor.
+And [this one](https://www.desmos.com/calculator/opa1sfpxfw) shows what this
+looks like when included as a term in the heuristic stretch factor.
 
-{{< desmos opa1sfpxfw >}}
+![Heuristic Via Skewing Utilization](/media/2016/10/heuristic-via-skewing-utilization.png)
 
 Red is Erlang, blue is my heuristic, and black dashed is Gunther's.
 Don't be fooled; mine may look better, but if you examine high utilizations
