@@ -1,13 +1,14 @@
 ---
+title: "The Erlang Response Time Stretch Factor For 3 And 4 Servers"
+date: 2016-12-11T15:57:16-05:00
 url: /blog/erlang-stretch-factor-three-four/
-author: Baron Schwartz
+description: "In which I explore the divergence between the Erlang C formula and Gunther's heuristic approximation."
+credit: "https://unsplash.com/photos/_NNsOxgemgg"
+image: "/media/2016/12/unsplash-photos-_NNsOxgemgg.jpg"
+thumbnail: /media/2016/12/unsplash-photos-_NNsOxgemgg.tn-500x500.jpg
 categories:
 - Math
 - Scalability
-date: 2016-12-11T15:57:16-05:00
-description: "In which I explore the divergence between the Erlang C formula and Gunther's heuristic approximation."
-image: "/media/2016/12/erlang-vs-heuristic-m-3.png"
-title: "The Erlang Response Time Stretch Factor For 3 And 4 Servers"
 ---
 
 In a [previous post](/blog/response-time-stretch-factor/) I explored a few
@@ -87,6 +88,7 @@ are exactly the same for 1 and 2 service channels just doesn't feel accidental.
 But intuition has led me astray many times.
 
 You can graph and visualize all of the above with a [Desmos
-calculator](https://www.desmos.com/calculator/kvffq77evl) that I made for you.
+calculator](https://www.desmos.com/calculator/kujkbhauam) that I made for you.
 
-{{< desmos kvffq77evl >}}
+![Desmos Preview](/media/2016/12/desmos-preview.png)
+
