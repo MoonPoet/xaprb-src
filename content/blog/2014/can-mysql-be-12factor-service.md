@@ -1,9 +1,11 @@
 ---
-image: /media/2014/05/dodecahedron.jpg
 title: Can MySQL be a 12-factor service?
 description: "12-factor systems are easier to operate; can MySQL be treated this way?"
 date: "2014-05-10"
 url: /blog/2014/05/10/can-mysql-be-12factor-service/
+image: /media/2014/05/4193438166_dd211c94dd_o.jpg
+thumbnail: /media/2014/05/4193438166_dd211c94dd_o.tn-500x500.jpg
+credit: https://www.flickr.com/photos/sanchtv/4193438166/
 categories:
   - Programming
   - Databases
@@ -29,8 +31,3 @@ I don't necessarily expect anyone to understand this unless they've had first-ha
 Thought experiment: how hard would it be to make MySQL accept all of its configuration as environment variables? I think it would be feasible to make a wrapper that reads the environment variables and exec's `mysqld` with the resulting options. But if MySQL could be configured via environment variables directly, that'd be even nicer. (I can't think of an environment variable it respects at the moment, other than `TZ`.)
 
 I don't propose blindly following 12-factor principles. They are most applicable to stateless or little-state applications, such as API servers or web applications. They are harder to use with attachable stateful resources, such as a database server. But even a system like MySQL could sometimes be improved, with regards to operational characteristics, by following 12-factor principles.
-
-[Pic](https://www.flickr.com/photos/sanchtv/4192677571)
-
-
-
