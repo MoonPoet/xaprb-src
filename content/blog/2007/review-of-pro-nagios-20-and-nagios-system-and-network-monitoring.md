@@ -8,17 +8,6 @@ categories:
 ---
 Last week I read two books on Nagios. I found one easier to use than the other.
 
-> Note: [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
-### The books
-
-[![Cover of Nagios System and Network Monitoring](/media/2007/02/nagios_cov.jpg# fr pa1)]({{< amz 1593270704 >}})
-[![Cover of Pro Nagios 2.0](/media/2007/02/pro-nagios.gif# fr pa1)]({{< amz 1590596099 >}})
-
 [Nagios System and Network Monitoring (Wolfgang Barth, No Starch Press, 2006)]({{< amz 1593270704 >}}) is a delight. It explained Nagios briefly and clearly, showed me how to get it running, and continues to be a useful reference. [Pro Nagios 2.0 (James Turnbull, Apress, 2006)]({{< amz 1590596099 >}}) has a lot of useful information as well, but is harder to read and understand.
 
 The differences are mainly in organization, style, and clarity; otherwise the books are identical in many ways. Both have chapters on the same topics. They cover exactly the same subject matter in the same level of detail, have the same target audiences, were written about the same time, are about the same size, and so on.
@@ -26,6 +15,8 @@ The differences are mainly in organization, style, and clarity; otherwise the bo
 Barth's book lets me do a breadth-first search of the subject matter, and Turnbull's makes me do a depth-first search. Breadth-first is a better way to learn a topic like Nagios.
 
 ### Nagios System and Network Monitoring (Wolfgang Barth)
+
+[![Pro Nagios 2.0](/media/book-covers/nagios-2e-wolfgang-barth.jpg# 3dbook)]({{< amz 1593270704 >}})
 
 Barth's book succeeds through clarity, organization, detail, and ease of use. His first language is apparently German, so his English is not always elegant, but it is concise and communicates his knowledge of Nagios well.
 
@@ -38,6 +29,8 @@ The second part is called "In More Detail," and it was very helpful while I conf
 There are few footnotes, and no interruptions in the text. When there are configuration examples, the book shows the whole configuration definition for context, but makes the relevant parts bold, so they're easy to see. There are lots of diagrams, which clearly show concepts that would require hundreds of words to explain. Captions are in the margins so they don't interrupt the text. The only gripe I have is the typeface, which in my subjective opinion is a little hard to speed-read.
 
 ### Pro Nagios 2.0 (James Turnbull)
+
+[![Nagios System and Network Monitoring](/media/book-covers/pro-nagios-turnbull.jpg# 3dbook)]({{< amz 1590596099 >}})
 
 James Turnbull's Pro Nagios 2.0 has valuable information, but it is harder to learn from it for a few reasons:
 
@@ -58,3 +51,10 @@ Barth treats flapping as the minor feature it is, and doesn't mention it until p
 In the appendix on page 401 there's a nice diagram that illustrates flapping in case people need to know more.
 
 Summary: I like Wolfgang Barth's [Nagios System and Network Monitoring]({{< amz 1593270704 >}}) better than James Turnbull's [Pro Nagios 2.0]({{< amz 1590596099 >}}).
+
+> Note: [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
+> your servers are doing in production. VividCortex offers [MySQL performance
+> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
+> performance management](https://vividcortex.com/monitoring/postgres/) among many
+> other features.
+

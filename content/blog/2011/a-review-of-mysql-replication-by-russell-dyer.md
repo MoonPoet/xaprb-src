@@ -8,7 +8,7 @@ categories:
 ---
 [MySQL Replication]({{< amz 0983185409 >}}) by Russell Dyer, Silent Killdeer, 2010. About 180 pages.
 
-[![](/media/2011/06/mysql_replication_front_cover_sm.jpg# fr pa1 ba)]({{< amz 0983185409 >}}) 
+[![MySQL Replication](/media/2011/06/mysql_replication_front_cover_sm.jpg# 3dbook)]({{< amz 0983185409 >}}) 
 
 This is a pocket-sized guide to setting up and managing MySQL replication. It is self-published and made via print-on-demand technology. Topics include how replication works, setting up replication, making backups, and administering replication after it's working. There are several appendixes for replication-related functionality in the MySQL server and command-line tools.
 

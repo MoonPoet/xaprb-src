@@ -9,6 +9,8 @@ categories:
 
 [CouchDB, the Definitive Guide]({{< amz 0596155891 >}}). By J. Chris Anderson, Jan Lehnardt, and Noah Slater, O'Reilly 2010. About 260 pages.
 
+[![CouchDB, the Definitive Guide](/media/book-covers/couchdb-definitive-guide.jpg# 3dbook)]({{< amz 0596155891 >}})
+
 This is a good introduction to CouchDB. I would like more information about server internals from a book titled "definitive guide." But it orients the reader well and shows CouchDB's strengths and use cases clearly. The writing is straightforward and well organized. I think it does a great job at helping the reader see the possibilities and the elegance inherent to the data model and conventions built into CouchDB. I ended up feeling very enthusiastic about CouchDB.
 
 My complaints about the book are that it sometimes doesn't go into enough depth, and it is a little wide-eyed in places. One example is the section explaining how CouchDB can scale to exabyte datasets. I would also like to see a little more formal or rigorous treatment of some topics; I saw the phrase "crash-only design" in several places, but the book never explained what that means.

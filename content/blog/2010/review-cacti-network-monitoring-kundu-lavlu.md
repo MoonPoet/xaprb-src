@@ -9,9 +9,9 @@ categories:
 tags:
   - PostgreSQL
 ---
-[![Cacti Network Monitoring](/media/2010/01/cacti-network-monitoring.jpg# fr pa1)]({{< amz 1847195962 >}})
-
 [Cacti 0.8 Network Monitoring]({{< amz 1847195962 >}}), Dinangkur Kundu and S. M. Ibrahim Lavlu, Packt, 2009. Page count: 110 pages.
+
+[![Cacti Network Monitoring](/media/book-covers/cacti-network-monitoring.jpg# 3dbook)]({{< amz 1847195962 >}})
 
 This is a quite short book that covers some of the breadth but very little of the depth of Cacti. For example, it focuses on Cacti as an SNMP tool for graphing network data, but SNMP is only one of the many ways Cacti can collect data, and of course it graphs anything, not just networks. Each chapter takes the reader through the most important topics, with some code listings and screenshots. On the plus side, this makes it very easy to read quickly, because it doesn't go off on many tangents about special cases and errors.
 
