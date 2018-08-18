@@ -6,9 +6,13 @@ categories:
   - Databases
   - Reviews
 ---
-I've just finished reading [Scalable Internet Architectures]({{< amz 067232699X >}}) by [Theo Schlossnagle](http://omniti.com/is/theo-schlossnagle). It's a great book. Anyone building large systems should read it. Heck, anyone building any system that needs to run on more than one server should read it.
+[Scalable Internet Architectures]({{< amz 067232699X >}}) by Theo Schlossnagle, InformIT, 2006. 225 pages. Here's a [link to the publisher's site](https://www.informit.com/store/scalable-internet-architectures-9780672326998).
 
-[![Scalable Internet Architectures](/media/2009/02/scalable_internet_architectures.jpg# fr pa1)]({{< amz 067232699X >}})
+[![Scalable Internet Architectures](/media/book-covers/scalable-internet-architectures.jpg# 3dbook)]({{< amz 067232699X >}})
+
+<!--more-->
+
+It's a great book. Anyone building large systems should read it. Heck, anyone building any system that needs to run on more than one server should read it.
 
 The book got mixed reviews on Amazon, but I really think that's about writing style, not substance. Sometimes Theo takes the reader on a scenic tour of something that doesn't seem to have much to do with the subject matter, and then wraps up by showing how it is actually directly relevant. For example, he spends quite a bit of time talking about why HTTPS inherently poses different scaling problems than HTTP. If you aren't a patient reader, you might bail out before getting to the punch line.
 

@@ -7,7 +7,9 @@ categories:
   - Programming
   - Reviews
 ---
-[SQL and Relational Theory]({{< amz 0596523068 >}}) *How to Write Accurate SQL Code* by C. J. Date, O'Reilly 2009. Page count: 266 pages of "real" text, plus hefty appendixes. (Here's a link to the publisher's site: [SQL and Relational Theory *How to Write Accurate SQL Code*](http://oreilly.com/catalog/9780596523060/index.html)).
+[SQL and Relational Theory: How to Write Accurate SQL Code]({{< amz 0596523068 >}}) by C. J. Date, O'Reilly 2009. Page count: 266 pages of "real" text, plus hefty appendixes. (Here's a [link to the publisher's site](http://oreilly.com/catalog/9780596523060/index.html)).
+
+[![SQL and Relational Theory](/media/book-covers/sql-relational-theory.jpg# 3dbook)]({{< amz 0596523068 >}})
 
 **This is a very important book for anyone involved with databases**. Before I say why, I need to apologize to Mr. Date. I tech-reviewed part of the book and did not care for it. I am afraid I was quite a curmudgeon in my review comments. So, Mr. Date, if you're reading this---I want to say I enjoyed the book very much after all.
 

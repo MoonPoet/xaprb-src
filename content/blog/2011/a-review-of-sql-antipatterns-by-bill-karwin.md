@@ -8,7 +8,7 @@ categories:
 ---
 [SQL Antipatterns]({{< amz 1934356557 >}}), by Bill Karwin, Pragmatic Bookshelf, 2010. About 300 pages. Here's a [link to the publisher's site](http://pragprog.com/titles/bksqla/sql-antipatterns).
 
-[![SQL Antipatterns](/media/2011/06/bksqla_xlargecover.jpg# fr pa1 ba)]({{< amz 1934356557 >}}) 
+[![SQL Antipatterns](/media/book-covers/sql-antipatterns.jpg# 3dbook)]({{< amz 1934356557 >}}) 
 
 I loved this book. (Disclosure: Bill is a colleague of mine.) This is the first book I've read from the Pragmatic Bookshelf, and if the rest are like this one, I want to read them. The quality of the writing is way above the average technical book. Techniques that feel gimmicky and forced in other books, such as fake stories to introduce each chapter, actually work here (because they're real stories, not fake ones). Each topic is named in a memorable way and introduced very cleverly. Little quotes and excerpts are tastefully used to illustrate and reinforce the topics. The end result is that it's a lot of fun to read. If you do nothing more than read the first and last page of each chapter, you'll enjoy it and learn a lot at the same time.
 

@@ -6,11 +6,11 @@ categories:
   - Databases
   - Reviews
 ---
-[Beginning Database Design: From Novice to Professional]({{< amz 1590597699 >}}). By Clare Churcher, Apress, 2007. Page count: 230 pages. (Here's [a link to the publisher's site](http://www.apress.com/book/view/9781590597699).)
+[Beginning Database Design: From Novice to Professional]({{< amz 1590597699 >}}). By Clare Churcher, Apress, 2007. Page count: 230 pages. (Here's [a link to the publisher's site](https://www.apress.com/us/book/9781590597699).)
 
 My wife bought a copy of this book, and recently I took it off her bookshelf to give it a read myself.
 
-[![Beginning Database Design](/media/2009/08/beginning_database_design.gif# fr pa1)]({{< amz 1590597699 >}})
+[![Beginning Database Design](/media/book-covers/beginning-database-design.jpg# 3dbook)]({{< amz 1590597699 >}})
 
 I found the book very lucid and readable. The author does not drag us through a bunch of formalisms, nor does she attempt to force the book to be readable through the use of comics, pop-culture references, or other artificial devices. Instead, she draws on her real-life experience helping people design databases, and presents several examples that nearly anyone will understand without effort. She doesn't rely on hard-to-understand examples such as an employee-supervisor database, which is badly overused and really not that clear anyway in my opinion.
 

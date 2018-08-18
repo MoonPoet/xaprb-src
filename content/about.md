@@ -6,6 +6,7 @@ author: Baron Schwartz
 categories: []
 description: ''
 image: ''
+url: /about/
 menu:
   main: {}
 
