@@ -27,6 +27,7 @@ params:
    classes:
    - feature-math
    - feature-figcaption
+   - feature-tablecaption
    - feature-figcaption-hidden
    - feature-3dbook-covers
    - feature-hyphenate
