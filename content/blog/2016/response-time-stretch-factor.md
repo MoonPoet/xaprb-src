@@ -21,9 +21,9 @@ approximate. This has rattled around in my brain for a long time, and rather
 than keeping my notes private I'm sharing them here.
 <!--more-->
 
-Here's the familiar picture of how response time increases as utilization grows:
+Figure 1 shows the familiar picture of how response time increases as utilization grows:
 
-![Hockey-Stick Curve](/media/2016/10/hockey-stick.svg)
+![Hockey-Stick Curve](/media/2016/10/hockey-stick.svg "The so-called hockey-stick curve illustrates that as the server's utilization increases, wait time increases sharply.")
 
 ### The Stretch Factor Heuristic and Exact Formula
 
@@ -38,43 +38,43 @@ The wait time {{< math >}}W{{< /math >}} is some fraction of the total residence
 at most 100%, and if this is denoted by {{< math >}}\rho{{< /math >}} then {{< math >}}W = \rho R{{< /math >}}.
 Thus,
 
-$$
+{{< math >}}
 R = W + S = \rho R + S
-$$
+{{< /math >}}
 
 Which, when rearranged and divided by service time to make it a relative
 "stretch factor," becomes
 
-$$
+{{< math >}}
 R = \frac{1}{1- \rho}
-$$
+{{< /math >}}
 
 None of this is original; I've basically cribbed this from Neil Gunther's book
 *Analyzing Computer Systems Performance with Perl::PDQ*. Later in that same
 book, Gunther shows the derivation of a related formula for the stretch factor
 in a multiserver queue with {{< math >}}m{{< /math >}} servers,
 
-$$
+{{< math >}}
 R \approx \frac{1}{1-\rho^m}
-$$
+{{< /math >}}
 
 Where {{< math >}}\rho{{< /math >}} denotes server utilization. This heuristic approximation does
 arise analytically, but is not exact when there are more than 2 servers. It
 underestimates wait time when utilization is high, especially with large numbers
 of servers (say, 64). The exact solution is given by
 
-$$
+{{< math >}}
 R = \frac{C(m, \rho) S}{m(1-\rho)} + S
-$$
+{{< /math >}}
 
 Where the first term is just {{< math >}}W{{< /math >}}, and the function {{< math >}}C(m,\rho){{< /math >}} is the
 Erlang C function. If we put it all together and rearrange into "stretch factor" form, the Erlang equation for stretch factor is
 
-$$
+{{< math >}}
 R(m, \rho) = 1 + \frac{ \frac{(m \rho)^m}{m!} }{ (1-\rho) \sum_{n=0}^{m-1} \frac{(m \rho)^n}{n!} + \frac{(m \rho)^m}{m!} } \frac{1}{m(1-\rho)}
-$$
+{{< /math >}}
 
-Here's a picture of the resulting response time curves for various numbers of servers, from 1 to 64. You can explore it on [this Desmos calculator](https://www.desmos.com/calculator/9dr7azq0ot).
+Figure 2 shows the resulting response time curves for various numbers of servers, from 1 to 64. You can explore it on [this Desmos calculator](https://www.desmos.com/calculator/9dr7azq0ot).
 
 ![Erlang Curve for 1-64 Servers](/media/2016/10/erlang-1-64.png)
 
@@ -116,11 +116,13 @@ the missing term? What shape might it have?
 To gain some intuition about this, I wrote a simple [Desmos
 calculator](https://www.desmos.com/calculator/qo1n4shf1f) to show
 the *value* of the hypothetical "missing term" in the context of the heuristic's
-value. In other words, the heuristic's *error function*.  Here's a graph of
+value. In other words, the heuristic's *error function*.  Figure 3 is a graph of
 that for several values of {{< math >}}m{{< /math >}}. Red is 1 server, green is 8, purple is 16, orange
 is 64.
 
 ![Heuristic Error Function](/media/2016/10/heuristic-error.png)
+_The heuristic function for queueing delay is inexact at values of m greater
+than 1. This image shows the error for m values of 1, 8, 16, and 64._
 
 Note that I showed utilization extending out beyond the value 1 because the
 shape of the function is interesting, but that value is impossible---a server can
@@ -144,9 +146,9 @@ formula itself reduces to {{< math >}}\rho{{< /math >}}, and when
 decorated with the additional stuff to get it into stretch-factor form, it
 reduces to
 
-$$
+{{< math >}}
 R(1, \rho) = 1 + \frac{\rho}{1-\rho}
-$$
+{{< /math >}}
 
 Which is just a rearrangement of the heuristic function.
 (Interestingly, Wolfram Alpha will simplify it to
@@ -157,16 +159,16 @@ function is closely related to the factorial function.)
 In the {{< math >}}m=2{{< /math >}} case, if I'm doing my algebra right, the Erlang C function
 simplifies to
 
-$$
+{{< math >}}
 C(2, \rho) = \frac{2\rho^2}{ (1-\rho) + (1-\rho)2\rho + 2\rho^2}
-$$
+{{< /math >}}
 
 Which further simplifies to {{< math >}}\frac{2\rho^2}{\rho+1}{{< /math >}}, which when
 rewritten into stretch-factor form, becomes
 
-$$
+{{< math >}}
 R(2, \rho)=1+\frac{2\rho^2}{\rho+1} \frac{1}{2(1-\rho)}
-$$
+{{< /math >}}
 
 Which is exactly {{< math >}}\frac{1}{1-\rho^2}{{< /math >}}, the heuristic form.
 
@@ -195,15 +197,15 @@ parameters and essentially did a least-squares sum of errors regression to
 arrive at an approximation for the queue length, which in the simplest types of
 queueing systems reduces to:
 
-$$
+{{< math >}}
 L_q \approx \frac{ \rho^{\sqrt{2(m+1)}} }{ 1-\rho} 
-$$
+{{< /math >}}
 
 In "stretch factor" form, this becomes
 
-$$
+{{< math >}}
 R(m, \rho) \approx 1+\frac{\rho^{\sqrt{2(m+1)}}}{\rho m(1-\rho)}
-$$
+{{< /math >}}
 
 This is such an accurate approximation that it's more than good enough for
 real-life applications, and I use it all the time. (It's hard to put Erlang's
@@ -224,9 +226,9 @@ Another idea is a sigmoid such as the classic logistic function. In fact, if I
 wanted to approximate the error in the range (0,1) this isn't too bad an
 approximation for {{< math >}}m=16{{< /math >}}, for example:
 
-$$
+{{< math >}}
 \frac{.5}{1+e^{-10(x-1)}}
-$$
+{{< /math >}}
 
 Finally, instead of adding a term or multiplying the heuristic by a term,
 perhaps it's the {{< math >}}\rho^m{{< /math >}} portion in the denominator that needs to be
@@ -236,15 +238,15 @@ The error at {{< math >}}m>3{{< /math >}} could be explained by the exponent {{<
 then the correct value for the exponent could be a function of {{< math >}}\rho{{< /math >}}, and
 an adjustment to it would need to be of the form
 
-$$
+{{< math >}}
 A_{exp} = \frac{log\left( \frac{E(\rho)-1}{E(\rho)} \right)}{log(\rho)}
-$$
+{{< /math >}}
 
 Where {{< math >}}E(\rho){{< /math >}} is the Erlang formula for the stretch factor. I arrived at
 this by solving the error function for {{< math >}}\rho{{< /math >}}. For convenience, this can be
-divided by {{< math >}}m{{< /math >}} to normalize it relative to the number of servers. I've made
-a [Desmos calculator](https://www.desmos.com/calculator/7ygut81via) illustrating
-the shape of this adjustment term for 1, 4, 8, and 16 servers:
+divided by {{< math >}}m{{< /math >}} to normalize it relative to the number of servers. Figure
+4 illustrates the shape of this adjustment term for 1, 4, 8, and 16 servers. You
+can explore it with this [Desmos calculator](https://www.desmos.com/calculator/7ygut81via) too.
 
 ![Heuristic Error as Function of Utilization](/media/2016/10/heuristic-error-as-f-util.png)
 
@@ -265,12 +267,12 @@ or too small. Following a similar train of thought as before and solving the
 error function for the number of servers, I found that the error would need to be of the
 form
 
-$$
+{{< math >}}
 A_{base} = \left( \frac{E(\rho)-1}{E(\rho)}\right)^{1/m}
-$$
+{{< /math >}}
 
-Normalizing this relative to {{< math >}}\rho{{< /math >}} by dividing, I got a function that has
-similar discontinuities as before, and is of the following shape. It looks
+Normalizing this relative to {{< math >}}\rho{{< /math >}} by dividing, I obtained a function that has
+similar discontinuities as before; see Figure 5. It looks
 like it might be possible to approximate with something like a quadratic from 0
 to 1, but if you zoom out further, it looks more like... wait for it... part of
 the Gamma function. You can see this on
@@ -282,16 +284,16 @@ I experimented with this in a different way, by trying to approximate
 {{< math >}}A_{base}{{< /math >}} directly. I just guessed at its shape and came up with the
 following, which isn't too far off for {{< math >}}2<m<5{{< /math >}}:
 
-$$
+{{< math >}}
 A_{base} \approx \rho - \frac{2}{15} \sqrt{m} (\rho-1)\rho
-$$
+{{< /math >}}
 
-You can see this shape, compared with the actual {{< math >}}A_{base}{{< /math >}}, at this
-[Desmos](https://www.desmos.com/calculator/sgwrqdcnzk).
+Figure 6 shows this function's shape, compared with the actual {{< math >}}A_{base}{{< /math >}}.
+You can explore these functions at this [Desmos graph](https://www.desmos.com/calculator/sgwrqdcnzk).
 
 ![Square Root Approximation To Heuristic](/media/2016/10/sqrt-approx-to-heuristic.png)
 
-And [this one](https://www.desmos.com/calculator/opa1sfpxfw) shows what this
+And Figure 7 ([Desmos](https://www.desmos.com/calculator/opa1sfpxfw)) shows what this
 looks like when included as a term in the heuristic stretch factor.
 
 ![Heuristic Via Skewing Utilization](/media/2016/10/heuristic-via-skewing-utilization.png)
