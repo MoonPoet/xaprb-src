@@ -1,15 +1,18 @@
 ---
+title: The Response Time Stretch Factor
 url: /blog/response-time-stretch-factor/
-author: Baron Schwartz
-categories:
-- Math
-- Scalability
 date: 2016-10-30T10:00:39-04:00
 description: "Is there a simple stretch-factor equation that describes M/M/m queueing delay for m>2?"
 credit: "https://unsplash.com/photos/cIcX_aO9LPo"
 image: "/media/2016/10/unsplash-photos-cIcX_aO9LPo.jpg"
 thumbnail: /media/2016/10/unsplash-photos-cIcX_aO9LPo.tn-500x500.jpg
-title: The Response Time Stretch Factor
+classes:
+- feature-figcaption-visible
+- feature-fignum
+- feature-figlink
+categories:
+- Math
+- Scalability
 ---
 
 Computer systems, and for that matter all types of systems that receive requests

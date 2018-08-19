@@ -24,6 +24,11 @@ params:
    author: "Baron Schwartz"
    Amazon: "xaprb-20"
    Email: "&098;&097;&114;&111;&110;&064;&118;&105;&118;&105;&100;&099;&111;&114;&116;&101;&120;&046;&099;&111;&109;"
+   classes:
+   - feature-katex
+   - feature-figcaption
+   - feature-figcaption-hidden
+   - feature-3dbook-covers
    head:
    foot:
    - '<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>'

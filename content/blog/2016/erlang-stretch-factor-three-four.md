@@ -6,6 +6,10 @@ description: "In which I explore the divergence between the Erlang C formula and
 credit: "https://unsplash.com/photos/_NNsOxgemgg"
 image: "/media/2016/12/unsplash-photos-_NNsOxgemgg.jpg"
 thumbnail: /media/2016/12/unsplash-photos-_NNsOxgemgg.tn-500x500.jpg
+classes:
+- feature-figcaption-visible
+- feature-fignum
+- feature-figlink
 categories:
 - Math
 - Scalability
