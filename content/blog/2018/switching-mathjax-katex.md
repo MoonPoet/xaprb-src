@@ -2,11 +2,12 @@
 url: /blog/switching-mathjax-katex/
 title: 'Switching from MathJax to KaTeX'
 date: "2018-04-07T20:32:07-04:00"
+description: "I now use KaTeX instead of MathJax for LaTeX mathematical typesetting."
+image: "/media/2018/04/fractal-1405724_1280.jpg"
+credit: https://pixabay.com/en/fractal-background-abstract-flower-1405724/
+thumbnail: /media/2018/04/fractal-1405724_1280.tn-500x500.jpg
 categories:
   - Writing
-author: "Baron Schwartz"
-description: "I've used MathJax for LaTeX mathematical typesetting for years; I replaced it with KaTeX, which is smaller and faster"
-image: "/media/2018/04/fractal-1405724_1280.jpg"
 ---
 
 For several years, I've used MathJax on this blog to typeset mathematical formulae in LaTeX notation.
