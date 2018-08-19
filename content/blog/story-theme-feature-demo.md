@@ -142,18 +142,56 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 
 Math typesetting is controlled with the `feature-[no]math` flag.
 
-### Table Captions
+### Table Styling and Captions
 
-Hello | There
------:| ------
-A table | of stuff
-that I like | a lot
+Story has multiple built-in table styles that you can apply with feature flags.
+The default is similar to GitHub's table styling:
 
-*A table of important things*
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+| `git commit` | Record changes to the repository |
+| `git branch` | List, create, or delete branches |
 
-<style type="text/css">
-table + p em { border: 1px solid red }
-</style>
+There is _also_ a style designed to look better for tables that are part of an
+article with figures. This is enabled with `feature-tablefig`. Click <a
+id="tablefig">here</a> to toggle.
+
+| Item                                      | Estimated | Positive and Significant | Negative and Significant |
+|-------------------------------------------|:---------:|:------------------------:|:------------------------:|
+| Demographic Variables for Head            |           |                          |                          |
+| Male                                      |     85    |            74            |            11            |
+| Age                                       |     85    |            85            |             0            |
+| Age Squared                               |     85    |             0            |            85            |
+| Head's Education                          |           |                          |                          |
+| Completed primary or incomplete secondary |     76    |            76            |             0            |
+| Completed secondary or higher             |     60    |            60            |             0            |
+| Completed secondary                       |     19    |            19            |             0            |
+| Higher                                    |     20    |            20            |             0            |
+| Unknown                                   |     12    |            12            |             0            |
+
+
+Other features of note:
+
+- Tables with columns of right-aligned numbers are more readable with fixed-width numerals; click to toggle <a id="tablefw">`feature-tablefw`</a>.
+- Tables such as Table 3, which are followed by a paragraph whose entire content is inside an `<em>` tag will be captioned, similar to images, if the `feature-tablecaption` feature is enabled. 
+- Table autolinking and caption numbering are controlled by the `feature-figlink` and `feature-fignum` flags so they'll be consistent with image features.
+
+Date          | Inclination, deg. | Longitude, Asc. Node, deg. | Mean Distance, au |  Eccentricity | Mean  Longitude, deg. |
+--------------|------------------:|---------------------------:|------------------:|--------------:|----------------------:|
+Jan.&nbsp;28  |            7.0052 |                     48.486 |          0.387097 |      0.205644 |              355.3943 |
+Mar.&nbsp;9   |            7.0052 |                     48.487 |          0.387098 |      0.205646 |              159.0899 |
+Apr.&nbsp;18  |            7.0052 |                     48.489 |          0.387097 |      0.205649 |              322.7854 |
+May&nbsp;28   |            7.0052 |                     48.490 |          0.387097 |      0.205650 |              126.4812 |
+July&nbsp;7   |            7.0052 |                     48.492 |          0.387098 |      0.205645 |              290.1771 |
+Aug.&nbsp;16  |            7.0052 |                     48.493 |          0.387098 |      0.205645 |               93.8725 |
+Sept.&nbsp;25 |            7.0052 |                     48.494 |          0.387098 |      0.205642 |              257.5683 |
+Nov.&nbsp;4   |            7.0052 |                     48.495 |          0.387099 |      0.205635 |               61.2628 |
+Dec.&nbsp;14  |            7.0052 |                     48.497 |          0.387099 |      0.205635 |              224.9579 |
+Dec.&nbsp;54  |            7.0052 |                     48.498 |          0.387098 |      0.205633 |               28.6524 |
+    
+_Mercury's Heliocentric Osculating Orbital Elements Referred to the Mean Equinox and Ecliptic of Date for 2013_
 
 ### Typography Controls
 
@@ -201,5 +239,11 @@ $( "#hyph" ).click(function() {
 });
 $( "#just" ).click(function() {
    $("body").toggleClass("feature-justify");
+});
+$( "#tablefig" ).click(function() {
+   $("body").toggleClass("feature-tablefig");
+});
+$( "#tablefw" ).click(function() {
+   $("body").toggleClass("feature-tablefw");
 });
 </script>
