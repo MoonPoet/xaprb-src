@@ -1,19 +1,18 @@
 ---
-title: About Me
-date: 2005-01-01 00:00:00 +0000
+title: About Baron
+url: /about/
+date: 2005-01-01
 type: page
-author: Baron Schwartz
-categories: []
 description: ''
 image: ''
-url: /about/
 menu:
   main: {}
-
+classes:
+- no-subtitle
 ---
 ![Baron Schwartz](/media/2010/01/baron-square.jpg)
 
-I am the founder of [VividCortex](https://www.vividcortex.com/) and the lead author of [High Performance MySQL](http://www.highperfmysql.com/). I studied Computer Science at the University of Virginia, then worked at several technology companies. I spent the first decade of my career as a programmer, and created a lot of open-source software. My online nickname Xaprb is my first name Baron typed in QWERTY on a Dvorak keyboard layout.
+I am Baron Schwartz, the founder of [VividCortex](https://www.vividcortex.com/) and the lead author of [High Performance MySQL](http://www.highperfmysql.com/). I studied Computer Science at the University of Virginia, then worked at several technology companies. I spent the first decade of my career as a programmer, and created a lot of open-source software. My online nickname Xaprb is my first name Baron typed in QWERTY on a Dvorak keyboard layout.
 
 High-resolution headshots for press, media, conference pages, etc are here: [1](/baron.jpg), [2](/baron-2.jpg).
 
