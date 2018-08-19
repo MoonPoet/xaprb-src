@@ -12,7 +12,7 @@ menu:
      url: /talks/
    social:
    - name: linkedin
-     title: "fab fa-linkedin-square"
+     title: "fab fa-linkedin"
      url: "https://linkedin.com/in/xaprb"
    - name: twitter
      title: "fab fa-twitter-square"
@@ -29,6 +29,8 @@ params:
    - feature-figcaption
    - feature-figcaption-hidden
    - feature-3dbook-covers
+   - feature-hyphenate
+   - feature-justify
    head:
    foot:
    - '<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>'
