@@ -34,6 +34,7 @@ params:
    - feature-justify
    head:
    foot:
+   - '<style type="text/css">@media print{#PopupSignupForm_0{display:none}}</style>'
    - '<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>'
    - '<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"6ee277790a99c26a414c9693f","lid":"703c46c578"}) })</script>'
 MetaDataFormat: "yaml"

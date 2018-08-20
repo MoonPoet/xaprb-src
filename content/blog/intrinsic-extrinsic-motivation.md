@@ -37,12 +37,12 @@ I'd been cooperating sincerely in the spirit of giving the system a chance and m
 I knew the deck was stacked against me.
 No matter how hard I tried, playing by the rules would get me nowhere, and I had no hope of gaining the advantage my good behavior should have earned me.
 So I rebelled openly against the scoring system.
-This escalated swiftly into severe punishment, but I bore the pain stubbornly and continued to protest the injustice.
+This escalated swiftly into severe punishment, but I stubbornly continued to protest the injustice.
 
-This particular episode of madness wasn't my father's only attempt to figure out how to control me.
+This particular incident wasn't my father's only attempt to figure out how to control me.
 He tried many different approaches, all of them fundamentally flawed.
 It went in cycles, and the pattern was always the same.
-He'd explain the new rules of engagement to me, I'd suspend my doubts and work hard to comply, he'd prove that the only real rule was that I had to lose, I'd object almost without regard for the personal consequences, and life would be hellish until my mother intervened strongly enough to get him to try a different approach.
+He'd explain the new rules of engagement to me, I'd suspend my doubts and work hard to comply, he'd prove that the only real rule was that I had to lose, I'd object almost without regard for the personal consequences, and life would be miserable until my mother intervened strongly enough to get him to try a different approach.
 
 Recently I've been thinking again about the notebook with pluses and minuses, and made some progress on understanding better how I responded to my father.
 A few of the interesting questions are: why did I initially cooperate, despite all the history that showed it would turn out the same?
@@ -64,7 +64,7 @@ That's why it was so important for me to try so hard to work within my father's 
 Only after a good-faith effort to make it work could I quit in good faith, and having a clear conscience is a huge motivator for me.
 
 The other big factor was the importance of right and wrong and a correct understanding of reality.
-As far back as I can remember, I've been convinced that justice and truth matter more than a meal or avoiding a beating.
+As far back as I can remember, I've been convinced that justice and truth matter more than a meal or avoiding punishment.
 And to mouth words I don't believe, and act out behaviors I disagree with, would divide me against myself.
 My brothers and mother urged me to put things into perspective and stop making my life needlessly hard.
 But I would not consent to injustice because it would mean agreeing that wrong was right, and I sensed it would have consequences for my mental health.^[Today, I know this idea is supported by an important Buddhist teaching: seeing the true nature of things is essential to wellbeing.]
@@ -76,8 +76,8 @@ But I long ago learned that I bear responsibility only for my actions, not for m
 And I'm under no illusions that I could have changed the outcome significantly.
 
 My brothers handled the conflicts with my father differently and perhaps more shrewdly.
-We all were wounded; it's impossible not to be in a situation like ours.
-But we all have recovered in our own ways, and knowing that I held true to my North Star has been an important part of my own journey out of that suffering.
+We all were wounded; we all have recovered in our own ways.
+Knowing that I held true to my North Star has been an important part of my own journey out of that suffering.
 
 As terrible as my relationship with my father was, I have turned some of those grains of sand into pearls.
 Today I can be grateful for outcomes such as an ardent desire to develop relationship skills he lacked; empathy for how terrible it is to be criticized continually; and conviction that fairness matters.
@@ -88,7 +88,7 @@ I learned that true freedom is my ability to choose to respond instead of react.
 
 Knowing what to look for makes it easy for me to see these patterns and influences in my life.
 For example, when the Fedora developers switched the default to a new version of the Gnome desktop environment, [I made a sincere effort to learn how to use it](/blog/2011/06/28/how-i-ended-my-trial-of-gnome-3/) before I decided to abandon it.
-Another example: one of the four Core Values of VividCortex is empathy, which I [contrast](/blog/better-than-the-golden-rule/) with the Golden Rule.^[Imagine the difference if my father had been empathetic and curious enough to understand why I resisted his punishment systems.]
+Another example: one of the four Core Values of VividCortex is empathy, which I [contrast](/blog/better-than-the-golden-rule/) with the Golden Rule.^[Imagine the difference if my father had been empathetic and curious enough to understand why I resisted his systems.]
 What makes work fun for *me* is [growth, impact, and great people](/blog/three-keys-rewarding-career-challenge-impact-people/).
 But not everyone values the same things, so I try hard not to assume.
 
