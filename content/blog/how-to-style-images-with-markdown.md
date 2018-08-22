@@ -8,10 +8,39 @@ image: "/media/2018/08/unsplash-photos-jTCLppdwSEc.jpg"
 thumbnail: /media/2018/08/unsplash-photos-jTCLppdwSEc.tn-500x500.jpg
 categories:
 - Web
+classes:
+- feature-nofigcaption
 ---
 Markdown is a convenient HTML-focused shorthand syntax for formatting content such as documentation and blog articles, but it lacks basic features for image formatting, such as alignment and sizing.
 This post presents a variety of ways to format images with Markdown, from brute force to proprietary syntax extensions, unwise hacks, and everything in between.
 <!--more-->
+
+<style type="text/css">
+img[src*="?thumbnail"] {
+   width:150px;
+   height:100px;
+}
+img[src*="#thumbnail"] {
+   width:150px;
+   height:100px;
+}
+img[src~="thumbnail"] {
+   width:150px;
+   height:100px;
+}
+img[src~="bordered"] {
+   border: 1px solid black;
+}
+article p:nth-of-type(28) img {
+   width:150px;
+   height:100px;
+	border: 1px solid blue;
+}
+img[alt=thumbnail] {
+   width:150px;
+   height:100px;
+}
+</style>
 
 Here's how you insert an image in Markdown:
 
@@ -23,9 +52,17 @@ That is, Markdown allows you to specify an `<img>` tag with `src`, `alt`, and `t
 Standard Markdown doesn't offer anything beyond this, but it's very common for websites to need `width`, `height`, and CSS `class` attributes as well.
 
 The rest of this post is dedicated to various solutions to these shortcomings.
-To motivate this discussion, I'll use the example of a large image that should be displayed at a smaller size.
-I won't show you how to add alignment, floating, or padding---but my sizing example will suffice, because once you know how to change an image's size, you'll know how to do other things too.
+To motivate this discussion, I'll use the example of a large [image](https://unsplash.com/photos/INw1KTFtDpI) that should be displayed at a smaller size.
 
+For example,
+
+```md
+![Kitten](/media/2018/08/kitten.jpg "A cute kitten")
+```
+
+![Kitten](/media/2018/08/kitten.jpg "A cute kitten")
+
+I won't show you how to add alignment, floating, or padding---but my sizing example will suffice, because once you know how to change an image's size, you'll know how to do other things too.
 I'll show you the best solutions first, and the undesirable ones last.
 
 ### Use Standard HTML
@@ -34,9 +71,12 @@ Markdown was originally designed for HTML authoring, and permits raw HTML anywhe
 As such, the most straightforward solution is simply to use HTML with the desired attributes:
 
 ```html
-<img src="kitten.jpg" alt="Kitten"
+<img src="/media/2018/08/kitten.jpg" alt="Kitten"
 	title="A cute kitten" width="150" height="100" />
 ```
+
+<img src="/media/2018/08/kitten.jpg" alt="Kitten"
+	title="A cute kitten" width="150" height="100" />
 
 This works, and gives you unrestrained control over the resulting HTML.
 But Markdown is appealing for its simplicity, unlike HTML that's cluttered with messy markup.
@@ -58,7 +98,7 @@ But it's useful for our styling needs.
 Here we'll add a `thumbnail` fragment to the image's source URL:
 
 ```md
-![Kitten](kitten.jpg#thumbnail)
+![Kitten](/media/2018/08/kitten.jpg#thumbnail)
 ```
 
 This information is kept entirely client-side, and browsers don't transmit this part of the URL to the server when they request content.
@@ -72,6 +112,8 @@ img[src*="#thumbnail"] {
 }
 ```
 
+![Kitten](/media/2018/08/kitten.jpg#thumbnail)
+
 The `*=` selector syntax matches if `#thumbnail` appears anywhere in the `src` attribute.
 You could also anchor the matching to the _end_ of the URL with `$="#thumbnail"`.
 
@@ -80,7 +122,7 @@ CSS also has a `~=` selector, which matches if the specified value appears exact
 This lets you simulate combining multiple "classes" in the URL fragment:
 
 ```md
-![Kitten](kitten.jpg# thumbnail bordered)
+![Kitten](/media/2018/08/kitten.jpg# thumbnail bordered)
 ```
 
 Now you can target these pseudo "class" names from CSS:
@@ -95,7 +137,11 @@ img[src~="bordered"] {
 }
 ```
 
-An equivalent way to encode a space into a URL is with the `%20` URL encoding, but I've found that this doesn't work with the technique I showed here.
+![Kitten](/media/2018/08/kitten.jpg# thumbnail bordered)
+
+An equivalent way to encode a space into a URL is with the `%20` URL encoding, but I've found that this doesn't work with the technique I showed here:
+
+![Kitten](/media/2018/08/kitten.jpg#%20thumbnail%20bordered)
 
 Naturally, you can pick different ways to structure values, such as using a `key=value` syntax or whatever suits your purposes.
 Depending on what you prefer, you can use any of the CSS selector syntaxes that works well for you.
@@ -103,10 +149,13 @@ Depending on what you prefer, you can use any of the CSS selector syntaxes that 
 Another alternative is to use ordinary URL query parameters, the part that comes after the question-mark:
 
 ```md
-![Kitten](kitten.jpg?thumbnail)
+![Kitten](/media/2018/08/kitten.jpg?thumbnail)
 ```
 
 This will work, and you can use the same types of CSS selectors to apply styling to the resulting image.
+
+![Kitten](/media/2018/08/kitten.jpg?thumbnail)
+
 However, in my opinion this is slightly less desirable, because query parameters are meant to transmit information to the server.
 The browser will include the parameters in the request, and there could be other disadvantages, such as preventing the browser from caching the images for better performance.
 Overall I don't see any advantages to query parameters, unless there's some reason you can't use the URL fragment.
@@ -114,14 +163,17 @@ Overall I don't see any advantages to query parameters, unless there's some reas
 ### Use CSS's nth-child() Selectors
 
 You can also use CSS selectors that will select images based on their position in the document.
-For example, if your blog's main content is wrapped inside an element with an `article` and you want to change the appearance of the image inside the third paragraph, you could write the following CSS:
+For example, if your blog's main content is wrapped inside an `article` element, and you want to change the appearance of the image inside the third paragraph, you could write the following CSS:
 
 ```css
-.article p::nth-child(3) img {
+article p:nth-of-type(28) img {
    width:150px;
    height:100px;
+	border: 1px solid blue;
 }
 ```
+
+![Kitten](/media/2018/08/kitten.jpg)
 
 This will work, but it's tedious and requires article-specific `<style>` tags with custom CSS.
 And you'll need to change the CSS if you change the article, for example adding another paragraph above the image.
@@ -140,27 +192,27 @@ In this section I'll explore some of these.
 Some Markdown editors like Mou (a Mac writing app) have sizing extensions:
 
 ```md
-![Kitten](kitten.jpg =150x100)
+![Kitten](/media/2018/08/kitten.jpg =150x100)
 ```
 
 This example syntax is limited and isn't widely supported.
 More common is the way Kramdown [offers extensions to add attributes to block-level elements](https://kramdown.gettalong.org/quickref.html#block-attributes), including not only the height and width but CSS and other attributes:
 
 ```md
-![Kitten](kitten.jpg){: width=150 height=100 style="float:right; padding:16px"}
+![Kitten](/media/2018/08/kitten.jpg){: width=150 height=100 style="float:right; padding:16px"}
 ```
 
 Kramdown also supports one or more CSS classes with a shorthand syntax.
 Here's an example of how to add `class="thumbnail bordered"` to the HTML after processing with Kramdown:
 
 ```md
-![Kitten](kitten.jpg){:.thumbnail.bordered}
+![Kitten](/media/2018/08/kitten.jpg){:.thumbnail.bordered}
 ```
 
 Pandoc offers a [relative width specification](http://pandoc.org/MANUAL.html#extension-link_attributes), which works not only for HTML output, but for other output formats such as {{< math >}}\LaTeX{{< /math >}} as well:
 
 ```md
-![Kitten](kitten.jpg){ width=50% }
+![Kitten](/media/2018/08/kitten.jpg){ width=50% }
 ```
 
 Some other Markdown flavors offer similar ways to add attributes, though the syntax may differ slightly.
@@ -173,12 +225,17 @@ Another technique is to put an HTML tag around the `<img>` tag, like this:
 
 ```html
 <div style="width:150px; height:100px">
-![Kitten](kitten.jpg)
+![Kitten](/media/2018/08/kitten.jpg)
 </div>
 ```
 
 Unfortunately, standard Markdown doesn't process and convert the text inside of tags such as the `<div>`; as soon as it sees raw HTML it simply outputs it verbatim until the tags are closed again.
 This approach will work only with processors that support Markdown syntax extensions such as [Markdown Extra](https://en.wikipedia.org/wiki/Markdown#Markdown_Extra).
+In Hugo, using Blackfriday, the resulting output is simply
+
+<div style="width:150px; height:100px">
+![Kitten](/media/2018/08/kitten.jpg)
+</div>
 
 ### Use Processor Hacks That Markdown Editors Ignore
 
@@ -199,14 +256,14 @@ Many Markdown users are only aware of the standard syntax's support for the `alt
 In fact, many don't even add alt text:
 
 ```md
-![](kitten.jpg)
+![](/media/2018/08/kitten.jpg)
 ```
 
 This makes it seem as though the alt text is undeveloped real estate that could be repurposed, for example adding the pseudo-equivalent of a "thumbnail" CSS class.
 Here's how you might attempt to do that:
 
 ```md
-![thumbnail](kitten.jpg)
+![thumbnail](/media/2018/08/kitten.jpg)
 ```
 
 The corresponding CSS to select and format this image could be
@@ -218,6 +275,8 @@ img[alt=thumbnail] {
 }
 ```
 
+![thumbnail](/media/2018/08/kitten.jpg)
+
 Technically, this will work, but it's not good for accessibility.
 Users who are using a screen reader or other accessibility aid will gain no benefit, and will suffer due to the lack of helpful information and the presence of misleading data in places it's not intended to be.
 I discourage this practice.
@@ -225,8 +284,8 @@ I discourage this practice.
 A variation I've seen is to append, rather than replace, the alt text, using syntaxes such as the following examples:
 
 ```md
-![Kitten class=thumbnail](kitten.jpg)
-![Kitten -thumbnail](kitten.jpg)
+![Kitten class=thumbnail](/media/2018/08/kitten.jpg)
+![Kitten -thumbnail](/media/2018/08/kitten.jpg)
 ```
 
 Those examples can be paired with a CSS selector that matches the end of the attribute, such as `img[alt$="-thumbnail"]`.
@@ -235,7 +294,7 @@ These are perhaps less offensive than replacing the alt text entirely, but I sti
 A variant of this approach, which has a roughly equivalent impact on accessibility, is to overload the `title` attribute with formatting instructions:
 
 ```md
-![Kitten](kitten.jpg "thumbnail")
+![Kitten](/media/2018/08/kitten.jpg "thumbnail")
 ```
 
 This can be selected from CSS as follows:
@@ -257,3 +316,6 @@ img[alt="Kitten"] {
 }
 ```
 
+The demos in this page use the actual markup in the code listings. You can view
+the page source or look at my [Github repo](https://github.com/xaprb/xaprb-src)
+to see the original markup in HTML and/or Markdown formats.
