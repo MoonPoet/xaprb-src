@@ -53,7 +53,8 @@ classes:
 ### Image Captions and Figures
 
 Story can automatically convert your images into figures with captions. 
-There are several ways this can be done. In order of
+This is controlled by the `feature-figcaption` and `feature-nofigcaption`
+flags. There are several ways this can be done. In order of
 precedence, here is what Story tries to do:
 
 An image with an `<em>` _immediately following it in the same paragraph_ treats
