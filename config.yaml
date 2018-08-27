@@ -24,6 +24,7 @@ params:
    author: "Baron Schwartz"
    Amazon: "xaprb-20"
    Email: "&098;&097;&114;&111;&110;&064;&118;&105;&118;&105;&100;&099;&111;&114;&116;&101;&120;&046;&099;&111;&109;"
+   mailchimp: "//xaprb.us19.list-manage.com/subscribe?u=6ee277790a99c26a414c9693f&id=703c46c578"
    classes:
    - feature-math
    - feature-figcaption
@@ -32,11 +33,7 @@ params:
    - feature-3dbook-covers
    - feature-hyphenate
    - feature-justify
-   head:
-   foot:
-   - '<style type="text/css">@media print{#PopupSignupForm_0{display:none}}</style>'
-   - '<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>'
-   - '<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"6ee277790a99c26a414c9693f","lid":"703c46c578"}) })</script>'
+   - feature-highlight
 MetaDataFormat: "yaml"
 Paginate: 20
 rssLimit: 20
