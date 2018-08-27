@@ -78,7 +78,7 @@ Another suggestion I've heard, for websites and services that don't offer strong
 ### Security Questions
 
 **Never use real answers to security questions.**
-I've guessed my way into many an account, including other people's accounts, by knowing who someone's mother's maiden name was, or paternal grandfather, or whatever. It's usually easy to find this stuff online with a little searching.
+It's usually easy to find information such as mother's maiden name and paternal grandfather online with a little searching.
 
 Instead, always generate unique fake answers. City of birth? The moon. Favorite high school teacher? Swimming pool. First pet? Diesel locomotive. Store these answers in your password safe.
 

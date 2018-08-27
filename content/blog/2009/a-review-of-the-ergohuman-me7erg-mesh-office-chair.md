@@ -15,7 +15,7 @@ So far I'm delighted. I'm 6-foot-4 (195cm) and this is one of the only chairs I'
 
 I read a lot of online reviews and considered a dozen or so chair models before settling on this one. Other reviewers commented highly about the durability. Those who had troubles were very happy with the service they received.
 
-A chair is a long-term investment that's hard to overvalue. If you're a programmer, you'll use it day in and day out; you may spend more time in it than out of it. A good quality chair should last ten years, easily; amortize the cost of the chair over that time and it suddenly appears cheap. A typical person will buy enough shoes during that time to pay for many high-quality chairs. I'm a stickler for my equipment; I view it as tools to get my work done; I would never put myself in a bad quality chair, just as my father would buy nothing but Snap-On tools for his mechanical work.
+A chair is a long-term investment that's hard to overvalue. If you're a programmer, you'll use it day in and day out; you may spend more time in it than out of it. A good quality chair should last ten years, easily; amortize the cost of the chair over that time and it suddenly appears cheap. A typical person will buy enough shoes during that time to pay for many high-quality chairs. I'm a stickler for my equipment; I view it as tools to get my work done. I would never put myself in a bad quality chair.
 
 I have nothing bad to say about it. Oh, and it's certainly a vastly better chair than the Aeron chairs, which are uncomfortable, too short to relax back in, highly overrated, and much more expensive.
 

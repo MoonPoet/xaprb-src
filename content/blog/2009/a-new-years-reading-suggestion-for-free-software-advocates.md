@@ -7,7 +7,7 @@ categories:
 ---
 It's a new year, and [Free Software](http://www.fsf.org/) is more ubiquitous and important than ever. At the same time, the work is far from over. Here's something inspiring you can read to stimulate some deep thoughts about the nature of Free Software: an essay from 1958, "[I, Pencil](http://www.econlib.org/library/Essays/rdPncl1.html)."
 
-I first read this essay at my father's suggestion, long before I was involved with computers. He told me it was the best defense of free enterprise and free markets that he'd ever read.
+I first read this essay long before I was involved with computers. Someone told me it was the best defense of free enterprise and free markets.
 
 Here's a quote I think is particularly interesting to think about in the context of software:
 

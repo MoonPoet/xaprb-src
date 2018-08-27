@@ -35,17 +35,8 @@ quickly than my eyes could follow. When I tried, I only produced ugly scribbles.
 I stayed slow and forceful. Beauty was more important than speed or relaxation.
 Muscle cramps be damned.
 
-One day my father commented that I shouldn't be writing with my fingers. I
-should balance my arm on the muscles of my forearm, he told me, hold my fingers
-steady, and write with my whole arm. He demonstrated.
-
-I thought my father's writing was terrible, and I was irritated at the
-suggestion that I could do anything wrong. No one had mentioned technique to me
-before. I was just supposed to copy the letters by tracing them, and I had
-learned how to do that. And besides, everyone always complimented my beautiful
-penmanship.
-
-I ignored my father.
+Someone suggested that I balance my arm on the muscles of my forearm, hold my fingers steady, and write with my whole arm.
+I didn't take the suggestion, because that wasn't what I had taught myself to do, and everyone always complimented my beautiful penmanship.
 
 {{< dinkus >}}
 
@@ -262,9 +253,6 @@ from my wrist and arm, not my knuckles. I was completely flowing, in the zone.
 And depending on how much and how completely I let go, I write *quickly* now.
 The pen moves faster than I can really track with my eyes, yet the shapes of the
 letters are nearly as elegant as slowed-down writing.
-
-I guess fathers do know things sometimes. It just takes a son a few decades to
-understand it.
 
 {{< dinkus >}}
 

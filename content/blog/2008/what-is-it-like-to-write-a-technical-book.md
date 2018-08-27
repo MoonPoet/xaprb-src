@@ -176,7 +176,7 @@ These expressions helped me catch constructions such as "the tail of the dog," w
 
 Phrases like "of course" usually alert me that I'm being sloppy. "Of course" really means "this is obvious, but I'm stating it anyway." So why write it, then? However, far more often "of course" is a proxy for "I believe this, but I don't know why and it feels hard to explain, so I'm going to just imply that it's obvious and you shouldn't have to ask me to explain it." A lot of other phrases in my list are just mental bad habits I get into---such as "in order to," which can usually be shortened to "to."
 
-My father taught me that I use "that" too much. "She said that the pie was good" becomes "She said the pie was good." Sometimes I take this too far. For example, "My father taught me I use 'that' too much" is overkill; it needs an extra "that" to flow well. The editor put quite a few "that"s back into the text.
+Someone taught me that I use "that" too much. "She said that the pie was good" becomes "She said the pie was good." Sometimes I take this too far. For example, "Someone taught me I use 'that' too much" is overkill; it needs an extra "that" to flow well. The editor put quite a few "that"s back into the text.
 
 Passive voice is an absolute killer---it confuses the reader, even if s/he doesn't notice, and makes it much harder to comprehend and retain what you're reading. Here's an example I found with my regular expression: "For some organizations this problem is solved using a combination of" becomes "Some organizations solve this problem with a combination of." Sentence clarity is made worse by few things more than when passive voice is used by the author. (You're supposed to laugh.)
 
