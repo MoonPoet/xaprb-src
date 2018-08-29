@@ -23,7 +23,7 @@ An "objective, unbiased" telling of the events is simply he-said, she-said.
 This creates a false equivalence between the stories, which are just not equivalent.
 One is legitimate, and one is a lie.
 
-That's bad, but the next outcome is also bad: the risks are also reframed into a false equivalence.
+That's bad enough, but it has another consequence too: the risks are also reframed into a false equivalence.
 In other words, neutral onlookers get a badly biased perspective on the relative risk of a woman being assaulted, versus a man being falsely accused.
 
 A more balanced view considers the following facts, all of which are exhaustively documented to the point that I don't need to cite references:
