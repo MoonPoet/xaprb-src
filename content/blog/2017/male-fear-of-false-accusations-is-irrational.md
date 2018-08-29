@@ -11,16 +11,16 @@ categories:
 - Diversity
 ---
 In the age of Harvey Weinstein and #MeToo, I observe that a lot of men are afraid of being falsely accused of assault or harassment.
-These injustices do happen---albeit rarely---and they are terrible, the chance that a man will be falsely accused is blown far out of proportion.
+These injustices do happen---albeit rarely---and they are terrible, but the chance that a man will be falsely accused is blown far out of proportion.
 Those who fear it are unwitting participants in a power dynamic that we should examine and resist.
 <!--more-->
 
 First, I cannot state strongly enough that the victims of sexual assault are overwhelmingly women and the perpetrators are overwhelmingly men.
-The statistics are clear, but this _doesn't_ simply go without saying, because there's a filter that colors all of our perceptions of violence against women.
+The statistics are clear, but this _doesn't_ go without saying, because there's a filter that colors all of our perceptions of violence against women.
 It's an outcome of the fact that when victims challenge their accusers, it's impossible for onlookers to judge the situation objectively.
 The victim accuses, the abuser denies, and the media reports both sides.
 An "objective, unbiased" telling of the events is simply he-said, she-said.
-This creates a false equivalence between the stories, which are simply not equivalent.
+This creates a false equivalence between the stories, which are just not equivalent.
 One is legitimate, and one is a lie.
 
 That's bad, but the next outcome is also bad: the risks are also reframed into a false equivalence.
@@ -28,7 +28,7 @@ In other words, neutral onlookers get a badly biased perspective on the relative
 
 A more balanced view considers the following facts, all of which are exhaustively documented to the point that I don't need to cite references:
 
-- Assault and harrassment are epidemic, and frequently not reported.
+- Assault and harassment are epidemic, and frequently not reported.
 - Most of this violence is perpetrated by men.
 - Most accusations of assault are true, and false accusations are rare.
 
