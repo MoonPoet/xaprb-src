@@ -2,11 +2,13 @@
 url: /blog/male-fear-of-false-accusations-is-irrational/
 title: "Men: Don't Fear Accusations, Change The System"
 date: 2017-10-12 20:16:30 -0400
-categories:
-- Commentary
 description: Instead of fearing being alone with women, let's work to dismantle sexism.
 credit: "https://unsplash.com/photos/arrl5dVwzC8"
 image: "/media/2017/10/unsplash-photos-arrl5dVwzC8.jpg"
+thumbnail: /media/2017/10/unsplash-photos-arrl5dVwzC8.tn-500x500.jpg
+categories:
+- Feminism
+- Diversity
 ---
 In the age of Harvey Weinstein and #MeToo, I observe that a lot of men are afraid of being falsely accused of assault or harassment.
 Although both injustices happen, and both are terrible, the chance that a man could be falsely accused is blown far out of proportion.
