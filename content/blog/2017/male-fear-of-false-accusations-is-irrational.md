@@ -11,7 +11,7 @@ categories:
 - Diversity
 ---
 In the age of Harvey Weinstein and #MeToo, I observe that a lot of men are afraid of being falsely accused of assault or harassment.
-Although both injustices happen, and both are terrible, the chance that a man could be falsely accused is blown far out of proportion.
+These injustices do happen---albeit rarely---and they are terrible, the chance that a man will be falsely accused is blown far out of proportion.
 Those who fear it are unwitting participants in a power dynamic that we should examine and resist.
 <!--more-->
 
