@@ -31,14 +31,14 @@ ache. I remember my grip slipping down towards the point, slippery with sweat,
 getting the ink on my fingers.
 
 I always wondered how my older brothers wrote so quickly. Their pens darted more
-quickly than my eyes could follow. When I tried, I only produced ugly scribbles.
+quickly than my eyes could follow. When I tried, I produced only ugly scribbles.
 I stayed slow and forceful. Beauty was more important than speed or relaxation.
 Muscle cramps be damned.
 
 Someone suggested that I balance my arm on the muscles of my forearm, hold my fingers steady, and write with my whole arm.
 I didn't take the suggestion, because that wasn't what I had taught myself to do, and everyone always complimented my beautiful penmanship.
 
-{{< dinkus >}}
+----
 
 As my teenage years gave way to my early twenties, I abandoned cursive writing.
 I admired my neat block printing. I thought it was precise and clear, and easier
@@ -55,7 +55,7 @@ practically illegible anyway. I wasn't even sure why I was taking notes, but I
 thought it might help me learn the material better by hearing, seeing, and
 writing.
 
-{{< dinkus >}}
+----
 
 Later in college, I stopped writing on paper, switching to a keyboard instead. I
 bought a copy of *Mavis Beacon Teaches Typing* and taught myself. I'd grown up
@@ -95,7 +95,7 @@ Dvorak had some frequently-used letters in even less convenient locations,
 especially those that required stretching my little finger up and away from my
 palm. The twitching and convulsing mostly stopped, though.
 
-{{< dinkus >}}
+----
 
 After college I rarely wrote by hand anymore. The exception was that I continued
 to journal, with a few periods where I lost the habit, but always regained it.
@@ -107,7 +107,7 @@ handwriting continued to change. But it always remained forceful and tense.
 Sometimes I grew frustrated with writing. No matter what I tried, my writing
 was physically difficult and painful.
 
-{{< dinkus >}}
+----
 
 I taught myself guitar when I was 10 or 11 years old, and at times played
 several hours a day. The Mel Bay books and library books on classical guitar
@@ -116,7 +116,7 @@ moments, but as I concentrated on the music, my body automatically tensed, and
 when my attention turned to my fingers I'd notice that I was once again mashing
 the strings into the frets with an iron grip.
 
-{{< dinkus >}}
+----
 
 When I founded VividCortex, I found myself buying and filling books full of
 [notes](/blog/2013/07/10/ultimate-notebook-and-journal-face-off/). As in
@@ -149,7 +149,7 @@ I needed something to get me out of the ditch. Maybe, secretly, I
 wanted to relearn beautiful cursive handwriting so I could feel okay about
 myself again.
 
-{{< dinkus >}}
+----
 
 It was painful at first. The pen went all different ways. I didn't remember the
 right way to make some of the letters. I decided I didn't care and plowed on.
@@ -172,7 +172,7 @@ few different types of pen. I'd been using felt markers in my notebooks, but
 they didn't feel good. Ballpoint pens felt better, but I was still cramping my
 hand and tensing my shoulders.
 
-{{< dinkus >}}
+----
 
 But then something happened. It wasn't just that the writing was pleasing to
 look at. That, yes. But more importantly, it felt better to write.
@@ -213,7 +213,7 @@ Journaling was special again. Different, but not in the ways I'd expected. It
 was meditative. It helped me place a barrier between the stress and anxiety of
 the day, and the night. It helped me fall asleep a little bit more easily.
 
-{{< dinkus >}}
+----
 
 One day I decided to treat myself to a special pen as a reward for journaling,
 to give myself an incentive. Something extra to look forward to each night.
@@ -254,7 +254,7 @@ And depending on how much and how completely I let go, I write *quickly* now.
 The pen moves faster than I can really track with my eyes, yet the shapes of the
 letters are nearly as elegant as slowed-down writing.
 
-{{< dinkus >}}
+----
 
 I'm not the only one who's discovered this. It turns out that ballpoint pens
 might have helped [kill off cursive writing](http://www.theatlantic.com/technology/archive/2015/08/ballpoint-pens-object-lesson-history-handwriting/402205/).
@@ -271,7 +271,7 @@ purple Pilot MR Retro Pop with a medium nib.
 
 ![Pilot Metropolitan Fountain Pen](/media/2015/03/pilot-fountain-pen.jpg)
 
-{{< dinkus >}}
+----
 
 What is it about cursive writing that's so special? Some people think the
 griping about the loss of cursive skills is just old-timers who can't let go of
@@ -319,7 +319,7 @@ fountain pen. My fountain pen is for journaling (and sometimes letter writing),
 in cursive, and my brain locks up awkwardly if I try to do anything else with
 it.
 
-{{< dinkus >}}
+----
 
 Having relearned cursive, I have discovered a great love for hand lettering. I
 see it everywhere and admire it.
@@ -350,7 +350,7 @@ Here's another I found on
 Buying a book on calligraphy has deepened my appreciation for it, even though
 I've not made time to practice it.
 
-{{< dinkus >}}
+----
 
 There are many resources for learning to write in different styles. There are
 many styles of cursive, for that matter: Spencerian, Palmerian, A Beka Book, ZB,
