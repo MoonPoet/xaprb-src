@@ -34,6 +34,7 @@ params:
    - feature-hyphenate
    - feature-justify
    - feature-highlight
+   - feature-hrfleuron
 MetaDataFormat: "yaml"
 Paginate: 20
 rssLimit: 20
