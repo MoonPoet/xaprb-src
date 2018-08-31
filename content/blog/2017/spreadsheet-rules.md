@@ -1,14 +1,13 @@
 ---
+title: Simple Guidelines For Maintainable Spreadsheets
 url: /blog/spreadsheet-rules/
 author: Baron Schwartz
-categories:
-- Desktop
-- Programming
 date: 2017-02-25T14:43:17-05:00
 description: "Here are some practices I've found to help keep spreadsheets manageable over the years."
 image: "/media/2017/02/ledger.jpg"
 credit: https://pixabay.com/en/ledger-accounting-business-money-1428230/
-title: Simple Guidelines For Maintainable Spreadsheets
+categories:
+- Spreadsheets
 ---
 
 The spreadsheet is one of the most powerful inventions in the history of

@@ -2,15 +2,11 @@
 url: /blog/excel-hacks-to-ignore-missing-data/
 title: Excel Hacks To Ignore Missing Data
 date: '2016-11-20T11:11:14-05:00'
-author: Baron Schwartz
-categories:
-- Desktop
-- Math
-- Programming
-description: Here are two alternatives to straightforward spreadsheet syntax when
-  annoying errors seem to make things more difficult than needed.
+description: Here are two alternatives to straightforward spreadsheet syntax when annoying errors seem to make things more difficult than needed.
 image: /media/2016/11/min-error.png
 credit: https://www.pexels.com/photo/green-and-lime-bird-on-gray-wood-log-191757/
+categories:
+- Spreadsheets
 ---
 I've done quite a bit of work with Excel over the last few years, and I've found a couple of recurring problems when there's missing or error data in ranges. I've had to work around this enough times that I thought it was worth sharing the solutions I've used.
 
