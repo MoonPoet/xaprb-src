@@ -2,6 +2,7 @@
 title: "Baron Schwartz's Website"
 subtitle: "Stay Curious!"
 image: /media/2018/04/thomas-richter-500138-unsplash.jpg
+credit: "https://unsplash.com/photos/Ilx2xUpAKEI"
 ---
 [![Baron Schwartz](/baron-square.jpg)](/about/)
 
