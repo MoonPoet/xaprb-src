@@ -4,6 +4,7 @@ date: "2013-07-02"
 url: /blog/2013/07/02/my-recipe-for-more-enjoyable-presentations/
 categories:
   - Conferences
+  - Presentations
 ---
 Since I started making my presentations more beautiful, people have often asked me my secret. It's not a secret, and it's really quite simple to do.
 

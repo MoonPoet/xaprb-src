@@ -2,11 +2,11 @@
 url: /blog/markdown-presentations-with-remarkjs/
 title: 'Markdown Presentations With RemarkJS'
 date: "2018-03-30T07:23:36-07:00"
-categories:
-  - Conferences
-author: "Baron Schwartz"
 description: "RemarkJS makes it easier and more fun to build and present slideshows."
 image: "/media/2018/03/card-1868267_1280.jpg"
+categories:
+  - Conferences
+  - Presentations
 ---
 
 I switched from traditional presentation programs to
