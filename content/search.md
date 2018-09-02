@@ -3,6 +3,7 @@ layout: search
 type: page
 title: 'Search'
 url: /search/
+skip: true
 classes:
 - no-subtitle
 ---

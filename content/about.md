@@ -5,8 +5,7 @@ date: 2005-01-01
 type: page
 description: ''
 image: ''
-menu:
-  main: {}
+skip: true
 classes:
 - no-subtitle
 ---

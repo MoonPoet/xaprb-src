@@ -1,6 +1,7 @@
 ---
 title: "Regex Toolkit"
 date: "2005-01-01"
+skip: true
 ---
 
 <script type="text/javascript">

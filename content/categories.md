@@ -1,3 +1,6 @@
+---
+skip: true
+---
 <ul>
     {{ range $key, $value := .Site.Taxonomies.categories }}
     <li>
