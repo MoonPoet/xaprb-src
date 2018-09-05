@@ -5,21 +5,17 @@ url: "/slides/how-to-monitor-your-database/"
 image: "/slides/how-to-monitor-your-database/cover.jpg"
 description: "This talk is about how you can monitor your database so you can learn what it’s really doing. When you can do this, you’ll become a much better engineer, not only building better systems but also making your team members heroes too."
 ratio: "16:9"
-theme: "monobloc"
+themes:
+- apron
+- adirondack
 ---
-class: title,no-number
+class: title, no-number, smokescreen, shelf
 background-image: url(cover.jpg)
-background-size: cover
 
-.smokescreen[
 # How to Monitor Your Database 
 ## Baron Schwartz &bullet; May 2018
-]
 
-<div style="position: absolute; right: 20px; top: 20px; width: 250px;
-background-color: rgba(0,0,0,.7); padding: 10px; border-radius: 10px">
-<img src=vividcortex-horizontal-white-rgb.svg>
-</div>
+![Logo](vividcortex-horizontal-white-rgb.svg# absolute r-0 t-0 pa5 mw-30)
 
 ---
 layout: true
@@ -29,24 +25,21 @@ layout: true
 </div>
 
 ---
-class: img-right
+class: img-fullbleed-right
 # Logistics and Contact Info
 
-.col[
+![headshot](headshot.jpg)
+
 - Ask questions anytime
 - Write me baron@vividcortex.com
 - Tweet me at @xaprb
 - Slides at [xaprb.com/talks/](https://www.xaprb.com/talks/)
-]
-
-.rc[
-![headshot](headshot.jpg)
-]
 
 ---
-class: img-right
-.col[
+class: img-fullbleed-right
 # Introduction & Agenda
+
+![Agenda](unsplash-photos-FoKO4DpXamQ.jpg)
 
 - What is QoS and Why Does it Matter?
 - The 4 Golden Signals of QoS
@@ -56,18 +49,12 @@ class: img-right
 - How To Diagnose Performance Problems
 - Don’t Get Cut On Sharp Edges
 - Conclusions and Resources
-]
-
-.rc[<img src=unsplash-photos-FoKO4DpXamQ.jpg style="height: 100%; width: 100%; object-fit: cover">]
 
 ---
-class: title
+class: title, smokescreen
 background-image: url(unsplash-photos-5AiWn2U10cw.jpg)
-background-size: cover
 
-.smokescreen[
 # Quality of Service
-]
 
 ---
 # Why Quality of Service Matters
@@ -88,18 +75,16 @@ Users care about *request* performance.
 The definition is *latency* in units of seconds per request.
 
 ---
-class: img-right
+class: img-fullbleed-right
 
-.col[
+![Flock of Sheep](unsplash-photos-ZuV4bPalclY.jpg)
+
 # You Must Care About All Requests
 
 Users care about their own requests, but you have to make sure the
 **population** of requests is getting good QoS.
 
 This is **workload QoS**.
-]
-
-.rc[<img src=unsplash-photos-ZuV4bPalclY.jpg style="width: 100%; height: 100%; object-fit: cover">]
 
 ---
 # The 4 Golden Signals of QoS
@@ -139,19 +124,17 @@ Isn’t high CPU utilization a performance problem?
 ---
 # These Are Resource Metrics
 
-The **workload** places **demand** on **resources**.
-
-The way resources respond to demand often explains performance.
-
-There are **four key resources**:
+The **workload** places **demand** on four key **resources**.
 
 1. CPU cycles
 2. Memory
 3. Storage
 4. Network
 
+The way resources respond to demand often explains performance.
+
 ---
-# The Three Golden Signals of Resource Sufficiency
+## The Three Golden Signals of Resource Sufficiency
 
 The three golden signals are [Brendan Gregg’s USE
 method](http://www.brendangregg.com/usemethod.html):
@@ -161,10 +144,11 @@ method](http://www.brendangregg.com/usemethod.html):
 * Errors
 
 ---
-class: smaller, two-column
+class: two-col-img-right, compact
 
 # The Zen of Performance: Non-Duality
-.col[
+
+![Yin and Yang](yin-yang.svg# w-8-12 center mt4)
 
 External (customer’s) view is singular:
 
@@ -175,35 +159,23 @@ Internal (operator’s) view is plural:
 * Requests and their latency distribution, rates, and concurrency.
 * System resources/components and their throughput, utilization, and backlog.
 * Errors.
-]
-
-.rc[
-![Yin and Yang](yin-yang.png)
-]
 
 ---
-class: two-column
+class: two-col-img-right, roomy
 
 # CELT + USE Together
 
-.col[
+![Day and Night](day-and-night.jpg)
+
 The CELT and USE metrics are the **seven golden signals** of overall *system*
 health and performance, unifying the external (customer, workload) and internal
 (resource) perspectives.
-]
-
-.col[
-![Day and Night](day-and-night.jpg)
-]
 
 ---
-class: title
+class: title, smokescreen
 background-image: url(unsplash-photos-iuqxv7kFj64.jpg)
-background-size: cover
 
-.smokescreen[
 # Your Mental Models Are Wrong
-]
 
 ---
 # System As Imagined, System As Existing
@@ -218,7 +190,7 @@ But **the map is not the territory**. Mental models are always wrong.
 class: img-450h
 # Pete’s Mental Model
 
-[![Pete’s For Loop](petes-for-loop.jpg)](https://twitter.com/toomuchpete/status/1001213344207040512)
+[![Pete’s For Loop](petes-for-loop.jpg# mw-80 center)](https://twitter.com/toomuchpete/status/1001213344207040512)
 
 ---
 # Your Mental Model Of Your Databases
@@ -230,6 +202,7 @@ class: img-450h
 * The most frequent queries come from the product listings page
 
 ---
+class: roomy
 # What’s Isn’t Measured… Is Imagined
 
 If you haven’t measured your application/database interaction, **you will be
@@ -248,9 +221,10 @@ You probably have good resource monitoring, but poor (or no) workload
 monitoring.
 
 ---
-class: smaller, img-right
+class: compact, img-fullbleed-right
 
-.col[
+![](unsplash-photos-tf0jFfbg03U.jpg# opc)
+
 ## How To Measure Workload
 
 There are three primary ways to measure requests (workload):
@@ -264,21 +238,15 @@ There are three primary ways to measure requests (workload):
 3. Sniff network traffic
 	1. Pros: near-zero load added, super-detailed
 	2. Cons: technically hard; doesn’t measure internals
-]
-
-.rc[<img src=unsplash-photos-tf0jFfbg03U.jpg style="width: 100%; height: 100%; object-fit: cover">]
-
 
 ---
-class: title
+class: title, smokescreen
 background-image: url(unsplash-photos-t7YycgAoVSw.jpg)
-background-size: cover
 
-.smokescreen[
 # Fixing Performance Problems
-]
 
 ---
+class: roomy
 # The Three Performance Problems
 
 1. Latency too high
@@ -286,6 +254,7 @@ background-size: cover
 3. Collateral damage / noisy neighbor problems
 
 ---
+class: roomy
 # Causes of Performance Problems
 
 - Needless requests
@@ -294,23 +263,20 @@ background-size: cover
 - Resource starvation or stalls
 
 ---
-class: two-column
+class: two-col-img-right, roomy
+
 # The Performance Swiss-Army Knife
 
-.col[
+![Profile](profile.png)
 
 A **profile** is an all-purpose tool for finding signal in the noise.
 
 1. Group related requests together
 2. Rank them by a metric
 3. Look at the top items
-]
-
-.col[
-![Profile](profile.png)
-]
 
 ---
+class: roomy
 # Finding Performance Problems
 
 - Finding needless and too-frequent requests
@@ -321,9 +287,10 @@ A **profile** is an all-purpose tool for finding signal in the noise.
 	- Profile by `P99(latency)`
 
 ---
-class: img-right
+class: img-fullbleed-right
 
-.col[
+![](unsplash-photos-tf0jFfbg03U.jpg)
+
 # Prioritizing What You Find
 
 How do you know whether “optimizing” a query is worth it?
@@ -331,14 +298,12 @@ How do you know whether “optimizing” a query is worth it?
 Rule of thumb:
 * To conserve resources / reduce collateral damage, look at % of total
 * To make customers happy, look at p99 latency
-]
-
-.rc[<img src=unsplash-photos-tf0jFfbg03U.jpg style="width: 100%; height: 100%; object-fit: cover">]
 
 ---
-class: img-right, smaller
+class: img-fullbleed-right
 
-.col[
+![](unsplash-photos-vWI1kTcMcDI.jpg)
+
 # Inspecting Individual Requests
 
 You don’t learn much from aggregate data.
@@ -348,11 +313,10 @@ There’s no “average” request.
 You need to drill into individual examples (individual log lines or samples).
 
 You also need to look at the *distribution* of request latencies.
-]
-
-.rc[<img src=unsplash-photos-vWI1kTcMcDI.jpg style="width: 100%; height: 100%; object-fit: cover">]
 
 ---
+class: roomy
+
 # How To Fix A “Bad” Query
 
 If a query is too slow, why?
@@ -363,6 +327,7 @@ If a query is too slow, why?
   faster
 
 ---
+class: roomy
 # Technology Sharp Edges
 
 Every database technology has its Kryptonite.
@@ -372,6 +337,7 @@ Every database technology has its Kryptonite.
 * MongoDB: missing indexes, lock contention…
 
 ---
+class: roomy
 # Technology-Specific Resources
 
 Many of the “sharp edges” are special resources.
@@ -383,6 +349,7 @@ Many of the “sharp edges” are special resources.
 Usually only a few things matter much. (But it depends.)
 
 ---
+class: roomy
 # Conclusions
 
 - Monitor workload, not just resources
@@ -393,6 +360,7 @@ Usually only a few things matter much. (But it depends.)
 - Cover the basics of your technology’s “sharp edges”
 
 ---
+class: roomy
 # Related: What Should I Monitor?
 
 … and how should I do it?
@@ -400,35 +368,24 @@ Usually only a few things matter much. (But it depends.)
 <iframe width="621" height="350" src="https://www.youtube.com/embed/zLjhFrUhqxg" frameborder="0" allowfullscreen></iframe>
 
 ---
-class: three-column, smaller
+class: roomy, col, col-3
 
 # Resources: Free EBooks
 
-.col[
 [![Practical Query Optimization](pqo-ebook.png)](https://www.vividcortex.com/resources/practical-query-optimization)
-]
-.col[
 [![Making VividCortex Work For You](vividcortex-ebook.jpg)](https://www.vividcortex.com/resources/6-ways-to-make-vividcortex-work-for-you-download)
-]
-.col[
 [![Observability](observability-ebook.jpg)](https://www.vividcortex.com/resources/architecting-highly-monitorable-apps)
-]
-
-
-Your artisanal hand-brewed free copy is waiting at https://vividcortex.com/resources
-
 
 ---
-class: two-column
+class: roomy
+
 # Slides and Contact Information
 
-.col[
-Slides are at https://www.xaprb.com/talks/ or you can scan the QR code. To export as PDF, print with Chrome.
+<div id="qrcode" style="width:400px; height:400px; margin-left: 2rem; float: right"></div>
+
+Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
+
+To download/export as PDF, use Chrome’s print dialog to save as PDF.
 
 Contact: @xaprb or baron@vividcortex.com
 
-]
-
-.col[
-<div id="qrcode"></div>
-]
