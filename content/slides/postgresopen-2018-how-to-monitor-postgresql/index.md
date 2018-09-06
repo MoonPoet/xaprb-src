@@ -1,9 +1,9 @@
 ---
-title: 'How to Monitor Your Database'
+title: 'How to Monitor PostgreSQL'
 date: "2018-09-05T17:00:00-07:00"
-url: "/slides/postgresopen-2018-how-to-monitor-your-database/"
-image: "/slides/postgresopen-2018-how-to-monitor-your-database/cover.jpg"
-description: "This talk is about how you can monitor your database so you can learn what it’s really doing. When you can do this, you’ll become a much better engineer, not only building better systems but also making your team members heroes too."
+url: "/slides/postgresopen-2018-how-to-monitor-postgresql/"
+image: "/slides/postgresopen-2018-how-to-monitor-postgresql/cover.jpg"
+description: "Learn how to monitor PostgreSQL effectively, focusing on the right aspects of Postgres to make the server efficient, meet performance and cost goals, and empower the engineering team to develop effectively against the database."
 ratio: "16:9"
 themes:
 - apron
@@ -12,7 +12,7 @@ themes:
 class: title, no-number, smokescreen, shelf
 background-image: url(cover.jpg)
 
-# How to Monitor Your Database 
+# How to Monitor PostgreSQL
 ## Baron Schwartz &bullet; PostgresOpen 2018
 
 ![Logo](vividcortex-horizontal-white-rgb.svg# absolute r-0 t-0 pa5 mw-30)
@@ -30,7 +30,7 @@ class: img-fullbleed-right
 
 ![headshot](headshot.jpg)
 
-# Logistics and Contact Info
+# Introduction, Getting Started
 
 - Ask questions anytime
 - Write me baron@vividcortex.com
@@ -40,7 +40,7 @@ class: img-fullbleed-right
 ---
 class: img-fullbleed-right
 
-# Introduction & Agenda
+# Agenda
 
 ![Agenda](unsplash-photos-FoKO4DpXamQ.jpg)
 
@@ -52,6 +52,15 @@ class: img-fullbleed-right
 - How To Diagnose Performance Problems
 - Don’t Get Cut On Sharp Edges
 - Conclusions and Resources
+
+???
+
+- Who is this talk for
+- What it's about, it's a general framework
+- It comes from my philosophy, what I built VividCortex on
+- How to make sense out of the sea of data you might look at
+- Nagios plugin has dozens of checks, should I? No
+- The goal is to cut down the confusion and get to what matters
 
 ---
 class: title, smokescreen
@@ -69,6 +78,10 @@ class: roomy
 * So you should measure *request* performance above all.
 * *To know if there’s a problem, measure work-getting-done.*
 
+???
+- QoS is literally whether the database is doing its job right
+- DB's job is to handle requests: "store" "answer"
+
 ---
 class: roomy
 # What is Quality of Service?
@@ -79,6 +92,12 @@ Approach performance from the *user’s* perspective:
 
 Users care about *request* performance.
 The definition is *latency* in units of seconds per request.
+
+???
+- QoS is correctness and speed
+- Care about the user's perspective
+- Singular
+- Definition of performance is unambiguous, based on laws
 
 ---
 class: img-fullbleed-right, fit-h1
@@ -91,6 +110,12 @@ Users care about their own requests, but you have to make sure the
 **population** of requests is getting good QoS.
 
 This is **workload QoS**.
+
+???
+
+- Workload is the interaction between the users/app/database
+- Measuring across that boundary
+
 
 ---
 # The 4 Golden Signals of QoS
@@ -105,13 +130,21 @@ The **CELT metrics** reveal everything about workload QoS.
 These can all be calculated as average (or p99) during intervals or as they
 apply to individual requests (except for Throughput).
 
+???
+
+- This is a superset of RED method, SRE golden signals, etc.
+- The names are standardized for clarity. Clarity matters a lot.
+- The Site Reliability Engineering book
+- Philosophy: less is more, the basics; Google can run on a few metrics, so can
+  you
+- Key: you can characterize individual + population, summary statistics
+- The math-letter variable names are part of Little's Law
+
 ---
-class: roomy
+class: roomy, fit-h1
+# Aside: Concurrency, The Magic Metric
 
-# Concurrency, The Magic Metric
-
-Concurrency is the single best metric of **demand** or load. (Throughput isn’t a
-very good load metric.)
+Concurrency is the single best metric of **demand** or load.
 
 By Little’s Law, \\(N=XR\\), average concurrency during a time interval \\(T\\) is
 also
@@ -119,6 +152,14 @@ also
 \\[
 N = \frac{\sum_{}^{}{R}}{T}
 \\]
+
+???
+
+- Concurrency is the best metric of load
+- Normalized, comparable, dimensionless
+- Related to every performance equation; load average and other familiar things
+- Queue depth, queue length, load, -- all concurrency
+- Throughput isn't a very good load metric.
 
 ---
 class: roomy
@@ -130,6 +171,10 @@ To be clear: performance is **how well users are being served**.
 But CPU utilization, network saturation, etc aren’t useless, either.
 
 Isn’t high CPU utilization a performance problem?
+
+???
+- War story about mutexes causing low CPU utilization
+- Again, look at work-getting-done
 
 ---
 class: roomy
@@ -145,6 +190,9 @@ The **workload** places **demand** on four key **resources**.
 
 The way resources respond to demand often explains performance.
 
+???
+- I'll show you next how to figure out if resources are adequate.
+
 ---
 class: roomy, fit-h1
 
@@ -156,6 +204,10 @@ method](http://www.brendangregg.com/usemethod.html):
 * Utilization
 * Saturation
 * Errors
+
+???
+
+- Follow the link to learn tech-specific ways to apply the USE method
 
 ---
 class: two-col-img-right, compact
@@ -185,6 +237,27 @@ The CELT and USE metrics are the **seven golden signals** of overall *system*
 health and performance, unifying the external (customer, workload) and internal
 (resource) perspectives.
 
+???
+- Errors are both user-facing and internal (e.g. kernel logs)
+
+---
+# What Exactly Is A System?
+
+My view is that *system* is the totality of all interacting parts:
+
+* The customers or users
+* The workload they generate
+* The services handling that workload
+* The resources the services need
+* All dependent services etc.
+
+If you're not monitoring all of these, you're not **monitoring the system**.
+
+???
+
+- "We're getting reports of outages."
+- "Let me check... the database looks fine, CPU is fine."
+
 ---
 class: title, smokescreen
 background-image: url(unsplash-photos-iuqxv7kFj64.jpg)
@@ -207,7 +280,7 @@ class: roomy
 
 # Pete’s Mental Model
 
-[![Pete’s For Loop](petes-for-loop.jpg# mw-80 center)](https://twitter.com/toomuchpete/status/1001213344207040512)
+[![Pete’s For Loop](petes-for-loop.jpg# mw-70 center)](https://twitter.com/toomuchpete/status/1001213344207040512)
 
 ---
 class: roomy, fit-h1
@@ -219,6 +292,11 @@ class: roomy, fit-h1
 * Users constantly check for messages from users they follow
 * Our most expensive query is the leaderboard
 * The most frequent queries come from the product listings page
+
+???
+
+- The only way to refine your mental models is to measure and see where they're
+  wrong.
 
 ---
 class: roomy
@@ -245,21 +323,25 @@ monitoring.
 ---
 class: compact, img-fullbleed-right
 
-![](unsplash-photos-tf0jFfbg03U.jpg# opc)
+![](isis-franca-641217-unsplash.jpg)
 
 # How To Measure Workload
 
 There are three primary ways to measure requests (workload):
 
 1. Turn on full query logging
-   1. Pros: it works, it’s widely supported
-	2. Cons: often severe performance overhead
+	- Pros: it works, it’s widely supported
+	- Cons: often severe performance overhead
+--
+
 2. Use internal statistics tables/views, if they exist
-	1. Pros: built in/native; moderate impact
-	2. Cons: often doesn’t exist; only gives aggregate data
+	- Pros: built in/native; moderate impact
+	- Cons: often doesn’t exist; only gives aggregate data
+--
+
 3. Sniff network traffic
-	1. Pros: near-zero load added, super-detailed
-	2. Cons: technically hard; doesn’t measure internals
+	- Pros: near-zero load added, super-detailed
+	- Cons: technically hard; doesn’t measure internals
 
 ---
 class: title, smokescreen
@@ -298,20 +380,31 @@ A **profile** is an all-purpose tool for finding signal in the noise.
 3. Look at the top items
 
 ---
+class: fullbleed, img-caption
+
+![Profile](profile.png)
+
+
+---
 class: roomy
 # Finding Performance Problems
 
-- Finding needless and too-frequent requests
-	- Profile by frequency (throughput), ranking by `SUM(count)`
-	- Are they useless, e.g. driver look-before-leap `ping` queries?
-- Finding too-slow requests
-	- Profile by `SUM(latency)`, then look at outliers
-	- Profile by `P99(latency)`
+Finding needless and too-frequent requests
+
+- Profile by frequency (throughput), ranking by `SUM(count)`
+- Are they useless, e.g. driver look-before-leap `ping` queries?
+
+--
+
+Finding too-slow requests
+
+- Profile by `SUM(latency)`, then look at outliers
+- Profile by `P99(latency)`
 
 ---
 class: img-fullbleed-right
 
-![](unsplash-photos-tf0jFfbg03U.jpg)
+![](unsplash-photos-OgvqXGL7XO4.jpg# opc)
 
 # Prioritizing What You Find
 
@@ -335,6 +428,13 @@ There’s no “average” request.
 You need to drill into individual examples (individual log lines or samples).
 
 You also need to look at the *distribution* of request latencies.
+
+---
+class: fullbleed, img-caption
+
+![Samples](samples.png)
+
+Aggregate metrics and averages can't tell the story this picture does.
 
 ---
 class: roomy
@@ -397,6 +497,15 @@ class: roomy, col, col-3
 [![Practical Query Optimization](pqo-ebook.png)](https://www.vividcortex.com/resources/practical-query-optimization)
 [![Making VividCortex Work For You](vividcortex-ebook.jpg)](https://www.vividcortex.com/resources/6-ways-to-make-vividcortex-work-for-you-download)
 [![Observability](observability-ebook.jpg)](https://www.vividcortex.com/resources/architecting-highly-monitorable-apps)
+
+---
+class: col, col-2, roomy
+
+# More Resources
+
+[![SRE Book](sre-book.jpg# mw-60 center)](https://landing.google.com/sre/book.html)
+
+[![DBRE Book](dbre.jpg# mw-60 center)](https://shop.oreilly.com/product/0636920039761.do)
 
 ---
 class: roomy
