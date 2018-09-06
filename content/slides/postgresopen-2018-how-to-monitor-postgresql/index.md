@@ -15,7 +15,7 @@ background-image: url(cover.jpg)
 # How to Monitor PostgreSQL
 ## Baron Schwartz &bullet; PostgresOpen 2018
 
-![Logo](vividcortex-horizontal-white-rgb.svg# absolute r-0 t-0 pa5 mw-30)
+![Logo](vividcortex-horizontal-white-rgb.svg# absolute smokescreen r-0 b-0 pa3 mw-2-12 br3 ma3)
 
 ---
 layout: true
@@ -251,6 +251,10 @@ My view is that *system* is the totality of all interacting parts:
 * The resources the services need
 * All dependent services etc.
 
+--
+
+Crucially, systems are more than the sum of their parts. They have emergent behaviors and properties that come from the combinations of the above.
+
 If you're not monitoring all of these, you're not **monitoring the system**.
 
 ???
@@ -469,6 +473,41 @@ Many of the “sharp edges” are special resources.
 * Etc.
 
 Usually only a few things matter much. (But it depends.)
+
+---
+class: fit-h1
+
+# Monitoring PostgreSQL for Query Performance Issues
+
+| Metrics | Source | What To Do |
+|-----------------|-------------------|------------|
+| `seq_scan`, `idx_scan` | `pg_stat_user_tables` | Check for bad queries or missing indexes
+| `tup_fetched`, `tup_returned` | `pg_stat_database` | Check for missing/poor indexes
+| `temp_bytes` | `pg_stat_database` | Check if query rewrites can reduce sorts / temp files; check config (less often the issue)
+| lock counts by type | `pg_locks` | May indicate the need for query rewrites, indexing, and/or capacity increases
+
+---
+class: fit-h1, compact
+
+# Monitoring PostgreSQL for Capacity / Resource Issues
+
+| Metrics | Source | What To Do |
+|-----------------|-------------------|------------|
+| replication delay | `pg_last_xlog_replay_location()` `pg_last_wal_replay_lsn()` functions (varies) | Check for hardware, network, and/or capacity problems
+| `checkpoints_req`, `checkpoints_timed` | `pg_stat_bgwriter` | Check for resource/capacity problems or overload
+| `numbackends` | `pg_stat_database` | If it approaches `max_connections` you may have capacity problems, or optimization issues causing stalls and/or pileups of inefficient queries
+
+---
+class: fit-h1
+
+# Monitoring PostgreSQL for VACUUM Issues
+
+| Metrics | Source | What To Do |
+|-----------------|-------------------|------------|
+| `n_dead_tup` | `pg_stat_user_tables` | Growth in dead rows is a warning that `VACUUM` isn't running
+|`last_vacuum`, `last_autovacuum` | `pg_stat_user_tables` | Check/confirm whether `VACUUM` is working
+| `numbackends` by state | `pg_stat_activity` | Look for count in `VACUUM waiting` state: indicates it's trying but blocked
+| `numbackends` by state | `pg_stat_activity` | Look for `idle in transaction` state: potentially blocking `VACUUM`
 
 ---
 class: roomy
