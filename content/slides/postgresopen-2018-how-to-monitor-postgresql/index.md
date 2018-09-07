@@ -538,13 +538,15 @@ class: roomy, col, col-3
 [![Observability](observability-ebook.jpg)](https://www.vividcortex.com/resources/architecting-highly-monitorable-apps)
 
 ---
-class: col, col-2, roomy
+class: col, col-3, roomy
 
 # More Resources
 
-[![SRE Book](sre-book.jpg# mw-60 center)](https://landing.google.com/sre/book.html)
+[![SRE Book](sre-book.jpg# mw-80 center)](https://landing.google.com/sre/book.html)
 
-[![DBRE Book](dbre.jpg# mw-60 center)](https://shop.oreilly.com/product/0636920039761.do)
+[![Chaos Engineering](chaos-engineering.jpg# mw-80 center)](https://www.oreilly.com/webops-perf/free/chaos-engineering.csp)
+
+[![DBRE Book](dbre.jpg# mw-80 center)](https://shop.oreilly.com/product/0636920039761.do)
 
 ---
 class: roomy
