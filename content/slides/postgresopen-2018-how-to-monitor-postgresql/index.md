@@ -7,26 +7,28 @@ description: "Learn how to monitor PostgreSQL effectively, focusing on the right
 ratio: "16:9"
 themes:
 - apron
+- descartes
 - adirondack
 ---
-class: title, no-number, smokescreen, shelf
+class: title, no-footer, smokescreen, shelf, top
 background-image: url(cover.jpg)
 
 # How to Monitor PostgreSQL
 ## Baron Schwartz &bullet; PostgresOpen 2018
 
-![Logo](vividcortex-horizontal-white-rgb.svg# absolute smokescreen r-0 b-0 pa3 mw-2-12 br3 ma3)
+![Logo](vividcortex-horizontal-white-rgb.svg# smokescreen pa-2 br-3 mt-8)
 
 ---
 layout: true
+name: footer
 
 .footer[
 - @xaprb
-- <img src="vividcortex-horizontal-web.svg" height="25">
+- ![logo](vividcortex-horizontal-web.svg)
 ]
 
 ---
-class: img-fullbleed-right
+class: img-right-full
 
 ![headshot](headshot.jpg)
 
@@ -38,7 +40,7 @@ class: img-fullbleed-right
 - Slides at [xaprb.com/talks/](https://www.xaprb.com/talks/)
 
 ---
-class: img-fullbleed-right
+class: img-right-full
 
 # Agenda
 
@@ -100,7 +102,7 @@ The definition is *latency* in units of seconds per request.
 - Definition of performance is unambiguous, based on laws
 
 ---
-class: img-fullbleed-right, fit-h1
+class: img-right-full, fit-h1
 
 ![Flock of Sheep](unsplash-photos-ZuV4bPalclY.jpg)
 
@@ -210,7 +212,7 @@ method](http://www.brendangregg.com/usemethod.html):
 - Follow the link to learn tech-specific ways to apply the USE method
 
 ---
-class: two-col-img-right, compact
+class: img-right, compact
 
 # The Zen of Performance: Non-Duality
 
@@ -227,7 +229,7 @@ Internal (operator’s) view is plural:
 * Errors.
 
 ---
-class: two-col-img-right, roomy
+class: img-right, roomy
 
 # CELT + USE Together
 
@@ -284,7 +286,7 @@ class: roomy
 
 # Pete’s Mental Model
 
-[![Pete’s For Loop](petes-for-loop.jpg# mw-70 center)](https://twitter.com/toomuchpete/status/1001213344207040512)
+[![Pete’s For Loop](petes-for-loop.jpg# maxw-70pct center)](https://twitter.com/toomuchpete/status/1001213344207040512)
 
 ---
 class: roomy, fit-h1
@@ -325,7 +327,7 @@ You probably have good resource monitoring, but poor (or no) workload
 monitoring.
 
 ---
-class: compact, img-fullbleed-right
+class: compact, img-right-full
 
 ![](isis-franca-641217-unsplash.jpg)
 
@@ -371,7 +373,7 @@ class: roomy
 - Resource starvation or stalls
 
 ---
-class: two-col-img-right, roomy
+class: img-right, roomy
 
 # The Performance Swiss-Army Knife
 
@@ -384,10 +386,8 @@ A **profile** is an all-purpose tool for finding signal in the noise.
 3. Look at the top items
 
 ---
-class: fullbleed, img-caption
-
-![Profile](profile.png)
-
+background-image: url(profile.png)
+background-size: contain
 
 ---
 class: roomy
@@ -406,7 +406,7 @@ Finding too-slow requests
 - Profile by `P99(latency)`
 
 ---
-class: img-fullbleed-right
+class: img-right-full
 
 ![](unsplash-photos-OgvqXGL7XO4.jpg# opc)
 
@@ -419,7 +419,8 @@ Rule of thumb:
 * To make customers happy, look at p99 latency
 
 ---
-class: img-fullbleed-right, fit-h1
+template: footer
+class: img-right-full, fit-h1
 
 ![](unsplash-photos-vWI1kTcMcDI.jpg)
 
@@ -434,7 +435,7 @@ You need to drill into individual examples (individual log lines or samples).
 You also need to look at the *distribution* of request latencies.
 
 ---
-class: fullbleed, img-caption
+class: fullbleed, center
 
 ![Samples](samples.png)
 
@@ -529,7 +530,7 @@ class: roomy
 <iframe width="621" height="350" src="https://www.youtube.com/embed/zLjhFrUhqxg" frameborder="0" allowfullscreen></iframe>
 
 ---
-class: roomy, col, col-3
+class: roomy, col-3
 
 # Resources: Free EBooks
 
@@ -538,22 +539,22 @@ class: roomy, col, col-3
 [![Observability](observability-ebook.jpg)](https://www.vividcortex.com/resources/architecting-highly-monitorable-apps)
 
 ---
-class: col, col-3, roomy
+class: col-3, roomy
 
 # More Resources
 
-[![SRE Book](sre-book.jpg# mw-80 center)](https://landing.google.com/sre/book.html)
+[![SRE Book](sre-book.jpg# maxw-80pct center)](https://landing.google.com/sre/book.html)
 
-[![Chaos Engineering](chaos-engineering.jpg# mw-80 center)](https://www.oreilly.com/webops-perf/free/chaos-engineering.csp)
+[![Chaos Engineering](chaos-engineering.jpg# maxw-80pct center)](https://www.oreilly.com/webops-perf/free/chaos-engineering.csp)
 
-[![DBRE Book](dbre.jpg# mw-80 center)](https://shop.oreilly.com/product/0636920039761.do)
+[![DBRE Book](dbre.jpg# maxw-80pct center)](https://shop.oreilly.com/product/0636920039761.do)
 
 ---
 class: roomy
 
 # Slides and Contact Information
 
-<div id="qrcode" style="width:400px; height:400px; margin-left: 2rem; float: right"></div>
+.qrcode.db.fr.w-40pct.ml-4[]
 
 Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
 

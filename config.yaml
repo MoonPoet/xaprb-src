@@ -36,6 +36,7 @@ params:
    - feature-justify
    - feature-highlight
    - feature-hrfleuron
+   - feature-qrcode
 MetaDataFormat: "yaml"
 Paginate: 20
 rssLimit: 20

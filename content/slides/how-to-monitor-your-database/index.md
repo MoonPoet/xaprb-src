@@ -7,9 +7,10 @@ description: "This talk is about how you can monitor your database so you can le
 ratio: "16:9"
 themes:
 - apron
+- descartes
 - adirondack
 ---
-class: title, no-number, smokescreen, shelf
+class: title, no-footer, smokescreen, shelf
 background-image: url(cover.jpg)
 
 # How to Monitor Your Database 
@@ -19,13 +20,15 @@ background-image: url(cover.jpg)
 
 ---
 layout: true
-<div class="remark-slide-number" style="left: 20px; right: unset">@xaprb</div>
-<div class="remark-slide-number" style="left: 566px; width: 85px; padding: 5px">
-<img src=vividcortex-horizontal-web.svg>
-</div>
+name: footer
+
+.footer[
+- @xaprb
+- ![logo](vividcortex-horizontal-web.svg)
+]
 
 ---
-class: img-fullbleed-right
+class: img-right-full
 # Logistics and Contact Info
 
 ![headshot](headshot.jpg)
@@ -36,7 +39,7 @@ class: img-fullbleed-right
 - Slides at [xaprb.com/talks/](https://www.xaprb.com/talks/)
 
 ---
-class: img-fullbleed-right
+class: img-right-full
 # Introduction & Agenda
 
 ![Agenda](unsplash-photos-FoKO4DpXamQ.jpg)
@@ -75,7 +78,7 @@ Users care about *request* performance.
 The definition is *latency* in units of seconds per request.
 
 ---
-class: img-fullbleed-right
+class: img-right-full
 
 ![Flock of Sheep](unsplash-photos-ZuV4bPalclY.jpg)
 
@@ -144,7 +147,7 @@ method](http://www.brendangregg.com/usemethod.html):
 * Errors
 
 ---
-class: two-col-img-right, compact
+class: img-right, compact
 
 # The Zen of Performance: Non-Duality
 
@@ -161,7 +164,7 @@ Internal (operator’s) view is plural:
 * Errors.
 
 ---
-class: two-col-img-right, roomy
+class: img-right, roomy
 
 # CELT + USE Together
 
@@ -187,10 +190,9 @@ These help us conceptualize and predict system behavior.
 But **the map is not the territory**. Mental models are always wrong.
 
 ---
-class: img-450h
 # Pete’s Mental Model
 
-[![Pete’s For Loop](petes-for-loop.jpg# mw-80 center)](https://twitter.com/toomuchpete/status/1001213344207040512)
+[![Pete’s For Loop](petes-for-loop.jpg# maxw-80pct center)](https://twitter.com/toomuchpete/status/1001213344207040512)
 
 ---
 # Your Mental Model Of Your Databases
@@ -221,7 +223,7 @@ You probably have good resource monitoring, but poor (or no) workload
 monitoring.
 
 ---
-class: compact, img-fullbleed-right
+class: compact, img-right-full
 
 ![](unsplash-photos-tf0jFfbg03U.jpg# opc)
 
@@ -263,7 +265,7 @@ class: roomy
 - Resource starvation or stalls
 
 ---
-class: two-col-img-right, roomy
+class: img-right, roomy
 
 # The Performance Swiss-Army Knife
 
@@ -287,7 +289,7 @@ class: roomy
 	- Profile by `P99(latency)`
 
 ---
-class: img-fullbleed-right
+class: img-right-full
 
 ![](unsplash-photos-tf0jFfbg03U.jpg)
 
@@ -300,7 +302,7 @@ Rule of thumb:
 * To make customers happy, look at p99 latency
 
 ---
-class: img-fullbleed-right
+class: img-right-full
 
 ![](unsplash-photos-vWI1kTcMcDI.jpg)
 
@@ -368,7 +370,7 @@ class: roomy
 <iframe width="621" height="350" src="https://www.youtube.com/embed/zLjhFrUhqxg" frameborder="0" allowfullscreen></iframe>
 
 ---
-class: roomy, col, col-3
+class: roomy, col-3
 
 # Resources: Free EBooks
 
@@ -381,7 +383,7 @@ class: roomy
 
 # Slides and Contact Information
 
-<div id="qrcode" style="width:400px; height:400px; margin-left: 2rem; float: right"></div>
+.qrcode.db.fr.w-40pct.ml-4[]
 
 Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
 
