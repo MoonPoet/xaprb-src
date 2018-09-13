@@ -1,5 +1,5 @@
 ---
-title: 'PostgresOpen 2018: How to Monitor PostgreSQL'
+title: 'How to Monitor PostgreSQL'
 date: "2018-09-06T15:00:00-07:00"
 url: "/talks/postgresopen-2018-how-to-monitor-postgresql/"
 event: "PostgresOpen SV 2018"
