@@ -11,7 +11,7 @@ categories:
 - About
 ---
 I've developed a Hugo theme for this blog, and now I've published it for you to use too.
-It offers a fast and responsive layout, beautiful design, built-in search, JavaScript presentations, social and SEO optimizations, and much more.
+It offers a fast and responsive layout, beautiful design, built-in search, JavaScript presentations, LaTeX equation typesetting, social and SEO optimizations, and much more.
 Many of the theme's features are pretty unique---for example, the extensions to give you control over formatting images, which I wrote about [here](/blog/how-to-style-images-with-markdown/), are built-in natively.
 <!--more-->
 
@@ -29,7 +29,7 @@ echo 'theme = "story"' >> config.toml
 ```
 
 I've published a demo site that not only showcases the theme's features, but serves as documentation too.
-You can see it at https://story.xaprb.com.
+You can see it at [story.xaprb.com](https://story.xaprb.com).
 
 Here are a few screenshots of the theme. First is what your homepage might look like:
 
@@ -47,4 +47,4 @@ Story integrates RemarkJS for beautiful, simple Markdown slideshows:
 
 ![Story integrates RemarkJS for beautiful, simple Markdown slideshows.](/media/2018/09/story-theme-4.png)
 
-I have a long list of enhancements I'd like to make, and contributions are welcomed on the GitHub repository.
+I have a long list of enhancements I'd like to make as time permits, and contributions are welcomed on the GitHub repository.
