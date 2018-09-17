@@ -81,7 +81,7 @@ Time series is often a simpler case of full-fledged analytics, with some limitat
 
 * [InfluxDB](https://www.influxdata.com/)
 * [TimescaleDB](https://www.timescale.com/)
-* [IronDB](https://www.irondb.io/)
+* [IRONdb](https://www.irondb.io/)
 * [Prometheus](https://prometheus.io/)
 * [kdb+](https://kx.com/)
 
