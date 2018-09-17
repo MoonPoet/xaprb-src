@@ -30,6 +30,7 @@ These are the canonical names in the previous generation of big data analytics, 
 * [Teradata](https://www.teradata.com/)
 * [Paraccel / Actian](https://www.actian.com/)
 * [Netezza](https://www.ibm.com/analytics/netezza)
+* [SAP IQ](https://www.sap.com/products/sybase-iq-big-data-management.html)
 
 ### Open-Source Analytics Databases
 
@@ -61,6 +62,7 @@ The “big data” ecosystem includes a number of databases designed for analyti
 * [Amazon Athena](https://aws.amazon.com/athena/)
 * [Parquet](https://parquet.apache.org/)
 * [Arrow](https://arrow.apache.org/)
+* [Actian Vector](https://www.actian.com/)
 
 ### NoSQL and Multi-Model Analytics Databases
 
@@ -89,7 +91,7 @@ Time series is often a simpler case of full-fledged analytics, with some limitat
 
 * [Google BigQuery](https://cloud.google.com/bigquery/)
 * [Amazon Redshift](https://aws.amazon.com/redshift/)
-* [Microsoft Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/)
+* [Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/services/sql-data-warehouse/)
 * [Snowflake](https://www.snowflake.com/)
 * [SAP HANA](https://www.sap.com/products/hana.html)
 * [New Relic Insights](https://newrelic.com/insights)
