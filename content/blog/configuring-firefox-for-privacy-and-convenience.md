@@ -52,24 +52,25 @@ The rest I configure with extensions.
 
 ### My Extensions
 
-Here are the extensions I use:
+Of the extensions I use, the most important for privacy are both by a developer named Kenny Do, to whom I am grateful:
+
+- **History AutoDelete**. Deletes history after 7 days.
+- **Cookie AutoDelete**. This deletes cookies when tabs are closed. This is even better than the settings I configured for Chrome! I enable "Automatic Cleaning," and set a "whitelist"^[I dislike this term because of racial connotations, but I don't get to rename what's shown in the extension.] for sites I want to stay logged in.
+
+I also use some general-purpose extensions:
 
 - 1Password
 - Bear Writer
 - Feedly Subscribe
 - uBlock Origin
-
-The most important ones for privacy are both by a developer named Kenny Do, to whom I am grateful:
-
-- **History AutoDelete**. Deletes history after 7 days.
-- **Cookie AutoDelete**. This deletes cookies when tabs are closed. This is even better than the settings I configured for Chrome! I enable "Automatic Cleaning," and set a "whitelist"^[I dislike this term because of racial connotations, but I don't get to rename what's shown in the extension.] for sites I want to stay logged in.
+- Tabliss to put beautiful photos from [Unsplash](https://unsplash.com/) onto my
+  new tab pages.^[Unsplash Instant is the corresponding one from Unsplash
+  themselves, but it's only available for Chrome at the moment.]
 
 There are a couple of extensions I do not need in Firefox as I did in Chrome:
 
 - I don't need a blank new tab page extension, because Firefox has a setting to do that.
 - I don't need a screenshot extension; Firefox takes great screenshots.
 - I don't need Mercury Reader because Firefox has a reader-view feature.
-
-The one thing I miss from Chrome is the [Unsplash](https://unsplash.com/) extension, which I've used over the past few months to display featured images in new tabs. Unsplash has beautiful photography!
 
 With these settings, as with Chrome, I find that I'm not accumulating history, cookies, or site data. In fact, Firefox configured as I've mentioned here is actually cleaner and better than the way I'd configured Chrome!
