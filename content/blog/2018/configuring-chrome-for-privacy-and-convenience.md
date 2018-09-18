@@ -2,12 +2,12 @@
 url: /blog/configuring-chrome-for-privacy-and-convenience/
 title: 'Configuring Chrome for Privacy and Convenience'
 date: "2018-03-23T22:15:52-04:00"
-categories:
-  - Privacy
-author: "Baron Schwartz"
 description: "Here's the settings I configure to keep my browser from accumulating a lot of history and tracking cookies."
 image: "/media/2018/03/pocket-watch-3156771_1280.jpg"
 credit: https://pixabay.com/en/pocket-watch-time-of-sand-time-3156771/
+thumbnail: /media/2018/03/pocket-watch-3156771_1280.tn-500x500.jpg
+categories:
+  - Privacy
 ---
 
 I've recently set up a new MacBook, which helped remind me of some of the
