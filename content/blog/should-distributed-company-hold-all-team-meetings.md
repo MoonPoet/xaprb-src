@@ -100,6 +100,8 @@ And anytime you get a bunch of people traveling, some are going to miss flights 
 I've seen situations where not only was everyone scheduled for coverage unavailable, but even the people who would have been able to address that problem were unavailable.
 It is pretty much guaranteed to turn into a crisis of some sort.
 
+### Cost and Revenue Impact
+
 There's an even bigger problem, though, one that's not obvious until you've seen the *business* side of things.
 Taking the company offline for a week is bad for business, really bad.
 The revenue impact was enormous.
@@ -117,6 +119,16 @@ It creates imbalances that [encourage them to overfill](/blog/2014/05/24/the-goa
 And deals that get delayed a few days will slip weeks, and then quarters, and miss the budget window and slip a whole year, and everything cascades and oscillates for months and months.
 And perhaps that person misses their accelerator target or even their entire quota, and gets demoralized, and quits.
 This is serious, survival-threatening business impact.
+
+In addition to lost revenue and opportunity cost, there was the simple expense factor.
+As the company approached about 75 people, each year's meeting took increasing amounts of effort to organize.
+My memory is that the last one required about the equivalent of 1.5 fulltime people working on it most of the year.
+There was one person practically dedicated to it, and endless meetings involving a handful of others.
+The six months leading up to the meeting was more intense, but the planning and work was continuous.
+We were preparing for the next meeting before the current year's meeting was even over.
+A lot of it was about selecting the site and traveling to ensure it was workable, negotiating contracts, and so on.
+But much of the cost and effort wasn't caused by particular choices such as the decision to move around each year.
+An annual get-together is just a huge effort.
 
 ### An Alternative: Incremental Get-Togethers
 
@@ -148,6 +160,7 @@ Some of it is also that the company is of a different nature, and there are othe
 
 But I do believe that the single biggest factor is doing it more gradually and continually, rather than in a big disruptive all-or-nothing push.
 Not creating shock-and-pressure waves on peoples' (and the whole company's) schedule all at once is just better.
+As a bonus, smaller groups can actually interact more; it's not realistic to bring 75 people together for a week and believe that they'll all spend time together _and_ keep the wheels rolling.
 
 ### How Other Companies Do It
 
@@ -157,3 +170,6 @@ I haven't heard a lot of details, nor have I heard whether it works well or not.
 It's entirely possible that you can do this well, and without a lot of cost and impact, and I just haven't seen it done.
 So take everything here as just one set of experiences, but also know that it didn't fail for lack of skill, or effort, or expense.
 If it's possible to do it better, I simply don't know how and frankly I don't have any ideas I think would be likely to work.
+
+If you have experiences to share, let me know!
+Tweet me a link and I'll add a section at the bottom here with further reading and resources.
