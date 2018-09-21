@@ -66,6 +66,8 @@ It was a noble sentiment, but it wasn't working, in part because of the problems
   After a few of these experiences, they learned, and it was widely discussed.
   So people traveling from far away would travel early, arrive at the destination a few days in advance,^[There were advantages to this; there were always logistical challenges (the promised wifi didn't exist, etc).] and get acclimated.
   But even with a few days extra, most people didn't really recover, and spent much of the week half-dazed, missing meetings, falling asleep.
+  Then, they'd travel back home again, and lose another week of productivity.
+  (By the way, the personal cost of all this is very high too; jet lag literally kills people.)
 - **Travel and Visas.**
   When you're traveling from far-flung places to America, you have to start planning many months in advance.
   But visas don't just appear.
@@ -109,7 +111,7 @@ The revenue impact was enormous.
 But it's worse than you think: flying everyone to one place for a week doesn't take the company offline for a week.
 (Oh, it'll only be a couple of days, you think; they'll fly over the weekend and catch up during the week!)
 Nope.
-Factor in missed flights, tiredness, sickness, early arrivals, late departures, vacations... a one-week meeting turned into a three-week standstill.
+Factor in missed flights, tiredness, sickness, early arrivals, late departures, vacations, jet lag recovery... a one-week meeting turned into a three-week standstill.
 
 Even if you look only at a single team, like the sales team, you'll see how serious this can be.
 If sales people miss their top-of-funnel activity, they'll pay for it with empty pipelines.
