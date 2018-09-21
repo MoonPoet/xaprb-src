@@ -4,9 +4,11 @@ date: "2009-09-27"
 url: /blog/2009/09/27/6-ways-to-stay-sane-while-working-from-home/
 description: "Work-life balance doesn't happen accidentally. It takes care and thought."
 image: "/media/2009/09/newtons-cradle.jpg"
+thumbnail: /media/2009/09/newtons-cradle.tn-500x500.jpg
 credit: https://pixabay.com/p-256213/
 categories:
-  - Life Hacking
+- Distributed Teams
+- Culture
 ---
 
 Since I joined Percona, my work/life balance has changed. I used to work eight-hour days and go home, period. Now I find it's sometimes difficult to keep good boundaries between work and the rest of my life. I also found that 8 hours in my new job left me much more tired than 8 in my old job. I've had to really work hard to understand what changed and how to keep this more in balance.
