@@ -3,6 +3,7 @@ title: 'Configuring Firefox for Privacy and Convenience'
 date: "2018-09-17T20:53:33-04:00"
 url: "/blog/configuring-firefox-for-privacy-and-convenience"
 description: "Here's the settings I configure to keep my browser from accumulating a lot of history and tracking cookies."
+tldr: "Google changed the Chrome browser in ways that violate privacy boundaries that are important to me, so I switched back to Firefox. In this post, I share the combination of settings and extensions that I use to improve performance and privacy while using Firefox."
 credit: "https://unsplash.com/photos/zv42KBikfrg"
 image: "/media/2018/09/unsplash-photos-zv42KBikfrg.jpg"
 thumbnail: "/media/2018/09/unsplash-photos-zv42KBikfrg.tn-500x500.jpg"

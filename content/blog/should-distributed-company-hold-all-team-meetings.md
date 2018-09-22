@@ -3,6 +3,7 @@ title: 'Should a Distributed Company Hold All-Team Meetings?'
 date: "2018-09-20T21:04:08-04:00"
 url: "/blog/should-distributed-company-hold-all-team-meetings"
 description: "Getting your entire remote workforce together periodically sounds like a good idea, but might be more problematic than you expect."
+tldr: "Distributed teams need to see each other, but periodic all-staff in-person meetings can negatively impact the company's performance. My experience is that a gradual approach, continually and incrementally rotating a subset of the distributed staff through a central location for face-to-face work, is more productive and less harmful."
 credit: "https://unsplash.com/photos/KxXPDN1CUeg"
 image: "/media/2018/09/unsplash-photos-KxXPDN1CUeg.jpg"
 thumbnail: "/media/2018/09/unsplash-photos-KxXPDN1CUeg.tn-500x500.jpg"
