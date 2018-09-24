@@ -24,11 +24,11 @@ background-image: url(cover.jpg)
 - Ask questions anytime
 
 ---
-class: col-2
 # Slides and Contact Information
+
+.qrcode.db.fr.w-40pct.ml-4[]
 
 Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
 
 Contact:
 
-<div id="qrcode"></div>
