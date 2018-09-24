@@ -32,6 +32,12 @@ These are the canonical names in the previous generation of big data analytics, 
 * [Netezza](https://www.ibm.com/analytics/netezza)
 * [SAP IQ](https://www.sap.com/products/sybase-iq-big-data-management.html)
 
+### In-Memory Analytics Databases
+
+This is a work in progress, please tweet your suggestions to me.
+
+* [Exasol](https://www.exasol.com/)
+
 ### Open-Source Analytics Databases
 
 These databases aren't easy to group into other categories for one reason or another, but all are open source.
@@ -129,7 +135,3 @@ Many so-called NewSQL databases are more transactional or OLTP than analytical, 
 * ScaleDB
 * DeepDB
 * [Infobright](http://www.ignitetech.com/solutions/information-technology/infobrightdb)
-
-### In-Memory Data Grids
-
-TODO
