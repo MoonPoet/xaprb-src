@@ -12,7 +12,7 @@ themes:
 - descartes
 ---
 class: title
-background-image: url(cover.jpg)
+background-image: url(unsplash-photos-oyXis2kALVg.jpg)
 
 # DevOps for the Database
 ## Subtitle

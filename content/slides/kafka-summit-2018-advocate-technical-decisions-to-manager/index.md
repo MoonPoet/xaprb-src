@@ -11,10 +11,10 @@ themes:
 - adirondack
 - descartes
 ---
-class: title
-background-image: url(cover.jpg)
+class: title, shelf, fogscreen, top
+background-image: url(unsplash-photos-5RgShZblKAQ.jpg)
 
-# How to Advocate Technical Decisions to Your Manager
+# How to Advocate to Your Manager
 ## Subtitle
 
 ---

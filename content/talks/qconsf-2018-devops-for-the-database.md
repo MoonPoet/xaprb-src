@@ -6,13 +6,15 @@ event: "QConSF 2018"
 location: "Hyatt Regency San Francisco, 5 Embarcadero Center, San Francisco, California, USA 94111"
 site: "https://qconsf.com/sf2018/presentation/devops-database"
 video: ""
-slides: "/slides/qconsf-2018-devops-for-the-database/"
-thumbnail: "/slides/qconsf-2018-devops-for-the-database/thumbnail.jpg"
-image: "/slides/qconsf-2018-devops-for-the-database/cover.jpg"
+sslides: "/slides/qconsf-2018-devops-for-the-database/"
+image: "/slides/qconsf-2018-devops-for-the-database/unsplash-photos-oyXis2kALVg.jpg"
+credit: "https://unsplash.com/photos/oyXis2kALVg"
 description: "Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that succeeded---and those who haven't."
-skip: true
 ---
-Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling---and those who've tried and haven't succeeded. Along the way, we'll cover topics including:
+Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling---and those who've tried and haven't succeeded.
+<!--more-->
+
+Along the way, we'll cover topics including:
 
 - Current and emerging trends in how we build and manage data tiers
 - What the research shows about DevOps, databases, and company performance
