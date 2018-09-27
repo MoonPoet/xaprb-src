@@ -1,6 +1,6 @@
 ---
 title: Postgresconf 2018 How to Index Your Database
-date: "2018-10-16"
+date: "2018-10-15"
 url: "slides/postgresconf-2018-how-to-index-your-database/"
 image: "slides/postgresconf-2018-how-to-index-your-database/cover.jpg"
 description: ""

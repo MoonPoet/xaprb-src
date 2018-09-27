@@ -1,6 +1,6 @@
 ---
 title: 'How to Index Your Database'
-date: "2018-10-16"
+date: "2018-10-15"
 url: "/talks/postgresconf-2018-how-to-index-your-database/"
 event: "PostgreSQL Conference SV 2018"
 location: "Hilton San Jose, 300 Almaden Boulevard, San Jose, CA 95110, United States"
