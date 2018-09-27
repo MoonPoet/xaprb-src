@@ -176,3 +176,7 @@ If it's possible to do it better, I simply don't know how and frankly I don't ha
 
 If you have experiences to share, let me know!
 Tweet me a link and I'll add a section at the bottom here with further reading and resources.
+
+Links:
+
+- http://blog.dbsmasher.com/2018/09/26/making-connections.html
