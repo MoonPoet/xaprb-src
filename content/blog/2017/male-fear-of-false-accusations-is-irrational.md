@@ -31,8 +31,9 @@ A more balanced view considers the following facts, all of which are exhaustivel
 - Assault and harassment are epidemic, and frequently not reported.
 - Most of this violence is perpetrated by men.
 - Most accusations of assault are true, and false accusations are rare.
+- Men are far more likely to be victims of _sexual assault_ than victims of _false accusations_.
 
-The larger context within which all of this takes place is that nearly every human society is a male supremacy.
+The larger context within which all of this takes place is that nearly every society is a male supremacy.
 This isn't about individual biases and individual actions, but about the structure of society: it's biased towards men and away from women, in countless ways.
 Within this structure, it's true that some people are individually sexist as well.
 But the _system_ needs to be seen for what it is: a power structure that favors men.
