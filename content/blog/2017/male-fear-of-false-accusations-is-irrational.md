@@ -39,7 +39,7 @@ Within this structure, it's true that some people are individually sexist as wel
 But the _system_ needs to be seen for what it is: a power structure that favors men.
 
 One part of this that I've [become aware of](/blog/what-women-tell-me) over the past few years is the vicious cycle of treating women as mens' property, and dressing protection of that "property" in the trappings of chivalry.
-A third interlocking part of this pattern of behavior is believing that, and behaving as if, women can endanger mens' honor, either through temptation or through taking advantage of the false chivalry and turning it against them.
+An interlocking part of this pattern of behavior is believing that, and behaving as if, women can endanger mens' honor, either through temptation or through taking advantage of the false chivalry and turning it against them.
 Mike Pence's faux-morality stance (refusing to be alone with women who aren't his wife) is a great example of this.
 This is, charitably put, an internalization of structural sexism.
 It's victim-blaming.
