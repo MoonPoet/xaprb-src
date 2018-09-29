@@ -9,18 +9,17 @@ video: ""
 sslides: "/slides/qconsf-2018-devops-for-the-database/"
 image: "/slides/qconsf-2018-devops-for-the-database/unsplash-photos-oyXis2kALVg.jpg"
 credit: "https://unsplash.com/photos/oyXis2kALVg"
-description: "Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that succeeded---and those who haven't."
+description: "Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that succeeded---and those who've tried."
 ---
-Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling---and those who've tried and haven't succeeded.
+Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling—and those who’ve tried.
 <!--more-->
 
-Along the way, we'll cover topics including:
+Along the way, we’ll cover topics including:
 
-- Current and emerging trends in how we build and manage data tiers
 - What the research shows about DevOps, databases, and company performance
-- The lenses of role, prestige, and stereotypes through which we see DBAs
-- The invisible, uncelebrated work that many DBAs do, and alternatives to that dynamic
-- How people become DBAs, and alternative career paths and roles that are emerging
-- What happens (both good and bad) when database administration is a dedicated role
+- Current and emerging trends in how we build and manage data tiers, and implications
+- The traditional dedicated DBA role, and what has happened as a result
 - What it takes to change from a DBA-centric culture, to one where database-related competencies and responsibilities are more distributed
-- Why some teams succeed in this transformation, but others fail
+- Why some teams succeed in this transformation, while others fail
+
+We can apply DevOps principles to the database, and our work will be better for it. This talk will show you how.
