@@ -16,7 +16,7 @@ background-image: url(cover.jpg)
 # How to Monitor Your Database 
 ## Baron Schwartz &bullet; May 2018
 
-![Logo](vividcortex-horizontal-white-rgb.svg# absolute r-0 t-0 pa5 mw-30)
+![Logo](vividcortex-horizontal-white-rgb.svg# absolute r-0 t-0 pa-5 mw-30)
 
 ---
 layout: true
