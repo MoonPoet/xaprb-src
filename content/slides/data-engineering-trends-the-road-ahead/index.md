@@ -53,10 +53,18 @@ class: img-right-full, fit-h1
 Many of tomorrow's best businesses will be data-intensive.
 
 - Data is the business value and the moat
+--
+
 - Computation is becoming a commodity
+--
+
 - Polyglot persistence is the norm, and remains important
+--
+
 - Distributed, cloud-native architectures are emerging
-- Cloud-native culture and engineering practices are too
+--
+
+- Cloud-native culture and engineering practices are lockstepped
 
 ???
 
@@ -74,7 +82,11 @@ Cloud migrations are accelerating---including databases, which have lagged
 behind.
 
 - Many of today's startups are all-cloud, and this trend is growing
+--
+
 - Hybrid cloud architectures are emerging quickly
+--
+
 - The database is a key motivating factor in cloud architectures
 
 ???
@@ -93,8 +105,14 @@ behind.
 Mature relational technologies have friction in the cloud.
 
 - Databases are being redefined and rearchitected for cloud environments
+--
+
 - The evolution is roughly: MySQL-on-EC2, RDS, Aurora, Cosmos DB
+--
+
 - There is some technology consolidation, but specialization remains important
+--
+
 - A significant macro trend is the Kafka "log-first" event-driven architecture
 
 ???
@@ -113,10 +131,15 @@ Mature relational technologies have friction in the cloud.
 The dev/ops separation of duties is moving down the stack.
 
 - The first age of DevOps was ops doing dev; the second age is devs doing ops
+--
+
 - Key DB skills are querying, modeling, and sometimes physical design
+--
+
 - Developers are gaining enormous purchase authority and influence
+--
+
 - Rich, integrated development experiences and workflows are emerging
-- Complexity is inescapable
 
 ???
 
@@ -125,6 +148,7 @@ The dev/ops separation of duties is moving down the stack.
 - UX and simplicity are major factors in tool choice
 - But at the same time, fluency with things like service meshes and k8s is a
   required skillset for more engineers
+- Complexity is inescapable
 
 ---
 # Whither the DBA?
@@ -133,20 +157,23 @@ The dev/ops separation of duties is moving down the stack.
 
 The DBA is becoming more of a strategic than a tactical role.
 
-- Database:DBA ratios continue to grow
-- DBA roles are being redefined
-- Many DBAs are becoming data platform engineers
 - The stereotypical DBA-as-gatekeeper is falling out of favor
+--
+
+- Database:DBA ratios continue to grow
+--
+
+- Many DBAs are becoming data platform engineers
 
 ???
 
-- When I was a DBA, we had 1:1 ratios, then 5:1, now 5000:1
-- Applying DevOps and SRE principles to the database is becoming mainstream
 - See Charity and Laine's book [Database Reliability
   Engineering](http://shop.oreilly.com/product/0636920039761.do)
 - The 2018 [DORA research
   report](https://cloudplatformonline.com/2018-state-of-devops.html) explains key
   reasons why DevOps practices are valuable in the database realm
+- When I was a DBA, we had 1:1 ratios, then 5:1, now 5000:1
+- Applying DevOps and SRE principles to the database is becoming mainstream
 
 ---
 # The Monitoring Catch-22
@@ -157,7 +184,11 @@ Companies want to do more monitoring with fewer tools, but that remains an
 unsolved problem.
 
 - The monitoring problem space has irreducible complexity
+--
+
 - The monitoring archetype unifies metrics, APM, tracing, and logs
+--
+
 - Databases are uniquely important, and uniquely hard to monitor
 
 ???
@@ -169,11 +200,16 @@ unsolved problem.
   engineers "data engineering superpowers" vis-a-vis database observability
 
 ---
+layout: true
+
+---
 class: roomy, fullbleed
 background-image: url(jeremy-bishop-331838-unsplash.jpg)
 background-size: cover
 
-.h-100pct.w-100pct.pa-5.bg-white-60pct[
+![Logo](vividcortex-horizontal-white-rgb.svg# absolute r-0 t-0 pa-5 mw-30)
+
+.h-100pct.w-60pct.pa-5.bg-white-60pct[
 # Closing Thoughts
 
 - Many of today's large-scale cloud data tiers were born outside the cloud
