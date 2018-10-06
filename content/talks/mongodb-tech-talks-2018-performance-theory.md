@@ -3,7 +3,7 @@ title: 'System Performance Theory'
 date: "2018-10-03"
 url: "/talks/mongodb-tech-talks-2018-performance-theory/"
 event: "MongoDB Tech Talks 2018"
-video: ""
+video: "https://www.youtube.com/watch?v=6l-EEy5vIlE"
 slides: "/slides/mongodb-tech-talks-2018-performance-theory/"
 image: "/slides/mongodb-tech-talks-2018-performance-theory/unsplash-photos-YyWu19ab4_M.jpg"
 thumbnail: "/slides/mongodb-tech-talks-2018-performance-theory/thumbnail.jpg"

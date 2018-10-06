@@ -758,3 +758,26 @@ class: roomy
   [Neil Gunther](https://www.amazon.com/dp/B00FC99QUO?tag=xaprb-20),
   [Mor Harchol-Balter](https://www.amazon.com/dp/1107027500?tag=xaprb-20),
   [Gross & Harris](https://www.amazon.com/dp/B014GGB2UA?tag=xaprb-20), etc
+
+---
+class: col-3, compact
+# TODO for Baron
+
+See presenter notes.
+
+???
+
+- Try to draw a "scanner" above the conveyor
+- Show the math of R and X cancelling out to make N dimensionless
+- Illustrate the situation when the boxes are different lengths
+- Illustrate the red wait-boxes in a way that makes it clear they're part of the
+  box's processing time
+- Draw a vertical line on 13 to show concurrency
+- Show the calculation for sum of S/T on 15
+- Show the work on slide 20
+- Recreate the illustrations on 31-34
+- Show sigma extending further on 32
+- Show extra work on 34, not waiting
+- Tidy up 35
+- Fix overlapping caption on 36
+- Add etc on 44
