@@ -779,5 +779,4 @@ See presenter notes.
 - Show sigma extending further on 32
 - Show extra work on 34, not waiting
 - Tidy up 35
-- Fix overlapping caption on 36
 - Add etc on 44
