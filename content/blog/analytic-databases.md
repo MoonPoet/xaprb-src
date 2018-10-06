@@ -104,7 +104,7 @@ Time series is often a simpler case of full-fledged analytics, with some limitat
 
 ### Custom-Built Analytics and Event Databases
 
-Many analytics and security companies, finding nothing existing that was well suited for their purposes, have built at least part of their own analytics platforms in-house. Here are some that I’m aware of to varying levels of detail.
+Many monitoring, analytics, and security companies, finding nothing existing that was well suited for their purposes, have built at least part of their own analytics platforms in-house. Here are some that I’m aware of to varying levels of detail.
 
 * [Honeycomb](https://www.honeycomb.io/)
 * [Kentik](https://www.kentik.com/)
@@ -114,6 +114,7 @@ Many analytics and security companies, finding nothing existing that was well su
 * [Mode](https://modeanalytics.com/)
 * [Facebook SCUBA](https://research.fb.com/publications/scuba-diving-into-data-at-facebook/)
 * [VividCortex](https://www.vividcortex.com/)
+* [Datadog](https://www.datadoghq.com/)
 
 ### NewSQL Databases
 
