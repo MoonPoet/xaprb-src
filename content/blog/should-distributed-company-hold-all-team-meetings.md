@@ -180,3 +180,4 @@ Tweet me a link and I'll add a section at the bottom here with further reading a
 Links:
 
 - http://blog.dbsmasher.com/2018/09/26/making-connections.html
+- https://about.gitlab.com/culture/summits/
