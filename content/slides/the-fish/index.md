@@ -2,7 +2,7 @@
 title: The Fish
 date: "2018-10-15T13:49:01-07:00"
 url: "/slides/the-fish/"
-image: "/slides/the-fish/cover.jpg"
+image: "/slides/the-fish/unsplash-photos-iFQE-aCAWPU.jpg"
 description: "How do you get a fish through airport security?"
 ratio: "16:9"
 themes:

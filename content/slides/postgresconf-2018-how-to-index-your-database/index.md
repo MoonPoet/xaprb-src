@@ -2,7 +2,7 @@
 title: How to Index Your Database
 date: "2018-10-15"
 url: "slides/postgresconf-2018-how-to-index-your-database/"
-image: "slides/postgresconf-2018-how-to-index-your-database/cover.jpg"
+image: "slides/postgresconf-2018-how-to-index-your-database/unsplash-photos-4op9_2Bt2Eg.jpg"
 description: "Do you know what database indexes are and how they work? Do they seem hard to understand? They don't have to be."
 ratio: "16:9"
 themes:
