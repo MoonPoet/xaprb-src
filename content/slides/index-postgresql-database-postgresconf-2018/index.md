@@ -413,7 +413,7 @@ This query **defeats** an index on column `a`:
 
 This query can use the index:
 
-`... WHERE a > NOW() - INTERVAL 30 DAY;`
+`... WHERE a < NOW() - INTERVAL 30 DAY;`
 
 You can seek/search for a **value** in an index, but not for an **expression**.
 ]
