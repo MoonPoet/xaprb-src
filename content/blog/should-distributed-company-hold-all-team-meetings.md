@@ -181,3 +181,4 @@ Links:
 
 - http://blog.dbsmasher.com/2018/09/26/making-connections.html
 - https://about.gitlab.com/culture/summits/
+- https://zapier.com/blog/how-to-run-company-retreat/
