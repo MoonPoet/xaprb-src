@@ -5,7 +5,7 @@ url: "/talks/all-things-open-2018-golang-database-sql-in-action/"
 event: "All Things Open 2018"
 location: "Raleigh Convention Center, Raleigh, NC, USA"
 site: "https://allthingsopen.org/talk/golangs-database-sql-in-action/"
-sslides: "/slides/all-things-open-2018-golang-database-sql-in-action/"
+slides: "/slides/all-things-open-2018-golang-database-sql-in-action/"
 image: "/slides/all-things-open-2018-golang-database-sql-in-action/unsplash-photos-s-QNo1I-Ag0.jpg"
 description: "In this talk Baron will show how to use Go's database/sql package with databases like MySQL and PostgreSQL. He'll discuss idiomatic database/sql code, drivers, and valuable tips and tricks."
 ---
