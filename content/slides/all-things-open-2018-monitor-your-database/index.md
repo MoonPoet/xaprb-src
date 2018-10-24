@@ -2,7 +2,7 @@
 title: 'How to Monitor Your Database'
 date: "2018-09-05T17:00:00-07:00"
 url: "/slides/all-things-open-2018-monitor-your-database/"
-image: "/slides/all-things-open-2018-monitor-your-database/unsplash-photos-99neAF8kqhg.jpg"
+image: "/slides/all-things-open-2018-monitor-your-database/cover.jpg"
 description: "Learn how to monitor your database effectively, focusing on the right things to make the server efficient, meet performance and cost goals, and empower the engineering team to develop effectively against the database."
 ratio: "16:9"
 themes:

@@ -2,8 +2,8 @@
 title: "Golang's Database/SQL in Action"
 date: "2018-10-23T08:04:52-04:00"
 url: "/slides/all-things-open-2018-golang-database-sql-in-action/"
-image: "/slides/all-things-open-2018-golang-database-sql-in-action/unsplash-photos-s-QNo1I-Ag0.jpg"
-description: ""
+image: "/slides/all-things-open-2018-golang-database-sql-in-action/thumbnail.jpg"
+description: "These slides explain how to use Go's database/sql package with databases like MySQL and PostgreSQL."
 ratio: "16:9"
 themes:
 - apron
