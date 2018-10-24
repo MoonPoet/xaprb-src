@@ -10,11 +10,20 @@ themes:
 - adirondack
 - descartes
 ---
-class: title, fogscreen, shelf, bottom
+class: title, fogscreen, shelf, bottom, no-footer
 background-image: url(unsplash-photos-s-QNo1I-Ag0.jpg)
 
 # Golang's Database/SQL in Action
 ## Baron Schwartz &bullet; October 2018
+
+---
+layout: true
+name: footer
+
+.footer[
+- @xaprb
+- ![logo](vividcortex-horizontal-web.svg)
+]
 
 ---
 class: img-right-full
@@ -45,8 +54,7 @@ class: img-right-full
 
 ---
 class: img-caption
-
-![Stairs](5794905716_f4a9216e77_o.jpg)
+![Image](unsplash-photos-09kKH2442z8.jpg)
 
 # Go Database Design Patterns
 
@@ -68,8 +76,8 @@ class: img-caption
    - Open, Prepare, Exec, Query, QueryRow, Scan, Close
    - DB, Stmt, Value, Row, Rows, Result
    - Tx, Begin, Commit, Rollback
-- Docs: golang.org/pkg/database/sql/
-- Tutorial: go-database-sql.org
+- Docs: https://golang.org/pkg/database/sql/
+- Tutorial: http://go-database-sql.org
 
 ---
 class: compact
@@ -202,14 +210,14 @@ if err != nil {
 ---
 class: img-caption
 
-![Cat](cat.jpg)
+![Image](unsplash-photos-zBvVuRJ71vU.jpg)
 
 # Docs: "Pleasantly Lightweight!"
 
 ---
 class: img-caption
 
-![Pool](pool.jpg)
+![Image](unsplash-photos-l3N9Q27zULw.jpg)
 
 # Connection Pooling
 
@@ -220,7 +228,7 @@ There is a built-in connection pool that keeps connections open, manages transac
 ---
 class: img-caption
 
-![Data](data.jpg)
+![Image](unsplash-photos-yD5rv8_WzxA.jpg)
 
 # Big Unsigned Integers
 
@@ -231,7 +239,7 @@ If the high bit is set in a uint64, you can't send it as a parameter to a query.
 ---
 class: img-caption
 
-![Nerves](nerves.jpg)
+![Image](unsplash-photos-BW0vK-FA3eg.jpg)
 
 # Unexpected Connections
 
@@ -262,16 +270,17 @@ for i := 0; i < 50; i++ {
 ```
 
 ---
-class: img-caption
+class: img-caption, compact
 
-![Tubes](tubes.jpg)
+![Image](unsplash-photos-6lWqKRAdmns.jpg)
 
 ### Retry. Retry. Retry. Retry. Retry. Retry. Retry. Retry. Retry. Retry.
 
 ---
 class: img-caption
-![Null](null.jpg)
+![Null](ahmet-ali-agir-750258-unsplash.jpg)
 # Handling NULLs
+
 
 ???
 NULL can't be scanned into ordinary values. Must use sql.NullXXX types.
@@ -292,7 +301,7 @@ if s.Valid {
 }
 
 // If you don't care to check whether it was NULL,
-// Just use s.String without checking, it'll be ""
+// just use s.String without checking, it'll be ""
 ```
 
 ---
@@ -305,12 +314,14 @@ if s.Valid {
 
 ---
 class: img-caption
-![Map](map.jpg)
+![Map](map.png)
 # ORMs---Not Really Suited for Go
 
 ---
 class: img-caption, compact,no-footer
-![Tree](tree.jpg)
+
+![Image](unsplash-photos--TQUERQGUZ8.jpg)
+
 ## Interfaces---Learn Them, Love Them
 
 e.g. https://vividcortex.com/blog/2014/11/11/encrypting-data-in-mysql-with-go/
@@ -322,6 +333,7 @@ e.g. https://vividcortex.com/blog/2014/11/11/encrypting-data-in-mysql-with-go/
 - http://go-database-sql.org/ 
 - https://github.com/go-sql-driver/mysql
 - http://jmoiron.net/blog/
+- https://vividcortex.com/blog/2014/11/11/encrypting-data-in-mysql-with-go/
 
 ---
 # Slides and Contact Information
@@ -331,21 +343,3 @@ e.g. https://vividcortex.com/blog/2014/11/11/encrypting-data-in-mysql-with-go/
 Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
 
 Contact: @xaprb or baron@vividcortex.com
-
----
-# Image Credits
-
-- http://www.flickr.com/photos/simens/6306917636/
-- http://www.flickr.com/photos/dexxus/5794905716/
-- http://www.flickr.com/photos/sebastian_bergmann/202396633/
-- http://www.flickr.com/photos/doug88888/4794114114/
-- [Pool Balls](http://www.flickr.com/photos/oatsy40/6443878013/)
-- http://www.sxc.hu/photo/1160562/
-- Google Maps (screenshot)
-- [Tubes](http://www.flickr.com/photos/estherase/13553883/)
-- [Camel](http://www.flickr.com/photos/paperpariah/4150220583/)
-- http://www.flickr.com/photos/zooboing/4743616313/
-- [Thinker](http://www.flickr.com/photos/dseneste/5912382808/)
-- [Swirls](http://www.flickr.com/photos/clickykbd/66165381/sizes/l/)
-- [Stairs](http://www.flickr.com/photos/mamnaimie/5576980406/)
-- [Trees](https://www.flickr.com/photos/zachstern/87431231)
