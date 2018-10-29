@@ -12,7 +12,8 @@ categories:
 ---
 
 I use Google Docs and Google Sheets a *lot*. At some point I found quick-URLs
-that will create a new document and spreadsheet from a bookmark.
+that will create a new document and spreadsheet from a bookmark. _Update: you
+can also just type doc.new, sheet.new, etc into your browser's address bar._
 
 <!--more-->
 
