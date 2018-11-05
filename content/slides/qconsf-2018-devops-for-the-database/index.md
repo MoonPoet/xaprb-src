@@ -27,99 +27,331 @@ We can apply DevOps principles to the database, and our work will be better for 
 
 ---
 
-* Introduction
-* Agenda
-* Motivating stories:
-	* Gawker Media, our first DevOps customer
-	* Zenefits
-	* Active Campaign, Scaling too fast
-	* The “golden motion” we tried to repeat
-	* We saw some success, some failure
-	* <- survey anecdotes
-* What are benefits
-	* Look at DORA [2018 State of DevOps Report](https://cloudplatformonline.com/2018-state-of-devops.html)
-	* Faster, better, AND cheaper, pick all three
-	* speed -> stability -> speed
-	* Agile, Design Thinking, Lean
-	* We typically see infra-as-code, CI, CD, monitoring; in other words ops is doing dev. Charity: 2nd age is devs doing ops.
-* What is DDB?
-	* Schema as code; data model is part of the app, versioned and no manual scripting; automated schema migrations
-	* Developer ownership of database schema, workload, and performance
-	* Pre-prod can be provisioned/refreshed automatically; reproducible
-	* Schema and code go through the same pipeline to get to prod and are delivered together
-	* Automation of provisioning, backup, restore and testing, auth and access control, upgrade, scaling, etc without SSH; basically DBaaS and self-service
-	* Developers can troubleshoot and repair their own database outages, including restoring from backups
-* What happens if no DDB?
-	* auth/resp mismatch, “run this code you can’t control.”
-	* broken feedback loop between dev and prod
-	* overwhelmed DBA, a strategic asset wasted
-	* unproductive developers, asking someone else to debug their code
-* How do companies achieve it?
-	* Either redefine DBA, or noDBA; no separate dedicated DBA role
-	* Engineers own the database performance; developer autonomy
-	* Work on incentives, not culture. Create a new path of least resistance
-	* Align teams around services and products, not their work or technology.
-	* Tooling. You need automation, especially CI, CD, monitoring (DB-specific dashboards). leverage what devs and ops have already built
-	* Database expertise
-	* A mandate from leadership, paired with refusal to enable the old way, paired with champions in development, like senior engineers. Burn the boats. YBYO
-	* Education. Engineers can learn what databases are and what their metrics mean, if you teach them.
-	* Start with new deployments, migrate established systems later
-	* Work backwards from “protect production” standpoint on all automation; 
-	* Embrace DevOps approach fully, deliver smaller chunks faster
-	* Start with the people
-	* Strong product team culture; trust; communication
-	* Inclusion; share the pain
-	* Frequent deploys
-	* A plan and roadmap with stages everyone can see and agree/disagree
-	* Perseverence
-	* 
-* What do companies try that leads to failure?
-	* creating two routes to prod, one for code and one for DB, where DB has their own shadow DevOps toolchain
-	* Clinging to DBA. “In a traditional sense, the job of the DBA means she is the only person with access to the servers that host the data, the go-to person to  create new database cluster for new features, the person to design new schemas, and the only person to contact when anything database related breaks in a production environment.” - Silvia. Change from DBA to DBRE instead. The database “subject matter expert,” rather than the database babysitter.
-	* Relying on a vendor to bring in culture with tooling
-	* Under-investing to support growth; need experienced, skilled people to execute it well; need good tooling
-	* Assuming people will change without incentive
-	* Lack of management buy-in
-	* Micromanagement
-	* Insisting on One True Way and complete adherence to that
-	* Fragile automation, or automation that tries to do too much; poor tooling
-	* Any friction or hurdle; people will develop workarounds
-	* Pushing for velocity over resilience; pushing for too much too fast
-	* Specialized roles, silos
-	* Manual work / toil
-* What are the hardest parts?
-	* Schema changes / migrations, especially at scale and without locking
-	* Politics and culture; getting DBAs to give up control; getting DBAs to embrace DevOps
-	* Scaling challenges
-	* High availability / failover
-	* Advocating for change; getting buy-in; marketing your ideas
-	* Blue/green and canary deploys combined with schema changes
-	* Recovery from failures
-	* Relational databases weren’t built for cloud-native operations
-	* Tooling is much less mature than devops tooling for stateless 
-* What’s required?
-	* [look at the what works list, some of that goes here]
-	* Leadership, culture, communication, trust, autonomy, buy-in
-	* Expertise, skill, experience
-	* Monitoring
-	* Tooling
-	* A plan
-	* Documentation to share knowledge, it’s not just visibility. Runbooks, notebooks, deploy confidence wiki at GitHub. Linking alerts to runbooks.
+# Introduction
+
+Agenda
+
+???
+
+* This is opinion, not research
+* This is my personal experience
+* I haven't gotten all this right yet
+
+---
+# Three Database DevOps Stories
+
+1. One DBA, Hundreds of Developers
+2. One DBA, from 20 to 100 Developers
+3. Two Database Ops Folks, Seventeen Developers
+
+???
+The Golden Motion
+---
+# Benefits of Database DevOps
+
+DevOps brings the same benefits to the database as everywhere else.
+
+For software delivery performance in particular:
+
+* Faster, better, AND cheaper---pick all three
+* speed -> stability -> speed
+
+???
+
+Ultimately this lets you work _on_ the system, not _in_ the system.
+
+---
+# Detriments of Lacking DevOps
+
+Without DevOps, speed and quality suffer:
+
+* Mismatched responsibility and authority
+* Overburdened database operations personnel
+* Broken feedback loops from production
+* Reduced developer productivity
+
+???
+
+* The DBA is responsible for code they can't control
+* That leads to them trying to control it, which creates a dependency for devs
+* This offloads developer work to the DBA, diverting them from more strategic activities
+* That's a shame, because DBAs are often highly skilled and knowledgeable
+* So engineering doesn't get the benefit of their input into design, architecture, etc
+* Ultimately there's a human in the feedback loop from production to development
+* That limits how fast we can learn, fix, and improve
+* Developer productivity declines; dependent on DBA to debug
+
+---
+# What Is Database DevOps?
+
+Some key attributes I've seen in companies that apply DevOps to their database:
+
+* Developers own database schema, workload, and performance
+* Developers debug, troubleshoot, and repair their own outages
+* Schema and data model as code
+* A single fully-automated deployment pipeline
+* App deployment includes automated schema migrations
+* Automated pre-production refresh from production
+* Automation of database operations, to an RDS-like level
+
+???
+
+* DBaaS-like automation: provision, backup/restore/test, auth and access, upgrade, scaling...
+* Pick any of these. Not all companies do all of these.
+* Developers owning database behavior in prod is a big one.
+* Charity Majors: the first age of DevOps vs the 2nd age.
+
+---
+# From the 2018 DORA Report
+
+> Database changes are often a major source of risk and delay when performing deployments… integrating database work into the software delivery process positively contributed to continuous delivery… good communication and comprehensive configuration management that includes the database matter. Teams that do well at continuous delivery store database changes as scripts in version control and manage these changes in the same way as production application changes… when changes to the application require database changes, these teams discuss them with the people responsible for the production database
+
+The 2018 DORA report, p57
+
+---
+# Bringing DevOps to the Database
+## Pathways To Success
+
+---
+# Core Elements
+
+1. People
+2. Culture
+3. Structure and Process
+4. Tooling
+
+???
+
+* You actually need to start with the people.
+* But to understand what that should look like, let's first talk about how their work needs to change.
+
+---
+
+# Tooling: Deploy/Release
+
+* You need frequent, automated deploys
+* Eliminate manual work (toil)
+* Continuous integration and deployment
+
+???
+
+* Don't build a new toolchain for the DB, add to existing tools dev/ops built
+* Frequent deploys
+
+# Tooling: Monitoring and Observability
+
+* Instrumentation, telemetry, analytics, monitoring, observability
+* Monitoring: the Seven Golden Signals (CELT + USE)
+* Observability
+
+???
+
+# Tooling: Shared Knowledge and Process
+
+* DBRE processes, mentality
+* Deploy confidence procedures
+* Documentation to share SME experience & skill
+* Notifications should link to runbooks
+
+???
 	* The DBRE mentality: active measurement of availability and latency, and a strategy to manage them.
-	* Psychological safety
-* What happens to the DBA?
-	* becomes a DBRE
-	* focuses on data architecture and building data platform (not running servers)
-	* Becomes a DB subject matter expert, supporting the product team with things like optimizations
-* What’s unsolved, next steps?
-	* Schema changes
-		* Page No 57 Database changes are often a major source of risk and delay when performing deployments… integrating database work into the software delivery process positively contributed to continuous delivery… good communication and comprehensive configuration management that includes the database matter. Teams that do well at continuous delivery store database changes as scripts in version control and manage these changes in the same way as production application changes… when changes to the application require database changes, these teams discuss them with the people responsible for the production database 
-	* Failovers
-	* Better integration with deploy and release practices like canaries, feature flags
-* Conclusions / Stories
-	* A concluding story of what companies have gotten out of this. DraftKings. At the “end,” but also: the process itself. You get better DB awareness, more tooling for people, as a team. And individually, you get broader skills and ability to be more valuable. As an org, you get flexibility, reduced potholes and bottlenecks.
-	* Even small steps are improvements.
-	* Common theme of DevOps, Agile etc you don’t have to do all of it, do what parts make sense. “just get started” tone; don’t fear the database
+	* Documentation to share knowledge, it’s not just visibility. Runbooks, notebooks, deploy confidence wiki (e.g. GitHub, Etsy). Linking alerts to runbooks.
+
+---
+# Team Structure
+
+Teams work best when they:
+
+* Are service- or product-oriented
+* Are loosely coupled, autonomous
+* Are highly aligned and trusted
+* Own what they build
+
+???
+* Align teams around services and products, not their work or technology.
+
+---
+# Process: First, Do No Harm
+
+* Stabilize the patient, _then_ transport
+* Protect production (no holes below the waterline)
+
+???
+
+* Don't automate outages; automation can be weaponized
+
+---
+# Process: Plan And Roadmap
+
+* Work is work---maintain a single backlog
+* Embrace DevOps in small chunks and build on success
+* Lay out the progression in stages
+
+???
+
+* Present the transformation as small, iterative, prudent
+* Have a clear long-term direction to go, to build credibility and buy-in
+* This will help get leadership on board too
+
+---
+# Process: Getting Started
+
+Pick a place to start.
+
+* One team
+* One app, service, or product
+* First new, then established/legacy
+
+???
+
+* Remember, you can start small and add more good over time
+* This is key to getting buy-in and continuation
+* Change is stressful; emphasize continuity not just change
+
+---
+# Culture: Creating Change
+
+* Culture is emergent; you can't operate on it directly
+* Create a new path of least resistance
+* Don't shield people from consequences or benefits
+
+???
+* Work on incentives, not culture.
+
+---
+# Culture: Leadership Support
+
+* Exec mandate seems to work; so does attraction
+* Starving the old way is a common theme
+* You need champions at all levels
+* Persevere
+
+???
+
+* Leadership support is required: behavior, not just words.
+* "Burn the boats" can work
+* Refuse to enable regression to old habits
+
+---
+# Culture: Communication and Trust
+
+* Align around a North Star: a simple, compelling _why_
+* Customer-centric culture, customer empathy
+* Psychological safety enables risk-taking
+
+???
+
+* Trust is earned over time by keeping promises
+* Strong product team culture; trust; communication
+* Inclusion; share the pain
+
+---
+
+# People: You Need Experts
+
+* You do need database expertise
+* You do not need a database caretaker
+* Engineers can learn database competency
+
+???
+
+* Redefine DBA, or NoDBA
+* Education is important, your people are smart but that's not sufficient
+
+---
+# Pathways To Failure
+
+---
+# Tooling FAIL
+
+* Fragile, too-eager, or too-ambitious automation
+* Lack of automation; accepting manual toil
+* Two routes to production, for code vs DB
+
+???
+
+* You do need good tooling
+* Poor tooling just causes more problems
+
+---
+# Culture FAIL
+
+* Clinging to legacy DBA roles and duties
+* Relying on a vendor to bring culture
+* Insisting on adherence to One True Way
+* Any friction in the way of change
+* Failure to create incentives to change
+
+---
+
+> In a traditional sense, the job of the DBA means she is the only person with access to the servers that host the data, the go-to person to create new database cluster for new features, the person to design new schemas, and the only person to contact when anything database related breaks in a production environment.” - Silvia Botros, SendGrid
+
+???
+Change from DBA to DBRE instead. The database “subject matter expert,” rather than the database babysitter.
+
+---
+# Leadership FAIL
+
+* Underinvesting in experience and skill
+* Lack of management support
+* Micromanagement
+* Failure to manage up
+
+---
+# Planning FAIL
+
+* All-or-nothing
+* Too much too fast
+* Velocity over resilience
+
+---
+# What's The Hardest Part?
+
+---
+# Challenge: Politics
+
+* Selling DevOps to the DBA
+* Selling DevOps to leadership
+* Creating culture change
+
+---
+# Challenge: Tooling
+
+* Legacy databases aren't cloud-native
+* Data tier ops tooling isn't as mature
+* Schema changes
+* Integration with e.g. canary deploys, feature flags
+
+---
+# Challenge: HA, Scale, Performance
+
+* Failover and recovery
+* Locking/blocking
+* Nonblocking schema changes at scale
+
+---
+# Whither The DBA?
+
+* Become a DBRE instead of a DBA
+* Focus on data platform and architecture
+* Be the subject matter expert supporting product teams
+
+---
+# The Payoff
+
+* The outcomes
+* The process itself
+* Individual benefits
+
+???
+
+* DraftKings.
+* At the “end,” but also: the process itself
+* As a team: better DB awareness, more tooling
+* Individuals get broader skills and ability to be more valuable
+* As an org, you get flexibility, reduced potholes and bottlenecks.
+* Even small steps are improvements.
+* Common theme of DevOps, Agile etc you don’t have to do all of it, do what parts make sense. “just get started” tone; don’t fear the database
 
 
 ---
@@ -128,18 +360,30 @@ class: col-2
 
 Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
 
-Contact:
+Contact: baron@vividcortex.com, @xaprb
+
+Thanks to Jessica Kerr, Silvia Botros, Charity Majors, Laine Campbell, many VividCortex customers and friends, and the 50+ survey respondents.
 
 .qrcode.db.fr.w-40pct.ml-4[]
 
 ---
-* Survey Results
-	* 
+# Survey Results
+How important are each of the following in your view of "Database DevOps"?
+
+![Survey 2](DevOps-Survey-2.svg)
+
+# Survey Results Cont'd
+How do you rate the importance of these factors in making progress?
+
+![Survey 1](DevOps-Survey-1.svg)
+
+---
 * Resources
 	* Phoenix Project
 	* DBRE book
 	* Strategic DBA ebook
-	* DORA report
+	* [2018 State of DevOps Report](https://cloudplatformonline.com/2018-state-of-devops.html)
 	* Datical, Liquibase, Skeema, Orchestrator, Vitess, gh-ost
 	* Silvia’s article https://sendgrid.com/blog/dbas-a-priesthood-no-more/
 	* [The DataOps Manifesto](http://dataopsmanifesto.org/)
+    * Thich Nhat Hanh, Real Love
