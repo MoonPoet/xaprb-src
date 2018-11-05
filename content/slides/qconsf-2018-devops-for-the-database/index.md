@@ -25,6 +25,7 @@ Why is it hard to apply DevOps principles and practices to databases, and how ca
 * The traditional dedicated DBA role, and what has happened as a result
 * What it takes to change from a DBA-centric culture, to one where database-related competencies and responsibilities are more distributed
 * Why some teams succeed in this transformation, while others fail
+
 We can apply DevOps principles to the database, and our work will be better for it. This talk will show you how.
 
 ---
@@ -38,15 +39,27 @@ name: footer
 
 ---
 class: img-right-full
-# Introduction/Agenda
+# Introduction
 
 ![Baron Schwartz](headshot.jpg)
 
-* Overview of Database DevOps
-* How Companies Succeed
-	* Tooling, Culture, Process, People
-* How Companies Fail
-* Challenges to Database DevOps
+I've been focused on databases for about two decades, first as a developer, then
+a consultant, and now a startup founder.
+
+I've written several books (High Performance MySQL)... and created a lot of open source software, mostly focused around database monitoring, database operations, and database performance: innotop, Percona Toolkit, Percona Monitoring Plugins among others.
+
+???
+
+
+---
+class: roomy
+# Agenda
+
+* Overview of database DevOps
+* How companies succeed
+	* Tooling, culture, process, people
+* How companies fail
+* Challenges to database DevOps
 * Resources, etc
 
 Slides are online at xaprb.com.
@@ -55,10 +68,6 @@ My Twitter is @xaprb, my email is baron@vividcortex.com
 
 ???
 
-* I've been working with databases for decades, first as a developer, then a
-  consultant, now as founder of VividCortex
-* I created a lot of open source software: innotop, Percona Toolkit, Percona
-  Monitoring Plugins among others
 * This is opinion, not research
 * This is my personal experience
 * I haven't gotten all this right yet
@@ -69,13 +78,21 @@ class: img-right-full, roomy
 
 # Three Database DevOps Stories
 
-1. One DBA, Hundreds of Developers
+1. One DBA, hundreds of developers, growing the DBA team
+
+???
+
+A.C.
 
 --
-2. One DBA, from 20 to 100 Developers
+2. One DBA, from 20 to 100 developers
+
+???
+
+Zen
 
 --
-3. Two Database Ops Folks, Seventeen Developers
+3. Two database ops folks, seventeen developers
 
 ???
 The Golden Motion
@@ -88,10 +105,14 @@ class: img-right-full
 
 DevOps brings the same benefits to the database as everywhere else.
 
+--
+
 For software delivery performance in particular:
 
 * Faster, better, cheaper---pick all three
 * stability -> speed -> stability -> speed
+
+(See the 2018 State of DevOps Report!)
 
 ???
 
@@ -143,11 +164,19 @@ Attributes I've seen in companies that apply DevOps to their database:
 * Charity Majors: the first age of DevOps vs the 2nd age.
 
 ---
-# From the 2018 DORA Report
+# From the 2018 State of DevOps Report
 
-> Database changes are often a major source of risk and delay when performing deployments... integrating database work into the software delivery process positively contributed to continuous delivery... good communication and comprehensive configuration management that includes the database matter. Teams that do well at continuous delivery store database changes as scripts in version control and manage these changes in the same way as production application changes... when changes to the application require database changes, these teams discuss them with the people responsible for the production database
+> Database changes are often a major source of risk and delay when performing
+> deployments... **integrating database work into the software delivery
+> process** positively contributed to continuous delivery... good communication
+> and comprehensive configuration management that includes the database matter.
+> Teams that do well at continuous delivery **store database changes as scripts
+> in version control and manage these changes in the same way as production
+> application changes**... when changes to the application require database
+> changes, **these teams discuss them** with the people responsible for the
+> production database
 
-The 2018 DORA report, p57
+Emphasis mine. See p. 57
 
 ---
 class: title, smokescreen, no-footer, top
@@ -181,31 +210,30 @@ class: roomy
 
 ???
 
-* Don't build a new toolchain for the DB, add to existing tools dev/ops built
-* Frequent deploys
-
 ---
 class: roomy
 # Tooling: Monitoring and Observability
 
 * Instrumentation, telemetry, analytics, monitoring, observability
 * Monitoring: the Seven Golden Signals (CELT + USE)
-* Observability
+* Observability is built on these foundations
 
 ???
 
 ---
-class: roomy
+class: roomy, img-right
 # Tooling: Shared Knowledge and Process
 
-* DBRE processes, mentality
+![Deployinator](deployinator.png# minw-100pct)
+
+* DBRE processes, mentality, rubrics
 * Deploy confidence procedures
 * Documentation to share SME experience & skill
 * Notifications should link to runbooks
 
 ???
-	* The DBRE mentality: active measurement of availability and latency, and a strategy to manage them.
-	* Documentation to share knowledge, it's not just visibility. Runbooks, notebooks, deploy confidence wiki (e.g. GitHub, Etsy). Linking alerts to runbooks.
+* The DBRE mentality: active measurement of availability and latency, and a strategy to manage them.
+* Documentation to share knowledge, it's not just visibility. Runbooks, notebooks, deploy confidence wiki (e.g. GitHub, Etsy). Linking alerts to runbooks.
 
 ---
 class: roomy
@@ -218,12 +246,16 @@ Teams work best when they:
 * Are highly aligned and trusted
 * Own what they build
 
+My personal experience: Conway's Law is true.
+
 ???
 * Align teams around services and products, not their work or technology.
 
 ---
-class: roomy
+class: roomy, img-right
 # Process: First, Do No Harm
+
+![Image](unsplash-photos-FYrmeWYmR1M.jpg)
 
 * Stabilize the patient, _then_ transport
 * Protect production (no holes below the waterline)
@@ -233,18 +265,23 @@ class: roomy
 * Don't automate outages; automation can be weaponized
 
 ---
-class: roomy
+class: roomy, img-right-full
+
+![Image](unsplash-photos-LOHVrTsdvzY.jpg)
+
 # Process: Plan And Roadmap
 
 * Work is work---maintain a single backlog
 * Embrace DevOps in small chunks and build on success
 * Lay out the progression in stages
+* Emphasize what's not changing, too
 
 ???
 
 * Present the transformation as small, iterative, prudent
 * Have a clear long-term direction to go, to build credibility and buy-in
 * This will help get leadership on board too
+* Change is stressful; emphasize continuity not just change
 
 ---
 class: roomy
@@ -260,11 +297,13 @@ Pick a place to start.
 
 * Remember, you can start small and add more good over time
 * This is key to getting buy-in and continuation
-* Change is stressful; emphasize continuity not just change
 
 ---
-class: roomy
-# Culture: Creating Change
+class: roomy, img-right-full
+
+![Succulents](edgar-castrejon-459812-unsplash.jpg)
+
+# Culture: Change
 
 * Culture is emergent; you can't operate on it directly
 * Create a new path of least resistance
@@ -277,19 +316,23 @@ class: roomy
 class: roomy
 # Culture: Leadership Support
 
-* Exec mandate seems to work; so does attraction
-* Starving the old way is a common theme
-* You need champions at all levels
-* Persevere
+* Exec mandate sometimes works; so does attraction
+* Starve the old way
+* Leadership isn't just top of org chart
 
 ???
 
 * Leadership support is required: behavior, not just words.
 * "Burn the boats" can work
 * Refuse to enable regression to old habits
+* Make nonparticipation low-status
+* You need champions at all levels
 
 ---
-class: roomy
+class: img-right-full
+
+![Compass](aaron-burden-523450-unsplash.jpg)
+
 # Culture: Communication and Trust
 
 * Align around a North Star: a simple, compelling _why_
@@ -345,12 +388,14 @@ class: roomy
 * Clinging to legacy DBA roles and duties
 
 ---
-class: roomy
+class: img-right
 # Aside: Legacy DBA Roles
 
+![Silvia](silvia.jpg# br-100pct center ba)
+
 > In a traditional sense, the job of the DBA means she is the only person with access to the servers that host the data, the go-to person to create new database cluster for new features, the person to design new schemas, and the only person to contact when anything database related breaks in a production environment.
->
-> --- [Silvia Botros, SendGrid](https://sendgrid.com/blog/dbas-a-priesthood-no-more/)
+
+--- [Silvia Botros, SendGrid](https://sendgrid.com/blog/dbas-a-priesthood-no-more/)
 
 ???
 Change from DBA to DBRE instead. The database "subject matter expert," rather than the database babysitter.
@@ -361,11 +406,15 @@ class: roomy
 
 * Underinvesting in experience and skill
 * Lack of management support
-* Micromanagement
-* Failure to manage up
+* Micromanagement, failure to manage up
+
+See also my [Kafka Summit talk](/talks/kafka-summit-2018-advocate-technical-decisions-to-manager/) on advocating technical decisions.
 
 ---
-class: roomy
+class: roomy, img-right-full
+
+![Speed](alessio-lin-236486-unsplash.jpg)
+
 # Planning FAIL
 
 * All-or-nothing
@@ -435,7 +484,13 @@ class: roomy, img-right-full
 class: roomy
 # Acknowledgments
 
-Thanks to Jessica Kerr, Silvia Botros, Charity Majors, Laine Campbell, Nicole Forsgren PhD, too many VividCortex customers and friends to mention, and the 50+ survey respondents.
+Many people contributed to this talk. Thank you.
+
+(When I get their OK I will add their names.)
+
+???
+
+Jessica Kerr, Silvia Botros, Charity Majors, Laine Campbell, Nicole Forsgren PhD, too many VividCortex customers and friends to mention, and the 50+ survey respondents.
 
 ---
 class: roomy
@@ -448,6 +503,7 @@ Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
 Contact: baron@vividcortex.com, @xaprb
 
 ---
+class: roomy
 # Appendix: Survey
 
 I asked my Twitter followers to respond to an informal, nonscientific survey.
@@ -475,3 +531,4 @@ How do you rate the importance of these factors in making progress?
 * [Database Reliability Engineering](https://www.amazon.com/dp/1491925949/)
 * The [2018 DORA State of DevOps Report](https://cloudplatformonline.com/2018-state-of-devops.html)
 * [Three Steps To Psychological Safety](/blog/three-steps-to-psychological-safety/)
+* My [Kafka Summit talk](/talks/kafka-summit-2018-advocate-technical-decisions-to-manager/) on advocating technical decisions
