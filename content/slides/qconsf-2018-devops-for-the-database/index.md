@@ -215,7 +215,7 @@ class: roomy
 # Tooling: Monitoring and Observability
 
 * Instrumentation, telemetry, analytics, monitoring, observability
-* Monitoring: the Seven Golden Signals (CELT + USE)
+* Monitoring: the Seven Golden Signals ([CELT + USE](/slides/all-things-open-2018-monitor-your-database/#8))
 * Observability is built on these foundations
 
 ???
@@ -527,6 +527,9 @@ How do you rate the importance of these factors in making progress?
 ---
 # Resources
 
+* Slides/Video: [How to Monitor a
+  Database](/talks/all-things-open-2018-monitor-your-database/) including the
+  Seven Golden Signals (CELT+USE)
 * [The Phoenix Project](https://www.amazon.com/dp/1942788290/)
 * [Database Reliability Engineering](https://www.amazon.com/dp/1491925949/)
 * The [2018 DORA State of DevOps Report](https://cloudplatformonline.com/2018-state-of-devops.html)
