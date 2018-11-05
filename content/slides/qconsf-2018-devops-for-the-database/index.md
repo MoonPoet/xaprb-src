@@ -2,7 +2,7 @@
 title: 'DevOps for the Database '
 date: "2018-11-05"
 url: "slides/qconsf-2018-devops-for-the-database/"
-image: "slides/qconsf-2018-devops-for-the-database/cover.jpg"
+image: "slides/qconsf-2018-devops-for-the-database/thumbnail.jpg"
 description: "Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that succeeded---and those who haven't."
 ratio: "16:9"
 themes:
@@ -10,14 +10,16 @@ themes:
 - adirondack
 - descartes
 ---
-class: title
+class: title, fogscreen, shelf, no-footer
 background-image: url(unsplash-photos-oyXis2kALVg.jpg)
 
 # DevOps for the Database
 ## Baron Schwartz &bullet; QConSF 2018
 
+![Logo](vividcortex-horizontal-white-rgb.svg# absolute smokescreen pa-2 br-3 maxw-2-12th r-1-12th)
+
 ???
-Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling—and those who’ve tried. Along the way, we’ll cover topics including:
+Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling---and those who've tried. Along the way, we'll cover topics including:
 * What the research shows about DevOps, databases, and company performance
 * Current and emerging trends in how we build and manage data tiers, and implications
 * The traditional dedicated DBA role, and what has happened as a result
@@ -26,41 +28,80 @@ Why is it hard to apply DevOps principles and practices to databases, and how ca
 We can apply DevOps principles to the database, and our work will be better for it. This talk will show you how.
 
 ---
+layout: true
+name: footer
 
-# Introduction
+.footer[
+- @xaprb
+- ![logo](vividcortex-horizontal-web.svg)
+]
 
-Agenda
+---
+class: img-right-full
+# Introduction/Agenda
+
+![Baron Schwartz](headshot.jpg)
+
+* Overview of Database DevOps
+* How Companies Succeed
+	* Tooling, Culture, Process, People
+* How Companies Fail
+* Challenges to Database DevOps
+* Resources, etc
+
+Slides are online at xaprb.com.
+
+My Twitter is @xaprb, my email is baron@vividcortex.com
 
 ???
 
+* I've been working with databases for decades, first as a developer, then a
+  consultant, now as founder of VividCortex
+* I created a lot of open source software: innotop, Percona Toolkit, Percona
+  Monitoring Plugins among others
 * This is opinion, not research
 * This is my personal experience
 * I haven't gotten all this right yet
 
 ---
+class: img-right-full, roomy
+![Pots](elena-taranenko-541565-unsplash.jpg)
+
 # Three Database DevOps Stories
 
 1. One DBA, Hundreds of Developers
+
+--
 2. One DBA, from 20 to 100 Developers
+
+--
 3. Two Database Ops Folks, Seventeen Developers
 
 ???
 The Golden Motion
+
 ---
+class: img-right-full
+![Image](unsplash-photos-6q6qRY2LQJQ.jpg)
+
 # Benefits of Database DevOps
 
 DevOps brings the same benefits to the database as everywhere else.
 
 For software delivery performance in particular:
 
-* Faster, better, AND cheaper---pick all three
-* speed -> stability -> speed
+* Faster, better, cheaper---pick all three
+* stability -> speed -> stability -> speed
 
 ???
 
 Ultimately this lets you work _on_ the system, not _in_ the system.
 
 ---
+class: img-left-full
+
+![Image](unsplash-photos-6q6qRY2LQJQ.jpg)
+
 # Detriments of Lacking DevOps
 
 Without DevOps, speed and quality suffer:
@@ -84,7 +125,7 @@ Without DevOps, speed and quality suffer:
 ---
 # What Is Database DevOps?
 
-Some key attributes I've seen in companies that apply DevOps to their database:
+Attributes I've seen in companies that apply DevOps to their database:
 
 * Developers own database schema, workload, and performance
 * Developers debug, troubleshoot, and repair their own outages
@@ -104,15 +145,20 @@ Some key attributes I've seen in companies that apply DevOps to their database:
 ---
 # From the 2018 DORA Report
 
-> Database changes are often a major source of risk and delay when performing deployments… integrating database work into the software delivery process positively contributed to continuous delivery… good communication and comprehensive configuration management that includes the database matter. Teams that do well at continuous delivery store database changes as scripts in version control and manage these changes in the same way as production application changes… when changes to the application require database changes, these teams discuss them with the people responsible for the production database
+> Database changes are often a major source of risk and delay when performing deployments... integrating database work into the software delivery process positively contributed to continuous delivery... good communication and comprehensive configuration management that includes the database matter. Teams that do well at continuous delivery store database changes as scripts in version control and manage these changes in the same way as production application changes... when changes to the application require database changes, these teams discuss them with the people responsible for the production database
 
 The 2018 DORA report, p57
 
 ---
+class: title, smokescreen, no-footer, top
+background-image: url(unsplash-photos-C7B-ExXpOIE.jpg)
+
 # Bringing DevOps to the Database
-## Pathways To Success
 
 ---
+class: roomy, img-right-full
+![Image](pixabay-en-wood-tree-spruce-picea-conifer-3212803.jpg)
+
 # Core Elements
 
 1. People
@@ -126,7 +172,7 @@ The 2018 DORA report, p57
 * But to understand what that should look like, let's first talk about how their work needs to change.
 
 ---
-
+class: roomy
 # Tooling: Deploy/Release
 
 * You need frequent, automated deploys
@@ -138,6 +184,8 @@ The 2018 DORA report, p57
 * Don't build a new toolchain for the DB, add to existing tools dev/ops built
 * Frequent deploys
 
+---
+class: roomy
 # Tooling: Monitoring and Observability
 
 * Instrumentation, telemetry, analytics, monitoring, observability
@@ -146,6 +194,8 @@ The 2018 DORA report, p57
 
 ???
 
+---
+class: roomy
 # Tooling: Shared Knowledge and Process
 
 * DBRE processes, mentality
@@ -155,10 +205,11 @@ The 2018 DORA report, p57
 
 ???
 	* The DBRE mentality: active measurement of availability and latency, and a strategy to manage them.
-	* Documentation to share knowledge, it’s not just visibility. Runbooks, notebooks, deploy confidence wiki (e.g. GitHub, Etsy). Linking alerts to runbooks.
+	* Documentation to share knowledge, it's not just visibility. Runbooks, notebooks, deploy confidence wiki (e.g. GitHub, Etsy). Linking alerts to runbooks.
 
 ---
-# Team Structure
+class: roomy
+# Structure: Team Orientation
 
 Teams work best when they:
 
@@ -171,6 +222,7 @@ Teams work best when they:
 * Align teams around services and products, not their work or technology.
 
 ---
+class: roomy
 # Process: First, Do No Harm
 
 * Stabilize the patient, _then_ transport
@@ -181,6 +233,7 @@ Teams work best when they:
 * Don't automate outages; automation can be weaponized
 
 ---
+class: roomy
 # Process: Plan And Roadmap
 
 * Work is work---maintain a single backlog
@@ -194,6 +247,7 @@ Teams work best when they:
 * This will help get leadership on board too
 
 ---
+class: roomy
 # Process: Getting Started
 
 Pick a place to start.
@@ -209,16 +263,18 @@ Pick a place to start.
 * Change is stressful; emphasize continuity not just change
 
 ---
+class: roomy
 # Culture: Creating Change
 
 * Culture is emergent; you can't operate on it directly
 * Create a new path of least resistance
-* Don't shield people from consequences or benefits
+* Include everyone in consequences and benefits
 
 ???
 * Work on incentives, not culture.
 
 ---
+class: roomy
 # Culture: Leadership Support
 
 * Exec mandate seems to work; so does attraction
@@ -233,6 +289,7 @@ Pick a place to start.
 * Refuse to enable regression to old habits
 
 ---
+class: roomy
 # Culture: Communication and Trust
 
 * Align around a North Star: a simple, compelling _why_
@@ -246,7 +303,7 @@ Pick a place to start.
 * Inclusion; share the pain
 
 ---
-
+class: roomy
 # People: You Need Experts
 
 * You do need database expertise
@@ -259,14 +316,18 @@ Pick a place to start.
 * Education is important, your people are smart but that's not sufficient
 
 ---
+class: title, fogscreen, no-footer, bottom
+background-image: url(pixabay-en-pond-water-shield-dead-end-yellow-3776437.jpg)
+
 # Pathways To Failure
 
 ---
+class: roomy
 # Tooling FAIL
 
-* Fragile, too-eager, or too-ambitious automation
-* Lack of automation; accepting manual toil
-* Two routes to production, for code vs DB
+* Fragile or too-ambitious automation
+* Lack of automation / accepting manual toil
+* Two routes to production---code vs DB
 
 ???
 
@@ -274,22 +335,28 @@ Pick a place to start.
 * Poor tooling just causes more problems
 
 ---
+class: roomy
 # Culture FAIL
 
-* Clinging to legacy DBA roles and duties
-* Relying on a vendor to bring culture
-* Insisting on adherence to One True Way
 * Any friction in the way of change
 * Failure to create incentives to change
+* Relying on a vendor to bring culture
+* Insisting on adherence to One True Way
+* Clinging to legacy DBA roles and duties
 
 ---
+class: roomy
+# Aside: Legacy DBA Roles
 
-> In a traditional sense, the job of the DBA means she is the only person with access to the servers that host the data, the go-to person to create new database cluster for new features, the person to design new schemas, and the only person to contact when anything database related breaks in a production environment.” - Silvia Botros, SendGrid
+> In a traditional sense, the job of the DBA means she is the only person with access to the servers that host the data, the go-to person to create new database cluster for new features, the person to design new schemas, and the only person to contact when anything database related breaks in a production environment.
+>
+> --- [Silvia Botros, SendGrid](https://sendgrid.com/blog/dbas-a-priesthood-no-more/)
 
 ???
-Change from DBA to DBRE instead. The database “subject matter expert,” rather than the database babysitter.
+Change from DBA to DBRE instead. The database "subject matter expert," rather than the database babysitter.
 
 ---
+class: roomy
 # Leadership FAIL
 
 * Underinvesting in experience and skill
@@ -298,6 +365,7 @@ Change from DBA to DBRE instead. The database “subject matter expert,” rathe
 * Failure to manage up
 
 ---
+class: roomy
 # Planning FAIL
 
 * All-or-nothing
@@ -305,9 +373,12 @@ Change from DBA to DBRE instead. The database “subject matter expert,” rathe
 * Velocity over resilience
 
 ---
+class: title, fogscreen, no-footer
+background-image: url(pixabay-en-maze-graphic-render-labyrinth-design-puz-2264.jpg)
 # What's The Hardest Part?
 
 ---
+class: roomy
 # Challenge: Politics
 
 * Selling DevOps to the DBA
@@ -315,6 +386,7 @@ Change from DBA to DBRE instead. The database “subject matter expert,” rathe
 * Creating culture change
 
 ---
+class: roomy
 # Challenge: Tooling
 
 * Legacy databases aren't cloud-native
@@ -323,6 +395,7 @@ Change from DBA to DBRE instead. The database “subject matter expert,” rathe
 * Integration with e.g. canary deploys, feature flags
 
 ---
+class: roomy
 # Challenge: HA, Scale, Performance
 
 * Failover and recovery
@@ -330,6 +403,7 @@ Change from DBA to DBRE instead. The database “subject matter expert,” rathe
 * Nonblocking schema changes at scale
 
 ---
+class: roomy
 # Whither The DBA?
 
 * Become a DBRE instead of a DBA
@@ -337,7 +411,11 @@ Change from DBA to DBRE instead. The database “subject matter expert,” rathe
 * Be the subject matter expert supporting product teams
 
 ---
-# The Payoff
+class: roomy, img-right-full
+
+![Image](cassidy-phillips-695625-unsplash.jpg)
+
+# The Rewards
 
 * The outcomes
 * The process itself
@@ -346,44 +424,54 @@ Change from DBA to DBRE instead. The database “subject matter expert,” rathe
 ???
 
 * DraftKings.
-* At the “end,” but also: the process itself
+* At the "end," but also: the process itself
 * As a team: better DB awareness, more tooling
 * Individuals get broader skills and ability to be more valuable
 * As an org, you get flexibility, reduced potholes and bottlenecks.
 * Even small steps are improvements.
-* Common theme of DevOps, Agile etc you don’t have to do all of it, do what parts make sense. “just get started” tone; don’t fear the database
-
+* Common theme of DevOps, Agile etc you don't have to do all of it, do what parts make sense. "just get started" tone; don't fear the database
 
 ---
-class: col-2
+class: roomy
+# Acknowledgments
+
+Thanks to Jessica Kerr, Silvia Botros, Charity Majors, Laine Campbell, Nicole Forsgren PhD, too many VividCortex customers and friends to mention, and the 50+ survey respondents.
+
+---
+class: roomy
 # Slides and Contact Information
+
+.qrcode.db.fr.w-40pct.ml-4[]
 
 Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
 
 Contact: baron@vividcortex.com, @xaprb
 
-Thanks to Jessica Kerr, Silvia Botros, Charity Majors, Laine Campbell, many VividCortex customers and friends, and the 50+ survey respondents.
+---
+# Appendix: Survey
 
-.qrcode.db.fr.w-40pct.ml-4[]
+I asked my Twitter followers to respond to an informal, nonscientific survey.
+The following two slides summarize some of the quantitative feedback.
 
 ---
+class: compact
 # Survey Results
+
 How important are each of the following in your view of "Database DevOps"?
 
-![Survey 2](DevOps-Survey-2.svg)
+![Survey 2](DevOps-Survey-2.svg# maxw-70pct center)
 
+---
+class: compact
 # Survey Results Cont'd
 How do you rate the importance of these factors in making progress?
 
-![Survey 1](DevOps-Survey-1.svg)
+![Survey 1](DevOps-Survey-1.svg# maxw-70pct center)
 
 ---
-* Resources
-	* Phoenix Project
-	* DBRE book
-	* Strategic DBA ebook
-	* [2018 State of DevOps Report](https://cloudplatformonline.com/2018-state-of-devops.html)
-	* Datical, Liquibase, Skeema, Orchestrator, Vitess, gh-ost
-	* Silvia’s article https://sendgrid.com/blog/dbas-a-priesthood-no-more/
-	* [The DataOps Manifesto](http://dataopsmanifesto.org/)
-    * Thich Nhat Hanh, Real Love
+# Resources
+
+* [The Phoenix Project](https://www.amazon.com/dp/1942788290/)
+* [Database Reliability Engineering](https://www.amazon.com/dp/1491925949/)
+* The [2018 DORA State of DevOps Report](https://cloudplatformonline.com/2018-state-of-devops.html)
+* [Three Steps To Psychological Safety](/blog/three-steps-to-psychological-safety/)
