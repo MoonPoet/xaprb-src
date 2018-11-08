@@ -1,9 +1,9 @@
 ---
 title: "Quantifying Scalability with the Universal Scalability Law"
-date: 2018-11-08"
+date: "2018-11-08"
 ratio: "16:9"
 image: /slides/dataengconf-2018-quantifying-scalability-universal-scalability-law/ThinkstockPhotos-480085336.jpg
-thubmnail: /slides/dataengconf-2018-quantifying-scalability-universal-scalability-law/thumbnail.jpg
+thumbnail: /slides/dataengconf-2018-quantifying-scalability-universal-scalability-law/thumbnail.jpg
 description: "Scalability is a mathematical function that's simple, precise, and really useful."
 themes:
 - apron
