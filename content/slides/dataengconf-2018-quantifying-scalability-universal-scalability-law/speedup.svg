@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg x="0" y="0" width="2726" height="723" viewBox="0 0 2726 723" version="1.1" style="display: block;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+
+.g1_1{
+fill: #FFFFFF;
+}
+.g2_1{
+fill: #00A2FF;
+}
+.g3_1{
+fill: none;
+stroke: #000000;
+stroke-width: 9.166667;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+stroke-miterlimit: 4;
+}
+.g4_1{
+}
+.g5_1{
+fill: none;
+stroke: #000000;
+stroke-width: 12.222222;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+stroke-miterlimit: 4;
+}
+.g6_1{
+fill: none;
+stroke: #000000;
+stroke-width: 12.22221;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+
+.s1_1{
+font-size: 45.83px;
+font-family: arial;
+fill: #000000;
+}
+
+</style>
+  </defs>
+  <path d="M0,0 L0,723 L2726,723 L2726,0 Z " fill="#FFFFFF" stroke="none"/>
+  <path d="M-31.6,959.6l2933.2,0l0,-1649.9l-2933.2,0l0,1649.9Z" class="g1_1"/>
+  <path d="M1916.1,186.3l260.7,0l0,54.2l-260.7,0Z" class="g2_1"/>
+  <path d="M1916.1,462.2l260.7,0l0,54.1l-260.7,0Z" class="g2_1"/>
+  <path d="M1916.1,324.3l260.7,0l0,54.1l-260.7,0Z" class="g2_1"/>
+  <path d="M1863.9,140.5c2.2,26.4,19.6,45.6,52.2,57.7" class="g3_1"/>
+  <path d="M1858,140.5c-30.5,107.8,-11.1,174.9,58.1,201" class="g3_1"/>
+  <path d="M1856.5,140.5C1785.1,344,1805,460,1916.1,488.3" class="g3_1"/>
+  <path d="M2226.4,134.3c-1.1,29,-17.6,50.1,-49.6,63.2" class="g3_1"/>
+  <path d="M2229.3,134.3c21.5,111.2,4,180.8,-52.5,208.8" class="g3_1"/>
+  <path d="M2232.7,134.4c64.4,195.5,45.7,310.9,-55.9,346.3" class="g3_1"/>
+  <path d="M1819.2,86.3l94.3,0l0,54.2l-94.3,0Z" class="g2_1" style="fill: rgb(102, 102, 102);"/>
+  <path d="M2176.3,80.2l94.3,0l0,54.1l-94.3,0Z" class="g2_1" style="fill: rgb(102, 102, 102);"/>
+  <path d="M1715.3,114.2l66.7,0l4.6,0" class="g3_1"/>
+  <path d="M1782,132.6l36.7,-18.4L1782,95.9Z" class="g4_1"/>
+  <path d="M2269.8,107.3l66.8,0l4.6,0" class="g3_1"/>
+  <path d="M2336.6,125.6l36.6,-18.3L2336.6,89Z" class="g4_1"/>
+  <path d="M481.4,80.2l260.7,0l0,54.1l-260.7,0Z" class="g2_1"/>
+  <path d="M1008,80.2l260.7,0l0,54.1l-260.7,0Z" class="g2_1"/>
+  <path d="M744.7,80.2l260.6,0l0,54.1l-260.6,0Z" class="g2_1"/>
+  <path d="M384.6,80.2l94.2,0l0,54.1l-94.2,0Z" class="g2_1" style="fill: rgb(102, 102, 102);"/>
+  <path d="M1271.2,80.2l94.2,0l0,54.1l-94.2,0Z" class="g2_1" style="fill: rgb(102, 102, 102);"/>
+  <path d="M280.6,107.3l66.7,0l4.6,0" class="g3_1"/>
+  <path d="M347.3,125.6L384,107.3L347.3,89Z" class="g4_1"/>
+  <path d="M 1365.5 107.3 L 1432.2 107.3 L 1436.8 107.3" class="g3_1"/>
+  <path d="M1426.2,125.6l36.7,-18.3L1426.2,89Z" class="g4_1"/>
+  <path d="M382,646.6l6.2,0l967.1,0l6.2,0" class="g5_1"/>
+  <path d="M1361.7,670.5l0,-47.7" class="g6_1" style="stroke-width: 4px;"/>
+  <path d="M381.8,622.8l0,47.7" class="g6_1" style="stroke-width: 4px;"/>
+  <path d="M683.3,612.9l376.9,0l0,67.5l-376.9,0Z" class="g1_1"/>
+  <text x="703" y="664" class="s1_1" style="white-space: pre;">Linear/Serial</text>
+  <path d="M1818.7,646.6l6.2,0l438.7,0l6.2,0" class="g5_1"/>
+  <path d="M2270,670.5l0,-47.7" class="g6_1" style="stroke-width: 4px;"/>
+  <path d="M1818.5,622.8l0,47.7" class="g6_1" style="stroke-width: 4px;"/>
+  <path d="M1927.9,612.9l232.7,0l0,67.5l-232.7,0Z" class="g1_1"/>
+  <text x="1940" y="664" class="s1_1" style="white-space: pre;">Parallel!</text>
+</svg>

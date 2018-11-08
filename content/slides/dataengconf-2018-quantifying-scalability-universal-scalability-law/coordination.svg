@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg x="0" y="0" width="2793" height="982" viewBox="0 0 2793 982" version="1.1" style="display: block;margin-left: auto;margin-right: auto;" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style type="text/css">
+
+.g1_1{
+fill: #FFFFFF;
+}
+.g2_1{
+fill: none;
+stroke: #000000;
+stroke-width: 7.638889;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-miterlimit: 4;
+stroke-dasharray: 0,23;
+}
+.g3_1{
+fill: #00A2FF;
+}
+.g4_1{
+fill: none;
+stroke: #000000;
+stroke-width: 9.166667;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+stroke-miterlimit: 4;
+}
+.g5_1{
+}
+
+
+</style>
+  </defs>
+  <path d="M0,0 L0,982 L2793,982 L2793,0 Z " fill="#FFFFFF" stroke="none"/>
+  <path d="M-118.8,1160l2933.3,0l0,-1649.9l-2933.3,0l0,1649.9Z" class="g1_1"/>
+  <path d="M 1000 250 L 1750 250 L 1750 350 L 1000 350 Z" class="g3_1"/>
+  <path d="M 1000 800 L 1820 800 L 1820 900 L 1000 900 Z" class="g3_1" bx:origin="0.446216 0.5"/>
+  <path d="M 1000 550 L 1870 550 L 1870 650 L 1000 650 Z" class="g3_1" bx:origin="0.446216 0.5"/>
+  <path d="M 851.195 144.259 C 858.995 197.459 909.313 270.091 996.213 295.491" class="g4_1"/>
+  <path d="M 842.911 145.865 C 781.411 361.665 832.725 538.655 997.625 599.455" class="g4_1"/>
+  <path d="M 835.4 145.062 C 676.8 560.962 734.238 775.443 999.038 845.143" class="g4_1"/>
+  <path d="M 2008.1 143.5 C 1992.5 215.7 1897.26 274.289 1753.46 299.589" class="g4_1"/>
+  <path d="M 2015.8 143.5 C 2040.7 371.6 2018.644 534.553 1873.344 598.453" class="g4_1"/>
+  <path d="M 2023.4 143.5 C 2138.9 590.3 2062.073 783.839 1821.073 848.339" class="g4_1"/>
+  <path d="M 728 40 L 987.6 40 L 987.6 140 L 728 140 Z" class="g3_1" style="fill: rgb(102, 102, 102);"/>
+  <path d="M 1878.3 40 L 2138 40 L 2138 140 L 1878.3 140 Z" class="g3_1" style="fill: rgb(102, 102, 102);"/>
+  <path d="M 441.5 88.4 L 689.6 88.4 L 694.2 88.4" class="g4_1"/>
+  <path d="M 689.6 106.8 L 726.3 88.4 L 689.6 70.1 Z" class="g5_1"/>
+  <path d="M 2137.8 92 L 2386 92 L 2390.5 92" class="g4_1"/>
+  <path d="M 2386 110.3 L 2422.6 92 L 2386 73.6 Z" class="g5_1"/>
+  <g transform="matrix(1, 0, 0, 1, 9.599976, -5)">
+    <path d="M 1161.8 367 L 1161.8 504.2 L 1161.8 508.7" class="g4_1"/>
+    <path d="M 1143.4 504.2 L 1161.8 540.8 L 1180.1 504.2 Z" class="g5_1"/>
+    <path d="M 1185.1 399.1 L 1185.1 403.7 L 1185.1 540.8" class="g4_1"/>
+    <path d="M 1203.4 403.7 L 1185.1 367 L 1166.8 403.7 Z" class="g5_1"/>
+  </g>
+  <path d="M 1600.9 651.618 L 1600.9 772.56 L 1600.9 776.618" class="g4_1"/>
+  <path d="M 1156.4 250 L 1206.4 250 L 1206.4 350 L 1156.4 350 Z" class="g1_1" style="fill: rgb(229, 121, 20);"/>
+  <path d="M 1477.1 800 L 1597.1 800 L 1597.1 900 L 1477.1 900 Z" class="g1_1" style="fill: rgb(229, 121, 20);"/>
+  <path d="M 1582.6 764 L 1600.9 800.7 L 1619.3 764 Z" class="g5_1"/>
+  <g transform="matrix(1, 0, 0, 1, 2.114128, -1.452773)">
+    <path d="M 1475.2 687 L 1475.2 690.652 L 1475.2 802" class="g4_1"/>
+    <path d="M 1493.5 691.5 L 1475.2 654.9 L 1456.8 691.5 Z" class="g5_1"/>
+  </g>
+  <path d="M 1156.4 550 L 1206.4 550 L 1206.4 650 L 1156.4 650 Z" class="g5_1" style="fill: rgb(229, 121, 20);"/>
+  <path d="M 1477.1 550 L 1597.1 550 L 1597.1 650 L 1477.1 650 Z" class="g5_1" style="fill: rgb(229, 121, 20);"/>
+  <path d="M 1000.005 250 L 1700.005 250 L 1700.005 350 L 1000.005 350 Z" class="g3_1" style="fill-opacity: 0; fill: none; stroke: rgb(0, 0, 0); stroke-width: 6px; stroke-dasharray: 8px;"/>
+  <path d="M 1000 550 L 1700 550 L 1700 650 L 1000 650 Z" class="g3_1" style="fill-opacity: 0; fill: none; stroke: rgb(0, 0, 0); stroke-width: 6px; stroke-dasharray: 8px;"/>
+  <path d="M 1000 800 L 1700 800 L 1700 900 L 1000 900 Z" class="g3_1" style="fill-opacity: 0; fill: none; stroke: rgb(0, 0, 0); stroke-width: 6px; stroke-dasharray: 8px;"/>
+  <path d="M 1703.295 40 L 1873.295 40 L 1873.295 140 L 1703.295 140 Z" class="g3_1" style="fill-opacity: 0; fill: none; stroke: rgb(0, 0, 0); stroke-width: 6px; stroke-dasharray: 8px;"/>
+</svg>
