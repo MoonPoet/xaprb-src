@@ -96,7 +96,7 @@ interests), and I need to negotiate these with care. Here's how I do that:
   signal-to-noise ratio.  You can also mute keywords. I find it useful to mute
   political words, for example; I get my political news elsewhere. Here's some
   of my keyword mute filters in Tweetbot:
-  ![Muted Keywords](/media/2018/04/muted-keywords.png) The first keyword is a regular expression that mutes tweets with too many hashtags; the others mute things I find are usually just noise. I muted nytimes years ago after they stopped being able to tell the difference between right and wrong.[^nytimes] Muting political hot-button stuff like that keeps some of the shouting out of my timeline.
+  ![Muted Keywords](/media/2018/04/muted-keywords.png) The first keyword is a regular expression that mutes tweets with too many hashtags; the others mute things I find are noisy or stressful. Muting political hot-button content keeps some of the shouting out of my timeline.
 
 This sounds like a lot of work, doesn't it! It is, but it's my responsibility.
 And it works: I no longer lack control over what I read. (Or at least I have the
@@ -128,5 +128,3 @@ My solution to this is purely non-technical: I built my own algorithm, so to
 speak, by following people with sound judgment, and a variety of experiences and
 worldviews. It's old-fashioned, but I think it's better than the new-fangled
 technologically generated news feeds that dominate the Internet today.
-
-[^nytimes]: That's another story. I used to be a subscriber.
