@@ -1,19 +1,19 @@
 ---
 title: 'Core Values'
-date: "2018-12-20T13:58:06-05:00"
+date: "2018-12-20"
 url: "/blog/core-values"
-description: ""
-tldr: ""
-image: ""
-credit: ""
-thumbnail: ""
+description: "Why would a company espouse values they don't live? I think I know---and what to do about it."
+tldr: "Statements of Core Values are often a substitute for real values; they occupy the space meant for good values. It's better to have no values at all than bad values, but I have an alternative proposal that is better still: expectations."
+credit: "https://unsplash.com/photos/c2_b805WlXQ"
+image: "/media/2018/12/unsplash-photos-c2_b805WlXQ.jpg"
+thumbnail: "/media/2018/12/unsplash-photos-c2_b805WlXQ.tn-500x500.jpg"
 categories:
-- Uncategorized
+- Culture
 ---
-Nearly every hotel I stay at professes a commitment to the environment.
-There's always a little card saying that I can leave my towels on the floor if I want new linens, and hang them up to reuse them.
-The card urges me to reuse my towels because every day, washing linens consumes lots of water, detergents, and so on.
-And I can't remember the last time housekeeping actually respected my wishes when I hung up my towels.
+Every hotel I stay at professes a commitment to the environment.
+There's always a card telling me to leave my towels on the floor if I want new linens, and hang them up to reuse them.
+The card urges me to reuse my towels because washing linens consumes water, detergent, and so on.
+But I don't remember the last time housekeeping actually respected my wishes when I hung up my towels.
 <!--more-->
 
 What is the purpose of espousing values that you don't live?
@@ -22,18 +22,20 @@ What functions do these so-called Core Values serve, and is there a better alter
 What are "values," anyway?
 What do they even mean?
 
-I think there are very real and important purposes for both good and bad values, and that it's a serious topic that leaders should take seriously.
+I think there are two kinds of values: good values and bad values.
+I think there are real and important purposes for both, and that it's an important topic that leaders should take seriously.
+I think we'd be better off without values than with bad values, and that expectations of behavior would be better even than good values.
 
 ### What Are Values?
 
-If you do a little research you might be surprised at how hard it is to find anyone with a simple, clear answer to this question.
+If you do a little looking, you might be surprised how hard it is to find anyone who has a simple, clear answer to this question.
 For example, Netflix's vaunted "culture deck" had a slide saying "Values are what we value."
-With respect to whoever wrote it, this statement was simply avoiding the question.
+With respect to whoever wrote it, this didn't answer the question, it avoided it.
 (What does it mean to "value" something?)
 
 ![Tautology Club. Source: XKCD.](https://imgs.xkcd.com/comics/honor_societies.png)
 
-Statements of values are a form of leadership, and leaders need to be absolutely clear on the moral implications.
+Statements of values are an artifact of leadership, and leaders need to be absolutely clear on the moral implications.
 They're entrusted with too much power and authority to do otherwise.
 
 My definition: *values articulate expectations about desired and undesired behavior that sets a group apart from the overall population and describes their beliefs about right and wrong*.
@@ -45,8 +47,8 @@ What is right and wrong?
 
 Values are irreplaceable for these purposes, but they're too often crowded out by a substitute.
 I call it "bad values."
-The difference between good values and bad values is fundamental.
-Bad values aren't merely values done poorly, but another substance entirely, which has the appearance of values but really isn't the same thing at all.
+The difference between good values and bad values is one of kind, not of degree.
+Bad values aren't merely good values done unskillfully, but another substance entirely, which has the appearance of values but really isn't the same thing at all.
 
 ### Good Values
 
@@ -57,25 +59,25 @@ They have teeth.
 You can tell what's really valued by watching how people make decisions, what gets rewarded, what gets punished or discouraged.
 
 Good values serve to encode norms.
-They are statements, descriptors, of the group's shared beliefs---not rules.
+They are statements, descriptors, of the group's shared beliefs---they are not rules.
 That is, they *describe* behavior and culture; they don't create it.
 They help people understand how to behave and make decisions, by stating guiding principles.
 This helps create autonomy by dispersing commander's intent to the edges, encouraging alignment and consistency while avoiding constant escalation of decisions.
 
 Good values *differentiate by going beyond the baseline*.
-There's no point in stating that something fundamental to being a functioning human being is a core value.
-Good values aren't things like "honesty," which is just a baseline for functioning in any society or group.
+Good values aren't things like "honesty," which is a baseline expectation.
+There's no point in listing a "core value" that's a low bar any functioning member of society should clear.
 This is not to say that good values are exclusionary, or that they need to be completely unique, but they should say what's particular about a group that isn't otherwise to be taken for granted about *any* group.
 Good values state what is necessary, not what is merely sufficient.
 
 Good values don't change much or often, if at all.
-They may need to be refined as the understanding of them becomes more nuanced and detailed over time, but at core, they don't change.
+They may need to be refined as time passes and the group understands them with more nuance, but at core, they don't change.
 If a group's statement of core values changes significantly, you can safely assume that either the old or new values aren't good values.
 
 ### Bad Values
 
 Bad values, as I mentioned above, aren't merely values that are done badly.
-They're a kind of antimatter, which is unfortunately all-too-common in corporations and prevents real values from being established.
+They're a kind of antimatter, which is unfortunately all-too-common in corporations and prevents good values from being established.
 It's part of the trend in pseudo-leadership literature to create a paint-by-numbers recipe for leadership and culture.
 "Write down your vision, mission, and core values!"
 This is how you get Enron's core values: Respect, Integrity, Communication, and Excellence.
@@ -94,6 +96,7 @@ Bad values come from bad reasons for having values:
 - You want people to feel inspired and you don't know how else to do it.
 - Human Resources wanted to do it so you delegated your responsibility as a leader and let them write pablum instead of doing the hard work it takes.
 - You didn't realize that culture is an outcome, not an input, so you thought you could define the company culture by telling people what culture to have.
+- Perhaps you are a genuinely unethical person but you're trying to fool employes into thinking they work in a company with high ethical standards.
 
 Bad values are often aspirational, not really lived every day.
 Bad values can be ignored without consequence.
@@ -101,14 +104,15 @@ Bad values are often superficial.
 Bad values are many, not few; you can't have 12 "core" values.
 Bad values are worse than no values, because at least not having values is the absence of a lie.
 
-Bad values stop at words like "believe" and "value."
+Bad values stop at words like "believe" and "feel."
+The word "value" itself belongs to the same category.
 It's an easy cop-out, because beliefs and feelings are intangible, untestable, and personal.
 I have no ability or right to tell another person what to believe or feel, and in many cases it's against the law to take any action against a person based on their beliefs, which makes bad values utterly unenforceable.
 Some companies seem to want bad values for this very reason, because it lets them hide behind their values while being unaccountable for violations.
 
-Bad values are often easy to smell, because they are dressed up in exaggerated language like "committed."
-The hotel is "committed" to protecting the environment, really?
-Words like "committed" are easy to test.
+Bad values often have a smell, because they are dressed up in exaggerated language like "committed."
+The hotel is "committed" to protecting the environment---really?
+Words like "committed" are testable.
 If a company is committed to something, their very existence depends upon that thing; they are past the point of no return.
 Watering down strong language in this way is a telltale sign that a values statement is marketing, not leadership.
 What happens to the hotel if they don't protect the environment?
@@ -120,7 +124,7 @@ Everyone is used to the vagueness and meaninglessness of "Core Values," so for b
 But I wish we didn't.
 I wish we were more explicit.
 
-My children's school has three *Expectations* posted on the wall.
+My childrens' school has three *Expectations* posted on the wall.
 They're really great---they're Good Values.
 They're specific, clear, enforced, and frequently referenced.
 It's *way* better than most companies' core "values," and in fact aligns completely with the values we *live* in my family.
@@ -134,7 +138,7 @@ The following contributed to my thoughts on this topic:
 
 - Honeycomb: [Honeycomb Values, 2018](https://www.honeycomb.io/blog/honeycomb-values-2018/).
 - Jessica Kerr: [Shared Values are Overrated](https://medium.com/@jessitron/shared-values-are-overrated-7a194462aa33).
-- [Zee on Twitter: "The reason I *love* @jessitron’s framing here is that ultimately, _behaviors_ are what cause harm or create benefits. Beliefs, values, etc. all ultimately manifest in behaviors; but the actions that emerge from a set of values or beliefs can vary wildly."](https://twitter.com/zspencer/status/1075101987358691328).
+- [Zee on Twitter](https://twitter.com/zspencer/status/1075101987358691328): "The reason I *love* @jessitron's framing here is that ultimately, _behaviors_ are what cause harm or create benefits. Beliefs, values, etc. all ultimately manifest in behaviors; but the actions that emerge from a set of values or beliefs can vary wildly."
 - Netflix's culture deck; their new [culture website](https://jobs.netflix.com/culture) is much clearer.
 - My distinction between "good values" and "bad values" was inspired by the book [Good Strategy/Bad Strategy]({{< amz 1781256179 >}}).
-- My children's school.
+- My childrens' school.
