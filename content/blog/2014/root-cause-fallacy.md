@@ -25,7 +25,7 @@ person in charge of operations was not doing their job.  The
 person was still in charge of operations because of management dysfunction.
 
 If you really want to get to the root cause of a problem, you need to use the
-Five Whys approach. I rarely do that because I already know where it ends. The
+Five Whys approach.[^ishikawa] I rarely do that because I already know where it ends. The
 CEO or equivalent is always the problem. It's turtles all the way down (or up).
 Saying that the CEO is ultimately responsible is true but useless. The CEO is
 ultimately responsible for *everything*, which isn't a "cause."
@@ -65,3 +65,5 @@ the aftermath of an incident. I'm happy the times are changing. These days, even
 some companies have stopped saying their tools or products can find root causes.
 Maybe this trend will allow us to replace the manifest failures of root-cause
 analysis with something more helpful.
+
+[^ishikawa]: [Ted Dorsey on Twitter](https://twitter.com/TedDorsey4/status/1053991616040570880): _I prefer the Ishikawa method over the "five whys".  But shifting from a culture of blame to a culture of extreme ownership is the real goal_. For more on the Ishikawa method, see [Wikipedia](https://en.wikipedia.org/wiki/Ishikawa_diagram).
