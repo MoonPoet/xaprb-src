@@ -16,14 +16,16 @@ The card urges me to reuse my towels because washing linens consumes water, dete
 But I don't remember the last time housekeeping actually respected my wishes when I hung up my towels.
 <!--more-->
 
+Many companies' Core Values feel similar to me, like leadership theater.
 What is the purpose of espousing values that you don't live?
-Why would a company list Core Values---but they're just HR feel-good decorations that nobody takes seriously?
+Why would a company go to the trouble of listing Core Values if they're just HR feel-good decorations that nobody takes seriously?
 What functions do these so-called Core Values serve, and is there a better alternative?
 What are "values," anyway?
 What do they even mean?
 
+I have a theory that might answer these questions.
 I think there are two kinds of values: good values and bad values.
-I think there are real and important purposes for both, and that it's an important topic that leaders should take seriously.
+I think there are real purposes for both, and that it's an important topic that leaders should take seriously.
 I think we'd be better off without values than with bad values, and that expectations of behavior would be better even than good values.
 
 ### What Are Values?
@@ -54,21 +56,19 @@ Bad values aren't merely good values done unskillfully, but another substance en
 
 Good values are lived, not just stated.
 Ideally, they're readily observable, but they also need to be stated so they're explicit.
-They are expectations of behaviors, and they describe how the group actually behaves, not what they want to believe about themselves, not what feels good to believe.
 They have teeth.
 You can tell what's really valued by watching how people make decisions, what gets rewarded, what gets punished or discouraged.
 
-Good values serve to encode norms.
-They are statements, descriptors, of the group's shared beliefs---they are not rules.
-That is, they *describe* behavior and culture; they don't create it.
-They help people understand how to behave and make decisions, by stating guiding principles.
+Good values signal and encode norms.
+They describe how the group actually behaves, not what feels good to believe.
+They are not rules, but they are guiding principles that help people understand how to make decisions.
 This helps create autonomy by dispersing commander's intent to the edges, encouraging alignment and consistency while avoiding constant escalation of decisions.
 
 Good values *differentiate by going beyond the baseline*.
+Good values state what is necessary, not what is merely sufficient.
 Good values aren't things like "honesty," which is a baseline expectation.
 There's no point in listing a "core value" that's a low bar any functioning member of society should clear.
 This is not to say that good values are exclusionary, or that they need to be completely unique, but they should say what's particular about a group that isn't otherwise to be taken for granted about *any* group.
-Good values state what is necessary, not what is merely sufficient.
 
 Good values don't change much or often, if at all.
 They may need to be refined as time passes and the group understands them with more nuance, but at core, they don't change.
@@ -89,19 +89,18 @@ Enron's were engraved in the impressive entryway to their grandiose building.
 
 Bad values come from bad reasons for having values:
 
-- You read in a leadership book that you should have values, so you have values.
+- You read in a leadership book that you should have values, so you have values, regardless of whether you knew what you were doing in creating them.
 - You want to feel good about yourself, so you write noble lies on a flip chart with a lump in your throat.
 - You looked at other companies and their websites have values, so you copy the external artifacts of their culture without understanding what gave rise to that culture.
 - You want to perform leadership---you want to feel like you're leadering right.
 - You want people to feel inspired and you don't know how else to do it.
-- Human Resources wanted to do it so you delegated your responsibility as a leader and let them write pablum instead of doing the hard work it takes.
 - You didn't realize that culture is an outcome, not an input, so you thought you could define the company culture by telling people what culture to have.
 - Perhaps you are a genuinely unethical person but you're trying to fool employes into thinking they work in a company with high ethical standards.
 
 Bad values are often aspirational, not really lived every day.
 Bad values can be ignored without consequence.
 Bad values are often superficial.
-Bad values are many, not few; you can't have 12 "core" values.
+Bad values can be many; you can't have 12 "core" values, so if the list is 12 items long you can be sure it's not good values.
 Bad values are worse than no values, because at least not having values is the absence of a lie.
 
 Bad values stop at words like "believe" and "feel."
@@ -130,7 +129,7 @@ They're specific, clear, enforced, and frequently referenced.
 It's *way* better than most companies' core "values," and in fact aligns completely with the values we *live* in my family.
 
 It seems to me that a better name for good values is simply Expectations.
-Food for thought.
+Food for thought: if you were job hunting and you looked at the company's careers page, would Core Values or Expectations speak more honestly to you?
 
 ### Acknowledgments
 
