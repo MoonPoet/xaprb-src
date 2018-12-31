@@ -14,6 +14,7 @@ Every hotel I stay at professes a commitment to the environment.
 There's always a card telling me to leave my towels on the floor if I want new linens, and hang them up to reuse them.
 The card urges me to reuse my towels because washing linens consumes water, detergent, and so on.
 But I don't remember the last time housekeeping actually respected my wishes when I hung up my towels.
+Why not?
 <!--more-->
 
 Many companies' Core Values feel similar to me, like leadership theater.
@@ -141,3 +142,18 @@ The following contributed to my thoughts on this topic:
 - Netflix's culture deck; their new [culture website](https://jobs.netflix.com/culture) is much clearer.
 - My distinction between "good values" and "bad values" was inspired by the book [Good Strategy/Bad Strategy]({{< amz 1781256179 >}}).
 - My childrens' school.
+
+### Appendix: Historical Core Values at VividCortex
+
+Historical archives are interesting and instructional.
+At the time of writing, the Core Values I wrote in VividCortex's employee handbook are below.
+
+> Values are beliefs about the right way to act, and guide our decisions and culture. Our values spring from who we really are. They are non-negotiables, not nice-to-have ideals or marketing.
+>
+> * Empathy. We let go of our egos, consider other perspectives, and act as we would wish others to act.
+> * Growth. We challenge ourselves and each other to get better every day. We try to improve ourselves, our colleagues, our communities, and our world.
+> * Pragmatism. Done is better than perfect, so we ship now and improve later. We work in short cycles. We make smart investments of time and risk to define, measure, and execute the shortest path to better.
+> * Inclusiveness. We believe diversity is a strength. We treat each other as equals regardless of factors such as background, location, or employment status.
+
+For the sake of clarity, I am now the CTO, and although as a founder I'm heavily influential in the company's cultural artifacts, the new CEO officially has the final say in whether this will change.
+I will simply point out that my cultural awareness and understanding has changed over time, and given that and the above essay, I would probably revise at least some parts of that section of the handbook if I were still CEO.
