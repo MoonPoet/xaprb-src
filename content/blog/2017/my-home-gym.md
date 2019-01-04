@@ -8,6 +8,8 @@ categories:
 author: Baron Schwartz
 description: "Here's the equipment I bought/built for my pseudo-CrossFit home gym."
 image: "/media/2017/10/victor-freitas-604838-unsplash.jpg"
+thumbnail: /media/2017/10/victor-freitas-604838-unsplash.tn-500x500.jpg
+credit: "https://unsplash.com/photos/Yuv-iwByVRQ"
 ---
 
 After leaving CrossFit, I found a [workout rhythm](/blog/my-workout-regimen/) that works well for me, and
@@ -135,6 +137,10 @@ can do clean-and-jerks without struggling with a bar that is fixed and won't
 spin. I also have round weight plates; 12-sided ones would not work for Olympic
 lifting.
 
+(Update: I upgraded to a rubber bumper plate set and a high-quality Olympic bar,
+both from Rogue Fitness. Well worth the money. I got a post-Thanksgiving
+discount.)
+
 ![Squat Rack](/media/2017/10/squat-rack.jpg)
 
 The clamps are one of the more important parts of my gear. I can't stand the
@@ -253,8 +259,5 @@ that I ever will. The curved "ab mat" for situps, for example, never did much
 for me. On the other hand, a lot of CrossFit boxes don't have yoga mats, and I
 wouldn't be without one.
 
-[^jargon]: Jargon note: Rx is CrossFit slang for "as prescribed," which a lot of
-  athletes will not do---they will "scale" the workout to fit their level of
-  ability. Rx workouts assume a high degree of overall fitness. Also, "box" is
-  what you call a CrossFit gym.
+[^jargon]: Jargon note: Rx is CrossFit slang for "as prescribed," which a lot of athletes will not do---they will "scale" the workout to fit their level of ability. Rx workouts assume a high degree of overall fitness. Also, "box" is what you call a CrossFit gym.
 

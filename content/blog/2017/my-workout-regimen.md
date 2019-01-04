@@ -7,6 +7,8 @@ categories:
 author: Baron Schwartz
 description: "This is the workout routine that works for me."
 image: "/media/2017/10/dumbbells-1634765_1280.jpg"
+thumbnail: /media/2017/10/dumbbells-1634765_1280.tn-500x500.jpg
+credit: "https://pixabay.com/p-1634765/"
 ---
 
 I've found a workout routine that I've been able to maintain despite the
@@ -106,4 +108,3 @@ I'll write about my "gym" next time---it's charitable to call it a gym and I've
 spent little on it. A few months' subscription fees at a gym or box would be
 more than my gym has cost me.
 
-[Image via Pixabay](https://pixabay.com/p-1634765/)
