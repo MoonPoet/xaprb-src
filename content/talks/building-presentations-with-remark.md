@@ -10,6 +10,7 @@ slides: "/slides/building-presentations-with-remark/"
 thumbnail: "/slides/building-presentations-with-remark/thumbnail.jpg"
 image: "/slides/building-presentations-with-remark/unsplash-photos-Mye8t_m1gac.jpg"
 description: "This talk explains how the Remark JavaScript slideshow library makes it fun and productive to create Markdown presentations in your browser."
+tldr: "I use Remark with Hugo to host my slides on my website. This talk explains how and why Remark makes slides easy and fun to create, so you can focus on giving a great presentation, not fighting with slideshow software."
 ---
 Presentation programs like Powerpoint are complicated and hard to use. Why? Presenting a slideshow is usually very simple: click to advance a slide. Most of the complication of the program, therefore, is focused on creating the presentation, not presenting it.
 <!--more-->

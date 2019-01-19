@@ -140,7 +140,11 @@ editor).
 class: center
 # Remark Demo
 
+Remark's official demo slideshow explains a lot. Click through, then come back
+to continue.
+
 [Clicky clicky.](https://remarkjs.com/)
+
 
 ---
 # Hosting Slides On Your Site
@@ -154,8 +158,13 @@ Remark slideshows are easy to host on your personal site.
 I've built seamless support for Remark into my [Hugo](https://gohugo.io) theme
 [Story](https://story.xaprb.com).
 
+---
+# Batteries Included
+
 Story's [Remark themes](https://story.xaprb.com/slides/adirondack/) extend Remark
 significantly with layouts, typography, and image controls.
+
+Click the link above to see it all in action.
 
 ---
 # Slides and Contact Information
