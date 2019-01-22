@@ -5,6 +5,7 @@ description: "Can non-random, useful data for time-series analysis be achieved?"
 url: /blog/2014/01/24/methods-generate-realistic-time-series-data/
 credit: "https://unsplash.com/photos/GkinCd2enIY"
 image: "/media/2014/01/raphael-schaller-88040-unsplash.jpg"
+thumbnail: /media/2014/01/raphael-schaller-88040-unsplash.tn-500x500.jpg
 categories:
   - Programming
   - Operations
@@ -62,4 +63,8 @@ Does anyone have suggestions for how to do this?
 The result will be open-sourced, so everyone who's interested in such a
 programmatically generated dataset can benefit from it.
 
+### Related Reading
 
+Presented without comment or endorsement.
+
+* [Realistic terrain in 130 lines](http://www.playfuljs.com/realistic-terrain-in-130-lines/).
