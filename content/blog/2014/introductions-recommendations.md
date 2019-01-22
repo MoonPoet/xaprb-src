@@ -1,9 +1,10 @@
 ---
 title: "Respectful Introductions and Recommendations"
-description: "Introducing people can be risky and costly. Always do double-opt-in with prior verification; never do blind/surprise introductions."
+description: "Always do double-opt-in introductions with prior verification; never do blind/surprise introductions."
 date: "2014-02-23"
 url: /blog/2014/02/23/respectful-introductions-recommendations/
 image: "/media/2014/02/elephant.jpg"
+thumbnail: /media/2014/02/elephant.tn-500x500.jpg
 credit: http://www.flickr.com/photos/adriensifre/8006712599/
 categories:
   - Commentary
