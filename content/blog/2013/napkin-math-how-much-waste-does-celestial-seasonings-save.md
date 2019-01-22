@@ -4,6 +4,7 @@ date: "2013-12-22"
 url: /blog/2013/12/22/napkin-math-how-much-waste-does-celestial-seasonings-save/
 credit: "https://unsplash.com/photos/05A-kdOH6Hw"
 image: "/media/2013/12/unsplash-photos-05A-kdOH6Hw.jpg"
+thumbnail: /media/2013/12/unsplash-photos-05A-kdOH6Hw.tn-500x500.jpg
 categories:
   - Commentary
 ---
@@ -23,4 +24,9 @@ If they put bags, tags, and strings on all of them, I estimated 10 square inches
 
 That's quite a difference from the 3.5 million pounds of waste they claim they save. Did I do the math wrong or assume something wrong?
 
-
+*Update*: I have a scale with a precision of 1/10th gram.
+I weighed an unopened box of Celestial Seasonings tea.
+The box of 20 bags, net weight 48g, weighs 86.3g gross.
+For comparison, I weighed a similar box of tea with 20 individually wrapped bags, net weight 45g; it weighs 82g.
+In other words, at best Celestial Seasonings' packaging saves virtually no weight compared to run-of-the-mill tea.
+As I suspected.

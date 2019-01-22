@@ -3,7 +3,7 @@ url: /blog/my-home-gym/
 title: "My Home Gym"
 date: 2017-10-10T04:18:25-04:00
 categories:
-  - Life Hacking
+  - Fitness
   - Gear
 author: Baron Schwartz
 description: "Here's the equipment I bought/built for my pseudo-CrossFit home gym."

@@ -4,8 +4,9 @@ date: "2014-01-20"
 description: "I love Crossfit. I just don't always love the coaches and the movements."
 url: /blog/2014/01/20/crossfit-safety/
 categories:
-  - Health
+  - Fitness
 image: /media/2014/01/9117226687_6e903b5c1b.jpg
+thumbnail: /media/2014/01/9117226687_6e903b5c1b.tn-500x500.jpg
 credit: http://www.flickr.com/photos/stoermchen/9117226687/
 ---
 I've been a happy CrossFiter for a few years now. I met my co-founder and many

@@ -3,7 +3,7 @@ url: /blog/my-workout-regimen/
 title: "My Workout Regimen"
 date: 2017-10-08T16:57:13-04:00
 categories:
-  - Life Hacking
+  - Fitness
 author: Baron Schwartz
 description: "This is the workout routine that works for me."
 image: "/media/2017/10/dumbbells-1634765_1280.jpg"
@@ -75,8 +75,9 @@ routine to make it failsafe, day in and day out. It worked. Here's the essence:
   workouts](https://crossfit.com/cf/faq), and these are great in a pinch when
   I'm lacking imagination. But even when I use them, I'll usually modify them.
   For example, I'll do "5 rounds of Cindy; add 20 kettlebell swings and 25
-  double-unders to each round." Whatever's not sore, I'll think about a workout
-  that will make it sore. And I cycle in lifting or heavyweight workouts a few
+  double-unders to each round." I simply listen to how my body feels, notice
+  what feels neglected and what feels like it's recovering, and think about a workout
+  that fits. And I cycle in lifting or heavyweight workouts a few
   times a week when I'm at home and have weights handy. For example, 6 rounds of
   6 heavy squats.
 
@@ -104,7 +105,7 @@ I was doing CrossFit avidly.  To give an idea, my resting pulse is 40, and I'm
 squatting 6 rounds of 6 reps at 35% heavier than my one-rep max squat when I was
 at CrossFit. 
 
-I'll write about my "gym" next time---it's charitable to call it a gym and I've
+[I'll write about my "gym" next time](/blog/my-home-gym/)---it's charitable to call it a gym and I've
 spent little on it. A few months' subscription fees at a gym or box would be
 more than my gym has cost me.
 

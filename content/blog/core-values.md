@@ -132,6 +132,11 @@ It's *way* better than most companies' core "values," and in fact aligns complet
 It seems to me that a better name for good values is simply Expectations.
 Food for thought: if you were job hunting and you looked at the company's careers page, would Core Values or Expectations speak more honestly to you?
 
+Some folks have suggested that "Code of Conduct" is a better phrase.
+Maybe.
+I think it's best to keep that separate, because it's associated with events.
+And a Code of Conduct has expected elements such as escalation policies and points of contact, which don't feel fit-for-purpose as a replacement for Core Values.
+
 ### Acknowledgments
 
 The following contributed to my thoughts on this topic:
@@ -141,7 +146,15 @@ The following contributed to my thoughts on this topic:
 - [Zee on Twitter](https://twitter.com/zspencer/status/1075101987358691328): "The reason I *love* @jessitron's framing here is that ultimately, _behaviors_ are what cause harm or create benefits. Beliefs, values, etc. all ultimately manifest in behaviors; but the actions that emerge from a set of values or beliefs can vary wildly."
 - Netflix's culture deck; their new [culture website](https://jobs.netflix.com/culture) is much clearer.
 - My distinction between "good values" and "bad values" was inspired by the book [Good Strategy/Bad Strategy]({{< amz 1781256179 >}}).
+- Many thoughts shared by others over the years, similar to this example from [Steven Shorrock](https://twitter.com/StevenShorrock/status/1068256841149415424) on Twitter: "And here is the problem. Culture is not a lever. You can't manipulate it. You can't design it. It can be influenced, but it is much easier to influence badly by intervention. Work on the work with the people who do the work and are affected by it. Culture change comes for free."
 - My childrens' school.
+
+### Further Reading
+
+This section is a collection of potentially related work by others, presented without comment or endorsement.
+
+- [Why Diversity Is Important to Etsy - Etsy](https://codeascraft.com/2019/01/07/why-diversity-is-important-to-etsy/)
+- [Not in My Kitchen, You Don't:  Leaders as Norm Setters - Dave Kellogg](https://kellblog.com/2019/01/13/not-in-my-kitchen-you-dont-leaders-as-norm-setters/)
 
 ### Appendix: Historical Core Values at VividCortex
 
