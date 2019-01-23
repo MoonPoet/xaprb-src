@@ -80,3 +80,11 @@ It helps you respect your own time, which should be far more valuable than the o
 It makes your "yes" truly meaningful.
 It helps you speak your truth without angering the other person and without inviting coercion.
 If you haven't tried it, it's certainly worth trying a few times to see how it works for you!
+
+### Acknowledgments and Further Reading
+
+Presented without comment or endorsement:
+
+* An earlier philosophical rambling on a similar topic, ["No Needs No Apologies"](/blog/no-needs-no-apologies/)
+* [JADE - Out of the Fog](https://outofthefog.website/what-not-to-do-1/2015/12/3/jade-dont-justify-argue-defend-explain)
+* [Esdras Beleza on Twitter](https://twitter.com/esdrasbeleza/status/1085474693610700800): "There's a book about it, [Essentialism]({{< amz 0804137382 >}}) by @GregoryMcKeown. It talks about saying the "easy no and hard yes", and focusing on what matters most. More than any tool or language skill, I believe that communication + saying "no" is the key to what people call seniority."
