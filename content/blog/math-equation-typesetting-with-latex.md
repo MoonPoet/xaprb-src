@@ -71,9 +71,9 @@ A few ways to do this are:
 
 ### Online LaTeX Editors
 
-The most common way I use it is in a distribution of the software, such as the TeX Live distribution.
+I usually use LaTeX by installing a distribution of the software, such as the TeX Live distribution.
 This installs commandline and GUI programs to write TeX and LaTeX documents.
-But I have to admit that I appreciate the modern era of using web-based software, without the need to install and maintain it.
+But I appreciate the modern era of web-based software, with no need to install and maintain it.
 A couple of the most popular options are [ShareLaTeX](https://www.sharelatex.com/) and [Overleaf](https://www.overleaf.com/).
 Both make it convenient and easy to collaborate on sophisticated LaTeX documents online.
 
