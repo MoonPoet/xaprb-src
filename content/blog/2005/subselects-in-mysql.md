@@ -2,6 +2,10 @@
 title: How to write subqueries without using subqueries in SQL
 date: "2005-09-21"
 url: /blog/2005/09/21/subselects-in-mysql/
+description: "Some queries that seem to require subqueries in the FROM clause can be written without them. This post is an experiment to see how far this idea can be taken."
+credit: "https://unsplash.com/photos/vWfKaO0k9pc"
+image: "/media/2005/09/ryoji-iwata-543189-unsplash.jpg"
+thumbnail: /media/2005/09/ryoji-iwata-543189-unsplash.tn-500x500.jpg
 categories:
   - Databases
 ---
@@ -80,7 +84,7 @@ from category
 
 It will not work because the joins may cause rows to appear more than once in the result set, which will cause them to be counted too many times in the sums. For instance, if there are two entries in `bulk_checkout` for category 1, every row in `item` for category 1 will be duplicated, and the `qty` will be twice too large. You may think you can divide by `count(*)`, or take averages, or do some other such magic, but I don't think there is a way to do so.
 
-Why is this? The subselects need to be independent, so rows in bulk`_checkout` and `item` must not have any effect on each other (via the join) as discussed above.
+Why is this? The subselects need to be independent, so rows in `bulk_checkout` and `item` must not have any effect on each other (via the join) as discussed above.
 
 ### A solution
 
@@ -103,4 +107,3 @@ group by category.title
 I'm not saying subqueries should be rewritten like this. If your RDBMS supports them, subqueries can simplify and clarify queries, and may improve query performance (if you're using them as you should). The mutex technique actually results in 50% null values on the right-hand side, which hurts performance. There is also another table in the join, which depending on the query plan chosen will cause twice the probing, inner looping, or hashing (because it has two rows). There is also grouping, which requires sorting (bad), and coalescing, (negligible).
 
 I tried this idea on Microsoft SQL Server with `set statistics io on`, and examined the query plan and performance on a small data set. The query plan is straightforward in either case, but using mutex joins resulted in more logical reads, the expected result. I do not have statistics on the performance on MySQL.
-

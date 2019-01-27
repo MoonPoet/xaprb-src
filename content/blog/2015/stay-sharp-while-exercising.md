@@ -3,22 +3,18 @@ url: /blog/2015/06/07/stay-sharp-while-exercising/
 title: Staying Sharp While Exercising
 author: Baron Schwartz
 categories:
-- Life Hacking
-tags:
 - Fitness
-- CrossFit
-- Health
 date: 2015-06-07
 description: "Intense exercise brings energy and clarity, but also tiredness the next day. How can you avoid this?"
 image: /media/2015/06/bokeh.jpg
+thumbnail: /media/2015/06/bokeh.tn-500x500.jpg
 credit: https://www.flickr.com/photos/bgwilson89/3137099022/
 ---
 
 In my [last blog post](/blog/2015/06/05/maximize-productivity-in-three-easy-steps/) I explained how to reclaim your mornings and make them the most productive time of day. In this one I'll explain how exercise makes my mornings better, and how I avoid feeling sluggish after overdoing it.
-
-Before I start, though, I am not a doctor, and by reading the following you agree you're doing it at your own risk.
-
 <!--more-->
+
+I am not a doctor, and by reading the following you agree you're doing it at your own risk.
 
 ### Exercise And The Payback
 
@@ -60,8 +56,4 @@ Starting with a hot shower and ending with cold is like alternating a hot pack w
 
 As a bonus, a cold shower is a massive energy kick in the morning. To get the adrenaline boost that comes along with it, I breathe deeply and make sure I stay calm, not fighting the cold. I let the water run into my hair and chill my scalp. That really wakes me up.
 
-![Abstract](/media/2015/06/abstract.jpg)
-
 I remember what Tom Brown Jr. wrote in a book I read as a child: the cold does not bother me because it is real. Mind over matter: I decide it is just a feeling, and presto, it is just a feeling. Tom Brown Jr. may be a pathological liar, but hey, it works for me.
-
-Photo credits: [abstract](https://www.flickr.com/photos/andy-saxton2006/12344043373/)

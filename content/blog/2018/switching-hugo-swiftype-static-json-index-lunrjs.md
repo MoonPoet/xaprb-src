@@ -8,6 +8,7 @@ categories:
 author: Baron Schwartz
 description: Adding LunrJS search to my website was incredibly easy.
 image: /media/2018/02/magnifying-glass.jpg
+thumbnail: /media/2018/02/magnifying-glass.tn-500x500.jpg
 credit: https://pixabay.com/en/philatelist-stamp-collection-stamp-1844080/
 
 ---
@@ -16,12 +17,16 @@ website using [LunrJS][lunr] and [Hugo's][hugo] new content types. With a few
 small changes and less than 30 minutes of work, I had a great search engine up
 and running. I moved it under the menu and made it into a separate [search
 page][search].
-
 <!--more-->
 
 If you're interested to mimic my approach, you can see the [commit][github] that
 I used[^broken] to add the search page. I copy-pasted most of this code from articles
-[here][halfelf-1] and [here][halfelf-2].
+[here][halfelf-1] and [here][halfelf-2]. Another article showing how to use LunrJS in
+a blog post is [here](http://www.integralist.co.uk/posts/static-search-with-lunr/).
+
+If you use [Hugo](https://gohugo.io) for your site, you can also get a theme that has
+LunrJS support. My theme, [Story](https://story.xaprb.com/) has it built-in and makes
+it very simple.
 
 I'd like to express my appreciation to [Swiftype][swiftype] for their excellent
 search engine, which I have now removed. I've used it for years and always loved

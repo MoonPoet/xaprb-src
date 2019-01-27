@@ -4,11 +4,11 @@ title: Boost Your Productivity In Three Easy Steps
 description: "If you feel that you spend your time doing 'stuff' and getting nothing done, maybe it's time for a few simple changes."
 date: 2015-06-05
 image: /media/2015/06/sky.jpg
+thumbnail: /media/2015/06/sky.tn-500x500.jpg
 credit: https://www.flickr.com/photos/motii/17737301028/
 categories:
-  - Life Hacking
-tags:
-- Management
+  - Fitness
+  - Productivity
 ---
 
 If you're like a lot of knowledge workers, you might feel that you spend your
@@ -18,7 +18,6 @@ feel that you've done nothing but "stuff" at the end of the day.
 How can you change this? I've found three things that work for me to not only
 stay focused and achieve my objectives, but also help me feel better about
 myself.
-
 <!--more-->
 
 You see, although on a less [focused](/blog/2014/07/05/on-focus/) day I
@@ -73,8 +72,6 @@ When you're done, choose things you think you can accomplish in the morning
 tomorrow, and which are your most important and strategic. Either they're time
 sensitive and need to be done, or they're a huge lever for the long term.
 
-![Tree](/media/2015/06/tree.jpg)
-
 Write these things on a new, fresh Post-It note. It should be no more than a
 handful of things. If you have more than 5, I think you should question whether
 you have your priorities right, but you might be different from me. Make your
@@ -105,6 +102,8 @@ hormones. Go to bed at a good time and pace, and sleep well.
 
 ### 2. Eat A Big Breakfast
 
+*Update: I've found something that works even better, [skipping breakfast entirely](/blog/skipping-breakfast/).*
+
 One of the worst things you can do in the morning is set yourself up to be
 hungry and irritable before lunch. Eat a breakfast that will keep food and
 hunger far from your mind until it is time for your next meal. This will remove
@@ -112,8 +111,6 @@ a huge distraction from your morning. After all, what's more distracting than a
 physical need? When you're hungry, don't you want to wander around restlessly,
 changing whatever you're doing because your body says "do something different
 than what you're doing, which is causing hunger?"
-
-![Flower](/media/2015/06/flower.jpg)
 
 I have experimented carefully and found that fats and proteins are the best for
 me. Two of my favorites are:
@@ -162,8 +159,6 @@ on your calendar routinely to prevent interruptions.
 Think about this: what's on your calendar? Do you schedule your *work* or do you
 schedule *interruptions to your work*? Is that really how you want it?
 
-![Snowflake](/media/2015/06/snowflake.jpg)
-
 If you are physically and mentally ready to make the most efficient use of your
 morning, and you've decided what to focus on so you don't waste a moment
 thinking about it, then the only thing remaining is to ensure that no one but
@@ -194,12 +189,7 @@ in a later post.
 
 If you try my suggestions, let me know how it works for you, and what other suggestions you have.
 
-### References
+### Further Reading
 
 - [Ben Franklin's daily
   routine](http://goodmenproject.com/featured-content/dtv-benjamin-franklin/)
-
-Photo credits:
-[tree](https://www.flickr.com/photos/photographyburns/5936921799/),
-[flower](https://www.flickr.com/photos/93277085@N08/15334872208/),
-[snowflake](https://www.flickr.com/photos/chaoticmind75/15376850026/)
