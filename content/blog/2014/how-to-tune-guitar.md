@@ -5,7 +5,6 @@ description: "Once you hear it, you'll never listen to music the same way again.
 url: /blog/2014/01/18/how-to-tune-guitar/
 categories:
   - Music
-  - Best Of
 credit: "https://unsplash.com/photos/59wBmsbP1lM"
 image: "/media/2014/01/unsplash-photos-59wBmsbP1lM.jpg"
 ---
@@ -13,7 +12,6 @@ Do you know how to tune a guitar?
 I mean, do you *really* know how to tune a guitar?
 There's a secret to tuning an instrument.
 Very few people seem to know it.
-
 <!--more-->
 
 Most people pick some notes, crank the tuners,
