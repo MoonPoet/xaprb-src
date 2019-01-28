@@ -5,7 +5,7 @@ url: "/talks/dataengconf-2018-quantifying-scalability-universal-scalability-law/
 event: 'DataEngConf 2018'
 location: "Columbia University, New York City, USA"
 site: "https://www.dataengconf.com/speaker/scalability-is-quantifiable-the-universal-scalability-law"
-video: ""
+video: "https://www.youtube.com/watch?v=EfOXY5XY9s8"
 slides: "/slides/dataengconf-2018-quantifying-scalability-universal-scalability-law/"
 thumbnail: "/slides/dataengconf-2018-quantifying-scalability-universal-scalability-law/thumbnail.jpg"
 image: /slides/dataengconf-2018-quantifying-scalability-universal-scalability-law/ThinkstockPhotos-480085336.jpg
