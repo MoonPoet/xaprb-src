@@ -65,9 +65,13 @@ Even Apple's Keynote presentation program added LaTeX support in 2018!
 Sometimes the easiest way to create the right LaTeX code is to use a visual editor and export the resulting code.
 A few ways to do this are:
 
-- Use [Mathpix](https://mathpix.com/), which is frankly mindblowing---you can handwrite your equation and scan it, or scan anything on the screen of your computer. I've used it to generate LaTeX code for extremely complicated equations and it's worked flawlessly. A huge time saver!
 - Use [Desmos](https://www.desmos.com/) and after entering your equation, reveal or copy it as LaTeX.
 - Use the Grapher program that comes with a Mac. You can right-click and copy your equation as LaTeX.
+- Use [Mathpix](https://mathpix.com/), which is frankly mindblowing---you can handwrite your equation and scan it, or scan anything on the screen of your computer. I've used it to generate LaTeX code for extremely complicated equations and it's worked great. It sometimes makes mistakes but not often. A huge time saver!
+
+Mathpix in action (spot the mistake):
+
+![Mathpix](/media/2019/01/mathpix.gif)
 
 ### Online LaTeX Editors
 
