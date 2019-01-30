@@ -5,7 +5,8 @@ title: 'Search'
 url: /search/
 skip: true
 classes:
-- no-subtitle
+- feature-nosubtitle
+- feature-nojustify
 ---
 <script type="text/javascript">
 $(function() {
