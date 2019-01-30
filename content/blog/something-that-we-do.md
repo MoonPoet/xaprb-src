@@ -13,6 +13,7 @@ categories:
 A conversation today reminded me of my childhood confusion about what love is.
 I was nearly 25 before I was exposed to the concept that love is not only a feeling, but an action.
 Just off the top of my head, I can think of many ways we use the word *love* in American English: as a feeling, an action, something you're in, something you have, an expression of approval---and probably more.
+So my confusion was understandable, I guess, but I still remember how surprised I was.
 <!--more-->
 
 The idea came to me in the pages of [The 7 Habits of Highly Effective People]({{< amz 0743269519 >}}).
