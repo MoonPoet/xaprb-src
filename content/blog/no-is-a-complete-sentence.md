@@ -8,7 +8,7 @@ credit: "https://unsplash.com/photos/ZGjbiukp_-A"
 image: "/media/2019/01/unsplash-photos-ZGjbiukp_-A.jpg"
 thumbnail: "/media/2019/01/unsplash-photos-ZGjbiukp_-A.tn-500x500.jpg"
 categories:
-- Coaching
+- Personal Growth
 ---
 A long time ago, a coach told me "no is a complete sentence."
 I'm still marveling at it today.

@@ -8,7 +8,7 @@ credit: "https://unsplash.com/photos/1dKHOT2e630"
 image: "/media/2019/01/unsplash-photos-1dKHOT2e630.jpg"
 thumbnail: "/media/2019/01/unsplash-photos-1dKHOT2e630.tn-500x500.jpg"
 categories:
-- Leadership
+- Personal Growth
 ---
 Many years ago I was venting to a friend about a family member whose behavior I disliked.
 This person would say untrue and unfair things about me in the presence of others, and I was frustrated because I felt I needed to respond, but it felt like a dilemma.

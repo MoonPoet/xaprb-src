@@ -8,7 +8,7 @@ credit: "https://unsplash.com/photos/kqguzgvYrtM"
 image: "/media/2019/01/unsplash-photos-kqguzgvYrtM.jpg"
 thumbnail: "/media/2019/01/unsplash-photos-kqguzgvYrtM.tn-500x500.jpg"
 categories:
-- Leadership
+- Personal Growth
 ---
 I've become uneasy with a stereotype about one of the roles I play in life, as a company founder.
 It's the stereotype of the "hustling," driven founder or CEO who's always on the go, worshipping productivity for its own sake, and "successful" because of their extraordinary focus and resolve.
