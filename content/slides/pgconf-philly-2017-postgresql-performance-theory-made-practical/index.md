@@ -42,8 +42,6 @@ class: img-right-full
 
 - Email me at baron@vividcortex.com
 - Tweet me @xaprb
-- LinkedIn me while you still can
-- I'll post the slides later
 
 ---
 #What You'll Learn From This Talk
@@ -176,12 +174,14 @@ Performance is NOT what you've probably been told!
 class: compact, img-right
 #A Clear Performance Definition Solves Problem #1
 ![moon](moon.jpg# maxw-70pct center)
-- The first challenge in solving performance problems is clearly identifying the problem.
+
+The first challenge in solving performance problems is clearly identifying the problem.
+
 - By understanding performance in terms of latency and throughput, you are already winning.
 - Cache ratios, utilization, etc are all causes or effects of performance/behavior.
-- They might be a symptoms of a performance problem.
-- But the symptom isn't the problem itself.
-- Treating it as such causes false correlations and other mistakes.
+    - They *might* be a symptoms of a performance problem.
+    - But the symptom isn't the problem itself.
+    - Treating it as such causes false correlations and other mistakes.
 
 ---
 #What's a Performance Problem?
@@ -347,15 +347,22 @@ template: section
 ---
 #PostgreSQL's Slow Query Log
 - PostgreSQL logs slow queries to the server log.
-- "Slow" is defined by log_min_duration_statement
+- "Slow" is defined by log_min_duration_statement.
 - I don't like slow query log analysis. It ends badly.
 
-| Benefits   | Drawbacks |
-|------------|------|
-| It's built-in and already available.                 |Doesn't capture fast-but-frequent queries that add a lot of load.  |
-| Log analysis plays well with lots of existing tools. |Adds overhead to the server and latency to queries.  |
-|                                                      |The log is mixed, not dedicated, and is not really machine-friendly.  |
-|                                                      |Log analysis quickly becomes a manual, labor-intensive process.  |
+---
+# Benefits of the Slow Query Log
+
+- It's built-in and already available.
+- Log analysis plays well with lots of existing tools.
+
+---
+# Drawbacks of the Slow Query Log
+
+- Doesn't capture fast-but-frequent queries that add a lot of load.
+- Adds overhead to the server and latency to queries.
+- The log is mixed, not dedicated, and is not really machine-friendly.
+- Log analysis quickly becomes a manual, labor-intensive process.
 
 ---
 #Enabling PostgreSQL's Slow Query Log
@@ -391,206 +398,213 @@ Older tools include:
 - If you can do this, and transition from “DBA” to “data engineer” you will have a great career forever.
 
 ---
-template: section
-# WORK IN PROGRESS
-## The following slides haven't been fully converted yet.
-
----
-class: compact
 #PostgreSQL's pg_stat_activity
 
 This is a built-in, enabled-by-default aggregate of current connections and their activity.
 
 It really has no "performance" data per se, other than current state and how long since the last state change (state_change, wait_event_type, wait_event, state).
 
-| Benefits | Drawbacks |
-|-----------|----------|
-| It's built-in. | Instantaneous, not cumulative |
-| Given enough "samples" from it, you can guess at what statements spend some of their time doing | Like slow logs, this ends badly. |
-| | Doesn't give accurate profiles. |
-| | Misses fast operations. |
+---
+# Benefits of pg_stat_activity
 
+- It's built-in. 
+- Given enough "samples" from it, you can guess at what statements spend some of their time doing 
 
 ---
-#The pg_stat_bgwriter and pg_stat_database views
-- Built-in, enabled-by-default aggregates, similar to pg_stat_activity
-- Similarly, very little performance data.
-- checkpoint_write/sync_time --- but that's for background activity
-- blk_read_time and blk_write_time --- good, but what statements/queries
-cause those activities?
-Benefits
+# Drawbacks of pg_stat_activity
 
-Drawbacks
+- Instantaneous, not cumulative
+- Like slow logs, polling/sampling ends badly.
+- Doesn't give accurate profiles.
+- Misses fast operations.
+
+---
+class: compact
+#The pg_stat_bgwriter and pg_stat_database views
+
+- Built-in, enabled-by-default aggregates, similar to pg_stat_activity
+- Similarly, very little *performance* data.
+    - checkpoint_write/sync_time---but that's for background activity
+    - blk_read_time and blk_write_time---good, but what statements/queries cause those activities?
+
+---
+class: compact
+# Benefits of pg_stat_bgwriter and pg_stat_database
 
 - They're built-in.
 - There's timing and count data.
 
-- Coarse granularity doesn't lead you
-to a diagnosis of workload from
-user requests.
+---
+class: compact
+# Drawbacks of pg_stat_bgwriter and pg_stat_database
+
+- Coarse granularity doesn't lead you to a diagnosis of workload from user requests.
 
 ---
-#The pg_stat_all_tables and pg_statio_all_tables
-views
-- Built-in, enabled-by-default aggregate
-- No real performance data.
-- seq_scan --- but "seq_scan is bad" is superstition and only sometimes
-leads to an accurate diagnosis, like "temp files are bad."
-- idx_blks_read, ditto. "find indexes with most blocks read" isn't the same as
-"find out where all the time is being spent and what's causing the load."
+class: compact
+#The pg_stat_all_tables and pg_statio_all_tables views
+
+These are built-in, enabled-by-default aggregates.
+
+There's no real *performance* data.
+
+- seq_scan---but "seq_scan is bad" is superstition and only sometimes leads to an accurate diagnosis, like "temp files are bad."
+- idx_blks_read, ditto. "find indexes with most blocks read" isn't the same as "find out where all the time is being spent and what's causing the load."
 - False correlations are dangerous!
-Benefits
-
-Drawbacks
-
-- It's built-in.
-
-- No timing (performance) data.
 
 ---
 #Most PostgreSQL stats views are vanity metrics
-- There is a lot of valuable information in the pg_stat_XXX views, but
-most of it is not performance data.
-- I cannot tell you how many times I've seen months wasted looking
-at the wrong data just because "it's the data I have available."
+
+There is a lot of valuable information in the pg_stat_XXX views, but:
+
+- *Most of it is not performance data*.
+- I've seen *months* wasted looking at the wrong data just because "it's the data I have available."
 - It's easy to measure the right data instead.
 
 ---
 #The pg_stat_statements extension
-- An optional extension you have to install and enable.
-- To install & enable:
-•
-•
-•
-•
 
-requires superuser or rds_superuser for Amazon RDS
-shared_preload_libraries = pg_stat_statements
+An optional extension you have to install and enable.
+
+To install & enable requires superuser or rds_superuser for Amazon RDS.
+
+```
+shared_preload_libraries  = pg_stat_statements
 track_activity_query_size = 2048
-pg_stat_statements.track = ALL
-Benefits
+pg_stat_statements.track  = ALL
+```
 
-Drawbacks
+---
+# Benefits of pg_stat_statements
 
 - It's built-in.
 - Has timing data!
 - Is query/statement scoped!
 
+---
+# Drawbacks of pg_stat_statements
+
 - Only aggregate data
-- Statement "digest" is not ideal
-(queryid)
+- Statement "digest" is not ideal (queryid)
 - Adds some overhead
 - Limited size, can ignore statements
 
 ---
 #Enable track_io_timing
-- pg_stat_statements doesn't track IO timing by default
+
+pg_stat_statements doesn't track IO timing by default.
+
 - To get some level of sub-profiling detail, enable track_io_timing
-- You'll then get coarse-grained detail: where did the statement
-spend its time? (reading/writing)
+- You'll then get coarse-grained detail: where did the statement spend its time? (reading/writing)
 - See blk_read_time and blk_write_time in pg_stat_statements
 
 ---
 #Warnings
-- Ignore Fast Queries At Your Own Risk
+
+Ignore Fast Queries At Your Own Risk
+
 - The default behavior of only measuring slow queries is risky.
 - It ignores early warning signs of soon-to-be-serious problems.
 - By the time a frequent, bad query exceeds 100ms you're in trouble.
 
-- Fall In Love With Vanity Metrics At Your Own Risk
-•
-•
-•
-•
-•
+Fall In Love With Vanity Metrics At Your Own Risk
 
-"This counter is large, what does it mean, could it be a problem?"
-<Googles>
-"Hmm, maybe I need to increase the widget cache size"
-<Weeks Pass>
-Remember the finger pointing at the moon!
+- "This counter is large, what does it mean, could it be a problem?"
+- (Googles)
+- "Hmm, maybe I need to increase the widget cache size"
+- (Weeks Pass)
+- Remember the finger pointing at the moon!
 
 ---
+template: section
 #Summary of Profiling in PostgreSQL
 
 ---
-#Remember: Ideally Profile By Task, Then Drill Down
-- The ideal top-level method of profiling is a query profile
+class: compact
+# Remember: Ideally Profile By Task, Then Drill Down
+
+The ideal top-level method of profiling is a query profile
+
 - Aggregates per-queryid and ranks "hot spot" at top
 
-- Once you've identified queries of interest, then drill in
+Once you've identified queries of interest, then drill in
+
 - Use track_io_timing to get finer detail in pg_stat_statements
-- As a fall-back, look for operations that are typically expensive (i.e. blks_hit,
-etc). But be very careful of false correlations and guesses.
+- As a fall-back, look for operations that are typically expensive (i.e. blks_hit, etc). But be very careful of false correlations and guesses.
 
 ---
 #PostgreSQL Has Limited Support For Profiling
-- The server's job is to serve requests, so ideally we measure them
-and profile them.
-- Happily, query profiling is possible in PostgreSQL via
-pg_stat_statements.
+
+- The server's job is to serve requests, so ideally we measure them and profile them.
+- Happily, query profiling is possible in PostgreSQL via pg_stat_statements.
 - You'll have to install and enable the extension, and you should.
 
 ---
+class: fullbleed, center
+
+![Profile](profile.png)
+
 #A Sample Query-Level Profile
 
 ---
+class: compact
 #External Profiling Options
-- In addition to getting performance data from inside the server, you
-can measure it externally.
-- TCP packet capture and inspection is best. Two options:
-- VividCortex's free sniffer tool
-https://www.vividcortex.com/resources/topic/free-tools
+
+In addition to getting performance data from inside the server, you can measure it externally.
+
+TCP packet capture and inspection is best. Two options:
+
+- VividCortex's [free sniffer tool](https://www.vividcortex.com/resources/topic/free-tools)
 - VividCortex's commercial product https://vividcortex.com
 
-- Disadvantages:
-- Lacks some visibility into server internals that you get with
-pg_stat_statements.
-- The corresponding advantage is that you can see individual statement
-performance data, not just aggregate.
+Disadvantages:
+
+- Lacks some visibility into server internals that you get with pg_stat_statements.
+- The corresponding advantage is that you can see individual statement performance data, not just aggregate.
 
 ---
 #What About Application or Cluster Profiling?
-- In real applications, you need to understand the entire data tier
+
+In real applications, you need to understand the *entire* data tier.
+
 - This is infeasible with manual, server-by-server inspection
 - One option is APM tools, or application-level instrumentation
-•
-•
-•
-•
-
-The problem is you get a visibility gap.
-What the app thinks the database is doing is usually badly wrong.
-"Out-of-band" traffic to the database is vital to measure.
-(Think Tableau, manual/adhoc queries, backups, cron jobs...)
-
-- Most databases add more instrumentation as they mature;
-PostgreSQL is no exception. This is getting easier over time.
+    - The problem is you get a visibility gap.
+    - What the app thinks the database is doing is usually badly wrong.
+    - "Out-of-band" traffic to the database is vital to measure.
+    - (Think Tableau, manual/adhoc queries, backups, cron jobs...)
+- Most databases add more instrumentation as they mature; PostgreSQL is no exception. This is getting easier over time.
 
 ---
+template: section
 #Conclusions
 
 ---
 #Conclusions
 - Your servers are for doing useful work (requests), so measure it!
 - Performance is best defined in terms of requests and resources
-- Performance is about latency and throughput
-- Utilization, backlog, etc are second-order, derived metrics
-- Other things may be "vanity metrics" unless there's a specific use.
-
+    - Performance is about latency and throughput
+    - Utilization, backlog, etc are second-order, derived metrics
+    - Other things may be "vanity metrics" unless there's a specific use.
 - Get the full picture, but start with throughput and latency
 - Measure every single request, if you can; sampling = bias = trouble
-- Measure every one, but analyze aggregates / populations
-
+    - Measure every one, but analyze aggregates / populations
 - Profiling (aggregating, ranking, drilling down) is essential
-- Profiling by time is 90% of what's needed 90% of the time
-- There's some support for this in PostgreSQL, but not complete
-- Don't fall in love with the data you have; get the data you need.
+    - Profiling by *time* is 90% of what's needed 90% of the time
+    - There's some support for this in PostgreSQL, but not complete
+    - Don't fall in love with the data you have; get the data you *need*.
 
 ---
+class: img-right-full
+
+![Sunset](sunset.png)
+
 #Thanks!
 Email me anytime baron@vividcortex.com
 Hit me up @xaprb or linkedin.com/in/xaprb
 
+![USL](usl.png# maxw-40pct fl)
+![Queueing Theory](queueing-theory.png# maxw-40pct)
+
 My ebooks ^^^^ on performance theory:
-vividcortex.com/resources
+[vividcortex.com/resources](https://www.vividcortex.com/resources)
