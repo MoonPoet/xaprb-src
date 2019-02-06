@@ -377,7 +377,7 @@ Whether to leave it enabled all the time is up for debate.
 
 ---
 # Analyzing the Query Log
-The “standard” solution today is pgBadger.
+The "standard" solution today is pgBadger.
 
 - Aggregates a log, produces a report on lots of stuff.
 - See a sample report at http://dalibo.github.io/pgbadger/samplev7.html
@@ -391,11 +391,11 @@ Older tools include:
 # Cultural Considerations of Query Logging
 
 - Modern teams are rapidly abandoning the old-skool DBA culture.
-- If you’re turning on logging, SCP’ing logs somewhere, analyzing them, and emailing out the report... you’re  probably going to be replaced by RDS.
+- If you're turning on logging, SCP'ing logs somewhere, analyzing them, and emailing out the report... you're  probably going to be replaced by RDS.
 - Treat servers like cattle, not pets.
 - How can you run a platform, as an internal service, not babysit a bunch of servers?
 - How can you enable developers to be more productive themselves?
-- If you can do this, and transition from “DBA” to “data engineer” you will have a great career forever.
+- If you can do this, and transition from "DBA" to "data engineer" you will have a great career forever.
 
 ---
 #PostgreSQL's pg_stat_activity
