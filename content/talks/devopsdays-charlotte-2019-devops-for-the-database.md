@@ -18,5 +18,6 @@ Why is it hard to apply DevOps principles and practices to databases, and how ca
 - The traditional dedicated DBA role, and what has happened as a result
 - What it takes to change from a DBA-centric culture, to one where database-related competencies and responsibilities are more distributed
 - Why some teams succeed in this transformation, while others fail
+- How to make these approaches work for MySQL, PostgreSQL, SQL Server, and others
 
 We can apply DevOps principles to the database, and our work will be better for it. This talk will show you how.
