@@ -19,7 +19,7 @@ class: title, fogscreen, shelf, no-footer
 background-image: url(unsplash-photos-oyXis2kALVg.jpg)
 
 # DevOps for the Database
-## Baron Schwartz &bullet; DevOpsDays CLT 2018
+## Baron Schwartz &bullet; DevOpsDays CLT 2019
 
 ![Logo](vividcortex-horizontal-white-rgb.svg# absolute smokescreen pa-2 br-3 maxw-2-12th r-1-12th)
 
