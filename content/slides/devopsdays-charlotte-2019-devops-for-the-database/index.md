@@ -10,6 +10,11 @@ themes:
 - adirondack
 - descartes
 ---
+layout: true
+name: section
+class: title, fogscreen, no-footer
+
+---
 class: title, fogscreen, shelf, no-footer
 background-image: url(unsplash-photos-oyXis2kALVg.jpg)
 
@@ -82,20 +87,21 @@ class: img-right-full, roomy
 
 ???
 
-A.C.
+* Large Chicago-based marketing company
 
 --
 2. One DBA, from 20 to 100 developers
 
 ???
 
-Zen
+* Benefits administration startup in SV
 
 --
 3. Two database ops folks, seventeen developers
 
 ???
-The Golden Motion
+
+* Jim at NYC-based media firm, our first "golden motion" customer
 
 ---
 class: img-right-full
@@ -123,7 +129,7 @@ class: img-left-full
 
 ![Image](unsplash-photos-6q6qRY2LQJQ.jpg)
 
-# Detriments of Lacking DevOps
+# Without DevOps
 
 Without DevOps, speed and quality suffer:
 
@@ -179,7 +185,8 @@ Attributes I've seen in companies that apply DevOps to their database:
 Emphasis mine. See p. 57
 
 ---
-class: title, smokescreen, no-footer, top
+template: sectin
+class: top
 background-image: url(unsplash-photos-C7B-ExXpOIE.jpg)
 
 # Bringing DevOps to the Database
@@ -359,7 +366,8 @@ class: roomy
 * Education is important, your people are smart but that's not sufficient
 
 ---
-class: title, fogscreen, no-footer, bottom
+template: section
+class: bottom
 background-image: url(pixabay-en-pond-water-shield-dead-end-yellow-3776437.jpg)
 
 # Pathways To Failure
@@ -422,7 +430,7 @@ class: roomy, img-right-full
 * Velocity over resilience
 
 ---
-class: title, fogscreen, no-footer
+template: section
 background-image: url(pixabay-en-maze-graphic-render-labyrinth-design-puz-2264.jpg)
 # What's The Hardest Part?
 
@@ -452,12 +460,43 @@ class: roomy
 * Nonblocking schema changes at scale
 
 ---
+# Action 1: Take An Agile Approach
+
+* Pick a team/product to start with
+* Work in small iterations
+* Define success before you start
+* Adjust team topology, scope, workflow
+* Try it, observe results, repeat
+
+Reading: [Reilly](https://noidea.dog/blog/getting-there-from-here), [Daniels](https://dzone.com/articles/the-design-of-engineering-culture), [Burrell et al](https://medium.com/netflix-techblog/full-cycle-developers-at-netflix-a08c31f83249),
+[Skelton & Pais](https://web.devopstopologies.com/#anti-type-g)
+
+---
+# Action 2: Schema As Code
+
+* Build schema versioning and schema changes *into the app*
+* Each app should check schema version and apply migrate/mutate SQL as needed
+
+Reading: [Goose](https://bitbucket.org/liamstask/goose)
+
+---
+# Action 3: Decouple Code/Schema
+
+* Decouple the app code and DB schema.
+* Write the app to work with multiple schema versions.
+
+Reading: [Limoncelli](https://queue.acm.org/detail.cfm?ref=rss&id=3300018), [Majors & Campbell](https://www.amazon.com/Database-Reliability-Engineering-Designing-Operating/dp/1491925949/),
+[Coleman](https://medium.com/braintree-product-technology/postgresql-at-scale-database-schema-changes-without-downtime-20d3749ed680)
+
+---
 class: roomy
 # Whither The DBA?
 
 * Become a DBRE instead of a DBA
 * Focus on data platform and architecture
 * Be the subject matter expert supporting product teams
+
+Reading: [Botros](https://sendgrid.com/blog/dbas-a-priesthood-no-more/)
 
 ---
 class: roomy, img-right-full
