@@ -1,6 +1,6 @@
 ---
 title: Apologies
-date: "2019-02-07"
+date: "2019-02-07T00:00:00-05:00"
 url: "/blog/apologies"
 description: "Apologize for what you did, not what you meant."
 categories:
