@@ -2,7 +2,11 @@
 title: Apologies
 date: "2019-02-07T00:00:00-05:00"
 url: "/blog/apologies"
-description: "Apologize for what you did, not what you meant."
+description: "Apologize for what happened. Your intentions are irrelevant."
+tldr: "Apologize for what happened. Your intentions are irrelevant. You should focus exclusively on the harm, your regret, and your resolve not to repeat."
+credit: "https://unsplash.com/photos/9gz3wfHr65U"
+image: "/media/2019/02/unsplash-photos-9gz3wfHr65U.jpg"
+thumbnail: "/media/2019/02/unsplash-photos-9gz3wfHr65U.tn-500x500.jpg"
 categories:
 - Personal Growth
 ---
@@ -16,14 +20,14 @@ Maybe it was just because I was selfish and prideful, but I thought even if I ne
 Surely I deserved credit for having hurt them unintentionally?
 Or even for good intentions gone awry?
 
-Only when I realized that an apology really expresses "I won't do that again" did I realize that this makes no sense.
-If I hurt someone through my good intentions, and I included the good intentions in my apology, I'd be vowing to never again have those good intentions.
+Only when I learned that an apology really expresses "I won't do that again" did I realize that this makes no sense.
+If I hurt someone through my good intentions, and I included the good intentions in my apology, I'd be vowing to never again have those good intentions, while also defending myself.
 
 An apology should be unconditional, putting aside all mitigating factors.
 "I know I hurt you. I'm sorry I hurt you. I won't hurt you again."
 Nothing else matters.
 Nothing else should even be mentioned.^[You can also ask for forgiveness, but that's separate from an apology, and shouldn't be confused with it.]
-No explanation, no excuse, no good intentions, no nothing.
+No explanation, no defense, no excuse, no good intentions, no nothing.
 It should focus solely and exclusively on the harm, the regret, and the resolve not to repeat.
 
 Anything added, hedged, or withheld weakens and undermines the apology.
