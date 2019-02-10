@@ -3,11 +3,12 @@ title: "Why Deployment Freezes Don't Prevent Outages"
 description: "The harder you try, the worse it gets."
 date: "2014-11-29"
 url: /blog/2014/11/29/code-freezes-dont-prevent-outages/
+credit: "https://unsplash.com/photos/xEh4hvxRKXM"
+image: "/media/2014/11/unsplash-photos-xEh4hvxRKXM.jpg"
+thumbnail: "/media/2014/11/unsplash-photos-xEh4hvxRKXM.tn-500x500.jpg"
 categories:
   - Programming
   - Operations
-  - Best Of
-image: /media/2014/11/freeze.png
 ---
 
 I have $10 that says you've experienced this before: there's a holiday, trade show, or other important event coming up. Management is worried about the risk of an outage during this all-important time, and restricts deployments from the week prior through the end of the event.
@@ -40,9 +41,13 @@ Unfortunately, the assumptions are wrong, which is why deployment freezes often 
 
 It's true that change breaks things, but that doesn't tell the whole story. The reality is that systems are always changing, even when you think they're not. And they're also broken. Right now. You just don't know it yet.
 
-The first great lie is that you can stop systems from changing. You can't stop change. As Charity Majors [tweeted](https://twitter.com/mipsytipsy/status/618170448652582912), the image below is "one of the greatest lies in computer science."
+The first great lie is that you can stop systems from changing. You can't stop change. As Charity says:
 
-![If you do nothing, nothing happens](/media/2014/11/nothing-changes.png)
+> [Charity Majors](https://twitter.com/mipsytipsy/status/618170448652582912)
+>
+> one of the greatest lies in computer science
+>
+> ![If you do nothing, nothing happens](/media/2014/11/nothing-changes.png)
 
 Shipping code is *not* the only change in a system. Unless the system is turned off completely, it's changing every instant. User requests are being served. Logs are being written. Cron jobs and other scheduled tasks are starting, running, and stopping. The system clock is advancing. There are also dependencies on other systems, which likewise are undergoing constant change. And there are requirements changes, which nobody ever thinks about.
 
@@ -51,8 +56,6 @@ Most of these changes happen all the time and nothing goes wrong, or humans adju
 What's broken? All sorts of things. Your Java runtime has a time bug that's waiting to throw it into an infinite loop when a leap second happens. Your website has a SQL injection vulnerability that nobody's exploited yet. A set of servers that you bought all together and installed at the same time has a ticking time bomb in the RAID controllers, which are all going to go into degraded self-test mode simultaneously. Your auto-increment integer column is  crossing the 2 billion mark right now, and will soon reach its max value.
 
 The reality is that practically every running system is a ticking time bomb. You just don't know what's ticking or how long till it stops.
-
-![clock](/media/2014/11/clock.jpg)
 
 ### Uncontrolled Change Is More Dangerous
 
@@ -137,7 +140,4 @@ Code freezes thus make systems more likely to break, while impacting productivit
 
 I believe that a focus on improving the processes by which changes are made, making smaller and more frequent iterations, and finding out and fixing breakage as soon as possible is a better way to the goal. But that's a different article
 
-
-Image credits: [freeze](http://www.imdb.com/title/tt0118688/), [clock](https://www.flickr.com/photos/jlhopgood/6795353385/), [raccoon](http://memegenerator.net/instance/53212554)
-
-
+Image credits: [raccoon](http://memegenerator.net/instance/53212554)

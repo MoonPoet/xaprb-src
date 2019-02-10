@@ -143,10 +143,20 @@ The following contributed to my thoughts on this topic:
 
 - Honeycomb: [Honeycomb Values, 2018](https://www.honeycomb.io/blog/honeycomb-values-2018/).
 - Jessica Kerr: [Shared Values are Overrated](https://medium.com/@jessitron/shared-values-are-overrated-7a194462aa33).
-- [Zee on Twitter](https://twitter.com/zspencer/status/1075101987358691328): "The reason I *love* @jessitron's framing here is that ultimately, _behaviors_ are what cause harm or create benefits. Beliefs, values, etc. all ultimately manifest in behaviors; but the actions that emerge from a set of values or beliefs can vary wildly."
+- Zee:
+
+    > [Zee](https://twitter.com/zspencer/status/1075101987358691328)
+    >
+    > The reason I *love* @jessitron's framing here is that ultimately, _behaviors_ are what cause harm or create benefits. Beliefs, values, etc. all ultimately manifest in behaviors; but the actions that emerge from a set of values or beliefs can vary wildly.
+
 - Netflix's culture deck; their new [culture website](https://jobs.netflix.com/culture) is much clearer.
 - My distinction between "good values" and "bad values" was inspired by the book [Good Strategy/Bad Strategy]({{< amz 1781256179 >}}).
-- Many thoughts shared by others over the years, similar to this example from [Steven Shorrock](https://twitter.com/StevenShorrock/status/1068256841149415424) on Twitter: "And here is the problem. Culture is not a lever. You can't manipulate it. You can't design it. It can be influenced, but it is much easier to influence badly by intervention. Work on the work with the people who do the work and are affected by it. Culture change comes for free."
+- Many thoughts shared by others over the years, similar to this example:
+
+    > [Steven Shorrock](https://twitter.com/StevenShorrock/status/1068256841149415424)
+    >
+    > And here is the problem. Culture is not a lever. You can't manipulate it. You can't design it. It can be influenced, but it is much easier to influence badly by intervention. Work on the work with the people who do the work and are affected by it. Culture change comes for free.
+
 - My childrens' school.
 
 ### Further Reading

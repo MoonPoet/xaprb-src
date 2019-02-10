@@ -3,14 +3,12 @@ title: "If Eventual Consistency Seems Hard, Wait Till You Try MVCC"
 description: "The rabbit hole is very deep indeed."
 date: "2014-12-08"
 url: /blog/2014/12/08/eventual-consistency-simpler-than-mvcc/
+image: /media/2014/12/puzzle.jpg
+thumbnail: /media/2014/12/puzzle.tn-500x500.jpg
+credit: https://www.flickr.com/photos/digitalmums/6310508350/
 categories:
   - Programming
   - Databases
-  - Best Of
-tags:
-  - PostgreSQL
-image: /media/2014/12/puzzle.jpg
-credit: https://www.flickr.com/photos/digitalmums/6310508350/
 ---
 
 This should sound familiar:
@@ -68,8 +66,6 @@ similar to Schroedinger's Cat, or double-slit experiments, or whatnot.
 Relatively ignorant people like me bring these up around the pool table and
 argue about them to try to sound smart, without knowing much about them.
 
-![schroedinger's cat](/media/2014/12/schroedingers-cat.jpg)
-
 Distributed systems are hard!  There's no denying that. But is there a better
 way?
 
@@ -92,7 +88,9 @@ single-reader database on a single-core server---and maybe not even then, I'm
 not sure---you actually have a distributed system inside your server.
 Everything's distributed.
 
-<blockquote class="twitter-tweet" lang="en"><p>Sorry, I&#39;m not impressed with serializable isolation via a single writer mutex.</p>&mdash; Preetam Jinka (@PreetamJinka) <a href="//twitter.com/PreetamJinka/status/537313622410952704">November 25, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+> [Preetam Jinka](https://twitter.com/PreetamJinka/status/537313622410952704)
+>
+> Sorry, I'm not impressed with serializable isolation via a single writer mutex.
 
 Concurrent operation isn't a nice-to-have in most systems, it's a given.
 The way many relational systems handle concurrency is with this nifty little
@@ -125,8 +123,6 @@ Clearly, this is much better than eventually consistent databases, right?
 
 Unfortunately, the relational databases and their MVCCs are far from such a
 utopia. The reality is that MVCC is way more complex than I've described.
-
-![alice-down-the-rabbit-hole](/media/2014/12/alice-down-the-rabbit-hole.jpg)
 
 MVCC and the ACID properties are intertwined in very complex ways. The first
 problem comes from the ACID properties themselves.  These four properties are
@@ -216,8 +212,6 @@ The abstraction just
 [leaked](http://www.joelonsoftware.com/articles/LeakyAbstractions.html), that's
 what.
 
-![Spiral Watch](/media/2014/12/spiral-watch.jpg)
-
 The problem is due to several logical necessities and implementation details.
 It's not solely one or the other. The MVCC model is trying to balance a bunch of
 things going on concurrently, and there are logical contradictions that can't go
@@ -281,7 +275,9 @@ The PostgreSQL documentation, unlike the MySQL documentation, is largely limited
 to a [single
 page](http://www.postgresql.org/docs/9.3/static/transaction-iso.html).
 
-<blockquote class="twitter-tweet" lang="en"><p>Read cursor isolation docs for Oracle, PG, InnoDB. PG docs are clear, others probably not. Tech writing is hard.</p>&mdash; markcallaghan (@markcallaghan) <a href="//twitter.com/markcallaghan/status/528335458221449217">October 31, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+> [Mark Callaghan](https://twitter.com/markcallaghan/status/528335458221449217)
+>
+> Read cursor isolation docs for Oracle, PG, InnoDB. PG docs are clear, others probably not. Tech writing is hard.
 
 First of all, PostgreSQL uses READ COMMITTED by default. This means that if you
 SELECT some rows within a transaction, then wait while another transaction
@@ -291,7 +287,7 @@ run MySQL/InnoDB the same way, and there are lots of bugs and special behaviors
 that end up making other isolation levels unusable for various reasons when
 various features are used in MySQL.
 
-I think Mark Callaghan's tweet, embedded above, is largely true. But even the
+I think Mark Callaghan's tweet above is largely true. But even the
 PostgreSQL docs, as clear as they are, have some things that are hard to parse.
 Does the first part of this excerpt contradict the second part? (Emphasis mine):
 
@@ -350,7 +346,9 @@ complex to develop against than InnoDB, for the use cases that they serve well.
 
 Eventually consistent is easy to ridicule, though. Here's one of my favorites:
 
-<blockquote class="twitter-tweet" lang="en"><p>Eventually consistent <a href="//twitter.com/hashtag/FiveWordTechHorrors?src=hash">#FiveWordTechHorrors</a></p>&mdash; Stewart Smith (@stewartsmith) <a href="//twitter.com/stewartsmith/status/410651205615230976">December 11, 2013</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+> [Stewart Smith](twitter.com/stewartsmith/status/410651205615230976)
+>
+> Eventually consistent #FiveWordTechHorrors
 
 (If you don't get the joke, just wait a while. It'll come to you.)
 
@@ -378,17 +376,6 @@ Further reading:
 - [Kyle Kingsbury on Galera
   Cluster](https://aphyr.com/posts/328-call-me-maybe-percona-xtradb-cluster)
 
-Notes:
-
 [^1]: If you don't [tweet](//twitter.com/xaprb) me puns and acid-cat meme pictures about this paragraph, I shall be disappointed in you.
 [^2]: Pun intended.
 [^3]: Also note that PostgreSQL used to provide only *two* isolation levels, and the documentation used to make the same comment about it being the only sensible thing to do. It's not quite clear to me whether this is meant to imply that it's the only sensible way to implement MVCC, or the only sensible way to implement PostgreSQL's MVCC.
-
-
-Pic credits:
-
-* [Alice](http://www.writerightwords.com/down-the-rabbit-hole/)
-* [Schroedinger's Cat](https://www.flickr.com/photos/t_zero/7762560470/)
-* [Spiral Watch](https://www.flickr.com/photos/stuartncook/4613088809/)
-
-

@@ -45,7 +45,12 @@ speaking and sharing. It is not easy to get started, but LISA is a great first
 event to speak at, and there's all the support you could wish to make it as
 easy as it can be.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">LISA 2017 was my first ever conference speaking gig. It was awesome and the environment was fun, inclusive and I made friends! If you are thinking of speaking and are from an URM…this is a good event. <a href="https://t.co/nN1paSC8S9">https://t.co/nN1paSC8S9</a></p>&mdash; X-pert Dominator (@dbsmasher) <a href="https://twitter.com/dbsmasher/status/984459366718828544?ref_src=twsrc%5Etfw">April 12, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> [Silvia Botros](https://twitter.com/dbsmasher/status/984459366718828544)
+>
+> LISA 2017 was my first ever conference speaking gig. It was awesome and the environment was fun, inclusive and I made friends! If you are thinking of speaking and are from an URM... this is a good event.
+>
+>> [Pat Cable](https://twitter.com/patcable/status/984409402869452800)
+>>
+>> hi folks. this year i’m reviewing talks and i would love to review your talk 🎉 
 
 And if you're an experienced speaker, of course we want to hear from you too. Please [propose a talk](https://www.usenix.org/conference/lisa18/call-for-participation) and I hope to meet you there. See also [this post](http://www.brendangregg.com/blog/2018-04-30/usenix-lisa-2018-cfp.html) from the co-chairs of the conference this year.

@@ -41,6 +41,7 @@ params:
    - feature-highlight
    - feature-hrfleuron
    - feature-qrcode
+   - feature-tweetquote
 MetaDataFormat: "yaml"
 Paginate: 20
 rssLimit: 20

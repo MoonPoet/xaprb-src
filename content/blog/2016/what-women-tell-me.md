@@ -263,10 +263,11 @@ Many more women than men (that I follow, anyway) have retweeted this man's
 incident](https://twitter.com/dhelder/status/761777348458913796) that defies my
 language skills:
 
-![Dick Jeopardy](/media/2016/08/jeopardy.jpg)
-
-The tweet's text is "Hacker Jeopardy. Category is "Dicks".  Men play. Women give
-them beers. Why aren't there more women in security?"
+> [David Helder](https://twitter.com/dhelder/status/761777348458913796)
+> 
+> Hacker Jeopardy. Category is "Dicks".  Men play. Women give them beers. Why aren't there more women in security?
+>
+> ![Dick Jeopardy](/media/2016/08/jeopardy.jpg)
 
 DEFCON is one of the biggest security-related conferences in the world.
 In case you missed it, here's a close-up of what's happening at the table:
@@ -283,13 +284,14 @@ coloring, and bullet points of product attributes meant to be "feminine." Does
 this bother you?
 
 It bothers many women I know. A lot. It's insulting to them. Bright yellow
-and non-ultra-soft earplugs are fine, thank you. I'll cite the
-[source](https://twitter.com/SimoneGiertz/status/760641088625356800) for this
-one because she's quite a public figure. Her comment: "BEEN WAITING SO LONG 4
-THIS! Do they double as tampons? Or are they just great at blocking sexual
-slurs?"
+and non-ultra-soft earplugs are fine, thank you. I'll cite the source 
+for this one because she's quite a public figure.
 
-![Earplugs](/media/2016/08/earplugs.jpg)
+> [Simone Giertz](https://twitter.com/SimoneGiertz/status/760641088625356800)
+> 
+> BEEN WAITING SO LONG 4 THIS! Do they double as tampons? Or are they just great at blocking sexual slurs? @Walgreens
+> 
+> ![Earplugs](/media/2016/08/earplugs.jpg)
 
 ### Some Other Stuff
 

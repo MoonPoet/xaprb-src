@@ -21,8 +21,10 @@ Want a free copy of [High Performance MySQL, Third Edition]({{< amz 1449314287 >
 
 And now, a status update: I'm currently proofing the QC2 (quality control #2) revision of the book; after this, the book goes to manufacturing. The PDF is now 820 pages, which is a lot of work to proofread. You can imagine how much more in-depth we've been able to go with so many more pages.
 
-The [free sample](http://www.highperfmysql.com/sample-chapter/) online is Chapter 8, on optimizing MySQL configuration. Liz van Dijk just [tweeted](https://twitter.com/#!/lizztheblizz/status/169805049403424768) this about it:
+The [free sample](http://www.highperfmysql.com/sample-chapter/) online is Chapter 8, on optimizing MySQL configuration. Liz van Dijk just tweeted this about it:
 
+> [Liz van Dijk](https://twitter.com/lizztheblizz/status/169805049403424768)
+>
 > The sample chapter of High Perf MySQL 3rd Ed is both amazingly to the point and hilarious at times. Instant buy for me.
 
 If you haven't yet, I encourage you to take a look at the sample. Then go register for the conference to get your free copy, and I'll see you in Santa Clara! We're also arranging a book-signing at the conference, so you can get some scribbles on your copy if you want!

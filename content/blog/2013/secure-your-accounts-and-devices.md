@@ -82,11 +82,13 @@ It's usually easy to find information such as mother's maiden name and paternal 
 
 Instead, always generate unique fake answers. City of birth? The moon. Favorite high school teacher? Swimming pool. First pet? Diesel locomotive. Store these answers in your password safe.
 
-Or generate random answers. As
-[Chris Gilbert](https://twitter.com/chriswithpants/status/770435827142840320)
-says, here's how to fill out security questions:
+Or generate random answers. As Chris Gilbert says, here's how to fill out security questions:
 
-![Security Questions](/media/2013/12/security-questions.jpg)
+> [Chris Gilbert](https://twitter.com/chriswithpants/status/770435827142840320)
+>
+> How to fill out security questions.
+> 
+> ![Security Questions](/media/2013/12/security-questions.jpg)
 
 ### Secure Your Devices
 

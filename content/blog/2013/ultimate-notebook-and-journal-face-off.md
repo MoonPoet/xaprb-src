@@ -332,8 +332,9 @@ or if you just prefer that form factor, it's also very nice indeed.
 
 I know some people who love these notebooks, but I haven't owned one myself:
 
-<blockquote class="twitter-tweet" lang="en"><p>There is my life before these beautiful landscape notebooks, and my life after: <a href="http://t.co/NMj7AN89FH">http://t.co/NMj7AN89FH</a> After is better.</p>&mdash; John Allspaw (@allspaw) <a href="https://twitter.com/allspaw/status/572008337228886016">March 1, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+> [John Allspaw](https://twitter.com/allspaw/status/572008337228886016)
+> 
+> There is my life before these beautiful landscape notebooks, and my life after: [http://www.jetpens.com/Maruman-Mnemosyne](https://www.jetpens.com/Maruman-Mnemosyne-N180A-Imagination-Notebook-A4-5-mm-Graph/pd/4076) After is better.
 
 ![Maruman Mnemosyne Special Memo Notepad](/media/2013/07/maruman-mnemosyne-special-memo-notepad.jpg)
 
