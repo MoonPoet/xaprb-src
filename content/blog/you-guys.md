@@ -14,8 +14,9 @@ This article is written as food for thought for men.
 I've witnessed a lot of debate in the last few years about whether "you guys" is gender-neutral.
 It doesn't surprise me that a lot of men think it is, and women say it's not.
 It doesn't surprise me that people point to the dictionary definition, which says it's gender-neutral.
-All this is natural, given our culture, and I'd be surprised if people didn't do these things.
-But we can do better, we should, and many of us do.
+All this is natural given our culture, and I'd be surprised if people didn't do these things.
+But it's hurtful.
+We can do better, we should, and many of us do.
 <!--more-->
 
 After spending a few years working very intentionally to [listen to women](/blog/what-women-tell-me/), this doesn't strike me as even a close debate.
@@ -25,14 +26,18 @@ Anyone who takes a little time to listen and observe will find the following to 
 - Guys is gendered in usage, no matter what the dictionary says.
 - Addressing a mixed-gender group as "guys" is not inclusive when spoken by a man, because of the inter-group power dynamics.
 - Because of those same dynamics, women can freely call each other "guys" without giving men license to use the same term in the same way or to complain about it.
+- As men, we don't get to tell women how they should feel. We should listen to how they *do* feel and respect it.
 - There are obvious and easy alternatives in common usage that are gender-neutral and inclusive, and men should use them.
 - Men who stop using this term aren't impoverished in the least; to the contrary, they enrich themselves and empower others.
 
-You can stop there if you want, but read on for more about these points below.
+You can stop there if you want, but please don't debate me about this article unless you've read the whole thing.
+There's lots more important food for thought about these points below.
 
 ### Is Guys Gender-Neutral?
 
-No. It simply is not gender-neutral. That's not how real people use it in the real world.
+No. It simply is not gender-neutral.
+The dictionary is wrong.
+Real people don't use it neutrally in the real world.
 
 Do you have sex with "guys" or "gals"?
 If women are "guys," are men "gals"?
@@ -42,11 +47,10 @@ Do you address mixed-gender groups as "gals"?
 >
 > Pro tip: "Guys" is gendered. Think it's not? Swap it out for "gals" for a day and see what happens.
 
-Go ahead, address folks as "you gals" next time you're speaking/writing to a group. Remember: if the setting is formal, "ladies" might be more appropriate.
+Imagine addressing folks as "you gals" next time you're speaking/writing to a group.
+If the setting is formal, imagine using "ladies" instead.
 (This should only be a thought experiment.
 If you actually do this, you're being a jerk.)
-
-The dictionary is wrong.
 
 Guys isn't the only word that people fight over in this way.
 Looking at other hotly contested "gender neutral" words that aren't gender-neutral is instructive, because the same reasons they aren't gender-neutral apply to guys, too.
@@ -65,7 +69,7 @@ Or, try this one:
 
 I cannot say it better than that.
 When we pretend the default male gender is "neutral" and then do some easy experiments, its ostensible neutrality is obviously false---a proof by contradiction that it's not neutral.
-We live in a sexist culture and we have to be anti-sexist, not neutral, or we're reinforcing its biases.
+We live in a sexist culture and we have to be anti-sexist, not neutral, or we're reinforcing structural/cultural biases.
 
 ### Guys Isn't Inclusive, Especially When Men Say It
 
@@ -99,14 +103,14 @@ Or consider this,
 >
 > Everytime this vendor says "guys" on a call with several technical women, I just want to scream.
 
-Or this one,
+Or this one, in response to a man who thinks there are more important things to worry about,
 
 > [Mary Dickson Diaz](https://twitter.com/marythought/status/1044787788531396608)
 > 
 > Right, it's describing you and the dominant tech culture so you've probably never even thought about it. Whereas it grates on me every single time I hear it.
 
 I'm not Googling for these tweets.
-These are tweets that I've been seeing in my timeline, from women I follow.
+These are tweets that I've been seeing in my timeline, from women I [follow](/blog/my-twitter-following-strategy/).
 All I've done is collect them for a few months.
 They're often retweeted by several other women, which means a lot more people are feeling this way than tweeting about it.
 Here's another:
@@ -119,13 +123,23 @@ And that brings up my next point: is it inclusive when women say it?
 
 ### But Women Say It Too
 
+"But I literally just saw a woman address a group of her five girlfriends as 'you guys' and nobody objected."
+
 So what?
 There are lots of ethnic, racial, gender, and other groups where it's okay for members of that group to say things and not okay for outsiders to do it.
-As men, we should *shut the hell up* about this.
+As men, we should *shut up* about this.
+*We don't get to tell women how to behave or how to feel*.
 Women can work out their own agreements amongst themselves, without any help from men.
 They don't need to be mansplained about being women, of all things.
 
-Lest anyone accuse me of being clueless, however, a lot of women recognize that they can be more inclusive when they don't say you guys, and express that they're trying to unlearn this phrase:
+It's similar to the rule in comedy about punching up vs punching down.
+When a man says "you guys" to a group with women in it, it can make the women feel they don't belong, they aren't truly part of the group.
+Even if the man doesn't appear to *mean* anything by it, it'll be clear that he lacks empathy for his audience.
+This makes an under-represented person feel like that man is less likely to be the ally they might need.
+This is especially true if there's context (such as the industry) that already subtly or not-so-subtly implies women don't belong.
+When a woman says "you guys" to such a group, women are far less likely to feel like they're being told they don't belong.
+
+Lest anyone accuse me of being clueless, however, a lot of women recognize that they *can* be more inclusive when they don't say "you guys," if only because they want to set a better example, and express that they're trying to unlearn this phrase:
 
 > [Caitie McCaffrey](https://twitter.com/caitie/status/1044686214261948417)
 >
@@ -150,6 +164,14 @@ And as men, when we see women working to do this, we should work twice as hard.
 > [Mary Dickson Diaz](https://twitter.com/marythought/status/1045000667092250624)
 >
 > I, like Caitie, used to say "guys" all the time but have made an effort to change my language. Know better, do better.
+
+Some women also report that they don't object to being addressed as "you guys."
+Fine, but some women do, so men should *not* seize on this as a point of debate.
+Inclusivity is about finding something that's welcoming for *all*.
+Also keep in mind that even some women have privileges of which they may be unconscious.
+Here I'll address women for the first and only time in this article:
+If you, a woman, don't feel excluded from mostly-male spaces, is there a reason for that?
+Could it be that you have wealth, or status, or power, or something else that not every woman shares, which makes you feel safe and included?
 
 ### But Everyone Else Is Doing It Too
 
@@ -182,6 +204,10 @@ Which is practically a copy-paste (a good thing!) of this advice from Better All
 >
 > I try not to use "guys" to refer to a group of people. Women and non-binary people don't need another reminder they're working in a male-dominated culture. If it slips out, I simply add, "Excuse me, I meant to say you all."
 
+Again, those are tweets I collected as they scrolled through my own timeline.
+I didn't go searching for those examples.
+There are lots of empathetic, thoughtful guys out there trying to make things better for all of us.
+
 ### It's Too Hard To Break The Habit
 
 Not true.
@@ -203,8 +229,8 @@ Another thought about difficulty of breaking a habit versus how much you care:
 
 ### There Are No Good Alternatives
 
-Ah, the excuse of last resort. Any port in a storm.
-
+This is just a lack of imagination.
+There are great phrases that don't sound forced or conspicuous and are easy to substitute.
 Try these excellent alternatives that you already use many times a day, comfortably, for other things:
 
 - Folks
@@ -223,9 +249,24 @@ Try these excellent alternatives that you already use many times a day, comforta
 I understand that some people don't want to say "y'all," and that's fine, but it's a pretty acceptable word in most of the areas shaded red or orange above.
 Most of the USA, in fact.
 
+### I'm Sick of Politically Correct Culture
+
+If you think not saying "hey guys" is political correctness run amok, and you're frustrated with everyone being so damn PC all the time, I'm afraid I'm unlikely to reach you.
+The only way I can think of to reply is with sarcasm and satire:
+
 > [kf](https://twitter.com/kf/status/1044965975798566912)
 >
 > "nerds" is also gender-neutral, I'm just saying
+
+Or this:
+
+> [Tim McJones](https://twitter.com/The_McJones/status/1017526430937169921)
+>
+> Eh, if guys is gender neutral so is mansplain.
+>
+>> [VM (Vicky) Brasseur](https://twitter.com/vmbrasseur/status/1017525593057816576)
+>>
+>> ISO: a gender-neutral term for “mansplaining” What ya got for me, internets?
 
 ### Why Fight So Hard To Keep It?
 
@@ -250,3 +291,5 @@ I have several times seen a man argue passionately that the dictionary should pr
 - [Is It Okay to Say "Hey Guys"? - The Atlantic](https://www.theatlantic.com/family/archive/2018/08/guys-gender-neutral/568231/)
 - [Why We Should Stop Calling Women 'Guys' | HuffPost](https://www.huffingtonpost.com/michael-jascz/why-we-should-stop-callin_b_8091436.html)
 - ["But I'm not offending anyone!" --- Tips for those tough conversations](https://inclusionatwork.co/difficult-feedback-about-offensive-behavior/)
+- [What Women Tell Me](/blog/what-women-tell-me/)
+- [MEN, a podcast examining masculinity](https://www.sceneonradio.org/men/)
