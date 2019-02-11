@@ -204,6 +204,10 @@ Which is practically a copy-paste (a good thing!) of this advice from Better All
 >
 > I try not to use "guys" to refer to a group of people. Women and non-binary people don't need another reminder they're working in a male-dominated culture. If it slips out, I simply add, "Excuse me, I meant to say you all."
 
+> [Ben Hocking](https://twitter.com/BenH343/status/1094935179188203521)
+>
+> I still struggle with this. I'm teaching CS 2102 this semester, which thankfully has a significant number of women in it, and I still catch myself saying "you guys". It's a hard habit to break, but I am trying.
+
 Again, those are tweets I collected as they scrolled through my own timeline.
 I didn't go searching for those examples.
 There are lots of empathetic, thoughtful guys out there trying to make things better for all of us.
@@ -251,8 +255,9 @@ Most of the USA, in fact.
 
 ### I'm Sick of Politically Correct Culture
 
-If you think not saying "hey guys" is political correctness run amok, and you're frustrated with everyone being so damn PC all the time, I'm afraid I'm unlikely to reach you.
-The only way I can think of to reply is with sarcasm and satire:
+If you think not saying "hey guys" is political correctness run amok, and you're frustrated with everyone being so damn PC all the time, I'm not sure what I can say that won't add more fuel to the fire.
+
+In case some lighthearted humor can help, though:
 
 > [kf](https://twitter.com/kf/status/1044965975798566912)
 >
@@ -266,7 +271,7 @@ Or this:
 >
 >> [VM (Vicky) Brasseur](https://twitter.com/vmbrasseur/status/1017525593057816576)
 >>
->> ISO: a gender-neutral term for “mansplaining” What ya got for me, internets?
+>> ISO: a gender-neutral term for "mansplaining" What ya got for me, internets?
 
 ### Why Fight So Hard To Keep It?
 
