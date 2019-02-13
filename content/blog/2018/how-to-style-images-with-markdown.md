@@ -7,7 +7,7 @@ credit: "https://unsplash.com/photos/jTCLppdwSEc"
 image: "/media/2018/08/unsplash-photos-jTCLppdwSEc.jpg"
 thumbnail: /media/2018/08/unsplash-photos-jTCLppdwSEc.tn-500x500.jpg
 categories:
-- Web
+- Markdown
 classes:
 - feature-nofigcaption
 ---
@@ -139,7 +139,7 @@ img[src~="bordered"] {
 
 ![Kitten](/media/2018/08/kitten.jpg# thumbnail bordered)
 
-An equivalent way to encode a space into a URL is with the `%20` URL encoding, but I've found that this doesn't work with the technique I showed here:
+An equivalent way to encode a space into a URL is with the `%20` URL encoding, but I've found that this doesn't work^[Thanks to a reader who pointed out that Markdown implementations vary widely in how they encode or interpret spaces. The technique as shown in this article doesn't work with [Grav](https://getgrav.org/), which needs spaces encoded as `%20`. [This thread on StackOverflow has more information](https://stackoverflow.com/questions/34569256/link-to-filenames-with-spaces-in-bitbucket-markdown).] in the Blackfriday Markdown processor with the technique I showed here:
 
 ![Kitten](/media/2018/08/kitten.jpg#%20thumbnail%20bordered)
 
@@ -317,5 +317,5 @@ img[alt="Kitten"] {
 ```
 
 The demos in this page use the actual markup in the code listings. You can view
-the page source or look at my [Github repo](https://github.com/xaprb/xaprb-src)
+the page source or [look at the file in my Github repo](https://github.com/xaprb/xaprb-src/blob/master/content/blog/2018/how-to-style-images-with-markdown.md)
 to see the original markup in HTML and/or Markdown formats.
