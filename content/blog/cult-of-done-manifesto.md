@@ -46,7 +46,7 @@ Bre Pettis and Kio Stark
 
 ([Reproduced under CC license from manifestoproject.it](http://www.manifestoproject.it/bre-pettis-and-kio-stark/))
 
-I don't know if you still can, but you used to be able to purchase this glorious poster of it.
+You can [purchase](https://jamesprovost.com/blog/done-manifesto-prints) this glorious poster of it.
 This is the one I have next to my desk.
 
 ![Cult of Done Manifesto](/media/2019/02/cult-of-done-manifesto.png)
