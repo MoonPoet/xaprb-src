@@ -26,4 +26,10 @@ Individual nodes run MySQL and leverage its capabilities as a leaf storage node.
 The resulting database automatically shards a single application's data across many nodes, and automatically distributes a single query to run in a scatter-gather pattern in parallel across those nodes too.
 It is more designed for transactional workloads, than analytics workloads.
 
-Vitess is successfully used in production in many prominent high-scale use cases, and its userbase and community are exploding. I'm aware of a lot of companies actively migrating to it or evaluating it. It's definitely worth looking at if you're running a custom-sharded platform on MySQL.
+Vitess is open source, with backing from PlanetScale.
+I've known the PlanetScale founders for a while, and recently had a chance to catch up on the status and progress, and hear their vision for the future of the product.
+What they've already done is impressive, and what they're building is compelling.
+
+Vitess is successfully used in production in many prominent high-scale use cases, and its userbase and community are exploding.
+I'm aware of a lot of companies actively migrating to it or evaluating it.
+It's definitely worth looking at if you're running a custom-sharded platform on MySQL.
