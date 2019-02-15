@@ -9,6 +9,8 @@ image: "/media/2019/02/unsplash-photos-fGvBIWgUifo.jpg"
 thumbnail: "/media/2019/02/unsplash-photos-fGvBIWgUifo.tn-500x500.jpg"
 categories:
 - Databases
+tags:
+- PostgreSQL
 ---
 I wrote [yesterday](/blog/vitess/) about [Vitess](https://vitess.io), a scale-out sharding solution for MySQL.
 Another similar product is [Citus](https://www.citusdata.com/), which is a scale-out sharding solution for PostgreSQL.
