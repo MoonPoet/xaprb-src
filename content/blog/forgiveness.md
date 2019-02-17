@@ -3,7 +3,7 @@ title: 'Forgiveness'
 date: "2019-02-08T00:00:00-05:00"
 url: "/blog/forgiveness"
 description: "There are two types of forgiveness, one of which holds the power to transform."
-tldr: "There are two types of forgiveness, one of which holds the power to transform. When you forgive, you release yourself from the strongest prison and set out on a path of healing."
+tldr: "There are two types of forgiveness, one of which holds the power to transform. When you forgive, you release yourself from the strongest prison ever built, and set out on a path of healing."
 credit: "https://unsplash.com/photos/AovflqCt9Ws"
 image: "/media/2019/02/unsplash-photos-AovflqCt9Ws.jpg"
 thumbnail: "/media/2019/02/unsplash-photos-AovflqCt9Ws.tn-500x500.jpg"
@@ -27,7 +27,7 @@ The second type of forgiveness is something you do for yourself when you've been
 It's a release of resentments and ill will towards the person who hurt you.
 With a little thought, it's fairly obvious that holding a grudge harms the grudge-holder, not the target of the grudge.
 It's like drinking poison and thinking that your enemy will fall ill.
-When you forgive, you free yourself, you release yourself from the strongest prison.
+When you forgive, you free yourself, you release yourself from the strongest prison ever built.
 It's also something you can do without the other person's participation or even knowledge.
 It isn't conditioned upon their repentance or apology.
 

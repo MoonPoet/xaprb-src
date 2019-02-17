@@ -3,7 +3,7 @@ title: 'You Guys'
 date: "2019-02-10T20:26:00-05:00"
 url: "/blog/you-guys"
 description: "'You guys' is gendered, not inclusive, amplifies a power dynamic, and there are good alternatives. Use them!"
-tldr: "'You guys' is gendered, not inclusive, amplifies a power dynamic, and there are good alternatives. This article presents the arguments against calling groups 'guys' and uses real people's feelings rather than a dictionary as evidence."
+tldr: "'You guys' is gendered, not inclusive, amplifies a power dynamic, and there are good alternatives. This article presents the arguments against calling groups 'guys' and uses real people's feelings as evidence, instead of the dictionary."
 credit: "https://unsplash.com/photos/KQXeabDx7dI"
 image: "/media/2019/02/unsplash-photos-KQXeabDx7dI.jpg"
 thumbnail: "/media/2019/02/unsplash-photos-KQXeabDx7dI.tn-500x500.jpg"

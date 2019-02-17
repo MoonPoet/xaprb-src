@@ -2,8 +2,8 @@
 title: Apologies
 date: "2019-02-07T00:00:00-05:00"
 url: "/blog/apologies"
-description: "Apologize for what happened. Your intentions are irrelevant."
-tldr: "Apologize for what happened. Your intentions are irrelevant. You should focus exclusively on the harm, your regret, and your resolve not to repeat."
+description: "Apologize for what happened, not what you meant to do. Your intentions are irrelevant."
+tldr: "Apologize for what happened, not what you meant to do. Your intentions are irrelevant. You should focus exclusively on the harm, your regret, and your resolve not to repeat."
 credit: "https://unsplash.com/photos/9gz3wfHr65U"
 image: "/media/2019/02/unsplash-photos-9gz3wfHr65U.jpg"
 thumbnail: "/media/2019/02/unsplash-photos-9gz3wfHr65U.tn-500x500.jpg"

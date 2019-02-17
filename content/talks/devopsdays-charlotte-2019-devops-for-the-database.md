@@ -9,7 +9,8 @@ video: "https://www.youtube.com/watch?v=DzKbteX7__8"
 slides: "/slides/devopsdays-charlotte-2019-devops-for-the-database/"
 thumbnail: "/slides/devopsdays-charlotte-2019-devops-for-the-database/thumbnail.jpg"
 image: "/slides/devopsdays-charlotte-2019-devops-for-the-database/unsplash-photos-oyXis2kALVg.jpg"
-description: "Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that succeeded---and those who haven't."
+description: "Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling---and those who've tried."
+tldr: "Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling---and those who've tried."
 ---
 Why is it hard to apply DevOps principles and practices to databases, and how can we get better at it? This talk explores real-life stories that answer these two questions, through the perspectives of teams that have changed the entrenched culture, processes, and tooling---and those who've tried.
 <!--more-->
