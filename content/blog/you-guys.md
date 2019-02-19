@@ -22,9 +22,9 @@ After spending a few years working very intentionally to [listen to women](/blog
 The objective facts, as I see them, are not to be found in the dictionary or in appeal to authority.
 Anyone who takes a little time to listen and observe will find the following to be true in their own experience and that of others:
 
-- Guys is often gendered in usage, no matter what the dictionary says.
-- Addressing a mixed-gender group as "guys" is not inclusive when spoken by a man, because of the inter-group power dynamics.
-- Because of those same dynamics, women can call each other "guys" without giving men license to use the same term in the same way or to object.
+- Guys is often used in a gendered way, no matter what the dictionary says.
+- Addressing a mixed-gender group as "guys" is not inclusive when a man does it, because of the inter-group power dynamics.
+- Because of those same dynamics, women can call each other "guys" without giving men license to use the term in the same way, or to object.
 - As men, we don't get to tell women how they should feel. We should listen to how they *do* feel and respect it.
 - There are obvious and easy alternatives in common usage that are gender-neutral and inclusive, and men should use them.
 - Men who stop using this term aren't impoverished in the least; to the contrary, they enrich themselves and empower others.
@@ -92,7 +92,7 @@ Consider Silvia's reaction when AWS CEO Andy Jassy called DBAs "guys" during a k
 >
 > You guys... cus all DBAs are guys 😒#reInvent
 
-It *bothered* Silvia. Don't argue whether that's wrong or right. It bothered her so much that she mentioned it in another venue, on [a podcast where she was a guest](https://www.realworlddevops.com/episodes/episode-001-silvia-botros):
+It *bothered* Silvia. Don't argue whether that's wrong or right. It bothered her so much that she mentioned it again on another occasion, when she was [a guest on a podcast](https://www.realworlddevops.com/episodes/episode-001-silvia-botros):
 
 > Silvia: It's funny you mentioned that because in a [recent keynote by Andy Jassy](https://www.youtube.com/watch?v=ZOIkOnW640A) who's the CEO of AWS, that's the thing he definitely beat on. Where he basically called DBA's the old guard and that "those guys", and I quote those guys, are basically sitting in the way of engineers building things.
 
@@ -137,6 +137,7 @@ Even if the man doesn't appear to *mean* anything by it, it'll be clear that he 
 This makes an under-represented person feel like that man is less likely to be the ally they might need.
 This is especially true if there's context (such as the industry) that already subtly or not-so-subtly implies women don't belong.
 When a woman says "you guys" to such a group, women are far less likely to feel like they're being told they don't belong.
+There's no power differential between women and women, but there is between men and women.
 
 And there are lots of reasons women might say "you guys" that actually point back to the same problematic dynamics from a different angle.
 Echoing Caitie from above, for example, is Nicole's sentiment:
@@ -171,7 +172,7 @@ Inclusivity is about finding something that's welcoming for *all*.
 
 ### Objection: But Everyone Else Is Doing It Too
 
-By "everyone" do you mean everyone in a male-dominated industry like technology?
+By "everyone," do you mean everyone in a male-dominated industry like technology?
 
 Everyone isn't doing it, and it's not just women who object and are trying to change.
 Tons of guys are making the effort to do better, too.
@@ -199,13 +200,14 @@ Which is practically a copy-paste (a good thing!) of this advice from Better All
 >
 > I try not to use "guys" to refer to a group of people. Women and non-binary people don't need another reminder they're working in a male-dominated culture. If it slips out, I simply add, "Excuse me, I meant to say you all."
 
+There are lots of empathetic, thoughtful guys out there trying to make things better for all of us.
+
 > [Ben Hocking](https://twitter.com/BenH343/status/1094935179188203521)
 >
 > I still struggle with this. I'm teaching CS 2102 this semester, which thankfully has a significant number of women in it, and I still catch myself saying "you guys". It's a hard habit to break, but I am trying.
 
 Again, those are tweets I collected as they scrolled through my own timeline.
 I didn't go searching for those examples.
-There are lots of empathetic, thoughtful guys out there trying to make things better for all of us.
 
 ### Objection: It's Too Hard To Break The Habit
 
@@ -240,13 +242,13 @@ There's nothing more powerful than trying:
 >
 > yes it is a hard habit to break... but also yes, us who are not guys notice when we can see you are making an effort vs not giving a damn.
 
-I like this suggestion from Sean:
+I like this idea from Sean:
 
 > [Sean Kilgore](https://twitter.com/log1kal/status/1095004082627137537)
 >
 > Suggestion: Find a person you trust, be accountable to each other, and call each other out when you use guys. It's just one way to help yourself change, and it's worked the best for me.
 
-Another thought about difficulty of breaking a habit versus how much you care:
+Another thought about the difficulty of breaking a habit versus how much you care:
 
 > [Samantha Zeitlin](https://twitter.com/SamanthaZeitlin/status/1046457660936089600)
 >
@@ -354,8 +356,8 @@ Or this:
 
 ### Why Fight So Hard To Keep It?
 
-As a parting note, I'd like to say that I understand if people don't yet realize why "you guys" isn't inclusive.
-If you're an American, you grew up unconsciously using it and didn't think much about it.
+As a parting note, I understand if you don't yet realize why "you guys" isn't inclusive.
+If you're an American, you grew up unconsciously using it, formed a habit, and didn't think much about it.
 If you're a non-native English speaker, you're getting mixed signals---and I've seen a lot of people struggling with this when they are not fluent in English.
 
 All very understandable.
@@ -368,6 +370,7 @@ What's not acceptable is men who fight to assert and retain the right to say "yo
 They're fighting to maintain a toxic power dynamic---to maintain psychological dominance over women by signaling to them that they aren't equal, they don't belong.
 This is a huge red flag in my personal experience.
 I have several times seen a man argue passionately that the dictionary should prevail, and in every single case that man had other problematic behaviors too.
+*It is unacceptable to say that the dictionary is more important than the feelings of a real live person who is physically right in front of you.*
 
 ### References and Notes
 
