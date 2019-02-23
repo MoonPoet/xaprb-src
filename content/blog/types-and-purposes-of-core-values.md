@@ -17,7 +17,57 @@ As I did this, patterns began to emerge, and it's pretty clear to me now that va
 I came away from this convinced that you can tell a lot about a company by studying what *types* of values they have, and what the company's purpose in having values appears to be.
 <!--more-->
 
+TODO
+
+Put a quick list of categories and companies here, and the types of values each company uses
+
+https://www.zapposinsights.com/start-here
+
+https://www.zapposinsights.com/about/core-values
+
+Facebook
+
+- altria
+- exxon
+- microsoft
+- https://blog.heptio.com/our-values-8d897f016342
+
+* Descriptors of people — Netflix describes an ideal team member
+* Vision of the ideal team/company
+* Expectations of behaviors by individuals
+
+Big companies are kind of like posting values as a smoke screen, an "indulgence" so they can commit evil on a mass scale and point to good on a small scale.
+
 The rest of this post will consist of quoting various company values and a little light commentary.
+
+### Equifax
+
+### Altria
+
+Our Values
+​ guide our behavior as we pursue our Mission and our business strategies.​
+
+Integrity, Trust And Respect​
+​​We believe in operating with integrity, trust and respect, both as individuals and as a family of companies.​​
+Passion To Succeed​
+​​We demonstrate a passion to succeed in all aspects of our businesses.​​
+Executing With Quality​
+​​We believe in executing with quality by understanding and responding to our companies' adult tobacco and wine consumers' preferences.​​​
+Driving Creativity Into Everything We Do​
+​​We believe in driving creativity into everything we do, resulting in innovation and continuous improvement for our companies' adult tobacco and wine consumers and our business processes.​​​
+Sharing With Others
+​We believe in sharing with others, unleashing the tremendous resources of our people as a force for good into the communities in which we live and work.​​
+
+
+### Pfizer
+
+http://www.pfizer.com.cn/(S(jgkplybmqwnq0d45b3xcm2ek))/about/pfizer_s_core_values_en.aspx
+
+Their image is "fictional character"
+
+### Exxon
+
+https://careers.exxonmobil.com/en/about-us/culture-and-values
 
 ### Netflix
 
