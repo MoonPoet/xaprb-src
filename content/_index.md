@@ -7,4 +7,4 @@ credit: "https://unsplash.com/photos/Ilx2xUpAKEI"
 [![Baron Schwartz](/baron-square.jpg)](/about/)
 
 I'm the founder and CTO of [VividCortex](https://vividcortex.com), author of
-several books, and creator of various open-source software. I write about topics such as technology, entrepreneurship, and fitness. [More about me](/about/).
+several books, and creator of various open-source software. I write about topics such as technology, entrepreneurship, and fitness, and I tweet at [@xaprb](https://twitter.com/xaprb). [More about me](/about/).
