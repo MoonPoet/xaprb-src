@@ -1,14 +1,13 @@
 ---
 url: /blog/2015/12/16/outlook-best-ios-gmail-app/
-author: Baron Schwartz
-categories:
-- Web
-tags:
-- Mobile
 date: 2015-12-16T08:28:38-05:00
+title: Why Outlook is the best iOS GMail App
 description: "The best iPhone/iPad GMail app is not GMail, Inbox, or Mail, it's Outlook."
 image: "/media/2015/12/mailboxes.jpg"
-title: Why Outlook is the best iOS GMail App
+thumbnail: /media/2015/12/mailboxes.tn-500x500.jpg
+credit: "https://www.flickr.com/photos/zieak/1753088298/"
+categories:
+- Email
 ---
 
 I switched to an iPhone about 6 months ago and have found it superior to the
@@ -89,5 +88,3 @@ Microsoft has cleverly realized they have an opportunity to capitalize on it.
 I keep holding out hope for Google to get their act together and create an
 actually respectable email app for the iPhone, but with each new release I still
 find myself liking Outlook better.
-
-[Picture by Ryan McFarland on Flickr](https://www.flickr.com/photos/zieak/1753088298/).
