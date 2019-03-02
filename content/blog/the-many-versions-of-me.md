@@ -35,6 +35,12 @@ This is not an original thought.
 It's an expression of several concepts in Buddhist schools of thought, as well as various philosophies and theologies.
 I'd just never seen so clearly before how it applies to my concepts of self and passage of time.
 
+Here's how Thich Nhat Hanh articulates these thoughts, from [The Art Of Living]({{ amz 1846045096 }}):
+
+> The present moment contains both the past and the future.
+>
+> Can you see how you are continued in your parents, in your brothers and sisters, in your teachers and friends?
+
 This article seems to fall far short of expressing my thoughts.
 The words I can find are inadequate to the words I'm reaching for but not finding.
 Still, hopefully there is something in you, dear reader, that responds and completes the sentences I cannot.
