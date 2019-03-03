@@ -66,7 +66,7 @@ Spark's quick-replies should work well for that.
 But it's a relatively fixed list without a lot of flexibility, and the resulting emails are a bit weird, and use a different font and have an image/icon, and go only to the sender instead of the whole list, and in general it doesn't end up working as well as I wanted it to.
 
 **Calendar**. The calendar often shows me useless times.
-When I go to it, it’s often showing something like 12:00 am through 11:00am, when the current time is 2:30pm.
+When I go to it, it's often showing something like 12:00 am through 11:00am, when the current time is 2:30pm.
 On mobile, the calendar also doesn't show a line to visually demarcate the current time of day, so it's disconcerting to scroll and figure out what's next on the agenda and how far away it is.
 I also wish it would show events differently if I've accepted, rejected, or not taken action; they all look the same.
 I wish there were a few more features in the calendar, or a bit more flexibility: ability to schedule a room or other resource; "speedy" meetings that leave gaps for restroom breaks and so forth; ability to customize alert times (I prefer 2 minutes, which isn't an option in Spark).

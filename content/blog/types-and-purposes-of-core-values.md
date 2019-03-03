@@ -32,7 +32,7 @@ Facebook
 - microsoft
 - https://blog.heptio.com/our-values-8d897f016342
 
-* Descriptors of people — Netflix describes an ideal team member
+* Descriptors of people --- Netflix describes an ideal team member
 * Vision of the ideal team/company
 * Expectations of behaviors by individuals
 
@@ -91,10 +91,10 @@ The takeaway is that Netflix is deadly serious and absolutely clear about their 
 
 ### Comcast
 
-> Comcast’s culture is built on integrity and respect---with the goal of working together to drive ourselves and our businesses to always be creative, innovative and competitive. Our core values guide us day in and day out. We are guided by:
+> Comcast's culture is built on integrity and respect---with the goal of working together to drive ourselves and our businesses to always be creative, innovative and competitive. Our core values guide us day in and day out. We are guided by:
 > 
 > - An entrepreneurial spirit to embrace good ideas, bring them to life quickly, and constantly look for new ways to innovate for our customers.
-> - Acting with integrity. It’s as simple as doing what’s right and treating people the right way.
+> - Acting with integrity. It's as simple as doing what's right and treating people the right way.
 > - Respect for each other. From the very beginning, we have been committed to a culture of fairness, respect, and inclusion: within our leadership and our workforce, with our suppliers, in our programming, and in the communities we serve.
 > - Giving back to the community. We have a long history of supporting local communities and organizations, developing programs and partnerships, and mobilizing our resources to connect people and inspire positive and substantive change.
 
@@ -110,11 +110,11 @@ It's easy to pick on Comcast, so I won't go into further details, other than to 
 
 > Five primary values guide every action we take:
 > 
-> * **What’s right for customers**. We place customers at the center of everything we do. We want to exceed customer expectations and build relationships that last a lifetime.
-> * **People as a competitive advantage**. We strive to attract, develop, motivate, and retain the best team members — and collaborate across businesses and functions to serve customers.
-> * **Ethics**. We’re committed to the highest standards of integrity, transparency, and principled performance. We do the right thing, in the right way, and hold ourselves accountable.
+> * **What's right for customers**. We place customers at the center of everything we do. We want to exceed customer expectations and build relationships that last a lifetime.
+> * **People as a competitive advantage**. We strive to attract, develop, motivate, and retain the best team members --- and collaborate across businesses and functions to serve customers.
+> * **Ethics**. We're committed to the highest standards of integrity, transparency, and principled performance. We do the right thing, in the right way, and hold ourselves accountable.
 > * **Diversity and inclusion**. We value and promote diversity and inclusion in all aspects of business and at all levels. Success comes from inviting and incorporating diverse perspectives.
-> * **Leadership. We’re all called to be leaders**. We want everyone to lead themselves, lead the team, and lead the business — in service to customers, communities, team members, and shareholders.
+> * **Leadership. We're all called to be leaders**. We want everyone to lead themselves, lead the team, and lead the business --- in service to customers, communities, team members, and shareholders.
 
 Wells Fargo's [values](https://www.wellsfargo.com/about/corporate/vision-and-values/) are vague and many are non-actionable, like Comcast's.
 But unlike Comcast's, at least Wells Fargo's values are cohesive: each appears to be a statement of things the company "believes in," for whatever that's worth.
@@ -124,7 +124,7 @@ There's a similarity that runs through them.
 
 > **Core Values**
 > 
-> We have lots of fun doing work we love—and these tenets drive everything we do.
+> We have lots of fun doing work we love---and these tenets drive everything we do.
 > 
 > 1. **Craft**. We aim for excellence, and our love for what we do compels us to reach a higher standard. You can be proud of the work you do here.
 > 2. **Sustainable Flow**. The state of mind when time flies and energy is focused. We make time for it every day so we can create innovative solutions that people love.
@@ -153,11 +153,11 @@ Coupa states their values and then defines them with short essays.
 > 
 > **ENSURE CUSTOMER SUCCESS**
 > 
-> Where industry has traditionally focused on customer satisfaction, Coupa focuses on customer success. To us, customer success is more than just an aspirational job title or a new spin on the customer service function. It’s an evolution of customer service, requiring new skill sets and mindsets to staff our customer success organization
+> Where industry has traditionally focused on customer satisfaction, Coupa focuses on customer success. To us, customer success is more than just an aspirational job title or a new spin on the customer service function. It's an evolution of customer service, requiring new skill sets and mindsets to staff our customer success organization
 > 
 > What Does This Mean For You?
 > 
-> The customer success model aligns the interests of Coupa with the interests of the customer in a quantifiable way. We are much more proactively involved in a customer’s success over customer service, which has historically functioned more as an ad-hoc troubleshooting service driven by upsell opportunities. You won’t find that here at Coupa. We are in it to win it with you.
+> The customer success model aligns the interests of Coupa with the interests of the customer in a quantifiable way. We are much more proactively involved in a customer's success over customer service, which has historically functioned more as an ad-hoc troubleshooting service driven by upsell opportunities. You won't find that here at Coupa. We are in it to win it with you.
 > 
 > **FOCUS ON RESULTS**
 > 
@@ -165,15 +165,15 @@ Coupa states their values and then defines them with short essays.
 > 
 > What Does This Mean For You?
 > 
-> There aren’t many enterprise software companies out there who want to be held accountable to their results. With this as a core value at Coupa, our customers not only know they will see results, they expect it - that’s the type of “good company” we surround ourselves with. We see it as our most important responsibility, day in and day out, to produce results for our customers. That’s our bottomline.
+> There aren't many enterprise software companies out there who want to be held accountable to their results. With this as a core value at Coupa, our customers not only know they will see results, they expect it - that's the type of "good company" we surround ourselves with. We see it as our most important responsibility, day in and day out, to produce results for our customers. That's our bottomline.
 > 
 > **STRIVE FOR EXCELLENCE**
 > 
-> Striving for excellence is about never lowering the bar. Too many customers have fallen victim to the sub-par attitude and behaviors of their vendors – once they sign the deal, get their reference and the logo recognition, they’re gone and the client rarely hears from them again. We strive for success by raising the bar for ourselves, our customers and for the enterprise software market.
+> Striving for excellence is about never lowering the bar. Too many customers have fallen victim to the sub-par attitude and behaviors of their vendors --- once they sign the deal, get their reference and the logo recognition, they're gone and the client rarely hears from them again. We strive for success by raising the bar for ourselves, our customers and for the enterprise software market.
 > 
 > What Does This Mean For You?
 > 
-> Here at Coupa, we constantly ask the question “How can we be better than we were yesterday?” This way of thinking ensures our customers are not only receiving great results, but are getting the best we can offer on a day to day basis. We are constantly improving and innovating which means our customers have the best product the market has to offer – bar none.
+> Here at Coupa, we constantly ask the question "How can we be better than we were yesterday?" This way of thinking ensures our customers are not only receiving great results, but are getting the best we can offer on a day to day basis. We are constantly improving and innovating which means our customers have the best product the market has to offer --- bar none.
 
 Coupa's [values](https://www.coupa.com/company/core-values/) are focused 100% on their *customers*.
 The intended audience of this web page isn't employees, it's customers (or prospective customers).
@@ -183,10 +183,10 @@ Coupa is maniacally customer-focused.
 
 ### Honeycomb
 
-> **“Fast and close to right is better than perfect”**
+> **"Fast and close to right is better than perfect"**
 > * Take pride in your craft and ship relentlessly.
 > * Use your judgment. Ask forgiveness, not permission.
-> * “Don’t let perfect be the enemy of good”
+> * "Don't let perfect be the enemy of good"
 > * *Code in production is worth two in canary*.
 
 Honeycomb's [values](https://www.honeycomb.io/blog/honeycomb-values-2018/) are those of a relatively early company, prudently not doing too much too soon.

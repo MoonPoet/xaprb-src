@@ -23,7 +23,7 @@ It's like swimming in a swift, powerful river: if I'm "passive" I can simply flo
 
 Imagine I'm present when someone who occupies the same power spaces as I, does something objectionable.
 For example, another man says something about a woman.
-Perhaps the man says, "I just kiss. I don’t even wait. And when you’re a star, they let you do it. You can do anything."
+Perhaps the man says, "I just kiss. I don't even wait. And when you're a star, they let you do it. You can do anything."
 
 What do I do?
 
