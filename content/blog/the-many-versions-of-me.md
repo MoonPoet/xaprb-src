@@ -3,7 +3,7 @@ title: 'The Many Versions of Me'
 date: "2019-02-27T19:05:14-05:00"
 url: "/blog/the-many-versions-of-me"
 description: "Past and future versions of me are present within me in the now."
-tldr: "Past and future versions of me are present within me in the now. This follows naturally from the observation that I'm able to remember thoughts and feelings from long ago."
+tldr: "Past and future versions of me are present within me in the now. It's a thought I've often had, but it gained a new potency when I looked more deeply into the fact that I'm able to remember thoughts and feelings from long ago."
 credit: "https://unsplash.com/photos/pkKRdpurSPw"
 image: "/media/2019/02/unsplash-photos-pkKRdpurSPw.jpg"
 thumbnail: "/media/2019/02/unsplash-photos-pkKRdpurSPw.tn-500x500.jpg"
