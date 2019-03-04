@@ -101,7 +101,7 @@ Slack has a chance to have a fresh start.
 And by inventing communication in a way that I think is fundamentally better, there's a chance to fix many past mistakes.
 I haven't gotten Slack-spam yet, but I get email-spam constantly.
 
-And I'm excited for Slack's future, because Slack's market is massive.
+And I'm excited for Slack's future, because Slack's potential is enormous.
 When I look at the products I use most, they're all communication tools.
 I use 6-10 different communication tools every day even though I try to limit them.
 Most people probably use many, many more.
