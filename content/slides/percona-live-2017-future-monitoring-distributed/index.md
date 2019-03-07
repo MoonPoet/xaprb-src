@@ -1,5 +1,5 @@
 ---
-title: Percona Live 2017 Future Monitoring Distributed
+title: The Future of Monitoring is Distributed
 date: "2017-04-26"
 url: "/slides/percona-live-2017-future-monitoring-distributed/"
 image: "/slides/percona-live-2017-future-monitoring-distributed/cover.jpg"
