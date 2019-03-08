@@ -1,5 +1,5 @@
 ---
-title: "Evaluating Candidates' Performance Claims, Part 1: Who Achieved What?"
+title: "Evaluating Candidates' Performance Claims: Who Achieved What?"
 date: "2015-11-28"
 url: "/blog/evaluating-candidates-performance-claims-part-1-who-what"
 description: ""
