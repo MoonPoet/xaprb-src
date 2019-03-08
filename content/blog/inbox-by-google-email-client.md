@@ -34,6 +34,7 @@ I've used Inbox to run my mail-centric life for years now.
 And now when I look at GMail, I have a strong aversion to its clutter, its too-many features I don't use, its design.
 I don't even like its colors: Inbox is a soothing blue, GMail is a jarring red all over the place (at least on the iPhone).
 I find myself hoping that someone will write a Chrome extension that makes GMail look and act like Inbox.
+(Update: I wrote [a little CSS with Stylebot](https://gist.github.com/xaprb/65f146b2c9c327e572d7c73f8525a7e6) that improves GMail quite a bit.)
 
 Someone might do that, but that won't help me on my iPhone and iPad, where Inbox is the best, cleanest, simplest, fastest, most reliable app I've tried.
 So I want to tell the creators of Inbox: you did great work, and I'm sorry it's being discontinued.
