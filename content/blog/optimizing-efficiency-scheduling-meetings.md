@@ -155,3 +155,9 @@ Ideally, share enough information that people can schedule things with you in a 
 If that doesn't work, use the most convenient and feasible alternative that does work.
 Apps like Calendly and similar are huge productivity boosters.
 Good luck scheduling, and let me know your favorite tips not listed here!
+
+Update: important tip shared with me on Twitter.
+
+> [Gwen (Chen) Shapira](https://twitter.com/gwenshap/status/1104220552795832320)
+>
+> [@xaprb](https://twitter.com/xaprb) wrote tips for optimizing the time spent scheduling, But he missed the best tip: Have fewer meetings.
