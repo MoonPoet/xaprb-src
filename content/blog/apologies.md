@@ -31,3 +31,7 @@ No explanation, no defense, no excuse, no good intentions, no nothing.
 It should focus solely and exclusively on the harm, the regret, and the resolve not to repeat.
 
 Anything added, hedged, or withheld weakens and undermines the apology.
+
+### References and Further Reading
+
+* [Celeste Headlee: The power of an apology](https://www.linkedin.com/pulse/power-apology-celeste-headlee/).

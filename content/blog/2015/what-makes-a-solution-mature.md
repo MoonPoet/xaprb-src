@@ -4,18 +4,18 @@ categories:
 - Databases
 date: 2015-05-25T14:40:42-04:00
 title: "What Makes A Database Mature?"
-description: "Read this before you ask me to buy your database."
+description: "For my purposes, maturity really means demonstrated capability and quality with a lot of thought given to all the little things."
 image: /media/2015/05/bristlecone.jpg
+thumbnail: /media/2015/05/bristlecone.tn-500x500.jpg
+credit: "https://www.flickr.com/photos/yenchao/9187247776/"
 tags:
-  - PostgreSQL
-  - Best Of
   - Databases
 ---
-
 Many database vendors would like me to take a look at their products and
 consider adopting them for all sorts of purposes. Often they're pitching
 something quite new and unproven as a replacement for mature, boring technology
 I'm using happily.
+<!--more-->
 
 I would consider a new and unproven technology, and I often have. As I've
 written previously, though, [a real evaluation takes a lot of
@@ -26,8 +26,6 @@ Perhaps the most important thing I'm considering is whether the product is
 mature. There are different levels of maturity, naturally, but I want to
 understand whether it's mature enough for me to take a look at it. And in that
 spirit, it's worth understanding what makes a database mature.
-
-<!--more-->
 
 For my purposes, maturity really means *demonstrated capability and quality with
 a lot of thought given to all the little things*.
@@ -179,8 +177,6 @@ different workloads, and I want to hear what's good and bad about it.
 match bloggers' claims, a smaller corpus online is more credible as a
 result.)
 
-![Roots](/media/2015/05/roots.jpg)
-
 These kinds of dynamics help explain why most of the fast-growing emerging
 databases are opensource.  Opensource has an automatic advantage because of free
 users vouching for the product.  Why would I ever consider a proof-of-concept to
@@ -218,7 +214,3 @@ favorite phrases is "no is a complete sentence.") But enough companies have
 asked me, and I have enough friends at these companies, that I thought it would
 be helpful to write this up. Hopefully this serves its intended purpose and
 doesn't hurt any feelings.
-
-[Bristlecone pine by
-yenchao](https://www.flickr.com/photos/yenchao/9187247776/), [roots by
-mclcbooks](https://www.flickr.com/photos/39877441@N05/4672973273/)

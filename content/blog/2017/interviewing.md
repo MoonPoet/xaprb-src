@@ -4,7 +4,7 @@ author: Baron Schwartz
 categories:
 - Leadership
 date: 2017-04-03T20:38:52-07:00
-description: "By following one simple rule, literally anyone can avoid mistakes and make dramatically better hiring decisions."
+description: "Following this simple rule can help avoid mistakes and make better hiring decisions."
 image: "/media/2017/04/hexnut.jpg"
 title: Interviewing
 ---
@@ -28,6 +28,8 @@ stress you're experiencing is coming directly from that."
 I couldn't understand at first, but I decided to put aside my judgment and do
 what he told me. And it worked. Here's a synopsis.
 
+### Stop Fearing, Start Listening
+
 The main thing I was doing was trying to sell candidates on the opportunity. I
 was afraid they wouldn't join, so I was trying to convince them to. This isn't
 inherently bad, but my fear of losing a candidate was blinding me.
@@ -44,6 +46,8 @@ candidate. There's no way you can do that when you're afraid they won't join.
 You're also trying to convince them they're right for the job, and they
 naturally want to believe they are, so you're setting _them_ up for failure too,
 by preventing them from sensing and opting out of a bad situation.
+
+### Ask Open-Ended Questions, No Hypotheticals
 
 The second big problem is asking hypothetical questions, such as "how would you
 design this system?" or "if you were in in this situation, what would you do?"
@@ -96,6 +100,8 @@ interviewers, it's good to stay away from that; the main thing is to ask only
 past-tense questions, and dig deeper with followups that get into more and more
 specifics.
 
+### Hiring For Trajectory
+
 But... but... shouldn't you hire for trajectory, and not just experience? Sure. You
 can absolutely tell whether someone's a shooting star by understanding how they
 approached tough challenges in past jobs (even if those tough challenges were
@@ -115,6 +121,10 @@ else that can be gotten through with acting skills or that provides the
 candidate with subliminal hints about what you're looking for, you'll avoid the
 most common traps.
 
+### Books Worth Reading
+
+[![Who](/media/book-covers/who.jpg# 3dbook)]({{< amz 0345504194 >}})
+
 I'll end this post by saying that people who recruit fulltime, for a living, can
 often get good results by ignoring some of this advice. But just like occasional
 negotiators will end up being taken advantage of by those who do it for a
@@ -128,8 +138,11 @@ If you're interested in books that can help you improve your hiring process, I'd
 suggest taking a look at
 [Topgrading]({{< amz 1591845262 >}})
 by Brad Smart, or
-[Who]({{< amz 0345504194 >}}) by
-Geoff Smart. I've read a _lot_ of books on interviewing and hiring, and although
+[Who]({{< amz 0345504194 >}}) by Geoff Smart. 
+
+[![Topgrading](/media/book-covers/topgrading.jpg# 3dbook)]({{< amz 1591845262 >}})
+
+I've read a _lot_ of books on interviewing and hiring, and although
 I don't fully conform to their advice, their books are the closest published
 materials I've found to the hiring process my CEO coach and I have developed.
 Many other books are written by professional recruiters and overlook the fact

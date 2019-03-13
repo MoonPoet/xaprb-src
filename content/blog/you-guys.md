@@ -382,3 +382,6 @@ I have several times seen a man argue passionately that the dictionary should pr
 - [MEN, a podcast examining masculinity](https://www.sceneonradio.org/men/)
 - [Guys and dudes | language: a feminist guide](https://debuk.wordpress.com/2016/02/21/guys-and-dudes/)
 - [When is "guys" gender neutral? I did a survey! - Julia Evans](https://jvns.ca/blog/2013/12/27/guys-guys-guys/)
+- [Plural You](https://vosotros.glitch.me/)
+- [NPM's Guys Jar](https://blog.npmjs.org/post/120475872425/this-is-npms-guys-jar-we-didnt-invent-the)
+- [Words matter-choose inclusive language for an inclusive Tech – Rabeb Othmani](https://rabebothmani.com/2019/02/21/words-matter-choose-inclusive-language-for-an-inclusive-tech/)

@@ -24,11 +24,14 @@ What's so unusual is that she doesn't make me want to argue with her; I just wan
 It feels like she's reminding me gently of what I already knew, but forgot or didn't know how to *use*.
 So, rather than a feeling of shame, competitiveness, or defensiveness, I feel affirmed when I listen to her.
 
+[![We Need To Talk](/media/book-covers/we-need-to-talk.jpg# 3dbook)]({{< amz 0062669001 >}})
+
 I think I know why.
 She has that ability to influence because she's a great listener herself.
 In fact, even her TED talk must be a product of deep listening.
 It couldn't have come from anything else.
 
+Celeste wrote a book about this too, [We Need To Talk]({{< amz 0062669001 >}}).
 We need to talk to each other more than we ever have.
 We need to listen deeply and speak lovingly.
 But this isn't something we are born knowing how to do.

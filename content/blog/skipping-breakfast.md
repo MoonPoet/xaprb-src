@@ -234,3 +234,8 @@ She paged through it.
 "This is great," she said.
 "You're eating really well. I love what I'm seeing here---" and she named a few foods and praised me.
 "But I want you to eat breakfast more often," she said.
+
+### References and Further Reading
+
+* [Effect of breakfast on weight and energy intake: systematic review and meta-analysis of randomised controlled trials | The BMJ](https://www.bmj.com/content/364/bmj.l42)
+* [Tim Spector: Breakfast—the most important meal of the day? - The BMJ](https://blogs.bmj.com/bmj/2019/01/30/tim-spector-breakfast-the-most-important-meal-of-the-day/)
