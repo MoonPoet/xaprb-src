@@ -1,7 +1,7 @@
 ---
 title: 'Why DBAs are the Canaries in the IT Coal Mine'
 date: "2015-05-15"
-url: "/blog/2015/why-dbas-canaries-coal-mine"
+url: "/blog/why-dbas-canaries-coal-mine"
 description: "Trouble with DBAs should be seen as a symptom, rather than a cause, of overall IT dysfunction."
 credit: "https://unsplash.com/photos/mfCFuPfTtdU"
 image: "/media/2015/05/unsplash-photos-mfCFuPfTtdU.jpg"
