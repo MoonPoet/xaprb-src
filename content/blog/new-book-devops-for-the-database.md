@@ -2,8 +2,8 @@
 title: 'New Book: DevOps for the Database'
 date: "2019-03-14T15:17:36-04:00"
 url: "/blog/new-book-devops-for-the-database"
-description: ""
-tldr: ""
+description: "I've written a new 65-page book about why and how some organizations deliver value to customers fast, run data-intensive applications with high quality, and have great engineering cultures---and why some don't."
+tldr: "I've written a new 65-page book about why and how some organizations deliver value to customers fast, run data-intensive applications with high quality, and have great engineering cultures---and why some don't."
 credit: "https://unsplash.com/photos/EHMTGqCw7Xc"
 image: "/media/2019/03/unsplash-photos-EHMTGqCw7Xc.jpg"
 thumbnail: "/media/2019/03/unsplash-photos-EHMTGqCw7Xc.tn-500x500.jpg"
