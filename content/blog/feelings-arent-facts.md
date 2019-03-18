@@ -34,6 +34,10 @@ Knowing this, I can be a spectator to my feelings, instead of being involved in 
 I can know, "I feel disrespected" and at the same time know so-and-so doesn't actually disrespect me or mean any disrespect.
 It is both true that I feel disrespected, and true that I'm not disrespected.
 
+> [Amy Hoy](https://twitter.com/amyhoy/status/1099083776330776577)
+>
+> Feelings aren't meaningless EXACTLY, but your body/mind generate feelings every second of every day, there's never a moment where some feeling isn't being manufactured, they aren't all meaningful.
+
 Thoughts, too, are real.
 When I was a kid I didn't question my thoughts.
 I thought they were more valid than feelings, more important than feelings, more true.

@@ -36,6 +36,10 @@ Even at a physical and chemical level this is true.
 When we were in the room together, we breathed the same air, and now some of the molecules of our bodies are still in each other.
 This isn't poetry or philosophy, it's science, as Thich Nhat Hanh says.
 
+> [Jessica Kerr](https://twitter.com/jessitron/status/1098587486924738561)
+>
+> Everything is everyone's who contributes to it. If you heard an idea from me and then you bring it up when it's useful, it's yours too.
+
 So yes, when I'm together with so-and-so, I'm a different person.
 Every interaction we have shapes us and leaves us different.
 We're connected, inter-being, interdependent.^[Covey writes a lot about interdependence, which is part of why I think my fleeting memory might be inaccurate.]
