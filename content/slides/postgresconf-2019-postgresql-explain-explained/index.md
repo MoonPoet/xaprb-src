@@ -65,7 +65,7 @@ class: img-right
 
 ![Airplane](tailfin.jpg# h-70pct w-90pct ofv)
 
-- It’s hard to write good queries.
+- It's hard to write good queries.
 - EXPLAIN is a key tool to get better at it.
 - But EXPLAIN is hard to use, too!
 
@@ -77,14 +77,14 @@ class: img-right
 ![Wave](wave.jpg# h-70pct w-90pct ofv)
 
 - There are many detailed EXPLAIN how-tos.
-- My goal today is “just enough” so you don’t have to study multiple in-depth sources to get started.
-- You should be able to use EXPLAIN, but it’s not necessary to be a human query planner.
-- I’ll give references where you can study details as you need them.
+- My goal today is "just enough" so you don't have to study multiple in-depth sources to get started.
+- You should be able to use EXPLAIN, but it's not necessary to be a human query planner.
+- I'll give references where you can study details as you need them.
 
 ???
-- Too many detailed, low-level sources of info adds to your work. I’m trying to fix that.
-- This talk isn’t authoritative or complete. Given an EXPLAIN, I’d like you to be able to figure out what it means.
-- You don’t need to be able to correctly predict how the optimizer will plan a query, though.
+- Too many detailed, low-level sources of info adds to your work. I'm trying to fix that.
+- This talk isn't authoritative or complete. Given an EXPLAIN, I'd like you to be able to figure out what it means.
+- You don't need to be able to correctly predict how the optimizer will plan a query, though.
 ---
 template: section
 # What is EXPLAIN?
@@ -92,9 +92,9 @@ template: section
 ---
 class: img-right
 
-![Bridge](bridge.jpg# h-70pct w-90pct ofv)
+# There's Many Ways To Run A Query
 
-# There’s Many Ways To Run A Query
+![Bridge](bridge.jpg# h-70pct w-90pct ofv)
 
 The database has many choices:
 
@@ -108,9 +108,9 @@ Relational databases are supposed to figure out *how* so you can say *what*.
 ---
 class: img-right
 
-![Plan](plan.jpg# h-70pct w-90pct ofv)
-
 # Plans and the Planner
+
+![Plan](plan.jpg# h-70pct w-90pct ofv)
 
 - Each possible way to run a query is called a plan.
 - The planner tries to find the fastest plan.
@@ -127,7 +127,7 @@ FROM tenk1 t1, tenk2 t2
 WHERE t1.unique1 < 100 AND t1.unique2 = t2.unique2;
 ```
 
-This doesn’t run the query, it just plans it and outputs the query plan.
+This doesn't run the query, it just plans it and outputs the query plan.
 
 ---
 class: compact
@@ -166,12 +166,12 @@ template: section
 
 ---
 class: img-right
-# You’re Not Supposed To Need EXPLAIN
+# You're Not Supposed To Need EXPLAIN
 
 ![Ducks](ducks.jpg# h-70pct w-90pct ofv)
 
 - In a perfect world, the database would just magically work and be fast.
-- But sometimes queries aren’t fast.
+- But sometimes queries aren't fast.
 - EXPLAIN helps you figure out what to do.
 
 ---
@@ -221,9 +221,9 @@ WHERE t1.unique1 < 100 AND t1.unique2 = t2.unique2;
 
 ???
 
-I’ve removed a lot of the detail. What’s left is the plan operations, what the documentation calls nodes.
+I've removed a lot of the detail. What's left is the plan operations, what the documentation calls nodes.
 
-Child nodes are indented. Execution goes deepest-first: children before parents. When two nodes are at the same indentation, they’re both inputs to their parent. In joins, outer table is above, inner table is below.
+Child nodes are indented. Execution goes deepest-first: children before parents. When two nodes are at the same indentation, they're both inputs to their parent. In joins, outer table is above, inner table is below.
 
 ---
 class: fullbleed
@@ -319,7 +319,7 @@ class: img-right
 
 ![Traffic](merge.jpg# h-70pct w-90pct ofv)
 
-- Performs a “zipper” operation over two sorted sets.
+- Performs a "zipper" operation over two sorted sets.
 - Each input needs to be a) an index scan in order or b) presorted with a Sort
 - Good for large tables, but has high startup cost if a sort is required
 
@@ -349,7 +349,7 @@ class: roomy
 
 - Index Only Scan is huge performance boost
 - Bitmap Index Scan has startup cost but avoids random I/O
-- Index-Only Scan won’t have Filter. Index Scan with Filter means it’s looking up rows in the heap and then filtering them.
+- Index-Only Scan won't have Filter. Index Scan with Filter means it's looking up rows in the heap and then filtering them.
 
 ---
 template: section
@@ -364,8 +364,8 @@ class: img-right, compact
 Examine the rows estimates.
 
 - If rows = number of rows in the table, the query will get worse as the table grows.
-- If rows is small but, with ANALYZE you see a high “Rows Removed By Filter”, you also have a problem.
-  - This is one of the only ways you can tell the difference between a WHERE clause that’s used to narrow the range of index values considered for scanning, versus filtering rows after they’re scanned.
+- If rows is small but, with ANALYZE you see a high "Rows Removed By Filter", you also have a problem.
+  - This is one of the only ways you can tell the difference between a WHERE clause that's used to narrow the range of index values considered for scanning, versus filtering rows after they're scanned.
 
 ---
 class: img-right
@@ -395,7 +395,7 @@ class: img-right, compact
 - Sorting small amounts of data is fine.
 - Sorting large amounts, or sorting by writing data to disk and reading it back (external sort), can be slow.
 - Sorting can be avoided with indexes (see my indexing talk) or made faster by giving sort buffers enough memory to avoid spilling to disk.
-- Sorting with LIMIT is an anti-pattern unless there’s an index to avoid a Sort operation.
+- Sorting with LIMIT is an anti-pattern unless there's an index to avoid a Sort operation.
 
 ---
 class: img-right
@@ -420,7 +420,7 @@ Compare the actual row counts to the estimates to see if the planner was making 
 If so, then statistics can be inaccurate.
 
 - Usually fix with either ANALYZE or autovacuum.
-- Correlated columns can be a problem too, and there’s recent support for this.
+- Correlated columns can be a problem too, and there's recent support for this.
 - Or empty tables.
 - Or dead tuples. VACUUM again.
 
@@ -431,7 +431,7 @@ class: img-right
 ![Stairs](stairs.jpg# h-70pct w-90pct ofv)
 
 - Is there actually a useful index?
-- Are you sure it’s useful?
+- Are you sure it's useful?
 - Is your query defeating it with a calculation?
 - Are you using LIKE? Is collation an issue?
 - Are there foreign keys, and the foreign table lacks an index to help lookup the values?
@@ -443,9 +443,9 @@ class: img-right
 
 ![Plane](plane.jpg# h-70pct w-90pct ofv)
 
-- Postgres doesn’t let you add “hints” or force particular query plans.
+- Postgres doesn't let you add "hints" or force particular query plans.
 - But you can kinda do this by messing with cost parameters or enable/disable particular access types with parameters.
-- More information is an exercise for the reader. Be sure you read the PG philosophy on why this isn’t a great idea.
+- More information is an exercise for the reader. Be sure you read the PG philosophy on why this isn't a great idea.
 ---
 class: img-right
 # Default Parameters
@@ -462,10 +462,10 @@ class: img-right, compact
 
 ![Giraffe](giraffe.jpg# h-70pct w-90pct ofv)
 
-- “never executed” means what it says.
+- "never executed" means what it says.
 - LIMIT can cause child nodes to terminate work prior to accumulating the total (max) estimated cost.
 - Merge joins can also show confusing plan info with ANALYZE, due to rewinding and rereading data.
-- The planner usually chooses to minimize the total (max) cost estimate, but in cases like a single-row subquery in an EXISTS, it’ll choose to minimize the startup cost.
+- The planner usually chooses to minimize the total (max) cost estimate, but in cases like a single-row subquery in an EXISTS, it'll choose to minimize the startup cost.
 
 ---
 template: section
@@ -499,7 +499,7 @@ class: img-right
 - VividCortex, but of course!
 - pgMustard, a new one
 - Perfalytics, another new one
-- pgAdmin’s visual explain, an old one
+- pgAdmin's visual explain, an old one
 
 ---
 template: section
