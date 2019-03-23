@@ -1,5 +1,5 @@
 ---
-title: 'PostgreSQL EXPLAIN Explained'
+title: 'Everything You Need To Know About PostgreSQL EXPLAIN'
 date: "2019-03-21"
 url: "/talks/postgresconf-2019-postgresql-explain-explained/"
 event: "PostgresConf 2019"
