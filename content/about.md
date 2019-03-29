@@ -21,7 +21,11 @@ posts, nor do I do any type of joint marketing. I use affiliate links, usually t
 You can contact me using my first name at VividCortex. You can also find me on
 [Twitter](http://twitter.com/xaprb), [LinkedIn](http://www.linkedin.com/in/xaprb),
 [Keybase](https://keybase.io/xaprb), and [Signal](https://whispersystems.org/).
-Dvorak("baron") = "xaprb".
+
+```sh
+~ $ dvorak baron
+xaprb
+```
 
 I'm private about my personal life, but I try to be an open book about who I am.
 
@@ -40,7 +44,7 @@ reserved, aloof, focused, steady, hard to read.
 
 People usually experience me as supportive, attentive, active, engaged,
 decisive, and motivating. You might find my passion and drive compelling.  When
-I'm under stress, you might feel that I'm abrasive and controlling. At my worst,
+I'm stressed, you might feel that I'm blunt, abrasive, and controlling. At my worst,
 I can be a pushy perfectionist, and you might feel that I demand too much too
 fast.
 
@@ -80,13 +84,13 @@ Here are some things to keep in mind when approaching me.
 
 Specific advice that's relevant to particular circumstances:
 
-- I've lost some high-frequency hearing, especially in my left ear. In noisy
-  environments like restaurants, it's really hard for me to hear what people are
+- I'm tall. In noisy
+  environments like restaurants, it's really hard for me to hear what shorter people are
   saying. If you tilt your face up towards me a bit, it helps a lot.
 - Use email, text, or phone. Don't use LinkedIn messaging, Twitter DMs, Facebook
   messages, Slack, or any other isolated systems. I may never notice your
   message; I simply don't check 99 places for messages. For secure messaging you
-  can use Signal or GPG-secured email.
+  can use Signal.
 - I only have notifications enabled for phone calls and text messages. I'll get
   to everything else (as long as it's email, that is) in due course.
 - If you repeatedly call me and don't leave voicemail I'll block your number.
