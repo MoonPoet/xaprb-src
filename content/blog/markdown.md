@@ -146,3 +146,4 @@ Some of the most common are:
 * [commonmark.js](https://spec.commonmark.org/dingus/)
 * [markdown-it](https://markdown-it.github.io/)
 * [blackfriday](https://github.com/russross/blackfriday)
+* [madoko](https://www.madoko.net/)
