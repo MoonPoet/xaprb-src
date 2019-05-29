@@ -528,3 +528,12 @@ Slides are at https://www.xaprb.com/talks/ or you can scan the QR code.
 To download/export as PDF, use Chrome's print dialog to save as PDF.
 
 Contact: @xaprb or baron@vividcortex.com
+
+---
+class: roomy
+
+# Three-Question Survey
+
+Please give me feedback on this talk!
+
+[![survey-monkey](QR_code_7KS3VJK.png)](https://www.surveymonkey.com/r/7KS3VJK)
