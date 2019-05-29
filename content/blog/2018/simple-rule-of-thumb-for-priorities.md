@@ -1,5 +1,5 @@
 ---
-title: 'A Simple Rule of Thumb for Priorities'
+title: 'A Simple Guideline for Priorities'
 date: "2018-06-14T05:48:33-07:00"
 url: "/blog/simple-rule-of-thumb-for-priorities"
 description: "This simple framework helps me clarify what to ignore, what to manage, and what to invest in."

@@ -117,7 +117,7 @@ knee moves to the right. Notice how the orange line jumps when you set
 {{< math >}}m=1{{< /math >}}.
 
 I'd conclude this section by saying that I think this isn't the right direction
-to take this discussion; the "knee" is supposed to be a kind of rule of thumb.
+to take this discussion; the "knee" is supposed to be a kind of Guideline.
 It's the point above which performance becomes "bad" by some definition.
 Clearly, "performance is bad above utilization of 0" isn't useful.
 

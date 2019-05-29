@@ -418,7 +418,7 @@ class: img-right
 
 How do you know whether “optimizing” a query is worth it?
 
-Rule of thumb:
+Guideline:
 * To conserve resources / reduce collateral damage, look at % of total
 * To make customers happy, look at p99 latency
 ]

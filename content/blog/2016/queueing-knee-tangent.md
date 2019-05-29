@@ -79,7 +79,7 @@ illustrates two fundamental truths about queueing systems:
 
 1. As you add service channels (servers) to a queueing system, queueing delay is
 	tolerable at increasingly high utilization.
-2. The rule of thumb that you can't run a system at greater than 75% utilization
+2. The heuristic that you can't run a system at greater than 75% utilization
 	is invalid. For systems with many service channels (CPUs, disks, etc) that is
 	wasteful, and you should strive for higher utilization.
 

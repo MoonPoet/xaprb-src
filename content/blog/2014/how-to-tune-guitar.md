@@ -434,7 +434,7 @@ Run a couple of quick checks to see whether you got things right. First, check y
 
 You can also check the low E against the open B string, and listen for beating at the B note, which is the 3rd overtone of the E string. The B should be very slightly narrow (flat)---theoretically, you should hear about 1/4th of a beat.
 
-Also theoretically, you could tune the high B and E strings against the low open E using the same overtones. However, due to imperfections in strings and the slowness of the beating, this is usually much harder to do. As a result, you'll end up with high strings that don't sound good together. A general rule of thumb is that it's easier to hear out-of-tune-ness in notes that are a) closer in pitch and b) higher pitched, so you should generally "tune locally" rather than "tuning at a distance." If you don't get the high strings tuned well together, you'll get really ugly-sounding intervals such as the following:
+Also theoretically, you could tune the high B and E strings against the low open E using the same overtones. However, due to imperfections in strings and the slowness of the beating, this is usually much harder to do. As a result, you'll end up with high strings that don't sound good together. A general Guideline is that it's easier to hear out-of-tune-ness in notes that are a) closer in pitch and b) higher pitched, so you should generally "tune locally" rather than "tuning at a distance." If you don't get the high strings tuned well together, you'll get really ugly-sounding intervals such as the following:
 
 * the 5th between your open G string and the D on the 3rd fret of the B string
 * the 5th between the A on the second fret of the G string and the open high E string

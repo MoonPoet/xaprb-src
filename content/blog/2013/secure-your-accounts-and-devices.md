@@ -26,7 +26,7 @@ The simplest and most effective way to dramatically boost your online security i
 
 Why? Because if you can remember the password, it's [trivially hackable](http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/). For example, passwords like 10qp29wo38ei47ru can be broken instantly. Anything you can feasibly remember is just too weak.
 
-And, any rule you set for yourself that requires self-discipline will be violated, because you're lazy. **You need to make security easier so that you automatically do things more securely**. A password safe is the best way to do that, by far. A good rule of thumb for most people is that you should not try to know your own passwords, except the password to your password safe. (People with the need to be hyper-secure will take extraordinary measures, but those aren't practical or necessary for most of us.)
+And, any rule you set for yourself that requires self-discipline will be violated, because you're lazy. **You need to make security easier so that you automatically do things more securely**. A password safe is the best way to do that, by far. A good Guideline for most people is that you should not try to know your own passwords, except the password to your password safe. (People with the need to be hyper-secure will take extraordinary measures, but those aren't practical or necessary for most of us.)
 
 I use [1Password](https://agilebits.com/onepassword). Others I know of are [LastPass](https://lastpass.com/), [Keeper](https://keepersecurity.com/), and [KeePass Password Safe](http://keepass.info/). I personally wouldn't use any others, because lesser-known ones are more likely to be malware.
 

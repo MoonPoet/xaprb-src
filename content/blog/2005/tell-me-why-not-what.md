@@ -5,7 +5,7 @@ url: /blog/2005/12/10/tell-me-why-not-what/
 categories:
   - Programming
 ---
-I have [written before](/blog/2005/09/28/a-comment-on-comments/) about badly commented code, but I've recently encountered two examples of code that warns someone of something bad, then never tells them what it is. This is a great reason to write comments that say why, not what---my first rule of thumb when commenting code.
+I have [written before](/blog/2005/09/28/a-comment-on-comments/) about badly commented code, but I've recently encountered two examples of code that warns someone of something bad, then never tells them what it is. This is a great reason to write comments that say why, not what---my first guideline when commenting code.
 
 ### Example: SQL stored procedure
 

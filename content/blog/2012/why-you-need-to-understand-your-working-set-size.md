@@ -40,7 +40,7 @@ system-wide performance metrics, such as the iowait column in the mpstat
 utility.  If one or more CPUs is consistently spending a lot of time in iowait
 (more than 10% or so is where I start to worry, and note that the I/O can skip
 between CPUs as threads are rescheduled), and the database is the main process
-running on the server, then as a rule of thumb, there's likely to be a problem.
+running on the server, then as a Guideline, there's likely to be a problem.
 There are more precise ways to measure than looking at system-wide metrics such
 as this, but in many cases it's so obvious that the answer is clear. If you want
 to be more precise, you can use Percona Server, which logs I/O operations and
