@@ -234,6 +234,14 @@ class: col-3, compact, fullbleed, no-footer
 [![DBRE Book](dbre.png# maxw-60pct center)](https://shop.oreilly.com/product/0636920039761.do)
 
 ---
+class: img-right, roomy, no-footer
+# Download My Book
+
+[![DevOps for the Database](devops-for-the-database.png)](https://www.vividcortex.com/resources/devops-for-the-database-ebook)
+
+[![DevOps for the Database](devops-for-the-database-qr-code.png)](https://www.vividcortex.com/resources/devops-for-the-database-ebook)
+
+---
 class: roomy
 # Questions?
 
