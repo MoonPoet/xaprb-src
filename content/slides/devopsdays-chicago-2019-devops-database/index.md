@@ -154,6 +154,78 @@ class: roomy, fit-h1, img-right-full
 - Monitoring philosophy
 
 ---
+template: section
+background-image: url(unsplash-photos-x6peFMC-DH8.jpg)
+# Detour: Golden Signals
+
+---
+# Defining Database Performance Expectations
+
+I added these slides after giving the talk, at an attendee's suggestion. I have given a variety of talks on how to characterize database performance, health, and quality-of-service. Here I summarize; the following slides add detail.
+
+Database performance can be characterized, constrained, and understood by a combination of:
+
+* External, customer-facing perspective
+* Awareness of internal behavior
+* Sufficiency and performance of resources the database needs
+
+---
+# Workload Quality-of-Service
+
+The *external* perspective on database performance is defined by the user/customer experience. This is unquestionably the most important perspective: the database exists to do useful work for users; they care about correctness and performance, nothing else.
+
+This essentially means quality-of-service of the workload, which is the population of requests the database services.
+
+Quality-of-service is measurable with the CELT golden metrics.
+
+---
+class: compact
+# The CELT Golden Metrics
+
+Four metrics fully describe request quality-of-service, derived from and agreeing with formal performance science (e.g. queueing theory).
+
+* Concurrency (load)
+* Error rate (user's perception of correctness)
+* Latency (user's perception of performance)
+* Throughput (request rate)
+
+These are *request* metrics. They are SLIs (service level indicators) that actually *over-describe* performance.
+
+*They apply to the database's overall workload, as well as to each individual type of request/query.*
+
+---
+class: compact
+# The USE Golden Metrics
+
+The *internal* view on database performance characterizes how the database's inner workings are behaving, as well as the key operating system resources the database requires to do its work. Components/resources are:
+
+* CPU, Network, I/O or Storage, and Memory
+* Database-specific components such as thread pools, caches, locking, etc.
+
+For each of those, Brendan Gregg's USE method provides a helpful way to evaluate:
+
+* Utilization
+* Saturation
+* Errors
+
+---
+class: compact
+# Fitting Together CELT and USE
+
+The CELT metrics are database SLIs. They enable you to understand how well your database is performing its work, and to set SLOs and SLAs. If there's a performance problem, CELT will reveal it.
+
+The USE metrics are diagnostic and explanatory, not descriptive. They enable you to understand *why* your database is missing its SLOs.
+
+Put another way: users don't know and don't care that your CPU is maxed out. But it's useful, because it explains why users are experiencing high latency, and points you to solutions.
+
+Using CELT+USE together gives you a holistic way to describe, constrain, and diagnose database performance. More detail is available in the reference materials linked later.
+
+---
+template: section
+background-image: url(unsplash-photos-CeL6SfbXCx8.jpg)
+# End of Detour, Resume Talk
+
+---
 class: roomy, fit-h1, img-right-full
 # Assessing DevOps Maturity
 
