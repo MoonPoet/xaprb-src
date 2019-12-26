@@ -40,9 +40,7 @@ ended, and you can sign up for a free trial at [https://vividcortex.com](https:/
 
 It was great to see so many old friends at the conference. I wish I'd been able
 to spend more time with more people, as I always wish every single year. 
-Many of the old traditions carry on; and we create new ones. Next year, join me
-and Kyle for a Tech WOD (workout of the day) at a local Crossfit. It's a great
-way to start the day off right at 6:30am after a late night of drinking!
+Many of the old traditions carry on; and we create new ones.
 
 Pic credit to [LeFred](https://twitter.com/lefred/status/451911813244788736)
 

@@ -145,8 +145,8 @@ although sometimes the parties don't deserve protection.
 It is true that "ask and you shall receive." If you don't ask, nothing happens.
 But if all you do is ask, you end up *persona non grata* pretty fast.
 
-In 2013 Kyle (my co-founder) and I were fundraising from venture capitalists. A
-particular investor, Max G, listened to our pitch and said he'd like to follow
+In 2013 I was fundraising from venture capitalists. A
+particular investor, Max G, listened to the pitch and said he'd like to follow
 up on it by calling our advisors, one of whom is at a large company. The next
 thing we heard was this email from the advisor:
 
@@ -296,7 +296,7 @@ Moral of the story: yuck.
 
 I'll end with a story where I was in the wrong.
 
-While Kyle and I were fundraising I asked someone who had been very helpful to
+While I was fundraising I asked someone who had been very helpful to
 me in the past for introductions to a couple of top-tier investors. This person
 knows my work very well and has great stature in the industry. He could make a
 strong representation that we were interesting to investors.  His introductions
