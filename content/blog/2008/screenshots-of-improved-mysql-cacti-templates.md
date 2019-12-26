@@ -8,12 +8,6 @@ categories:
 ---
 I finally have some images to show you what my improved Cacti templates look like.
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 These aren't a perfect demo, since for example this server doesn't have the query cache enabled, but it should show you what I've done.  Note, for example, that each graph is labeled  with the actual values of the images drawn on it.  You don't have to guess what the values are by squinting at the graphs.
 
 ![InnoDB Buffer Pool Activity](/media/2008/05/graph_image_016.png)

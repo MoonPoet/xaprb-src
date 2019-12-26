@@ -10,12 +10,6 @@ categories:
 
 This release is part of the unstable 1.5 branch. Its features will ultimately go into the stable 1.6 branch. You can download it from the [innotop-devel package](http://code.google.com/p/innotop).
 
-> Note: [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 The major change is a new Command Summary' mode (switch to this mode with the 'C' key) that's similar to [mytop's](http://jeremy.zawodny.com/mysql/mytop/) 'c' mode. It shows you the relative size of variables from SHOW STATUS and SHOW VARIABLES. Here's a sample:
 
 ```

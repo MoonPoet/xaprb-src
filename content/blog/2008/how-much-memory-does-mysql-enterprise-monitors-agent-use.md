@@ -9,13 +9,6 @@ categories:
 ---
 After last week's post on [agents versus agentless monitoring systems](/blog/2008/08/21/is-agent-based-or-agentless-monitoring-best/), I got a lot of email. One, from a customer whose name I am not permitted to mention, sent me the following action shot (posted with permission):
 
-> Note: [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
-
 ![MySQL Enterprise Monitor Memory Usage](/media/2008/08/mysql-enterprise-monitor.jpg)
 
 <!--more-->

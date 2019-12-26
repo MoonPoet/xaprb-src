@@ -12,12 +12,6 @@ tags:
 ---
 I've packaged up and released version 1.1.2 of the [Cacti templates I've written for MySQL, Apache, memcached, nginx etc](http://code.google.com/p/mysql-cacti-templates/).
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 Anyone who would like to help write documentation (or do anything else, for that matter) is welcomed to participate. I'll give commit access at the drop of a hat.
 
 Changelog:

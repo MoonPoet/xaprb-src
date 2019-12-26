@@ -10,13 +10,6 @@ categories:
 I've released version 1.1.1 of the [MySQL Cacti templates](http://code.google.com/p/mysql-cacti-templates/) I develop. The new templates work around more Cacti limitations, including the limitation on the length of the data returned from the poller script. There's also a new graph and many other niceties since the last release.
 
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
-
 <!--more-->
 
 Note that there are TWO incompatible changes with the previous version of the templates. You don't have to throw away your RRA files, you just have to delete and re-import over all the existing templates. It's not my fault, there was no other way to work around the limitations mentioned above. Really. Have fun upgrading!

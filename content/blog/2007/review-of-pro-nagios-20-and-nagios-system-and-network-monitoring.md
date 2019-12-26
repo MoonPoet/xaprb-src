@@ -52,9 +52,3 @@ In the appendix on page 401 there's a nice diagram that illustrates flapping in 
 
 Summary: I like Wolfgang Barth's [Nagios System and Network Monitoring]({{< amz 1593270704 >}}) better than James Turnbull's [Pro Nagios 2.0]({{< amz 1590596099 >}}).
 
-> Note: [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-

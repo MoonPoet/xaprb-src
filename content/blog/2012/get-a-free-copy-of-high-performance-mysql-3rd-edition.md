@@ -11,14 +11,6 @@ tags:
 ---
 Want a free copy of [High Performance MySQL, Third Edition]({{< amz 1449314287 >}})? If you [register](http://perconalive-mysql-conference-expo-2012.eventbrite.com/) before the early-bird pricing expires for the [MySQL Conference in April](http://www.percona.com/live/mysql-conference-2012/), and use the discount code PL-Book, you'll get to take a free copy home from the conference!
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production. It does TCP network
-> traffic analysis. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
-
 And now, a status update: I'm currently proofing the QC2 (quality control #2) revision of the book; after this, the book goes to manufacturing. The PDF is now 820 pages, which is a lot of work to proofread. You can imagine how much more in-depth we've been able to go with so many more pages.
 
 The [free sample](http://www.highperfmysql.com/sample-chapter/) online is Chapter 8, on optimizing MySQL configuration. Liz van Dijk just tweeted this about it:

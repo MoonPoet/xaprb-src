@@ -9,14 +9,6 @@ categories:
 ---
 I've created a set of [Cacti templates for graphing stats about MySQL](http://code.google.com/p/mysql-cacti-templates/). While these were based on several other people's work, there are many improvements. One of them in particular I want to bring up, and I'll go so far as to say it ought to be a "best practice" for graphing. That is, don't mix units on a graph.
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
-
-
 <!--more-->
 
 In the simplest terms, this means that just because things are related doesn't mean they belong together. I made an effort to separate things onto different graphs when they have different units. For example, the query cache metrics don't all belong together. There are memory metrics, there are block metrics, and there are metrics about queries. If you jam them all together, the differences in the units will cause various graphs to obliterate each other. Some values are much larger than others, and that'll cause some values to be minuscule on the graph.

@@ -7,12 +7,6 @@ categories:
 ---
 I have an issue I hope someone can help me with.  I am generating [RRDtool](http://oss.oetiker.ch/rrdtool/) graphs (for [Cacti](http://www.cacti.org/) monitoring templates for MySQL, which I'll release soon) that have up to 11 different metrics on them.  With that many lines or areas on a graph, it becomes very hard to pick colors that are easy to see and easy to distinguish from each other.  What's a good way to choose such colors?  Is there a way to do it automatically---is there a formal method that will produce good results?
 
-> Note: [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 I know some color theory and I have read about how you can distinguish colors from each other (hue, value etc).  But I am unsure the best way to choose this many colors.  Trying by hand produces garish results or graphs that are just hard to read.
 
 My first [attempt to solve this with a program](/media/2008/03/color-chooser.html) was to simply create a list of every possible completely saturated color in a 32-bit space---essentially, the "pure" colors around the rim of the color wheel---and divide it into the desired number of evenly spaced intervals.  This produces pure colors, which is not ideal.  They are hard to look at.  Did I mention garish?

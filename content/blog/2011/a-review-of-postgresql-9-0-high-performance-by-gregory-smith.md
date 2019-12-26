@@ -18,11 +18,3 @@ The rest of the book is much more focused on PostgreSQL. There are chapters on m
 
 It was a pleasure to read---the quality and clarity of the writing is very good. Greg is an excellent writer and obviously put a lot of work into this book.
 
-> Note: [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
-
-

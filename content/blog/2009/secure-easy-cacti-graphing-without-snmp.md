@@ -14,12 +14,6 @@ categories:
 
 Over the last several years, I've slowly created more and more software to create Cacti graphs via standard POSIX command-line utilities over SSH with key-pair authentication. (I've also created similar software for Nagios, but that's another matter.) The major problem with the work I've done is that it's totally un-publicized.
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 The system works by passing command-line arguments to a local PHP script like any other Cacti script. This script then executes a remote SSH command, such as `ssh somehost uptime` and extracts statistics from the result.
 
 The requirements are very simple. On the system to be monitored, a public key must be installed. On the monitoring system, the cacti user account must have a private SSH key that it can read and others can't. This is standard for any SSH key. The cacti user account must also have the SSH key fingerprint of the monitored system in its known_hosts file.

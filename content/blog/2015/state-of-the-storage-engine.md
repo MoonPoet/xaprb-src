@@ -82,7 +82,7 @@ Sometimes companies don't find a database that's optimized for their exact use c
 Whatever road you take, a good deal of creativity and experience is required from architects who are looking to overhaul their application's capabilities. You can't just assume you'll plug in a database that will immediately fit your use case. You'll need to take a much deeper look at the storage engine and the paradigms it is based on.
 
 
-> **Baron Schwartz** is the founder and CEO of [VividCortex](https://vividcortex.com), the best way to see what your production database servers are doing. He is the author of High Performance MySQL and many open-source tools for MySQL administration. He's also an Oracle ACE and frequent participant in the PostgreSQL community.
+> **Baron Schwartz** is the founder and CEO of VividCortex, the best way to see what your production database servers are doing. He is the author of High Performance MySQL and many open-source tools for MySQL administration. He's also an Oracle ACE and frequent participant in the PostgreSQL community.
 
 
 To read the full report free of charge, download the

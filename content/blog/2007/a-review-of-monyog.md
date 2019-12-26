@@ -7,12 +7,6 @@ categories:
 ---
 This is a review of Webyog's [MONyog](http://www.webyog.com/) MySQL monitoring tool.  The product is still in beta and has some rough edges, but holds promise.  Its design includes some interesting architectural decisions I think will help distinguish it from MySQL's own Monitoring and Advisory Service.
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production and I consider it far superior to MONYog. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 ### MONyog overview
 
 MONyog starts an HTTP listener on your machine.  After you start the program, you point your Web browser at localhost:9999.  Your browser talks to MONyog, which talks to one or many MySQL servers.  My impression is that MONyog is meant to be a nearly zero-footprint desktop install you'll put on your own desktop machine, and monitor remote servers.  In other words, you don't install it on the servers you'll monitor.

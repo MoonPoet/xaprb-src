@@ -9,12 +9,6 @@ categories:
 ---
 This is one in a series of articles on how to use innotop, a MySQL and InnoDB monitor. In this article I'll explain how innotop can make it much easier to collect useful information from `SHOW STATUS` and `SHOW VARIABLES` into one place. There are three modes in innotop that do this in different ways, so one of them may meet your needs.
 
-> Note: [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 ### Introduction
 
 The output of `SHOW STATUS` and `SHOW VARIABLES` is one of the most useful tools for troubleshooting a MySQL server and getting a sense of how well it's running, what type of workload it's under, and so forth. In case you're not familiar with these, I recommend you [read up on them in the MySQL manual](http://dev.mysql.com/doc/refman/5.0/en/show.html) before you read the rest of this article. You will get more out of the article if you understand what information is behind my examples.

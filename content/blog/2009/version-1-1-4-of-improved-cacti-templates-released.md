@@ -12,12 +12,6 @@ tags:
 ---
 I've released version 1.1.4 of my [improved Cacti templates](http://code.google.com/p/mysql-cacti-templates/). Unlike the prior release, which was solely bug fixes, this one includes new graphs in the MySQL template. Some of the graphs are of data that's exposed in standard MySQL versions, but some of it is available only in [Percona's high-performance builds of the MySQL database server](http://www.percona.com/percona-lab.html). If you don't have a Percona build, those graphs will just contain nothing, but there is no detrimental effect.
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 This template release is fully backwards compatible with the previous release. The upgrade process is to copy the new PHP file into place and import the new template file. You can then add the new graphs to your hosts.
 
 I've also taken the opportunity to address many of the other open issues. Most of these were minor, such as a debug log to help troubleshoot. Some are big improvements, such as no longer using GET_LOCK() in MySQL to arbitrate access to the cache file. A list of open issues can always be found at <http://code.google.com/p/mysql-cacti-templates/issues/list>.

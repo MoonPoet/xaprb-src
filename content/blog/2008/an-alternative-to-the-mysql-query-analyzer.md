@@ -8,12 +8,6 @@ categories:
 ---
 MySQL just released their new [MySQL Query Analyzer](http://www.mysql.com/trials/enterprise) (link to a trial), and recently wrote up [an interview with Mark Matthews about it](http://dev.mysql.com/tech-resources/interviews/interview_mark_matthews.html). If you haven't read that article, go ahead and do it. I have not used this software, but I fully believe its functionality is quite nice.
 
-> [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-> your servers are doing in production and I consider it far superior to Cacti. VividCortex offers [MySQL performance
-> monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-> performance management](https://vividcortex.com/monitoring/postgres/) among many
-> other features.
-
 But there is at least one alternative, which has been available for a long time. That is the [Percona patch-set](http://www.percona.com/percona-lab.html), plus analysis tools such as [mysqlsla](http://hackmysql.com/mysqlsla) or [Maatkit's query analysis tools](http://www.maatkit.org/). This is a compelling alternative, if you can live without a point-and-click interface.
 
 Percona's patches put the metrics-gathering where it should be: in the server. That's why Percona's builds are able to measure a lot of statistics that a Proxy-based solution can't capture. This information is not possible to get outside of the server. For example, you cannot use the MySQL Query Analyzer to measure the I/O caused by a query. Externally to the server, about all you can do is time queries and measure their size. Percona's patches have no such limitations; they measure and expose an ever-richening set of meta-data about queries.
