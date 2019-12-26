@@ -24,12 +24,7 @@ The biggest surprise in that talk? F1 is more expensive for them to operate than
 MySQL. I expected that anything they built in-house would surely be more cost
 effective, but I was wrong.
 
-The community awards and lightning talks were fun as always. My co-founder Kyle
-Redinger was scheduled to do a non-technical lightning talk about how to squat
-properly. (He's a hardcore CrossFitter, gym owner, and coach.) He ended up
-having a conflict, so Tim Chadwick from Dyn took over, and I played Vanna White.
-And I mean *white*, as in White Gym Socks Clearly Visible On Skinny Legs. What
-good is a lightning talk if you don't look goofy?
+The community awards and lightning talks were fun as always. Together with Tim Chadwick from Dyn gave a non-technical lightning talk about how to squat properly. What good is a lightning talk if you don't look goofy?
 
 ![squat](/media/2014/04/squat.jpg)
 

@@ -11,10 +11,7 @@ This article introduces six methods and 12 tools for monitoring system load, per
 ### VividCortex
 
 [VividCortex](https://vividcortex.com/) is the startup I founded in 2012. It's the easiest way to monitor what
-your servers are doing in production. VividCortex offers [MySQL performance
-monitoring](https://vividcortex.com/monitoring/mysql/) and [PostgreSQL
-performance management](https://vividcortex.com/monitoring/postgres/) among many
-other features.
+your production database servers are doing.
 
 ### Gkrellm
 

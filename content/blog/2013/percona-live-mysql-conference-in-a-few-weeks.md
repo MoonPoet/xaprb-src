@@ -5,7 +5,7 @@ url: /blog/2013/04/04/percona-live-mysql-conference-in-a-few-weeks/
 categories:
   - Databases
 ---
-I'm really looking forward to [Percona Live](http://www.percona.com/live/) this year. I will be there, along with Kyle Redinger, my co-founder at [VividCortex](https://vividcortex.com/). I feel that this year the conference has come full circle. 2007 was my first year at the conference, and it was amazing. This year is tremendously exciting for me because it feels like we're back on the 2007 trajectory.
+I'm really looking forward to [Percona Live](http://www.percona.com/live/) this year. I feel that this year the conference has come full circle. 2007 was my first year at the conference, and it was amazing. This year is tremendously exciting for me because it feels like we're back on the 2007 trajectory.
 
 Those were the golden days. Things were a little sad in 2010 and 2011 as the MySQL community tried to figure out the new landscape and O'Reilly decided to stop running the event, but then in 2012 we all said "we're back!" with the exception of Oracle, who instead arranged MySQL Connect, as part of Oracle Open World. I don't think that was a huge success. I don't know if that's why Oracle has decided to participate in this year's Percona MySQL conference, but frankly it doesn't matter. What matters is that they're there. Oracle is a vital part of the MySQL community and if we didn't have them it would be a huge loss.
 
