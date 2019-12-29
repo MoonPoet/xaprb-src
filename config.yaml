@@ -3,7 +3,6 @@ buildFuture: true
 blackfriday:
   plainIdAnchors: true
 theme: story
-googleAnalytics: "UA-101883-1"
 title: "Baron Schwartz's Website"
 menu:
    main:
